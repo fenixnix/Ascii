@@ -204,7 +204,6 @@ Trench Coat	Neutral	3	Asset		Item. Clothing.	Heart of the Elders 203
 Ornate Bow (3)	Neutral	4	Asset	 	Item. Relic. Weapon. Ranged.	Heart of the Elders 204	
 Heart of the Elders	Mythos		Scenario			Heart of the Elders 205	Heart of the Elders 1
 Mouth of K'n-yan: The Cavern’s Maw	Mythos		Location		Cave.	Heart of the Elders 206	Heart of the Elders 2
-Mouth of K'n-yan: The Depths Below	Mythos		Location		Cave.	Heart of the Elders 206	Heart of the Elders 2
 The Jungle's Heart	Mythos		Agenda			Heart of the Elders 207	Pillars of Judgment 1
 Setting Sun	Mythos		Agenda			Heart of the Elders 208	Pillars of Judgment 2
 Search for the Pattern	Mythos		Act			Heart of the Elders 209	Pillars of Judgment 3

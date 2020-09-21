@@ -1,0 +1,3 @@
+Marie Lambeau: The Entertainer	 Mystic		Investigator		Performer. Sorcerer.	Promo 1	
+Mystifying Song	Neutral	3	Event	 	Spell. Song.	Promo 2	
+Baron Samedi: Lord of the Cemetery	Neutral		Asset		Avatar.	Promo 3

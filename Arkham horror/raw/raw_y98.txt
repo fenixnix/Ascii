@@ -1,5 +1,7 @@
+
 Green Man Medallion: Hour of the Huntress	Neutral	1	Asset	 	Item. Relic.	Books 2	
 Sacrificial Beast	Neutral		Enemy		Monster. Dark Young.	Books 3	
+
 Mysteries Remain	Neutral	0	Event	  	Insight.	Books 5	
 The Dirge of Reason	Neutral		Treachery		Madness.	Books 6	
 Norman Withers: The Astronomer	 Seeker		Investigator		Miskatonic.	Books 7	
@@ -14,6 +16,3 @@ Dreams of the Deep: The Deep Gate	Neutral		Skill	 	Curse.	Books 15
 Dexter Drake: The Magician	 Mystic		Investigator		Sorcerer. Veteran.	Books 16	
 Molly Maxwell: The Exotic Morgana	Neutral	3	Asset	  	Ally. Assistant.	Books 17	
 Yaztaroth	Neutral		Treachery		Curse. Pact.	Books 18	
-Marie Lambeau: The Entertainer	 Mystic		Investigator		Performer. Sorcerer.	Promo 1	
-Mystifying Song	Neutral	3	Event	 	Spell. Song.	Promo 2	
-Baron Samedi: Lord of the Cemetery	Neutral		Asset		Avatar.	Promo 3

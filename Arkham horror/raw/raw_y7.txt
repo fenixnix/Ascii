@@ -1,12 +1,29 @@
 Sister Mary: The Nun	 Guardian		Investigator		Believer. Blessed.	The Innsmouth Conspiracy 1	
 Amanda Sharpe: The Student	 Seeker		Investigator		Miskatonic. Scholar	The Innsmouth Conspiracy 2	
+
+
+
 Guardian Angel	Neutral		Event		Innate.	The Innsmouth Conspiracy 6	
 Crisis of Faith	Neutral		Treachery		Madness.	The Innsmouth Conspiracy 7	
 Obscure Studies	Neutral		Asset		Innate.	The Innsmouth Conspiracy 8	
 Whispers from the Deep	Neutral		Treachery		Madness.	The Innsmouth Conspiracy 9	
+
+
+
+
+
+
+
+
 Blessed Blade	 Guardian	3	Asset		Item. Weapon. Melee. Blessed.	The Innsmouth Conspiracy 18	
 Rite of Sanctification	 Guardian	0	Asset		Ritual. Blessed.	The Innsmouth Conspiracy 19	
+
+
 Cryptic Grimoire: Untranslated	 Seeker	3	Asset		Item. Tome. Occult.	The Innsmouth Conspiracy 22	
+
+
+
+
 Obfuscation	 Rogue	2	Asset		Spell.	The Innsmouth Conspiracy 27	
 Faustian Bargain	 Rogue	0	Event	 	Pact. Cursed.	The Innsmouth Conspiracy 28	
 Sword Cane	 Mystic	2	Asset		Item. Relic. Weapon. Melee.	The Innsmouth Conspiracy 29	
@@ -14,10 +31,92 @@ Tides of Fate	 Mystic	1	Event		Spell. Blessed.	The Innsmouth Conspiracy 30
 Ward of Radiance	 Mystic	0	Event	 	Insight. Blessed.	The Innsmouth Conspiracy 31	
 Promise of Power	 Mystic		Skill	   	Practiced. Cursed.	The Innsmouth Conspiracy 32	
 Token of Faith	 Survivor	2	Asset		Item. Charm.	The Innsmouth Conspiracy 33	
+
 Predestined	 Survivor		Skill		Fortune. Blessed.	The Innsmouth Conspiracy 35	
+
+
+
 Dread Curse	Neutral		Treachery		Curse.	The Innsmouth Conspiracy 39	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Eldritch Sophist	 Seeker	4	Asset		Ally. Miskatonic	In Too Deep 111	
+
 Blasphemous Covenant (2)	 Seeker		Asset		Covenant. Cursed.	In Too Deep 113	
+
 Skeptic (1)	 Rogue		Skill		Practiced.	In Too Deep 115	
+
+
 Eye of Chaos	 Mystic	5	Asset		Spell. Cursed.	In Too Deep 118	
+
+
+
 Ancient Covenant (2)	 Survivor		Asset		Covenant. Blessed.	In Too Deep 122	

@@ -1,14 +1,16 @@
+
 Daisy's Tote Bag	Neutral	2	Asset	   	Item.	Read or Die 2	
 The Necronomicon: John Dee Translation	Neutral		Asset		Item. Tome.	Read or Die 3	
+Read or Die	Mythos		Scenario			Read or Die 4	Read or Die 1
+Mortal Inquiry	Mythos		Agenda			Read or Die 5	Read or Die 2
+Speed Reading	Mythos		Act			Read or Die 6	Read or Die 3
+Namer of the Dead: Presence Within the Grimoire	Mythos		Enemy		Monster. Geist. Elite.	Read or Die 7	Read or Die 4
+
 On the Lam	Neutral	0	Event	   	Tactic.	All or Nothing 9	
 Hospital Debts	Neutral		Treachery		Task.	All or Nothing 10	
-Clover Club Bouncer	Mythos		Enemy		Humanoid. Criminal.	All or Nothing 16	All or Nothing 6-9
-Namer of the Dead: Presence Within the Grimoire	Mythos		Enemy		Monster. Geist. Elite.	Read or Die 7	Read or Die 4
-Siobhan Riley: O'Bannion Enforcer	Mythos		Enemy		Humanoid. Criminal. Elite.	All or Nothing 15	All or Nothing 5
-Eyes All Around You	Mythos		Agenda			All or Nothing 12	All or Nothing 2
-Mortal Inquiry	Mythos		Agenda			Read or Die 5	Read or Die 2
-Hot on your Tail	Mythos		Act			All or Nothing 14	All or Nothing 4
-Playing Cards	Mythos		Act			All or Nothing 13	All or Nothing 3
-Speed Reading	Mythos		Act			Read or Die 6	Read or Die 3
 All or Nothing	Mythos		Scenario			All or Nothing 11	All or Nothing 1
-Read or Die	Mythos		Scenario			Read or Die 4	Read or Die 1
+Eyes All Around You	Mythos		Agenda			All or Nothing 12	All or Nothing 2
+Playing Cards	Mythos		Act			All or Nothing 13	All or Nothing 3
+Hot on your Tail	Mythos		Act			All or Nothing 14	All or Nothing 4
+Siobhan Riley: O'Bannion Enforcer	Mythos		Enemy		Humanoid. Criminal. Elite.	All or Nothing 15	All or Nothing 5
+Clover Club Bouncer	Mythos		Enemy		Humanoid. Criminal.	All or Nothing 16	All or Nothing 6-9

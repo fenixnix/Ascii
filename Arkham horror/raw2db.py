@@ -12,6 +12,8 @@ def Cvt(start,src,dst):
                 break
             d = line.split("\t")
             index+=1
+            if len(d)<=1:
+                continue
             dat = {
                     "id":index,
                     "name":d[0],
@@ -46,13 +48,13 @@ def Cvt(start,src,dst):
 srcPath = "./raw/%s.txt"
 dstPath = "./arkham/data/%s.json"
 
-Cvt(1000,srcPath%"raw",dstPath%"db_core")
+#Cvt(1000,srcPath%"raw",dstPath%"db_core")
 # Cvt(2000,"./data/raw_y2.txt","./data/db_y2.json")
 # Cvt(3000,"./data/raw_y3.txt","./data/db_y3.json")
-# Cvt(4000,"./data/raw_y4.txt","./data/db_y4.json")
+#Cvt(4000,srcPath%"raw_y4",dstPath%"db_y4")
 # Cvt(5000,"./data/raw_y5.txt","./data/db_y5.json")
 # Cvt(6000,"./data/raw_y6.txt","./data/db_y6.json")
-# Cvt(7000,"./data/raw_y7.txt","./data/db_y7.json")
+Cvt(90000,srcPath%"raw_y7",dstPath%"db_y7")
 # Cvt(50000,"./data/raw_y50.txt","./data/db_y50.json")
 # Cvt(51000,"./data/raw_y51.txt","./data/db_y51.json")
 # Cvt(52000,"./data/raw_y52.txt","./data/db_y52.json")
@@ -67,5 +69,6 @@ Cvt(1000,srcPath%"raw",dstPath%"db_core")
 # Cvt(83000,"./data/raw_y83.txt","./data/db_y83.json")
 # Cvt(84000,"./data/raw_y84.txt","./data/db_y84.json")
 # Cvt(85000,"./data/raw_y85.txt","./data/db_y85.json")
-# Cvt(90001,"./data/raw_y90.txt","./data/db_y90.json")
-# Cvt(98000,"./data/raw_y98.txt","./data/db_y98.json")
+#Cvt(90000,srcPath%"raw_y90",dstPath%"db_y90")
+#Cvt(98000,srcPath%"raw_y98",dstPath%"db_y98")
+#Cvt(99000,srcPath%"raw_y99",dstPath%"db_y99")

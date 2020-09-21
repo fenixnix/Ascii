@@ -39,7 +39,7 @@ var chaos_symbel = {
 
 func _ready():
 	for f in ["core","y2","y3","y4","y5","y6","y7","y50","y51","y52","y53",
-		"y601","y602","y603","y604","y605","y81","y82","y83","y84","y98","y90"]:
+		"y601","y602","y603","y604","y605","y81","y82","y83","y84","y98","y99","y90"]:
 		db += LoadDB("db_%s"%f)
 	charaDb.clear()
 	cardDb.clear()
@@ -94,9 +94,9 @@ var rootPath = "../card/%s.%s"
 onready var dir = Directory.new()
 func CardImg(file):
 	if dir.file_exists(rootPath%[file,"png"]):
-		return load(rootPath%[file,"png"])
+		return FileRW.LoadTexture(rootPath%[file,"png"])
 	else:
-		return load(rootPath%[file,"jpg"])
+		return FileRW.LoadTexture(rootPath%[file,"jpg"])
 
 func CardEncounter(dat):
 	var ect = dat.get("encounter","").trim_suffix()

@@ -3,7 +3,7 @@ import requests
 dbUrl = "https://arkhamdb.com"
 cardUrl = "/bundles/cards/"
 
-dstPath = "./image/card/"
+dstPath = "./card/"
 
 def download(url,file):
     r = requests.get(url) 
