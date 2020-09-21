@@ -53,7 +53,7 @@ def Cvt(start,src,dst):
 srcPath = "./raw/%s.txt"
 dstPath = "./arkham/data/%s.json"
 
-#Cvt(1000,srcPath%"raw",dstPath%"db_core")
+Cvt(1000,srcPath%"raw",dstPath%"db_core")
 Cvt(2000,srcPath%"raw_y2",dstPath%"db_y2")
 Cvt(3000,srcPath%"raw_y3",dstPath%"db_y3")
 Cvt(4000,srcPath%"raw_y4",dstPath%"db_y4")
@@ -72,6 +72,6 @@ for i in range(1,6):
 for i in range(1,6):
     Cvt(80000+1000*i,srcPath%"raw_y8%d"%i,dstPath%"db_y8%d"%i)
 
-#Cvt(90000,srcPath%"raw_y90",dstPath%"db_y90")
-#Cvt(98000,srcPath%"raw_y98",dstPath%"db_y98")
-#Cvt(99000,srcPath%"raw_y99",dstPath%"db_y99")
+Cvt(90000,srcPath%"raw_y90",dstPath%"db_y90")
+Cvt(98000,srcPath%"raw_y98",dstPath%"db_y98")
+Cvt(99000,srcPath%"raw_y99",dstPath%"db_y99")
