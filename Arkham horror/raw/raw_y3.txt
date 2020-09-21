@@ -45,8 +45,6 @@ The Third Act	Mythos		Agenda			The Path to Carcosa 44	Curtain Call 2
 Encore	Mythos		Agenda			The Path to Carcosa 45	Curtain Call 3
 Awakening	Mythos		Act			The Path to Carcosa 46	Curtain Call 4
 The Stranger	Mythos		Act			The Path to Carcosa 47	Curtain Call 5
-The Stranger	Mythos		Act			The Path to Carcosa 47	Curtain Call 6
-The Stranger	Mythos		Act			The Path to Carcosa 47	Curtain Call 7
 Curtain Call	Mythos		Act			The Path to Carcosa 48	Curtain Call 8
 Theatre	Mythos		Location			The Path to Carcosa 49	Curtain Call 9
 Lobby	Mythos		Location			The Path to Carcosa 50	Curtain Call 10
@@ -237,7 +235,7 @@ Eureka!	 Seeker		Skill	  	Innate.	The Pallid Mask 231
 Shortcut (2)	 Seeker	1	Event	  	Insight. Tactic.	The Pallid Mask 232	
 "Watch this!"	 Rogue		Skill	  	Gambit.	The Pallid Mask 233	
 .41 Derringer (2)	 Rogue	3	Asset	 	Item. Weapon. Firearm. Illicit.	The Pallid Mask 234	
-Torrent of Power	 Mystic		Skill		Practiced.	    	The Pallid Mask 235
+Torrent of Power	 Mystic		Skill		Practiced.	    The Pallid Mask 235
 Scrying (3)	 Mystic	1	Asset	 	Spell.	The Pallid Mask 236	
 Waylay	 Survivor	3	Event	 	Tactic.	The Pallid Mask 237	
 A Chance Encounter (2)	 Survivor	-2	Event	 	Fortune.	The Pallid Mask 238	

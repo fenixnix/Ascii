@@ -5,30 +5,35 @@ from imgCrawler import GrabByName
 def Cvt(start,src,dst):
     db = []
     with open(src,'r',encoding='UTF-8') as f:
-        index = start
         while True:
             line = f.readline()
             if not line:
                 break
             d = line.split("\t")
-            index+=1
             if len(d)<=1:
                 continue
+
+            d6 = d[6].strip().rsplit(' ',1)
+            if len(d6)!=2:
+                print("err",d)
+            index = start + int(d6[1])
+            set_id = d6[0]
+
             dat = {
                     "id":index,
+                    "set":set_id,
                     "name":d[0],
                     "img":"%05d"%(index),
                     "class":d[1].strip(),
                     "type":d[3].strip(),
                     "icons":d[4],
                     "traits":d[5],
-                    "set":d[6],
                     #"encounter":d[7]
                 }
-            GrabByName(dat["img"])
+            #GrabByName(dat["img"])
             if dat["type"] in ["Investigator","Scenario","Act","Agenda","Location"]:
                 dat["imgb"] = "%05db"%(index)
-                GrabByName(dat["imgb"])
+                #GrabByName(dat["imgb"])
             if len(d[2])>0:
                 #print("print",d[2])
                 dat["cost"] = int(d[2])
@@ -49,26 +54,24 @@ srcPath = "./raw/%s.txt"
 dstPath = "./arkham/data/%s.json"
 
 #Cvt(1000,srcPath%"raw",dstPath%"db_core")
-# Cvt(2000,"./data/raw_y2.txt","./data/db_y2.json")
-# Cvt(3000,"./data/raw_y3.txt","./data/db_y3.json")
-#Cvt(4000,srcPath%"raw_y4",dstPath%"db_y4")
-# Cvt(5000,"./data/raw_y5.txt","./data/db_y5.json")
-# Cvt(6000,"./data/raw_y6.txt","./data/db_y6.json")
-Cvt(90000,srcPath%"raw_y7",dstPath%"db_y7")
-# Cvt(50000,"./data/raw_y50.txt","./data/db_y50.json")
-# Cvt(51000,"./data/raw_y51.txt","./data/db_y51.json")
-# Cvt(52000,"./data/raw_y52.txt","./data/db_y52.json")
-# Cvt(53000,"./data/raw_y53.txt","./data/db_y53.json")
-# Cvt(60100,"./data/raw_y601.txt","./data/db_y601.json")
-# Cvt(60200,"./data/raw_y602.txt","./data/db_y602.json")
-# Cvt(60300,"./data/raw_y603.txt","./data/db_y603.json")
-# Cvt(60400,"./data/raw_y604.txt","./data/db_y604.json")
-# Cvt(60500,"./data/raw_y605.txt","./data/db_y605.json")
-# Cvt(81000,"./data/raw_y81.txt","./data/db_y81.json")
-# Cvt(82000,"./data/raw_y82.txt","./data/db_y82.json")
-# Cvt(83000,"./data/raw_y83.txt","./data/db_y83.json")
-# Cvt(84000,"./data/raw_y84.txt","./data/db_y84.json")
-# Cvt(85000,"./data/raw_y85.txt","./data/db_y85.json")
+Cvt(2000,srcPath%"raw_y2",dstPath%"db_y2")
+Cvt(3000,srcPath%"raw_y3",dstPath%"db_y3")
+Cvt(4000,srcPath%"raw_y4",dstPath%"db_y4")
+Cvt(5000,srcPath%"raw_y5",dstPath%"db_y5")
+Cvt(6000,srcPath%"raw_y6",dstPath%"db_y6")
+Cvt(7000,srcPath%"raw_y7",dstPath%"db_y7")
+
+Cvt(50000,srcPath%"raw_y50",dstPath%"db_y50")
+Cvt(51000,srcPath%"raw_y51",dstPath%"db_y51")
+Cvt(52000,srcPath%"raw_y52",dstPath%"db_y52")
+Cvt(53000,srcPath%"raw_y53",dstPath%"db_y53")
+
+for i in range(1,6):
+    Cvt(60000+100*i,srcPath%"raw_y60%d"%i,dstPath%"db_y60%d"%i)
+
+for i in range(1,6):
+    Cvt(80000+1000*i,srcPath%"raw_y8%d"%i,dstPath%"db_y8%d"%i)
+
 #Cvt(90000,srcPath%"raw_y90",dstPath%"db_y90")
 #Cvt(98000,srcPath%"raw_y98",dstPath%"db_y98")
 #Cvt(99000,srcPath%"raw_y99",dstPath%"db_y99")
