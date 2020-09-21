@@ -9,14 +9,12 @@ func Refresh(dat):
 	data = dat
 	bbcode_enabled = true
 	clear()
-	for r in dat.sanDmg:
-		add_image(sanity_icon,32,32)
-	newline()
-	for r in dat.hpDmg:
-		add_image(health_icon,32,32)
-	newline()
-	for r in dat.resource:
-		add_image(res_icon,32,32)
+	add_image(sanity_icon,32,32)
+	append_bbcode("%d\t"%dat.sanDmg)
+	add_image(health_icon,32,32)
+	append_bbcode("%d\t"%dat.hpDmg)
+	add_image(res_icon,32,32)
+	append_bbcode("%d"%dat.resource)
 	newline()
 	append_bbcode("Deck:%d Discard:%d"%[len(dat.deck),len(dat.discard)])
 	newline()

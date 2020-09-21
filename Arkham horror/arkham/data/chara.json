@@ -3,9 +3,9 @@
         "name": "Roland Banks",
         "class": "Guardian",
         "job":"Fed",
-        "W": 3,
         "img":"01001",
         "imgb":"01001b",
+        "W": 3,
         "I": 3,
         "C": 4,
         "A": 2,
@@ -16,7 +16,8 @@
         "feature": [
             "在你擊敗一名敵人後，發現所在地點的一個線索。(每輪只限一次)"
         ],
-        "star": "所在地點線索*1"
+        "star": "所在地點線索*1",
+        "deck":{"Gd":5,"Sk":2,"Nt":5}
     },
     {
         "name": "Daisy Walker",
@@ -31,7 +32,8 @@
         "STA": 5,
         "SAN": 9,
         "desc": "You may take an additional action during your turn, which can only be used on Tome action abilities.",
-        "eldritch": "+0. If you succeed, draw 1 card for each Tome you control"
+        "eldritch": "+0. If you succeed, draw 1 card for each Tome you control",
+        "deck":{"Sk":5,"Ms":2,"Nt":5}
     },
     {
         "name": "\"Skids\" O’Toole",
@@ -46,7 +48,8 @@
         "STA": 8,
         "SAN": 6,
         "desc": "Fast Reaction: During your turn, spend 2 resources: You may take an additional action this turn (Limit once per turn)",
-        "eldritch": "+2. If you succeed, gain 2 resources."
+        "eldritch": "+2. If you succeed, gain 2 resources.",
+        "deck":{"Rg":5,"Gd":2,"Nt":5}
     },
     {
         "name": "Agnes Baker",
@@ -61,7 +64,8 @@
         "STA": 6,
         "SAN": 8,
         "desc": "Reaction Trigger: After 1 or more horror is placed on Agnes Baker: Deal 1 damage to an enemy at your location (Limit once per phase)",
-        "eldritch": "+1 for each horror on Agnes Baker."
+        "eldritch": "+1 for each horror on Agnes Baker.",
+        "deck":{"Ms":5,"Sv":2,"Nt":5}
     },
     {
         "name": "Wendy Adams",
@@ -78,6 +82,7 @@
         "desc": "Reaction Trigger: When you reveal a chaos token, choose and discard 1 card from your hand: Cancel that chaos token and return it to the bag. Reveal a new chaos token (Limit once per turn)",
         "eldritch": "+0. If Wendy’s Amulet is in play, you automatically succeed instead.",
         "feature": "丟棄一張手牌重新檢定一次。(每次檢定只限一次)",
-        "star": "如果溫娣的護身符在場，自動成功"
+        "star": "如果溫娣的護身符在場，自動成功",
+        "deck":{"Sv":5,"Rg":2,"Nt":5}
     }
 ]

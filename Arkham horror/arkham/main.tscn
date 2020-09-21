@@ -28,18 +28,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Level" type="OptionButton" parent="."]
-anchor_left = 1.0
-anchor_right = 1.0
-margin_left = -133.0
-margin_bottom = 27.0
-text = "Easy"
-items = [ "Easy", null, false, 0, null, "Standard", null, false, 1, null, "Hard", null, false, 2, null, "Expert", null, false, 3, null ]
-selected = 0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="HBox" type="HBoxContainer" parent="."]
 anchor_right = 0.659
 anchor_bottom = 1.0
@@ -47,6 +35,13 @@ margin_right = 0.18396
 __meta__ = {
 "_edit_use_anchors_": true
 }
+
+[node name="CharaList" type="ItemList" parent="HBox"]
+margin_right = 335.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+icon_mode = 0
+fixed_icon_size = Vector2( 120, 90 )
 
 [node name="CharaRT" type="RichTextLabel" parent="HBox"]
 visible = false
@@ -63,9 +58,13 @@ __meta__ = {
 }
 
 [node name="img" type="VBoxContainer" parent="HBox"]
+margin_left = 339.0
+margin_right = 674.0
 margin_bottom = 600.0
+size_flags_horizontal = 3
 
 [node name="front" type="TextureRect" parent="HBox/img"]
+margin_right = 335.0
 margin_bottom = 298.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -75,6 +74,7 @@ __meta__ = {
 
 [node name="back" type="TextureRect" parent="HBox/img"]
 margin_top = 302.0
+margin_right = 335.0
 margin_bottom = 600.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -96,25 +96,36 @@ __meta__ = {
 
 [node name="ItemList" type="ItemList" parent="."]
 anchor_left = 0.706169
-anchor_top = 0.0742638
+anchor_top = 0.0721639
 anchor_right = 0.967888
-anchor_bottom = 0.867597
+anchor_bottom = 0.865497
 __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Enemy" type="Control" parent="."]
-visible = false
+[node name="story" type="HBoxContainer" parent="."]
+anchor_left = 1.0
 anchor_right = 1.0
-anchor_bottom = 1.0
+margin_left = -441.0
+margin_bottom = 40.0
+alignment = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="EnemyRT" type="RichTextLabel" parent="Enemy"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-script = ExtResource( 4 )
+[node name="story" type="OptionButton" parent="story"]
+margin_right = 218.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+
+[node name="Level" type="OptionButton" parent="story"]
+margin_left = 222.0
+margin_right = 441.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+text = "Easy"
+items = [ "Easy", null, false, 0, null, "Standard", null, false, 1, null, "Hard", null, false, 2, null, "Expert", null, false, 3, null ]
+selected = 0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -168,8 +179,25 @@ text = "Encounter"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="item_selected" from="Level" to="." method="_on_Level_item_selected"]
+
+[node name="Enemy" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EnemyRT" type="RichTextLabel" parent="Enemy"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="item_activated" from="ItemList" to="." method="_on_ItemList_item_activated"]
 [connection signal="item_selected" from="ItemList" to="." method="_on_ItemList_item_selected"]
+[connection signal="item_selected" from="story/Level" to="." method="_on_Level_item_selected"]
 [connection signal="pressed" from="Start" to="." method="_on_Start_pressed"]
 [connection signal="pressed" from="Config/CardSet" to="." method="_on_CardSet_pressed"]
 [connection signal="pressed" from="Config/Scenario" to="." method="_on_Scenario_pressed"]

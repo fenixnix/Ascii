@@ -8,6 +8,8 @@ func _ready():
 		$ItemList.add_item("#%s: %s"%[c.id,c.name])
 		$ItemList.set_item_custom_fg_color($ItemList.get_item_count()-1,GlbDb.class_color[c["class"]])
 	_on_ItemList_item_selected(0)
+	for s in GlbDb.ectDb.keys():
+		$story/story.add_item(s)
 	_on_Level_item_selected(0)
 
 func _on_ItemList_item_selected(index):
@@ -38,3 +40,6 @@ func _on_Start_pressed():
 func _on_Scenario_pressed():
 	var ui = load("Scenario.tscn").instance()
 	add_child(ui)
+
+func _on_ItemList_item_activated(index):
+	$HBox/CharaList.add_item(GlbDb.charaDb[index].name,GlbDb.CardImg(GlbDb.charaDb[index].img))

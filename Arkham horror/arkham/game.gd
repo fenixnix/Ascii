@@ -11,7 +11,7 @@ var discard = []
 
 func _ready():
 	rand_seed(OS.get_ticks_msec())
-	$CharaRT.Set(GlbDat.chara)
+	#$CharaRT.Set(GlbDat.chara)
 	for index in GlbDat.deck:
 		deck.append(GlbDb.cardDb[index])
 	deck.shuffle()

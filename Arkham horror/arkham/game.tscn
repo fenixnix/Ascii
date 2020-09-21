@@ -12,6 +12,27 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="msg" type="Panel" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -345.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Message" type="RichTextLabel" parent="msg"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 2
+bbcode_enabled = true
+scroll_following = true
+selection_enabled = true
+override_selected_font_color = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Status" type="RichTextLabel" parent="."]
 anchor_left = 0.261719
 anchor_top = 0.168333
