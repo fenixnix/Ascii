@@ -1,0 +1,48 @@
+Physical Training (2)	 Guardian	0	Asset	   	Talent.	Return to the Night of the Zealot 1	
+Dynamite Blast (2)	 Guardian	4	Event	 	Tactic.	Return to the Night of the Zealot 2	
+Hyperawareness (2)	 Seeker	0	Asset	   	Talent.	Return to the Night of the Zealot 3	
+Barricade (3)	 Seeker	0	Event	  	Insight. Tactic.	Return to the Night of the Zealot 4	
+Hard Knocks (2)	 Rogue	0	Asset	   	Talent.	Return to the Night of the Zealot 5	
+Hot Streak (2)	 Rogue	5	Event		Fortune.	Return to the Night of the Zealot 6	
+Arcane Studies (2)	 Mystic	0	Asset	   	Talent.	Return to the Night of the Zealot 7	
+Mind Wipe (3)	 Mystic	1	Event	 	Spell.	Return to the Night of the Zealot 8	
+Dig Deep (2)	 Survivor	0	Asset	   	Talent.	Return to the Night of the Zealot 9	
+Rabbit's Foot (3)	 Survivor	1	Asset		Item. Charm.	Return to the Night of the Zealot 10	
+Return to The Gathering	Mythos		Scenario			Return to the Night of the Zealot 11	Return to the Gathering 1
+Mysterious Gateway	Mythos		Act			Return to the Night of the Zealot 12	Return to the Gathering 2
+Study: Aberrant Gateway	Mythos		Location			Return to the Night of the Zealot 13	Return to the Gathering 3
+Guest Hall	Mythos		Location			Return to the Night of the Zealot 14	Return to the Gathering 4
+Bedroom	Mythos		Location			Return to the Night of the Zealot 15	Return to the Gathering 5
+Bathroom	Mythos		Location			Return to the Night of the Zealot 16	Return to the Gathering 6
+Hallway	Mythos		Location			Return to the Night of the Zealot 17	Return to the Gathering 7
+Attic	Mythos		Location			Return to the Night of the Zealot 18	Return to the Gathering 8
+Field of Graves	Mythos		Location			Return to the Night of the Zealot 19	Return to the Gathering 9
+Cellar	Mythos		Location			Return to the Night of the Zealot 20	Return to the Gathering 10
+Ghoul Pits	Mythos		Location			Return to the Night of the Zealot 21	Return to the Gathering 11
+Corpse-Hungry Ghoul	Mythos		Enemy		Humanoid. Monster. Ghoul.	Return to the Night of the Zealot 22	Return to the Gathering 12
+Ghoul from the Depths	Mythos		Enemy		Humanoid. Monster. Ghoul.	Return to the Night of the Zealot 23	Return to the Gathering 13
+The Zealot's Seal	Mythos		Treachery		Hex.	Return to the Night of the Zealot 24	Return to the Gathering 15-16
+Return to The Midnight Masks	Mythos		Scenario			Return to the Night of the Zealot 25	Return to the Midnight Masks 1
+Narôgath: The Charnel Lord	Mythos		Enemy		Humanoid. Monster. Cultist. Elite.	Return to the Night of the Zealot 26	Return to the Midnight Masks 2
+Predator or Prey?	Mythos		Agenda			Return to the Night of the Zealot 26	Return to the Midnight Masks 2
+Easttown: Arkham Police Station	Mythos		Location		Arkham.	Return to the Night of the Zealot 27	Return to the Midnight Masks 3
+Northside: Train Station	Mythos		Location		Arkham.	Return to the Night of the Zealot 28	Return to the Midnight Masks 4
+Miskatonic University: Miskatonic Museum	Mythos		Location		Arkham.	Return to the Night of the Zealot 29	Return to the Midnight Masks 5
+Rivertown: Abandoned Warehouse	Mythos		Location		Arkham. Central.	Return to the Night of the Zealot 30	Return to the Midnight Masks 6
+Masked Horrors	Mythos		Treachery		Power. Scheme.	Return to the Night of the Zealot 31	Return to the Midnight Masks 7-8
+Return to The Devourer Below	Mythos		Scenario			Return to the Night of the Zealot 32	Return to the Devourer Below 1
+Vault of Earthly Demise	Mythos		Treachery		Eldritch. Otherworld.	Return to the Night of the Zealot 32	Return to the Devourer Below 1
+Arkham Woods: Great Willow	Mythos		Location		Woods.	Return to the Night of the Zealot 33	Return to the Devourer Below 2
+Arkham Woods: Lakeside	Mythos		Location		Woods.	Return to the Night of the Zealot 34	Return to the Devourer Below 3
+Arkham Woods: Corpse-Ridden Clearing	Mythos		Location		Woods.	Return to the Night of the Zealot 35	Return to the Devourer Below 4
+Arkham Woods: Wooden Bridge	Mythos		Location		Woods.	Return to the Night of the Zealot 36	Return to the Devourer Below 5
+Umôrdhoth's Hunger	Mythos		Treachery		Power.	Return to the Night of the Zealot 37	Return to the Devourer Below 6-7
+Grave-Eater	Mythos		Enemy		Humanoid. Monster. Ghoul.	Return to the Night of the Zealot 38	Ghouls of Umôrdhoth 1-3
+Acolyte of Umôrdhoth	Mythos		Enemy		Humanoid. Monster. Ghoul.	Return to the Night of the Zealot 39	Ghouls of Umôrdhoth 4
+Chill from Below	Mythos		Treachery		Hazard.	Return to the Night of the Zealot 40	Ghouls of Umôrdhoth 5-7
+Disciple of the Devourer	Mythos		Enemy		Humanoid. Cultist.	Return to the Night of the Zealot 41	The Devourers Cult 1-3
+Corpse-Taker	Mythos		Enemy		Monster. Servitor. Cultist.	Return to the Night of the Zealot 42	The Devourers Cult 4
+Mask of Umôrdhoth	Mythos		Treachery		Item. Mask.	Return to the Night of the Zealot 43	The Devourers Cult 5-6
+Jeremiah Pierce: Your Next-Door Neighbor	Mythos		Enemy		Humanoid. Cultist.	Return to the Night of the Zealot 44	Return Cult of Umôrdhoth 1
+Billy Cooper: The Crooked Cop	Mythos		Enemy		Humanoid. Cultist.	Return to the Night of the Zealot 45	Return Cult of Umôrdhoth 2
+Alma Hill: The Inquisitive Historian	Mythos		Enemy		Humanoid. Cultist.	Return to the Night of the Zealot 46	Return Cult of Umôrdhoth 3

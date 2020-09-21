@@ -1,0 +1,129 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenario.gd" type="Script" id=1]
+
+[node name="Scenario" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="progress" type="HBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -368.0
+margin_right = 368.0
+margin_bottom = 332.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="agenda" type="VBoxContainer" parent="progress"]
+margin_right = 366.0
+margin_bottom = 332.0
+size_flags_horizontal = 3
+
+[node name="OptionButton2" type="OptionButton" parent="progress/agenda"]
+margin_right = 366.0
+margin_bottom = 27.0
+
+[node name="TextureRect2" type="TextureRect" parent="progress/agenda"]
+margin_top = 31.0
+margin_right = 366.0
+margin_bottom = 332.0
+size_flags_vertical = 3
+
+[node name="act" type="VBoxContainer" parent="progress"]
+margin_left = 370.0
+margin_right = 736.0
+margin_bottom = 332.0
+size_flags_horizontal = 3
+
+[node name="OptionButton" type="OptionButton" parent="progress/act"]
+margin_right = 366.0
+margin_bottom = 27.0
+
+[node name="TextureRect" type="TextureRect" parent="progress/act"]
+margin_top = 31.0
+margin_right = 366.0
+margin_bottom = 332.0
+size_flags_vertical = 3
+
+[node name="scenario" type="VBoxContainer" parent="."]
+margin_right = 160.0
+margin_bottom = 204.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="scenario_sel" type="OptionButton" parent="scenario"]
+margin_right = 160.0
+margin_bottom = 27.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="scenario"]
+visible = false
+margin_top = 31.0
+margin_right = 160.0
+margin_bottom = 204.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Location" type="HBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1023.0
+margin_top = 335.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Location" type="TextureRect" parent="Location"]
+margin_right = 509.0
+margin_bottom = 265.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="locLst" type="ItemList" parent="Location"]
+margin_left = 513.0
+margin_right = 1023.0
+margin_bottom = 265.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -37.0
+margin_top = -27.0
+text = "OK"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="item_focused" from="progress/agenda/OptionButton2" to="." method="_on_OptionButton2_item_focused"]
+[connection signal="item_selected" from="progress/agenda/OptionButton2" to="." method="_on_OptionButton2_item_selected"]
+[connection signal="item_focused" from="progress/act/OptionButton" to="." method="_on_OptionButton_item_focused"]
+[connection signal="item_selected" from="progress/act/OptionButton" to="." method="_on_OptionButton_item_selected"]
+[connection signal="item_selected" from="scenario/scenario_sel" to="." method="_on_scenario_sel_item_selected"]
+[connection signal="mouse_entered" from="scenario/scenario_sel" to="." method="_on_scenario_sel_mouse_entered"]
+[connection signal="mouse_exited" from="scenario/scenario_sel" to="." method="_on_scenario_sel_mouse_exited"]
+[connection signal="item_selected" from="Location/locLst" to="." method="_on_locLst_item_selected"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

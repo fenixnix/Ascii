@@ -1,0 +1,39 @@
+| id          | en                                   | zh                                   |
+|-------------+--------------------------------------+--------------------------------------|
+| continue    | Continue                             | 继续游戏                             |
+| new_game    | New Game                             | 新游戏                               |
+| sandbox     | Sandbox                              | 沙盒                                 |
+| option      | Option                               | 选项                                 |
+| exit        | Exit                                 | 退出                                 |
+| width       | Width                                | 宽                                   |
+| height      | Height                               | 高                                   |
+| depth       | Depth                                | 深                                   |
+| dfs         | Depth First                          | 深度优先                             |
+| prim        | Prim                                 | 广度优先                             |
+| fog         | Fog                                  | 迷雾                                 |
+| food        | Food                                 | 食物                                 |
+| enemy       | Enemy                                | 敌人                                 |
+| camera_mode | Camera Mode                          | 相机跟踪                             |
+| zoom        | Zoom                                 | 视野                                 |
+| back        | Back                                 | 返回                                 |
+| start       | Start                                | 开始                                 |
+| victory     | Victory                              | 胜利                                 |
+| retry       | Retry                                | 重试                                 |
+| menu        | Menu                                 | 菜单                                 |
+| resume      | Resume                               | 继续                                 |
+| restart     | Restart                              | 重新开始                             |
+| config      | Config                               | 设置                                 |
+| fullscreen  | Full Screen                          | 全屏                                 |
+| resolution  | Resolution                           | 分辨率                               |
+| theme       | Theme                                | 主题                                 |
+| BGM         | BGM                                  | 音乐                                 |
+| SFX         | SFX                                  | 音效                                 |
+| default     | Default                              | 默认                                 |
+| apply       | Apply                                | 确认                                 |
+| language    | Language                             | 语言                                 |
+| english     | English                              | 英语                                 |
+| chinese     | Chinese                              | 中文                                 |
+| graphic     | Graphic                              | 图像                                 |
+| audio       | Audio                                | 音频                                 |
+| title       | Maze                                 | 迷宫                                 |
+| icon        | res://Image/platformPack_item003.png | res://Image/platformPack_item004.png |

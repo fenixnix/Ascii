@@ -1,0 +1,16 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+
+[deps]
+
+files=[ "res://maze_tr.en.translation", "res://maze_tr.zh.translation" ]
+
+source_file="res://maze_tr.csv"
+dest_files=[ "res://maze_tr.en.translation", "res://maze_tr.zh.translation" ]
+
+[params]
+
+compress=true
+delimiter=0

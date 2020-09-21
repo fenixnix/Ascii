@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/medieval_tilesheet.png-92a9ea6971ca89bd40afb4f0f78777f2.image"
+
+[deps]
+
+source_file="res://medieval_tilesheet.png"
+dest_files=[ "res://.import/medieval_tilesheet.png-92a9ea6971ca89bd40afb4f0f78777f2.image" ]
+
+[params]
+

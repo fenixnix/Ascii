@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Partical/ParticalTestbed.shader" type="Shader" id=1]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 1 )
+
+[sub_resource type="QuadMesh" id=2]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Particles" type="Particles" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.108948 )
+process_material = SubResource( 1 )
+draw_pass_1 = SubResource( 2 )
+
+[node name="InterpolatedCamera" type="InterpolatedCamera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.48105 )
+target = NodePath("../Particles")
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 0.0094595, 0.999955, 2.81915e-10, -0.322763, 0.00305331, 0.946475, 0.946432, -0.00895317, 0.322778, 0, 8.71779, 0 )

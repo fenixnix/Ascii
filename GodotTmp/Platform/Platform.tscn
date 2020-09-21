@@ -1,0 +1,90 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Platform/scribble.tres" type="TileSet" id=1]
+[ext_resource path="res://Platform/Avatar.tscn" type="PackedScene" id=2]
+[ext_resource path="res://NixLib/Common/Camera.gd" type="Script" id=3]
+[ext_resource path="res://Platform/Image/BG/background_cloudA.png" type="Texture" id=4]
+[ext_resource path="res://Platform/Image/BG/background_cloudB.png" type="Texture" id=5]
+[ext_resource path="res://Platform/Image/BG/background_tree.png" type="Texture" id=6]
+[ext_resource path="res://Platform/Image/BG/background_treeLarge.png" type="Texture" id=7]
+[ext_resource path="res://NixLib/Controller/CtrlPlatformMove.gd" type="Script" id=8]
+[ext_resource path="res://Platform/Unit.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Platform/AI.gd" type="Script" id=10]
+
+
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 100, 50 )
+
+[node name="Platform" type="Node2D"]
+
+[node name="BG" type="Node2D" parent="."]
+
+[node name="background_treeLarge2" type="Sprite" parent="BG"]
+position = Vector2( 423.712, -67.7991 )
+texture = ExtResource( 7 )
+
+[node name="background_tree" type="Sprite" parent="BG"]
+position = Vector2( -354.077, -63.2771 )
+texture = ExtResource( 6 )
+
+[node name="background_cloudA" type="Sprite" parent="BG"]
+position = Vector2( -378.257, -339.393 )
+texture = ExtResource( 4 )
+
+[node name="background_cloudB" type="Sprite" parent="BG"]
+position = Vector2( -141.138, -225.266 )
+texture = ExtResource( 5 )
+
+[node name="background_cloudB2" type="Sprite" parent="BG"]
+position = Vector2( 526.211, -284.856 )
+texture = ExtResource( 5 )
+
+[node name="background_cloudA2" type="Sprite" parent="BG"]
+position = Vector2( 272.978, -459.708 )
+texture = ExtResource( 4 )
+
+[node name="background_treeLarge" type="Sprite" parent="BG"]
+position = Vector2( 24.2662, -60.2624 )
+texture = ExtResource( 7 )
+
+[node name="BGTile" type="TileMap" parent="."]
+visible = false
+tile_set = ExtResource( 1 )
+format = 1
+tile_data = PoolIntArray( -131072, 14, 0, -131071, 14, 0, -131070, 14, 0, -131069, 14, 0, -131068, 14, 0, -131067, 14, 0, -131066, 14, 0, -131065, 14, 0, -131064, 14, 0, -131063, 14, 0, -65536, 14, 0, -65535, 14, 0, -65534, 11, 0, -65533, 14, 0, -65532, 14, 0, -65531, 14, 0, -65530, 14, 0, -65529, 14, 0, -65528, 14, 0, -65527, 14, 0 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+format = 1
+tile_data = PoolIntArray( -720904, 13, 0, -786416, 13, 0, -655368, 13, 0, -720880, 13, 0, -589832, 13, 0, -655344, 13, 0, -524296, 13, 0, -589808, 13, 0, -458760, 13, 0, -524272, 13, 0, -393224, 13, 0, -458736, 13, 0, -327688, 13, 0, -393214, 34, 0, -393200, 13, 0, -262152, 13, 0, -327676, 34, 0, -327664, 13, 0, -196616, 13, 0, -262141, 36, 0, -262128, 13, 0, -131080, 13, 0, -196606, 35, 0, -196605, 35, 0, -196604, 35, 0, -196592, 13, 0, -65544, 13, 0, -131070, 37, 0, -131067, 15, 0, -131066, 15, 0, -131065, 15, 0, -131056, 13, 0, -8, 13, 0, -5, 45, 0, -4, 45, 0, -3, 45, 0, -65535, 7, 0, -65534, 37, 0, -65532, 15, 0, -65520, 13, 0, 65528, 13, 0, 65529, 32, 0, 65530, 32, 0, 65531, 32, 0, 65532, 32, 0, 65533, 32, 0, 65534, 32, 0, 65535, 32, 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 15, 0, 11, 15, 0, 12, 15, 0, 13, 15, 0, 14, 15, 0, 15, 15, 0, 16, 13, 0, 131064, 13, 0, 65552, 13, 0, 196600, 13, 0, 131088, 13, 0, 262136, 13, 0, 262137, 13, 0, 262138, 13, 0, 262139, 13, 0, 262140, 13, 0, 262141, 13, 0, 262142, 13, 0, 262143, 13, 0, 196608, 13, 0, 196609, 13, 0, 196610, 13, 0, 196611, 13, 0, 196612, 13, 0, 196613, 13, 0, 196614, 13, 0, 196615, 13, 0, 196616, 13, 0, 196617, 13, 0, 196618, 13, 0, 196619, 13, 0, 196620, 13, 0, 196621, 13, 0, 196622, 13, 0, 196623, 13, 0, 196624, 13, 0 )
+
+[node name="Units" type="Node2D" parent="."]
+
+[node name="Avatar" parent="Units" instance=ExtResource( 2 )]
+
+[node name="Camera2D_Zoom" type="Camera2D" parent="Units/Avatar"]
+current = true
+script = ExtResource( 3 )
+
+[node name="CtrlPlatformMove" type="Node" parent="Units/Avatar"]
+script = ExtResource( 8 )
+acc = 512
+
+[node name="AI" type="Node" parent="Units"]
+script = ExtResource( 10 )
+
+[node name="Unit" parent="Units/AI" instance=ExtResource( 9 )]
+position = Vector2( 547.369, -42.1053 )
+collision_layer = 1
+
+[node name="Timer" type="Timer" parent="Units"]
+wait_time = 2.0
+autostart = true
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="HUD"]
+position = Vector2( -6.50708, 377.412 )
+shape = SubResource( 1 )
+[connection signal="timeout" from="Units/Timer" to="Units/AI" method="_on_Timer_timeout"]

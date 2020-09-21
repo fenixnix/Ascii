@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://TowerDefence/HUD/PopupList.gd" type="Script" id=1]
+
+[node name="PopupList" type="PopupMenu"]
+margin_right = 58.0
+margin_bottom = 52.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="index_pressed" from="." to="." method="_on_PopupList_index_pressed"]

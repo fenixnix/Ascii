@@ -1,0 +1,62 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://TxDialog.gd" type="Script" id=1]
+
+[node name="Tx" type="Panel"]
+margin_left = -0.926132
+margin_top = 0.358536
+margin_right = 203.074
+margin_bottom = 174.359
+script = ExtResource( 1 )
+
+[node name="From" type="LineEdit" parent="."]
+margin_left = 71.4702
+margin_top = 16.2385
+margin_right = 187.47
+margin_bottom = 40.2385
+text = "ADR000"
+
+[node name="Label" type="Label" parent="From"]
+margin_left = -50.4702
+margin_right = -10.4702
+margin_bottom = 14.0
+text = "From:"
+
+[node name="To" type="LineEdit" parent="."]
+margin_left = 67.0
+margin_top = 45.5034
+margin_right = 189.0
+margin_bottom = 69.5034
+text = "ADR001"
+
+[node name="Label" type="Label" parent="To"]
+margin_left = -47.4702
+margin_top = 5.79472
+margin_right = -5.47018
+margin_bottom = 19.7947
+text = "To:"
+
+[node name="Value" type="SpinBox" parent="."]
+margin_left = 49.8544
+margin_top = 80.1789
+margin_right = 183.854
+margin_bottom = 105.179
+hint_tooltip = "Balance"
+max_value = 99999.0
+value = 1000.0
+
+[node name="SpinBox" type="SpinBox" parent="."]
+margin_left = 47.0596
+margin_top = 110.649
+margin_right = 188.06
+margin_bottom = 134.649
+hint_tooltip = "Gas"
+value = 3.0
+
+[node name="TxBtn" type="Button" parent="."]
+margin_left = 160.2
+margin_top = 140.6
+margin_right = 194.2
+margin_bottom = 164.6
+text = "+Tx"
+[connection signal="pressed" from="TxBtn" to="." method="_on_TxBtn_pressed"]

@@ -1,0 +1,182 @@
+Roland Banks: The Fed	 Guardian		Investigator		Agency. Detective.	Core Set 1	
+Daisy Walker: The Librarian	 Seeker		Investigator		Miskatonic.	Core Set 2	
+"Skids" O'Toole: The Ex-Con	 Rogue		Investigator		Criminal.	Core Set 3	
+Agnes Baker: The Waitress	 Mystic		Investigator		Sorcerer.	Core Set 4	
+Wendy Adams: The Urchin	 Survivor		Investigator		Drifter.	Core Set 5	
+Roland's .38 Special	Neutral	3	Asset	  	Item. Weapon. Firearm.	Core Set 6	
+Cover Up	Neutral		Treachery		Task.	Core Set 7	
+Daisy's Tote Bag	Neutral	2	Asset	  	Item.	Core Set 8	
+The Necronomicon: John Dee Translation	Neutral		Asset		Item. Tome.	Core Set 9	
+On the Lam	Neutral	1	Event	   	Tactic.	Core Set 10	
+Hospital Debts	Neutral		Treachery		Task.	Core Set 11	
+Heirloom of Hyperborea: Artifact from Another Life	Neutral	3	Asset	  	Item. Relic.	Core Set 12	
+Dark Memory	Neutral	2	Event		Spell.	Core Set 13	
+Wendy's Amulet	Neutral	2	Asset	 	Item. Relic.	Core Set 14	
+Abandoned and Alone	Neutral		Treachery		Madness.	Core Set 15	
+.45 Automatic	 Guardian	4	Asset		Item. Weapon. Firearm.	Core Set 16	
+Physical Training	 Guardian	2	Asset	 	Talent.	Core Set 17	
+Beat Cop	 Guardian	4	Asset		Ally. Police.	Core Set 18	
+First Aid	 Guardian	2	Asset		Talent. Science.	Core Set 19	
+Machete	 Guardian	3	Asset		Item. Weapon. Melee.	Core Set 20	
+Guard Dog	 Guardian	3	Asset		Ally. Creature.	Core Set 21	
+Evidence!	 Guardian	1	Event	 	Insight.	Core Set 22	
+Dodge	 Guardian	1	Event	 	Tactic.	Core Set 23	
+Dynamite Blast	 Guardian	5	Event		Tactic.	Core Set 24	
+Vicious Blow	 Guardian		Skill		Practiced.	Core Set 25	
+Extra Ammunition (1)	 Guardian	2	Event		Supply.	Core Set 26	
+Police Badge (2)	 Guardian	3	Asset	 	Item.	Core Set 27	
+Beat Cop (2)	 Guardian	4	Asset	 	Ally. Police.	Core Set 28	
+Shotgun (4)	 Guardian	5	Asset	 	Item. Weapon. Firearm.	Core Set 29	
+Magnifying Glass	 Seeker	1	Asset		Item. Tool.	Core Set 30	
+Old Book of Lore	 Seeker	3	Asset		Item. Tome.	Core Set 31	
+Research Librarian	 Seeker	2	Asset		Ally. Miskatonic.	Core Set 32	
+Dr. Milan Christopher: Professor of Entomology	 Seeker	4	Asset		Ally. Miskatonic.	Core Set 33	
+Hyperawareness	 Seeker	2	Asset	 	Talent.	Core Set 34	
+Medical Texts	 Seeker	2	Asset		Item. Tome.	Core Set 35	
+Mind over Matter	 Seeker	1	Event	 	Insight.	Core Set 36	
+Working a Hunch	 Seeker	2	Event	 	Insight.	Core Set 37	
+Barricade	 Seeker	0	Event	  	Insight. Tactic.	Core Set 38	
+Deduction	 Seeker		Skill		Practiced.	Core Set 39	
+Magnifying Glass (1)	 Seeker	0	Asset		Item. Tool.	Core Set 40	
+Disc of Itzamna: Protective Amulet (2)	 Seeker	3	Asset	  	Item. Relic.	Core Set 41	
+Encyclopedia (2)	 Seeker	2	Asset		Item. Tome.	Core Set 42	
+Cryptic Research (4)	 Seeker	0	Event		Insight.	Core Set 43	
+Switchblade	 Rogue	1	Asset		Item. Weapon. Melee. Illicit.	Core Set 44	
+Burglary	 Rogue	1	Asset		Talent. Illicit.	Core Set 45	
+Pickpocketing	 Rogue	2	Asset		Talent. Illicit.	Core Set 46	
+.41 Derringer	 Rogue	3	Asset		Item. Weapon. Firearm. Illicit.	Core Set 47	
+Leo De Luca: The Louisiana Lion	 Rogue	6	Asset		Ally. Criminal.	Core Set 48	
+Hard Knocks	 Rogue	2	Asset	 	Talent.	Core Set 49	
+Elusive	 Rogue	2	Event	 	Tactic.	Core Set 50	
+Backstab	 Rogue	3	Event	 	Tactic.	Core Set 51	
+Sneak Attack	 Rogue	2	Event	 	Tactic.	Core Set 52	
+Opportunist	 Rogue		Skill		Innate.	Core Set 53	
+Leo De Luca: The Louisiana Lion (1)	 Rogue	5	Asset		Ally. Criminal.	Core Set 54	
+Cat Burglar (1)	 Rogue	4	Asset	 	Ally. Criminal.	Core Set 55	
+Sure Gamble (3)	 Rogue	2	Event		Fortune. Insight.	Core Set 56	
+Hot Streak (4)	 Rogue	3	Event		Fortune.	Core Set 57	
+Forbidden Knowledge	 Mystic	0	Asset		Talent.	Core Set 58	
+Holy Rosary	 Mystic	2	Asset		Item. Charm.	Core Set 59	
+Shrivelling	 Mystic	3	Asset		Spell.	Core Set 60	
+Scrying	 Mystic	1	Asset		Spell.	Core Set 61	
+Arcane Studies	 Mystic	2	Asset	 	Talent.	Core Set 62	
+Arcane Initiate	 Mystic	1	Asset		Ally. Sorcerer.	Core Set 63	
+Drawn to the Flame	 Mystic	0	Event	 	Insight.	Core Set 64	
+Ward of Protection	 Mystic	1	Event		Spell. Spirit.	Core Set 65	
+Blinding Light	 Mystic	2	Event	 	Spell.	Core Set 66	
+Fearless	 Mystic		Skill		Innate.	Core Set 67	
+Mind Wipe (1)	 Mystic	1	Event	 	Spell.	Core Set 68	
+Blinding Light (2)	 Mystic	1	Event	 	Spell.	Core Set 69	
+Book of Shadows (3)	 Mystic	4	Asset	 	Item. Tome.	Core Set 70	
+Grotesque Statue (4)	 Mystic	2	Asset		Item. Relic.	Core Set 71	
+Leather Coat	 Survivor	0	Asset		Item. Armor.	Core Set 72	
+Scavenging	 Survivor	1	Asset		Talent.	Core Set 73	
+Baseball Bat	 Survivor	2	Asset		Item. Weapon. Melee.	Core Set 74	
+Rabbit's Foot	 Survivor	1	Asset		Item. Charm.	Core Set 75	
+Stray Cat	 Survivor	1	Asset		Ally. Creature.	Core Set 76	
+Dig Deep	 Survivor	2	Asset	 	Talent.	Core Set 77	
+Cunning Distraction	 Survivor	5	Event	 	Tactic.	Core Set 78	
+"Look what I found!"	 Survivor	2	Event	 	Fortune.	Core Set 79	
+Lucky!	 Survivor	1	Event		Fortune.	Core Set 80	
+Survival Instinct	 Survivor		Skill		Innate.	Core Set 81	
+Aquinnah: The Forgotten Daughter (1)	 Survivor	5	Asset		Ally.	Core Set 82	
+Close Call (2)	 Survivor	2	Event	 	Fortune.	Core Set 83	
+Lucky! (2)	 Survivor	1	Event		Fortune.	Core Set 84	
+Will to Survive (3)	 Survivor	4	Event	 	Spirit.	Core Set 85	
+Knife	Neutral	1	Asset		Item. Weapon. Melee.	Core Set 86	
+Flashlight	Neutral	2	Asset		Item. Tool.	Core Set 87	
+Emergency Cache	Neutral	0	Event		Supply.	Core Set 88	
+Guts	Neutral		Skill	 	Innate.	Core Set 89	
+Perception	Neutral		Skill	 	Practiced.	Core Set 90	
+Overpower	Neutral		Skill	 	Practiced.	Core Set 91	
+Manual Dexterity	Neutral		Skill	 	Innate.	Core Set 92	
+Unexpected Courage	Neutral		Skill	 	Innate.	Core Set 93	
+Bulletproof Vest (3)	Neutral	2	Asset	 	Item. Armor.	Core Set 94	
+Elder Sign Amulet (3)	Neutral	2	Asset	 	Item. Relic.	Core Set 95	
+Amnesia	Neutral		Treachery		Madness.	Core Set 96	
+Paranoia	Neutral		Treachery		Madness.	Core Set 97	
+Haunted	Neutral		Treachery		Curse.	Core Set 98	
+Psychosis	Neutral		Treachery		Madness.	Core Set 99	
+Hypochondria	Neutral		Treachery		Madness.	Core Set 100	
+Mob Enforcer	Neutral		Enemy		Humanoid. Criminal.	Core Set 101	
+Silver Twilight Acolyte	Neutral		Enemy		Humanoid. Cultist. Silver Twilight.	Core Set 102	
+Stubborn Detective	Neutral		Enemy		Humanoid. Detective.	Core Set 103	
+The Gathering	Mythos		Scenario			Core Set 104	The Gathering 1
+What's Going On?!	Mythos		Agenda			Core Set 105	The Gathering 2
+Rise of the Ghouls	Mythos		Agenda			Core Set 106	The Gathering 3
+They're Getting Out!	Mythos		Agenda			Core Set 107	The Gathering 4
+Trapped	Mythos		Act			Core Set 108	The Gathering 5
+The Barrier	Mythos		Act			Core Set 109	The Gathering 6
+What Have You Done?	Mythos		Act			Core Set 110	The Gathering 7
+Study	Mythos		Location			Core Set 111	The Gathering 8
+Hallway	Mythos		Location			Core Set 112	The Gathering 9
+Attic	Mythos		Location			Core Set 113	The Gathering 10
+Cellar	Mythos		Location			Core Set 114	The Gathering 11
+Parlor	Mythos		Location			Core Set 115	The Gathering 12
+Ghoul Priest	Mythos		Enemy		Humanoid. Monster. Ghoul. Elite.	Core Set 116	The Gathering 13
+Lita Chantler: The Zealot	Neutral	0	Asset		Ally.	Core Set 117	The Gathering 14
+Flesh-Eater	Mythos		Enemy		Humanoid. Monster. Ghoul.	Core Set 118	The Gathering 15
+Icy Ghoul	Mythos		Enemy		Humanoid. Monster. Ghoul.	Core Set 119	The Gathering 16
+The Midnight Masks	Mythos		Scenario			Core Set 120	The Midnight Masks 1
+Predator or Prey	Mythos		Agenda			Core Set 121	The Midnight Masks 2
+Time Is Running Short	Mythos		Agenda			Core Set 122	The Midnight Masks 3
+Uncovering the Conspiracy	Mythos		Act			Core Set 123	The Midnight Masks 4
+Your House	Mythos		Location		Arkham.	Core Set 124	The Midnight Masks 5
+Rivertown	Mythos		Location		Arkham. Central.	Core Set 125	The Midnight Masks 6
+Southside: Historical Society	Mythos		Location		Arkham.	Core Set 126	The Midnight Masks 7
+Southside: Ma's Boarding House	Mythos		Location		Arkham.	Core Set 127	The Midnight Masks 8
+St. Mary's Hospital	Mythos		Location		Arkham.	Core Set 128	The Midnight Masks 9
+Miskatonic University	Mythos		Location		Arkham.	Core Set 129	The Midnight Masks 10
+Downtown: First Bank of Arkham	Mythos		Location		Arkham.	Core Set 130	The Midnight Masks 11
+Downtown: Arkham Asylum	Mythos		Location		Arkham.	Core Set 131	The Midnight Masks 12
+Easttown	Mythos		Location		Arkham.	Core Set 132	The Midnight Masks 13
+Graveyard	Mythos		Location		Arkham.	Core Set 133	The Midnight Masks 14
+Northside	Mythos		Location		Arkham.	Core Set 134	The Midnight Masks 15
+Hunting Shadow	Mythos		Treachery		Curse.	Core Set 135	The Midnight Masks 16-18
+False Lead	Mythos		Treachery			Core Set 136	The Midnight Masks 19-20
+"Wolf-Man" Drew: The Cannibal	Mythos		Enemy		Humanoid. Cultist.	Core Set 137	Cult of Umôrdhoth 1
+Herman Collins: The Undertaker	Mythos		Enemy		Humanoid. Cultist.	Core Set 138	Cult of Umôrdhoth 2
+Peter Warren: The Occult Professor	Mythos		Enemy		Humanoid. Cultist.	Core Set 139	Cult of Umôrdhoth 3
+Victoria Devereux: The Collector	Mythos		Enemy		Humanoid. Cultist.	Core Set 140	Cult of Umôrdhoth 4
+Ruth Turner: The Mortician	Mythos		Enemy		Humanoid. Cultist.	Core Set 141	Cult of Umôrdhoth 5
+The Devourer Below	Mythos		Scenario			Core Set 142	The Devourer Below 1
+The Arkham Woods	Mythos		Agenda			Core Set 143	The Devourer Below 2
+The Ritual Begins	Mythos		Agenda			Core Set 144	The Devourer Below 3
+Vengeance Awaits	Mythos		Agenda			Core Set 145	The Devourer Below 4
+Investigating the Trail	Mythos		Act			Core Set 146	The Devourer Below 5
+Into the Darkness	Mythos		Act			Core Set 147	The Devourer Below 6
+Disrupting the Ritual	Mythos		Act			Core Set 148	The Devourer Below 7
+Main Path	Mythos		Location		Woods.	Core Set 149	The Devourer Below 8
+Arkham Woods: Unhallowed Ground	Mythos		Location		Woods.	Core Set 150	The Devourer Below 9
+Arkham Woods: Twisting Paths	Mythos		Location		Woods.	Core Set 151	The Devourer Below 10
+Arkham Woods: Old House	Mythos		Location		Woods.	Core Set 152	The Devourer Below 11
+Arkham Woods: Cliffside	Mythos		Location		Woods.	Core Set 153	The Devourer Below 12
+Arkham Woods: Tangled Thicket	Mythos		Location		Woods.	Core Set 154	The Devourer Below 13
+Arkham Woods: Quiet Glade	Mythos		Location		Woods.	Core Set 155	The Devourer Below 14
+Ritual Site	Mythos		Location		Cave.	Core Set 156	The Devourer Below 15
+Umôrdhoth: The Devourer Below	Mythos		Enemy		Ancient One. Elite.	Core Set 157	The Devourer Below 16
+Umôrdhoth's Wrath	Mythos		Treachery		Curse.	Core Set 158	The Devourer Below 17-18
+Swarm of Rats	Mythos		Enemy		Creature.	Core Set 159	Rats 1-3
+Ghoul Minion	Mythos		Enemy		Humanoid. Monster. Ghoul.	Core Set 160	Ghouls 1-3
+Ravenous Ghoul	Mythos		Enemy		Humanoid. Monster. Ghoul.	Core Set 161	Ghouls 4
+Grasping Hands	Mythos		Treachery		Hazard.	Core Set 162	Ghouls 5-7
+Rotting Remains	Mythos		Treachery		Terror.	Core Set 163	Striking Fear 1-3
+Frozen in Fear	Mythos		Treachery		Terror.	Core Set 164	Striking Fear 4-5
+Dissonant Voices	Mythos		Treachery		Terror.	Core Set 165	Striking Fear 6-7
+Ancient Evils	Mythos		Treachery		Omen.	Core Set 166	Ancient Evils 1-3
+Crypt Chill	Mythos		Treachery		Hazard.	Core Set 167	Chilling Cold 1-2
+Obscuring Fog	Mythos		Treachery		Hazard.	Core Set 168	Chilling Cold 3-4
+Acolyte	Mythos		Enemy		Humanoid. Cultist.	Core Set 169	Dark Cult 1-3
+Wizard of the Order	Mythos		Enemy		Humanoid. Cultist.	Core Set 170	Dark Cult 4
+Mysterious Chanting	Mythos		Treachery		Hex.	Core Set 171	Dark Cult 5-6
+Hunting Nightgaunt	Mythos		Enemy		Monster. Nightgaunt.	Core Set 172	Nightgaunts 1-2
+On Wings of Darkness	Mythos		Treachery			Core Set 173	Nightgaunts 3-4
+Locked Door	Mythos		Treachery		Obstacle.	Core Set 174	Locked Doors 1-2
+Screeching Byakhee	Mythos		Enemy		Monster. Byakhee.	Core Set 175	Agents of Hastur 1-2
+The Yellow Sign	Mythos		Treachery		Omen.	Core Set 176	Agents of Hastur 3-4
+Yithian Observer	Mythos		Enemy		Monster. Yithian.	Core Set 177	Agents of Yog-Sothoth 1-2
+Offer of Power	Mythos		Treachery		Pact.	Core Set 178	Agents of Yog-Sothoth 3-4
+Relentless Dark Young	Mythos		Enemy		Monster. Dark Young.	Core Set 179	Agents of Shub-Niggurath 1
+Goat Spawn	Mythos		Enemy		Humanoid. Monster.	Core Set 180	Agents of Shub-Niggurath 2-4
+Young Deep One	Mythos		Enemy		Humanoid. Monster. Deep One.	Core Set 181	Agents of Cthulhu 1-2
+Dreams of R'lyeh	Mythos		Treachery		Omen.	Core Set 182	Agents of Cthulhu 3-4

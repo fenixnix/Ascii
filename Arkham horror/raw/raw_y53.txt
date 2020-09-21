@@ -1,0 +1,80 @@
+Blood Eclipse (1)	 Guardian	1	Event	 	Spell. Spirit.	Return to the Forgotten Age 1	
+Survival Knife (2)	 Guardian	2	Asset	 	Item. Weapon. Melee.	Return to the Forgotten Age 2	
+Truth from Fiction (2)	 Seeker	1	Event	  	Insight.	Return to the Forgotten Age 3	
+Ancient Stone: Transient Thoughts (4)	 Seeker	2	Asset	 	Item. Relic.	Return to the Forgotten Age 4	
+Decorated Skull: Doom Begets Doom (3)	 Rogue	0	Asset	 	Item. Relic. Cursed.	Return to the Forgotten Age 5	
+Colt Vest Pocket (2)	 Rogue	2	Asset	 	Item. Weapon. Firearm. Illicit.	Return to the Forgotten Age 6	
+Mists of R'lyeh (2)	 Mystic	2	Asset		Spell.	Return to the Forgotten Age 7	
+The Chthonian Stone: Stygian Waymark (2)	 Mystic	2	Asset	 	Item. Relic. Cursed.	Return to the Forgotten Age 8	
+Alter Fate (1)	 Survivor	3	Event	 	Spell. Blessed.	Return to the Forgotten Age 9	
+On Your Own (3)	 Survivor		Asset		Talent.	Return to the Forgotten Age 10	
+Backpack (2)	Neutral	1	Asset	 	Item.	Return to the Forgotten Age 11	
+Dendromorphosis: "Natural" Transformation	Neutral		Asset		Curse. Flora.	Return to the Forgotten Age 12	
+Offer You Cannot Refuse	Neutral		Treachery		Pact.	Return to the Forgotten Age 12	
+Fine Print	Neutral		Treachery		Pact.	Return to the Forgotten Age 13	
+Sell Your Soul	Neutral		Treachery		Pact.	Return to the Forgotten Age 14	
+Return to The Untamed Wilds	Mythos		Scenario			Return to the Forgotten Age 15	Return to the Untamed Wilds 1
+Return to The Doom of Eztli	Mythos		Scenario			Return to the Forgotten Age 16	Return to the Doom of Eztli 1
+Harbinger of Valusia: The Sleeper Returns	Mythos		Enemy		Humanoid. Monster. Serpent. Elite.	Return to the Forgotten Age 18	Return to the Doom of Eztli 2
+Entryway: Rearranged by Time	Mythos		Location		Ancient. Ruins.	Return to the Forgotten Age 19	Return to the Doom of Eztli 3
+Sealed Passage	Mythos		Location		Ancient. Ruins.	Return to the Forgotten Age 19	Return to the Doom of Eztli 4
+Mosaic Chamber	Mythos		Location		Ancient. Ruins.	Return to the Forgotten Age 20	Return to the Doom of Eztli 5
+Tomb of the Ancients	Mythos		Location		Ancient. Ruins.	Return to the Forgotten Age 21	Return to the Doom of Eztli 6
+Throne Room	Mythos		Location		Ancient. Ruins.	Return to the Forgotten Age 22	Return to the Doom of Eztli 7
+Snake Pit	Mythos		Location		Ancient. Ruins.	Return to the Forgotten Age 23	Return to the Doom of Eztli 8
+Ancient Hall: Rearranged by Time	Mythos		Location		Ancient. Ruins.	Return to the Forgotten Age 25	Return to the Doom of Eztli 9
+Grand Chamber: Rearranged by Time	Mythos		Location		Ancient. Ruins.	Return to the Forgotten Age 26	Return to the Doom of Eztli 10
+Chamber of Time: Rearranged by Time	Mythos		Location		Forgotten. Ruins.	Return to the Forgotten Age 27	Return to the Doom of Eztli 11
+Return to Threads of Fate	Mythos		Scenario			Return to the Forgotten Age 27	Return to Threads of Fate 1
+Search for the Meaning	Mythos		Act			Return to the Forgotten Age 28	Return to Threads of Fate 2
+Search for the Source	Mythos		Act			Return to the Forgotten Age 29	Return to Threads of Fate 3
+The Overgrown Estate	Mythos		Act			Return to the Forgotten Age 30	Return to Threads of Fate 4
+The Overgrown Estate	Mythos		Act			Return to the Forgotten Age 31	Return to Threads of Fate 5
+Seeking Trouble	Mythos		Act			Return to the Forgotten Age 32	Return to Threads of Fate 6
+Seeking Trouble	Mythos		Act			Return to the Forgotten Age 33	Return to Threads of Fate 7
+Discover the Truth	Mythos		Act			Return to the Forgotten Age 34	Return to Threads of Fate 8
+Impossible Pursuit	Mythos		Act			Return to the Forgotten Age 35	Return to Threads of Fate 9
+Veda Whitsley: Skilled Botanist	Neutral	0	Asset	   	Ally. Wayfarer.	Return to the Forgotten Age 37	Return to Threads of Fate 10
+Return to The Boundary Beyond	Mythos		Scenario			Return to the Forgotten Age 37	Return to the Boundary Beyond 1
+Temple Ruins	Mythos		Location		Mexico City. Present-Day.	Return to the Forgotten Age 38	Return to the Boundary Beyond 2
+Metropolitan Cathedral	Mythos		Location		Mexico City. Present-Day.	Return to the Forgotten Age 40	Return to the Boundary Beyond 3
+Chapultepec Park	Mythos		Location		Mexico City. Present-Day.	Return to the Forgotten Age 41	Return to the Boundary Beyond 4
+Zócalo	Mythos		Location		Mexico City. Present-Day.	Return to the Forgotten Age 41	Return to the Boundary Beyond 5
+Xochimilco	Mythos		Location		Mexico City. Present-Day.	Return to the Forgotten Age 42	Return to the Boundary Beyond 6
+Coyoacán	Mythos		Location		Mexico City. Present-Day.	Return to the Forgotten Age 43	Return to the Boundary Beyond 7
+Return to Heart of the Elders, Part 0	Mythos		Scenario			Return to the Forgotten Age 45	Return to Pillars of Judgment 1
+A Familiar Pattern	Mythos		Act			Return to the Forgotten Age 45	Return to Pillars of Judgment 2
+Feathered Serpent	Mythos		Enemy		Creature. Serpent.	Return to the Forgotten Age 46	Return to Pillars of Judgment 3-4
+Return to Heart of the Elders, Part 1	Mythos		Scenario			Return to the Forgotten Age 48	Return to K'n-yan 1
+Ruins of K'n-yan	Mythos		Location		Ancient. Cave. Ruins.	Return to the Forgotten Age 48	Return to K'n-yan 2
+Subterranean Swamp	Mythos		Location		Ancient. Cave.	Return to the Forgotten Age 49	Return to K'n-yan 3
+Chthonian Depths	Mythos		Location		Ancient. Cave.	Return to the Forgotten Age 50	Return to K'n-yan 4
+Treacherous Descent	Mythos		Location		Ancient. Cave.	Return to the Forgotten Age 51	Return to K'n-yan 5
+Return to The City of Archives	Mythos		Scenario			Return to the Forgotten Age 52	Return to the City of Archives 1
+Unrestricted Access	Mythos		Act			Return to the Forgotten Age 53	Return to the City of Archives 2
+Halls of Pnakotus: Southern Corridors	Mythos		Location		Ancient. Pnakotus.	Return to the Forgotten Age 55	Return to the City of Archives 3
+Cyclopean Vaults	Mythos		Location		Ancient. Pnakotus.	Return to the Forgotten Age 55	Return to the City of Archives 4
+Alien Conservatory	Mythos		Location		Ancient. Pnakotus.	Return to the Forgotten Age 56	Return to the City of Archives 5
+Captive Subjects	Mythos		Enemy		Monster.	Return to the Forgotten Age 57	Return to the City of Archives 6-7
+Return to The Depths of Yoth	Mythos		Scenario			Return to the Forgotten Age 58	Return to the Depths of Yoth 1
+Perils of Yoth	Mythos		Treachery		Hazard.	Return to the Forgotten Age 59	Return to the Depths of Yoth 2
+Return to Shattered Aeons	Mythos		Scenario			Return to the Forgotten Age 60	Return to Shattered Aeons 1
+Great Hall of Celeano	Mythos		Location		Shattered.	Return to the Forgotten Age 61	Return to Shattered Aeons 2
+Buenos Aires	Mythos		Location		Shattered.	Return to the Forgotten Age 62	Return to Shattered Aeons 3
+Ultima Thule	Mythos		Location		Shattered.	Return to the Forgotten Age 63	Return to Shattered Aeons 4
+Unknowable Past	Mythos		Treachery		Hex.	Return to the Forgotten Age 64	Return to Shattered Aeons 5-6
+Return to Turn Back Time	Mythos		Scenario			Return to the Forgotten Age 65	Return to Turn Back Time 1
+Riverside Temple	Mythos		Location		Ancient. Jungle.	Return to the Forgotten Age 66	Return to the Rainforest 1
+Waterfall	Mythos		Location		Jungle.	Return to the Forgotten Age 67	Return to the Rainforest 2
+Trail of the Dead	Mythos		Location		Jungle.	Return to the Forgotten Age 68	Return to the Rainforest 3
+Cloud Forest	Mythos		Location		Jungle.	Return to the Forgotten Age 69	Return to the Rainforest 4
+Brotherhood Acolyte	Mythos		Enemy		Humanoid. Cultist.	Return to the Forgotten Age 70	Cult of Pnakotus 1-3
+Stolen Mind	Mythos		Enemy		Humanoid. Cultist.	Return to the Forgotten Age 71	Cult of Pnakotus 4
+From Another Time	Mythos		Treachery		Scheme.	Return to the Forgotten Age 72	Cult of Pnakotus 5-6
+Resentful Wilds	Mythos		Treachery		Hazard.	Return to the Forgotten Age 73	Doomed Expedition 1-2
+Best-Laid Plans	Mythos		Treachery		Blunder.	Return to the Forgotten Age 74	Doomed Expedition 3-5
+Merging Timelines	Mythos		Treachery		Hex.	Return to the Forgotten Age 75	Temporal Hunters 1-3
+Tindalos Alpha	Mythos		Enemy		Monster. Extradimensional. Tindalos.	Return to the Forgotten Age 77	Temporal Hunters 4-5
+Vengeful Serpent	Mythos		Enemy		Humanoid. Monster. Serpent.	Return to the Forgotten Age 78	Venomous Hate 1-3
+Serpent Guardian	Mythos		Enemy		Construct. Serpent.	Return to the Forgotten Age 78	Venomous Hate 4
+Wrath of Yig	Mythos		Treachery		Power.	Return to the Forgotten Age 79	Venomous Hate 5

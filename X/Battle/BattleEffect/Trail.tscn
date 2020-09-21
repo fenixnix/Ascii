@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=2]
+
+[sub_resource type="Curve" id=1]
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=2]
+curve = SubResource( 1 )
+
+[sub_resource type="ParticlesMaterial" id=3]
+lifetime_randomness = 0.3
+trail_divisor = 8
+emission_shape = 2
+emission_box_extents = Vector3( 0.2, 0.2, 0.2 )
+direction = Vector3( 0, 0, -1 )
+spread = 3.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 2.0
+scale_curve = SubResource( 2 )
+
+[sub_resource type="CubeMesh" id=4]
+size = Vector3( 0.01, 0.01, 0.01 )
+
+[node name="Trail" type="Spatial"]
+
+[node name="Particles" type="Particles" parent="."]
+amount = 512
+lifetime = 0.3
+process_material = SubResource( 3 )
+draw_pass_1 = SubResource( 4 )

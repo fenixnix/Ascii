@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Sys/Test/TestWin2.gd" type="Script" id=1]
+
+
+[node name="TestWin2" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -531.0
+margin_bottom = -396.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 40.7142
+margin_top = 8.38234
+margin_right = 80.7142
+margin_bottom = 22.3823
+text = "win2"
+
+[node name="Button" type="Button" parent="."]
+margin_left = 23.5798
+margin_top = 33.1659
+margin_right = 94.5798
+margin_bottom = 53.1659
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

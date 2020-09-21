@@ -1,0 +1,35 @@
+[
+    {
+        "id":1006,
+        "name":"Roland`s .38 Special",
+        "img":"res://image/card/01006.png",
+        "type":"support",
+        "slot":"weapon",
+        "cost":3,
+        "check":["C","A","U"],
+        "bullet":4,
+        "desc":"花費一顆子彈：攻擊，這次攻擊力量+1（如果地點有至少一個線索，則力量+3）。這次攻擊傷害+1"
+    },    
+    {
+        "id":1007,
+        "name":"Cover Up",
+        "img":"res://image/card/01007.png",
+        "type":"support",
+        "slot":"weapon",
+        "cost":3,
+        "check":[],
+        "bullet":4,
+        "desc":"花費一顆子彈：攻擊，這次攻擊力量+1（如果地點有至少一個線索，則力量+3）。這次攻擊傷害+1"
+    },    
+    {
+        "id":1008,
+        "name":"Daisy`s Tote Bag",
+        "img":"res://image/card/01008.jpg",
+        "type":"support",
+        "slot":"weapon",
+        "cost":3,
+        "check":["W","I","U"],
+        "bullet":4,
+        "desc":"花費一顆子彈：攻擊，這次攻擊力量+1（如果地點有至少一個線索，則力量+3）。這次攻擊傷害+1"
+    }
+]

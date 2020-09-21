@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://CardInfo.gd" type="Script" id=1]
+
+[node name="CardInfo" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 337.0
+margin_bottom = 442.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}

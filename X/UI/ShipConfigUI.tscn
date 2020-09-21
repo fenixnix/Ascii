@@ -1,0 +1,157 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://UI/ShipInfoRT.gd" type="Script" id=1]
+[ext_resource path="res://UI/OfcInfoRT.gd" type="Script" id=2]
+[ext_resource path="res://UI/ShipConfigUI.gd" type="Script" id=5]
+
+
+[sub_resource type="Animation" id=1]
+resource_name = "UI_Enter_Top"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( -0.1, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 65.4857, -496.356 ), Vector2( 65.4857, 82.2061 ) ]
+}
+
+[node name="ShipConfigUI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBox" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBox" type="VBoxContainer" parent="HBox"]
+margin_right = 510.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+
+[node name="Officer" type="HBoxContainer" parent="HBox/VBox"]
+margin_right = 510.0
+margin_bottom = 298.0
+size_flags_vertical = 3
+
+[node name="OfcInfoRT" type="RichTextLabel" parent="HBox/VBox/Officer"]
+margin_right = 510.0
+margin_bottom = 298.0
+size_flags_horizontal = 3
+script = ExtResource( 2 )
+
+[node name="ShipConfig" type="VBoxContainer" parent="HBox/VBox"]
+margin_top = 302.0
+margin_right = 510.0
+margin_bottom = 600.0
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ShipName" type="LineEdit" parent="HBox/VBox/ShipConfig"]
+self_modulate = Color( 0, 1, 1, 1 )
+margin_right = 510.0
+margin_bottom = 22.0
+text = "Enchanter"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RepairButton" type="Button" parent="HBox/VBox/ShipConfig"]
+self_modulate = Color( 0, 1, 0, 1 )
+margin_top = 26.0
+margin_right = 510.0
+margin_bottom = 44.0
+text = "Repair"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Weapon" type="HBoxContainer" parent="HBox/VBox/ShipConfig"]
+margin_top = 48.0
+margin_right = 510.0
+margin_bottom = 66.0
+
+[node name="wpn" type="Button" parent="HBox/VBox/ShipConfig/Weapon"]
+modulate = Color( 0, 1, 0.929412, 1 )
+margin_right = 60.0
+margin_bottom = 18.0
+text = "WEAPON"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WeaponList" type="HBoxContainer" parent="HBox/VBox/ShipConfig/Weapon"]
+margin_left = 64.0
+margin_right = 64.0
+margin_bottom = 18.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Equipment" type="HBoxContainer" parent="HBox/VBox/ShipConfig"]
+margin_top = 70.0
+margin_right = 510.0
+margin_bottom = 88.0
+
+[node name="gear" type="Button" parent="HBox/VBox/ShipConfig/Equipment"]
+modulate = Color( 0, 1, 0.929412, 1 )
+margin_right = 84.0
+margin_bottom = 18.0
+text = "EQUIPMENT"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GearList" type="HBoxContainer" parent="HBox/VBox/ShipConfig/Equipment"]
+margin_left = 88.0
+margin_right = 88.0
+margin_bottom = 18.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBox2" type="VBoxContainer" parent="HBox"]
+margin_left = 514.0
+margin_right = 1024.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ShipInfoRT" type="RichTextLabel" parent="HBox/VBox2"]
+margin_right = 510.0
+margin_bottom = 578.0
+size_flags_vertical = 3
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="scrap" type="Button" parent="HBox/VBox2"]
+self_modulate = Color( 1, 0, 0, 1 )
+margin_top = 582.0
+margin_right = 510.0
+margin_bottom = 600.0
+text = "SCRAP"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/UI_Enter_Top = SubResource( 1 )
+[connection signal="text_changed" from="HBox/VBox/ShipConfig/ShipName" to="." method="_on_ShipName_text_changed"]

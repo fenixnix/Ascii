@@ -1,0 +1,89 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://World.gd" type="Script" id=1]
+[ext_resource path="res://BCNode.tscn" type="PackedScene" id=2]
+[ext_resource path="res://MsgGraphNode.tscn" type="PackedScene" id=3]
+[ext_resource path="res://BootNode.gd" type="Script" id=4]
+[ext_resource path="res://NodeInfo.tscn" type="PackedScene" id=5]
+[ext_resource path="res://MainMenu.gd" type="Script" id=6]
+[ext_resource path="res://TxDialog.tscn" type="PackedScene" id=7]
+[ext_resource path="res://InquiryDlg.tscn" type="PackedScene" id=8]
+
+[node name="World" type="Node2D"]
+script = ExtResource( 1 )
+BCNode = ExtResource( 2 )
+Msg = ExtResource( 3 )
+
+[node name="BootNode" type="Node" parent="."]
+script = ExtResource( 4 )
+
+[node name="HSplitContainer" type="HSplitContainer" parent="."]
+margin_left = 13.1559
+margin_top = 10.0145
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="NodeInfo" parent="HSplitContainer" instance=ExtResource( 5 )]
+anchor_bottom = 0.0
+margin_right = 3.0
+margin_bottom = 589.985
+rect_min_size = Vector2( 3, 0 )
+
+[node name="GraphEdit" type="GraphEdit" parent="HSplitContainer"]
+margin_left = 15.0
+margin_right = 1010.84
+margin_bottom = 589.985
+size_flags_horizontal = 3
+right_disconnects = true
+scroll_offset = Vector2( -283, -285 )
+
+[node name="MainMenu" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1024.0
+margin_bottom = 600.0
+script = ExtResource( 6 )
+
+[node name="Tx" parent="MainMenu" instance=ExtResource( 7 )]
+margin_left = 783.686
+margin_top = 408.054
+margin_right = 987.686
+margin_bottom = 582.054
+
+[node name="InquiryDlg" parent="MainMenu" instance=ExtResource( 8 )]
+
+[node name="Menu" type="HBoxContainer" parent="MainMenu"]
+anchor_right = 1.0
+margin_bottom = 24.0
+alignment = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainMenu/Menu"]
+margin_left = 827.0
+margin_right = 963.0
+margin_bottom = 24.0
+alignment = 2
+
+[node name="SpinBox" type="SpinBox" parent="MainMenu/Menu/HBoxContainer"]
+margin_right = 74.0
+margin_bottom = 24.0
+
+[node name="AddNodeBtn" type="Button" parent="MainMenu/Menu/HBoxContainer"]
+margin_left = 78.0
+margin_right = 136.0
+margin_bottom = 24.0
+text = "+ Node"
+
+[node name="Inquiry" type="Button" parent="MainMenu/Menu"]
+margin_left = 967.0
+margin_right = 1024.0
+margin_bottom = 24.0
+text = "Inquiry"
+
+[node name="Tween" type="Tween" parent="."]
+[connection signal="connection_request" from="HSplitContainer/GraphEdit" to="." method="_on_GraphEdit_connection_request"]
+[connection signal="add_node" from="MainMenu" to="." method="_on_MainMenu_add_node"]
+[connection signal="initTx" from="MainMenu/Tx" to="BootNode" method="_on_Tx_initTx"]
+[connection signal="gui_input" from="MainMenu/InquiryDlg" to="MainMenu" method="_on_InquiryDlg_gui_input"]
+[connection signal="pressed" from="MainMenu/Menu/HBoxContainer/AddNodeBtn" to="MainMenu" method="_on_AddNodeBtn_pressed"]
+[connection signal="pressed" from="MainMenu/Menu/Inquiry" to="MainMenu" method="_on_Inquiry_pressed"]

@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Trade/UI/ShopDlg.gd" type="Script" id=1]
+
+[node name="ShopDlg" type="VBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_right = 320.0
+margin_bottom = 20.0
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+margin_top = 3.0
+margin_right = 296.0
+margin_bottom = 17.0
+size_flags_horizontal = 3
+
+[node name="Close" type="Button" parent="HBoxContainer"]
+margin_left = 300.0
+margin_right = 320.0
+margin_bottom = 20.0
+text = "X"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+margin_top = 24.0
+margin_right = 320.0
+margin_bottom = 240.0
+size_flags_vertical = 3
+
+[node name="ItemList" type="ItemList" parent="ScrollContainer"]
+margin_right = 320.0
+margin_bottom = 216.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+allow_rmb_select = true
+[connection signal="pressed" from="HBoxContainer/Close" to="." method="_on_Close_pressed"]
+[connection signal="item_activated" from="ScrollContainer/ItemList" to="." method="_on_ItemList_item_activated"]

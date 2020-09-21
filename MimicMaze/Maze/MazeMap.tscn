@@ -1,0 +1,220 @@
+[gd_scene load_steps=26 format=2]
+
+[ext_resource path="res://Maze/MazeMap.gd" type="Script" id=1]
+[ext_resource path="res://Maze/Avatar.tscn" type="PackedScene" id=2]
+[ext_resource path="res://UI/MessageDlg.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Maze/DrawMaze.gd" type="Script" id=4]
+[ext_resource path="res://Font/m5x7.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://Maze/Object/ObjEnemy.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Theme/GrayTransparent.tres" type="Theme" id=7]
+[ext_resource path="res://Shader/Scene/GalaxyOfUniverses.shader" type="Shader" id=8]
+[ext_resource path="res://Maze/Object/ObjFood.tscn" type="PackedScene" id=9]
+[ext_resource path="res://UI/MainMenu.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Maze/Object/ObjTrap.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Maze/Object/ObjGoal.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Maze/Object/ObjKey.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Maze/DrawLayer.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Image/menuList.png" type="Texture" id=15]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+outline_size = 1
+outline_color = Color( 0, 0.894118, 0.988235, 1 )
+use_filter = true
+extra_spacing_char = 4
+font_data = ExtResource( 5 )
+
+[sub_resource type="InputEventAction" id=3]
+action = "Up"
+
+[sub_resource type="ShortCut" id=4]
+shortcut = SubResource( 3 )
+
+[sub_resource type="InputEventAction" id=5]
+action = "Left"
+
+[sub_resource type="ShortCut" id=6]
+shortcut = SubResource( 5 )
+
+[sub_resource type="InputEventAction" id=7]
+action = "Down"
+
+[sub_resource type="ShortCut" id=8]
+shortcut = SubResource( 7 )
+
+[sub_resource type="InputEventAction" id=9]
+action = "Right"
+
+[sub_resource type="ShortCut" id=10]
+shortcut = SubResource( 9 )
+
+[node name="MazeMap" type="Node"]
+script = ExtResource( 1 )
+mazeObjPrefab = [ ExtResource( 12 ), ExtResource( 9 ), ExtResource( 6 ), ExtResource( 11 ), ExtResource( 13 ) ]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 0.5, 0.5 )
+smoothing_speed = 15.0
+
+[node name="DrawMaze" type="Node2D" parent="."]
+modulate = Color( 1, 1, 1, 0.439216 )
+script = ExtResource( 4 )
+layerPrefab = ExtResource( 14 )
+
+[node name="Floor" type="TileMap" parent="DrawMaze"]
+format = 1
+
+[node name="Wall_Hori" type="TileMap" parent="DrawMaze"]
+format = 1
+
+[node name="Wall_Vert" type="TileMap" parent="DrawMaze"]
+format = 1
+
+[node name="Item" type="TileMap" parent="DrawMaze"]
+format = 1
+
+[node name="Fog" type="TileMap" parent="DrawMaze"]
+format = 1
+
+[node name="Objects" type="BackBufferCopy" parent="."]
+
+[node name="ObjGoal" parent="Objects" instance=ExtResource( 12 )]
+
+[node name="Avatar" parent="." instance=ExtResource( 2 )]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="BG" type="ColorRect" parent="CanvasLayer"]
+material = SubResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="MessageDlg" parent="HUD" instance=ExtResource( 3 )]
+
+[node name="Root" type="Control" parent="HUD"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+theme = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Time" type="Label" parent="HUD/Root"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -58.0
+margin_right = 58.0
+margin_bottom = 34.0
+custom_fonts/font = SubResource( 2 )
+text = "00:00:00"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MenuBtn" type="Button" parent="HUD/Root"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -50.0
+margin_bottom = 50.0
+icon = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MainMenu" parent="HUD" instance=ExtResource( 10 )]
+visible = false
+
+[node name="Input" type="Control" parent="HUD"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+theme = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Left" type="GridContainer" parent="HUD/Input"]
+anchor_top = 0.771667
+anchor_right = 0.18893
+anchor_bottom = 1.0
+margin_right = 1.53598
+columns = 3
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Button" type="Label" parent="HUD/Input/Left"]
+margin_right = 62.0
+margin_bottom = 66.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Up" type="Button" parent="HUD/Input/Left"]
+margin_left = 66.0
+margin_right = 128.0
+margin_bottom = 66.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+shortcut = SubResource( 4 )
+text = "E"
+
+[node name="Button3" type="Label" parent="HUD/Input/Left"]
+margin_left = 132.0
+margin_right = 194.0
+margin_bottom = 66.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Left" type="Button" parent="HUD/Input/Left"]
+margin_top = 70.0
+margin_right = 62.0
+margin_bottom = 136.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+shortcut = SubResource( 6 )
+text = "S"
+
+[node name="Down" type="Button" parent="HUD/Input/Left"]
+margin_left = 66.0
+margin_top = 70.0
+margin_right = 128.0
+margin_bottom = 136.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+shortcut = SubResource( 8 )
+text = "D"
+
+[node name="Right" type="Button" parent="HUD/Input/Left"]
+margin_left = 132.0
+margin_top = 70.0
+margin_right = 194.0
+margin_bottom = 136.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+shortcut = SubResource( 10 )
+text = "F"
+
+[node name="Right" type="GridContainer" parent="HUD/Input"]
+anchor_left = 0.820633
+anchor_top = 0.803333
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -5.32806
+margin_top = -2.0
+__meta__ = {
+"_edit_use_anchors_": true
+}
+[connection signal="pressed" from="HUD/Root/MenuBtn" to="." method="_on_MenuBtn_pressed"]
+[connection signal="select" from="HUD/MainMenu" to="." method="_on_MainMenu_select"]
+[connection signal="pressed" from="HUD/Input/Left/Up" to="." method="_on_Up_pressed"]
+[connection signal="pressed" from="HUD/Input/Left/Left" to="." method="_on_Left_pressed"]
+[connection signal="pressed" from="HUD/Input/Left/Down" to="." method="_on_Down_pressed"]
+[connection signal="pressed" from="HUD/Input/Left/Right" to="." method="_on_Right_pressed"]

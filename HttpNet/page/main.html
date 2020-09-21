@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Den Gen</title>
+    </head>
+    <body>
+        <h4 style = "text-align: center;color:#00ff00;background: #808080;">body Header4</h4>
+        <nav>
+            <ul>
+            <p>nav1</p>
+            <p>nav2</p>
+            <p>nav3</p>
+            </ul>
+        </nav>
+        <section>
+            <p>title <sub>contentb</sub></p>
+            <hr/>
+            <p>title <br/>content</p>
+            <br />
+            <div>
+                <nav>
+                {{range .Menu}}
+                    <a href = /map/{{.}}>{{.}}</a>
+                    <br/>
+                {{end}}
+                </nav>
+            </div>
+            <a href="/goodbye?map=Village">Good Bye</a>
+            <br/>
+            <a href="/map?map=Village">World Map</a>
+            <br/>
+            <img src="file://cave.png" width="72" height="72"/>
+        </section>
+    </body>
+    <footer>
+        <hr/>
+        <p>
+            <small>copy right by Nix</small>
+        </p>
+    </footer>
+</html>

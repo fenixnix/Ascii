@@ -1,0 +1,338 @@
+[
+    {
+        "id": "priate_fighter",
+        "name": "",
+        "img": "res://images/ships/pirate_fighter.png",
+        "info": {
+            "race": "Pirate",
+            "cls": "",
+            "tier": 0
+        },
+        "status": {
+            "hull": 200,
+            "acc": 10,
+            "evd": 15,
+            "crt": 3,
+            "spd": 40
+        },
+        "wpns": [
+            1
+        ],
+        "resist": []
+    },
+    {
+        "id": "pir_tac_1",
+        "name": "Pirate Tactical",
+        "img": "res://images/ships/pir_tac_1.png",
+        "info": {
+            "race": "Pirate",
+            "cls": "Tactical",
+            "tier": 1
+        },
+        "status": {
+            "hull": 360,
+            "acc": 0,
+            "evd": 0,
+            "crt": 0,
+            "spd": 40
+        },
+        "wpns": [
+            1
+        ],
+        "resist": []
+    },
+    {
+        "id": "pir_eng_1",
+        "name": "Pirate Engineering",
+        "img": "res://images/ships/pir_eng_1.png",
+        "info": {
+            "race": "Pirate",
+            "cls": "Engineering",
+            "tier": 1
+        },
+        "status": {
+            "hull": 360,
+            "acc": 0,
+            "evd": 0,
+            "crt": 0,
+            "spd": 40
+        },
+        "wpns": [
+            1
+        ],
+        "resist": []
+    },
+    {
+        "id": "pir_sci_1",
+        "name": "Pirate Science",
+        "img": "res://images/ships/pir_sci_1.png",
+        "info": {
+            "race": "Pirate",
+            "cls": "Science",
+            "tier": 1
+        },
+        "status": {
+            "hull": 360,
+            "acc": 0,
+            "evd": 0,
+            "crt": 0,
+            "spd": 40
+        },
+        "wpns": [
+            1
+        ],
+        "resist": []
+    },
+    {
+        "id": "pir_tac_2",
+        "name": "Pirate Tactical",
+        "img": "res://images/ships/pir_tac_2.png",
+        "info": {
+            "race": "Pirate",
+            "cls": "Tactical",
+            "tier": 2
+        },
+        "status": {
+            "hull": 648,
+            "acc": 0,
+            "evd": 0,
+            "crt": 0,
+            "spd": 40
+        },
+        "wpns": [
+            1
+        ],
+        "resist": []
+    },
+    {
+        "id": "pir_eng_2",
+        "name": "Pirate Engineering",
+        "img": "res://images/ships/pir_eng_2.png",
+        "info": {
+            "race": "Pirate",
+            "cls": "Engineering",
+            "tier": 2
+        },
+        "status": {
+            "hull": 648,
+            "acc": 0,
+            "evd": 0,
+            "crt": 0,
+            "spd": 40
+        },
+        "wpns": [
+            1
+        ],
+        "resist": []
+    },
+    {
+        "id": "pir_sci_2",
+        "name": "Pirate Science",
+        "img": "res://images/ships/pir_sci_2.png",
+        "info": {
+            "race": "Pirate",
+            "cls": "Science",
+            "tier": 2
+        },
+        "status": {
+            "hull": 648,
+            "acc": 0,
+            "evd": 0,
+            "crt": 0,
+            "spd": 40
+        },
+        "wpns": [
+            1
+        ],
+        "resist": []
+    },
+    {
+        "id": "pir_tac_3",
+        "name": "Pirate Tactical",
+        "img": "res://images/ships/pir_tac_3.png",
+        "info": {
+            "race": "Pirate",
+            "cls": "Tactical",
+            "tier": 3
+        },
+        "status": {
+            "hull": 1166,
+            "acc": 0,
+            "evd": 0,
+            "crt": 0,
+            "spd": 40
+        },
+        "wpns": [
+            1
+        ],
+        "resist": []
+    },
+    {
+        "id": "pir_eng_3",
+        "name": "Pirate Engineering",
+        "img": "res://images/ships/pir_eng_3.png",
+        "info": {
+            "race": "Pirate",
+            "cls": "Engineering",
+            "tier": 3
+        },
+        "status": {
+            "hull": 1166,
+            "acc": 0,
+            "evd": 0,
+            "crt": 0,
+            "spd": 40
+        },
+        "wpns": [
+            1
+        ],
+        "resist": []
+    },
+    {
+        "id": "pir_sci_3",
+        "name": "Pirate Science",
+        "img": "res://images/ships/pir_sci_3.png",
+        "info": {
+            "race": "Pirate",
+            "cls": "Science",
+            "tier": 3
+        },
+        "status": {
+            "hull": 1166,
+            "acc": 0,
+            "evd": 0,
+            "crt": 0,
+            "spd": 40
+        },
+        "wpns": [
+            1
+        ],
+        "resist": []
+    },
+    {
+        "id": "pir_tac_4",
+        "name": "Pirate Tactical",
+        "img": "res://images/ships/pir_tac_4.png",
+        "info": {
+            "race": "Pirate",
+            "cls": "Tactical",
+            "tier": 4
+        },
+        "status": {
+            "hull": 2099,
+            "acc": 0,
+            "evd": 0,
+            "crt": 0,
+            "spd": 40
+        },
+        "wpns": [
+            1
+        ],
+        "resist": []
+    },
+    {
+        "id": "pir_eng_4",
+        "name": "Pirate Engineering",
+        "img": "res://images/ships/pir_eng_4.png",
+        "info": {
+            "race": "Pirate",
+            "cls": "Engineering",
+            "tier": 4
+        },
+        "status": {
+            "hull": 2099,
+            "acc": 0,
+            "evd": 0,
+            "crt": 0,
+            "spd": 40
+        },
+        "wpns": [
+            1
+        ],
+        "resist": []
+    },
+    {
+        "id": "pir_sci_4",
+        "name": "Pirate Science",
+        "img": "res://images/ships/pir_sci_4.png",
+        "info": {
+            "race": "Pirate",
+            "cls": "Science",
+            "tier": 4
+        },
+        "status": {
+            "hull": 2099,
+            "acc": 0,
+            "evd": 0,
+            "crt": 0,
+            "spd": 40
+        },
+        "wpns": [
+            1
+        ],
+        "resist": []
+    },
+    {
+        "id": "pir_tac_5",
+        "name": "Pirate Tactical",
+        "img": "res://images/ships/pir_tac_5.png",
+        "info": {
+            "race": "Pirate",
+            "cls": "Tactical",
+            "tier": 5
+        },
+        "status": {
+            "hull": 3779,
+            "acc": 0,
+            "evd": 0,
+            "crt": 0,
+            "spd": 40
+        },
+        "wpns": [
+            1
+        ],
+        "resist": []
+    },
+    {
+        "id": "pir_eng_5",
+        "name": "Pirate Engineering",
+        "img": "res://images/ships/pir_eng_5.png",
+        "info": {
+            "race": "Pirate",
+            "cls": "Engineering",
+            "tier": 5
+        },
+        "status": {
+            "hull": 3779,
+            "acc": 0,
+            "evd": 0,
+            "crt": 0,
+            "spd": 40
+        },
+        "wpns": [
+            1
+        ],
+        "resist": []
+    },
+    {
+        "id": "pir_sci_5",
+        "name": "Pirate Science",
+        "img": "res://images/ships/pir_sci_5.png",
+        "info": {
+            "race": "Pirate",
+            "cls": "Science",
+            "tier": 5
+        },
+        "status": {
+            "hull": 3779,
+            "acc": 0,
+            "evd": 0,
+            "crt": 0,
+            "spd": 40
+        },
+        "wpns": [
+            1
+        ],
+        "resist": []
+    }
+]

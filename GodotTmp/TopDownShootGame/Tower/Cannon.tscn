@@ -1,0 +1,47 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://TopDownShootGame/Common/Explosive.tscn" type="PackedScene" id=1]
+[ext_resource path="res://NixLib/Common/UnitLife.gd" type="Script" id=2]
+[ext_resource path="res://NixLib/Common/Effect2DGenerator.gd" type="Script" id=3]
+[ext_resource path="res://NixLib/Common/Sight.gd" type="Script" id=4]
+[ext_resource path="res://TopDownShootGame/Tower/Tower.gd" type="Script" id=5]
+[ext_resource path="res://TopDownShootGame/Projectile/Shell1.tscn" type="PackedScene" id=6]
+[ext_resource path="res://NixLib/Shoot/Shoot.tscn" type="PackedScene" id=7]
+[ext_resource path="res://TopDownShootGame/Image/TowerBase/towerDefense_tile180.png" type="Texture" id=8]
+[ext_resource path="res://TopDownShootGame/Image/Turrent/towerDefense_tile249.png" type="Texture" id=9]
+
+[sub_resource type="CircleShape2D" id=1]
+
+[node name="Tower" type="StaticBody2D"]
+script = ExtResource( 5 )
+team = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Base" type="Sprite" parent="."]
+texture = ExtResource( 8 )
+
+[node name="Shoot" parent="." instance=ExtResource( 7 )]
+projectile = ExtResource( 6 )
+fires = [ NodePath("Fire") ]
+
+[node name="Fire" type="Node2D" parent="Shoot"]
+position = Vector2( 20, 0 )
+
+[node name="Turrent" type="Sprite" parent="Shoot"]
+position = Vector2( 12, 0 )
+rotation = 1.5708
+texture = ExtResource( 9 )
+
+[node name="ViewRange2D" type="Area2D" parent="."]
+script = ExtResource( 4 )
+
+[node name="UnitLife" type="Node" parent="."]
+script = ExtResource( 2 )
+
+[node name="Effect2D" type="Node2D" parent="."]
+script = ExtResource( 3 )
+efx = ExtResource( 1 )
+[connection signal="body_entered" from="ViewRange2D" to="." method="_on_ViewRange2D_body_entered"]
+[connection signal="dead" from="UnitLife" to="." method="_on_UnitLife_dead"]

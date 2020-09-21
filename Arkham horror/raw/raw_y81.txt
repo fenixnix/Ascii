@@ -1,0 +1,36 @@
+Curse of the Rougarou	Mythos		Scenario			Curse of the Rougarou 1	The Bayou 1
+A Creature of the Bayou	Mythos		Agenda			Curse of the Rougarou 2	The Bayou 2
+The Rougarou Feeds	Mythos		Agenda			Curse of the Rougarou 3	The Bayou 3
+The Curse Spreads	Mythos		Agenda			Curse of the Rougarou 4	The Bayou 4
+Finding Lady Esprit	Mythos		Act			Curse of the Rougarou 5	The Bayou 5
+Hunting the Rougarou	Mythos		Act			Curse of the Rougarou 6	The Bayou 6
+Cursed Shores	Mythos		Location		New Orleans. Bayou.	Curse of the Rougarou 7	The Bayou 7
+Garden District	Mythos		Location		New Orleans.	Curse of the Rougarou 8	The Bayou 8
+Broadmoor	Mythos		Location		New Orleans.	Curse of the Rougarou 9	The Bayou 9
+Brackish Waters	Mythos		Location		Riverside. Bayou.	Curse of the Rougarou 10	The Bayou 10
+Audubon Park	Mythos		Location		Riverside.	Curse of the Rougarou 11	The Bayou 11
+Fauborg Marigny	Mythos		Location		Riverside.	Curse of the Rougarou 12	The Bayou 12
+Forgotten Marsh	Mythos		Location		Wilderness. Bayou.	Curse of the Rougarou 13	The Bayou 13
+Trapper's Cabin	Mythos		Location		Wilderness.	Curse of the Rougarou 14	The Bayou 14
+Twisted Underbrush	Mythos		Location		Wilderness.	Curse of the Rougarou 15	The Bayou 15
+Foul Swamp	Mythos		Location		Unhallowed. Bayou.	Curse of the Rougarou 16	The Bayou 16
+Ritual Grounds	Mythos		Location		Unhallowed.	Curse of the Rougarou 17	The Bayou 17
+Overgrown Cairns	Mythos		Location		Unhallowed.	Curse of the Rougarou 18	The Bayou 18
+Lady Esprit: Dangerous Bokor	Neutral	4	Asset	  	Ally. Sorcerer.	Curse of the Rougarou 19	The Bayou 19
+Bear Trap	Neutral		Asset		Trap.	Curse of the Rougarou 20	The Bayou 20
+Fishing Net	Neutral		Asset		Trap.	Curse of the Rougarou 21	The Bayou 21
+Bog Gator	Mythos		Enemy		Creature.	Curse of the Rougarou 22	The Bayou 22-23
+Swamp Leech	Mythos		Enemy		Creature.	Curse of the Rougarou 23	The Bayou 24-26
+Cursed Swamp	Mythos		Treachery		Hazard.	Curse of the Rougarou 24	The Bayou 27-29
+Spectral Mist	Mythos		Treachery		Hazard.	Curse of the Rougarou 25	The Bayou 30-32
+Dragged Under	Mythos		Treachery		Hazard.	Curse of the Rougarou 26	The Bayou 33-36
+Ripples on the Surface	Mythos		Treachery		Terror.	Curse of the Rougarou 27	The Bayou 37-39
+The Rougarou: Cursed Soul	Mythos		Enemy		Monster. Creature. Elite.	Curse of the Rougarou 28	Curse of the Rougarou 1
+Curse of the Rougarou	Neutral		Treachery		Curse.	Curse of the Rougarou 29	Curse of the Rougarou 2
+Monstrous Transformation	Neutral	0	Asset		Talent.	Curse of the Rougarou 30	Curse of the Rougarou 3
+Slime-Covered Dhole	Mythos		Enemy		Monster. Dhole.	Curse of the Rougarou 31	Curse of the Rougarou 4-5
+Marsh Gug	Mythos		Enemy		Monster. Gug.	Curse of the Rougarou 32	Curse of the Rougarou 6-7
+Dark Young Host	Mythos		Enemy		Monster. Dark Young.	Curse of the Rougarou 33	Curse of the Rougarou 8
+On the Prowl	Mythos		Treachery			Curse of the Rougarou 34	Curse of the Rougarou 9-13
+Beast of the Bayou	Mythos		Treachery			Curse of the Rougarou 35	Curse of the Rougarou 14-15
+Insatiable Bloodlust	Mythos		Treachery			Curse of the Rougarou 36	Curse of the Rougarou 16-18

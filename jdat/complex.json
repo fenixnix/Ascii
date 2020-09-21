@@ -1,0 +1,48 @@
+{
+    "Dats": {
+        "aaa": {
+            "Name": "a",
+            "Hash": "b",
+            "Level": 11,
+            "Lst": ["d", "r", "m"],
+            "Data": {
+                "Parent": "",
+                "Number": 0,
+                "T": "0001-01-01T00:00:00Z"
+            }
+        },
+        "bbb": {
+            "Name": "b",
+            "Hash": "c",
+            "Level": 22,
+            "Lst": ["d", "r", "m"],
+            "Data": {
+                "Parent": "",
+                "Number": 0,
+                "T": "0001-01-01T00:00:00Z"
+            }
+        },
+        "ccc": {
+            "Name": "c",
+            "Hash": "d",
+            "Level": 33,
+            "Lst": ["d", "r", "m"],
+            "Data": {
+                "Parent": "",
+                "Number": 0,
+                "T": "0001-01-01T00:00:00Z"
+            }
+        },
+        "ddd": {
+            "Name": "d",
+            "Hash": "e",
+            "Level": 44,
+            "Lst": ["l", "c", "d"],
+            "Data": {
+                "Parent": "",
+                "Number": 0,
+                "T": "0001-01-01T00:00:00Z"
+            }
+        }
+    }
+}

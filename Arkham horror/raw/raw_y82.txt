@@ -1,0 +1,37 @@
+Carnevale of Horrors	Mythos		Scenario			Carnevale of Horrors 1	Carnevale of Horrors 1
+The Festivities Begin	Mythos		Agenda			Carnevale of Horrors 2	Carnevale of Horrors 2
+The Shadow of the Eclipse	Mythos		Agenda			Carnevale of Horrors 3	Carnevale of Horrors 3
+Chaos at the Carnevale	Mythos		Agenda			Carnevale of Horrors 4	Carnevale of Horrors 4
+The Carnevale Conspiracy	Mythos		Act			Carnevale of Horrors 5	Carnevale of Horrors 5
+Get to the Boats!	Mythos		Act			Carnevale of Horrors 6	Carnevale of Horrors 6
+Row!	Mythos		Act			Carnevale of Horrors 7	Carnevale of Horrors 7
+San Marco Basilica	Mythos		Location		Venice.	Carnevale of Horrors 8	Carnevale of Horrors 8
+Canal-side	Mythos		Location		Venice.	Carnevale of Horrors 9	Carnevale of Horrors 9
+Streets of Venice	Mythos		Location		Venice.	Carnevale of Horrors 10	Carnevale of Horrors 10
+Rialto Bridge	Mythos		Location		Venice. Bridge.	Carnevale of Horrors 11	Carnevale of Horrors 11
+Venetian Garden	Mythos		Location		Venice.	Carnevale of Horrors 12	Carnevale of Horrors 12
+Bridge of Sighs	Mythos		Location		Venice. Bridge.	Carnevale of Horrors 13	Carnevale of Horrors 13
+Flooded Square	Mythos		Location		Venice.	Carnevale of Horrors 14	Carnevale of Horrors 14
+Accademia Bridge	Mythos		Location		Venice. Bridge.	Carnevale of Horrors 15	Carnevale of Horrors 15
+The Guardian	Mythos		Location		Venice.	Carnevale of Horrors 16	Carnevale of Horrors 16
+Don Lagorio: Secret Servant	Mythos		Enemy		Humanoid. Servitor. Elite.	Carnevale of Horrors 17	Carnevale of Horrors 17
+Elisabetta Magro: High Servant of the Order	Mythos		Enemy		Humanoid. Lodge. Elite.	Carnevale of Horrors 18	Carnevale of Horrors 18
+Salvatore Neri: Master of Illusions	Mythos		Enemy		Humanoid. Sorcerer. Elite.	Carnevale of Horrors 19	Carnevale of Horrors 19
+Savio Corvi: Dark Lurker	Mythos		Enemy		Humanoid. Cultist. Elite.	Carnevale of Horrors 20	Carnevale of Horrors 20
+Innocent Reveler	Neutral		Asset		Ally. Bystander. Carnevale.	Carnevale of Horrors 21	Carnevale of Horrors 21-23
+Abbess Allegria Di Biase: Most Blessed	Neutral	4	Asset	  	Ally. Believer.	Carnevale of Horrors 22	Carnevale of Horrors 24
+Bauta	Neutral	1	Asset	 	Item. Mask.	Carnevale of Horrors 23	Carnevale of Horrors 25
+Medico Della Peste	Neutral	1	Asset	 	Item. Mask.	Carnevale of Horrors 24	Carnevale of Horrors 26
+Pantalone	Neutral	1	Asset	 	Item. Mask.	Carnevale of Horrors 25	Carnevale of Horrors 27
+Gilded Volto	Neutral	1	Asset	 	Item. Mask.	Carnevale of Horrors 26	Carnevale of Horrors 28
+Cnidathqua: The Many-armed Beast	Mythos		Enemy		Monster. Ancient One. Elite.	Carnevale of Horrors 27	Carnevale of Horrors 29
+Poleman	Mythos		Enemy		Monster. Deep One.	Carnevale of Horrors 28	Carnevale of Horrors 30-31
+Carnevale Sentinel	Mythos		Enemy		Humanoid. Cultist.	Carnevale of Horrors 29	Carnevale of Horrors 32-34
+Writhing Appendage	Mythos		Enemy		Monster. Tentacle.	Carnevale of Horrors 30	Carnevale of Horrors 35-37
+Mass Hysteria	Mythos		Treachery		Hazard.	Carnevale of Horrors 31	Carnevale of Horrors 38-40
+Lost in Venice	Mythos		Treachery		Blunder.	Carnevale of Horrors 32	Carnevale of Horrors 41-43
+Watchers' Gaze	Mythos		Treachery		Terror.	Carnevale of Horrors 33	Carnevale of Horrors 44-46
+Chaos in the Water	Mythos		Treachery		Hazard.	Carnevale of Horrors 34	Carnevale of Horrors 47-49
+Mesmerize	Mythos		Treachery		Hex.	Carnevale of Horrors 35	Carnevale of Horrors 50-51
+Abduction	Mythos		Treachery		Scheme.	Carnevale of Horrors 36	Carnevale of Horrors 52-53
+Acrid Miasma	Mythos		Treachery		Hazard.	Carnevale of Horrors 37	Carnevale of Horrors 54-55

@@ -1,0 +1,28 @@
+[
+    {
+        "id":"pirate001",
+        "name":"Pirates",
+        "img":"res://images/ships/faction_pirate.png",
+        "ships":[
+            0,0,0
+        ],
+        "spd":2,
+        "goods":{
+            "mtrl":20,
+            "dkmt":25
+        }
+    },
+    {
+        "id":"pirate_boss",
+        "name":"Pirates",
+        "img":"res://images/ships/faction_pirate.png",
+        "ships":[
+            13,14,15
+        ],
+        "spd":2,
+        "goods":{
+            "mtrl":300,
+            "dkmt":300
+        }
+    }
+]

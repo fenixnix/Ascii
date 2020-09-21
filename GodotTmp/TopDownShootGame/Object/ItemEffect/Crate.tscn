@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://TopDownShootGame/Image/Object/crateWood.png" type="Texture" id=1]
+[ext_resource path="res://TopDownShootGame/Object/ItemEffect/PickUpItem.gd" type="Script" id=2]
+[ext_resource path="res://TopDownShootGame/Object/ItemEffect/EffectScript/PickUpCrate.gd" type="Script" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 13.8876, 14.2686 )
+
+[node name="Crate" type="Area2D"]
+collision_mask = 0
+script = ExtResource( 2 )
+pickScript = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+[connection signal="body_entered" from="." to="." method="_on_Crate_body_entered"]

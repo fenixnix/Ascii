@@ -1,0 +1,158 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Battle/btl_unit.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Battle/BtlUnitHUD.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Battle/BtlUI.gd" type="Script" id=3]
+[ext_resource path="res://Battle/image/bg/space.jpeg" type="Texture" id=4]
+[ext_resource path="res://Battle/SklIcon.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Battle/SklStatusPanel.gd" type="Script" id=6]
+[ext_resource path="res://Battle/CamCtrl.gd" type="Script" id=7]
+[ext_resource path="res://Battle/SpatialFloatText.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Battle/Battle_env.tres" type="Environment" id=9]
+[ext_resource path="res://Battle/Battle.gd" type="Script" id=10]
+[ext_resource path="res://Battle/BattleField.gd" type="Script" id=11]
+
+[node name="Battle" type="Node"]
+script = ExtResource( 10 )
+
+[node name="BattleField" type="Spatial" parent="."]
+script = ExtResource( 11 )
+unitPrefab = ExtResource( 1 )
+unitHUDPrefab = ExtResource( 2 )
+
+[node name="BG" type="Sprite3D" parent="BattleField"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -40 )
+modulate = Color( 0.12549, 0.12549, 0.12549, 1 )
+pixel_size = 0.3
+billboard = 1
+shaded = true
+double_sided = false
+texture = ExtResource( 4 )
+
+[node name="HUD" type="CanvasLayer" parent="BattleField"]
+
+[node name="PLR" type="Position3D" parent="BattleField"]
+
+[node name="ENM" type="Position3D" parent="BattleField"]
+
+[node name="cam_ori" type="Position3D" parent="BattleField"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6 )
+
+[node name="Camera" type="Camera" parent="BattleField"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6 )
+environment = ExtResource( 9 )
+script = ExtResource( 7 )
+
+[node name="SpatialFloatText" parent="BattleField/Camera" instance=ExtResource( 8 )]
+
+[node name="SpotLight" type="SpotLight" parent="BattleField"]
+transform = Transform( 0.0137461, 0.916747, -0.399233, -0.378305, 0.374359, 0.846605, 0.925579, 0.139394, 0.351956, -5.82246, 9.35221, 5.98929 )
+spot_range = 15.0
+spot_angle = 23.9062
+
+[node name="UI" type="CanvasLayer" parent="."]
+script = ExtResource( 3 )
+sklIconPrefab = ExtResource( 5 )
+
+[node name="Retreat" type="Button" parent="UI"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -58.0
+margin_bottom = 20.0
+text = "Retreat"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="UI"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -201.0
+margin_right = 191.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Message" type="RichTextLabel" parent="UI/ScrollContainer"]
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Queue" type="HBoxContainer" parent="UI"]
+anchor_right = 1.0
+margin_top = 17.0
+margin_bottom = 62.0
+mouse_filter = 2
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Skills" type="GridContainer" parent="UI"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -105.568
+margin_top = -190.534
+margin_right = 108.432
+margin_bottom = -104.534
+mouse_filter = 2
+columns = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SklStatusPanel" type="RichTextLabel" parent="UI"]
+visible = false
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -140.0
+margin_top = -105.0
+margin_right = 137.0
+margin_bottom = -37.0
+mouse_filter = 2
+bbcode_enabled = true
+bbcode_text = "hello"
+text = "hello"
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="UI/SklStatusPanel"]
+self_modulate = Color( 0, 0, 0, 0.25098 )
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Test" type="VBoxContainer" parent="UI"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -20.0
+margin_right = 40.0
+margin_bottom = 20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Win" type="Button" parent="UI/Test"]
+margin_right = 44.0
+margin_bottom = 18.0
+text = "Win"
+
+[node name="Loss" type="Button" parent="UI/Test"]
+margin_top = 22.0
+margin_right = 44.0
+margin_bottom = 40.0
+text = "Loss"
+[connection signal="select_targets" from="UI" to="BattleField" method="SelectTargets"]
+[connection signal="pressed" from="UI/Retreat" to="." method="_on_Retreat_pressed"]
+[connection signal="pressed" from="UI/Test/Win" to="." method="_on_Win_pressed"]
+[connection signal="pressed" from="UI/Test/Loss" to="." method="_on_Loss_pressed"]

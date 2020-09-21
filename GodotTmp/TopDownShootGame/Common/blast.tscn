@@ -1,0 +1,23 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://NixLib/Shoot/blast.gd" type="Script" id=1]
+[ext_resource path="res://TopDownShootGame/Image/Projectile/explosion1.png" type="Texture" id=2]
+[ext_resource path="res://TopDownShootGame/Image/Projectile/explosion4.png" type="Texture" id=3]
+[ext_resource path="res://TopDownShootGame/Image/Projectile/explosion2.png" type="Texture" id=4]
+[ext_resource path="res://TopDownShootGame/Image/Projectile/explosion5.png" type="Texture" id=5]
+[ext_resource path="res://TopDownShootGame/Image/Projectile/explosion3.png" type="Texture" id=6]
+
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 3 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 12.0
+} ]
+
+[node name="Sprite" type="AnimatedSprite"]
+frames = SubResource( 1 )
+frame = 1
+playing = true
+script = ExtResource( 1 )

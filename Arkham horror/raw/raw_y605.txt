@@ -1,0 +1,25 @@
+Stella Clark: The Letter Carrier	 Survivor		Investigator		Chosen. Civic.	Stella Clark 1	
+Neither Rain nor Snow	 Survivor		Skill	  	Innate. Developed.	Stella Clark 2	
+Called by the Mists	Neutral		Treachery		Curse.	Stella Clark 3	
+Atychiphobia	Neutral		Treachery		Madness.	Stella Clark 4	
+.18 Derringer	 Survivor	3	Asset		Item. Weapon. Firearm. Illicit.	Stella Clark 5	
+Grimm's Fairy Tales	 Survivor	2	Asset		Item. Tome.	Stella Clark 6	
+Old Keyring	 Survivor	1	Asset		Item. Tool.	Stella Clark 7	
+Granny Orne: Tough Old Bird	 Survivor	4	Asset		Ally.	Stella Clark 8	
+Mysterious Raven	 Survivor	1	Asset		Ally. Creature.	Stella Clark 9	
+Scrapper	 Survivor	2	Asset	 	Talent.	Stella Clark 11	
+Will to Survive	 Survivor	4	Event	 	Spirit.	Stella Clark 12	
+A Test of Will	 Survivor	1	Event		Spirit.	Stella Clark 13	
+Grit Your Teeth	 Survivor	1	Event		Spirit.	Stella Clark 15	
+Cherished Keepsake (1)	 Survivor	0	Asset		Item. Charm.	Stella Clark 20	
+Leather Coat (1)	 Survivor	0	Asset		Item. Armor.	Stella Clark 21	
+.18 Derringer (2)	 Survivor	2	Asset	 	Item. Weapon. Firearm. Illicit.	Stella Clark 22	
+A Test of Will (2)	 Survivor	0	Event		Spirit.	Stella Clark 23	
+"Look what I found!" (2)	 Survivor	2	Event	  	Fortune.	Stella Clark 24	
+Dumb Luck (2)	 Survivor	2	Event	  	Fortune.	Stella Clark 25	
+Unexpected Courage (2)	 Survivor		Skill	 	Innate. Developed.	Stella Clark 26	
+Granny Orne: Tough Old Bird (3)	 Survivor	4	Asset	 	Ally.	Stella Clark 27	
+Lucky! (3)	 Survivor	0	Event		Fortune.	Stella Clark 28	
+Chainsaw (4)	 Survivor	4	Asset	  	Item. Tool. Weapon. Melee.	Stella Clark 29	
+Quick Learner (4)	 Survivor		Asset		Condition.	Stella Clark 30	
+Déjà Vu (5)	 Survivor		Asset		Talent. Cursed.	Stella Clark 31

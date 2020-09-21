@@ -1,0 +1,20 @@
+==== Defensive
+ - evd.melee
+ - evd.missle
+ - resis.phys
+ - resis.mind
+
+ - resis.element
+ - resis.phyx
+ - hit.point
+
+==== Offensive
+ skl.type
+    melee
+    missle
+    phys
+    mind
+ dmg.type
+    element
+    phyx
+ dmg

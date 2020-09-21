@@ -1,0 +1,26 @@
+Winifred Habbamock: The Aviatrix	 Rogue		Investigator		Criminal.	Winifred Habbamock 1	
+Anything You Can Do, Better	 Rogue		Skill	     	Innate. Developed.	Winifred Habbamock 2	
+Arrogance	Neutral		Skill		Flaw.	Winifred Habbamock 3	
+Reckless	Neutral		Skill		Flaw.	Winifred Habbamock 4	
+Lockpicks	 Rogue	3	Asset		Item. Tool. Illicit.	Winifred Habbamock 5	
+Mauser C96	 Rogue	4	Asset		Item. Weapon. Firearm. Illicit.	Winifred Habbamock 6	
+Lonnie Ritter: Feisty Mechanic	 Rogue	4	Asset		Ally.	Winifred Habbamock 9	
+Leather Jacket	 Rogue	2	Asset		Item. Armor.	Winifred Habbamock 10	
+Streetwise	 Rogue	0	Asset	 	Talent.	Winifred Habbamock 11	
+Pilfer	 Rogue	4	Event	 	Trick.	Winifred Habbamock 15	
+Sneak By	 Rogue	0	Event	 	Trick.	Winifred Habbamock 16	
+Nimble	 Rogue		Skill		Innate.	Winifred Habbamock 17	
+Daredevil	 Rogue		Skill		Fortune. Practiced.	Winifred Habbamock 18	
+Liquid Courage (1)	 Rogue	1	Asset	 	Item. Illicit.	Winifred Habbamock 20	
+Mauser C96 (2)	 Rogue	3	Asset	 	Item. Weapon. Firearm. Illicit.	Winifred Habbamock 21	
+Daring Maneuver (2)	 Rogue	0	Event		Gambit.	Winifred Habbamock 22	
+Cheap Shot (2)	 Rogue	2	Event	 	Trick.	Winifred Habbamock 23	
+Slip Away (2)	 Rogue	2	Event	 	Trick.	Winifred Habbamock 24	
+Manual Dexterity (2)	 Rogue		Skill	  	Innate. Developed.	Winifred Habbamock 25	
+Lucky Cigarette Case (3)	 Rogue	2	Asset	 	Item. Charm.	Winifred Habbamock 26	
+Sharpshooter (3)	 Rogue	2	Asset	  	Talent.	Winifred Habbamock 27	
+Pilfer (3)	 Rogue	4	Event	 	Trick.	Winifred Habbamock 28	
+Backstab (3)	 Rogue	3	Event	 	Tactic.	Winifred Habbamock 29	
+Copycat (3)	 Rogue		Skill		Gambit.	Winifred Habbamock 30	
+Beretta M1918 (4)	 Rogue	4	Asset	  	Item. Weapon. Firearm. Illicit.	Winifred Habbamock 31	
+Chuck Fergus: O'Bannion Driver (5)	 Rogue	3	Asset	  	Ally. Criminal.	Winifred Habbamock 32	

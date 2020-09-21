@@ -1,0 +1,570 @@
+{
+    "TychosLaboratory": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "AbandonedLaboratory": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "AlexanderianOutpost": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "AlexandrianDesert": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "Alfheim": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "Arena": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "AsceticsCave": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "Asgard": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "Aunlak": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "BabelCitadel": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "BahamutsLair": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "BlueMoaForest": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "Borea": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "Bridge": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": ["ruin"]
+    },
+    "BrokkrsCave": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "CaveOfTheMystics": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "CrescentCanyon": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "DaedalusWorkshop": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "DeepCave": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "DesertMountains": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "DesertedIslandCave": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "Dock": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": ["village"]
+    },
+    "Doria": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "DoriaDock": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "DragonCaves": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "DreadWoods": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "DryGulch": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "FishermansHovel": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "Forest": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": ["village"]
+    },
+    "ForestTower": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "FrozenCave": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "Gaia": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "GreatSourthrnMarsh": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "HedgeMaze": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "HermitsTower": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "IceCave": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "Igloo": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "Lemuria": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "Leviathan": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "LuckysCasino": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "MagiTower": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "MasterFishermansCamp": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "Midgard": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "MinersCave": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "MinesOfDvergar": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "MoaForest": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "MoaForest1": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "MoaForest2": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "MoaForest3": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "MoaForest4": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "MoaForest5": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "MoaRaces": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "MountainPass": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "MtGerra": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "Oasis": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "OldMine": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "Pandora": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "PuzzleMastersCamp": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "RiverDale": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "Rubicon": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "Ruin": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": ["village", "bridge"]
+    },
+    "SmallFarm": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "SouthernDock": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "SouthernMagiTower": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "SouthernOasis": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "SpartanCamp": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "TalosVillage": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "TheAbyss": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "Village": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": ["dock", "forest", "ruin"]
+    },
+    "WellOfSouls": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    },
+    "WoodOfDespair": {
+        "Name": "noname",
+        "Pos": {
+            "X": 0,
+            "Y": 0
+        },
+        "Linked": []
+    }
+}

@@ -1,0 +1,62 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://BookofShader/BookOfShader.gd" type="Script" id=1]
+[ext_resource path="res://Transition/genericItem_color_050.png" type="Texture" id=2]
+[ext_resource path="res://BookofShader/Background/10yearsOldNattou.shader" type="Shader" id=3]
+[ext_resource path="res://BookofShader/Effect/chameleon.shader" type="Shader" id=4]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 3 )
+
+[sub_resource type="NoiseTexture" id=2]
+
+[sub_resource type="ShaderMaterial" id=3]
+shader = ExtResource( 4 )
+shader_param/hue = 0.0
+shader_param/saturation = 1.0
+shader_param/value = 1.0
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 173.089
+margin_top = 556.356
+margin_right = 173.089
+margin_bottom = 556.356
+color = Color( 0.94902, 0.803922, 0.00784314, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+material = SubResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 8.63391
+margin_top = 4.31693
+margin_right = 8.63391
+margin_bottom = 4.31693
+texture = SubResource( 2 )
+expand = true
+stretch_mode = 1
+flip_v = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="256x256" type="Sprite" parent="."]
+material = SubResource( 3 )
+position = Vector2( 1039.28, 962.181 )
+scale = Vector2( 1.50519, 1.37684 )
+texture = ExtResource( 2 )
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+visible = false

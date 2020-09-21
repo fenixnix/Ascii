@@ -1,0 +1,354 @@
+Tommy Muldoon: The Rookie Cop	 Guardian		Investigator		Police. Warden.	The Dream-Eaters 1	
+Mandy Thompson: The Researcher	 Seeker		Investigator		Assistant. Scholar.	The Dream-Eaters 2	
+Tony Morgan: The Bounty Hunter	 Rogue		Investigator		Criminal. Hunter.	The Dream-Eaters 3	
+Luke Robinson: The Dreamer	 Mystic		Investigator		Dreamer. Drifter. Wayfarer.	The Dream-Eaters 4	
+Patrice Hathaway: The Violinist	 Survivor		Investigator		Performer. Cursed.	The Dream-Eaters 5	
+Becky: Custom Marlin Model 1894	Neutral	2	Asset	  	Item. Weapon. Firearm.	The Dream-Eaters 6	
+Rookie Mistake	Neutral		Treachery		Blunder. Flaw.	The Dream-Eaters 7	
+Occult Evidence	Neutral	0	Event		Insight. Research.	The Dream-Eaters 8	
+Shocking Discovery	Neutral		Treachery		Blunder. Mystery.	The Dream-Eaters 9	
+Bounty Contracts	Neutral		Asset		Job.	The Dream-Eaters 10	
+Tony's .38 Long Colt	Neutral	3	Asset	  	Item. Weapon. Firearm.	The Dream-Eaters 11	
+Tony's Quarry	Neutral		Enemy		Humanoid. Monster. Deep One.	The Dream-Eaters 12	
+Gate Box: Worlds within Worlds	Neutral	3	Asset		Item. Relic.	The Dream-Eaters 13	
+Detached from Reality	Neutral		Treachery		Madness.	The Dream-Eaters 14	
+Dream-Gate: Wondrous Journey	Neutral		Location		Dreamlands.	The Dream-Eaters 15	
+Patrice's Violin: My Muse	Neutral	2	Asset	  	Item. Instrument.	The Dream-Eaters 16	
+Watcher from Another Dimension	Neutral		Enemy		Monster. Extradimensional.	The Dream-Eaters 17	
+The Hungering Blade: Calamitous Blade of Celephaïs (1)	 Guardian	3	Asset		Item. Weapon. Melee. Relic. Cursed.	The Dream-Eaters 18	
+Bloodlust	Neutral		Treachery		Madness.	The Dream-Eaters 19	
+Solemn Vow	 Guardian	0	Asset	 	Spirit.	The Dream-Eaters 20	
+Segment of Onyx (1)	 Seeker	1	Asset		Item. Relic. Occult.	The Dream-Eaters 21	
+Pendant of the Queen: Of Nothing at All	 Seeker		Asset		Item. Relic.	The Dream-Eaters 22	
+Astounding Revelation	 Seeker		Event		Research.	The Dream-Eaters 23	
+Crystallizer of Dreams	 Rogue	1	Asset		Item. Relic.	The Dream-Eaters 24	
+Guardian of the Crystallizer	Neutral		Enemy		Monster.	The Dream-Eaters 25	
+Easy Mark (1)	 Rogue	0	Event	 	Trick.	The Dream-Eaters 26	
+Stargazing (1)	 Mystic	0	Event		Insight. Augury.	The Dream-Eaters 27	
+The Stars Are Right	 Mystic		Event		Augury.	The Dream-Eaters 28	
+Open Gate	 Mystic	1	Event	 	Spell.	The Dream-Eaters 29	
+Miss Doyle: Cat General of Ulthar (1)	 Survivor	3	Asset		Ally. Creature. Dreamlands.	The Dream-Eaters 30	
+Hope	 Survivor	1	Asset	 	Ally. Creature. Dreamlands.	The Dream-Eaters 31	
+Zeal	 Survivor	1	Asset	 	Ally. Creature. Dreamlands.	The Dream-Eaters 32	
+Augur	 Survivor	1	Asset	 	Ally. Creature. Dreamlands.	The Dream-Eaters 33	
+Fortuitous Discovery	 Survivor	-2	Event		Fortune. Insight.	The Dream-Eaters 34	
+Self-Centered	Neutral		Treachery		Flaw.	The Dream-Eaters 35	
+Kleptomania	Neutral		Asset		Madness. Talent.	The Dream-Eaters 36	
+Narcolepsy	Neutral		Treachery		Madness.	The Dream-Eaters 37	
+Your Worst Nightmare	Neutral		Enemy		Monster.	The Dream-Eaters 38	
+Beyond the Gates of Sleep	Mythos		Scenario			The Dream-Eaters 39	Beyond the Gates of Sleep 1
+Journey through the Gates	Mythos		Agenda			The Dream-Eaters 40	Beyond the Gates of Sleep 2
+Entering the Dreamlands	Mythos		Act			The Dream-Eaters 41	Beyond the Gates of Sleep 3
+The Trial of Nasht and Kaman-Thah	Mythos		Act			The Dream-Eaters 42	Beyond the Gates of Sleep 4
+The Final Descent	Mythos		Act			The Dream-Eaters 43	Beyond the Gates of Sleep 5
+The Path	Mythos		Act			The Dream-Eaters 44	Beyond the Gates of Sleep 6
+Seventy Steps: Of Lighter Slumber	Mythos		Location		Steps.	The Dream-Eaters 45	Beyond the Gates of Sleep 7
+The Cavern of Flame	Mythos		Location		Cave. Steps.	The Dream-Eaters 46	Beyond the Gates of Sleep 8
+Seven Hundred Steps: Of Deeper Slumber	Mythos		Location		Steps.	The Dream-Eaters 47	Beyond the Gates of Sleep 9
+Base of the Steps	Mythos		Location		Steps. Woods.	The Dream-Eaters 48	Beyond the Gates of Sleep 10
+The Enchanted Path	Mythos		Location		Woods.	The Dream-Eaters 49	Beyond the Gates of Sleep 11
+Enchanted Woods: Mystical Forest	Mythos		Location		Woods.	The Dream-Eaters 50	Beyond the Gates of Sleep 12
+Enchanted Woods: Village of Zoogs	Mythos		Location		Woods.	The Dream-Eaters 51	Beyond the Gates of Sleep 13
+Enchanted Woods: Great Stone Circle	Mythos		Location		Woods.	The Dream-Eaters 52	Beyond the Gates of Sleep 14
+Enchanted Woods: Stone Trapdoor	Mythos		Location		Woods.	The Dream-Eaters 53	Beyond the Gates of Sleep 15
+Enchanted Woods: The Moon-Tree	Mythos		Location		Woods.	The Dream-Eaters 54	Beyond the Gates of Sleep 16
+Enchanted Woods: Fungal Forest	Mythos		Location		Woods.	The Dream-Eaters 55	Beyond the Gates of Sleep 17
+Enchanted Woods: Lost Woods	Mythos		Location		Woods.	The Dream-Eaters 56	Beyond the Gates of Sleep 18
+Kaman-Thah: Priest of the Dreamlands	Mythos		Enemy		Dreamlands. Warden. Elite.	The Dream-Eaters 57	Beyond the Gates of Sleep 19
+Nasht: Priest of the Dreamlands	Mythos		Enemy		Dreamlands. Warden. Elite.	The Dream-Eaters 58	Beyond the Gates of Sleep 20
+Randolph Carter: Expert Dreamer	Neutral	3	Asset	  	Ally. Dreamer.	The Dream-Eaters 59	Beyond the Gates of Sleep 21
+Laboring Gug	Mythos		Enemy		Monster. Gug.	The Dream-Eaters 60	Beyond the Gates of Sleep 22
+Ancient Zoog	Mythos		Enemy		Creature. Zoog. Elite.	The Dream-Eaters 61	Beyond the Gates of Sleep 23
+Lost in the Woods	Mythos		Treachery		Blunder.	The Dream-Eaters 62	Beyond the Gates of Sleep 24-25
+Waking Nightmare	Mythos		Scenario			The Dream-Eaters 63	Waking Nightmare 1
+Halls of St. Mary's	Mythos		Agenda			The Dream-Eaters 64	Waking Nightmare 2
+The Infestation Spreads	Mythos		Agenda			The Dream-Eaters 65	Waking Nightmare 3
+Hospital of Horrors	Mythos		Agenda			The Dream-Eaters 66	Waking Nightmare 4
+Looking for Answers	Mythos		Act			The Dream-Eaters 67	Waking Nightmare 5
+Search for the Patient	Mythos		Act			The Dream-Eaters 68	Waking Nightmare 6
+Containing the Outbreak	Mythos		Act			The Dream-Eaters 69	Waking Nightmare 7
+Waiting Room	Mythos		Location		St Mary's.	The Dream-Eaters 70	Waking Nightmare 8
+Emergency Room	Mythos		Location		St Mary's.	The Dream-Eaters 71	Waking Nightmare 9
+Experimental Therapies Ward	Mythos		Location		St Mary's.	The Dream-Eaters 72	Waking Nightmare 10
+Records Office	Mythos		Location		St Mary's.	The Dream-Eaters 73	Waking Nightmare 11
+Stairwell	Mythos		Location		St Mary's.	The Dream-Eaters 74	Waking Nightmare 12
+Morgue	Mythos		Location		St Mary's. Basement.	The Dream-Eaters 75	Waking Nightmare 13
+Operating Room	Mythos		Location		St Mary's. Basement.	The Dream-Eaters 76	Waking Nightmare 14
+Private Room	Mythos		Location		St Mary's. Basement.	The Dream-Eaters 77	Waking Nightmare 15
+The Infestation Begins...	Mythos		Story			The Dream-Eaters 78	Waking Nightmare 16
+Randolph Carter: Chained to the Waking World	Neutral	3	Asset	  	Ally. Dreamer.	The Dream-Eaters 79	Waking Nightmare 17
+Dr. Shivani Maheswaran: Emergency Physician	Neutral		Asset		Ally. Medic.	The Dream-Eaters 80	Waking Nightmare 18
+Suspicious Orderly	Mythos		Enemy		Humanoid. Staff.	The Dream-Eaters 81	Waking Nightmare 19-20
+Corrupted Orderly	Mythos		Enemy		Humanoid. Staff. Spider.	The Dream-Eaters 82	Waking Nightmare 21-22
+Outbreak	Mythos		Treachery		Hazard.	The Dream-Eaters 83	Waking Nightmare 23-25
+Grey Weaver	Mythos		Enemy		Monster. Spider.	The Dream-Eaters 84	Agents of Atlach-Nacha 1-2
+Will of the Spider-Mother	Mythos		Treachery		Power.	The Dream-Eaters 85	Agents of Atlach-Nacha 3-4
+The Crawling Mist	Mythos		Enemy		Monster. Avatar.	The Dream-Eaters 86	Agents of Nyarlathotep 1
+Law of 'Ygiroth (Chaos)	Mythos		Treachery		Terror.	The Dream-Eaters 87	Agents of Nyarlathotep 2
+Law of 'Ygiroth (Discord)	Mythos		Treachery		Terror.	The Dream-Eaters 88	Agents of Nyarlathotep 3
+Law of 'Ygiroth (Pandemonium)	Mythos		Treachery		Terror.	The Dream-Eaters 89	Agents of Nyarlathotep 4
+Whispers of Hypnos	Mythos		Treachery		Terror.	The Dream-Eaters 90	Whispers of Hypnos 1-3
+Hunting Ghast	Mythos		Enemy		Humanoid. Monster. Ghast.	The Dream-Eaters 91	Creatures of the Underworld 1-3
+Lumbering Gug	Mythos		Enemy		Monster. Gug.	The Dream-Eaters 92	Creatures of the Underworld 4
+Dreamer's Curse	Mythos		Treachery		Curse.	The Dream-Eaters 93	Dreamer's Curse 1-2
+Somniphobia	Mythos		Treachery		Terror.	The Dream-Eaters 94	Dreamer's Curse 3-4
+Deeper Slumber	Mythos		Treachery		Curse.	The Dream-Eaters 95	Dreamer's Curse 5-6
+Dreamlands Eclipse	Mythos		Treachery		Power.	The Dream-Eaters 96	Dreamlands 1-2
+Prismatic Phenomenon	Mythos		Treachery		Power.	The Dream-Eaters 97	Dreamlands 3-4
+Night Terrors	Mythos		Treachery		Terror.	The Dream-Eaters 98	Merging Realities 1-2
+Glimpse of the Underworld	Mythos		Treachery		Terror.	The Dream-Eaters 99	Merging Realities 3-4
+Threads of Reality	Mythos		Treachery		Power.	The Dream-Eaters 100	Merging Realities 5-6
+Spider of Leng	Mythos		Enemy		Monster. Spider.	The Dream-Eaters 101	Spiders 1
+Swarm of Spiders	Mythos		Enemy		Creature. Spider.	The Dream-Eaters 102	Spiders 2-4
+Sickening Webs	Mythos		Treachery		Obstacle.	The Dream-Eaters 103	Spiders 5-6
+Hunted by Corsairs	Mythos		Treachery		Scheme.	The Dream-Eaters 104	Corsairs 1-2
+Corsair of Leng	Mythos		Enemy		Humanoid. Monster.	The Dream-Eaters 105	Corsairs 3-4
+Furtive Zoog	Mythos		Enemy		Creature. Zoog.	The Dream-Eaters 106	Zoogs 1-2
+Stealthy Zoog	Mythos		Enemy		Creature. Zoog.	The Dream-Eaters 107	Zoogs 3-4
+Inconspicuous Zoog	Mythos		Enemy		Creature. Zoog.	The Dream-Eaters 108	Zoogs 5
+Zoog Burrow	Mythos		Treachery		Hazard.	The Dream-Eaters 109	Zoogs 6
+First Watch	 Guardian	1	Event	 	Tactic.	The Search for Kadath 110	
+Daring	 Guardian		Skill	  	Innate.	The Search for Kadath 111	
+Dream Diary: Untranslated	 Seeker	2	Asset		Item. Tome. Charm.	The Search for Kadath 112	
+Essence of the Dream	 Seeker		Skill	 	Practiced. Expert.	The Search for Kadath 113	
+Followed	 Rogue	2	Event	 	Tactic.	The Search for Kadath 114	
+Momentum (1)	 Rogue		Skill		Practiced.	The Search for Kadath 115	
+Scroll of Prophecies	 Mystic	3	Asset		Item. Tome.	The Search for Kadath 116	
+Read the Signs	 Mystic	2	Event	 	Spell.	The Search for Kadath 117	
+Jessica Hyde: Wrong Place, Wrong Time (1)	 Survivor	3	Asset		Ally. Wayfarer. Cursed.	The Search for Kadath 118	
+The Search for Kadath	Mythos		Scenario			The Search for Kadath 119	The Search for Kadath 1
+Journey Across the Dreamlands	Mythos		Agenda			The Search for Kadath 120	The Search for Kadath 2
+Agents of the Outer Gods	Mythos		Agenda			The Search for Kadath 121	The Search for Kadath 3
+Kingdom of the Skai	Mythos		Act			The Search for Kadath 122	The Search for Kadath 4
+The Isle of Oriab	Mythos		Act			The Search for Kadath 123	The Search for Kadath 5
+The Doom That Came Before	Mythos		Act			The Search for Kadath 124	The Search for Kadath 6
+Seek Out the Night	Mythos		Act			The Search for Kadath 125	The Search for Kadath 7
+The King's Decree	Mythos		Act			The Search for Kadath 126	The Search for Kadath 8
+Ulthar	Mythos		Location		Skai. City.	The Search for Kadath 127	The Search for Kadath 9
+Skai River	Mythos		Location		Skai. City.	The Search for Kadath 128	The Search for Kadath 10
+Dylath-Leen	Mythos		Location		Skai. City. Port.	The Search for Kadath 129	The Search for Kadath 11
+Kadatheron	Mythos		Location		Mnar. Ancient. City. Port.	The Search for Kadath 130	The Search for Kadath 12
+Sarnath	Mythos		Location		Mnar. Ancient. Ruins.	The Search for Kadath 131	The Search for Kadath 13
+Ruins of Ib	Mythos		Location		Mnar. Ancient. Ruins.	The Search for Kadath 132	The Search for Kadath 14
+Ilek-Vad	Mythos		Location		Forbidden. City. Port.	The Search for Kadath 133	The Search for Kadath 15
+Forbidden Lands	Mythos		Location		Forbidden. Wastes.	The Search for Kadath 134	The Search for Kadath 16
+Zulan-Thek	Mythos		Location		Forbidden. City.	The Search for Kadath 135	The Search for Kadath 17
+Baharna	Mythos		Location		Oriab. City. Port.	The Search for Kadath 136	The Search for Kadath 18
+Mt. Ngranek	Mythos		Location		Oriab. Mountain.	The Search for Kadath 137	The Search for Kadath 19
+Nameless Ruins	Mythos		Location		Oriab. Ancient. Ruins.	The Search for Kadath 138	The Search for Kadath 20
+Celephaïs	Mythos		Location		Ooth-Nargai. City. Port.	The Search for Kadath 139	The Search for Kadath 21
+Serannian	Mythos		Location		Ooth-Nargai. City. Port.	The Search for Kadath 140	The Search for Kadath 22
+Hazuth-Kleg	Mythos		Location		Ooth-Nargai. City.	The Search for Kadath 141	The Search for Kadath 23
+Temple of Unattainable Desires	Mythos		Location		Ooth-Nargai. Temple.	The Search for Kadath 142	The Search for Kadath 24
+City-Which-Appears-On-No-Map	Mythos		Location		City. Otherworld.	The Search for Kadath 143	The Search for Kadath 25
+Virgil Gray: Writer of Strange Tales	Neutral		Asset		Ally. Dreamer.	The Search for Kadath 144	The Search for Kadath 26
+Cats of Ulthar	Mythos		Enemy		Creature. Elite.	The Search for Kadath 145	The Search for Kadath 27
+Stalking Manticore	Mythos		Enemy		Creature. Monster. Elite.	The Search for Kadath 146	The Search for Kadath 28
+Horde of Night	Mythos		Enemy		Monster. Elite.	The Search for Kadath 147	The Search for Kadath 29
+Beings of Ib	Mythos		Enemy		Monster. Elite.	The Search for Kadath 148	The Search for Kadath 30
+Priest of a Thousand Masks	Mythos		Enemy		Humanoid. Cultist.	The Search for Kadath 149	The Search for Kadath 31-33
+Tenebrous Nightgaunt	Mythos		Enemy		Monster. Nightgaunt.	The Search for Kadath 150	The Search for Kadath 34-35
+Pack of Vooniths	Mythos		Enemy		Creature. Monster.	The Search for Kadath 151	The Search for Kadath 36-37
+Nightriders	Mythos		Enemy		Creature. Monster.	The Search for Kadath 152	The Search for Kadath 38-39
+Song of the Magah Bird	Mythos		Treachery		Curse.	The Search for Kadath 153	The Search for Kadath 40-41
+Wondrous Lands	Mythos		Treachery		Power.	The Search for Kadath 154	The Search for Kadath 42-43
+Tetsuo Mori: Too Noble for His Own Good	 Guardian	3	Asset		Ally. Police.	A Thousand Shapes of Horror 155	
+"Fool me once..." (1)	 Guardian	1	Event		Insight. Tactic.	A Thousand Shapes of Horror 156	
+Self-Sacrifice	 Guardian		Skill		Spirit.	A Thousand Shapes of Horror 157	
+Otherworld Codex (2)	 Seeker	3	Asset	 	Item. Tome.	A Thousand Shapes of Horror 158	
+Dream-Enhancing Serum	 Seeker	3	Asset		Item. Science.	A Thousand Shapes of Horror 159	
+"Let God sort them out..."	 Rogue	0	Event		Tactic. Fated.	A Thousand Shapes of Horror 160	
+Swift Reload (2)	 Rogue	3	Event		Tactic. Trick.	A Thousand Shapes of Horror 161	
+Gregory Gry: Muckraker	 Rogue	3	Asset		Ally. Criminal. Dreamer.	A Thousand Shapes of Horror 162	
+Healing Words	 Mystic	2	Asset		Spell.	A Thousand Shapes of Horror 163	
+Ethereal Form	 Mystic	2	Event	 	Spell.	A Thousand Shapes of Horror 164	
+Scrounge for Supplies	 Survivor	0	Event		Fortune.	A Thousand Shapes of Horror 165	
+Brute Force (1)	 Survivor		Skill		Innate. Developed.	A Thousand Shapes of Horror 166	
+Versatile (2)	Neutral		Asset		Talent.	A Thousand Shapes of Horror 167	
+A Thousand Shapes of Horror	Mythos		Scenario			A Thousand Shapes of Horror 168	A Thousand Shapes of Horror 1
+The House with No Name	Mythos		Agenda			A Thousand Shapes of Horror 169	A Thousand Shapes of Horror 2
+The Thing with No Name	Mythos		Agenda			A Thousand Shapes of Horror 170	A Thousand Shapes of Horror 3
+The Dead with No Name	Mythos		Agenda			A Thousand Shapes of Horror 171	A Thousand Shapes of Horror 4
+Searching the Unnamable	Mythos		Act			A Thousand Shapes of Horror 172	A Thousand Shapes of Horror 5
+The Endless Stairs	Mythos		Act			A Thousand Shapes of Horror 173	A Thousand Shapes of Horror 6
+Burial Ground	Mythos		Location		Graveyard.	A Thousand Shapes of Horror 174	A Thousand Shapes of Horror 7
+Entryway	Mythos		Location			A Thousand Shapes of Horror 175	A Thousand Shapes of Horror 8
+Den	Mythos		Location			A Thousand Shapes of Horror 176	A Thousand Shapes of Horror 9
+Parlor	Mythos		Location			A Thousand Shapes of Horror 177	A Thousand Shapes of Horror 10
+Upstairs Hallway	Mythos		Location			A Thousand Shapes of Horror 178	A Thousand Shapes of Horror 11
+Library	Mythos		Location			A Thousand Shapes of Horror 179	A Thousand Shapes of Horror 12
+Bedroom	Mythos		Location			A Thousand Shapes of Horror 180	A Thousand Shapes of Horror 13
+Attic	Mythos		Location			A Thousand Shapes of Horror 181	A Thousand Shapes of Horror 14
+Unmarked Tomb	Mythos		Location		Graveyard.	A Thousand Shapes of Horror 182	A Thousand Shapes of Horror 15
+Mysterious Stairs	Mythos		Location		Graveyard.	A Thousand Shapes of Horror 183	A Thousand Shapes of Horror 16
+Mysterious Stairs	Mythos		Location		Graveyard.	A Thousand Shapes of Horror 184	A Thousand Shapes of Horror 17
+Mysterious Stairs	Mythos		Location		Graveyard.	A Thousand Shapes of Horror 185	A Thousand Shapes of Horror 18
+Mysterious Stairs	Mythos		Location		Graveyard.	A Thousand Shapes of Horror 186	A Thousand Shapes of Horror 19
+Mysterious Stairs	Mythos		Location		Graveyard.	A Thousand Shapes of Horror 187	A Thousand Shapes of Horror 20
+Mysterious Stairs	Mythos		Location		Graveyard.	A Thousand Shapes of Horror 188	A Thousand Shapes of Horror 21
+The Silver Key: Key to the Gate of Dreams	Neutral	2	Asset	  	Item. Charm. Relic.	A Thousand Shapes of Horror 189	A Thousand Shapes of Horror 22
+Endless Descent	Mythos		Treachery		Curse.	A Thousand Shapes of Horror 190	A Thousand Shapes of Horror 23-26
+Indescribable Apparition	Mythos		Treachery		Curse.	A Thousand Shapes of Horror 191	A Thousand Shapes of Horror 27-28
+Glowing Eyes	Mythos		Treachery		Terror.	A Thousand Shapes of Horror 192	A Thousand Shapes of Horror 29-30
+Deceptive Memories	Mythos		Treachery		Terror.	A Thousand Shapes of Horror 193	A Thousand Shapes of Horror 31-32
+Secrets in the Attic	Mythos		Treachery		Scheme.	A Thousand Shapes of Horror 194	A Thousand Shapes of Horror 33-34
+.35 Winchester	 Guardian	4	Asset		Item. Weapon. Firearm.	Dark Side of the Moon 195	
+Safeguard (2)	 Guardian	2	Asset	 	Talent.	Dark Side of the Moon 196	
+Practice Makes Perfect	 Seeker	1	Event	 	Gambit. Tactic.	Dark Side of the Moon 197	
+Extensive Research (1)	 Seeker	10	Event	 	Insight.	Dark Side of the Moon 198	
+Three Aces (1)	 Rogue		Skill		Fortune. Practiced.	Dark Side of the Moon 199	
+Burglary (2)	 Rogue	1	Asset	 	Talent. Illicit.	Dark Side of the Moon 200	
+Spectral Razor	 Mystic	2	Event	 	Spell.	Dark Side of the Moon 201	
+Word of Command (2)	 Mystic	2	Event		Spell.	Dark Side of the Moon 202	
+Moonstone	 Survivor	3	Asset		Item. Relic. Dreamlands.	Dark Side of the Moon 203	
+Sharp Vision (1)	 Survivor		Skill		Innate. Developed.	Dark Side of the Moon 204	
+Lucid Dreaming (2)	Neutral	1	Event		Spell.	Dark Side of the Moon 205	
+Dark Side of the Moon	Mythos		Scenario			Dark Side of the Moon 206	Dark Side of the Moon 1
+Silent Stirring	Mythos		Agenda			Dark Side of the Moon 207	Dark Side of the Moon 2
+The Alarm Is Raised	Mythos		Agenda			Dark Side of the Moon 208	Dark Side of the Moon 3
+They Are Upon You!	Mythos		Agenda			Dark Side of the Moon 209	Dark Side of the Moon 4
+In the Belly of the Moon-Beast	Mythos		Act			Dark Side of the Moon 210	Dark Side of the Moon 5
+Exploring the Moon	Mythos		Act			Dark Side of the Moon 211	Dark Side of the Moon 6
+The Moon's Core	Mythos		Act			Dark Side of the Moon 212	Dark Side of the Moon 7
+Unexpected Rescue	Mythos		Act			Dark Side of the Moon 213	Dark Side of the Moon 8
+Moon-Beast Galley	Mythos		Location		Ship.	Dark Side of the Moon 214	Dark Side of the Moon 9
+City of the Moon-Beasts	Mythos		Location		Surface. City.	Dark Side of the Moon 215	Dark Side of the Moon 10
+The Dark Crater	Mythos		Location		Surface.	Dark Side of the Moon 216	Dark Side of the Moon 11
+Temple of the Moon Lizard	Mythos		Location		Surface.	Dark Side of the Moon 217	Dark Side of the Moon 12
+Moon-Forest	Mythos		Location		Surface. Woods.	Dark Side of the Moon 218	Dark Side of the Moon 13
+Caverns Beneath the Moon: Dark Side	Mythos		Location		Cave.	Dark Side of the Moon 219	Dark Side of the Moon 14
+The Black Core	Mythos		Location		Cave.	Dark Side of the Moon 220	Dark Side of the Moon 15
+Caverns Beneath the Moon: Light Side	Mythos		Location		Cave.	Dark Side of the Moon 221	Dark Side of the Moon 16
+Light Side of the Moon	Mythos		Location		Surface. Ruins.	Dark Side of the Moon 222	Dark Side of the Moon 17
+The White Ship	Mythos		Location		Ship.	Dark Side of the Moon 223	Dark Side of the Moon 18
+Virgil Gray: Truly Inspired	Neutral		Asset		Ally. Dreamer.	Dark Side of the Moon 224	Dark Side of the Moon 19
+The Captain: Dreamlands Navigator	Neutral		Asset		Ally. Dreamer.	Dark Side of the Moon 225	Dark Side of the Moon 20
+Moon Lizard	Mythos		Enemy		Monster. Elite.	Dark Side of the Moon 226	Dark Side of the Moon 21
+Moonbound Byakhee	Mythos		Enemy		Monster. Byakhee.	Dark Side of the Moon 227	Dark Side of the Moon 22-23
+Cats from Saturn	Mythos		Enemy		Creature. Monster.	Dark Side of the Moon 228	Dark Side of the Moon 24-26
+Moon-Beast	Mythos		Enemy		Monster. Servitor.	Dark Side of the Moon 229	Dark Side of the Moon 27-28
+Close Watch	Mythos		Treachery		Scheme.	Dark Side of the Moon 230	Dark Side of the Moon 29-31
+Forced into Hiding	Mythos		Treachery		Terror.	Dark Side of the Moon 231	Dark Side of the Moon 32-34
+Lunar Patrol	Mythos		Treachery		Scheme.	Dark Side of the Moon 232	Dark Side of the Moon 35-36
+False Awakening	Neutral		Treachery		Curse.	Dark Side of the Moon 233	Dark Side of the Moon 37
+Heroic Rescue (2)	 Guardian	0	Event	  	Spirit. Tactic.	Point of No Return 234	
+Leadership (2)	 Guardian		Skill		Practiced.	Point of No Return 235	
+Dream Diary: Dreams of an Explorer (3)	 Seeker	2	Asset	 	Item. Tome. Charm.	Point of No Return 236	
+Dream Diary: Dreams of a Madman (3)	 Seeker	2	Asset	 	Item. Tome. Charm.	Point of No Return 237	
+Dream Diary: Dreams of a Child (3)	 Seeker	2	Asset	 	Item. Tome. Charm.	Point of No Return 238	
+Haste (2)	 Rogue	3	Asset		Ritual.	Point of No Return 239	
+Daredevil (2)	 Rogue		Skill		Fortune. Practiced.	Point of No Return 240	
+Empower Self: Stamina (2)	 Mystic	3	Asset	 	Ritual.	Point of No Return 241	
+Empower Self: Alacrity (2)	 Mystic	3	Asset	 	Ritual.	Point of No Return 242	
+Empower Self: Acuity (2)	 Mystic	3	Asset	 	Ritual.	Point of No Return 243	
+Twila Katherine Price: Lost in a Dream (3)	 Mystic	3	Asset	 	Ally. Artist. Dreamer.	Point of No Return 244	
+A Glimmer of Hope	 Survivor	1	Event		Blessed. Fortune.	Point of No Return 245	
+Expeditious Retreat (1)	 Survivor		Skill		Innate. Developed.	Point of No Return 246	
+Point of No Return	Mythos		Scenario			Point of No Return 247	Point of No Return 1
+A Sinister Realm	Mythos		Agenda			Point of No Return 248	Point of No Return 2
+Beset by Monsters	Mythos		Agenda			Point of No Return 249	Point of No Return 3
+Entering the Underworld (v. I)	Mythos		Act			Point of No Return 250	Point of No Return 4
+Entering the Underworld (v. II)	Mythos		Act			Point of No Return 251	Point of No Return 5
+The Descent	Mythos		Act			Point of No Return 252	Point of No Return 6
+The Black Expanse	Mythos		Act			Point of No Return 253	Point of No Return 7
+Vaults of Zin	Mythos		Location			Point of No Return 254	Point of No Return 8
+City of Gugs	Mythos		Location			Point of No Return 255	Point of No Return 9
+Tower of Koth	Mythos		Location			Point of No Return 256	Point of No Return 10
+Plain of the Ghouls	Mythos		Location		Central.	Point of No Return 257	Point of No Return 11
+Crag of the Ghouls	Mythos		Location		Vale.	Point of No Return 258	Point of No Return 12
+Sea of Bones	Mythos		Location		Vale.	Point of No Return 259	Point of No Return 13
+Peaks of Thok	Mythos		Location		Vale. Central.	Point of No Return 260	Point of No Return 14
+Vale of Pnath	Mythos		Location		Vale.	Point of No Return 261	Point of No Return 15
+Sea of Pitch	Mythos		Location		Depths.	Point of No Return 262	Point of No Return 16
+Sea of Pitch	Mythos		Location		Depths.	Point of No Return 263	Point of No Return 17
+Sea of Pitch	Mythos		Location		Depths.	Point of No Return 264	Point of No Return 18
+Sea of Pitch	Mythos		Location		Depths.	Point of No Return 265	Point of No Return 19
+Richard Upton Pickman: Venerable Ghoul	Neutral		Asset		Ally. Ghoul. Artist.	Point of No Return 266	Point of No Return 20
+Gug Sentinel	Mythos		Enemy		Monster. Gug.	Point of No Return 267	Point of No Return 21
+Taste of Lifeblood	Mythos		Treachery		Hazard.	Point of No Return 268	Point of No Return 22-23
+Lit by Death-Fire	Mythos		Treachery		Hazard.	Point of No Return 269	Point of No Return 23-24
+Unexpected Ambush	Mythos		Treachery		Scheme.	Point of No Return 270	Point of No Return 24-25
+Slithering Dhole	Mythos		Enemy		Monster. Dhole. Elite.	Point of No Return 271	Terror of the Vale 1
+Dhole Tunnel	Mythos		Treachery		Hazard.	Point of No Return 272	Terror of the Vale 2-4
+Pitch Spider	Mythos		Enemy		Monster. Spider.	Point of No Return 273	Descent into the Pitch 1-2
+Shadow of Atlach-Nacha	Mythos		Treachery		Curse.	Point of No Return 274	Descent into the Pitch 3-4
+False Awakening	Neutral		Treachery		Curse.	Point of No Return 275	Point of No Return 28
+Empty Vessel: Abandoned by the Gods (4)	 Guardian	1	Asset	 	Item. Relic. Blessed.	Where the Gods Dwell 276	
+Wish Eater: Jewel of the Gods	 Guardian		Asset		Item. Relic. Blessed.	Where the Gods Dwell 277	
+Surprising Find (1)	 Seeker		Skill		Fortune. Research.	Where the Gods Dwell 278	
+Old Book of Lore (3)	 Seeker	2	Asset	 	Item. Tome.	Where the Gods Dwell 279	
+Garrote Wire (2)	 Rogue	2	Asset		Item. Weapon.	Where the Gods Dwell 280	
+Delilah O'Rourke: Syndicate Assassin (3)	 Rogue	3	Asset	 	Ally. Criminal. Syndicate.	Where the Gods Dwell 281	
+Summoned Hound (1)	 Mystic	3	Asset	 	Ally. Summon.	Where the Gods Dwell 282	
+Unbound Beast	Neutral		Enemy		Monster. Extradimensional. Tindalos.	Where the Gods Dwell 283	
+Nothing Left to Lose (3)	 Survivor	0	Event		Spirit.	Where the Gods Dwell 284	
+The Black Cat: A Liar, or a Prophet, or Both (5)	Neutral	2	Asset	 	Ally. Avatar. Dreamlands.	Where the Gods Dwell 285	
+Where the Gods Dwell	Mythos		Scenario			Where the Gods Dwell 286	Where the Gods Dwell 1
+The Eye of Chaos	Mythos		Agenda			Where the Gods Dwell 287	Where the Gods Dwell 2
+The Shape of Chaos	Mythos		Agenda			Where the Gods Dwell 288	Where the Gods Dwell 3
+Chaos Incarnate	Mythos		Agenda			Where the Gods Dwell 289	Where the Gods Dwell 4
+Journey Through the Cold Wastes	Mythos		Act			Where the Gods Dwell 290	Where the Gods Dwell 5
+The Thing in the Robes	Mythos		Act			Where the Gods Dwell 291	Where the Gods Dwell 6
+Beyond Dreams	Mythos		Act			Where the Gods Dwell 292	Where the Gods Dwell 7
+Truth and Lies	Mythos		Act			Where the Gods Dwell 293	Where the Gods Dwell 8
+The Dream-Eaters	Mythos		Act			Where the Gods Dwell 294	Where the Gods Dwell 9
+Plateau of Leng	Mythos		Location		Leng.	Where the Gods Dwell 295	Where the Gods Dwell 10
+Cold Wastes	Mythos		Location		Leng.	Where the Gods Dwell 296	Where the Gods Dwell 11
+Monastery of Leng	Mythos		Location		Leng.	Where the Gods Dwell 297	Where the Gods Dwell 12
+Onyx Gates	Mythos		Location		Leng. Kadath.	Where the Gods Dwell 298	Where the Gods Dwell 13
+The Great Hall	Mythos		Location		Kadath.	Where the Gods Dwell 299	Where the Gods Dwell 14
+Forsaken Tower: Of Illusion and Myth	Mythos		Location		Kadath.	Where the Gods Dwell 300	Where the Gods Dwell 15
+Forsaken Tower: Of Life and Death	Mythos		Location		Kadath.	Where the Gods Dwell 301	Where the Gods Dwell 16
+Forsaken Tower: Of Infinite Truth	Mythos		Location		Kadath.	Where the Gods Dwell 302	Where the Gods Dwell 17
+Forsaken Tower: Of Eternal Flame	Mythos		Location		Kadath.	Where the Gods Dwell 303	Where the Gods Dwell 18
+Forsaken Tower: Of the Queen of Night	Mythos		Location		Kadath.	Where the Gods Dwell 304	Where the Gods Dwell 19
+Forsaken Tower: Of Primeval Light	Mythos		Location		Kadath.	Where the Gods Dwell 305	Where the Gods Dwell 20
+Nyarlathotep: The Crawling Chaos	Mythos		Enemy		Ancient One. Elite.	Where the Gods Dwell 306	Where the Gods Dwell 21
+Nyarlathotep: The Faceless Whisperer	Mythos		Enemy		Ancient One. Elite.	Where the Gods Dwell 307	Where the Gods Dwell 22
+Nyarlathotep: Messenger of the Outer Gods	Mythos		Enemy		Ancient One. Elite.	Where the Gods Dwell 308	Where the Gods Dwell 23
+Nyarlathotep: God of a Thousand Forms	Mythos		Enemy		Ancient One. Elite.	Where the Gods Dwell 309	Where the Gods Dwell 24
+Nyarlathotep: Stalker Among the Stars	Mythos		Enemy		Ancient One. Elite.	Where the Gods Dwell 310	Where the Gods Dwell 25
+High Priest Not to Be Described: Agent of the Other Gods	Mythos		Enemy		Monster. Cultist. Avatar. Elite.	Where the Gods Dwell 311	Where the Gods Dwell 26
+Dhole of the Wastes	Mythos		Enemy		Monster.	Where the Gods Dwell 312	Where the Gods Dwell 27
+Liar with No Face	Mythos		Enemy		Monster. Cultist. Servitor.	Where the Gods Dwell 313	Where the Gods Dwell 28-30
+Whispering Chaos (North)	Mythos		Treachery		Power.	Where the Gods Dwell 314	Where the Gods Dwell 31
+Whispering Chaos (East)	Mythos		Treachery		Power.	Where the Gods Dwell 315	Where the Gods Dwell 32
+Whispering Chaos (South)	Mythos		Treachery		Power.	Where the Gods Dwell 316	Where the Gods Dwell 33
+Whispering Chaos (West)	Mythos		Treachery		Power.	Where the Gods Dwell 317	Where the Gods Dwell 34
+Myriad Forms	Mythos		Treachery		Power.	Where the Gods Dwell 318	Where the Gods Dwell 35-36
+Restless Journey (Fallacy)	Mythos		Treachery		Curse.	Where the Gods Dwell 319	Where the Gods Dwell 37
+Restless Journey (Hardship)	Mythos		Treachery		Curse.	Where the Gods Dwell 320	Where the Gods Dwell 38
+Restless Journey (Lies)	Mythos		Treachery		Curse.	Where the Gods Dwell 321	Where the Gods Dwell 39
+Abandoned by the Gods	Mythos		Treachery		Curse.	Where the Gods Dwell 322	Where the Gods Dwell 40-41
+Spiritual Resolve (5)	 Guardian	3	Asset		Ritual.	Weaver of the Cosmos 323	
+Abigail Foreman: Library Intern (4)	 Seeker	3	Asset	 	Ally. Miskatonic.	Weaver of the Cosmos 324	
+The Eye of Truth (5)	 Seeker		Skill	   	Spell. Practiced.	Weaver of the Cosmos 325	
+Joey "The Rat" Vigil: Lookin' Out for #1 (3)	 Rogue	2	Asset	 	Ally. Criminal.	Weaver of the Cosmos 326	
+Sawed-Off Shotgun (5)	 Rogue	3	Asset	 	Item. Weapon. Firearm. Illicit.	Weaver of the Cosmos 327	
+Mind's Eye (2)	 Mystic	3	Asset		Ritual.	Weaver of the Cosmos 328	
+Shining Trapezohedron (4)	 Mystic	1	Asset	  	Item. Relic.	Weaver of the Cosmos 329	
+Nightmare Bauble (3)	 Survivor	1	Asset	 	Item. Charm. Cursed.	Weaver of the Cosmos 330	
+Dream Parasite	Neutral		Skill	 	Curse.	Weaver of the Cosmos 331	
+Scavenging (2)	 Survivor	1	Asset	 	Talent.	Weaver of the Cosmos 332	
+Weaver of the Cosmos	Mythos		Scenario			Weaver of the Cosmos 333	Weaver of the Cosmos 1
+The Bridge of Webs	Mythos		Agenda			Weaver of the Cosmos 334	Weaver of the Cosmos 2
+A Trail of Twists	Mythos		Agenda			Weaver of the Cosmos 335	Weaver of the Cosmos 3
+Realities Interwoven	Mythos		Agenda			Weaver of the Cosmos 336	Weaver of the Cosmos 4
+Journey Across the Bridge	Mythos		Act			Weaver of the Cosmos 337	Weaver of the Cosmos 5
+The Weaver of the Cosmos	Mythos		Act			Weaver of the Cosmos 338	Weaver of the Cosmos 6
+The Scheme's Demise	Mythos		Act			Weaver of the Cosmos 339	Weaver of the Cosmos 7
+The Great Web: Web-Stairs	Mythos		Location		Otherworld. Extradimensional.	Weaver of the Cosmos 340	Weaver of the Cosmos 8-10
+The Great Web: Cosmic Web	Mythos		Location		Otherworld. Extradimensional.	Weaver of the Cosmos 341	Weaver of the Cosmos 11-12
+The Great Web: Tangled Web	Mythos		Location		Otherworld. Extradimensional.	Weaver of the Cosmos 342	Weaver of the Cosmos 13-15
+The Great Web: Prison of Cocoons	Mythos		Location		Otherworld. Extradimensional.	Weaver of the Cosmos 343	Weaver of the Cosmos 16-17
+The Great Web: Vast Web	Mythos		Location		Otherworld. Extradimensional.	Weaver of the Cosmos 344	Weaver of the Cosmos 18-19
+The Great Web: Web-Woven Island	Mythos		Location		Otherworld. Extradimensional.	Weaver of the Cosmos 345	Weaver of the Cosmos 20-22
+Atlach-Nacha: The Spider God	Mythos		Enemy		Ancient One. Spider. Elite.	Weaver of the Cosmos 346	Weaver of the Cosmos 23
+Legs of Atlach-Nacha	Mythos		Enemy		Ancient One. Spider. Elite.	Weaver of the Cosmos 347	Weaver of the Cosmos 24
+Legs of Atlach-Nacha	Mythos		Enemy		Ancient One. Spider. Elite.	Weaver of the Cosmos 348	Weaver of the Cosmos 25
+Legs of Atlach-Nacha	Mythos		Enemy		Ancient One. Spider. Elite.	Weaver of the Cosmos 349	Weaver of the Cosmos 26
+Legs of Atlach-Nacha	Mythos		Enemy		Ancient One. Spider. Elite.	Weaver of the Cosmos 350	Weaver of the Cosmos 27
+Web-Spinner	Mythos		Enemy		Monster. Spider.	Weaver of the Cosmos 351	Weaver of the Cosmos 28-30
+The Spinner in Darkness	Mythos		Treachery		Power.	Weaver of the Cosmos 352	Weaver of the Cosmos 31-32
+Caught in a Web	Mythos		Treachery		Hazard.	Weaver of the Cosmos 353	Weaver of the Cosmos 33-35
+Endless Weaving	Mythos		Treachery		Scheme.	Weaver of the Cosmos 354	Weaver of the Cosmos 36-38

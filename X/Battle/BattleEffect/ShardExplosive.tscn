@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="ParticlesMaterial" id=1]
+direction = Vector3( 0, 10, 0 )
+spread = 180.0
+initial_velocity = 10.0
+angular_velocity = -66.21
+angular_velocity_random = 0.22
+radial_accel = 20.69
+radial_accel_random = 0.24
+tangential_accel = -16.09
+tangential_accel_random = 0.29
+damping = 16.1
+damping_random = 0.18
+
+[sub_resource type="CubeMesh" id=2]
+size = Vector3( 0.3, 0.4, 0.5 )
+
+[node name="ShardExplosive" type="Spatial"]
+
+[node name="Particles" type="Particles" parent="."]
+process_material = SubResource( 1 )
+draw_pass_1 = SubResource( 2 )

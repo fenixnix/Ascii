@@ -1,0 +1,104 @@
+[
+    {
+        "id":"hp",
+        "name":"Hull Armor",
+        "affix":{
+            "hp":50
+        },
+        "cost":{
+            "mtrl":5,
+            "dkmt":10
+        },
+        "time":8
+    },
+    {
+        "id":"acc",
+        "name":"Aim Sensor",
+        "affix":{
+            "acc":7
+        },
+        "cost":{
+            "mtrl":5,
+            "dkmt":10
+        },
+        "time":8
+    },
+    {
+        "id":"evd",
+        "name":"Aim Sensor",
+        "affix":{
+            "evd":7
+        },
+        "cost":{
+            "mtrl":5,
+            "dkmt":10
+        },
+        "time":8
+    },
+    {
+        "id":"dmg",
+        "name":"Aim Sensor",
+        "affix":{
+            "dmg":7
+        },
+        "cost":{
+            "mtrl":5,
+            "dkmt":10
+        },
+        "time":8
+    },
+    {
+        "id":"def",
+        "name":"Aim Sensor",
+        "affix":{
+            "def":7
+        },
+        "cost":{
+            "mtrl":5,
+            "dkmt":10
+        },
+        "time":8
+    },
+    {
+        "id":"crt",
+        "name":"Aim Sensor",
+        "affix":{
+            "crt":7
+        },
+        "cost":{
+            "mtrl":5,
+            "dkmt":10
+        },
+        "time":8
+    },
+    {
+        "id":"spd",
+        "name":"Aim Sensor",
+        "affix":{
+            "spd":7
+        },
+        "cost":{
+            "mtrl":5,
+            "dkmt":10
+        },
+        "time":8
+    },
+    {
+        "id":"repair",
+        "name":"Repair Drone",
+        "icon":"res://images/icon/icon_repair.png",
+        "consumable":{
+            "efx":[
+                {
+                    "type":"heal",
+                    "val":300
+                }
+            ]
+        },
+        "cost":{
+            "mtrl":10,
+            "dkmt":5
+        },
+        "time":8
+    }
+]

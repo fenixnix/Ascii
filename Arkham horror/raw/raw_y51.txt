@@ -1,0 +1,73 @@
+Bandolier (1)	 Guardian	2	Asset	 	Item.	Return to the Dunwich Legacy 1	
+Blackjack (1)	 Guardian	2	Asset	 	Item. Weapon. Melee.	Return to the Dunwich Legacy 2	
+Preposterous Sketches (1)	 Seeker	0	Event	 	Insight.	Return to the Dunwich Legacy 3	
+Strange Solution: Empowering Elixir (3)	 Seeker	1	Asset	 	Item. Science.	Return to the Dunwich Legacy 4	
+Contraband (1)	 Rogue	3	Event	  	Supply. Illicit.	Return to the Dunwich Legacy 5	
+Think on Your Feet (1)	 Rogue	0	Event	  	Trick.	Return to the Dunwich Legacy 6	
+Rite of Seeking (1)	 Mystic	4	Asset		Spell.	Return to the Dunwich Legacy 7	
+Clarity of Mind (2)	 Mystic	2	Asset	 	Spell.	Return to the Dunwich Legacy 8	
+Oops! (1)	 Survivor	2	Event	  	Fortune.	Return to the Dunwich Legacy 9	
+Rise to the Occasion (2)	 Survivor		Skill	 	Innate.	Return to the Dunwich Legacy 10	
+Through the Gates	Neutral		Treachery		Pact. Mystery.	Return to the Dunwich Legacy 10	
+Return to Extracurricular Activities	Mythos		Scenario			Return to the Dunwich Legacy 11	Return to Extracurricular Activity 1
+Warren Observatory	Mythos		Location		Miskatonic.	Return to the Dunwich Legacy 12	Return to Extracurricular Activity 2
+Enthralled Security Guard	Mythos		Enemy		Humanoid. Abomination.	Return to the Dunwich Legacy 14	Return to Extracurricular Activity 3-4
+Return to The House Always Wins	Mythos		Scenario			Return to the Dunwich Legacy 14	Return to The House Always Wins 1
+Clover Club Lounge	Mythos		Location		Clover Club.	Return to the Dunwich Legacy 15	Return to The House Always Wins 2
+Clover Club Stage	Mythos		Location		Clover Club.	Return to the Dunwich Legacy 16	Return to The House Always Wins 3
+Caught Cheating	Mythos		Treachery		Illicit.	Return to the Dunwich Legacy 17	Return to The House Always Wins 4-5
+Raise the Stakes	Mythos		Treachery		Illicit.	Return to the Dunwich Legacy 18	Return to The House Always Wins 6-7
+Return to The Miskatonic Museum	Mythos		Scenario			Return to the Dunwich Legacy 19	Return to The Miskatonic Museum 1
+Exhibit Hall: Medieval Exhibit	Mythos		Location		Miskatonic. Exhibit.	Return to the Dunwich Legacy 21	Return to The Miskatonic Museum 2
+Exhibit Hall: The Archives	Mythos		Location		Miskatonic. Exhibit.	Return to the Dunwich Legacy 22	Return to The Miskatonic Museum 3
+Dark Bidding	Mythos		Treachery		Power.	Return to the Dunwich Legacy 22	Return to The Miskatonic Museum 4-5
+Night Beyond Void	Mythos		Treachery		Power.	Return to the Dunwich Legacy 23	Return to The Miskatonic Museum 6-7
+Return to The Essex County Express	Mythos		Scenario			Return to the Dunwich Legacy 24	Return to The Essex County Express 1
+The Conductor: Beast from beyond the Gate	Mythos		Enemy		Monster. Elite.	Return to the Dunwich Legacy 26	Return to The Essex County Express 2
+Where There's Smoke	Mythos		Agenda			Return to the Dunwich Legacy 25	Return to The Essex County Express 2
+A Tear in Reality (v.II)	Mythos		Agenda			Return to the Dunwich Legacy 26	Return to The Essex County Express 3
+Engine Car	Mythos		Location		Train.	Return to the Dunwich Legacy 27	Return to The Essex County Express 4
+Freight Car	Mythos		Location		Train.	Return to the Dunwich Legacy 28	Return to The Essex County Express 5
+Baggage Car	Mythos		Location		Train.	Return to the Dunwich Legacy 29	Return to The Essex County Express 6
+Engineer	Neutral		Asset		Ally. Bystander.	Return to the Dunwich Legacy 30	Return to The Essex County Express 7
+Return to Blood on the Altar	Mythos		Scenario			Return to the Dunwich Legacy 31	Return to Blood on the Altar 1
+Village Commons: Silent Decay	Mythos		Location		Dunwich. Central.	Return to the Dunwich Legacy 33	Return to Blood on the Altar 2
+Bishop's Brook	Mythos		Location		Dunwich.	Return to the Dunwich Legacy 33	Return to Blood on the Altar 3
+Burned Ruins	Mythos		Location		Dunwich.	Return to the Dunwich Legacy 34	Return to Blood on the Altar 4
+Osborn's General Store	Mythos		Location		Dunwich.	Return to the Dunwich Legacy 35	Return to Blood on the Altar 5
+Congregational Church	Mythos		Location		Dunwich.	Return to the Dunwich Legacy 36	Return to Blood on the Altar 6
+House in the Reeds	Mythos		Location		Dunwich.	Return to the Dunwich Legacy 37	Return to Blood on the Altar 7
+Schoolhouse	Mythos		Location		Dunwich.	Return to the Dunwich Legacy 38	Return to Blood on the Altar 8
+Hired Gun	Mythos		Enemy		Humanoid. Criminal. Syndicate.	Return to the Dunwich Legacy 39	Return to Blood on the Altar 9-10
+Return to Undimensioned and Unseen	Mythos		Scenario			Return to the Dunwich Legacy 40	Return to Undimensioned and Unseen 1
+Brood of Yog-Sothoth: Charging Beast	Mythos		Enemy		Monster. Abomination.	Return to the Dunwich Legacy 42	Return to Undimensioned and Unseen 2
+Brood of Yog-Sothoth: Swelling Devourer	Mythos		Enemy		Monster. Abomination.	Return to the Dunwich Legacy 43	Return to Undimensioned and Unseen 3
+Brood of Yog-Sothoth: Thrashing Spawn	Mythos		Enemy		Monster. Abomination.	Return to the Dunwich Legacy 44	Return to Undimensioned and Unseen 4
+Brood of Yog-Sothoth: Amorphous Terror	Mythos		Enemy		Monster. Abomination.	Return to the Dunwich Legacy 45	Return to Undimensioned and Unseen 5
+Imperceptible Creature	Mythos		Treachery		Power.	Return to the Dunwich Legacy 45	Return to Undimensioned and Unseen 6-7
+Return to Where Doom Awaits	Mythos		Scenario			Return to the Dunwich Legacy 46	Return to Where Doom Awaits 1
+Base of the Hill: Warped and Twisted	Mythos		Location		Dunwich. Sentinel Hill.	Return to the Dunwich Legacy 48	Return to Where Doom Awaits 2
+Ascending Path: Warped and Twisted	Mythos		Location		Dunwich. Sentinel Hill.	Return to the Dunwich Legacy 49	Return to Where Doom Awaits 3
+Abandoned Camp	Mythos		Location		Dunwich. Woods.	Return to the Dunwich Legacy 49	Return to Where Doom Awaits 4
+Fathomless Lake	Mythos		Location		Dunwich. Woods. Altered.	Return to the Dunwich Legacy 51	Return to Where Doom Awaits 5
+Naomi O'Bannion: Ruthless Tactician	Neutral	4	Asset	   	Ally. Criminal. Syndicate.	Return to the Dunwich Legacy 52	Return to Where Doom Awaits 6
+Return to Lost in Time and Space	Mythos		Scenario			Return to the Dunwich Legacy 52	Return to Lost in Time and Space 1
+Breaking Through (v. II)	Mythos		Agenda			Return to the Dunwich Legacy 53	Return to Lost in Time and Space 2
+Into the Beyond (v. II)	Mythos		Act			Return to the Dunwich Legacy 54	Return to Lost in Time and Space 3
+Seth Bishop: Thrall of Yog-Sothoth	Mythos		Enemy		Humanoid. Monster. Abomination. Elite.	Return to the Dunwich Legacy 56	Return to Lost in Time and Space 4
+Realms Beyond: All-In-One	Mythos		Location		Otherworld.	Return to the Dunwich Legacy 56	Return to Lost in Time and Space 5
+Indecipherable Stairs	Mythos		Location		Otherworld. Extradimensional.	Return to the Dunwich Legacy 58	Return to Lost in Time and Space 6
+Towering Luminosity	Mythos		Location		Otherworld. Extradimensional.	Return to the Dunwich Legacy 59	Return to Lost in Time and Space 7
+Unstable Vortex	Mythos		Location		Otherworld. Extradimensional.	Return to the Dunwich Legacy 60	Return to Lost in Time and Space 8
+Haunting Recollections	Mythos		Treachery		Hex.	Return to the Dunwich Legacy 60	Beyond the Threshold 1-2
+A Baleful Welcome	Mythos		Treachery		Hex.	Return to the Dunwich Legacy 61	Beyond the Threshold 3-4
+Infinite Doorway	Mythos		Treachery		Hex.	Return to the Dunwich Legacy 62	Beyond the Threshold 5-6
+Resurgent Evils	Mythos		Treachery		Omen.	Return to the Dunwich Legacy 63	Resurgent Evils 1-3
+Secret Door	Mythos		Treachery		Obstacle.	Return to the Dunwich Legacy 64	Secret Doors 1-2
+Inexplicable Cold	Mythos		Treachery		Hazard.	Return to the Dunwich Legacy 65	Creeping Cold 1-2
+Oppressive Mists	Mythos		Treachery		Hazard.	Return to the Dunwich Legacy 66	Creeping Cold 3-4
+Violent Commands	Mythos		Treachery		Terror.	Return to the Dunwich Legacy 67	Erratic Fear 1-2
+Idle Hands	Mythos		Treachery		Terror.	Return to the Dunwich Legacy 68	Erratic Fear 3-4
+Need for Knowledge	Mythos		Treachery		Terror.	Return to the Dunwich Legacy 69	Erratic Fear 5-7
+Vassal of the Lurker	Mythos		Enemy		Monster. Abomination.	Return to the Dunwich Legacy 71	Yog-Sothoth's Emissaries 1-2
+Eldritch Accord	Mythos		Treachery		Pact.	Return to the Dunwich Legacy 71	Yog-Sothoth's Emissaries 3-4

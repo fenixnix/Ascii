@@ -1,0 +1,64 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://UI/MarketUI.gd" type="Script" id=1]
+
+[node name="MarketUI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TabContainer" type="TabContainer" parent="."]
+anchor_left = 0.121094
+anchor_top = 0.116667
+anchor_right = 0.923828
+anchor_bottom = 0.848333
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Resources" type="PanelContainer" parent="TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 30.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Officer" type="PanelContainer" parent="TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 30.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Ship" type="PanelContainer" parent="TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 30.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Weapon" type="PanelContainer" parent="TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 30.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Equipment" type="PanelContainer" parent="TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 30.0
+margin_right = -4.0
+margin_bottom = -4.0

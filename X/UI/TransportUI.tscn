@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://UI/TransportUI.gd" type="Script" id=5]
+
+[node name="TransportUI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="ScrollContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -194.5
+margin_top = -74.5
+margin_right = 194.5
+margin_bottom = 74.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Root" type="VBoxContainer" parent="Panel"]
+margin_right = 389.0
+margin_bottom = 149.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 409.964
+margin_top = 182.095
+margin_right = 615.964
+margin_bottom = 212.095
+text = "Transport"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OK" type="Button" parent="."]
+margin_left = 443.68
+margin_top = 384.195
+margin_right = 584.68
+margin_bottom = 402.195
+size_flags_horizontal = 3
+text = "OK"
+[connection signal="pressed" from="OK" to="." method="_on_OK_pressed"]

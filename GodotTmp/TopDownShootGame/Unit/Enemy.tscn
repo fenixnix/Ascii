@@ -1,0 +1,95 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://TopDownShootGame/AI/Action/ApprochTarget.gd" type="Script" id=1]
+[ext_resource path="res://TopDownShootGame/AI/Action/AttackTarget.gd" type="Script" id=2]
+[ext_resource path="res://NixLib/BehaviorTree/BehaviorTree/BehaviorLeaf.gd" type="Script" id=3]
+[ext_resource path="res://NixLib/BehaviorTree/BehaviorTree/BehaviorTreeRoot.gd" type="Script" id=4]
+[ext_resource path="res://NixLib/BehaviorTree/BehaviorTree/BT_Parallel.gd" type="Script" id=5]
+[ext_resource path="res://NixLib/BehaviorTree/BehaviorTree/BT_Selector.gd" type="Script" id=6]
+[ext_resource path="res://NixLib/Common/UnitLife.gd" type="Script" id=7]
+[ext_resource path="res://TopDownShootGame/Projectile/bullet0.tscn" type="PackedScene" id=9]
+[ext_resource path="res://TopDownShootGame/AI/Condition/EnemyInView.gd" type="Script" id=11]
+[ext_resource path="res://TopDownShootGame/AI/Condition/EnemyTooClose.gd" type="Script" id=12]
+[ext_resource path="res://TopDownShootGame/AI/Action/Flee.gd" type="Script" id=13]
+[ext_resource path="res://TopDownShootGame/Common/MovementAgent.gd" type="Script" id=14]
+[ext_resource path="res://NixLib/Shoot/ShootTarget.gd" type="Script" id=15]
+[ext_resource path="res://NixLib/Common/Sight.gd" type="Script" id=16]
+[ext_resource path="res://TopDownShootGame/Mecha/MechaEnemy.gd" type="Script" id=17]
+[ext_resource path="res://TopDownShootGame/Mecha/EnemyMechAI.gd" type="Script" id=18]
+[ext_resource path="res://TopDownShootGame/Image/Unit/Humanoid/towerDefense_tile245.png" type="Texture" id=19]
+[ext_resource path="res://TopDownShootGame/AI/Action/Patrol.gd" type="Script" id=20]
+[ext_resource path="res://TopDownShootGame/AI/Condition/NoEnemyInSight.gd" type="Script" id=21]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 11.4592
+
+[node name="Enemy" type="KinematicBody2D"]
+collision_layer = 3
+script = ExtResource( 17 )
+team = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Huge" type="Sprite" parent="."]
+texture = ExtResource( 19 )
+
+[node name="ShootTarget" type="Node2D" parent="."]
+script = ExtResource( 15 )
+projectile = ExtResource( 9 )
+fires = [ NodePath("Fire") ]
+coolDown = 0.5
+
+[node name="Fire" type="Node2D" parent="ShootTarget"]
+position = Vector2( 16, 0 )
+rotation = -4.46638e-06
+
+[node name="UnitLife" type="Node" parent="."]
+script = ExtResource( 7 )
+maxLife = 1
+
+[node name="ViewRange2D" type="Area2D" parent="."]
+script = ExtResource( 16 )
+
+[node name="MovementAgent" type="Node" parent="."]
+script = ExtResource( 14 )
+speed = 0.5
+
+[node name="EnemyMechAI" type="Node" parent="."]
+script = ExtResource( 18 )
+
+[node name="BehaviorTreeRoot" type="Node" parent="EnemyMechAI"]
+script = ExtResource( 4 )
+
+[node name="BT_Selector" type="Node" parent="EnemyMechAI/BehaviorTreeRoot"]
+script = ExtResource( 6 )
+
+[node name="Patrol" type="Node" parent="EnemyMechAI/BehaviorTreeRoot/BT_Selector"]
+script = ExtResource( 3 )
+conditionScript = ExtResource( 21 )
+actionScript = ExtResource( 20 )
+
+[node name="Flee" type="Node" parent="EnemyMechAI/BehaviorTreeRoot/BT_Selector"]
+script = ExtResource( 3 )
+conditionScript = ExtResource( 12 )
+actionScript = ExtResource( 13 )
+
+[node name="BT_Parallel" type="Node" parent="EnemyMechAI/BehaviorTreeRoot/BT_Selector"]
+script = ExtResource( 5 )
+condition = ExtResource( 11 )
+
+[node name="Approch" type="Node" parent="EnemyMechAI/BehaviorTreeRoot/BT_Selector/BT_Parallel"]
+script = ExtResource( 3 )
+conditionScript = ExtResource( 11 )
+actionScript = ExtResource( 1 )
+
+[node name="Attack" type="Node" parent="EnemyMechAI/BehaviorTreeRoot/BT_Selector/BT_Parallel"]
+script = ExtResource( 3 )
+actionScript = ExtResource( 2 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.3
+autostart = true
+[connection signal="body_entered" from="ViewRange2D" to="ViewRange2D" method="_on_ViewRange2D_body_entered"]
+[connection signal="body_exited" from="ViewRange2D" to="ViewRange2D" method="_on_ViewRange2D_body_exited"]
+[connection signal="timeout" from="Timer" to="EnemyMechAI" method="Run"]

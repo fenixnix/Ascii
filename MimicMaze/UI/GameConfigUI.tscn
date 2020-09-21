@@ -1,0 +1,231 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://UI/GameConfigUI.gd" type="Script" id=1]
+
+[node name="GameConfigUI" type="PopupPanel"]
+anchor_bottom = 1.0
+margin_right = 192.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="PanelContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Root" type="VBoxContainer" parent="Panel"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 177.0
+margin_bottom = 585.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/Root"]
+margin_right = 170.0
+margin_bottom = 14.0
+text = "config"
+align = 1
+valign = 1
+
+[node name="HSeparator" type="HSeparator" parent="Panel/Root"]
+margin_top = 18.0
+margin_right = 170.0
+margin_bottom = 22.0
+
+[node name="Language" type="HBoxContainer" parent="Panel/Root"]
+margin_top = 26.0
+margin_right = 170.0
+margin_bottom = 46.0
+
+[node name="Label" type="Label" parent="Panel/Root/Language"]
+margin_top = 3.0
+margin_right = 56.0
+margin_bottom = 17.0
+text = "language"
+
+[node name="Language" type="OptionButton" parent="Panel/Root/Language"]
+margin_left = 60.0
+margin_right = 170.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+text = "English"
+align = 1
+items = [ "English", null, false, 0, null, "中文（简体）", null, false, 1, null ]
+selected = 0
+
+[node name="Label3" type="ToolButton" parent="Panel/Root"]
+margin_top = 50.0
+margin_right = 170.0
+margin_bottom = 72.0
+text = "graphic"
+align = 0
+
+[node name="Graphic" type="VBoxContainer" parent="Panel/Root"]
+margin_top = 76.0
+margin_right = 170.0
+margin_bottom = 172.0
+
+[node name="HSeparator4" type="HSeparator" parent="Panel/Root/Graphic"]
+margin_right = 170.0
+margin_bottom = 4.0
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="Panel/Root/Graphic"]
+margin_top = 8.0
+margin_right = 170.0
+margin_bottom = 28.0
+
+[node name="Label" type="Label" parent="Panel/Root/Graphic/HBoxContainer5"]
+margin_top = 3.0
+margin_right = 65.0
+margin_bottom = 17.0
+text = "resolution"
+
+[node name="OptionButton" type="OptionButton" parent="Panel/Root/Graphic/HBoxContainer5"]
+margin_left = 69.0
+margin_right = 170.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+text = "1920*1080"
+align = 1
+items = [ "1920*1080", null, false, 0, null, "1280*768", null, false, 1, null, "800*600", null, false, 2, null, "640*480", null, false, 3, null, "320*240", null, false, 4, null ]
+selected = 0
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="Panel/Root/Graphic"]
+margin_top = 32.0
+margin_right = 170.0
+margin_bottom = 72.0
+
+[node name="Label" type="Label" parent="Panel/Root/Graphic/HBoxContainer4"]
+margin_top = 13.0
+margin_right = 63.0
+margin_bottom = 27.0
+text = "fullscreen"
+
+[node name="FullScreen" type="CheckButton" parent="Panel/Root/Graphic/HBoxContainer4"]
+margin_left = 67.0
+margin_right = 170.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="Panel/Root/Graphic"]
+margin_top = 76.0
+margin_right = 170.0
+margin_bottom = 96.0
+
+[node name="Label" type="Label" parent="Panel/Root/Graphic/HBoxContainer6"]
+margin_top = 3.0
+margin_right = 42.0
+margin_bottom = 17.0
+text = "theme"
+
+[node name="OptionButton" type="OptionButton" parent="Panel/Root/Graphic/HBoxContainer6"]
+margin_left = 46.0
+margin_right = 170.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+align = 1
+
+[node name="Label4" type="ToolButton" parent="Panel/Root"]
+margin_top = 176.0
+margin_right = 170.0
+margin_bottom = 198.0
+text = "audio"
+align = 0
+
+[node name="Audio" type="VBoxContainer" parent="Panel/Root"]
+margin_top = 202.0
+margin_right = 170.0
+margin_bottom = 246.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSeparator3" type="HSeparator" parent="Panel/Root/Audio"]
+margin_right = 170.0
+margin_bottom = 4.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/Root/Audio"]
+margin_top = 8.0
+margin_right = 170.0
+margin_bottom = 24.0
+
+[node name="Label" type="Label" parent="Panel/Root/Audio/HBoxContainer"]
+margin_top = 1.0
+margin_right = 31.0
+margin_bottom = 15.0
+text = "BGM"
+
+[node name="BGM" type="HSlider" parent="Panel/Root/Audio/HBoxContainer"]
+margin_left = 35.0
+margin_right = 170.0
+margin_bottom = 16.0
+size_flags_horizontal = 3
+min_value = -80.0
+max_value = 20.0
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Panel/Root/Audio"]
+margin_top = 28.0
+margin_right = 170.0
+margin_bottom = 44.0
+
+[node name="Label" type="Label" parent="Panel/Root/Audio/HBoxContainer3"]
+margin_top = 1.0
+margin_right = 22.0
+margin_bottom = 15.0
+text = "SFX"
+
+[node name="SFX" type="HSlider" parent="Panel/Root/Audio/HBoxContainer3"]
+margin_left = 26.0
+margin_right = 170.0
+margin_bottom = 16.0
+size_flags_horizontal = 3
+min_value = -80.0
+max_value = 20.0
+
+[node name="Label2" type="Label" parent="Panel/Root"]
+margin_top = 395.0
+margin_right = 170.0
+margin_bottom = 409.0
+size_flags_vertical = 6
+
+[node name="Menu" type="HBoxContainer" parent="Panel/Root"]
+margin_top = 558.0
+margin_right = 170.0
+margin_bottom = 578.0
+alignment = 1
+
+[node name="Default" type="Button" parent="Panel/Root/Menu"]
+margin_right = 56.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+text = "default"
+
+[node name="Cancel" type="Button" parent="Panel/Root/Menu"]
+margin_left = 60.0
+margin_right = 113.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+text = "cancel"
+
+[node name="OK" type="Button" parent="Panel/Root/Menu"]
+margin_left = 117.0
+margin_right = 170.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+size_flags_vertical = 9
+text = "apply"
+[connection signal="item_selected" from="Panel/Root/Language/Language" to="." method="_on_OptionButton_item_selected"]
+[connection signal="value_changed" from="Panel/Root/Audio/HBoxContainer/BGM" to="." method="_on_BGM_value_changed"]
+[connection signal="value_changed" from="Panel/Root/Audio/HBoxContainer3/SFX" to="." method="_on_SFX_value_changed"]
+[connection signal="pressed" from="Panel/Root/Menu/Cancel" to="." method="_on_Cancel_pressed"]
+[connection signal="pressed" from="Panel/Root/Menu/OK" to="." method="_on_OK_pressed"]

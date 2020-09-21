@@ -1,0 +1,58 @@
+The Eternal Slumber	Mythos		Scenario			Guardians of the Abyss 1	The Eternal Slumber 1
+Jessie's Request	Mythos		Agenda			Guardians of the Abyss 2	The Eternal Slumber 2
+Curse of the Abyss	Mythos		Agenda			Guardians of the Abyss 3	The Eternal Slumber 3
+Garden of Shadows	Mythos		Agenda			Guardians of the Abyss 4	The Eternal Slumber 4
+Curse of Endless Sleep	Mythos		Act			Guardians of the Abyss 5	The Eternal Slumber 5
+Secrets in the Sand	Mythos		Act			Guardians of the Abyss 6	The Eternal Slumber 6
+The Hour of Judgment	Mythos		Act			Guardians of the Abyss 7	The Eternal Slumber 7
+Streets of Cairo	Mythos		Location		Cairo.	Guardians of the Abyss 8	The Eternal Slumber 8
+Cairo Bazaar	Mythos		Location		Cairo.	Guardians of the Abyss 9	The Eternal Slumber 9
+Museum of Egyptian Antiquities	Mythos		Location		Cairo.	Guardians of the Abyss 10	The Eternal Slumber 10
+Outskirts of Cairo	Mythos		Location		Cairo.	Guardians of the Abyss 11	The Eternal Slumber 11
+Temple Courtyard	Mythos		Location		Cairo.	Guardians of the Abyss 12	The Eternal Slumber 12
+Neith: Harbinger of the Abyss	Mythos		Enemy		Humanoid. Brotherhood. Elite.	Guardians of the Abyss 13	The Eternal Slumber 13
+Humble Supplicant	Mythos		Enemy		Humanoid. Cultist.	Guardians of the Abyss 14	The Eternal Slumber 14-16
+Creature from the Abyss	Mythos		Enemy		Monster. Dreamlands.	Guardians of the Abyss 15	The Eternal Slumber 17-18
+The Night's Usurper	Mythos		Scenario			Guardians of the Abyss 16	The Night's Usurper 1
+The Brotherhood Bides Their Time	Mythos		Agenda			Guardians of the Abyss 17	The Night's Usurper 2
+Schemes in the Dark Beyond	Mythos		Agenda			Guardians of the Abyss 18	The Night's Usurper 3
+Search for the Gate	Mythos		Act			Guardians of the Abyss 19	The Night's Usurper 4
+Into the Gate	Mythos		Act			Guardians of the Abyss 20	The Night's Usurper 5
+The Night's Usurper	Mythos		Act			Guardians of the Abyss 21	The Night's Usurper 6
+A Dream Betwixt	Mythos		Location		Otherworld. Extradimensional.	Guardians of the Abyss 22	The Night's Usurper 7
+The Great Abyss	Mythos		Location		Otherworld. Dreamlands.	Guardians of the Abyss 23	The Night's Usurper 8
+Tunnels under Ngranek	Mythos		Location		Otherworld. Dreamlands.	Guardians of the Abyss 24	The Night's Usurper 9
+Stairway to Sarkomand	Mythos		Location		Otherworld. Dreamlands.	Guardians of the Abyss 25	The Night's Usurper 10
+Mist-Filled Caverns	Mythos		Location		Otherworld. Dreamlands.	Guardians of the Abyss 26	The Night's Usurper 11
+Xzharah: Chosen of the Beast	Mythos		Enemy		Servitor. Dreamlands. Conspirator. Elite.	Guardians of the Abyss 27	The Night's Usurper 12
+Eldritch Gate	Mythos		Location		Expedition. Desert. Ruins	Guardians of the Abyss 28	The Night's Usurper 13
+Dreaded Shantak	Mythos		Enemy		Monster. Dreamlands. Shantak.	Guardians of the Abyss 29	The Night's Usurper 14-15
+Speaker for the Dark Pharaoh	Mythos		Enemy		Humanoid. Cultist.	Guardians of the Abyss 30	The Night's Usurper 16-17
+Dr. Layla El Masri: Hieratic Translator	Mythos		Enemy		Humanoid. Cultist. Brotherhood.	Guardians of the Abyss 31	Brotherhood of the Beast 1
+Dr. Wentworth Moore: Dark Supplicant	Mythos		Enemy		Humanoid. Cultist. Brotherhood.	Guardians of the Abyss 32	Brotherhood of the Beast 2
+Nadia Nimr: Priestess of the Beast	Mythos		Enemy		Humanoid. Cultist. Brotherhood.	Guardians of the Abyss 33	Brotherhood of the Beast 3
+Farid: Seedy Salesman	Mythos		Enemy		Humanoid. Cultist. Brotherhood.	Guardians of the Abyss 34	Brotherhood of the Beast 4
+Nassor: Brotherhood Operative	Mythos		Enemy		Humanoid. Cultist. Brotherhood.	Guardians of the Abyss 35	Brotherhood of the Beast 5
+Professor Nathaniel Taylor: Keeper of Antiquities	Mythos		Enemy		Humanoid. Cultist. Brotherhood.	Guardians of the Abyss 36	Brotherhood of the Beast 6
+Expedition Camp	Mythos		Location		Expedition. Cairo. Desert.	Guardians of the Abyss 37	Sands of Egypt 1
+Nile River	Mythos		Location		Expedition. Desert.	Guardians of the Abyss 38	Sands of Egypt 2
+Sands of Dashur	Mythos		Location		Expedition. Desert.	Guardians of the Abyss 39	Sands of Egypt 3
+Dunes of the Sahara	Mythos		Location		Expedition. Desert.	Guardians of the Abyss 40	Sands of Egypt 4
+Untouched Vault	Mythos		Location		Expedition. Ruins.	Guardians of the Abyss 41	Sands of Egypt 5
+Faceless Sphinx	Mythos		Location		Expedition. Desert. Ruins.	Guardians of the Abyss 42	Sands of Egypt 6
+Desert Oasis	Mythos		Location		Expedition. Desert.	Guardians of the Abyss 43	Sands of Egypt 7
+Sandswept Ruins	Mythos		Location		Expedition. Desert. Ruins.	Guardians of the Abyss 44	Sands of Egypt 8
+Abyssal Revenant	Mythos		Enemy		Monster. Dreamlands.	Guardians of the Abyss 45	Sands of Egypt 9-10
+Thing in the Sarcophagus	Mythos		Enemy		Monster.	Guardians of the Abyss 46	Sands of Egypt 11-12
+Eclipse	Mythos		Treachery		Power.	Guardians of the Abyss 47	Sands of Egypt 13-15
+Sandstorm	Mythos		Treachery		Hazard.	Guardians of the Abyss 48	Sands of Egypt 16-18
+Terror Under the Pyramids	Mythos		Treachery		Scheme.	Guardians of the Abyss 49	Sands of Egypt 19-21
+Swarm of Locusts	Mythos		Treachery		Power.	Guardians of the Abyss 50	Sands of Egypt 22-24
+Slumber	Mythos		Treachery		Curse. Abyss.	Guardians of the Abyss 51	Sands of Egypt 25-26
+Dark Sacrifice	Mythos		Treachery		Curse. Abyss.	Guardians of the Abyss 52	Sands of Egypt 27-28
+The Black Wind	Mythos		Treachery		Power.	Guardians of the Abyss 53	Sands of Egypt 29-30
+Abyssal Reach	Mythos		Treachery		Curse. Abyss.	Guardians of the Abyss 54	Sands of Egypt 31-33
+John & Jessie Burke: Relentless in Pursuit	Neutral	4	Asset	  	Ally. Government.	Guardians of the Abyss 55	Abyssal Tribute 1
+Ancient Ankh: Aegis of the Harbinger	Neutral	3	Asset	  	Item. Relic.	Guardians of the Abyss 56	Abyssal Tribute 2
+Khopesh of the Abyss: Manifested Malice	Neutral	4	Asset	  	Item. Weapon. Relic. Melee.	Guardians of the Abyss 57	Abyssal Gifts 1
+Summoned Nightgaunt: Gift from Nodens	Neutral	4	Asset	  	Monster. Nightgaunt. Power.	Guardians of the Abyss 58	Abyssal Gifts 2

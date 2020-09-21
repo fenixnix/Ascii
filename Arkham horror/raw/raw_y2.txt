@@ -1,0 +1,333 @@
+Zoey Samaras: The Chef	 Guardian		Investigator		Believer. Hunter.	The Dunwich Legacy 1	
+Rex Murphy: The Reporter	 Seeker		Investigator		Reporter.	The Dunwich Legacy 2	
+Jenny Barnes: The Dilettante	 Rogue		Investigator		Drifter.	The Dunwich Legacy 3	
+Jim Culver: The Musician	 Mystic		Investigator		Performer.	The Dunwich Legacy 4	
+"Ashcan" Pete: The Drifter	 Survivor		Investigator		Drifter.	The Dunwich Legacy 5	
+Zoey's Cross: Symbol of Righteousness	Neutral	1	Asset	  	Item. Charm.	The Dunwich Legacy 6	
+Smite the Wicked	Neutral		Treachery		Task.	The Dunwich Legacy 7	
+Search for the Truth	Neutral	1	Event	  	Insight.	The Dunwich Legacy 8	
+Rex's Curse	Neutral		Treachery		Curse.	The Dunwich Legacy 9	
+Jenny's Twin .45s: A Perfect Fit	Neutral	-2	Asset	  	Item. Weapon. Firearm.	The Dunwich Legacy 10	
+Searching for Izzie	Neutral		Treachery		Task.	The Dunwich Legacy 11	
+Jim's Trumpet: The Dead Listen	Neutral	2	Asset	  	Item. Instrument. Relic.	The Dunwich Legacy 12	
+Final Rhapsody	Neutral		Treachery		Endtimes.	The Dunwich Legacy 13	
+Duke: Loyal Hound	Neutral	2	Asset		Ally. Creature.	The Dunwich Legacy 14	
+Wracked by Nightmares	Neutral		Treachery		Madness.	The Dunwich Legacy 15	
+Blackjack	 Guardian	1	Asset		Item. Weapon. Melee.	The Dunwich Legacy 16	
+Taunt	 Guardian	1	Event	 	Tactic.	The Dunwich Legacy 17	
+Teamwork	 Guardian	0	Event		Tactic.	The Dunwich Legacy 18	
+Taunt (2)	 Guardian	1	Event	  	Tactic.	The Dunwich Legacy 19	
+Laboratory Assistant	 Seeker	2	Asset		Ally. Miskatonic. Science.	The Dunwich Legacy 20	
+Strange Solution: Unidentified	 Seeker	1	Asset		Item. Science.	The Dunwich Legacy 21	
+Shortcut	 Seeker	0	Event	 	Insight. Tactic.	The Dunwich Legacy 22	
+Seeking Answers	 Seeker	1	Event	 	Insight.	The Dunwich Legacy 23	
+Liquid Courage	 Rogue	1	Asset		Item. Illicit.	The Dunwich Legacy 24	
+Think on Your Feet	 Rogue	1	Event	 	Trick.	The Dunwich Legacy 25	
+Double or Nothing	 Rogue		Skill		Fortune.	The Dunwich Legacy 26	
+Hired Muscle (1)	 Rogue	1	Asset		Ally. Criminal.	The Dunwich Legacy 27	
+Rite of Seeking	 Mystic	4	Asset		Spell.	The Dunwich Legacy 28	
+Ritual Candles	 Mystic	1	Asset		Item.	The Dunwich Legacy 29	
+Clarity of Mind	 Mystic	2	Asset		Spell.	The Dunwich Legacy 30	
+Bind Monster (2)	 Mystic	3	Event	 	Spell.	The Dunwich Legacy 31	
+Fire Axe	 Survivor	1	Asset		Item. Weapon. Melee.	The Dunwich Legacy 32	
+Peter Sylvestre: Big Man on Campus	 Survivor	3	Asset		Ally. Miskatonic.	The Dunwich Legacy 33	
+Bait and Switch	 Survivor	1	Event	 	Trick.	The Dunwich Legacy 34	
+Peter Sylvestre: Big Man on Campus (2)	 Survivor	3	Asset		Ally. Miskatonic.	The Dunwich Legacy 35	
+Kukri	Neutral	2	Asset		Item. Weapon. Melee.	The Dunwich Legacy 36	
+Indebted	Neutral		Treachery		Flaw.	The Dunwich Legacy 37	
+Internal Injury	Neutral		Treachery		Injury.	The Dunwich Legacy 38	
+Chronophobia	Neutral		Treachery		Madness.	The Dunwich Legacy 39	
+Dr. Henry Armitage: The Head Librarian	Neutral	2	Asset	 	Ally. Miskatonic.	The Dunwich Legacy 40	Armitage's Fate 1
+Extracurricular Activity	Mythos		Scenario			The Dunwich Legacy 41	Extracurricular Activity 1
+Quiet Halls	Mythos		Agenda			The Dunwich Legacy 42	Extracurricular Activity 2
+Dead of Night	Mythos		Agenda			The Dunwich Legacy 43	Extracurricular Activity 3
+The Beast Unleashed	Mythos		Agenda			The Dunwich Legacy 44	Extracurricular Activity 4
+After Hours	Mythos		Act			The Dunwich Legacy 45	Extracurricular Activity 5
+Rice's Whereabouts	Mythos		Act			The Dunwich Legacy 46	Extracurricular Activity 6
+Campus Safety	Mythos		Act			The Dunwich Legacy 47	Extracurricular Activity 7
+Miskatonic Quad	Mythos		Location		Miskatonic.	The Dunwich Legacy 48	Extracurricular Activity 8
+Humanities Building	Mythos		Location		Miskatonic.	The Dunwich Legacy 49	Extracurricular Activity 9
+Orne Library	Mythos		Location		Miskatonic.	The Dunwich Legacy 50	Extracurricular Activity 10
+Student Union	Mythos		Location		Miskatonic.	The Dunwich Legacy 51	Extracurricular Activity 11
+Dormitories	Mythos		Location		Miskatonic.	The Dunwich Legacy 52	Extracurricular Activity 12
+Administration Building	Mythos		Location		Miskatonic.	The Dunwich Legacy 53	Extracurricular Activity 13
+Faculty Offices: The Night is Still Young	Mythos		Location		Miskatonic.	The Dunwich Legacy 54	Extracurricular Activity 14
+Faculty Offices: The Hour is Late	Mythos		Location		Miskatonic.	The Dunwich Legacy 55	Extracurricular Activity 15
+Science Building	Mythos		Location		Miskatonic.	The Dunwich Legacy 56	Extracurricular Activity 16
+Alchemy Labs	Mythos		Location		Miskatonic.	The Dunwich Legacy 57	Extracurricular Activity 17
+The Experiment: Something Went Terribly Wrong	Mythos		Enemy		Monster. Abomination. Elite.	The Dunwich Legacy 58	Extracurricular Activity 18
+Alchemical Concoction	Neutral	0	Asset		Item. Science.	The Dunwich Legacy 59	Extracurricular Activity 19
+"Jazz" Mulligan: The Head Janitor	Neutral	0	Asset		Ally. Miskatonic.	The Dunwich Legacy 60	Extracurricular Activity 20
+Professor Warren Rice: Professor of Languages	Neutral	3	Asset	 	Ally. Miskatonic.	The Dunwich Legacy 61	Extracurricular Activity 21
+The House Always Wins	Mythos		Scenario			The Dunwich Legacy 62	The House Always Wins 1
+The Clover Club	Mythos		Agenda			The Dunwich Legacy 63	The House Always Wins 2
+Underground Muscle	Mythos		Agenda			The Dunwich Legacy 64	The House Always Wins 3
+Chaos in the Clover Club	Mythos		Agenda			The Dunwich Legacy 65	The House Always Wins 4
+Beginner's Luck	Mythos		Act			The Dunwich Legacy 66	The House Always Wins 5
+Skin Game	Mythos		Act			The Dunwich Legacy 67	The House Always Wins 6
+All In	Mythos		Act			The Dunwich Legacy 68	The House Always Wins 7
+Fold	Mythos		Act			The Dunwich Legacy 69	The House Always Wins 8
+La Bella Luna	Mythos		Location		Arkham.	The Dunwich Legacy 70	The House Always Wins 9
+Clover Club Lounge	Mythos		Location		Clover Club.	The Dunwich Legacy 71	The House Always Wins 10
+Clover Club Bar	Mythos		Location		Clover Club.	The Dunwich Legacy 72	The House Always Wins 11
+Clover Club Cardroom	Mythos		Location		Clover Club.	The Dunwich Legacy 73	The House Always Wins 12
+Darkened Hall	Mythos		Location		Clover Club.	The Dunwich Legacy 74	The House Always Wins 13
+Art Gallery	Mythos		Location		Clover Club.	The Dunwich Legacy 75	The House Always Wins 14
+VIP Area	Mythos		Location		Clover Club.	The Dunwich Legacy 76	The House Always Wins 15
+Back Alley	Mythos		Location		Clover Club.	The Dunwich Legacy 77	The House Always Wins 16
+Clover Club Pit Boss	Mythos		Enemy		Criminal. Elite.	The Dunwich Legacy 78	The House Always Wins 17
+Peter Clover: Holding All the Cards	Neutral	0	Asset		Human. Criminal.	The Dunwich Legacy 79	The House Always Wins 18
+Dr. Francis Morgan: Professor of Archaeology	Neutral	3	Asset	 	Ally. Miskatonic.	The Dunwich Legacy 80	The House Always Wins 19
+Something in the Drinks	Mythos		Treachery		Poison. Illicit.	The Dunwich Legacy 81	The House Always Wins 20-21
+Arousing Suspicions	Mythos		Treachery			The Dunwich Legacy 82	The House Always Wins 22-23
+Visions of Futures Past	Mythos		Treachery		Hex.	The Dunwich Legacy 83	Sorcery 1-3
+Beyond the Veil	Mythos		Treachery		Hex.	The Dunwich Legacy 84	Sorcery 4-6
+Light of Aforgomon	Mythos		Treachery		Pact. Power.	The Dunwich Legacy 85	Bishop's Thralls 1-2
+Thrall	Mythos		Enemy		Humanoid. Monster. Abomination.	The Dunwich Legacy 86	Bishop's Thralls 3-5
+Wizard of Yog-Sothoth	Mythos		Enemy		Humanoid. Sorcerer.	The Dunwich Legacy 87	Bishop's Thralls 6
+Unhallowed Country	Mythos		Treachery		Terror.	The Dunwich Legacy 88	Dunwich 1-2
+Sordid and Silent	Mythos		Treachery		Terror.	The Dunwich Legacy 89	Dunwich 3-4
+Whippoorwill	Mythos		Enemy		Creature.	The Dunwich Legacy 90	Whippoorwills 1-3
+Eager for Death	Mythos		Treachery		Omen.	The Dunwich Legacy 91	Whippoorwills 4-5
+Cursed Luck	Mythos		Treachery		Omen.	The Dunwich Legacy 92	Bad Luck 1-3
+Twist of Fate	Mythos		Treachery		Omen.	The Dunwich Legacy 93	Bad Luck 4-6
+Avian Thrall	Mythos		Enemy		Creature. Monster. Abomination.	The Dunwich Legacy 94	Beast Thralls 1-2
+Lupine Thrall	Mythos		Enemy		Creature. Monster. Abomination.	The Dunwich Legacy 95	Beast Thralls 3-4
+Altered Beast	Mythos		Treachery		Power.	The Dunwich Legacy 96	Beast Thralls 5-6
+O'Bannion's Thug	Mythos		Enemy		Human. Criminal. Syndicate.	The Dunwich Legacy 97	Naomi's Crew 1-2
+Mobster	Mythos		Enemy		Human. Criminal. Syndicate.	The Dunwich Legacy 98	Naomi's Crew 3-4
+Hunted Down	Mythos		Treachery		Tactic.	The Dunwich Legacy 99	Naomi's Crew 5-6
+Pushed into the Beyond	Mythos		Treachery		Hex.	The Dunwich Legacy 100	The Beyond 1-2
+Terror from Beyond	Mythos		Treachery		Hex. Terror.	The Dunwich Legacy 101	The Beyond 3-4
+Arcane Barrier	Mythos		Treachery		Hex. Obstacle.	The Dunwich Legacy 102	The Beyond 5-6
+Conglomeration of Spheres	Mythos		Enemy		Monster. Abomination.	The Dunwich Legacy 103	Hideous Abominations 1-2
+Servant of the Lurker	Mythos		Enemy		Monster. Abomination.	The Dunwich Legacy 104	Hideous Abominations 3
+Emergency Aid	 Guardian	2	Event	 	Insight. Science.	The Miskatonic Museum 105	
+Brother Xavier: Pure of Spirit (1)	 Guardian	5	Asset		Ally.	The Miskatonic Museum 106	
+"I've got a plan!"	 Seeker	3	Event	 	Insight. Tactic.	The Miskatonic Museum 107	
+Pathfinder (1)	 Seeker	3	Asset		Talent.	The Miskatonic Museum 108	
+Contraband	 Rogue	4	Event	 	Supply. Illicit.	The Miskatonic Museum 109	
+Adaptable (1)	 Rogue		Asset		Talent.	The Miskatonic Museum 110	
+Delve Too Deep	 Mystic	1	Event		Insight.	The Miskatonic Museum 111	
+Song of the Dead (2)	 Mystic	2	Asset		Spell. Song.	The Miskatonic Museum 112	
+Oops!	 Survivor	2	Event	 	Fortune.	The Miskatonic Museum 113	
+Fire Extinguisher (1)	 Survivor	2	Asset		Item. Tool. Melee.	The Miskatonic Museum 114	
+Flare (1)	 Survivor	2	Event		Tactic.	The Miskatonic Museum 115	
+Smoking Pipe	Neutral	1	Asset		Item.	The Miskatonic Museum 116	
+Painkillers	Neutral	1	Asset		Item.	The Miskatonic Museum 117	
+The Miskatonic Museum	Mythos		Scenario			The Miskatonic Museum 118	The Miskatonic Museum 1
+Restricted Access	Mythos		Agenda			The Miskatonic Museum 119	The Miskatonic Museum 2
+Shadows Deepen	Mythos		Agenda			The Miskatonic Museum 120	The Miskatonic Museum 3
+In Every Shadow	Mythos		Agenda			The Miskatonic Museum 121	The Miskatonic Museum 4
+Finding A Way Inside	Mythos		Act			The Miskatonic Museum 122	The Miskatonic Museum 5
+Night at the Museum	Mythos		Act			The Miskatonic Museum 123	The Miskatonic Museum 6
+Breaking and Entering	Mythos		Act			The Miskatonic Museum 124	The Miskatonic Museum 7
+Searching for the Tome	Mythos		Act			The Miskatonic Museum 125	The Miskatonic Museum 8
+Museum Entrance	Mythos		Location		Miskatonic.	The Miskatonic Museum 126	The Miskatonic Museum 9
+Museum Halls	Mythos		Location		Miskatonic.	The Miskatonic Museum 127	The Miskatonic Museum 10
+Security Office	Mythos		Location		Miskatonic.	The Miskatonic Museum 128	The Miskatonic Museum 11
+Security Office	Mythos		Location		Miskatonic.	The Miskatonic Museum 129	The Miskatonic Museum 12
+Administration Office	Mythos		Location		Miskatonic.	The Miskatonic Museum 130	The Miskatonic Museum 13
+Administration Office	Mythos		Location		Miskatonic.	The Miskatonic Museum 131	The Miskatonic Museum 14
+Exhibit Hall: Athabaskan Exhibit	Mythos		Location		Miskatonic. Exhibit.	The Miskatonic Museum 132	The Miskatonic Museum 15
+Exhibit Hall: Medusa Exhibit	Mythos		Location		Miskatonic. Exhibit.	The Miskatonic Museum 133	The Miskatonic Museum 16
+Exhibit Hall: Nature Exhibit	Mythos		Location		Miskatonic. Exhibit.	The Miskatonic Museum 134	The Miskatonic Museum 17
+Exhibit Hall: Egyptian Exhibit	Mythos		Location		Miskatonic. Exhibit.	The Miskatonic Museum 135	The Miskatonic Museum 18
+Exhibit Hall: Hall of the Dead	Mythos		Location		Miskatonic. Exhibit.	The Miskatonic Museum 136	The Miskatonic Museum 19
+Exhibit Hall: Restricted Hall	Mythos		Location		Miskatonic. Exhibit.	The Miskatonic Museum 137	The Miskatonic Museum 20
+Harold Walsted: Curator of the Museum	Neutral	0	Asset		Ally. Miskatonic.	The Miskatonic Museum 138	The Miskatonic Museum 21
+Adam Lynch: Museum Security	Neutral	0	Asset		Ally. Miskatonic.	The Miskatonic Museum 139	The Miskatonic Museum 22
+The Necronomicon: Olaus Wormius Translation	Neutral	2	Asset		Item. Tome.	The Miskatonic Museum 140	The Miskatonic Museum 23
+Hunting Horror: Spawned from the Void	Mythos		Enemy		Monster. Elite.	The Miskatonic Museum 141	The Miskatonic Museum 24
+Shadow-spawned	Mythos		Treachery		Power.	The Miskatonic Museum 142	The Miskatonic Museum 25
+Stalked in the Dark	Mythos		Treachery		Tactic.	The Miskatonic Museum 143	The Miskatonic Museum 26-27
+Passage into the Veil	Mythos		Treachery		Power.	The Miskatonic Museum 144	The Miskatonic Museum 28-30
+Ephemeral Exhibits	Mythos		Treachery		Terror.	The Miskatonic Museum 145	The Miskatonic Museum 31-32
+Slithering Behind You	Mythos		Treachery			The Miskatonic Museum 146	The Miskatonic Museum 33-34
+Bandolier	 Guardian	2	Asset		Item.	The Essex County Express 147	
+Stand Together (3)	 Guardian	0	Event	 	Spirit.	The Essex County Express 148	
+Art Student	 Seeker	2	Asset		Ally. Miskatonic.	The Essex County Express 149	
+Deduction (2)	 Seeker		Skill	 	Practiced. Expert.	The Essex County Express 150	
+"I'm outta here!"	 Rogue	0	Event	 	Trick. Spirit.	The Essex County Express 151	
+Switchblade (2)	 Rogue	1	Asset	 	Item. Weapon. Melee. Illicit.	The Essex County Express 152	
+Hypnotic Gaze	 Mystic	3	Event	 	Spell.	The Essex County Express 153	
+Shrivelling (3)	 Mystic	3	Asset	 	Spell.	The Essex County Express 154	
+Newspaper	 Survivor	1	Asset		Item.	The Essex County Express 155	
+Lure (1)	 Survivor	1	Event	 	Trick.	The Essex County Express 156	
+Relic Hunter (3)	Neutral		Asset		Talent.	The Essex County Express 157	
+Charisma (3)	Neutral		Asset		Talent.	The Essex County Express 158	
+Essex County Express	Mythos		Scenario			The Essex County Express 159	The Essex County Express 1
+A Tear in Reality	Mythos		Agenda			The Essex County Express 160	The Essex County Express 2
+The Maw Widens	Mythos		Agenda			The Essex County Express 161	The Essex County Express 3
+Rolling Backwards	Mythos		Agenda			The Essex County Express 162	The Essex County Express 4
+Drawn In	Mythos		Agenda			The Essex County Express 163	The Essex County Express 5
+Out of Time	Mythos		Agenda			The Essex County Express 164	The Essex County Express 6
+Run!	Mythos		Act			The Essex County Express 165	The Essex County Express 7
+Get the Engine Running!	Mythos		Act			The Essex County Express 166	The Essex County Express 8
+Passenger Car	Mythos		Location		Train.	The Essex County Express 167	The Essex County Express 9
+Passenger Car	Mythos		Location		Train.	The Essex County Express 168	The Essex County Express 10
+Passenger Car	Mythos		Location		Train.	The Essex County Express 169	The Essex County Express 11
+Passenger Car	Mythos		Location		Train.	The Essex County Express 170	The Essex County Express 12
+Passenger Car	Mythos		Location		Train.	The Essex County Express 171	The Essex County Express 13
+Sleeping Car	Mythos		Location		Train.	The Essex County Express 172	The Essex County Express 14
+Dining Car	Mythos		Location		Train.	The Essex County Express 173	The Essex County Express 15
+Parlor Car	Mythos		Location		Train.	The Essex County Express 174	The Essex County Express 16
+Engine Car	Mythos		Location		Train.	The Essex County Express 175	The Essex County Express 17
+Engine Car	Mythos		Location		Train.	The Essex County Express 176	The Essex County Express 18
+Engine Car	Mythos		Location		Train.	The Essex County Express 177	The Essex County Express 19
+Across Space and Time	Neutral	0	Treachery		Madness.	The Essex County Express 178	The Essex County Express 20-23
+Helpless Passenger	Neutral	0	Asset		Ally. Bystander.	The Essex County Express 179	The Essex County Express 24-26
+Claws of Steam	Mythos		Treachery		Power.	The Essex County Express 180	The Essex County Express 27-29
+Broken Rails	Mythos		Treachery		Hazard.	The Essex County Express 181	The Essex County Express 30-32
+Grappling Horror	Mythos		Enemy		Monster. Abomination.	The Essex County Express 182	The Essex County Express 33-34
+Emergent Monstrosity	Mythos		Enemy		Monster. Abomination.	The Essex County Express 183	The Essex County Express 35-36
+Prepared for the Worst	 Guardian	1	Event	 	Tactic.	Blood on the Altar 184	
+Keen Eye (3)	 Guardian		Asset		Talent.	Blood on the Altar 185	
+Preposterous Sketches	 Seeker	2	Event	 	Insight.	Blood on the Altar 186	
+Higher Education (3)	 Seeker		Asset		Talent.	Blood on the Altar 187	
+Lone Wolf	 Rogue	1	Asset		Talent.	Blood on the Altar 188	
+Streetwise (3)	 Rogue		Asset		Talent.	Blood on the Altar 189	
+Defiance	 Mystic		Skill		Innate.	Blood on the Altar 190	
+Blood Pact (3)	 Mystic		Asset		Spell. Pact.	Blood on the Altar 191	
+Rise to the Occasion	 Survivor		Skill	  	Innate.	Blood on the Altar 192	
+Scrapper (3)	 Survivor		Asset		Talent.	Blood on the Altar 193	
+Emergency Cache (2)	Neutral	0	Event		Supply.	Blood on the Altar 194	
+Blood on the Altar	Mythos		Scenario			Blood on the Altar 195	Blood On The Altar 2
+Strange Disappearances	Mythos		Agenda			Blood on the Altar 196	Blood On The Altar 2
+The Old Ones Hunger	Mythos		Agenda			Blood on the Altar 197	Blood On The Altar 3
+Feed the Beast	Mythos		Agenda			Blood on the Altar 198	Blood On The Altar 4
+Searching for Answers	Mythos		Act			Blood on the Altar 199	Blood On The Altar 5
+The Chamber of the Beast	Mythos		Act			Blood on the Altar 200	Blood On The Altar 6
+Village Commons	Mythos		Location		Dunwich. Central.	Blood on the Altar 201	Blood On The Altar 7
+Bishop's Brook	Mythos		Location		Dunwich.	Blood on the Altar 202	Blood On The Altar 8
+Bishop's Brook	Mythos		Location		Dunwich.	Blood on the Altar 203	Blood On The Altar 9
+Burned Ruins	Mythos		Location		Dunwich.	Blood on the Altar 204	Blood On The Altar 10
+Burned Ruins	Mythos		Location		Dunwich.	Blood on the Altar 205	Blood On The Altar 11
+Osborn's General Store	Mythos		Location		Dunwich.	Blood on the Altar 206	Blood On The Altar 12
+Osborn's General Store	Mythos		Location		Dunwich.	Blood on the Altar 207	Blood On The Altar 13
+Congregational Church	Mythos		Location		Dunwich.	Blood on the Altar 208	Blood On The Altar 14
+Congregational Church	Mythos		Location		Dunwich.	Blood on the Altar 209	Blood On The Altar 15
+House in the Reeds	Mythos		Location		Dunwich.	Blood on the Altar 210	Blood On The Altar 16
+House in the Reeds	Mythos		Location		Dunwich.	Blood on the Altar 211	Blood On The Altar 17
+Schoolhouse	Mythos		Location		Dunwich.	Blood on the Altar 212	Blood On The Altar 18
+Schoolhouse	Mythos		Location		Dunwich.	Blood on the Altar 213	Blood On The Altar 19
+The Hidden Chamber: Prison of the Beast	Mythos		Location		Dunwich.	Blood on the Altar 214	Blood On The Altar 20
+Key to the Chamber	Neutral	0	Asset		Item. Key.	Blood on the Altar 215	Blood On The Altar 21
+Silas Bishop: Infused With Evil	Mythos		Enemy		Monster. Abomination. Elite.	Blood on the Altar 216	Blood On The Altar 22
+Zebulon Whateley: Recalling Ancient Things	Neutral	3	Asset	 	Ally. Dunwich.	Blood on the Altar 217	Blood On The Altar 23
+Earl Sawyer: Smarter Than He Lets On	Neutral	3	Asset	 	Ally. Dunwich.	Blood on the Altar 218	Blood On The Altar 24
+Powder of Ibn Ghazi: Seeing Things Unseen	Neutral	0	Asset		Item.	Blood on the Altar 219	Blood On The Altar 25
+Kidnapped!	Mythos		Treachery			Blood on the Altar 220	Blood On The Altar 26-28
+Psychopomp's Song	Mythos		Treachery		Omen.	Blood on the Altar 221	Blood On The Altar 29-30
+Strange Signs	Mythos		Treachery		Omen.	Blood on the Altar 222	Blood On The Altar 31-32
+Rotting Remains	Mythos		Treachery		Terror.	Blood on the Altar 223	Blood On The Altar 33-35
+Servant of Many Mouths	Mythos		Enemy		Humanoid.	Blood on the Altar 224	Blood On The Altar 36-38
+"If it bleeds..."	 Guardian	1	Event	 		Undimensioned and Unseen 225	
+Springfield M1903 (4)	 Guardian	4	Asset	 	Item. Weapon. Firearm.	Undimensioned and Unseen 226	
+Inquiring Mind	 Seeker		Skill	  	Innate.	Undimensioned and Unseen 227	
+Expose Weakness (1)	 Seeker	0	Event	  	Insight.	Undimensioned and Unseen 228	
+Quick Thinking	 Rogue		Skill		Innate.	Undimensioned and Unseen 229	
+Lucky Dice: ...Or Are They? (2)	 Rogue	2	Asset		Item. Relic.	Undimensioned and Unseen 230	
+Opportunist (2)	 Rogue		Skill		Innate. Developed.	Undimensioned and Unseen 231	
+Alyssa Graham: Speaker to the Dead	 Mystic	4	Asset		Ally. Sorcerer.	Undimensioned and Unseen 232	
+Rite of Seeking (4)	 Mystic	5	Asset	 	Spell.	Undimensioned and Unseen 233	
+Dark Horse	 Survivor	3	Asset		Condition.	Undimensioned and Unseen 234	
+Survival Instinct (2)	 Survivor		Skill	 	Innate. Developed.	Undimensioned and Unseen 235	
+Undimensioned and Unseen	Mythos		Scenario			Undimensioned and Unseen 236	Undimensioned and Unseen 1
+Rampaging Creatures	Mythos		Agenda			Undimensioned and Unseen 237	Undimensioned and Unseen 2
+Biding Its Time	Mythos		Agenda			Undimensioned and Unseen 238	Undimensioned and Unseen 3
+Horrors Unleashed	Mythos		Agenda			Undimensioned and Unseen 239	Undimensioned and Unseen 4
+Saracenic Script	Mythos		Act			Undimensioned and Unseen 240	Undimensioned and Unseen 5
+They Must Be Destroyed!	Mythos		Act			Undimensioned and Unseen 241	Undimensioned and Unseen 6
+Dunwich Village	Mythos		Location		Dunwich.	Undimensioned and Unseen 242	Undimensioned and Unseen 7
+Dunwich Village	Mythos		Location		Dunwich.	Undimensioned and Unseen 243	Undimensioned and Unseen 8
+Cold Spring Glen	Mythos		Location		Dunwich.	Undimensioned and Unseen 244	Undimensioned and Unseen 9
+Cold Spring Glen	Mythos		Location		Dunwich.	Undimensioned and Unseen 245	Undimensioned and Unseen 10
+Ten-Acre Meadow	Mythos		Location		Dunwich.	Undimensioned and Unseen 246	Undimensioned and Unseen 11
+Ten-Acre Meadow	Mythos		Location		Dunwich.	Undimensioned and Unseen 247	Undimensioned and Unseen 12
+Blasted Heath	Mythos		Location		Dunwich.	Undimensioned and Unseen 248	Undimensioned and Unseen 13
+Blasted Heath	Mythos		Location		Dunwich.	Undimensioned and Unseen 249	Undimensioned and Unseen 14
+Whateley Ruins	Mythos		Location		Dunwich.	Undimensioned and Unseen 250	Undimensioned and Unseen 15
+Whateley Ruins	Mythos		Location		Dunwich.	Undimensioned and Unseen 251	Undimensioned and Unseen 16
+Devil's Hop Yard	Mythos		Location		Dunwich.	Undimensioned and Unseen 252	Undimensioned and Unseen 17
+Devil's Hop Yard	Mythos		Location		Dunwich.	Undimensioned and Unseen 253	Undimensioned and Unseen 18
+Esoteric Formula	Neutral	0	Asset		Spell.	Undimensioned and Unseen 254	Undimensioned and Unseen 19-22
+Brood of Yog-Sothoth	Mythos		Enemy		Monster. Abomination.	Undimensioned and Unseen 255	Undimensioned and Unseen 23-27
+Towering Beasts	Mythos		Treachery			Undimensioned and Unseen 256	Undimensioned and Unseen 28-31
+Ruin and Destruction	Mythos		Treachery		Hazard.	Undimensioned and Unseen 257	Undimensioned and Unseen 32-34
+Attracting Attention	Mythos		Treachery			Undimensioned and Unseen 258	Undimensioned and Unseen 35-36
+The Creatures' Tracks	Mythos		Treachery		Terror.	Undimensioned and Unseen 259	Undimensioned and Unseen 37-38
+Leadership	 Guardian		Skill		Practiced.	Where Doom Awaits 260	
+"I've had worse…" (4)	 Guardian	0	Event	  	Spirit.	Where Doom Awaits 261	
+Strange Solution: Restorative Concoction (4)	 Seeker	1	Asset	 	Item. Science.	Where Doom Awaits 262	
+Strange Solution: Acidic Ichor (4)	 Seeker	1	Asset	 	Item. Science.	Where Doom Awaits 263	
+Strange Solution: Freezing Variant (4)	 Seeker	1	Asset	 	Item. Science.	Where Doom Awaits 264	
+Joey "The Rat" Vigil: Lookin' Out for #1	 Rogue	4	Asset	 	Ally. Criminal.	Where Doom Awaits 265	
+Ace in the Hole (3)	 Rogue	0	Event		Trick.	Where Doom Awaits 266	
+Moonlight Ritual	 Mystic	0	Event	 	Spell. Insight.	Where Doom Awaits 267	
+Fearless (2)	 Mystic		Skill	 	Innate. Developed.	Where Doom Awaits 268	
+Jewel of Aureolus: Gift of the Homunculi (3)	 Mystic	3	Asset		Item. Relic.	Where Doom Awaits 269	
+A Chance Encounter	 Survivor	1	Event	 	Fortune.	Where Doom Awaits 270	
+Stroke of Luck (2)	 Survivor		Skill		Innate. Fortune.	Where Doom Awaits 271	
+Fine Clothes	Neutral	1	Asset		Item. Clothing.	Where Doom Awaits 272	
+Moment of Respite (3)	Neutral	3	Event	 	Spirit.	Where Doom Awaits 273	
+Where Doom Awaits	Mythos		Scenario			Where Doom Awaits 274	Where Doom Awaits
+Calling Forth the Old Ones	Mythos		Agenda			Where Doom Awaits 275	Where Doom Awaits 2
+Beckoning for Power	Mythos		Agenda			Where Doom Awaits 276	Where Doom Awaits 3
+The Path to the Hill	Mythos		Act			Where Doom Awaits 277	Where Doom Awaits 4
+Ascending the Hill (v. I)	Mythos		Act			Where Doom Awaits 278	Where Doom Awaits 5
+Ascending the Hill (v. II)	Mythos		Act			Where Doom Awaits 279	Where Doom Awaits 6
+Ascending the Hill (v. III)	Mythos		Act			Where Doom Awaits 280	Where Doom Awaits 7
+The Gate Opens	Mythos		Act			Where Doom Awaits 281	Where Doom Awaits 8
+Base of the Hill	Mythos		Location		Dunwich. Sentinel Hill.	Where Doom Awaits 282	Where Doom Awaits 9
+Ascending Path	Mythos		Location		Dunwich. Sentinel Hill.	Where Doom Awaits 283	Where Doom Awaits 10
+Sentinel Peak	Mythos		Location		Dunwich. Sentinel Hill.	Where Doom Awaits 284	Where Doom Awaits 11
+Slaughtered Woods	Mythos		Location		Dunwich. Woods.	Where Doom Awaits 285	Where Doom Awaits 12
+Eerie Glade	Mythos		Location		Dunwich. Woods.	Where Doom Awaits 286	Where Doom Awaits 13
+Destroyed Path	Mythos		Location		Dunwich. Woods.	Where Doom Awaits 287	Where Doom Awaits 14
+Frozen Spring	Mythos		Location		Dunwich. Woods.	Where Doom Awaits 288	Where Doom Awaits 15
+Dimensional Gap	Mythos		Location		Dunwich. Woods. Altered.	Where Doom Awaits 289	Where Doom Awaits 16
+A Tear in the Path	Mythos		Location		Dunwich. Woods. Altered.	Where Doom Awaits 290	Where Doom Awaits 17
+Uprooted Woods	Mythos		Location		Dunwich. Woods. Altered.	Where Doom Awaits 291	Where Doom Awaits 18
+Lost Memories	Mythos		Location		Dunwich. Woods. Altered.	Where Doom Awaits 292	Where Doom Awaits 19
+Seth Bishop: Sorcerer of Dunwich	Mythos		Enemy		Humanoid. Sorcerer. Elite.	Where Doom Awaits 293	Where Doom Awaits 20
+Devotee of the Key	Mythos		Enemy		Humanoid. Sorcerer.	Where Doom Awaits 294	Where Doom Awaits 21-22
+Crazed Shoggoth	Mythos		Enemy		Monster. Shoggoth.	Where Doom Awaits 295	Where Doom Awaits 23
+Rites Howled	Mythos		Treachery		Hex.	Where Doom Awaits 296	Where Doom Awaits 24-26
+Spaces Between	Mythos		Treachery		Hex. Hazard.	Where Doom Awaits 297	Where Doom Awaits 27-29
+Vortex of Time	Mythos		Treachery		Hex. Hazard.	Where Doom Awaits 298	Where Doom Awaits 30-32
+Vicious Blow (2)	 Guardian		Skill	 	Practiced. Expert.	Lost in Time and Space 299	
+Monster Slayer (5)	 Guardian	1	Event	 	Spirit.	Lost in Time and Space 300	
+Lightning Gun (5)	 Guardian	6	Asset	 	Item. Weapon. Firearm.	Lost in Time and Space 301	
+Dr. William T. Maleson: Working on Something Big	 Seeker	1	Asset		Ally. Miskatonic.	Lost in Time and Space 302	
+Deciphered Reality (5)	 Seeker	4	Event	  	Insight.	Lost in Time and Space 303	
+Chicago Typewriter (4)	 Rogue	5	Asset	 	Item. Weapon. Firearm. Illicit.	Lost in Time and Space 304	
+The Gold Pocket Watch: Stealing Time (4)	 Rogue	2	Asset	 	Item. Relic.	Lost in Time and Space 305	
+Shrivelling (5)	 Mystic	3	Asset	  	Spell.	Lost in Time and Space 306	
+Ward of Protection (5)	 Mystic	1	Event	 	Spell. Spirit.	Lost in Time and Space 307	
+Aquinnah: The Forgotten Daughter (3)	 Survivor	4	Asset	 	Ally.	Lost in Time and Space 308	
+Try and Try Again (3)	 Survivor	2	Asset	 	Talent.	Lost in Time and Space 309	
+The Red-Gloved Man: He Was Never There (5)	Neutral	2	Asset		Ally. Conspirator.	Lost in Time and Space 310	
+Lost in Time and Space	Mythos		Scenario			Lost in Time and Space 311	Lost in Time and Space 1
+All is One	Mythos		Agenda			Lost in Time and Space 312	Lost in Time and Space 2
+Past, Present and Future	Mythos		Agenda			Lost in Time and Space 313	Lost in Time and Space 3
+Breaking Through	Mythos		Agenda			Lost in Time and Space 314	Lost in Time and Space 4
+The End of All Things	Mythos		Agenda			Lost in Time and Space 315	Lost in Time and Space 5
+Out of this World	Mythos		Act			Lost in Time and Space 316	Lost in Time and Space 6
+Into the Beyond	Mythos		Act			Lost in Time and Space 317	Lost in Time and Space 7
+Close the Rift	Mythos		Act			Lost in Time and Space 318	Lost in Time and Space 8
+Finding a New Way	Mythos		Act			Lost in Time and Space 319	Lost in Time and Space 9
+Another Dimension: Unfettered by Reality	Mythos		Location		Otherworld.	Lost in Time and Space 320	Lost in Time and Space 10
+The Edge of the Universe	Mythos		Location		Otherworld.	Lost in Time and Space 321	Lost in Time and Space 11
+Tear Through Time	Mythos		Location		Otherworld.	Lost in Time and Space 322	Lost in Time and Space 12
+Yog-Sothoth: The Lurker Beyond the Threshold	Mythos		Enemy		Ancient One. Elite.	Lost in Time and Space 323	Lost in Time and Space 13
+Tear Through Space	Mythos		Location		Otherworld. Extradimensional.	Lost in Time and Space 324	Lost in Time and Space 14-17
+Prismatic Cascade	Mythos		Location		Otherworld. Extradimensional.	Lost in Time and Space 325	Lost in Time and Space 18-19
+Endless Bridge	Mythos		Location		Otherworld. Extradimensional.	Lost in Time and Space 326	Lost in Time and Space 20-21
+Steps of Y'hagharl	Mythos		Location		Otherworld. Extradimensional.	Lost in Time and Space 327	Lost in Time and Space 22
+Dimensional Doorway	Mythos		Location		Otherworld. Extradimensional.	Lost in Time and Space 328	Lost in Time and Space 23
+Interstellar Traveler	Mythos		Enemy		Monster. Yithian.	Lost in Time and Space 329	Lost in Time and Space 24-26
+Yithian Starseeker	Mythos		Enemy		Monster. Yithian.	Lost in Time and Space 330	Lost in Time and Space 27-28
+Collapsing Reality	Mythos		Treachery		Hazard.	Lost in Time and Space 331	Lost in Time and Space 29-31
+Wormhole	Mythos		Treachery		Hazard.	Lost in Time and Space 332	Lost in Time and Space 32-33
+Vast Expanse	Mythos		Treachery		Terror.	Lost in Time and Space 333	Lost in Time and Space 34-36

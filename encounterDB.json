@@ -1,0 +1,15 @@
+{
+    "Forest":{
+        "EncounterCost":2,
+        "Sets":[
+            {
+                "Rate":1,
+                "Msts":["Slime","Goblin"]
+            },
+            {
+                "Rate":2,
+                "Msts":["Slime"]
+            }
+        ]
+    }
+}

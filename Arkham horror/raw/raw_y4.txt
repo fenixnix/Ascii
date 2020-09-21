@@ -1,0 +1,350 @@
+Leo Anderson: The Expedition Leader	 Guardian		Investigator		Veteran. Wayfarer.	The Forgotten Age 1	
+Ursula Downs: The Explorer	 Seeker		Investigator		Wayfarer.	The Forgotten Age 2	
+Finn Edwards: The Bootlegger	 Rogue		Investigator		Criminal.	The Forgotten Age 3	
+Father Mateo: The Priest	 Mystic		Investigator		Believer. Warden.	The Forgotten Age 4	
+Calvin Wright: The Haunted	 Survivor		Investigator		Cursed. Drifter.	The Forgotten Age 5	
+Mitch Brown: Sole Survivor	Neutral	3	Asset	 	Ally. Wayfarer.	The Forgotten Age 6	
+Bought in Blood	Neutral		Treachery		Flaw.	The Forgotten Age 7	
+Jake Williams: Loyal Companion	Neutral	3	Asset	 	Ally. Wayfarer.	The Forgotten Age 8	
+Call of the Unknown	Neutral		Treachery		Task.	The Forgotten Age 9	
+Smuggled Goods	Neutral	0	Event		Supply. Illicit.	The Forgotten Age 10	
+Finn's Trusty .38: Never Leave Home Without It	Neutral	2	Asset	 	Item. Weapon. Firearm. Illicit.	The Forgotten Age 11	
+Caught Red-Handed	Neutral		Treachery		Blunder.	The Forgotten Age 12	
+The Codex of Ages: finis omnium nunc est	Neutral	2	Asset	 	Item. Relic. Tome. Blessed.	The Forgotten Age 13	
+Serpents of Yig	Neutral		Enemy		Humanoid. Monster. Serpent.	The Forgotten Age 14	
+Until the End of Time	Neutral	1	Asset	 	Talent.	The Forgotten Age 15	
+Voice of the Messenger	Neutral		Treachery		Curse. Pact.	The Forgotten Age 16	
+Survival Knife	 Guardian	2	Asset		Item. Weapon. Melee.	The Forgotten Age 17	
+Venturer	 Guardian	4	Asset		Ally. Wayfarer.	The Forgotten Age 18	
+Trusted	 Guardian	1	Event		Upgrade.	The Forgotten Age 19	
+Reliable (1)	 Guardian	1	Event		Upgrade.	The Forgotten Age 20	
+Dr. Elli Horowitz: Assistant Curator	 Seeker	3	Asset		Ally. Assistant.	The Forgotten Age 21	
+Ancient Stone: Unidentified (1)	 Seeker	1	Asset		Item. Relic.	The Forgotten Age 22	
+Tooth of Eztli: Mortal Reminder	 Seeker	3	Asset		Item. Relic.	The Forgotten Age 23	
+Unearth the Ancients	 Seeker	1	Event	 	Insight.	The Forgotten Age 24	
+Treasure Hunter (1)	 Rogue	1	Asset		Ally. Wayfarer.	The Forgotten Age 25	
+Decorated Skull: Doom Begets Doom	 Rogue	0	Asset		Item. Relic. Cursed.	The Forgotten Age 26	
+Eavesdrop	 Rogue	1	Event	 	Insight. Trick.	The Forgotten Age 27	
+"You handle this one!"	 Rogue	0	Event	 	Trick.	The Forgotten Age 28	
+Mists of R'lyeh	 Mystic	2	Asset		Spell.	The Forgotten Age 29	
+The Chthonian Stone: Stygian Waymark	 Mystic	3	Asset		Item. Relic. Cursed.	The Forgotten Age 30	
+Protective Incantation (1)	 Mystic	1	Asset		Ritual. Blessed.	The Forgotten Age 31	
+Dark Prophecy	 Mystic	1	Event	 	Augury.	The Forgotten Age 32	
+Improvised Weapon	 Survivor	1	Event		Tactic. Improvised.	The Forgotten Age 33	
+Dumb Luck	 Survivor	2	Event	 	Fortune.	The Forgotten Age 34	
+Yaotl: Lost Son of Eztli (1)	 Survivor	3	Asset		Ally. Wayfarer.	The Forgotten Age 35	
+Last Chance	 Survivor		Skill	    	Gambit.	The Forgotten Age 36	
+Backpack	Neutral	2	Asset		Item.	The Forgotten Age 37	
+Dark Pact	Neutral	2	Event		Pact.	The Forgotten Age 38	
+The Price of Failure	Neutral		Treachery		Pact.	The Forgotten Age 39	
+Doomed	Neutral		Treachery		Curse.	The Forgotten Age 40	
+Accursed Fate	Neutral		Treachery		Curse.	The Forgotten Age 41	
+The Bell Tolls	Neutral		Treachery		Curse.	The Forgotten Age 42	
+The Untamed Wilds	Mythos		Scenario			The Forgotten Age 43	The Untamed Wilds 1
+Expedition into the Wild	Mythos		Agenda			The Forgotten Age 44	The Untamed Wilds 2
+Intruders	Mythos		Agenda			The Forgotten Age 45	The Untamed Wilds 3
+Exploring the Rainforest	Mythos		Act			The Forgotten Age 46	The Untamed Wilds 4
+Huntress of the Eztli	Mythos		Act			The Forgotten Age 47	The Untamed Wilds 5
+Search for the Ruins	Mythos		Act			The Forgotten Age 48	The Untamed Wilds 6
+The Guarded Ruins	Mythos		Act			The Forgotten Age 49	The Untamed Wilds 7
+Expedition Camp	Mythos		Location		Campsite. Jungle.	The Forgotten Age 50	The Untamed Wilds 8
+Alejandro Vela: Renowned Historian	Neutral	2	Asset	  	Ally. Wayfarer.	The Forgotten Age 51	The Untamed Wilds 9
+Ichtaca: Keeper of the Eztli	Mythos		Enemy		Humanoid. Eztli. Elite.	The Forgotten Age 52	The Untamed Wilds 10
+Ruins of Eztli	Mythos		Location		Ancient. Ruins.	The Forgotten Age 53	The Untamed Wilds 11
+The Doom of Eztli	Mythos		Scenario			The Forgotten Age 54	The Doom of Eztli 1
+Something Stirs…	Mythos		Agenda			The Forgotten Age 55	The Doom of Eztli 2
+The Temple Warden	Mythos		Agenda			The Forgotten Age 56	The Doom of Eztli 3
+Into the Ruins	Mythos		Act			The Forgotten Age 57	The Doom of Eztli 4
+Magic and Science	Mythos		Act			The Forgotten Age 58	The Doom of Eztli 5
+Escape the Ruins	Mythos		Act			The Forgotten Age 59	The Doom of Eztli 6
+Entryway	Mythos		Location		Ancient. Ruins.	The Forgotten Age 60	The Doom of Eztli 7
+Relic of Ages: …A Device, of Some Sort	Neutral	2	Asset	  	Item. Relic.	The Forgotten Age 61	The Doom of Eztli 8
+Harbinger of Valusia: The Sleeper Awakens	Mythos		Enemy		Humanoid. Monster. Serpent. Elite.	The Forgotten Age 62	The Doom of Eztli 9
+Ancient Hall	Mythos		Location		Ancient. Ruins.	The Forgotten Age 63	The Doom of Eztli 10
+Grand Chamber	Mythos		Location		Ancient. Ruins.	The Forgotten Age 64	The Doom of Eztli 11
+Burial Pit	Mythos		Location		Ancient. Ruins.	The Forgotten Age 65	The Doom of Eztli 12
+Underground Ruins	Mythos		Location		Ancient. Ruins.	The Forgotten Age 66	The Doom of Eztli 13
+Secret Passage	Mythos		Location		Ancient. Ruins.	The Forgotten Age 67	The Doom of Eztli 14
+Chamber of Time	Mythos		Location		Forgotten. Ruins.	The Forgotten Age 68	The Doom of Eztli 15
+Path of Thorns	Mythos		Location		Jungle.	The Forgotten Age 69	Rainforest 1
+River Canyon	Mythos		Location		Jungle.	The Forgotten Age 70	Rainforest 2
+Rope Bridge	Mythos		Location		Jungle.	The Forgotten Age 71	Rainforest 3
+Serpent's Haven	Mythos		Location		Jungle.	The Forgotten Age 72	Rainforest 4
+Circuitous Trail	Mythos		Location		Jungle.	The Forgotten Age 73	Rainforest 5
+Temple of the Fang	Mythos		Location		Ancient. Ruins.	The Forgotten Age 74	Rainforest 6
+Overgrown Ruins	Mythos		Location		Ancient. Ruins.	The Forgotten Age 75	Rainforest 7
+Overgrowth	Mythos		Treachery		Obstacle.	The Forgotten Age 76	Rainforest 8-9
+Voice of the Jungle	Mythos		Treachery		Power.	The Forgotten Age 77	Rainforest 10-11
+Pit Viper	Mythos		Enemy		Creature. Serpent.	The Forgotten Age 78	Serpents 1-3
+Boa Constrictor	Mythos		Enemy		Creature. Serpent.	The Forgotten Age 79	Serpents 4
+Snake Bite	Mythos		Treachery		Hazard. Poison.	The Forgotten Age 80	Serpents 5-7
+Lost in the Wilds	Mythos		Treachery		Blunder.	The Forgotten Age 81	Expedition 1-3
+Low on Supplies	Mythos		Treachery		Blunder.	The Forgotten Age 82	Expedition 4-5
+Brood of Yig	Mythos		Enemy		Humanoid. Monster. Serpent.	The Forgotten Age 83	Agents of Yig 1-3
+Serpent from Yoth	Mythos		Enemy		Humanoid. Monster. Serpent.	The Forgotten Age 84	Agents of Yig 4
+Curse of Yig	Mythos		Treachery		Curse.	The Forgotten Age 85	Agents of Yig 5-6
+Eztli Guardian	Mythos		Enemy		Humanoid. Eztli.	The Forgotten Age 86	Guardians of Time 1-2
+Arrows from the Trees	Mythos		Treachery		Scheme.	The Forgotten Age 87	Guardians of Time 3-4
+Final Mistake	Mythos		Treachery		Trap.	The Forgotten Age 88	Deadly Traps 1-3
+Entombed	Mythos		Treachery		Trap.	The Forgotten Age 89	Deadly Traps 4-5
+A Tear in Time	Mythos		Treachery		Hex.	The Forgotten Age 90	Temporal Flux 1-3
+Lost in Time	Mythos		Treachery		Hex.	The Forgotten Age 91	Temporal Flux 4-5
+Ill Omen	Mythos		Treachery		Omen. Terror.	The Forgotten Age 92	Forgotten Ruins 1-2
+Ancestral Fear	Mythos		Treachery		Terror.	The Forgotten Age 93	Forgotten Ruins 3-4
+Deep Dark	Mythos		Treachery		Hazard.	The Forgotten Age 94	Forgotten Ruins 5-7
+Brotherhood Cultist	Mythos		Enemy		Humanoid. Cultist.	The Forgotten Age 95	Pnakotic Brotherhood 1-2
+Shadowed	Mythos		Treachery		Scheme.	The Forgotten Age 96	Pnakotic Brotherhood 3-4
+Words of Power	Mythos		Treachery		Hex.	The Forgotten Age 97	Pnakotic Brotherhood 5-6
+Fang of Yig	Mythos		Enemy		Humanoid. Monster. Serpent.	The Forgotten Age 98	Yig's Venom 1-2
+Snakescourge	Mythos		Treachery		Curse.	The Forgotten Age 99	Yig's Venom 3-4
+Serpent's Call	Mythos		Treachery		Power.	The Forgotten Age 100	Yig's Venom 5
+Creeping Poison	Mythos		Treachery		Poison.	The Forgotten Age 101	Poison 1-2
+Poisoned	Neutral		Treachery		Poison.	The Forgotten Age 102	Poison 3-6
+Scene of the Crime	 Guardian	2	Event	 	Insight. Bold.	Threads of Fate 103	
+Marksmanship (1)	 Guardian	2	Event	 	Tactic.	Threads of Fate 104	
+Persuasion	 Seeker	2	Event	 	Insight. Trick.	Threads of Fate 105	
+Shrewd Analysis	 Seeker		Asset		Talent.	Threads of Fate 106	
+Lucky Cigarette Case	 Rogue	2	Asset		Item. Charm.	Threads of Fate 107	
+Fence (1)	 Rogue	3	Asset		Connection. Illicit.	Threads of Fate 108	
+Arcane Research	 Mystic		Asset		Talent.	Threads of Fate 109	
+Counterspell (2)	 Mystic	2	Event	 	Spell. Blessed.	Threads of Fate 110	
+Perseverance	 Survivor	2	Event	 	Spirit.	Threads of Fate 111	
+Stunning Blow	 Survivor		Skill		Practiced.	Threads of Fate 112	
+Threads of Fate	Mythos		Scenario			Threads of Fate 113	Threads of Fate 1
+Three Fates	Mythos		Agenda			Threads of Fate 114	Threads of Fate 2
+Behind the Curtain	Mythos		Agenda			Threads of Fate 115	Threads of Fate 3
+Hidden Entanglements	Mythos		Agenda			Threads of Fate 116	Threads of Fate 4
+The Relic Is Missing!	Mythos		Act			Threads of Fate 117	Threads of Fate 5
+Harlan Is in Danger!	Mythos		Act			Threads of Fate 118	Threads of Fate 6
+At the Exhibit	Mythos		Act			Threads of Fate 119	Threads of Fate 7
+At the Exhibit	Mythos		Act			Threads of Fate 120	Threads of Fate 8
+Harlan's Curse	Mythos		Act			Threads of Fate 121	Threads of Fate 9
+Harlan's Curse	Mythos		Act			Threads of Fate 122	Threads of Fate 10
+Find the Relic	Mythos		Act			Threads of Fate 123	Threads of Fate 11
+Recover the Relic	Mythos		Act			Threads of Fate 124	Threads of Fate 12
+Search for Alejandro	Mythos		Act			Threads of Fate 125	Threads of Fate 13
+Missing Persons	Mythos		Act			Threads of Fate 126	Threads of Fate 14
+At the Station	Mythos		Act			Threads of Fate 127	Threads of Fate 15
+At the Station	Mythos		Act			Threads of Fate 128	Threads of Fate 16
+Friends in High Places	Mythos		Act			Threads of Fate 129	Threads of Fate 17
+Friends in High Places	Mythos		Act			Threads of Fate 130	Threads of Fate 18
+Alejandro's Prison	Mythos		Act			Threads of Fate 131	Threads of Fate 19
+Alejandro's Plight	Mythos		Act			Threads of Fate 132	Threads of Fate 20
+Trial of the Huntress	Mythos		Act			Threads of Fate 133	Threads of Fate 21
+The Guardian's Inquiry	Mythos		Act			Threads of Fate 134	Threads of Fate 22
+The Cave of Darkness	Mythos		Act			Threads of Fate 135	Threads of Fate 23
+The Cave of Darkness	Mythos		Act			Threads of Fate 136	Threads of Fate 24
+Strange Relics	Mythos		Act			Threads of Fate 137	Threads of Fate 25
+Strange Relics	Mythos		Act			Threads of Fate 138	Threads of Fate 26
+Strange Occurrences	Mythos		Act			Threads of Fate 139	Threads of Fate 27
+The Brotherhood Is Revealed	Mythos		Act			Threads of Fate 140	Threads of Fate 28
+Velma's Diner	Mythos		Location		Arkham.	Threads of Fate 141	Threads of Fate 29
+Curiositie Shoppe	Mythos		Location		Arkham.	Threads of Fate 142	Threads of Fate 30
+Town Hall	Mythos		Location		Arkham.	Threads of Fate 143	Threads of Fate 31
+The Secret Must Be Kept	Mythos		Treachery		Scheme.	Threads of Fate 144	Threads of Fate 32-34
+Nobody's Home	Mythos		Treachery		Mystery.	Threads of Fate 145	Threads of Fate 35-36
+Conspiracy of Blood	Mythos		Treachery		Hex.	Threads of Fate 146	Threads of Fate 37-38
+Ichtaca: The Forgotten Guardian	Neutral	4	Asset	  	Ally. Eztli. Wayfarer.	Threads of Fate 147	Threads of Fate 39
+Expedition Journal	Neutral	2	Asset	 	Item. Tome.	Threads of Fate 148	Threads of Fate 40
+Second Wind	 Guardian	1	Event		Spirit. Bold.	The Boundary Beyond 149	
+Take the Initiative	 Guardian		Skill	  	Practiced. Bold.	The Boundary Beyond 150	
+Well Prepared (2)	 Guardian	2	Asset		Talent.	The Boundary Beyond 151	
+Truth from Fiction	 Seeker	2	Event	 	Insight.	The Boundary Beyond 152	
+True Understanding	 Seeker		Skill		Innate.	The Boundary Beyond 153	
+Quick Study (2)	 Seeker	2	Asset	 	Talent.	The Boundary Beyond 154	
+Hatchet Man	 Rogue		Skill		Practiced.	The Boundary Beyond 155	
+High Roller (2)	 Rogue	2	Asset	 	Talent.	The Boundary Beyond 156	
+Enraptured	 Mystic		Skill		Practiced.	The Boundary Beyond 157	
+Recall the Future (2)	 Mystic	2	Asset	 	Augury. Ritual.	The Boundary Beyond 158	
+Try and Try Again (1)	 Survivor	2	Asset		Talent.	The Boundary Beyond 159	
+Cornered (2)	 Survivor	2	Asset	 	Talent.	The Boundary Beyond 160	
+The Boundary Beyond	Mythos		Scenario			The Boundary Beyond 161	The Boundary Beyond 1
+The Boundary, Broken	Mythos		Agenda			The Boundary Beyond 162	The Boundary Beyond 2
+The Barrier Is Thin	Mythos		Agenda			The Boundary Beyond 163	The Boundary Beyond 3
+Time Collapsing	Mythos		Agenda			The Boundary Beyond 164	The Boundary Beyond 4
+Crossing the Threshold	Mythos		Act			The Boundary Beyond 165	The Boundary Beyond 5
+Past and Present	Mythos		Act			The Boundary Beyond 166	The Boundary Beyond 6
+The Return Trip	Mythos		Act			The Boundary Beyond 167	The Boundary Beyond 7
+Temple Ruins	Mythos		Location		Mexico City. Present-Day.	The Boundary Beyond 168	The Boundary Beyond 8
+Metropolitan Cathedral	Mythos		Location		Mexico City. Present-Day.	The Boundary Beyond 169	The Boundary Beyond 9
+Chapultepec Park	Mythos		Location		Mexico City. Present-Day.	The Boundary Beyond 170	The Boundary Beyond 10
+Zócalo	Mythos		Location		Mexico City. Present-Day.	The Boundary Beyond 171	The Boundary Beyond 11
+Xochimilco	Mythos		Location		Mexico City. Present-Day.	The Boundary Beyond 172	The Boundary Beyond 12
+Coyoacán	Mythos		Location		Mexico City. Present-Day.	The Boundary Beyond 173	The Boundary Beyond 13
+Templo Mayor	Mythos		Location		Ancient. Tenochtitlán.	The Boundary Beyond 174	The Boundary Beyond 14
+Templo Mayor	Mythos		Location		Ancient. Tenochtitlán.	The Boundary Beyond 175	The Boundary Beyond 15
+Temples of Tenochtitlán	Mythos		Location		Ancient. Tenochtitlán.	The Boundary Beyond 176	The Boundary Beyond 16
+Temples of Tenochtitlán	Mythos		Location		Ancient. Tenochtitlán.	The Boundary Beyond 177	The Boundary Beyond 17
+Chapultepec Hill	Mythos		Location		Ancient. Tenochtitlán.	The Boundary Beyond 178	The Boundary Beyond 18
+Chapultepec Hill	Mythos		Location		Ancient. Tenochtitlán.	The Boundary Beyond 179	The Boundary Beyond 19
+Canals of Tenochtitlán	Mythos		Location		Ancient. Tenochtitlán.	The Boundary Beyond 180	The Boundary Beyond 20
+Canals of Tenochtitlán	Mythos		Location		Ancient. Tenochtitlán.	The Boundary Beyond 181	The Boundary Beyond 21
+Lake Xochimilco	Mythos		Location		Ancient. Tenochtitlán.	The Boundary Beyond 182	The Boundary Beyond 22
+Lake Xochimilco	Mythos		Location		Ancient. Tenochtitlán.	The Boundary Beyond 183	The Boundary Beyond 23
+Sacred Woods	Mythos		Location		Ancient. Tenochtitlán.	The Boundary Beyond 184	The Boundary Beyond 24
+Sacred Woods	Mythos		Location		Ancient. Tenochtitlán.	The Boundary Beyond 185	The Boundary Beyond 25
+Padma Amrita: Cold-Blooded Charmer	Mythos		Enemy		Humanoid. Serpent. Servitor. Elite.	The Boundary Beyond 186	The Boundary Beyond 26
+Serpent of Tenochtitlán	Mythos		Enemy		Humanoid. Monster. Serpent.	The Boundary Beyond 187	The Boundary Beyond 27
+Hand of the Brotherhood	Mythos		Enemy		Humanoid. Cultist.	The Boundary Beyond 188	The Boundary Beyond 28-29
+Window to Another Time	Mythos		Treachery		Hex.	The Boundary Beyond 189	The Boundary Beyond 30-32
+Timeline Destabilization	Mythos		Treachery		Hex.	The Boundary Beyond 190	The Boundary Beyond 33-35
+Relic of Ages: Forestalling the Future	Neutral	2	Asset	  	Item. Relic.	The Boundary Beyond 191	The Boundary Beyond 36
+Intrepid	 Guardian		Skill		Innate.	Heart of the Elders 192	
+Custom Ammunition (3)	 Guardian	3	Event	 	Upgrade. Supply. Blessed.	Heart of the Elders 193	
+Otherworldly Compass (2)	 Seeker	2	Asset	 	Item. Relic.	Heart of the Elders 194	
+Expose Weakness (3)	 Seeker	0	Event	  	Insight.	Heart of the Elders 195	
+Lola Santiago: No-Nonsense Archaeologist (3)	 Rogue	3	Asset	 	Ally. Wayfarer.	Heart of the Elders 196	
+Olive McBride: Will Try Anything Once	 Mystic	2	Asset		Ally. Witch.	Heart of the Elders 197	
+Defiance (2)	 Mystic		Skill		Innate. Developed.	Heart of the Elders 198	
+Premonition	 Mystic	0	Event	 	Augury.	Heart of the Elders 199	
+Live and Learn	 Survivor	0	Event		Spirit.	Heart of the Elders 200	
+Take Heart	 Survivor		Skill		Innate.	Heart of the Elders 201	
+Against All Odds (2)	 Survivor	2	Event	  	Spirit.	Heart of the Elders 202	
+Trench Coat	Neutral	3	Asset		Item. Clothing.	Heart of the Elders 203	
+Ornate Bow (3)	Neutral	4	Asset	 	Item. Relic. Weapon. Ranged.	Heart of the Elders 204	
+Heart of the Elders	Mythos		Scenario			Heart of the Elders 205	Heart of the Elders 1
+Mouth of K'n-yan: The Cavern’s Maw	Mythos		Location		Cave.	Heart of the Elders 206	Heart of the Elders 2
+Mouth of K'n-yan: The Depths Below	Mythos		Location		Cave.	Heart of the Elders 206	Heart of the Elders 2
+The Jungle's Heart	Mythos		Agenda			Heart of the Elders 207	Pillars of Judgment 1
+Setting Sun	Mythos		Agenda			Heart of the Elders 208	Pillars of Judgment 2
+Search for the Pattern	Mythos		Act			Heart of the Elders 209	Pillars of Judgment 3
+Opening the Maw	Mythos		Act			Heart of the Elders 210	Pillars of Judgment 4
+The Lonely Caverns	Mythos		Agenda			Heart of the Elders 211	K'n-yan 1
+Eyes in the Dark	Mythos		Agenda			Heart of the Elders 212	K'n-yan 2
+Cavern of the Forgotten Age	Mythos		Act			Heart of the Elders 213	K'n-yan 3
+Descent into Dark	Mythos		Act			Heart of the Elders 214	K'n-yan 4
+Pitfall	Mythos		Treachery		Trap.	Heart of the Elders 215	Heart of the Elders 3-5
+Poisonous Spores	Mythos		Treachery		Hazard.	Heart of the Elders 216	Heart of the Elders 6-8
+Time-Wracked Woods	Mythos		Location		Jungle.	Heart of the Elders 217	Pillars of Judgment 5
+Stone Altar	Mythos		Location		Ancient. Ruins.	Heart of the Elders 218	Pillars of Judgment 6
+Apex Strangleweed	Mythos		Enemy		Creature. Flora.	Heart of the Elders 219	Pillars of Judgment 7-8
+Basilisk	Mythos		Enemy		Monster. Serpent.	Heart of the Elders 220	Pillars of Judgment 9-10
+Ants!	Mythos		Treachery		Hazard.	Heart of the Elders 221	Pillars of Judgment 11-13
+Vast Passages	Mythos		Location		Ancient. Cave.	Heart of the Elders 222	K'n-yan 5
+Hall of Idolatry	Mythos		Location		Ancient. Cave.	Heart of the Elders 223	K'n-yan 6
+Dark Hollow	Mythos		Location		Ancient. Cave.	Heart of the Elders 224	K'n-yan 7
+Perilous Gulch	Mythos		Location		Ancient. Cave.	Heart of the Elders 225	K'n-yan 8
+Crystal Pillars	Mythos		Location		Ancient. Cave.	Heart of the Elders 226	K'n-yan 9
+Descent to Yoth	Mythos		Location		Ancient. Cave.	Heart of the Elders 227	K'n-yan 10
+No Turning Back	Mythos		Treachery		Hazard.	Heart of the Elders 228	K'n-yan 11-13
+M1918 BAR (4)	 Guardian	5	Asset	 	Item. Weapon. Firearm.	The City of Archives 229	
+Ancient Stone: Knowledge of the Elders (4)	 Seeker	2	Asset	 	Item. Relic.	The City of Archives 230	
+Ancient Stone: Minds in Harmony (4)	 Seeker	2	Asset	 	Item. Relic.	The City of Archives 231	
+Slip Away	 Rogue	2	Event	 	Trick.	The City of Archives 232	
+Pay Day (1)	 Rogue	0	Event		Illicit. Fated.	The City of Archives 233	
+Sacrifice (1)	 Mystic	0	Event		Ritual.	The City of Archives 234	
+Crystalline Elder Sign (3)	 Mystic	3	Asset		Item. Relic. Blessed.	The City of Archives 235	
+On Your Own (3)	 Survivor	2	Asset		Talent.	The City of Archives 236	
+The City of Archives	Mythos		Scenario			The City of Archives 237	The City of Archives 1
+City of the Great Race	Mythos		Agenda			The City of Archives 238	The City of Archives 2
+Lost Memories	Mythos		Agenda			The City of Archives 239	The City of Archives 3
+Humanity Fading	Mythos		Agenda			The City of Archives 240	The City of Archives 4
+Exploring Pnakotus	Mythos		Act			The City of Archives 241	The City of Archives 5
+Restricted Access	Mythos		Act			The City of Archives 242	The City of Archives 6
+Repossession	Mythos		Act			The City of Archives 243	The City of Archives 7
+Body of a Yithian: Captive in Another Form	Neutral		Investigator		Monster. Yithian.	The City of Archives 244	The City of Archives
+Interview Room: Arrival Chamber	Mythos		Location		Ancient. Pnakotus.	The City of Archives 245	The City of Archives 12
+Interview Room: Restraining Chamber	Mythos		Location		Ancient. Pnakotus.	The City of Archives 246	The City of Archives 13
+Interview Room: Ichor-Filled Chamber	Mythos		Location		Ancient. Pnakotus.	The City of Archives 247	The City of Archives 14
+Halls of Pnakotus: Northern Corridors	Mythos		Location		Ancient. Pnakotus.	The City of Archives 248	The City of Archives 15
+Halls of Pnakotus: Eastern Corridors	Mythos		Location		Ancient. Pnakotus.	The City of Archives 249	The City of Archives 16
+Halls of Pnakotus: Western Corridors	Mythos		Location		Ancient. Pnakotus.	The City of Archives 250	The City of Archives 17
+Great Library	Mythos		Location		Ancient. Pnakotus.	The City of Archives 251	The City of Archives 18
+Yithian Orrery	Mythos		Location		Ancient. Pnakotus.	The City of Archives 252	The City of Archives 19
+Laboratory of the Great Race	Mythos		Location		Ancient. Pnakotus.	The City of Archives 253	The City of Archives 20
+Deconstruction Room	Mythos		Location		Ancient. Pnakotus.	The City of Archives 254	The City of Archives 21
+Towers of Pnakotus	Mythos		Location		Ancient. Pnakotus.	The City of Archives 255	The City of Archives 22
+The Custodian: Curious Yithian	Neutral		Asset		Ally. Yithian.	The City of Archives 256	The City of Archives 23
+Keeper of the Great Library	Mythos		Enemy		Monster. Yithian.	The City of Archives 257	The City of Archives 24-25
+Scientist of Yith	Mythos		Enemy		Monster. Yithian.	The City of Archives 258	The City of Archives 26-27
+Scholar from Yith	Mythos		Enemy		Monster. Yithian.	The City of Archives 259	The City of Archives 28-30
+Yithian Presence	Mythos		Treachery		Power. Terror.	The City of Archives 260	The City of Archives 31-33
+Cruel Interrogations	Mythos		Treachery		Injury. Terror.	The City of Archives 261	The City of Archives 34-36
+Lost Humanity	Mythos		Treachery		Terror.	The City of Archives 262	The City of Archives 37-38
+Captive Mind	Mythos		Treachery		Hex.	The City of Archives 263	The City of Archives 39-40
+Out of Body Experience	Neutral		Treachery		Madness. Paradox.	The City of Archives 264	The City of Archives 41-44
+Handcuffs	 Guardian	2	Asset		Item. Police.	The Depths of Yoth 265	
+Blood Eclipse (3)	 Guardian	1	Event	 	Spell. Spirit.	The Depths of Yoth 266	
+Feed the Mind (3)	 Seeker	2	Asset		Spell.	The Depths of Yoth 267	
+Colt Vest Pocket	 Rogue	2	Asset		Item. Weapon. Firearm. Illicit.	The Depths of Yoth 268	
+Coup de Grâce	 Rogue	2	Event	 	Tactic. Fated.	The Depths of Yoth 269	
+The Skeleton Key (2)	 Rogue	3	Asset	 	Item. Relic. Cursed.	The Depths of Yoth 270	
+Mists of R'lyeh (4)	 Mystic	2	Asset	 	Spell.	The Depths of Yoth 271	
+Winging It	 Survivor	1	Event		Tactic. Improvised.	The Depths of Yoth 272	
+Old Hunting Rifle (3)	 Survivor	3	Asset	 	Item. Weapon. Firearm.	The Depths of Yoth 273	
+Thermos	Neutral	4	Asset		Item.	The Depths of Yoth 274	
+Hemispheric Map (3)	Neutral	2	Asset	 	Item. Relic.	The Depths of Yoth 275	
+Timeworn Brand (5)	Neutral	5	Asset	 	Item. Relic. Weapon. Melee.	The Depths of Yoth 276	
+The Depths of Yoth	Mythos		Scenario			The Depths of Yoth 277	The Depths of Yoth 1
+The Descent Begins	Mythos		Agenda			The Depths of Yoth 278	The Depths of Yoth 2
+Horrific Descent	Mythos		Agenda			The Depths of Yoth 279	The Depths of Yoth 3
+Endless Caverns	Mythos		Agenda			The Depths of Yoth 280	The Depths of Yoth 4
+City of Blood	Mythos		Agenda			The Depths of Yoth 281	The Depths of Yoth 5
+Fury That Shakes the Earth	Mythos		Agenda			The Depths of Yoth 282	The Depths of Yoth 6
+The Red Depths	Mythos		Agenda			The Depths of Yoth 283	The Depths of Yoth 7
+VENGEANCE	Mythos		Agenda			The Depths of Yoth 284	The Depths of Yoth 8
+Journey to the Nexus	Mythos		Act			The Depths of Yoth 285	The Depths of Yoth 9
+Steps of Yoth	Mythos		Location		Ancient. Forgotten. Yoth.	The Depths of Yoth 286	The Depths of Yoth 10
+City of the Serpents	Mythos		Location		Ancient. Cave. Yoth.	The Depths of Yoth 287	The Depths of Yoth 11
+Hall of Heresy	Mythos		Location		Ancient. Cave. Yoth.	The Depths of Yoth 288	The Depths of Yoth 12
+Crumbling Precipice	Mythos		Location		Ancient. Cave. Yoth.	The Depths of Yoth 289	The Depths of Yoth 13
+Caverns of Yoth	Mythos		Location		Ancient. Cave. Yoth.	The Depths of Yoth 290	The Depths of Yoth 14
+Forked Path	Mythos		Location		Ancient. Cave. Yoth.	The Depths of Yoth 291	The Depths of Yoth 15
+Bridge over N'kai	Mythos		Location		Ancient. Cave. Yoth.	The Depths of Yoth 292	The Depths of Yoth 16
+Broken Passage	Mythos		Location		Ancient. Cave. Yoth.	The Depths of Yoth 293	The Depths of Yoth 17
+Abandoned Site	Mythos		Location		Ancient. Cave. Yoth.	The Depths of Yoth 294	The Depths of Yoth 18
+Bright Canyon	Mythos		Location		Ancient. Cave. Yoth.	The Depths of Yoth 295	The Depths of Yoth 19
+Yig: The Father of Serpents	Mythos		Enemy		Ancient One. Serpent. Elite.	The Depths of Yoth 296	The Depths of Yoth 20
+Pit Warden	Mythos		Enemy		Humanoid. Monster. Serpent.	The Depths of Yoth 297	The Depths of Yoth 21-23
+Eater of the Depths	Mythos		Enemy		Monster.	The Depths of Yoth 298	The Depths of Yoth 24
+Children of Valusia	Mythos		Treachery		Scheme.	The Depths of Yoth 299	The Depths of Yoth 25-27
+Lightless Shadow	Mythos		Treachery		Terror.	The Depths of Yoth 300	The Depths of Yoth 28-30
+Bathophobia	Mythos		Treachery		Terror.	The Depths of Yoth 301	The Depths of Yoth 31-33
+Serpent's Ire	Mythos		Treachery		Scheme.	The Depths of Yoth 302	The Depths of Yoth 34-35
+Relic of Ages: Repossess the Past	Neutral	2	Asset	  	Item. Relic.	The Depths of Yoth 303	The Depths of Yoth 36
+Kerosene (1)	 Guardian	3	Asset		Item.	Shattered Aeons 304	
+Flamethrower (5)	 Guardian	4	Asset	  	Item. Weapon. Firearm.	Shattered Aeons 305	
+Vantage Point	 Seeker	1	Event	 	Insight.	Shattered Aeons 306	
+Pnakotic Manuscripts: Mind-Expanding Ideas (5)	 Seeker	5	Asset	 	Item. Relic. Tome.	Shattered Aeons 307	
+Borrowed Time (3)	 Rogue	1	Asset	 	Ritual.	Shattered Aeons 308	
+All In (5)	 Rogue		Skill	 	Fortune.	Shattered Aeons 309	
+Shards of the Void (3)	 Mystic	3	Asset	 	Spell.	Shattered Aeons 310	
+Seal of the Seventh Sign: Over the Threshold and Beyond (5)	 Mystic	4	Asset	 	Spell. Ritual.	Shattered Aeons 311	
+Impromptu Barrier	 Survivor	1	Event		Tactic. Improvised.	Shattered Aeons 312	
+Alter Fate (3)	 Survivor	1	Event		Spell. Blessed.	Shattered Aeons 313	
+Shattered Aeons	Mythos		Scenario			Shattered Aeons 314	Shattered Aeons 1
+Threads of Time	Mythos		Agenda			Shattered Aeons 315	Shattered Aeons 2
+Pendulous Threads	Mythos		Agenda			Shattered Aeons 316	Shattered Aeons 3
+Snapped Threads	Mythos		Agenda			Shattered Aeons 317	Shattered Aeons 4
+Worlds Beyond	Mythos		Act			Shattered Aeons 318	Shattered Aeons 5
+Search for the Brotherhood	Mythos		Act			Shattered Aeons 319	Shattered Aeons 6
+The Yithian Relic	Mythos		Act			Shattered Aeons 320	Shattered Aeons 7
+Mend the Shatter	Mythos		Act			Shattered Aeons 321	Shattered Aeons 8
+Paradise Lost	Mythos		Act			Shattered Aeons 322	Shattered Aeons 9
+Timelock	Mythos		Act			Shattered Aeons 323	Shattered Aeons 10
+Nexus of N'kai: Unraveling the Threads	Mythos		Location		Ancient. Ruins.	Shattered Aeons 324	Shattered Aeons 11
+Ichtaca: Scion of Yig	Mythos		Enemy		Humanoid. Monster. Serpent. Elite.	Shattered Aeons 325	Shattered Aeons 12
+Yig's Mercy	Mythos		Story			Shattered Aeons 325	
+Alejandro Vela: Or, Is He?	Mythos		Enemy		Humanoid. Cultist. Elite.	Shattered Aeons 326	Shattered Aeons 13
+Another Way	Mythos		Story			Shattered Aeons 326	
+Yuggoth	Mythos		Location		Otherworld.	Shattered Aeons 327	Shattered Aeons 14
+Shores of R'lyeh	Mythos		Location		Otherworld.	Shattered Aeons 328	Shattered Aeons 15
+City of the Unseen	Mythos		Location		Otherworld.	Shattered Aeons 329	Shattered Aeons 16
+A Pocket in Time	Mythos		Location		Extradimensional.	Shattered Aeons 330	Shattered Aeons 17
+Ruins of New York	Mythos		Location		Shattered. Future. Ruins.	Shattered Aeons 331	Shattered Aeons 18
+Mu	Mythos		Location		Shattered. Ancient.	Shattered Aeons 332	Shattered Aeons 19
+Atlantis	Mythos		Location		Shattered. Ancient.	Shattered Aeons 333	Shattered Aeons 20
+Pnakotus	Mythos		Location		Shattered. Ancient.	Shattered Aeons 334	Shattered Aeons 21
+Valusia	Mythos		Location		Shattered. Ancient.	Shattered Aeons 335	Shattered Aeons 22
+Plateau of Leng	Mythos		Location		Shattered. Present-Day.	Shattered Aeons 336	Shattered Aeons 23
+Formless Spawn: From the Abyss	Mythos		Enemy		Monster. Abomination. Elite.	Shattered Aeons 337	Shattered Aeons 24
+Temporal Devourer	Mythos		Enemy		Monster. Extradimensional.	Shattered Aeons 338	Shattered Aeons 25-26
+Shattered Ages	Mythos		Treachery		Hex.	Shattered Aeons 339	Shattered Aeons 27-28
+Between Worlds	Mythos		Treachery		Hex.	Shattered Aeons 340	Shattered Aeons 29-30
+Wracked by Time	Mythos		Treachery		Hex.	Shattered Aeons 341	Shattered Aeons 31-33
+Creeping Darkness	Mythos		Treachery		Hazard.	Shattered Aeons 342	Shattered Aeons 34-35
+Relic of Ages: Unleash the Timestream	Neutral	2	Asset	  	Item. Relic.	Shattered Aeons 343	Shattered Aeons 36
+Turn Back Time	Mythos		Scenario			Shattered Aeons 344	Turn Back Time 1
+Into the Ruins Once Again	Mythos		Act			Shattered Aeons 345	Turn Back Time 2
+The Chamber of Still Remains	Mythos		Act			Shattered Aeons 346	Turn Back Time 3
+Moment of Doom	Mythos		Act			Shattered Aeons 347	Turn Back Time 4

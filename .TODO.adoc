@@ -1,0 +1,76 @@
+===== TODO
+
+NOTE: Every thing need to be done
+
+ - [*] checked
+ - [X] alsoChecked
+ - [ ] not checked
+ *     normal list
+
+= Q&A
+ hello::
+  another
+Q2::
+ helpful
+
+TIP: ready to do
+ add
+
+* Finish MapDat
+[source,golang]
+type WorldMap struct
+[]
+ 
+WARING: config ...
+
+= format
+Doc Writer <doc.writer@asciidoctor.org>
+v0.1, 2019-09-09
+
+#Highlight# *chart* _italic_ `monospace`
+
+'''
+
+[.underline]#underline#
+[.small]#small#
+[.big]#small#
+[.line-through]#small#
+
+^upper^word
+~feet~word
+
+<<<
+
+IMPORTANT: Don`t forget anything
+
+`{cpp}`
+
+ * a
+ ** b
+ *** c
+ **** d
+
+'''
+. a
+. b
+. c
+
+= table
+[cols =3, options="header"]
+|===
+|a
+|b
+|c
+
+|1
+|2
+|3
+|===
+
+Update UI interface
+Show UI Player HP StateDefault
+
+Optimaz UI
+
+High DEF low EVD => High DMG low ACC
+High EVD low DEF => High ACC low DMG MultiHit

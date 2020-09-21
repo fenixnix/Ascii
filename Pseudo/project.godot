@@ -1,0 +1,33 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "FileRW",
+"language": "GDScript",
+"path": "res://Sys/FileRW.gd"
+}, {
+"base": "Node",
+"class": "TestClass",
+"language": "GDScript",
+"path": "res://Sys/Test/TestClass.gd"
+} ]
+_global_script_class_icons={
+"FileRW": "",
+"TestClass": ""
+}
+
+[application]
+
+config/name="Pseudo"
+run/main_scene="res://Main.tscn"
+boot_splash/image="res://gravity.png"
+boot_splash/fullsize=false
+config/icon="res://gravity.png"

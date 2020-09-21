@@ -1,0 +1,19 @@
+Green Man Medallion: Hour of the Huntress	Neutral	1	Asset	 	Item. Relic.	Books 2	
+Sacrificial Beast	Neutral		Enemy		Monster. Dark Young.	Books 3	
+Mysteries Remain	Neutral	0	Event	  	Insight.	Books 5	
+The Dirge of Reason	Neutral		Treachery		Madness.	Books 6	
+Norman Withers: The Astronomer	 Seeker		Investigator		Miskatonic.	Books 7	
+Split the Angle: Ire of the Void	Neutral	2	Asset	  	Spell.	Books 8	
+Vengeful Hound	Neutral		Enemy		Monster. Extradimensional. Tindalos.	Books 9	
+Carolyn Fern: The Psychologist	 Guardian		Investigator		Medic.	Books 10	
+Foolishness: Foolish Cat of Ulthar	Neutral	4	Asset	 	Ally. Creature. Dreamlands.	Books 11	
+To Fight the Black Wind	Neutral		Treachery		Task. Dreamlands.	Books 12	
+Silas Marsh: The Sailor	 Survivor		Investigator		Drifter.	Books 13	
+Nautical Prowess	Neutral		Skill	  	Innate. Developed.	Books 14	
+Dreams of the Deep: The Deep Gate	Neutral		Skill	 	Curse.	Books 15	
+Dexter Drake: The Magician	 Mystic		Investigator		Sorcerer. Veteran.	Books 16	
+Molly Maxwell: The Exotic Morgana	Neutral	3	Asset	  	Ally. Assistant.	Books 17	
+Yaztaroth	Neutral		Treachery		Curse. Pact.	Books 18	
+Marie Lambeau: The Entertainer	 Mystic		Investigator		Performer. Sorcerer.	Promo 1	
+Mystifying Song	Neutral	3	Event	 	Spell. Song.	Promo 2	
+Baron Samedi: Lord of the Cemetery	Neutral		Asset		Avatar.	Promo 3

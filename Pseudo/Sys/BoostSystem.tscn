@@ -1,0 +1,76 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sys/BtlBoost.gd" type="Script" id=1]
+[ext_resource path="res://Sys/BoostSystem.gd" type="Script" id=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Boost" type="Node" parent="."]
+script = ExtResource( 1 )
+
+[node name="Menu" type="VBoxContainer" parent="."]
+margin_right = 146.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Info" type="Label" parent="Menu"]
+margin_right = 146.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Boost" type="Button" parent="Menu"]
+margin_top = 18.0
+margin_right = 146.0
+margin_bottom = 38.0
+text = "Boost"
+
+[node name="UnBoost" type="Button" parent="Menu"]
+margin_top = 42.0
+margin_right = 146.0
+margin_bottom = 62.0
+text = "UnBoost"
+
+[node name="Cast" type="Button" parent="Menu"]
+margin_top = 66.0
+margin_right = 146.0
+margin_bottom = 86.0
+text = "Cast"
+
+[node name="Tick" type="Button" parent="Menu"]
+margin_top = 90.0
+margin_right = 146.0
+margin_bottom = 110.0
+text = "Tick"
+
+[node name="StarMod" type="HBoxContainer" parent="Menu"]
+margin_top = 114.0
+margin_right = 146.0
+margin_bottom = 138.0
+
+[node name="val" type="SpinBox" parent="Menu/StarMod"]
+margin_right = 105.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+min_value = -5.0
+max_value = 5.0
+
+[node name="+-" type="Button" parent="Menu/StarMod"]
+margin_left = 109.0
+margin_right = 146.0
+margin_bottom = 24.0
+text = "Add"
+[connection signal="pressed" from="Menu/Boost" to="." method="_on_Boost_pressed"]
+[connection signal="pressed" from="Menu/UnBoost" to="." method="_on_UnBoost_pressed"]
+[connection signal="pressed" from="Menu/Cast" to="." method="_on_Cast_pressed"]
+[connection signal="pressed" from="Menu/Tick" to="." method="_on_Tick_pressed"]
+[connection signal="pressed" from="Menu/StarMod/+-" to="." method="_on__pressed"]

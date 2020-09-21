@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/zero-project-zero-project_-_02_-_Moon_waltz.ogg-0cd2d39b5c6863e4b8f95ed7eee77278.oggstr"
+
+[deps]
+
+source_file="res://Audio/zero-project-zero-project_-_02_-_Moon_waltz.ogg"
+dest_files=[ "res://.import/zero-project-zero-project_-_02_-_Moon_waltz.ogg-0cd2d39b5c6863e4b8f95ed7eee77278.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

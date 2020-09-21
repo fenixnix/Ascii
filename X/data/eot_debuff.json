@@ -1,0 +1,52 @@
+[
+    {
+        "id":"acc_d",
+        "name":"Sencors Offline",
+        "trun":3,
+        "efx":[
+            {"acc":-30}
+        ]
+    },
+    {
+        "id":"spd_d",
+        "name":"Engine Down",
+        "trun":3,
+        "efx":[
+            {"spd":-25}
+        ]
+    },
+    {
+        "id":"evd_d",
+        "name":"Crew Panic",
+        "trun":3,
+        "efx":[
+            {"evd":-50}
+        ]
+    },
+    {
+        "id":"dmg_d",
+        "name":"Weapon Disruption",
+        "trun":3,
+        "efx":[
+            {"dmg":-20}
+        ]
+    },
+    {
+        "id":"def_d",
+        "name":"Vulnerable",
+        "trun":3,
+        "efx":[
+            {"def":-20}
+        ]
+    },
+    {
+        "id":"dot",
+        "name":"Hull Breach",
+        "trun":3
+    },
+    {
+        "id":"disable",
+        "name":"Ship Disable",
+        "trun":3
+    }
+]

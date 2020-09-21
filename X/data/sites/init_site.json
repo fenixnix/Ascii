@@ -1,0 +1,47 @@
+{
+    "name":"home",
+    "type":"planetary",
+    "team":0,
+    "res":{
+        "crew":100,
+        "mtrl":500,
+        "dkmt":500,
+        "fuel":20
+    },
+    "officer":[
+
+    ],
+    "ships":[
+        "shuttle",
+        "rogue",
+        "marksman"
+    ],
+    "fleets":[
+        {
+            "name":"Promise",
+            "img":"res://images/ships/faction_terran.png",
+            "team":0,
+            "ships":[
+                "rogue",
+                "knight",
+                "acolyte"
+            ]
+        },
+        {
+            "name":"Halcyon",
+            "img":"res://images/ships/faction_terran.png",
+            "team":0,
+            "ships":[
+                "shuttle"
+            ]
+        }
+    ],
+    "wpns":[
+        "flak_0",
+        "flak_1",
+        "beam_0"
+    ],
+    "gear":[
+
+    ]
+}

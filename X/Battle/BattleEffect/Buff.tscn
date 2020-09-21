@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=2]
+
+[sub_resource type="Curve" id=1]
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=2]
+curve = SubResource( 1 )
+
+[sub_resource type="Curve" id=3]
+min_value = -200.0
+max_value = 200.0
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=4]
+curve = SubResource( 3 )
+
+[sub_resource type="ParticlesMaterial" id=5]
+emission_shape = 1
+emission_sphere_radius = 0.3
+direction = Vector3( 0, 1, 0 )
+spread = 0.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 3.0
+tangential_accel = -3.0
+tangential_accel_random = 0.3
+tangential_accel_curve = SubResource( 4 )
+scale_curve = SubResource( 2 )
+
+[sub_resource type="CubeMesh" id=6]
+size = Vector3( 0.05, 0.05, 0.05 )
+
+[node name="Buff" type="Spatial"]
+
+[node name="Particles" type="Particles" parent="."]
+amount = 1024
+lifetime = 3.0
+process_material = SubResource( 5 )
+draw_pass_1 = SubResource( 6 )

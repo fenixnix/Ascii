@@ -1,0 +1,176 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://main.gd" type="Script" id=1]
+[ext_resource path="res://CharaRT.gd" type="Script" id=2]
+[ext_resource path="res://font/mono.tres" type="DynamicFont" id=3]
+[ext_resource path="res://EnemyRT.gd" type="Script" id=4]
+
+[node name="main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bg" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.596078, 0.596078, 0.596078, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="noise" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level" type="OptionButton" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -133.0
+margin_bottom = 27.0
+text = "Easy"
+items = [ "Easy", null, false, 0, null, "Standard", null, false, 1, null, "Hard", null, false, 2, null, "Expert", null, false, 3, null ]
+selected = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBox" type="HBoxContainer" parent="."]
+anchor_right = 0.659
+anchor_bottom = 1.0
+margin_right = 0.18396
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="CharaRT" type="RichTextLabel" parent="HBox"]
+visible = false
+margin_right = 670.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/mono_font = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0.227451, 0.227451, 0.227451, 1 )
+bbcode_enabled = true
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="img" type="VBoxContainer" parent="HBox"]
+margin_bottom = 600.0
+
+[node name="front" type="TextureRect" parent="HBox/img"]
+margin_bottom = 298.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="back" type="TextureRect" parent="HBox/img"]
+margin_top = 302.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -98.0
+margin_top = -33.0
+margin_right = 98.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ItemList" type="ItemList" parent="."]
+anchor_left = 0.706169
+anchor_top = 0.0742638
+anchor_right = 0.967888
+anchor_bottom = 0.867597
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Enemy" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EnemyRT" type="RichTextLabel" parent="Enemy"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Start" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -54.0
+margin_top = -27.0
+margin_right = 54.0
+text = "Start"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Config" type="VBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -91.0
+margin_top = -89.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CardSet" type="Button" parent="Config"]
+margin_right = 91.0
+margin_bottom = 27.0
+text = "Card"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Scenario" type="Button" parent="Config"]
+margin_top = 31.0
+margin_right = 91.0
+margin_bottom = 58.0
+text = "Scenario"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EncounterSet" type="Button" parent="Config"]
+margin_top = 62.0
+margin_right = 91.0
+margin_bottom = 89.0
+text = "Encounter"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="item_selected" from="Level" to="." method="_on_Level_item_selected"]
+[connection signal="item_selected" from="ItemList" to="." method="_on_ItemList_item_selected"]
+[connection signal="pressed" from="Start" to="." method="_on_Start_pressed"]
+[connection signal="pressed" from="Config/CardSet" to="." method="_on_CardSet_pressed"]
+[connection signal="pressed" from="Config/Scenario" to="." method="_on_Scenario_pressed"]
+[connection signal="pressed" from="Config/EncounterSet" to="." method="_on_EncounterSet_pressed"]

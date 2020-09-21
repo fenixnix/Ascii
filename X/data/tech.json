@@ -1,0 +1,22 @@
+[
+    {
+        "id":"tac_t2",
+        "name":"Ship Archer",
+        "cost":{
+
+        },
+        "time":72,
+        "tech":100,
+        "indu":100,
+        "efx":{
+            "type":"unlock",
+            "val":"archer@ship"
+        }
+    },
+    {
+        "id":"eng_t2"
+    },
+    {
+        "id":"sci_t2"
+    }
+]

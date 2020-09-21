@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Den Gen</title>
+    </head>
+    <body>
+        <h4 style = "text-align: center;color:#00ff00;background: #808080;">body Header4</h4>
+        <p>Map<sub>{{.Site}}</sub></p>
+        <hr/>
+        <p>title <br/>content</p>
+        <br />
+        {{range .Menu}}
+            <a href = /map/{{.}}>{{.}}</a>
+            <br/>
+        {{end}}
+        <a href="/goodbye?map=Village">Back</a>
+    </body>
+    <footer>
+        <hr/>
+        <p>
+            <small>copy right by Nix</small>
+        </p>
+    </footer>
+</html>

@@ -1,0 +1,286 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "KinematicBody2D",
+"class": "Avatar",
+"language": "GDScript",
+"path": "res://Platform/Avatar.gd"
+}, {
+"base": "Node",
+"class": "BT_AbstractNode",
+"language": "GDScript",
+"path": "res://NixLib/BehaviorTree/BehaviorTree/BT_AbstractNode.gd"
+}, {
+"base": "BT_AbstractNode",
+"class": "BT_Parallel",
+"language": "GDScript",
+"path": "res://NixLib/BehaviorTree/BehaviorTree/BT_Parallel.gd"
+}, {
+"base": "BT_AbstractNode",
+"class": "BT_RandomSelector",
+"language": "GDScript",
+"path": "res://NixLib/BehaviorTree/BehaviorTree/BT_RandomSelector.gd"
+}, {
+"base": "BT_AbstractNode",
+"class": "BT_Selector",
+"language": "GDScript",
+"path": "res://NixLib/BehaviorTree/BehaviorTree/BT_Selector.gd"
+}, {
+"base": "BT_AbstractNode",
+"class": "BT_Sequence",
+"language": "GDScript",
+"path": "res://NixLib/BehaviorTree/BehaviorTree/BT_Sequence.gd"
+}, {
+"base": "BT_AbstractNode",
+"class": "BehaviorLeaf",
+"language": "GDScript",
+"path": "res://NixLib/BehaviorTree/BehaviorTree/BehaviorLeaf.gd"
+}, {
+"base": "BT_AbstractNode",
+"class": "BehaviorTreeRoot",
+"language": "GDScript",
+"path": "res://NixLib/BehaviorTree/BehaviorTree/BehaviorTreeRoot.gd"
+}, {
+"base": "Camera2D",
+"class": "Camera2D_Zoom",
+"language": "GDScript",
+"path": "res://NixLib/Common/Camera.gd"
+}, {
+"base": "Node",
+"class": "CameraShake",
+"language": "GDScript",
+"path": "res://NixLib/Common/AnimShake.gd"
+}, {
+"base": "Node",
+"class": "Ctrl8WayMove",
+"language": "GDScript",
+"path": "res://NixLib/Controller/Ctrl8WayMove.gd"
+}, {
+"base": "Node",
+"class": "CtrlPlatformMove",
+"language": "GDScript",
+"path": "res://NixLib/Controller/CtrlPlatformMove.gd"
+}, {
+"base": "Node",
+"class": "CtrlRotationMovement",
+"language": "GDScript",
+"path": "res://NixLib/Controller/CtrlRotationMovement.gd"
+}, {
+"base": "Node2D",
+"class": "Effect2DGenerator",
+"language": "GDScript",
+"path": "res://NixLib/Common/Effect2DGenerator.gd"
+}, {
+"base": "Node",
+"class": "FileRW",
+"language": "GDScript",
+"path": "res://NixLib/Common/FileRW.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Mecha",
+"language": "GDScript",
+"path": "res://TopDownShootGame/Mecha/Mecha.gd"
+}, {
+"base": "Mecha",
+"class": "MechaEnemy",
+"language": "GDScript",
+"path": "res://TopDownShootGame/Mecha/MechaEnemy.gd"
+}, {
+"base": "Node",
+"class": "MovementAgent",
+"language": "GDScript",
+"path": "res://TopDownShootGame/Common/MovementAgent.gd"
+}, {
+"base": "Area2D",
+"class": "Projectile",
+"language": "GDScript",
+"path": "res://NixLib/Shoot/projectile.gd"
+}, {
+"base": "Node",
+"class": "RandomName",
+"language": "GDScript",
+"path": "res://Trade/RandomName.gd"
+}, {
+"base": "Node2D",
+"class": "ShootTarget",
+"language": "GDScript",
+"path": "res://NixLib/Shoot/ShootTarget.gd"
+}, {
+"base": "Area2D",
+"class": "Sight",
+"language": "GDScript",
+"path": "res://NixLib/Common/Sight.gd"
+}, {
+"base": "Area2D",
+"class": "Site",
+"language": "GDScript",
+"path": "res://Trade/Site.gd"
+}, {
+"base": "StaticBody2D",
+"class": "StageBorder",
+"language": "GDScript",
+"path": "res://NixLib/stage_border.gd"
+}, {
+"base": "PathFollow2D",
+"class": "TDPathFollow",
+"language": "GDScript",
+"path": "res://TowerDefence/TDPathFollow.gd"
+}, {
+"base": "StaticBody2D",
+"class": "Tower",
+"language": "GDScript",
+"path": "res://TopDownShootGame/Tower/Tower.gd"
+}, {
+"base": "Node",
+"class": "TowerAI",
+"language": "GDScript",
+"path": "res://TopDownShootGame/Tower/TowerAI.gd"
+}, {
+"base": "Node2D",
+"class": "TradeWorld",
+"language": "GDScript",
+"path": "res://Trade/World.gd"
+}, {
+"base": "Node2D",
+"class": "Trader",
+"language": "GDScript",
+"path": "res://Trade/Trader.gd"
+}, {
+"base": "Area2D",
+"class": "TriggerArea2D",
+"language": "GDScript",
+"path": "res://NixLib/Common/TriggerArea2D.gd"
+}, {
+"base": "Node2D",
+"class": "Turrent",
+"language": "GDScript",
+"path": "res://TopDownShootGame/Turrent/Turrent.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Unit",
+"language": "GDScript",
+"path": "res://Platform/Unit.gd"
+}, {
+"base": "Node",
+"class": "UnitLife",
+"language": "GDScript",
+"path": "res://NixLib/Common/UnitLife.gd"
+}, {
+"base": "Node",
+"class": "UnitObject",
+"language": "GDScript",
+"path": "res://NixLib/Common/Unit.gd"
+} ]
+_global_script_class_icons={
+"Avatar": "",
+"BT_AbstractNode": "",
+"BT_Parallel": "",
+"BT_RandomSelector": "",
+"BT_Selector": "",
+"BT_Sequence": "",
+"BehaviorLeaf": "",
+"BehaviorTreeRoot": "",
+"Camera2D_Zoom": "",
+"CameraShake": "",
+"Ctrl8WayMove": "",
+"CtrlPlatformMove": "",
+"CtrlRotationMovement": "",
+"Effect2DGenerator": "",
+"FileRW": "",
+"Mecha": "",
+"MechaEnemy": "",
+"MovementAgent": "",
+"Projectile": "",
+"RandomName": "",
+"ShootTarget": "",
+"Sight": "",
+"Site": "",
+"StageBorder": "",
+"TDPathFollow": "",
+"Tower": "",
+"TowerAI": "",
+"TradeWorld": "",
+"Trader": "",
+"TriggerArea2D": "",
+"Turrent": "",
+"Unit": "",
+"UnitLife": "",
+"UnitObject": ""
+}
+
+[application]
+
+config/name="GodotPlayGround"
+run/main_scene="res://BattleEffect/Test.tscn"
+boot_splash/image="res://tmp.png"
+boot_splash/fullsize=false
+config/icon="res://tmp.png"
+
+[autoload]
+
+GlbDb="*res://Trade/GlbDB.gd"
+GlbTileSetting="*res://NixLib/Common/GlbTileSetting.gd"
+TdGlb="*res://TowerDefence/TD_Glb.gd"
+
+[input]
+
+left={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777231,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":83,"unicode":0,"echo":false,"script":null)
+ ]
+}
+right={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777233,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":70,"unicode":0,"echo":false,"script":null)
+ ]
+}
+jump={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"unicode":0,"echo":false,"script":null)
+ ]
+}
+attack={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+zoomIn={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":4,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+zoomOut={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":5,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+up={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":69,"unicode":0,"echo":false,"script":null)
+ ]
+}
+down={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":68,"unicode":0,"echo":false,"script":null)
+ ]
+}
+RMB={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":2,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+
+[rendering]
+
+quality/2d/use_pixel_snap=true
+environment/default_environment="res://default_env.tres"

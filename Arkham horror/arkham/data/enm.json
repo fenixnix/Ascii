@@ -1,0 +1,13 @@
+[
+    {
+        "name":"Ghoul",
+        "CBT":3,
+        "AGI":2,
+        "HP":3,
+        "dmg":{
+            "san":1,
+            "sta":1
+        },
+        "feature":""
+    }
+]

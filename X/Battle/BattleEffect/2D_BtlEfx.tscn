@@ -1,0 +1,274 @@
+[gd_scene load_steps=42 format=2]
+
+[ext_resource path="res://images/ships/eng_1.png" type="Texture" id=1]
+[ext_resource path="res://Battle/BattleEffect/images/EXPLOSION_SHEET.png" type="Texture" id=2]
+[ext_resource path="res://images/icon/icon_ablative_field.png" type="Texture" id=3]
+[ext_resource path="res://Battle/BattleEffect/images/elec_orb.png" type="Texture" id=4]
+[ext_resource path="res://images/icon/icon_continue.png" type="Texture" id=5]
+[ext_resource path="res://Battle/BattleEffect/images/grav.png" type="Texture" id=6]
+[ext_resource path="res://Battle/BattleEffect/images/ship_piece.png" type="Texture" id=7]
+[ext_resource path="res://Battle/BattleEffect/images/sweepingflame.png" type="Texture" id=9]
+[ext_resource path="res://Battle/BattleEffect/images/wave_beam.png" type="Texture" id=12]
+
+[sub_resource type="Gradient" id=1]
+colors = PoolColorArray( 0.498039, 0.498039, 0.498039, 0.498039, 0.247059, 0.247059, 0.247059, 0 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="ParticlesMaterial" id=3]
+trail_divisor = 8
+flag_disable_z = true
+direction = Vector3( -1, 0, 0 )
+spread = 0.0
+gravity = Vector3( 0, 0, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+color_ramp = SubResource( 2 )
+
+[sub_resource type="Gradient" id=4]
+colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=5]
+gradient = SubResource( 4 )
+
+[sub_resource type="ParticlesMaterial" id=6]
+flag_disable_z = true
+spread = 180.0
+flatness = 1.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 32.0
+angular_velocity_random = 0.5
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 0.3
+color_ramp = SubResource( 5 )
+
+[sub_resource type="Gradient" id=7]
+offsets = PoolRealArray( 0, 0.261538, 0.486154, 0.766154, 1 )
+colors = PoolColorArray( 0.962891, 1, 0, 1, 1, 0.662109, 0, 1, 0.901367, 0.456068, 0.123234, 1, 0.967773, 0.310965, 0.0151215, 1, 1, 0, 0, 0 )
+
+[sub_resource type="GradientTexture" id=8]
+gradient = SubResource( 7 )
+
+[sub_resource type="ParticlesMaterial" id=9]
+trail_divisor = 45
+flag_disable_z = true
+spread = 0.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 64.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+color_ramp = SubResource( 8 )
+
+[sub_resource type="Curve" id=10]
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=11]
+curve = SubResource( 10 )
+
+[sub_resource type="ParticlesMaterial" id=12]
+flag_disable_z = true
+spread = 0.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 256.0
+initial_velocity_random = 0.42
+angular_velocity = 720.0
+angular_velocity_random = 0.18
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+linear_accel = 10.99
+radial_accel = 3.3
+angle_random = 0.5
+scale_curve = SubResource( 11 )
+anim_speed = 5.0
+
+[sub_resource type="Gradient" id=13]
+offsets = PoolRealArray( 0, 0.507353, 1 )
+colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=14]
+gradient = SubResource( 13 )
+
+[sub_resource type="Curve" id=15]
+_data = [ Vector2( 0, 0.481818 ), 0.0, 0.0, 0, 0, Vector2( 0.525424, 0.445455 ), 2.54773, 2.54773, 0, 0, Vector2( 1, 0.518182 ), -3.51411, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=16]
+curve = SubResource( 15 )
+
+[sub_resource type="ParticlesMaterial" id=17]
+flag_disable_z = true
+direction = Vector3( 0, 1, 0 )
+spread = 180.0
+gravity = Vector3( 0, 9, 0 )
+initial_velocity = 32.26
+angular_velocity = 222.97
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+damping = 8.0
+scale_curve = SubResource( 16 )
+color_ramp = SubResource( 14 )
+
+[sub_resource type="AtlasTexture" id=18]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 271, 219 )
+
+[sub_resource type="AtlasTexture" id=19]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 271, 0, 271, 219 )
+
+[sub_resource type="AtlasTexture" id=20]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 219, 271, 219 )
+
+[sub_resource type="AtlasTexture" id=21]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 542, 0, 271, 219 )
+
+[sub_resource type="AtlasTexture" id=22]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 271, 219, 271, 219 )
+
+[sub_resource type="AtlasTexture" id=23]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 542, 219, 271, 219 )
+
+[sub_resource type="SpriteFrames" id=24]
+animations = [ {
+"frames": [ SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ) ],
+"loop": true,
+"name": "default",
+"speed": 12.0
+} ]
+
+[sub_resource type="AtlasTexture" id=25]
+flags = 4
+atlas = ExtResource( 9 )
+region = Rect2( 0, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=26]
+flags = 4
+atlas = ExtResource( 9 )
+region = Rect2( 64, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=27]
+flags = 4
+atlas = ExtResource( 9 )
+region = Rect2( 128, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=28]
+flags = 4
+atlas = ExtResource( 9 )
+region = Rect2( 192, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=29]
+flags = 4
+atlas = ExtResource( 9 )
+region = Rect2( 256, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=30]
+flags = 4
+atlas = ExtResource( 9 )
+region = Rect2( 320, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=31]
+flags = 4
+atlas = ExtResource( 9 )
+region = Rect2( 384, 0, 64, 64 )
+
+[sub_resource type="SpriteFrames" id=32]
+animations = [ {
+"frames": [ SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ) ],
+"loop": true,
+"name": "default",
+"speed": 12.0
+} ]
+
+[node name="Spatial" type="Node"]
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+normal_map = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Blur" type="Particles2D" parent="Sprite"]
+visible = false
+show_behind_parent = true
+amount = 32
+lifetime = 0.6
+local_coords = false
+process_material = SubResource( 3 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Mutzz" type="Particles2D" parent="Sprite"]
+visible = false
+position = Vector2( 35.2657, 1.1376 )
+process_material = SubResource( 6 )
+texture = ExtResource( 4 )
+
+[node name="Lazer" type="Particles2D" parent="Sprite"]
+visible = false
+position = Vector2( 36.5231, 1.19748 )
+amount = 32
+lifetime = 5.0
+process_material = SubResource( 9 )
+texture = ExtResource( 3 )
+
+[node name="Mutzz2" type="Particles2D" parent="Sprite/Lazer"]
+position = Vector2( 304.542, -0.794968 )
+process_material = SubResource( 6 )
+texture = ExtResource( 4 )
+
+[node name="Particles2D" type="Particles2D" parent="Sprite"]
+lifetime = 5.0
+process_material = SubResource( 12 )
+texture = ExtResource( 5 )
+
+[node name="Line2D" type="Line2D" parent="."]
+position = Vector2( 16.0618, -26.5369 )
+points = PoolVector2Array( 114.94, 106.067, 425.513, 159.455 )
+width = 32.0
+default_color = Color( 0.964706, 0.964706, 0.964706, 1 )
+texture = ExtResource( 12 )
+texture_mode = 1
+joint_mode = 1
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="beam" type="Sprite" parent="."]
+position = Vector2( 277.79, 182.621 )
+texture = ExtResource( 6 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 64, 32 )
+region_filter_clip = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+
+[node name="ShipShard" type="Particles2D" parent="."]
+position = Vector2( 110.526, 154.737 )
+process_material = SubResource( 17 )
+texture = ExtResource( 7 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -37.1848, 136.134 )
+frames = SubResource( 24 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
+position = Vector2( 79.4505, -174.484 )
+frames = SubResource( 32 )
+frame = 1
+playing = true

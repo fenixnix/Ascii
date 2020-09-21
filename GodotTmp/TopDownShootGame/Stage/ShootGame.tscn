@@ -1,0 +1,94 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://TopDownShootGame/Stage/Stage001.tscn" type="PackedScene" id=1]
+[ext_resource path="res://UI_Component/MainMenu.gd" type="Script" id=2]
+[ext_resource path="res://UI_Component/CommonMenu.gd" type="Script" id=3]
+[ext_resource path="res://NixLib/Common/AnimShake.gd" type="Script" id=4]
+[ext_resource path="res://NixLib/Common/Camera.gd" type="Script" id=9]
+[ext_resource path="res://NixLib/Common/CameraFollower.gd" type="Script" id=21]
+[ext_resource path="res://TopDownShootGame/Stage/ShootGame.gd" type="Script" id=22]
+
+[sub_resource type="Environment" id=1]
+background_mode = 4
+auto_exposure_enabled = true
+glow_enabled = true
+glow_blend_mode = 0
+glow_hdr_scale = 1.5
+glow_bicubic_upscale = true
+
+[node name="ShootGame" type="Node2D"]
+script = ExtResource( 22 )
+
+[node name="Stage" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, -0.950012 )
+
+[node name="Camera" type="Node2D" parent="."]
+script = ExtResource( 21 )
+
+[node name="Camera2D_Zoom" type="Camera2D" parent="Camera"]
+current = true
+limit_left = 0
+limit_bottom = 0
+limit_smoothed = true
+smoothing_enabled = true
+script = ExtResource( 9 )
+
+[node name="CameraShake" type="Node" parent="Camera/Camera2D_Zoom"]
+script = ExtResource( 4 )
+amplitude = 64
+
+[node name="GUI" type="CanvasLayer" parent="."]
+
+[node name="DeadMenu" type="Control" parent="GUI"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -512.0
+margin_top = -300.0
+margin_right = 512.0
+margin_bottom = 300.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelContainer" type="PanelContainer" parent="GUI/DeadMenu"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -77.0
+margin_top = -8.5
+margin_right = 77.0
+margin_bottom = 8.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GUI/DeadMenu/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 147.0
+margin_bottom = 10.0
+script = ExtResource( 3 )
+options = [ "Retry", "Back to Main", "Exit Game" ]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 1 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -10.0
+margin_right = 49.0
+margin_bottom = 10.0
+text = "Shake"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="GUI/DeadMenu/PanelContainer/VBoxContainer" to="." method="_on_VBoxContainer_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_Button_pressed"]

@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://UI/WpnLstUI.gd" type="Script" id=1]
+[ext_resource path="res://UI/WpnInfoRT.gd" type="Script" id=2]
+[ext_resource path="res://UI/pop_shortcut.tres" type="ShortCut" id=3]
+
+[node name="WeaponListUI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.752941 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ItemList" type="ItemList" parent="."]
+margin_left = 551.755
+margin_top = 97.1176
+margin_right = 873.755
+margin_bottom = 534.118
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Return" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -56.5
+margin_top = -20.0
+margin_right = 56.5
+shortcut = ExtResource( 3 )
+text = "Return"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WpnInfo" type="RichTextLabel" parent="."]
+anchor_left = 0.0683594
+anchor_top = 0.113333
+anchor_right = 0.498047
+anchor_bottom = 0.95
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+[connection signal="item_activated" from="ItemList" to="." method="_on_ItemList_item_activated"]
+[connection signal="item_selected" from="ItemList" to="." method="_on_ItemList_item_selected"]
+[connection signal="pressed" from="Return" to="." method="_on_Close_pressed"]

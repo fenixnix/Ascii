@@ -1,0 +1,146 @@
+[
+    {
+        "id": "acid_bombs",
+        "name": "Acid Bombs",
+        "img": "",
+        "anim": "",
+        "type": "eng",
+        "affix": [
+            "enm"
+        ],
+        "select": "single",
+        "efx": []
+    },
+    {
+        "id": "brace",
+        "name": "Brace",
+        "img": "",
+        "anim": "",
+        "type": "eng",
+        "affix": [
+            "enm"
+        ],
+        "select": "single",
+        "efx": []
+    },
+    {
+        "id": "deconstruct",
+        "name": "Deconstruct",
+        "img": "",
+        "anim": "",
+        "type": "eng",
+        "affix": [
+            "enm"
+        ],
+        "select": "single",
+        "efx": []
+    },
+    {
+        "id": "shock_mine",
+        "name": "Shock Mine",
+        "img": "",
+        "anim": "",
+        "type": "eng",
+        "affix": [
+            "enm"
+        ],
+        "select": "single",
+        "efx": []
+    },
+    {
+        "id": "flak_barrage",
+        "name": "Flak Barrage",
+        "img": "",
+        "anim": "",
+        "type": "eng",
+        "affix": [
+            "enm"
+        ],
+        "select": "single",
+        "efx": []
+    },
+    {
+        "id": "instant_repairs",
+        "name": "Instant Repairs",
+        "img": "",
+        "anim": "",
+        "type": "eng",
+        "affix": [
+            "enm"
+        ],
+        "select": "single",
+        "efx": []
+    },
+    {
+        "id": "disintegrate_hull",
+        "name": "Disintegrate Hull",
+        "img": "",
+        "anim": "",
+        "type": "eng",
+        "affix": [
+            "enm"
+        ],
+        "select": "single",
+        "efx": []
+    },
+    {
+        "id": "release_mines",
+        "name": "Release Mines",
+        "img": "",
+        "anim": "",
+        "type": "eng",
+        "affix": [
+            "enm"
+        ],
+        "select": "single",
+        "efx": []
+    },
+    {
+        "id": "repair_drone",
+        "name": "Repair Drone",
+        "img": "",
+        "anim": "",
+        "type": "eng",
+        "affix": [
+            "enm"
+        ],
+        "select": "single",
+        "efx": []
+    },
+    {
+        "id": "disable_countermeasures",
+        "name": "Disable Countermeasures",
+        "img": "",
+        "anim": "",
+        "type": "eng",
+        "affix": [
+            "enm"
+        ],
+        "select": "single",
+        "efx": []
+    },
+    {
+        "id": "eruption",
+        "name": "Eruption",
+        "img": "",
+        "anim": "",
+        "type": "eng",
+        "affix": [
+            "enm"
+        ],
+        "select": "single",
+        "efx": []
+    },
+    {
+        "id": "shield_disruptor",
+        "name": "Shield Disruptor",
+        "img": "",
+        "anim": "",
+        "type": "eng",
+        "affix": [
+            "enm"
+        ],
+        "select": "single",
+        "efx": []
+    }
+]

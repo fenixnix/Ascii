@@ -1,0 +1,355 @@
+Mark Harrigan: The Soldier	 Guardian		Investigator		Veteran.	The Path to Carcosa 1	
+Minh Thi Phan: The Secretary	 Seeker		Investigator		Assistant.	The Path to Carcosa 2	
+Sefina Rousseau: The Painter	 Rogue		Investigator		Artist.	The Path to Carcosa 3	
+Akachi Onyele: The Shaman	 Mystic		Investigator		Sorcerer.	The Path to Carcosa 4	
+William Yorick: The Gravedigger	 Survivor		Investigator		Warden.	The Path to Carcosa 5	
+Lola Hayes: The Actress	Neutral		Investigator		Performer.	The Path to Carcosa 6	
+The Home Front	Neutral		Skill	   	Practiced. Expert.	The Path to Carcosa 7	
+Shell Shock	Neutral		Treachery		Flaw.	The Path to Carcosa 8	
+Sophie: In Loving Memory	Neutral		Asset		Item. Spirit.	The Path to Carcosa 9	
+Analytical Mind: Between the Lines	Neutral	3	Asset	 	Talent.	The Path to Carcosa 10	
+The King in Yellow: Act 1	Neutral		Asset		Tome.	The Path to Carcosa 11	
+The Painted World	Neutral		Event	  	Spell.	The Path to Carcosa 12	
+Stars of Hyades	Neutral		Treachery		Curse.	The Path to Carcosa 13	
+Spirit-Speaker: Envoy of the Alusi	Neutral	2	Asset	  	Ritual.	The Path to Carcosa 14	
+Angered Spirits	Neutral		Treachery		Task.	The Path to Carcosa 15	
+Bury Them Deep	Neutral	0	Event	  	Task.	The Path to Carcosa 16	
+Graveyard Ghouls	Neutral		Enemy		Humanoid. Monster. Ghoul.	The Path to Carcosa 17	
+Improvisation	Neutral	0	Event	 	Insight.	The Path to Carcosa 18	
+Crisis of Identity	Neutral		Treachery		Madness.	The Path to Carcosa 19	
+.32 Colt	 Guardian	3	Asset		Item. Weapon. Firearm.	The Path to Carcosa 20	
+True Grit	 Guardian	3	Asset		Talent.	The Path to Carcosa 21	
+"Let me handle this!"	 Guardian	0	Event	 	Spirit.	The Path to Carcosa 22	
+Ever Vigilant (1)	 Guardian	0	Event	 	Tactic.	The Path to Carcosa 23	
+Fieldwork	 Seeker	2	Asset		Talent.	The Path to Carcosa 24	
+Archaic Glyphs: Untranslated	 Seeker	0	Asset		Item. Occult. Tome.	The Path to Carcosa 25	
+No Stone Unturned	 Seeker	2	Event		Insight.	The Path to Carcosa 26	
+In the Know (1)	 Seeker	3	Asset		Talent.	The Path to Carcosa 27	
+Stealth	 Rogue	2	Asset		Talent.	The Path to Carcosa 28	
+Sleight of Hand	 Rogue	1	Event	 	Trick.	The Path to Carcosa 29	
+Daring Maneuver	 Rogue	0	Event		Gambit.	The Path to Carcosa 30	
+Lockpicks (1)	 Rogue	3	Asset		Item. Tool. Illicit.	The Path to Carcosa 31	
+Alchemical Transmutation	 Mystic	1	Asset		Spell.	The Path to Carcosa 32	
+Uncage the Soul	 Mystic	0	Event	 	Spirit.	The Path to Carcosa 33	
+Astral Travel	 Mystic	3	Event	 	Spell.	The Path to Carcosa 34	
+Spirit Athame (1)	 Mystic	3	Asset		Item. Relic. Weapon. Melee.	The Path to Carcosa 35	
+Lantern	 Survivor	2	Asset		Item. Tool.	The Path to Carcosa 36	
+Gravedigger's Shovel	 Survivor	2	Asset		Item. Tool. Weapon. Melee.	The Path to Carcosa 37	
+Hiding Spot	 Survivor	1	Event	 	Tactic. Trick.	The Path to Carcosa 38	
+Resourceful	 Survivor		Skill	  	Innate.	The Path to Carcosa 39	
+Overzealous	Neutral		Treachery		Flaw.	The Path to Carcosa 40	
+Drawing the Sign	Neutral		Treachery		Pact. Madness.	The Path to Carcosa 41	
+The Thing That Follows	Neutral		Enemy		Monster. Curse.	The Path to Carcosa 42	
+Curtain Call	Mythos		Scenario			The Path to Carcosa 43	Curtain Call 1
+The Third Act	Mythos		Agenda			The Path to Carcosa 44	Curtain Call 2
+Encore	Mythos		Agenda			The Path to Carcosa 45	Curtain Call 3
+Awakening	Mythos		Act			The Path to Carcosa 46	Curtain Call 4
+The Stranger	Mythos		Act			The Path to Carcosa 47	Curtain Call 5
+The Stranger	Mythos		Act			The Path to Carcosa 47	Curtain Call 6
+The Stranger	Mythos		Act			The Path to Carcosa 47	Curtain Call 7
+Curtain Call	Mythos		Act			The Path to Carcosa 48	Curtain Call 8
+Theatre	Mythos		Location			The Path to Carcosa 49	Curtain Call 9
+Lobby	Mythos		Location			The Path to Carcosa 50	Curtain Call 10
+Balcony	Mythos		Location			The Path to Carcosa 51	Curtain Call 11
+Backstage	Mythos		Location			The Path to Carcosa 52	Curtain Call 12
+Lighting Box	Mythos		Location		Private.	The Path to Carcosa 53	Curtain Call 13
+Box Office	Mythos		Location		Private.	The Path to Carcosa 54	Curtain Call 14
+Green Room	Mythos		Location		Private.	The Path to Carcosa 55	Curtain Call 15
+Dressing Room	Mythos		Location		Private.	The Path to Carcosa 56	Curtain Call 16
+Rehearsal Room	Mythos		Location		Private.	The Path to Carcosa 57	Curtain Call 17
+Trap Room	Mythos		Location		Private.	The Path to Carcosa 58	Curtain Call 18
+The Man in the Pallid Mask	Neutral		Enemy		Humanoid. Elite.	The Path to Carcosa 59	Curtain Call 19
+Royal Emissary: Messenger from Aldebaran	Mythos		Enemy		Monster. Elite.	The Path to Carcosa 60	Curtain Call 20
+The Last King	Mythos		Scenario			The Path to Carcosa 61	The Last King 1
+Fashionably Late	Mythos		Agenda			The Path to Carcosa 62	The Last King 2
+The Terrifying Truth	Mythos		Agenda			The Path to Carcosa 63	The Last King 3
+Discovering the Truth	Mythos		Act			The Path to Carcosa 64	The Last King 4
+Constance Dumaine: A Little Too Sociable	Mythos		Enemy		Monster. Lunatic. Elite.	The Path to Carcosa 65	
+Jordan Perry: An Imposing Presence	Mythos		Enemy		Monster. Lunatic. Elite.	The Path to Carcosa 66	
+Ishimaru Haruko: Just Skin and Bones	Mythos		Enemy		Monster. Lunatic. Elite.	The Path to Carcosa 67	
+Sebastien Moreau: Savage Hysteria	Mythos		Enemy		Monster. Lunatic. Elite.	The Path to Carcosa 68	
+Ashleigh Clarke: Songs Die Unheard	Mythos		Enemy		Monster. Lunatic. Elite.	The Path to Carcosa 69	
+Foyer	Mythos		Location			The Path to Carcosa 70	The Last King 10
+Ballroom	Mythos		Location			The Path to Carcosa 71	The Last King 11
+Living Room	Mythos		Location			The Path to Carcosa 72	The Last King 12
+Gallery	Mythos		Location			The Path to Carcosa 73	The Last King 13
+Courtyard	Mythos		Location			The Path to Carcosa 74	The Last King 14
+Dining Room	Mythos		Location			The Path to Carcosa 75	The Last King 15
+Constance Dumaine: Sociable Hostess	Neutral		Asset		Bystander.	The Path to Carcosa 76	The Last King 16
+Jordan Perry: Dignified Financier	Neutral		Asset		Bystander.	The Path to Carcosa 77	The Last King 17
+Ishimaru Haruko: Costume Designer	Neutral		Asset		Bystander.	The Path to Carcosa 78	The Last King 18
+Sebastien Moreau: Impassioned Producer	Neutral		Asset		Bystander.	The Path to Carcosa 79	The Last King 19
+Ashleigh Clarke: Talented Entertainer	Neutral		Asset		Bystander.	The Path to Carcosa 80	The Last King 20
+Dianne Devine: Mercurial and Mischevious	Mythos		Enemy		Humanoid. Cultist. Elite.	The Path to Carcosa 81	The Last King 21
+Fine Dining	Mythos		Treachery		Terror.	The Path to Carcosa 82	The Last King 22-23
+Tough Crowd	Mythos		Treachery		Hazard.	The Path to Carcosa 83	The Last King 24-25
+Whispers in Your Head (Anxiety)	Mythos		Treachery		Terror.	The Path to Carcosa 84	Delusions 3
+Whispers in Your Head (Dismay)	Mythos		Treachery		Terror.	The Path to Carcosa 84	Delusions 1
+Whispers in Your Head (Doubt)	Mythos		Treachery		Terror.	The Path to Carcosa 84	Delusions 4
+Whispers in Your Head (Dread)	Mythos		Treachery		Terror.	The Path to Carcosa 84	Delusions 2
+Descent into Madness	Mythos		Treachery		Terror.	The Path to Carcosa 85	Delusions 5-6
+Swift Byakhee	Mythos		Enemy		Monster. Byakhee.	The Path to Carcosa 86	Byakhee 1-2
+Hunted by Byakhee	Mythos		Treachery		Pact.	The Path to Carcosa 87	Byakhee 3-4
+Beast of Aldebaran	Mythos		Enemy		Monster. Elite.	The Path to Carcosa 88	Inhabitants of Carcosa 1
+Spawn of Hali	Mythos		Enemy		Monster.	The Path to Carcosa 89	Inhabitants of Carcosa 2-3
+Black Stars Rise	Mythos		Treachery		Omen.	The Path to Carcosa 90	Evil Portents 1-2
+Spires of Carcosa	Mythos		Treachery		Omen.	The Path to Carcosa 91	Evil Portents 3-4
+Twisted to His Will	Mythos		Treachery		Pact.	The Path to Carcosa 92	Evil Portents 5-6
+Poltergeist	Mythos		Enemy		Monster. Geist.	The Path to Carcosa 93	Hauntings 1-2
+Spirit's Torment	Mythos		Treachery		Curse. Geist.	The Path to Carcosa 94	Hauntings 3-4
+Maniac	Mythos		Enemy		Humanoid. Lunatic.	The Path to Carcosa 95	Hastur's Gift 1-2
+Young Psychopath	Mythos		Enemy		Humanoid. Lunatic.	The Path to Carcosa 96	Hastur's Gift 3-4
+Dance of the Yellow King	Mythos		Treachery		Pact.	The Path to Carcosa 97	Hastur's Gift 5-6
+Fanatic	Mythos		Enemy		Humanoid. Cultist.	The Path to Carcosa 98	Cult of the Yellow Sign 1-3
+Agent of the King	Mythos		Enemy		Humanoid. Cultist.	The Path to Carcosa 99	Cult of the Yellow Sign 4
+The King's Edict	Mythos		Treachery		Pact.	The Path to Carcosa 100	Cult of the Yellow Sign 5-6
+Ooze and Filth	Mythos		Treachery		Hazard.	The Path to Carcosa 101	Decay & Filth 1-2
+Corrosion	Mythos		Treachery		Hazard.	The Path to Carcosa 102	Decay & Filth 3-4
+Roach Swarm	Mythos		Enemy		Creature.	The Path to Carcosa 103	Decay & Filth 5-6
+Marked by the Sign	Mythos		Treachery		Pact.	The Path to Carcosa 104	The Stranger 1-2
+The Pale Mask Beckons	Mythos		Treachery		Omen. Pact.	The Path to Carcosa 105	The Stranger 3
+Heroic Rescue	 Guardian	1	Event	 	Spirit. Tactic.	Echoes of the Past 106	
+Combat Training (1)	 Guardian	1	Asset	 	Talent. Composure.	Echoes of the Past 107	
+Anatomical Diagrams	 Seeker	1	Event	 	Insight.	Echoes of the Past 108	
+Scientific Theory (1)	 Seeker	1	Asset	 	Talent. Composure.	Echoes of the Past 109	
+Knuckleduster	 Rogue	2	Asset		Item. Weapon. Melee. Illicit.	Echoes of the Past 110	
+Moxie (1)	 Rogue	1	Asset	 	Talent. Composure.	Echoes of the Past 111	
+David Renfield: Esteemed Eschatologist	 Mystic	2	Asset		Ally. Patron.	Echoes of the Past 112	
+Grounded (1)	 Mystic	1	Asset		Talent. Composure.	Echoes of the Past 113	
+Cherished Keepsake	 Survivor	0	Asset		Item. Charm.	Echoes of the Past 114	
+Plucky (1)	 Survivor	1	Asset	 	Talent. Composure.	Echoes of the Past 115	
+Say Your Prayers	Neutral		Skill	   	Desperate.	Echoes of the Past 116	
+Desperate Search	Neutral		Skill	   	Desperate.	Echoes of the Past 117	
+Reckless Assault	Neutral		Skill	   	Desperate.	Echoes of the Past 118	
+Run For Your Life	Neutral		Skill	   	Desperate.	Echoes of the Past 119	
+Echoes of the Past	Mythos		Scenario			Echoes of the Past 120	Echoes of the Past 1
+The Truth is Hidden	Mythos		Agenda			Echoes of the Past 121	Echoes of the Past 2
+Ransacking the Manor	Mythos		Agenda			Echoes of the Past 122	Echoes of the Past 3
+Secrets Better Left Hidden	Mythos		Agenda			Echoes of the Past 123	Echoes of the Past 4
+Race for Answers	Mythos		Act			Echoes of the Past 124	Echoes of the Past 5
+Mistakes of the Past	Mythos		Act			Echoes of the Past 125	Echoes of the Past 6
+The Oath	Mythos		Act			Echoes of the Past 126	Echoes of the Past 7
+Entry Hall	Mythos		Location		Ground Floor.	Echoes of the Past 127	Echoes of the Past 8
+Historical Society: Meeting Room	Mythos		Location		Ground Floor. Passageway.	Echoes of the Past 128	Echoes of the Past 9
+Historical Society: Record Office	Mythos		Location		Ground Floor.	Echoes of the Past 129	Echoes of the Past 10
+Historical Society: Historical Museum	Mythos		Location		Ground Floor.	Echoes of the Past 130	Echoes of the Past 11
+Quiet Halls	Mythos		Location		Second Floor.	Echoes of the Past 131	Echoes of the Past 12
+Historical Society: Historical Museum	Mythos		Location		Second Floor.	Echoes of the Past 132	Echoes of the Past 13
+Historical Society: Historical Library	Mythos		Location		Second Floor. Passageway.	Echoes of the Past 133	Echoes of the Past 14
+Historical Society: Reading Room	Mythos		Location		Second Floor.	Echoes of the Past 134	Echoes of the Past 15
+Quiet Halls	Mythos		Location		Third Floor.	Echoes of the Past 135	Echoes of the Past 16
+Historical Society: Historical Library	Mythos		Location		Third Floor. Passageway.	Echoes of the Past 136	Echoes of the Past 17
+Historical Society: Peabody's Office	Mythos		Location		Third Floor. Passageway.	Echoes of the Past 137	Echoes of the Past 18
+Historical Society: Record Office	Mythos		Location		Third Floor.	Echoes of the Past 138	Echoes of the Past 19
+Hidden Library	Mythos		Location			Echoes of the Past 139	Echoes of the Past 20
+Possessed Oathspeaker: A Damnable Fate	Mythos		Enemy		Monster. Servitor. Elite.	Echoes of the Past 140	Echoes of the Past 21
+Mr. Peabody: Historical Society Curator	Neutral		Asset		Ally. Historical Society.	Echoes of the Past 141	Echoes of the Past 22
+Clasp of Black Onyx: A Gift Unlooked For	Neutral	1	Asset		Item. Relic.	Echoes of the Past 142	Echoes of the Past 23
+The Tattered Cloak: Regalia Dementia	Neutral	2	Asset	  	Item. Clothing.	Echoes of the Past 143	Echoes of the Past 24
+Seeker of Carcosa	Mythos		Enemy		Humanoid. Cultist.	Echoes of the Past 144	Echoes of the Past 25-27
+Led Astray	Mythos		Treachery		Scheme.	Echoes of the Past 145	Echoes of the Past 28-30
+The Cult's Search	Mythos		Treachery		Scheme.	Echoes of the Past 146	Echoes of the Past 31-32
+Trench Knife	 Guardian	1	Asset		Item. Weapon. Melee.	The Unspeakable Oath 147	
+Ambush (1)	 Guardian	2	Event	 	Tactic.	The Unspeakable Oath 148	
+Charles Ross, Esq.: Acquisitions and Solicitation	 Seeker	2	Asset		Ally. Patron.	The Unspeakable Oath 149	
+Forewarned (1)	 Seeker	0	Event		Insight.	The Unspeakable Oath 150	
+Dario El-Amin: Unscrupulous Investor	 Rogue	4	Asset		Ally. Patron.	The Unspeakable Oath 151	
+Sneak Attack (2)	 Rogue	2	Event	  	Tactic.	The Unspeakable Oath 152	
+Storm of Spirits	 Mystic	3	Event	 	Spell.	The Unspeakable Oath 153	
+Book of Shadows (1)	 Mystic	3	Asset		Item. Tome.	The Unspeakable Oath 154	
+Fight or Flight	 Survivor	1	Event		Spirit.	The Unspeakable Oath 155	
+A Test of Will (1)	 Survivor	1	Event		Spirit.	The Unspeakable Oath 156	
+Devil's Luck (1)	 Survivor	1	Event		Fortune.	The Unspeakable Oath 157	
+Calling in Favors	Neutral	1	Event	 	Favor.	The Unspeakable Oath 158	
+The Unspeakable Oath	Mythos		Scenario			The Unspeakable Oath 159	The Unspeakable Oath 1
+Locked Inside	Mythos		Agenda			The Unspeakable Oath 160	The Unspeakable Oath 2
+Torturous Descent	Mythos		Agenda			The Unspeakable Oath 161	The Unspeakable Oath 3
+His Domain	Mythos		Agenda			The Unspeakable Oath 162	The Unspeakable Oath 4
+Arkham Asylum	Mythos		Act			The Unspeakable Oath 163	The Unspeakable Oath 5
+"The Really Bad Ones" (v. I)	Mythos		Act			The Unspeakable Oath 164	The Unspeakable Oath 6
+"The Really Bad Ones" (v. II)	Mythos		Act			The Unspeakable Oath 165	The Unspeakable Oath 7
+Planning the Escape	Mythos		Act			The Unspeakable Oath 166	The Unspeakable Oath 8
+No Asylum	Mythos		Act			The Unspeakable Oath 167	The Unspeakable Oath 9
+Asylum Halls: Western Patient Wing	Mythos		Location		Arkham Asylum.	The Unspeakable Oath 168	The Unspeakable Oath 10
+Asylum Halls: Western Patient Wing	Mythos		Location		Arkham Asylum.	The Unspeakable Oath 169	The Unspeakable Oath 11
+Asylum Halls: Eastern Patient Wing	Mythos		Location		Arkham Asylum.	The Unspeakable Oath 170	The Unspeakable Oath 12
+Asylum Halls: Eastern Patient Wing	Mythos		Location		Arkham Asylum.	The Unspeakable Oath 171	The Unspeakable Oath 13
+Kitchen	Mythos		Location		Arkham Asylum.	The Unspeakable Oath 172	The Unspeakable Oath 14
+Mess Hall	Mythos		Location		Arkham Asylum.	The Unspeakable Oath 173	The Unspeakable Oath 15
+Infirmary	Mythos		Location		Arkham Asylum.	The Unspeakable Oath 174	The Unspeakable Oath 16
+Yard	Mythos		Location		Arkham Asylum.	The Unspeakable Oath 175	The Unspeakable Oath 17
+Garden	Mythos		Location		Arkham Asylum.	The Unspeakable Oath 176	The Unspeakable Oath 18
+Basement Hall	Mythos		Location		Arkham Asylum.	The Unspeakable Oath 177	The Unspeakable Oath 19
+Patient Confinement: Daniel's Cell	Mythos		Location		Arkham Asylum.	The Unspeakable Oath 178	The Unspeakable Oath 20
+Patient Confinement: Occupied Cell	Mythos		Location		Arkham Asylum.	The Unspeakable Oath 179	The Unspeakable Oath 21
+Patient Confinement: Dreary Cell	Mythos		Location		Arkham Asylum.	The Unspeakable Oath 180	The Unspeakable Oath 22
+Patient Confinement: Familiar Cell	Mythos		Location		Arkham Asylum.	The Unspeakable Oath 181	The Unspeakable Oath 23
+Daniel Chesterfield: …Or At Least, What's Left of Him	Mythos		Enemy		Humanoid. Lunatic. Elite.	The Unspeakable Oath 182	The Unspeakable Oath 24
+Asylum Gorger	Mythos		Enemy		Monster. Abomination.	The Unspeakable Oath 183	The Unspeakable Oath 25-26
+Mad Patient	Mythos		Enemy		Humanoid. Lunatic.	The Unspeakable Oath 184	The Unspeakable Oath 27-29
+Straitjacket	Mythos		Treachery		Item. Clothing.	The Unspeakable Oath 185	The Unspeakable Oath 30-31
+Gift of Madness (Pity)	Mythos		Treachery		Terror.	The Unspeakable Oath 186	The Unspeakable Oath 32
+Gift of Madness (Misery)	Mythos		Treachery		Terror.	The Unspeakable Oath 187	The Unspeakable Oath 33
+Walls Closing In	Mythos		Treachery		Terror.	The Unspeakable Oath 188	The Unspeakable Oath 34-36
+"I'll see you in hell!"	 Guardian	0	Event	 	Spirit.	A Phantom of Truth 189	
+.45 Automatic (2)	 Guardian	4	Asset	 	Item. Weapon. Firearm.	A Phantom of Truth 190	
+Logical Reasoning	 Seeker	2	Event	 	Insight.	A Phantom of Truth 191	
+Archaic Glyphs: Guiding Stones (3)	 Seeker	2	Asset	 	Spell.	A Phantom of Truth 192	
+Archaic Glyphs: Prophecy Foretold (3)	 Seeker	2	Asset	 	Spell.	A Phantom of Truth 193	
+Cheap Shot	 Rogue	2	Event	 	Trick.	A Phantom of Truth 194	
+Pickpocketing (2)	 Rogue	2	Asset	 	Talent. Illicit.	A Phantom of Truth 195	
+Quantum Flux	 Mystic	1	Event		Insight.	A Phantom of Truth 196	
+Recharge (2)	 Mystic	0	Event	 	Spell.	A Phantom of Truth 197	
+Madame Labranche: Mysterious Benefactress	 Survivor	2	Asset		Ally. Patron.	A Phantom of Truth 198	
+Snare Trap (2)	 Survivor	2	Event	 	Trap. Improvised.	A Phantom of Truth 199	
+A Phantom of Truth	Mythos		Scenario			A Phantom of Truth 200	A Phantom of Truth 1
+The First Night	Mythos		Agenda			A Phantom of Truth 201	A Phantom of Truth 2
+The Second Night	Mythos		Agenda			A Phantom of Truth 202	A Phantom of Truth 3
+The Third Night	Mythos		Agenda			A Phantom of Truth 203	A Phantom of Truth 4
+The Parisian Conspiracy (v. I)	Mythos		Act			A Phantom of Truth 204	A Phantom of Truth 5
+The Parisian Conspiracy (v. II)	Mythos		Act			A Phantom of Truth 205	A Phantom of Truth 6
+Pursuing Shadows	Mythos		Act			A Phantom of Truth 206	A Phantom of Truth 7
+Stalked by Shadows	Mythos		Act			A Phantom of Truth 207	A Phantom of Truth 8
+Montparnasse	Mythos		Location		Paris. Rail.	A Phantom of Truth 208	A Phantom of Truth 9
+Montmartre	Mythos		Location		Paris. Rail.	A Phantom of Truth 209	A Phantom of Truth 10
+Montmartre	Mythos		Location		Paris. Rail.	A Phantom of Truth 210	A Phantom of Truth 11
+Grand Guignol: Theatre of the Great Puppet	Mythos		Location		Paris.	A Phantom of Truth 211	A Phantom of Truth 12
+Opéra Garnier	Mythos		Location		Paris. Rail.	A Phantom of Truth 212	A Phantom of Truth 13
+Opéra Garnier	Mythos		Location		Paris. Rail.	A Phantom of Truth 213	A Phantom of Truth 14
+Gare d'Orsay	Mythos		Location		Paris. Rail.	A Phantom of Truth 214	A Phantom of Truth 15
+Père Lachaise Cemetery	Mythos		Location		Paris.	A Phantom of Truth 215	A Phantom of Truth 16
+Canal Saint-Martin	Mythos		Location		Paris.	A Phantom of Truth 216	A Phantom of Truth 17
+Le Marais	Mythos		Location		Paris. Rail.	A Phantom of Truth 217	A Phantom of Truth 18
+Le Marais	Mythos		Location		Paris. Rail.	A Phantom of Truth 218	A Phantom of Truth 19
+Notre-Dame	Mythos		Location		Paris. Rail.	A Phantom of Truth 219	A Phantom of Truth 20
+Gardens of Luxembourg	Mythos		Location		Paris.	A Phantom of Truth 220	A Phantom of Truth 21
+The Organist: Draped in Mystery	Mythos		Enemy		Humanoid. Avatar. Elite.	A Phantom of Truth 221	A Phantom of Truth 22
+Stealthy Byakhee	Mythos		Enemy		Monster. Byakhee.	A Phantom of Truth 222	A Phantom of Truth 23-24
+Twin Suns	Mythos		Treachery		Omen.	A Phantom of Truth 223	A Phantom of Truth 25-26
+Deadly Fate	Mythos		Treachery		Omen.	A Phantom of Truth 224	A Phantom of Truth 27-29
+Torturous Chords	Mythos		Treachery		Hex. Terror.	A Phantom of Truth 225	A Phantom of Truth 30-32
+Frozen in Fear	Mythos		Treachery		Terror.	A Phantom of Truth 226	A Phantom of Truth 33-34
+Lost Soul	Neutral		Treachery		Madness. Pact.	A Phantom of Truth 227	A Phantom of Truth 35-38
+Inspiring Presence	 Guardian		Skill	  	Innate.	The Pallid Mask 228	
+Mano a Mano (1)	 Guardian	0	Event	 	Spirit. Bold.	The Pallid Mask 229	
+First Aid (3)	 Guardian	2	Asset	 	Talent. Science.	The Pallid Mask 230	
+Eureka!	 Seeker		Skill	  	Innate.	The Pallid Mask 231	
+Shortcut (2)	 Seeker	1	Event	  	Insight. Tactic.	The Pallid Mask 232	
+"Watch this!"	 Rogue		Skill	  	Gambit.	The Pallid Mask 233	
+.41 Derringer (2)	 Rogue	3	Asset	 	Item. Weapon. Firearm. Illicit.	The Pallid Mask 234	
+Torrent of Power	 Mystic		Skill		Practiced.	    	The Pallid Mask 235
+Scrying (3)	 Mystic	1	Asset	 	Spell.	The Pallid Mask 236	
+Waylay	 Survivor	3	Event	 	Tactic.	The Pallid Mask 237	
+A Chance Encounter (2)	 Survivor	-2	Event	 	Fortune.	The Pallid Mask 238	
+Emergency Cache (3)	Neutral	0	Event		Supply.	The Pallid Mask 239	
+The Pallid Mask	Mythos		Scenario			The Pallid Mask 240	The Pallid Mask 1
+Empire of the Dead	Mythos		Agenda			The Pallid Mask 241	The Pallid Mask 2
+Empire of the Undead	Mythos		Agenda			The Pallid Mask 242	The Pallid Mask 3
+Through the Catacombs	Mythos		Act			The Pallid Mask 243	The Pallid Mask 4
+The Path is Barred	Mythos		Act			The Pallid Mask 244	The Pallid Mask 5
+The Way Out	Mythos		Act			The Pallid Mask 245	The Pallid Mask 6
+Leading the Way	Mythos		Act			The Pallid Mask 246	The Pallid Mask 7
+The Gate to Hell	Mythos		Location			The Pallid Mask 247	The Pallid Mask 8
+Stone Archways	Mythos		Location			The Pallid Mask 248	The Pallid Mask 9-10
+Crypt of the Sepulchral Lamp	Mythos		Location			The Pallid Mask 249	The Pallid Mask 11
+Bone-Filled Caverns	Mythos		Location			The Pallid Mask 250	The Pallid Mask 12
+Well of Souls	Mythos		Location			The Pallid Mask 251	The Pallid Mask 13
+Candlelit Tunnels	Mythos		Location			The Pallid Mask 252	The Pallid Mask 14-15
+Labyrinth of Bones	Mythos		Location			The Pallid Mask 253	The Pallid Mask 16-17
+Narrow Shaft	Mythos		Location			The Pallid Mask 254	The Pallid Mask 18
+Shivering Pools	Mythos		Location			The Pallid Mask 255	The Pallid Mask 19
+Blocked Passage	Mythos		Location			The Pallid Mask 256	The Pallid Mask 20
+Tomb of Shadows	Mythos		Location			The Pallid Mask 257	The Pallid Mask 21
+Catacombs Docent	Mythos		Enemy		Humanoid. Lunatic.	The Pallid Mask 258	The Pallid Mask 22-24
+Corpse Dweller	Mythos		Enemy		Monster.	The Pallid Mask 259	The Pallid Mask 25-27
+Eyes in the Walls	Mythos		Treachery		Terror.	The Pallid Mask 260	The Pallid Mask 28-30
+The Shadow Behind You	Mythos		Treachery		Terror.	The Pallid Mask 261	The Pallid Mask 31-33
+The Pit Below	Mythos		Treachery		Hazard.	The Pallid Mask 262	The Pallid Mask 34-36
+On the Hunt	 Guardian	1	Event	 	Tactic.	Black Stars Rise 263	
+Stick to the Plan (3)	 Guardian		Asset		Talent.	Black Stars Rise 264	
+Guidance	 Seeker	0	Event		Insight.	Black Stars Rise 265	
+Arcane Insight (4)	 Seeker	3	Asset	 	Spell.	Black Stars Rise 266	
+Narrow Escape	 Rogue	0	Event	 	Fortune.	Black Stars Rise 267	
+Suggestion (4)	 Rogue	3	Asset	 	Spell.	Black Stars Rise 268	
+St. Hubert's Key: Cleansing Fire	 Mystic	4	Asset		Item. Charm.	Black Stars Rise 269	
+Ward of Protection (2)	 Mystic	1	Event		Spell. Spirit.	Black Stars Rise 270	
+Arcane Initiate (3)	 Mystic	0	Asset	 	Ally. Sorcerer.	Black Stars Rise 271	
+"Not without a fight!"	 Survivor		Skill	  	Innate.	Black Stars Rise 272	
+True Survivor (3)	 Survivor	3	Event		Spirit.	Black Stars Rise 273	
+Black Stars Rise	Mythos		Scenario			Black Stars Rise 274	Black Stars Rise 1
+The Tide Rises	Mythos		Agenda			Black Stars Rise 275	Black Stars Rise 2
+Let The Storm Rage	Mythos		Agenda			Black Stars Rise 276	The Vortex Above 3
+Let The Storm Rage	Mythos		Agenda			Black Stars Rise 276	The Flood Below 4
+The City Floods	Mythos		Agenda			Black Stars Rise 277	Black Stars Rise 5
+The Ritual Begins	Mythos		Agenda			Black Stars Rise 278	Black Stars Rise 6
+The Entity Above	Mythos		Agenda			Black Stars Rise 279	The Flood Below 7
+The Entity Above	Mythos		Agenda			Black Stars Rise 279	The Vortex Above 8
+Swallowed Sky	Mythos		Agenda			Black Stars Rise 280	Black Stars Rise 9
+Open The Path Below	Mythos		Act			Black Stars Rise 281	Black Stars Rise 10
+Open The Path Above	Mythos		Act			Black Stars Rise 282	Black Stars Rise 11
+Porte de l'Avancée	Mythos		Location			Black Stars Rise 283	Black Stars Rise 12
+Grand Rue	Mythos		Location			Black Stars Rise 284	Black Stars Rise 13
+Outer Wall	Mythos		Location			Black Stars Rise 285	Black Stars Rise 14
+Outer Wall	Mythos		Location			Black Stars Rise 286	Black Stars Rise 15
+North Tower	Mythos		Location			Black Stars Rise 287	Black Stars Rise 16
+North Tower	Mythos		Location			Black Stars Rise 288	Black Stars Rise 17
+Broken Steps	Mythos		Location			Black Stars Rise 289	Black Stars Rise 18
+Broken Steps	Mythos		Location			Black Stars Rise 290	Black Stars Rise 19
+Abbey Church	Mythos		Location			Black Stars Rise 291	Black Stars Rise 20
+Chœur Gothique	Mythos		Location			Black Stars Rise 292	Black Stars Rise 21
+Chœur Gothique	Mythos		Location			Black Stars Rise 293	Black Stars Rise 22
+Cloister	Mythos		Location			Black Stars Rise 294	Black Stars Rise 23
+Knight's Hall	Mythos		Location			Black Stars Rise 295	Black Stars Rise 224
+Chapel of St. Aubert: The Path is Open	Mythos		Location			Black Stars Rise 296	The Flood Below 25
+Chapel of St. Aubert: Waters Forbidden	Mythos		Location			Black Stars Rise 297	The Vortex Above 26
+Abbey Tower: The Path is Open	Mythos		Location			Black Stars Rise 298	The Vortex Above 27
+Abbey Tower: Spires Forbidden	Mythos		Location			Black Stars Rise 299	The Flood Below 28
+Tidal Terror	Mythos		Enemy		Monster.	Black Stars Rise 300	Black Stars Rise 29-30
+Rift Seeker	Mythos		Enemy		Monster. Byakhee. Cultist.	Black Stars Rise 301	Black Stars Rise 31-32
+Crashing Floods	Mythos		Treachery		Omen.	Black Stars Rise 302	Black Stars Rise 33-35
+Worlds Merge	Mythos		Treachery		Omen.	Black Stars Rise 303	Black Stars Rise 36-38
+"Eat lead!" (2)	 Guardian	0	Event	 	Tactic.	Dim Carcosa 304	
+Armor of Ardennes (5)	 Guardian	4	Asset	   	Item. Armor. Relic.	Dim Carcosa 305	
+Eidetic Memory (3)	 Seeker		Event	 	Spirit.	Dim Carcosa 306	
+No Stone Unturned (5)	 Seeker	2	Event	 	Insight.	Dim Carcosa 307	
+Charon's Obol: The Ferryman's Pay (1)	 Rogue		Asset		Item. Relic.	Dim Carcosa 308	
+Lupara (3)	 Rogue	3	Asset		Item. Weapon. Firearm. Illicit.	Dim Carcosa 309	
+Cheat Death (5)	 Rogue	1	Event		Trick. Fated.	Dim Carcosa 310	
+Time Warp (2)	 Mystic	1	Event		Spell. Paradox.	Dim Carcosa 311	
+Seal of the Elder Sign (5)	 Mystic		Skill		Spell. Expert.	Dim Carcosa 312	
+Newspaper (2)	 Survivor	1	Asset	 	Item.	Dim Carcosa 313	
+Infighting (3)	 Survivor	1	Event	   	Trick.	Dim Carcosa 314	
+Key of Ys: Let the Storm Rage (5)	Neutral	3	Asset	 	Item. Relic.	Dim Carcosa 315	
+Dim Carcosa	Mythos		Scenario			Dim Carcosa 316	Dim Carcosa 1
+Madness Coils	Mythos		Agenda			Dim Carcosa 317	Dim Carcosa 2
+Madness Drowns	Mythos		Agenda			Dim Carcosa 318	Dim Carcosa 3
+Madness Dies	Mythos		Agenda			Dim Carcosa 319	Dim Carcosa 4
+In Lost Carcosa	Mythos		Act			Dim Carcosa 320	Dim Carcosa 5
+Search For the Stranger (v.I)	Mythos		Act			Dim Carcosa 321	Dim Carcosa 6
+Search For the Stranger (v.II)	Mythos		Act			Dim Carcosa 322	Dim Carcosa 7
+Search For the Stranger (v.III)	Mythos		Act			Dim Carcosa 323	Dim Carcosa 8
+The King in Tatters	Mythos		Act			Dim Carcosa 324	Dim Carcosa 9
+Shores of Hali	Mythos		Location		Otherworld.	Dim Carcosa 325	Dim Carcosa 10
+Bleak Plains	Mythos		Location		Otherworld.	Dim Carcosa 326	Dim Carcosa 11
+Bleak Plains	Mythos		Location		Otherworld.	Dim Carcosa 326	Dim Carcosa 12
+Ruins of Carcosa	Mythos		Location		Otherworld.	Dim Carcosa 327	Dim Carcosa 13
+Ruins of Carcosa	Mythos		Location		Otherworld.	Dim Carcosa 327	Dim Carcosa 14
+Ruins of Carcosa	Mythos		Location		Otherworld.	Dim Carcosa 327	Dim Carcosa 15
+Dim Streets	Mythos		Location		Otherworld.	Dim Carcosa 328	Dim Carcosa 16
+Dim Streets	Mythos		Location		Otherworld.	Dim Carcosa 328	Dim Carcosa 17
+Dim Streets	Mythos		Location		Otherworld.	Dim Carcosa 328	Dim Carcosa 18
+Depths of Demhe	Mythos		Location		Otherworld.	Dim Carcosa 329	Dim Carcosa 19
+Depths of Demhe	Mythos		Location		Otherworld.	Dim Carcosa 329	Dim Carcosa 20
+Dark Spires	Mythos		Location		Otherworld.	Dim Carcosa 330	Dim Carcosa 21
+Palace of the King	Mythos		Location		Otherworld.	Dim Carcosa 331	Dim Carcosa 22
+Hastur: The King in Yellow	Mythos		Enemy		Ancient One. Elite.	Dim Carcosa 332	Dim Carcosa 23
+Hastur: Lord of Carcosa	Mythos		Enemy		Ancient One. Elite.	Dim Carcosa 333	Dim Carcosa 24
+Hastur: The Tattered King	Mythos		Enemy		Ancient One. Elite.	Dim Carcosa 334	Dim Carcosa 25
+Creature Out of Demhe	Mythos		Enemy		Monster.	Dim Carcosa 335	Dim Carcosa 26
+Winged One	Mythos		Enemy		Monster. Byakhee.	Dim Carcosa 336	Dim Carcosa 27
+Dismal Curse	Mythos		Treachery		Curse. Terror.	Dim Carcosa 337	Dim Carcosa 28-30
+Realm of Madness	Mythos		Treachery		Terror.	Dim Carcosa 338	Dim Carcosa 31-32
+The Final Act	Mythos		Treachery		Terror.	Dim Carcosa 339	Dim Carcosa 33
+Possession (Traitorous)	Mythos		Treachery		Hex. Terror.	Dim Carcosa 340	Dim Carcosa 34
+Possession (Torturous)	Mythos		Treachery		Hex. Terror.	Dim Carcosa 341	Dim Carcosa 35
+Possession (Murderous)	Mythos		Treachery		Hex. Terror.	Dim Carcosa 342	Dim Carcosa 36

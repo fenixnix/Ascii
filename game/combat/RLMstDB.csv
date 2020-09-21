@@ -1,0 +1,14 @@
+ID,MHP,DEF,EVD,ACC,DMG,RND,HIT
+goblin,5,0,1,1,1,1,1
+zombie,8,1,0,0,2,2,1
+imp,5,0,5,2,2,1,1
+wolf,10,0,3,2,3,3,2
+rat 
+spider
+orc
+slime
+skeleton
+ghost
+ant
+demon
+golem

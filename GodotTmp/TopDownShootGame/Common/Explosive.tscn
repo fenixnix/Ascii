@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://TopDownShootGame/Common/explosive_anim.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://TopDownShootGame/Common/Effect2D.gd" type="Script" id=2]
+
+[node name="Explosive" type="AnimatedSprite"]
+frames = ExtResource( 1 )
+frame = 3
+script = ExtResource( 2 )

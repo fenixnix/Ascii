@@ -1,0 +1,56 @@
+Murder at the Excelsior Hotel	Mythos		Scenario			Murder at the Excelsior Hotel 1	Murder at the Excelsior Hotel 1
+The Murder	Mythos		Agenda			Murder at the Excelsior Hotel 2	Murder at the Excelsior Hotel 2
+Special Investigation	Mythos		Agenda			Murder at the Excelsior Hotel 3	Murder at the Excelsior Hotel 3
+What Happened...?	Mythos		Act			Murder at the Excelsior Hotel 4	Murder at the Excelsior Hotel 4
+Following Leads	Mythos		Act			Murder at the Excelsior Hotel 5	Murder at the Excelsior Hotel 5
+Bloodstained Dagger: The Murder Weapon	Neutral	1	Asset		Item. Weapon. Melee. Cursed.	Murder at the Excelsior Hotel 6	Murder at the Excelsior Hotel 6
+What Have You Done?	Neutral		Treachery		Madness.	Murder at the Excelsior Hotel 7	Murder at the Excelsior Hotel 7
+Sergeant Monroe: Two Days Until Retirement	Neutral	5	Asset	  	Ally. Police.	Murder at the Excelsior Hotel 8	Murder at the Excelsior Hotel 8
+Arkham Officer	Mythos		Enemy		Humanoid. Police. Innocent.	Murder at the Excelsior Hotel 9	Murder at the Excelsior Hotel 9-11
+Room 225: Scene of the Crime	Mythos		Location		Crime Scene.	Murder at the Excelsior Hotel 10	Murder at the Excelsior Hotel 12
+Suite Balcony	Mythos		Location		Crime Scene.	Murder at the Excelsior Hotel 11	Murder at the Excelsior Hotel 13
+Second Floor Hall	Mythos		Location		Hall.	Murder at the Excelsior Hotel 12	Murder at the Excelsior Hotel 14
+Foyer	Mythos		Location		Hall.	Murder at the Excelsior Hotel 13	Murder at the Excelsior Hotel 15
+Restaurant	Mythos		Location		Hall.	Murder at the Excelsior Hotel 14	Murder at the Excelsior Hotel 16
+Hotel Roof	Mythos		Location			Murder at the Excelsior Hotel 15	Murder at the Excelsior Hotel 17
+Room 212	Mythos		Location		Crime Scene.	Murder at the Excelsior Hotel 16	Murder at the Excelsior Hotel 18
+Room 245	Mythos		Location		Crime Scene.	Murder at the Excelsior Hotel 17	Murder at the Excelsior Hotel 19
+Office	Mythos		Location			Murder at the Excelsior Hotel 18	Murder at the Excelsior Hotel 20
+Basement	Mythos		Location		Crime Scene.	Murder at the Excelsior Hotel 19	Murder at the Excelsior Hotel 21
+Mr. Trombly: Maddened Concierge	Mythos		Enemy		Humanoid. Staff.	Murder at the Excelsior Hotel 20	Murder at the Excelsior Hotel 22
+Conspicuous Staff	Mythos		Enemy		Humanoid. Staff.	Murder at the Excelsior Hotel 21	Murder at the Excelsior Hotel 23-25
+Hotel Guest	Mythos		Enemy		Humanoid. Guest. Innocent.	Murder at the Excelsior Hotel 22	Murder at the Excelsior Hotel 26-29
+Noxious Fumes	Mythos		Treachery		Hazard.	Murder at the Excelsior Hotel 23	Murder at the Excelsior Hotel 30-31
+Driven to Madness	Mythos		Treachery		Curse.	Murder at the Excelsior Hotel 24	Murder at the Excelsior Hotel 32-34
+Blood on your Hands	Mythos		Treachery		Terror.	Murder at the Excelsior Hotel 25	Murder at the Excelsior Hotel 35-38
+Incriminating Evidence	Mythos		Treachery		Evidence.	Murder at the Excelsior Hotel 26	Murder at the Excelsior Hotel 39-40
+Violent Outburst	Mythos		Treachery		Curse.	Murder at the Excelsior Hotel 27	Murder at the Excelsior Hotel 41-43
+Alien Device: Machinations from Beyond	Neutral		Asset		Lead. Extraterrestrial.	Murder at the Excelsior Hotel 28	Alien Interference 1
+Otherworldly Meddler: Presence from Beyond the Stars	Mythos		Enemy		Monster. Mi-Go. Elite.	Murder at the Excelsior Hotel 29	Alien Interference 2
+Encephalon Signal	Mythos		Treachery		Hazard.	Murder at the Excelsior Hotel 30	Alien Interference 3-5
+Manager's Key: Stained by Blood	Neutral		Asset		Lead. Key.	Murder at the Excelsior Hotel 31	Excelsior Management 1
+Hotel Manager: Let the Feast Begin	Mythos		Enemy		Monster. Staff. Elite.	Murder at the Excelsior Hotel 32	Excelsior Management 2
+Hotel Security	Mythos		Enemy		Humanoid. Monster. Staff.	Murder at the Excelsior Hotel 33	Excelsior Management 3-5
+Tome of Rituals: Blasphemous Volume	Neutral		Asset		Lead. Tome.	Murder at the Excelsior Hotel 34	Dark Rituals 1
+Dimensional Shambler	Mythos		Enemy		Monster. Extradimensional. Elite.	Murder at the Excelsior Hotel 35	Dark Rituals 2
+Cultist of the Enclave	Mythos		Enemy		Humanoid. Cultist.	Murder at the Excelsior Hotel 36	Dark Rituals 3-5
+Sinister Solution: Vile Concoction	Neutral		Asset		Lead. Science.	Murder at the Excelsior Hotel 37	Vile Experiments 1
+Harvested Brain	Mythos		Treachery		Ancient. Science.	Murder at the Excelsior Hotel 38	Vile Experiments 2
+Morbid Awareness	Mythos		Treachery		Hazard.	Murder at the Excelsior Hotel 39	Vile Experiments 3-5
+Time-Worn Locket: Mournful Vision of the Past	Neutral		Asset		Lead. Charm.	Murder at the Excelsior Hotel 40	Sins of the Past 1
+Vengeful Specter: The First Victim	Mythos		Enemy		Monster. Geist. Elite.	Murder at the Excelsior Hotel 41	Sins of the Past 2
+Chilling Presence	Mythos		Treachery		Terror.	Murder at the Excelsior Hotel 42	Sins of the Past 3-5
+The True Culprit (v. I)	Mythos		Agenda			Murder at the Excelsior Hotel 43	Murder at the Excelsior Hotel 44
+The True Culprit (v. II)	Mythos		Agenda			Murder at the Excelsior Hotel 44	Murder at the Excelsior Hotel 45
+The True Culprit (v. III)	Mythos		Agenda			Murder at the Excelsior Hotel 45	Murder at the Excelsior Hotel 46
+The True Culprit (v. IV)	Mythos		Agenda			Murder at the Excelsior Hotel 46	Murder at the Excelsior Hotel 47
+The True Culprit (v. V)	Mythos		Agenda			Murder at the Excelsior Hotel 47	Murder at the Excelsior Hotel 48
+The True Culprit (v. VI)	Mythos		Agenda			Murder at the Excelsior Hotel 48	Murder at the Excelsior Hotel 49
+The True Culprit (v. VII)	Mythos		Agenda			Murder at the Excelsior Hotel 49	Murder at the Excelsior Hotel 50
+The True Culprit (v. VIII)	Mythos		Agenda			Murder at the Excelsior Hotel 50	Murder at the Excelsior Hotel 51
+The True Culprit (v. IX)	Mythos		Agenda			Murder at the Excelsior Hotel 51	Murder at the Excelsior Hotel 52
+The True Culprit (v. X)	Mythos		Agenda			Murder at the Excelsior Hotel 52	Murder at the Excelsior Hotel 53
+Universal Solvent	Neutral	1	Asset	 	Item. Science.	The Blob That Ate Everything 29	Mi-Go Incursion 9
+Pet Oozeling	Neutral	1	Asset	 	Ally. Monster. Ooze.	The Blob That Ate Everything 30	Mi-Go Incursion 10
+Mi-Go Weapon	Neutral	1	Asset	 	Weapon. Science.	The Blob That Ate Everything 31	Mi-Go Incursion 11
+Lt. Wilson Stewart: Logistical Genius	Neutral	1	Asset	 	Ally. Agency. Veteran.	The Blob That Ate Everything 32	Mi-Go Incursion 12

@@ -1,0 +1,278 @@
+{
+    "AbandonedLaboratory": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "Abyss": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "AlexanderianOutpost": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "AlexandrianDesert": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "Alfheim": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "Arena": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "AsceticsCave": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "Asgard": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "Aunlak": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "BabelCitadel": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "BahamutsLair": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "Borea": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "Bridge": {
+        "Name": "noname",
+        "Linked": ["ruin"]
+    },
+    "BrokkrsCave": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "CaveOfTheMystics": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "CrescentCanyon": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "DaedalusWorkshop": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "DeepCave": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "DesertMountains": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "DesertedIslandCave": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "Dock": {
+        "Name": "noname",
+        "Linked": ["village"]
+    },
+    "Doria": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "DoriaDock": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "DragonCaves": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "DreadWoods": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "DryGulch": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "FishermansHovel": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "Forest": {
+        "Name": "noname",
+        "Linked": ["village"]
+    },
+    "ForestTower": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "FrozenCave": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "Gaia": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "GreatSourthrnMarsh": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "HedgeMaze": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "HermitsTower": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "IceCave": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "Igloo": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "Lemuria": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "Leviathan": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "LuckysCasino": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "MagiTower": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "MasterFishermansCamp": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "Midgard": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "MinersCave": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "MinesOfDvergar": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "MoaRaces": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "MountainPass": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "MtGerra": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "Oasis": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "OldMine": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "Pandora": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "PuzzleMastersCamp": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "RiverDale": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "Rubicon": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "Ruin": {
+        "Name": "noname",
+        "Linked": ["village", "bridge"]
+    },
+    "SmallFarm": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "SouthernDock": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "SouthernMagiTower": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "SouthernOasis": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "SpartanCamp": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "TalosVillage": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "TychosLaboratory": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "Village": {
+        "Name": "noname",
+        "Linked": ["dock", "forest", "ruin"]
+    },
+    "WellOfSouls": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "WoodOfDespair": {
+        "Name": "noname",
+        "Linked": []
+    },
+    "bridge": {
+        "Name": "",
+        "Linked": ["Ruin"]
+    },
+    "dock": {
+        "Name": "",
+        "Linked": ["Village"]
+    },
+    "forest": {
+        "Name": "",
+        "Linked": ["Village"]
+    },
+    "ruin": {
+        "Name": "",
+        "Linked": ["Village", "Bridge"]
+    },
+    "village": {
+        "Name": "",
+        "Linked": ["Ruin", "Dock", "Forest"]
+    }
+}

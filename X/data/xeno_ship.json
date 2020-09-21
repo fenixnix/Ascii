@@ -1,0 +1,100 @@
+[
+    {
+        "id": "xeno_2",
+        "name": "Xeno 0",
+        "img": "res://images/ships/chruul_small.png",
+        "info": {
+            "race": "Xeno",
+            "cls": ""
+        },
+        "status": {
+            "hull": 240,
+            "acc": 10,
+            "evd": 15,
+            "crt": 3,
+            "spd": 40
+        },
+        "res": {},
+        "res_eot": {},
+        "wpns": [
+            0
+        ],
+        "eqp": [],
+        "tier": 0
+    },
+    {
+        "id": "xeno_armor_0",
+        "name": "Xeno Armor I",
+        "img": "res://images/ships/chruul_eng1.png",
+        "info": {
+            "race": "Xeno",
+            "cls": ""
+        },
+        "status": {
+            "hull": 440,
+            "acc": 10,
+            "evd": 5,
+            "crt": 3,
+            "spd": 30
+        },
+        "res": {
+            "phy": 15
+        },
+        "res_eot": {
+            "stun": 25
+        },
+        "wpns": [
+            0
+        ],
+        "eqp": [],
+        "tier": 1
+    },
+    {
+        "id": "xeno_bolt_1",
+        "name": "Xeno Bolt I",
+        "img": "res://images/ships/chruul_sci1.png",
+        "info": {
+            "race": "Xeno",
+            "cls": ""
+        },
+        "status": {
+            "hull": 340,
+            "acc": 10,
+            "evd": 25,
+            "crt": 5,
+            "spd": 45
+        },
+        "res": {
+            "ene": 15
+        },
+        "res_eot": {},
+        "wpns": [
+            1
+        ],
+        "eqp": [],
+        "tier": 1
+    },
+    {
+        "id": "xeno_spike_1",
+        "name": "Xeno Spike I",
+        "img": "res://images/ships/chruul_tac1.png",
+        "info": {
+            "race": "Xeno",
+            "cls": ""
+        },
+        "status": {
+            "hull": 300,
+            "acc": 21,
+            "evd": 17,
+            "crt": 6,
+            "spd": 40
+        },
+        "res": {},
+        "res_eot": {},
+        "wpns": [
+            2
+        ],
+        "eqp": [],
+        "tier": 1
+    }
+]

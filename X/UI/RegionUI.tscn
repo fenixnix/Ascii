@@ -1,0 +1,141 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://images/BG/Space_BG4.png" type="Texture" id=1]
+[ext_resource path="res://UI/RegionInfoRT.gd" type="Script" id=2]
+[ext_resource path="res://UI/RegionUI.gd" type="Script" id=3]
+[ext_resource path="res://UI/RegionState.gd" type="Script" id=4]
+[ext_resource path="res://UI/BuildFacilityUI.tscn" type="PackedScene" id=5]
+[ext_resource path="res://UI/UnExplored.tscn" type="PackedScene" id=6]
+[ext_resource path="res://UI/TaskUI.tscn" type="PackedScene" id=7]
+[ext_resource path="res://UI/pop_shortcut.tres" type="ShortCut" id=11]
+
+[node name="RegionUI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BG" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Region" type="VBoxContainer" parent="."]
+anchor_left = 0.756836
+anchor_top = 0.163333
+anchor_right = 0.957031
+anchor_bottom = 0.836667
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="RegionList" type="ItemList" parent="Region"]
+margin_right = 204.0
+margin_bottom = 404.0
+size_flags_vertical = 3
+fixed_icon_size = Vector2( 16, 16 )
+
+[node name="State" type="Control" parent="."]
+anchor_left = 0.18457
+anchor_top = 0.14
+anchor_right = 0.75293
+anchor_bottom = 0.906667
+mouse_filter = 2
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="UnExplored" parent="State" instance=ExtResource( 6 )]
+visible = false
+
+[node name="Exploring" parent="State" instance=ExtResource( 7 )]
+visible = false
+
+[node name="NoFacility" type="Control" parent="State"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BuildFacilityUI" parent="State/NoFacility" instance=ExtResource( 5 )]
+
+[node name="Building" parent="State" instance=ExtResource( 7 )]
+visible = false
+
+[node name="Occupied" type="Control" parent="State"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Info" type="RichTextLabel" parent="State/Occupied"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Root" type="Control" parent="State/Occupied"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Remove" type="Button" parent="State/Occupied"]
+self_modulate = Color( 1, 0, 0, 1 )
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 2.3327
+margin_top = 7.99243
+margin_right = 97.3327
+margin_bottom = 27.9924
+text = "Scrap"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="status&resources" type="RichTextLabel" parent="."]
+anchor_bottom = 1.0
+margin_top = 54.0
+margin_right = 142.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Return" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -102.0
+margin_top = -18.0
+margin_right = 102.0
+shortcut = ExtResource( 11 )
+text = "Return"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="item_selected" from="Region/RegionList" to="." method="_on_RegionList_item_selected"]
+[connection signal="execute" from="State/UnExplored" to="." method="_on_UnExplored_execute"]
+[connection signal="cancel_task" from="State/Exploring" to="." method="_on_Exploring_cancel_task"]
+[connection signal="cancel_task" from="State/Building" to="." method="_on_Building_cancel_task"]
+[connection signal="pressed" from="Return" to="." method="_on_Close_pressed"]

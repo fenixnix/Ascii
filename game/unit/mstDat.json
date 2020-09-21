@@ -1,0 +1,32 @@
+{
+    "Goblin": {
+        "MHP": 5,
+        "MMP": 0,
+        "MSP": 0,
+        "ATK": 3,
+        "MTK": 0,
+        "DEF": 1,
+        "MDF": 0,
+        "SPD": 3
+    },
+    "Orc": {
+        "MHP": 10,
+        "MMP": 0,
+        "MSP": 0,
+        "ATK": 8,
+        "MTK": 0,
+        "DEF": 3,
+        "MDF": 0,
+        "SPD": 3
+    },
+    "Slime": {
+        "MHP": 5,
+        "MMP": 0,
+        "MSP": 0,
+        "ATK": 2,
+        "MTK": 0,
+        "DEF": 8,
+        "MDF": 0,
+        "SPD": 1
+    }
+}

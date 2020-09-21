@@ -1,0 +1,4 @@
+ID,MHP,MMP,MSP,ATK,MTK,DEF,MDF,SPD
+Goblin,5,0,0,3,0,1,0,3
+Orc,10,0,0,8,0,3,0,3
+Slime,5,0,0,2,0,8,0,1

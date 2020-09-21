@@ -1,0 +1,194 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": "AStarGrid3D",
+"language": "GDScript",
+"path": "res://Procedural/DungeonGen/3D/AStar3D.gd"
+}, {
+"base": "Node",
+"class": "DepthFirst",
+"language": "GDScript",
+"path": "res://Procedural/DungeonGen/DepthFirst.gd"
+}, {
+"base": "Reference",
+"class": "DepthFirst3D",
+"language": "GDScript",
+"path": "res://Procedural/DungeonGen/3D/DepthFirst3D.gd"
+}, {
+"base": "Node",
+"class": "FileRW",
+"language": "GDScript",
+"path": "res://FileRW.gd"
+}, {
+"base": "Reference",
+"class": "GenDungeon",
+"language": "GDScript",
+"path": "res://Procedural/DungeonGen/GenDungeon.gd"
+}, {
+"base": "Node",
+"class": "GlobalAudio",
+"language": "GDScript",
+"path": "res://Audio/GlbAudio.gd"
+}, {
+"base": "Reference",
+"class": "Grid",
+"language": "GDScript",
+"path": "res://Procedural/DungeonGen/3D/Grid.gd"
+}, {
+"base": "Reference",
+"class": "Grid2D",
+"language": "GDScript",
+"path": "res://Procedural/DungeonGen/Grid2D.gd"
+}, {
+"base": "Grid2D",
+"class": "Grid2DMaze",
+"language": "GDScript",
+"path": "res://Procedural/DungeonGen/Grid2DMaze.gd"
+}, {
+"base": "Reference",
+"class": "Grid2D_AStar",
+"language": "GDScript",
+"path": "res://Procedural/DungeonGen/Grid2D_AStar.gd"
+}, {
+"base": "Node",
+"class": "GridProc",
+"language": "GDScript",
+"path": "res://Procedural/DungeonGen/Grid2D_Process.gd"
+}, {
+"base": "Grid",
+"class": "Maze3D",
+"language": "GDScript",
+"path": "res://Procedural/DungeonGen/3D/Maze3D.gd"
+}, {
+"base": "Node",
+"class": "MazeDefine",
+"language": "GDScript",
+"path": "res://Maze/MazeDefine.gd"
+}, {
+"base": "Reference",
+"class": "PG_Def",
+"language": "GDScript",
+"path": "res://Procedural/PG_Def.gd"
+}, {
+"base": "Reference",
+"class": "Prim",
+"language": "GDScript",
+"path": "res://Procedural/DungeonGen/Prim.gd"
+}, {
+"base": "Reference",
+"class": "Prim3D",
+"language": "GDScript",
+"path": "res://Procedural/DungeonGen/3D/Prim3D.gd"
+} ]
+_global_script_class_icons={
+"AStarGrid3D": "",
+"DepthFirst": "",
+"DepthFirst3D": "",
+"FileRW": "",
+"GenDungeon": "",
+"GlobalAudio": "",
+"Grid": "",
+"Grid2D": "",
+"Grid2DMaze": "",
+"Grid2D_AStar": "",
+"GridProc": "",
+"Maze3D": "",
+"MazeDefine": "",
+"PG_Def": "",
+"Prim": "",
+"Prim3D": ""
+}
+
+[application]
+
+config/name="Spatial Maze"
+config/description="3D Maze Game present by Mimic Nix"
+run/main_scene="res://Game.tscn"
+boot_splash/image="res://Image/maze.png"
+boot_splash/fullsize=false
+config/icon="res://Image/maze.png"
+
+[audio]
+
+default_bus_layout="res://Audio/AudioBus.tres"
+
+[autoload]
+
+GlbAudio="*res://Audio/GlbAudio.gd"
+MazeGlb="*res://MazeGlb.gd"
+GameConfig="*res://GameConfig.gd"
+
+[display]
+
+window/stretch/mode="viewport"
+window/stretch/aspect="keep_height"
+
+[input]
+
+Shift={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777237,"unicode":0,"echo":false,"script":null)
+ ]
+}
+Left={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":83,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777231,"unicode":0,"echo":false,"script":null)
+ ]
+}
+Right={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":70,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777233,"unicode":0,"echo":false,"script":null)
+ ]
+}
+Up={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":69,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777232,"unicode":0,"echo":false,"script":null)
+ ]
+}
+Down={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":68,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777234,"unicode":0,"echo":false,"script":null)
+ ]
+}
+RLeft={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":74,"unicode":0,"echo":false,"script":null)
+ ]
+}
+RRight={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":76,"unicode":0,"echo":false,"script":null)
+ ]
+}
+RUp={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":73,"unicode":0,"echo":false,"script":null)
+ ]
+}
+RDown={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":75,"unicode":0,"echo":false,"script":null)
+ ]
+}
+
+[locale]
+
+test="en"
+translations=PoolStringArray( "res://maze_tr.en.translation", "res://maze_tr.zh.translation" )
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

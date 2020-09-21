@@ -1,0 +1,27 @@
+Jacqueline Fine: The Psychic	 Mystic		Investigator		Clairvoyant.	Jacqueline Fine 1	
+Arbiter of Fates	 Mystic	3	Asset	  	Talent.	Jacqueline Fine 2	
+Dark Future	Neutral		Treachery		Omen. Endtimes.	Jacqueline Fine 3	
+Nihilism	Neutral		Treachery		Madness.	Jacqueline Fine 4	
+Scrying Mirror	 Mystic	3	Asset		Item. Charm.	Jacqueline Fine 6	
+Azure Flame	 Mystic	3	Asset		Spell.	Jacqueline Fine 7	
+Clairvoyance	 Mystic	4	Asset		Spell.	Jacqueline Fine 8	
+Ineffable Truth	 Mystic	3	Asset		Spell.	Jacqueline Fine 9	
+Familiar Spirit	 Mystic	1	Asset		Ally. Creature. Summon.	Jacqueline Fine 10	
+Crystal Pendulum	 Mystic	2	Asset		Item. Charm.	Jacqueline Fine 11	
+Robes of Endless Night	 Mystic	3	Asset		Item. Clothing.	Jacqueline Fine 12	
+Parallel Fates	 Mystic	0	Event		Augury.	Jacqueline Fine 15	
+Voice of Ra	 Mystic	0	Event		Spell.	Jacqueline Fine 16	
+Prescient	 Mystic		Skill		Practiced. Augury.	Jacqueline Fine 19	
+Eldritch Inspiration (1)	 Mystic	0	Event	  	Spell. Spirit.	Jacqueline Fine 20	
+Grotesque Statue (2)	 Mystic	3	Asset	 	Item. Relic.	Jacqueline Fine 21	
+Robes of Endless Night (2)	 Mystic	2	Asset	 	Item. Clothing.	Jacqueline Fine 22	
+Hypnotic Gaze (2)	 Mystic	2	Event	  	Spell.	Jacqueline Fine 23	
+Guts (2)	 Mystic		Skill	  	Innate. Developed.	Jacqueline Fine 24	
+Azure Flame (3)	 Mystic	3	Asset	 	Spell.	Jacqueline Fine 25	
+Clairvoyance (3)	 Mystic	4	Asset	 	Spell.	Jacqueline Fine 26	
+Ineffable Truth (3)	 Mystic	3	Asset	 	Spell.	Jacqueline Fine 27	
+Arcane Studies (4)	 Mystic	2	Asset	   	Talent.	Jacqueline Fine 28	
+Recharge (4)	 Mystic	0	Event	  	Spell.	Jacqueline Fine 29	
+Azure Flame (5)	 Mystic	3	Asset	  	Spell.	Jacqueline Fine 30	
+Clairvoyance (5)	 Mystic	4	Asset	  	Spell.	Jacqueline Fine 31	
+Ineffable Truth (5)	 Mystic	3	Asset	  	Spell.	Jacqueline Fine 32	

@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://ValidatorSet.gd" type="Script" id=1]
+
+[node name="ValidatorSet" type="VBoxContainer"]
+margin_right = 82.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 120, 0 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Menu" type="HBoxContainer" parent="."]
+margin_right = 120.0
+margin_bottom = 24.0
+
+[node name="ID" type="SpinBox" parent="Menu"]
+margin_right = 96.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+min_value = -1.0
+max_value = 1024.0
+
+[node name="Close" type="Button" parent="Menu"]
+margin_left = 100.0
+margin_right = 120.0
+margin_bottom = 24.0
+text = "X"
+
+[node name="List" type="ItemList" parent="."]
+margin_top = 28.0
+margin_right = 120.0
+margin_bottom = 600.0
+size_flags_vertical = 3
+allow_rmb_select = true
+[connection signal="pressed" from="Menu/Close" to="." method="_on_Close_pressed"]
+[connection signal="focus_entered" from="List" to="." method="_on_List_focus_entered"]
+[connection signal="item_rmb_selected" from="List" to="." method="_on_List_item_rmb_selected"]

@@ -1,0 +1,104 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Transition/transition.shader" type="Shader" id=1]
+[ext_resource path="res://Transition/Terrain_View.shader" type="Shader" id=2]
+[ext_resource path="res://Transition/smoke.shader" type="Shader" id=3]
+[ext_resource path="res://Transition/Random-wider-rock-stone-freagments-Video-Mapping-Transition-Mask-Loop-1920_003-292x165.jpg" type="Texture" id=4]
+[ext_resource path="res://Transition/thebookofshader2.shader" type="Shader" id=5]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 3 )
+shader_param/center = Vector2( 0.5, 0.8 )
+shader_param/OCTAVES = 6
+
+[sub_resource type="NoiseTexture" id=2]
+
+[sub_resource type="ShaderMaterial" id=3]
+shader = ExtResource( 1 )
+shader_param/thresh = 1.016
+shader_param/mask = ExtResource( 4 )
+
+[sub_resource type="ShaderMaterial" id=4]
+shader = ExtResource( 5 )
+
+[sub_resource type="ShaderMaterial" id=5]
+shader = ExtResource( 2 )
+shader_param/sunLight = Vector3( 0.35, 0.2, 0.3 )
+shader_param/iResolution = Vector2( 2048, 2048 )
+
+[sub_resource type="NoiseTexture" id=6]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="TextureRect" parent="."]
+visible = false
+material = SubResource( 1 )
+margin_left = 65.9649
+margin_top = -18.6844
+margin_right = 577.965
+margin_bottom = 493.316
+texture = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+material = SubResource( 3 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TheBookOfShader" type="TextureRect" parent="."]
+visible = false
+material = SubResource( 4 )
+margin_left = 146.0
+margin_top = 122.0
+margin_right = 620.0
+margin_bottom = 389.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TheBookOfShader2" type="TextureRect" parent="."]
+visible = false
+material = SubResource( 4 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 301.429
+margin_top = 297.328
+margin_right = 371.429
+margin_bottom = 328.328
+text = "asdfadsgdg
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+material = SubResource( 5 )
+margin_left = 59.0
+margin_top = 352.0
+margin_right = 2896.0
+margin_bottom = 2954.0
+texture = SubResource( 6 )
+expand = true
+stretch_mode = 1
+flip_v = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

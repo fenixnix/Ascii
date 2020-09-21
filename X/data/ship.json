@@ -1,0 +1,203 @@
+[
+    {
+        "id": "shuttle",
+        "name": "Shuttle",
+        "img": "res://images/ships/terran_shuttle.png",
+        "info": {
+            "race": "Terran",
+            "cls": "Cadet",
+            "tier": 0
+        },
+        "status": {
+            "hull": 115,
+            "dmg": "25-35",
+            "acc": -3,
+            "evd": 10,
+            "crt": 0,
+            "spd": 55
+        },
+        "slots": {
+            "wpn": 1,
+            "eqp": 0
+        },
+        "res": {},
+        "cost": {
+            "crew": 5,
+            "dkmt": 10
+        },
+        "time": 24
+    },
+    {
+        "id": "marksman",
+        "name": "Marksman",
+        "img": "res://images/ships/tac_a.png",
+        "info": {
+            "race": "Terran",
+            "cls": "Tactical",
+            "tier": 1
+        },
+        "status": {
+            "hull": 450,
+            "dmg": "65-95",
+            "acc": 3,
+            "evd": 0,
+            "crt": 5,
+            "spd": 53
+        },
+        "slots": {
+            "wpn": 3,
+            "eqp": 1
+        },
+        "res": {},
+        "res_eot":{"acc-":25},
+        "cost": {
+            "crew": 35,
+            "dkmt": 415
+        },
+        "time": 72
+    },
+    {
+        "id": "rogue",
+        "name": "Rogue",
+        "img": "res://images/ships/tac_1.png",
+        "info": {
+            "race": "Terran",
+            "cls": "Tactical",
+            "tier": 1
+        },
+        "status": {
+            "hull": 550,
+            "dmg": "53-83",
+            "acc": 3,
+            "evd": 6,
+            "crt": 3,
+            "spd": 48
+        },
+        "slots": {
+            "wpn": 2,
+            "eqp": 2
+        },
+        "res": {},
+        "res_eot":{"evd-":25},
+        "cost": {
+            "crew": 38,
+            "dkmt": 375
+        },
+        "time": 72
+    },
+    {
+        "id": "knight",
+        "name": "Knight",
+        "img": "res://images/ships/eng_a.png",
+        "info": {
+            "race": "Terran",
+            "cls": "Engineering",
+            "tier": 1
+        },
+        "status": {
+            "hull": 740,
+            "dmg": "51-81",
+            "acc": 0,
+            "evd": 3,
+            "crt": 3,
+            "spd": 42
+        },
+        "slots": {
+            "wpn": 3,
+            "eqp": 1
+        },
+        "res": {"phy":10},
+        "res_eot":{"stun":25},
+        "cost": {
+            "crew": 45,
+            "dkmt": 300
+        },
+        "time": 72
+    },
+    {
+        "id": "warder",
+        "name": "Warder",
+        "img": "res://images/ships/eng_1.png",
+        "info": {
+            "race": "Terran",
+            "cls": "Engineering",
+            "tier": 1
+        },
+        "status": {
+            "hull": 640,
+            "dmg": "39-69",
+            "acc": 0,
+            "evd": -3,
+            "crt": 0,
+            "spd": 47
+        },
+        "slots": {
+            "wpn": 3,
+            "eqp": 1
+        },
+        "res": {"phy":15},
+        "cost": {
+            "crew": 50,
+            "dkmt": 265
+        },
+        "time": 72
+    },
+    {
+        "id": "acolyte",
+        "name": "Acolyte",
+        "img": "res://images/ships/sci_1.png",
+        "info": {
+            "race": "Terran",
+            "cls": "Science",
+            "tier": 1
+        },
+        "status": {
+            "hull": 700,
+            "dmg": "38-68",
+            "acc": -3,
+            "evd": 3,
+            "crt": 4,
+            "spd": 55
+        },
+        "slots": {
+            "wpn": 3,
+            "eqp": 1
+        },
+        "res": {"ene":25},
+        "res_eot":{"dot":25},
+        "cost": {
+            "crew": 30,
+            "dkmt": 450
+        },
+        "time": 72
+    },
+    {
+        "id": "disciple",
+        "name": "disciple",
+        "img": "res://images/ships/sci_a.png",
+        "info": {
+            "race": "Terran",
+            "cls": "Science",
+            "tier": 1
+        },
+        "status": {
+            "hull": 600,
+            "dmg": "27-57",
+            "acc": -3,
+            "evd": 9,
+            "crt": 1,
+            "spd": 60
+        },
+        "slots": {
+            "wpn": 3,
+            "eqp": 1
+        },
+        "res": {"ene":25},
+        "res_eot":{"spd-":25},
+        "cost": {
+            "crew": 26,
+            "dkmt": 490
+        },
+        "time": 72
+    }
+]

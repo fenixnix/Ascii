@@ -1,0 +1,37 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Tile/Tile3D.shader" type="Shader" id=1]
+[ext_resource path="res://Tile/256x256.jpg" type="Texture" id=2]
+[ext_resource path="res://Tile/fishTile_037.png" type="Texture" id=3]
+[ext_resource path="res://Tile/fishTile_001.png" type="Texture" id=4]
+[ext_resource path="res://Tile/fishTile_089.png" type="Texture" id=5]
+[ext_resource path="res://Tile/Tile.gd" type="Script" id=6]
+
+[sub_resource type="PlaneMesh" id=1]
+size = Vector2( 4, 4 )
+
+[sub_resource type="ShaderMaterial" id=3]
+shader = ExtResource( 1 )
+shader_param/center = Vector2( 12.611, 14.566 )
+shader_param/grid_size = 0.25
+shader_param/panel_size = 4.0
+shader_param/map_size = Vector2( 32, 32 )
+shader_param/map = ExtResource( 2 )
+shader_param/tile_sea = ExtResource( 5 )
+shader_param/tile_sand = ExtResource( 4 )
+shader_param/tile_dirt = ExtResource( 3 )
+
+[sub_resource type="ImageTexture" id=4]
+flags = 3
+flags = 3
+
+[node name="Spatial" type="Spatial"]
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.693515, 0.720442, 0, -0.720442, 0.693515, 0, 0, 0 )
+
+[node name="Tile" type="MeshInstance" parent="."]
+mesh = SubResource( 1 )
+material/0 = SubResource( 3 )
+script = ExtResource( 6 )
+tx = SubResource( 4 )

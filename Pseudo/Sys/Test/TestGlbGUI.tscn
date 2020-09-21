@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Sys/Test/TestGlbGUI.gd" type="Script" id=1]
+
+[node name="TestGlbGUI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 47.6455
+margin_top = 55.4018
+margin_right = 162.646
+margin_bottom = 88.4018
+text = "Win1"
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 46.9196
+margin_top = 104.244
+margin_right = 169.92
+margin_bottom = 146.244
+text = "Win2"
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 55.3649
+margin_top = 182.499
+margin_right = 149.365
+margin_bottom = 202.499
+text = "Screen"
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]

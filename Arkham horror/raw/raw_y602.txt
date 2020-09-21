@@ -1,0 +1,30 @@
+Harvey Walters: The Professor	 Seeker		Investigator		Miskatonic.	Harvey Walters 1	
+Vault of Knowledge	 Seeker	3	Asset	  	Talent.	Harvey Walters 2	
+Thrice-Damned Curiosity	Neutral		Treachery		Flaw.	Harvey Walters 3	
+Obsessive	Neutral		Treachery		Flaw.	Harvey Walters 4	
+Arcane Enlightenment	 Seeker	2	Asset	 	Ritual.	Harvey Walters 5	
+Celaeno Fragments: Book of Books	 Seeker	1	Asset		Item. Tome.	Harvey Walters 6	
+Disc of Itzamna: Protective Amulet	 Seeker	3	Asset		Item. Relic.	Harvey Walters 7	
+Encyclopedia	 Seeker	2	Asset		Item. Tome.	Harvey Walters 8	
+Feed the Mind	 Seeker	3	Asset		Spell.	Harvey Walters 9	
+Forbidden Tome: Untranslated	 Seeker	1	Asset		Item. Relic. Tome.	Harvey Walters 10	
+Higher Education	 Seeker	0	Asset	 	Talent.	Harvey Walters 11	
+Whitton Greene: Hunter of Rare Books	 Seeker	4	Asset		Ally. Miskatonic.	Harvey Walters 13	
+Burning the Midnight Oil	 Seeker	0	Event	 	Insight.	Harvey Walters 14	
+Cryptic Writings	 Seeker	0	Event	 	Insight.	Harvey Walters 15	
+Extensive Research	 Seeker	12	Event	 	Insight.	Harvey Walters 16	
+Occult Invocation	 Seeker	2	Event	 	Spell.	Harvey Walters 17	
+Library Docent (1)	 Seeker	1	Asset	 	Ally. Miskatonic.	Harvey Walters 20	
+Glimpse the Unthinkable (1)	 Seeker	0	Event	 	Insight.	Harvey Walters 21	
+Esoteric Atlas (2)	 Seeker	3	Asset	 	Item. Tome.	Harvey Walters 22	
+Whitton Greene: Hunter of Rare Books (2)	 Seeker	4	Asset	 	Ally. Miskatonic.	Harvey Walters 23	
+Cryptic Writings (2)	 Seeker	0	Event	 	Insight.	Harvey Walters 24	
+"I've got a plan!" (2)	 Seeker	2	Event	  	Insight. Tactic.	Harvey Walters 25	
+Mind Over Matter (2)	 Seeker	1	Event	  	Insight.	Harvey Walters 26	
+Seeking Answers (2)	 Seeker	1	Event	  	Insight.	Harvey Walters 27	
+Perception (2)	 Seeker		Skill	  	Practiced. Expert.	Harvey Walters 28	
+Forbidden Tome: Dark Knowledge (3)	 Seeker	1	Asset	  	Item. Relic. Tome.	Harvey Walters 29	
+Forbidden Tome: Secrets Revealed (3)	 Seeker	1	Asset	  	Item. Relic. Tome.	Harvey Walters 30	
+Farsight (4)	 Seeker	2	Asset	 	Ritual.	Harvey Walters 31	
+Miskatonic Archaeology Funding (4)	 Seeker		Asset		Grant.	Harvey Walters 32	
+The Necronomicon: Petrus de Dacia Translation (5)	 Seeker	3	Asset	    	Item. Tome.	Harvey Walters 33	

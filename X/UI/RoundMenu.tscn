@@ -1,0 +1,73 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Battle/RoundMenu.gd" type="Script" id=1]
+
+[sub_resource type="CanvasItemMaterial" id=3]
+blend_mode = 3
+particles_animation = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="Gradient" id=4]
+offsets = PoolRealArray( 0, 0.522581, 1 )
+colors = PoolColorArray( 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0 )
+
+[sub_resource type="GradientTexture" id=5]
+gradient = SubResource( 4 )
+
+[node name="RoundMenu" type="TextureRect"]
+material = SubResource( 3 )
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 402.386
+margin_top = 117.293
+margin_right = -353.614
+margin_bottom = 166.293
+texture = SubResource( 5 )
+expand = true
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Menu" type="HBoxContainer" parent="."]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 36.0
+margin_right = -34.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -118.5
+margin_top = 11.8617
+margin_right = 118.5
+margin_bottom = 49.8617
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Left" type="Button" parent="HBoxContainer"]
+margin_left = 96.0
+margin_right = 116.0
+margin_bottom = 38.0
+text = "<"
+
+[node name="Right" type="Button" parent="HBoxContainer"]
+margin_left = 120.0
+margin_right = 140.0
+margin_bottom = 38.0
+text = ">"
+[connection signal="pressed" from="HBoxContainer/Left" to="." method="Left"]
+[connection signal="pressed" from="HBoxContainer/Right" to="." method="Right"]

@@ -1,0 +1,133 @@
+time toggle
+message queue
+traning cost crew
+
+select ofc valid
+
+global message
+
+CV处理破损及残破效果
+星际生成均匀分布
+
+default region & facility
+site types
+
+planetary:crew
+nebula:fuel
+satellite
+asteroid:mtrl
+jovian planet
+terrestrial planet
+fixed star:ene
+neutron:nano
+pulsar:dkmt
+
+site,size,build lmt
+
+env
+tech
+industry
+economic
+
+market
+resource trade
+region types random
+npc fraction
+
+churr site
+pirate site
+
+技能类型 FTL
+直接伤害
+伤害类型
+    beam shield
+    gravity shield
+伤害Bonus
+附加BuffDebuf
+伤害抗性
+伤害类型抗性
+异常状态抗性
+持续伤害（debuf）
+直接治疗
+持续治疗
+AOE效果
+
+dmg type
+status
+
+fleet select
+split fleet
+
+battle
+
+enm xeno type:
+weak mass number
+tough heavy armor
+high evd low armor
+high dmg  weak:ctrl low dmg, low acc
+
+3type attack animtough heavy armor
+falk
+beam
+missle
+
+fast battle test
+
+Officer InfoRT
+
+武器分类
+
+flak 普通 高弹药 phy
+
+飞弹 cd 低弹药 高命中 （群）-EVD phy STUN
+撞击 wu cd 低概率负面效果 -DEF phy STUN
+
+射线 高命中，致命 ，高wu 高CD (群) DOT ene -DMG
+粒子 高预热，高CD （群） -ACC ene
+
+人物获取Buff技能
+
+武器锻造
+金钱概念 trade
+
+real time battle
+
+wpn selec data
+
+default wpn
+define ship config
+
+config ship build set
+
+task progress
+assige ofc
+
+hit 5~95%
+
+区域设施拆毁
+区域技术力
+根据星球大小生成区域数量
+    区域随机生成
+        新区域都是未探索，有可能有废弃建筑可以使用(发电厂，或者资源类)
+        所有设施需要人员去操作
+
+区域探索需求随机生成：时间，需要的技术力
+
+设施科技树
+
+根据
+
+发电厂
+资源生产[船员，材料，能量，燃料]
+生产[人员，舰船，武器，设备]
+功能：
+实验室(投入资金资源刷技术力，根据技术力能解锁科研项目，舰船，武器，建造需要工业力和技术力)
+    非战斗状态下会缓慢增长，根据科研人员素质缓慢增长
+
+城防[星球防护]，
+贸易[交易资源，购买舰船，雇佣特殊英雄]
+
+训练人员，随机生成
+
+人员随机薪资，每月扣除
+欠薪人员会流失

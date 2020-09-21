@@ -1,0 +1,19 @@
+### TowerDefence
+    * Tower:
+        + type
+          + Gartlin
+          + Cannon
+        + price
+    * Barrack
+        + unit
+
+    * Enemy:
+        + hp
+        + size
+        + speed
+        + atk
+    * Map:
+        + terrain
+        + settlet
+        + path
+        + base

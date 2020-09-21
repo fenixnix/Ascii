@@ -1,0 +1,107 @@
+[
+    {
+        "id": "flak_0",
+        "name": "Biu Biu Biu",
+        "icon":"res://Battle/image/icon/tac_triple_shot.png",
+        "anim": "res://Battle/BattleEffect/flak.tscn",
+        "affix": [
+            "enm"
+        ],
+        "select": "single",
+        "efx": [
+            {
+                "type": "dmg",
+                "dmg": 30,
+                "rnd": 20
+            }
+        ],
+        "cost":{
+            "mtrl":100,
+            "dkmt":30
+        },
+        "time":12
+    },
+    {
+        "id": "flak_1",
+        "name": "Mini Gun",
+        "anim": "res://Battle/BattleEffect/flak.tscn",
+        "affix": [
+            "enm"
+        ],
+        "select": "single",
+        "cd": 1,
+        "ammo": 10,
+        "efx": [
+            {
+                "type": "dmg",
+                "dmg": 50,
+                "rnd": 20
+            }
+        ],
+        "type": "tac",
+        "icon": "res://Battle/image/icon/tac_bullseye.png"
+    },
+    {
+        "id": "beam_0",
+        "name": "Laser",
+        "anim": "res://Battle/BattleEffect/beam.tscn",
+        "affix": [
+            "enm"
+        ],
+        "select": "single",
+        "wu": 1,
+        "cd": 1,
+        "efx": [
+            {
+                "type": "dmg",
+                "dmg_type":"ene",
+                "dmg":100,
+                "rnd":20,
+                "acc": 20,
+                "crt":5
+            }
+        ],
+        "type": "tac",
+        "icon": "res://Battle/image/icon/tac_phaser_blast.png"
+    },
+    {
+        "id":"missle_1",
+        "name": "Missle",
+        "anim": "res://Battle/BattleEffect/ion.tscn",
+        "affix": [
+            "enm"
+        ],
+        "select": "single",
+        "cd": 1,
+        "ammo":5,
+        "efx": [
+            {
+                "type": "dmg",
+                "acc": 15,
+                "dmg": 100,
+                "crt": 10
+            }
+        ],
+        "type": "tac",
+        "icon": "res://Battle/image/icon/tac_heat_seeking_missile.png"
+    },
+    {
+        "id": "heal",
+        "name": "Cauterize Hull",
+        "anim": "res://Battle/BattleEffect/BuffEvade.tscn",
+        "affix": [
+            "aly"
+        ],
+        "select": "single",
+        "ammo": 4,
+        "efx": [
+            {
+                "type": "heal",
+                "heal": 200,
+                "rnd": 20
+            }
+        ],
+        "type": "sci",
+        "icon": "res://Battle/image/icon/tac_bullseye.png"
+    }
+]

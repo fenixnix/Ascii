@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://UI/OfcTskRT.gd" type="Script" id=1]
+[ext_resource path="res://UI/UnExploredRegion.gd" type="Script" id=3]
+
+[node name="UnExplored" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -0.950012
+margin_right = -0.950012
+mouse_filter = 2
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AssignOfficer" type="Button" parent="."]
+margin_right = 124.0
+margin_bottom = 18.0
+text = "Assign Officer"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OfcTskRT" type="RichTextLabel" parent="."]
+anchor_bottom = 1.0
+margin_top = 27.0
+margin_right = 178.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ExploreBtn" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -29.5001
+margin_top = -20.0
+margin_right = 29.5001
+text = "Explore"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="AssignOfficer" to="." method="_on_AssignOfficer_pressed"]
+[connection signal="pressed" from="ExploreBtn" to="." method="_on_ExploreBtn_pressed"]

@@ -1,0 +1,38 @@
+TradeGame
+
+time
+
+Trader
+    weight
+    foods
+    goods
+
+食物材料，商品，层级制造，技术等级高能解锁新配方
+商店是通过库存来贩卖商品的，地点文明程度越高，商店所需要的利润越高
+
+移动消耗时间
+
+TraderAI
+    负重不满
+    1有钱就找最近城市利润率最高的商品采购，
+    2找除了最近城市附近的几个城市寻找售卖价格最高的城市移动
+    3售卖产品
+    4回到1
+
+
+Site
+    people = consumer
+    productor list
+    shop
+        price balance
+        goods
+        list.price
+    sell list,rand cost by people during time
+    more item lower price
+    no item reach maxPrice
+
+    build factory
+    shop
+
+rand gen item info
+rand gen site info

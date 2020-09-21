@@ -1,0 +1,236 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://UI/MazeOption.gd" type="Script" id=1]
+[ext_resource path="res://Theme/GrayTransparent.tres" type="Theme" id=2]
+[ext_resource path="res://UI/MazeOptionDat.gd" type="Script" id=3]
+[ext_resource path="res://Shader/scifi_hexagons.shader" type="Shader" id=4]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 4 )
+
+[node name="MazeOption" type="PanelContainer"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -200.5
+margin_top = -149.0
+margin_right = 200.5
+margin_bottom = 149.0
+theme = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="List" type="VBoxContainer" parent="."]
+margin_right = 401.0
+margin_bottom = 298.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="List"]
+margin_right = 401.0
+margin_bottom = 269.0
+size_flags_vertical = 3
+
+[node name="Data" type="VBoxContainer" parent="List/ScrollContainer"]
+margin_right = 401.0
+margin_bottom = 236.0
+size_flags_horizontal = 3
+script = ExtResource( 3 )
+
+[node name="Size" type="HBoxContainer" parent="List/ScrollContainer/Data"]
+margin_right = 401.0
+margin_bottom = 25.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="List/ScrollContainer/Data/Size"]
+margin_right = 57.0
+margin_bottom = 25.0
+text = "width"
+
+[node name="W" type="SpinBox" parent="List/ScrollContainer/Data/Size"]
+margin_left = 61.0
+margin_right = 128.0
+margin_bottom = 25.0
+size_flags_horizontal = 3
+value = 8.0
+align = 1
+
+[node name="Label2" type="Label" parent="List/ScrollContainer/Data/Size"]
+margin_left = 132.0
+margin_right = 195.0
+margin_bottom = 25.0
+text = "height"
+
+[node name="H" type="SpinBox" parent="List/ScrollContainer/Data/Size"]
+margin_left = 199.0
+margin_right = 266.0
+margin_bottom = 25.0
+size_flags_horizontal = 3
+value = 8.0
+align = 1
+
+[node name="Label3" type="Label" parent="List/ScrollContainer/Data/Size"]
+margin_left = 270.0
+margin_right = 329.0
+margin_bottom = 25.0
+text = "depth"
+
+[node name="D" type="SpinBox" parent="List/ScrollContainer/Data/Size"]
+margin_left = 333.0
+margin_right = 401.0
+margin_bottom = 25.0
+size_flags_horizontal = 3
+value = 1.0
+align = 1
+
+[node name="Algorithm" type="OptionButton" parent="List/ScrollContainer/Data"]
+margin_top = 29.0
+margin_right = 401.0
+margin_bottom = 46.0
+text = "dfs"
+items = [ "dfs", null, false, 0, null, "prim", null, false, 1, null ]
+selected = 0
+
+[node name="Fog" type="CheckButton" parent="List/ScrollContainer/Data"]
+margin_top = 50.0
+margin_right = 401.0
+margin_bottom = 84.0
+text = "fog"
+
+[node name="Key" type="CheckButton" parent="List/ScrollContainer/Data"]
+margin_top = 88.0
+margin_right = 401.0
+margin_bottom = 122.0
+text = "key"
+
+[node name="Food" type="CheckButton" parent="List/ScrollContainer/Data"]
+margin_top = 126.0
+margin_right = 401.0
+margin_bottom = 160.0
+text = "food"
+
+[node name="Enemy" type="CheckButton" parent="List/ScrollContainer/Data"]
+margin_top = 164.0
+margin_right = 401.0
+margin_bottom = 198.0
+text = "enemy"
+
+[node name="CamFollow" type="HBoxContainer" parent="List/ScrollContainer/Data"]
+margin_top = 202.0
+margin_right = 401.0
+margin_bottom = 236.0
+
+[node name="Follow" type="CheckButton" parent="List/ScrollContainer/Data/CamFollow"]
+margin_right = 183.0
+margin_bottom = 34.0
+text = "camera_mode"
+
+[node name="Label2" type="Label" parent="List/ScrollContainer/Data/CamFollow"]
+margin_left = 187.0
+margin_top = 4.0
+margin_right = 241.0
+margin_bottom = 29.0
+text = "zoom"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Zoom" type="HSlider" parent="List/ScrollContainer/Data/CamFollow"]
+margin_left = 245.0
+margin_right = 381.0
+margin_bottom = 34.0
+size_flags_horizontal = 3
+size_flags_vertical = 1
+min_value = 0.05
+max_value = 8.0
+step = 0.05
+value = 1.0
+exp_edit = true
+tick_count = 1
+
+[node name="SpinBox" type="SpinBox" parent="List/ScrollContainer/Data/CamFollow"]
+margin_left = 385.0
+margin_right = 401.0
+margin_bottom = 34.0
+min_value = 0.05
+max_value = 8.0
+step = 0.05
+value = 1.0
+
+[node name="Space" type="HSeparator" parent="List"]
+margin_top = 273.0
+margin_right = 401.0
+margin_bottom = 277.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="List"]
+margin_top = 281.0
+margin_right = 401.0
+margin_bottom = 298.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Back" type="Button" parent="List/HBoxContainer"]
+margin_right = 198.0
+margin_bottom = 17.0
+size_flags_horizontal = 3
+text = "back"
+
+[node name="Start" type="Button" parent="List/HBoxContainer"]
+margin_left = 202.0
+margin_right = 401.0
+margin_bottom = 17.0
+size_flags_horizontal = 3
+text = "start"
+
+[node name="Node" type="CanvasLayer" parent="."]
+layer = -2
+
+[node name="BG" type="ColorRect" parent="Node"]
+material = SubResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -2.90002
+margin_bottom = -2.90002
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Node"]
+visible = false
+anchor_right = 1.0
+margin_bottom = 22.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MenuButton" type="MenuButton" parent="Node/HBoxContainer"]
+margin_right = 48.0
+margin_bottom = 22.0
+text = "Menu"
+items = [ "Item 0", null, 0, false, false, 0, 0, null, "", false, "", null, 0, false, false, 1, 0, null, "", true, "Item 2", null, 1, false, true, 2, 0, null, "", false ]
+switch_on_hover = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tree" type="Tree" parent="Node"]
+visible = false
+margin_left = 16.0
+margin_top = 70.0
+margin_right = 191.0
+margin_bottom = 561.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="value_changed" from="List/ScrollContainer/Data/CamFollow/Zoom" to="List/ScrollContainer/Data" method="_on_Zoom_value_changed"]
+[connection signal="value_changed" from="List/ScrollContainer/Data/CamFollow/SpinBox" to="List/ScrollContainer/Data" method="_on_SpinBox_value_changed"]
+[connection signal="pressed" from="List/HBoxContainer/Back" to="." method="_on_Back_pressed"]
+[connection signal="pressed" from="List/HBoxContainer/Start" to="." method="_on_Start_pressed"]

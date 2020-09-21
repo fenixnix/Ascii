@@ -1,0 +1,78 @@
+.32 Colt (2)	 Guardian	2	Asset	 	Item. Weapon. Firearm.	Return to the Path to Carcosa 1	
+"Eat lead!"	 Guardian	0	Event	 	Tactic.	Return to the Path to Carcosa 2	
+Logical Reasoning (3)	 Seeker	2	Event	  	Insight.	Return to the Path to Carcosa 3	
+Archaic Glyphs: Markings of Isis (2)	 Seeker	2	Asset	 	Spell.	Return to the Path to Carcosa 4	
+Stealth (2)	 Rogue	2	Asset	 	Talent.	Return to the Path to Carcosa 5	
+Suggestion (0)	 Rogue	3	Asset		Spell.	Return to the Path to Carcosa 6	
+Alchemical Transmutation (1)	 Mystic	0	Asset	 	Spell.	Return to the Path to Carcosa 7	
+Storm of Spirits (2)	 Mystic	3	Event	  	Spell.	Return to the Path to Carcosa 8	
+Lantern (1)	 Survivor	1	Asset	 	Item. Tool.	Return to the Path to Carcosa 9	
+Gravedigger's Shovel (1)	 Survivor	1	Asset	 	Item. Tool. Weapon. Melee.	Return to the Path to Carcosa 10	
+Unspeakable Oath (Bloodthirst)	Neutral		Treachery		Madness. Pact.	Return to the Path to Carcosa 11	
+Unspeakable Oath (Curiosity)	Neutral		Treachery		Madness. Pact.	Return to the Path to Carcosa 12	
+Unspeakable Oath (Cowardice)	Neutral		Treachery		Madness. Pact.	Return to the Path to Carcosa 13	
+Return to Curtain Call	Mythos		Scenario		Return.	Return to the Path to Carcosa 13	Return to Curtain Call 1
+The Stranger	Mythos		Act			Return to the Path to Carcosa 14	Return to Curtain Call 2
+The Stranger	Mythos		Act			Return to the Path to Carcosa 15	Return to Curtain Call 3
+The Stranger	Mythos		Act			Return to the Path to Carcosa 16	Return to Curtain Call 4
+Theatre Lounge	Mythos		Location		Private.	Return to the Path to Carcosa 17	Return to Curtain Call 5
+Prop Shop	Mythos		Location		Private.	Return to the Path to Carcosa 18	Return to Curtain Call 6
+La Comtesse: Subverter of Plans	Mythos		Enemy		Humanoid. Servitor.	Return to the Path to Carcosa 20	Return to Curtain Call 7
+Return to The Last King	Mythos		Scenario		Return.	Return to the Path to Carcosa 20	Return to The Last King 1
+Better Never Than Late	Mythos		Agenda			Return to the Path to Carcosa 21	Return to The Last King 2
+Crazed Guest	Mythos		Enemy		Humanoid. Monster. Lunatic.	Return to the Path to Carcosa 23	Return to The Last King 4-5
+Dianne Devine: Knows What You're Up To	Mythos		Enemy		Monster. Cultist. Lunatic. Elite.	Return to the Path to Carcosa 23	Return to The Last King 3
+Dianne Devine: Hiding an Oath Unspoken	Neutral		Asset		Cultist.	Return to the Path to Carcosa 25	Return to The Last King 6
+Party Guest	Neutral		Asset			Return to the Path to Carcosa 25	Return to The Last King 7-8
+Shocking Display	Mythos		Treachery		Terror.	Return to the Path to Carcosa 26	Return to The Last King 9
+Return to Echoes of the Past	Mythos		Scenario		Return.	Return to the Path to Carcosa 27	Return to Echoes of the Past 1
+Quiet Halls	Mythos		Location		Basement.	Return to the Path to Carcosa 28	Return to Echoes of the Past 2
+Historical Society: Dusty Archives	Mythos		Location		Basement. Passageway.	Return to the Path to Carcosa 30	Return to Echoes of the Past 3
+Historical Society: Museum Storage	Mythos		Location		Basement. Passageway.	Return to the Path to Carcosa 31	Return to Echoes of the Past 4
+Historical Society: Boiler Room	Mythos		Location		Basement.	Return to the Path to Carcosa 32	Return to Echoes of the Past 5
+Keeper of the Oath	Mythos		Enemy		Humanoid. Cultist.	Return to the Path to Carcosa 32	Return to Echoes of the Past 6-7
+Return to The Unspeakable Oath	Mythos		Scenario		Return.	Return to the Path to Carcosa 34	Return to The Unspeakable Oath 1
+"The Really Bad Ones" (v. III)	Mythos		Act			Return to the Path to Carcosa 34	Return to The Unspeakable Oath 2
+"The Really Bad Ones" (v. IV)	Mythos		Act			Return to the Path to Carcosa 35	Return to The Unspeakable Oath 3
+Host of Insanity	Mythos		Enemy		Avatar. Elite.	Return to the Path to Carcosa 36	Return to The Unspeakable Oath 4
+Radical Treatment	Mythos		Treachery			Return to the Path to Carcosa 37	Return to The Unspeakable Oath 5
+Clouded Memory	Mythos		Treachery		Terror.	Return to the Path to Carcosa 38	Return to The Unspeakable Oath 6
+Return to A Phantom of Truth	Mythos		Scenario		Return.	Return to the Path to Carcosa 39	Return to A Phantom of Truth 1
+Montparnasse	Mythos		Location		Paris. Rail.	Return to the Path to Carcosa 40	Return to A Phantom of Truth 2
+Grand Guignol: Theatre of the Great Puppet	Mythos		Location		Paris.	Return to the Path to Carcosa 42	Return to A Phantom of Truth 3
+Père Lachaise Cemetery	Mythos		Location		Paris.	Return to the Path to Carcosa 42	Return to A Phantom of Truth 4
+Canal Saint-Martin	Mythos		Location		Paris.	Return to the Path to Carcosa 43	Return to A Phantom of Truth 5
+Notre-Dame	Mythos		Location		Paris. Rail.	Return to the Path to Carcosa 44	Return to A Phantom of Truth 6
+Gardens of Luxembourg	Mythos		Location		Paris.	Return to the Path to Carcosa 45	Return to A Phantom of Truth 7
+Figure in the Shadows	Mythos		Treachery		Scheme.	Return to the Path to Carcosa 46	Return to A Phantom of Truth 8-9
+Return to The Pallid Mask	Mythos		Scenario		Return.	Return to the Path to Carcosa 47	Return to The Pallid Mask 1
+Secret Passage	Mythos		Location			Return to the Path to Carcosa 48	Return to The Pallid Mask 2
+Mound of Bones	Mythos		Location			Return to the Path to Carcosa 49	Return to The Pallid Mask 3
+Research Site	Mythos		Location			Return to the Path to Carcosa 50	Return to The Pallid Mask 4
+Sea of Skulls	Mythos		Location			Return to the Path to Carcosa 51	Return to The Pallid Mask 5
+Malformed Skeleton	Mythos		Enemy		Monster.	Return to the Path to Carcosa 52	Return to The Pallid Mask 6
+Return to Black Stars Rise	Mythos		Scenario		Return.	Return to the Path to Carcosa 53	Return to Black Stars Rise 1
+Cloister	Mythos		Location			Return to the Path to Carcosa 54	Return to Black Stars Rise 2
+Knight's Hall	Mythos		Location			Return to the Path to Carcosa 55	Return to Black Stars Rise 3
+Hastur's Gaze	Mythos		Treachery			Return to the Path to Carcosa 56	Return to Black Stars Rise 4
+Hastur's Grasp	Mythos		Treachery			Return to the Path to Carcosa 57	Return to Black Stars Rise 5
+Return to Dim Carcosa	Mythos		Scenario		Return.	Return to the Path to Carcosa 58	Return to Dim Carcosa 1
+Palace of the King: Hastur’s Domain	Mythos		Location		Otherworld.	Return to the Path to Carcosa 60	Return to Dim Carcosa 2
+Recesses of Your Own Mind	Mythos		Location		???.	Return to the Path to Carcosa 60	Return to Dim Carcosa 3
+The Throne Room	Mythos		Location		Otherworld.	Return to the Path to Carcosa 61	Return to Dim Carcosa 4
+Stage of the Ward Theatre	Mythos		Location			Return to the Path to Carcosa 62	Return to Dim Carcosa 5
+High Priest of Hastur	Mythos		Enemy		Humanoid. Cultist. Elite.	Return to the Path to Carcosa 64	Return to Dim Carcosa 6
+Delusory Evils	Mythos		Treachery		Curse.	Return to the Path to Carcosa 64	Delusory Evils 1-3
+Bleeding Walls	Mythos		Treachery		Terror.	Return to the Path to Carcosa 65	Decaying Reality 1-2
+Fragile Thoughts	Mythos		Treachery		Terror.	Return to the Path to Carcosa 66	Decaying Reality 3-4
+Maggot Swarm	Mythos		Enemy		Creature.	Return to the Path to Carcosa 67	Decaying Reality 5-6
+Preying Byakhee	Mythos		Enemy		Monster. Byakhee.	Return to the Path to Carcosa 68	Hastur's Envoys 1-2
+The Sign of Hastur	Mythos		Treachery		Pact. Power.	Return to the Path to Carcosa 69	Hastur's Envoys 3-4
+Visions in Your Mind (Horrors)	Mythos		Treachery		Terror.	Return to the Path to Carcosa 71	Maddening Delusions 1
+Visions in Your Mind (Failure)	Mythos		Treachery		Terror.	Return to the Path to Carcosa 72	Maddening Delusions 2
+Visions in Your Mind (Death)	Mythos		Treachery		Terror.	Return to the Path to Carcosa 73	Maddening Delusions 3
+Visions in Your Mind (Hatred)	Mythos		Treachery		Terror.	Return to the Path to Carcosa 74	Maddening Delusions 4
+Maddening Delusions	Mythos		Treachery		Terror.	Return to the Path to Carcosa 74	Maddening Delusions 5-6
+Voice of Tru'nembra	Mythos		Treachery		Terror.	Return to the Path to Carcosa 75	Neurotic Fear 1-3
+Melancholy	Mythos		Treachery		Terror.	Return to the Path to Carcosa 76	Neurotic Fear 4-5
+Painful Reflection	Mythos		Treachery		Terror.	Return to the Path to Carcosa 77	Neurotic Fear 6-7

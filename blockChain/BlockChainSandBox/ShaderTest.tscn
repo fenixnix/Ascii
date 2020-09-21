@@ -1,0 +1,67 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://new_audiostreamgenerator.tres" type="AudioStream" id=1]
+[ext_resource path="res://blue_boxCross.png" type="Texture" id=2]
+[ext_resource path="res://new_shader.shader" type="Shader" id=3]
+[ext_resource path="res://new_visualshader.tres" type="Shader" id=4]
+[ext_resource path="res://icon.png" type="Texture" id=5]
+
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 3 )
+
+[sub_resource type="CanvasItemMaterial" id=2]
+blend_mode = 2
+
+[sub_resource type="ShaderMaterial" id=3]
+render_priority = 1
+shader = ExtResource( 4 )
+
+[sub_resource type="VisualShader" id=4]
+graph_offset = Vector2( 0, 102.25 )
+
+[sub_resource type="ShaderMaterial" id=5]
+shader = SubResource( 4 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 203.406
+margin_top = 117.802
+margin_right = 203.406
+margin_bottom = 117.802
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+autoplay = true
+
+[node name="blue_boxCross2" type="Sprite" parent="."]
+position = Vector2( 153.518, 143.139 )
+scale = Vector2( 2.35992, 2.74585 )
+texture = ExtResource( 2 )
+
+[node name="blue_boxCross3" type="Sprite" parent="."]
+material = SubResource( 1 )
+position = Vector2( 48.5177, 53.1385 )
+scale = Vector2( 2.35992, 2.74585 )
+texture = ExtResource( 2 )
+
+[node name="blue_boxCross" type="Sprite" parent="."]
+material = SubResource( 2 )
+position = Vector2( 170.278, 124.283 )
+texture = ExtResource( 2 )
+
+[node name="icon" type="Sprite" parent="."]
+material = SubResource( 3 )
+use_parent_material = true
+position = Vector2( 303.768, 256.775 )
+texture = ExtResource( 5 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+material = SubResource( 5 )
+margin_left = 349.069
+margin_top = -84.0939
+margin_right = 605.069
+margin_bottom = 130.906
+
+[node name="Viewport" type="Viewport" parent="."]

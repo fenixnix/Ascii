@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://TopDownShootGame/Image/Unit/towerDefense_tile293.png" type="Texture" id=1]
+[ext_resource path="res://TopDownShootGame/Image/Unit/towerDefense_tile270.png" type="Texture" id=2]
+[ext_resource path="res://TopDownShootGame/Unit/shadow.gd" type="Script" id=3]
+
+[node name="Bomber" type="Node2D"]
+
+[node name="towerDefense_tile293" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+script = ExtResource( 3 )
+shadow_offset = Vector2( 40, 40 )
+
+[node name="towerDefense_tile270" type="Sprite" parent="."]
+texture = ExtResource( 2 )

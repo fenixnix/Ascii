@@ -1,0 +1,4 @@
+{
+    "classes":["Guardian","Seeker","Mystic","Rogue","Survivor"],
+    "skills":["Will","Intellect","Combat","Agility","Wild"]
+}

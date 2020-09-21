@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://UI/TaskUI.gd" type="Script" id=1]
+[ext_resource path="res://UI/TaskRT.gd" type="Script" id=3]
+
+[node name="TaskUI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_left = 0.256836
+anchor_top = 0.243333
+anchor_right = 0.77832
+anchor_bottom = 0.793333
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TaskRT" type="RichTextLabel" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ExploreCancelBtn" type="Button" parent="Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -30.0
+margin_top = -20.0
+margin_right = 30.0
+text = "Cancel"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Panel/ExploreCancelBtn" to="." method="_on_ExploreCancelBtn_pressed"]

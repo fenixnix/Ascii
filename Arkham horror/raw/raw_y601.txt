@@ -1,0 +1,29 @@
+Nathaniel Cho: The Boxer	 Guardian		Investigator		Criminal. Warden.	Nathaniel Cho 1	
+Randall Cho: Concerned Brother	 Guardian		Asset	  	Ally. Medic.	Nathaniel Cho 2	
+Tommy Malloy	Neutral		Enemy		Humanoid. Criminal. Syndicate.	Nathaniel Cho 3	
+Self-Destructive	Neutral		Treachery		Flaw.	Nathaniel Cho 4	
+Boxing Gloves	 Guardian	3	Asset		Item. Weapon.	Nathaniel Cho 5	
+Flesh Ward	 Guardian	3	Asset		Ritual.	Nathaniel Cho 6	
+Grete Wagner: The Purifier	 Guardian	5	Asset	 	Ally. Hunter.	Nathaniel Cho 7	
+Relentless	 Guardian	0	Asset	 	Talent.	Nathaniel Cho 9	
+Safeguard	 Guardian	2	Asset		Talent.	Nathaniel Cho 10	
+Clean Them Out	 Guardian	0	Event	 	Spirit. Tactic.	Nathaniel Cho 11	
+Counterpunch	 Guardian	0	Event	 	Spirit. Tactic.	Nathaniel Cho 12	
+"Get over here!"	 Guardian	2	Event	 	Spirit. Tactic.	Nathaniel Cho 14	
+Glory	 Guardian	1	Event	 	Spirit.	Nathaniel Cho 15	
+Monster Slayer	 Guardian	0	Event		Spirit.	Nathaniel Cho 16	
+One-Two Punch	 Guardian	2	Event		Spirit. Tactic.	Nathaniel Cho 17	
+Stand Together	 Guardian	0	Event		Spirit.	Nathaniel Cho 18	
+Evidence! (1)	 Guardian	1	Event	 	Insight.	Nathaniel Cho 20	
+Galvanize (1)	 Guardian	2	Event	 	Spirit.	Nathaniel Cho 21	
+Counterpunch (2)	 Guardian	0	Event	  	Spirit. Tactic.	Nathaniel Cho 22	
+"Get over here!" (2)	 Guardian	2	Event	  	Spirit. Tactic.	Nathaniel Cho 23	
+Lesson Learned (2)	 Guardian	1	Event	  	Insight. Spirit.	Nathaniel Cho 24	
+Mano a Mano (2)	 Guardian	0	Event	 	Spirit. Bold.	Nathaniel Cho 25	
+Overpower (2)	 Guardian		Skill	  	Practiced. Expert.	Nathaniel Cho 26	
+Boxing Gloves (3)	 Guardian	2	Asset	 	Item. Weapon.	Nathaniel Cho 27	
+Grete Wagner: The Purifier (3)	 Guardian	5	Asset	  	Ally. Hunter.	Nathaniel Cho 28	
+Dynamite Blast (3)	 Guardian	4	Event	   	Tactic.	Nathaniel Cho 29	
+Taunt (3)	 Guardian	1	Event	   	Tactic.	Nathaniel Cho 30	
+Physical Training (4)	 Guardian	2	Asset	   	Talent.	Nathaniel Cho 31	
+One-Two Punch (5)	 Guardian	2	Event	   	Spirit. Tactic.	Nathaniel Cho 32	

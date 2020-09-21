@@ -1,0 +1,122 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://SetConfig.gd" type="Script" id=1]
+
+[node name="Set" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBox" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DB" type="ItemList" parent="HBox"]
+margin_right = 338.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+
+[node name="Card" type="TextureRect" parent="HBox"]
+margin_left = 342.0
+margin_right = 681.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+stretch_mode = 4
+
+[node name="VBox" type="VBoxContainer" parent="HBox"]
+margin_left = 685.0
+margin_right = 1024.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+
+[node name="Menu" type="HBoxContainer" parent="HBox/VBox"]
+margin_right = 339.0
+margin_bottom = 31.0
+
+[node name="LineEdit" type="LineEdit" parent="HBox/VBox/Menu"]
+margin_right = 315.0
+margin_bottom = 31.0
+size_flags_horizontal = 3
+
+[node name="new" type="Button" parent="HBox/VBox/Menu"]
+margin_left = 319.0
+margin_right = 339.0
+margin_bottom = 31.0
+text = "+"
+
+[node name="setLst" type="ItemList" parent="HBox/VBox"]
+margin_top = 35.0
+margin_right = 339.0
+margin_bottom = 158.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="SetName" type="LineEdit" parent="HBox/VBox"]
+margin_top = 162.0
+margin_right = 339.0
+margin_bottom = 193.0
+size_flags_horizontal = 3
+
+[node name="List" type="ItemList" parent="HBox/VBox"]
+margin_top = 197.0
+margin_right = 339.0
+margin_bottom = 569.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 3.0
+
+[node name="Menu2" type="HBoxContainer" parent="HBox/VBox"]
+margin_top = 573.0
+margin_right = 339.0
+margin_bottom = 600.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="clear" type="Button" parent="HBox/VBox/Menu2"]
+margin_right = 23.0
+margin_bottom = 27.0
+text = "X"
+
+[node name="save" type="Button" parent="HBox/VBox/Menu2"]
+margin_left = 27.0
+margin_right = 75.0
+margin_bottom = 27.0
+text = "Save"
+
+[node name="Label" type="Label" parent="HBox/VBox/Menu2"]
+margin_left = 79.0
+margin_top = 3.0
+margin_right = 278.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+
+[node name="Select" type="Button" parent="HBox/VBox/Menu2"]
+margin_left = 282.0
+margin_right = 339.0
+margin_bottom = 27.0
+text = "Select"
+[connection signal="item_activated" from="HBox/DB" to="." method="_on_DB_item_activated"]
+[connection signal="item_selected" from="HBox/DB" to="." method="_on_DB_item_selected"]
+[connection signal="pressed" from="HBox/VBox/Menu/new" to="." method="_on_new_pressed"]
+[connection signal="item_activated" from="HBox/VBox/setLst" to="." method="_on_setLst_item_activated"]
+[connection signal="item_selected" from="HBox/VBox/setLst" to="." method="_on_setLst_item_selected"]
+[connection signal="text_changed" from="HBox/VBox/SetName" to="." method="_on_SetName_text_changed"]
+[connection signal="item_activated" from="HBox/VBox/List" to="." method="_on_List_item_activated"]
+[connection signal="item_selected" from="HBox/VBox/List" to="." method="_on_List_item_selected"]
+[connection signal="pressed" from="HBox/VBox/Menu2/clear" to="." method="_on_clear_pressed"]
+[connection signal="pressed" from="HBox/VBox/Menu2/save" to="." method="_on_Save_pressed"]
+[connection signal="pressed" from="HBox/VBox/Menu2/Select" to="." method="_on_Select_pressed"]

@@ -1,0 +1,148 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://main.gd" type="Script" id=1]
+[ext_resource path="res://OCR_Page.gd" type="Script" id=2]
+[ext_resource path="res://KeyInput.gd" type="Script" id=3]
+[ext_resource path="res://m5x7.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 4 )
+
+[node name="OCR" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -1.0
+margin_bottom = -1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Main" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Main"]
+margin_right = 850.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 5.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Page" type="TextureRect" parent="Main/ScrollContainer"]
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+font = SubResource( 1 )
+
+[node name="ItemList" type="ItemList" parent="Main"]
+margin_left = 854.0
+margin_right = 1024.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Menu" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+margin_bottom = 20.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LoadImage" type="Button" parent="Menu"]
+margin_right = 42.0
+margin_bottom = 20.0
+text = "Load"
+
+[node name="LoadTemplate" type="Button" parent="Menu"]
+margin_left = 46.0
+margin_right = 152.0
+margin_bottom = 20.0
+text = "Load Template"
+
+[node name="SaveTemplate" type="Button" parent="Menu"]
+margin_left = 156.0
+margin_right = 197.0
+margin_bottom = 20.0
+text = "Save"
+
+[node name="LoadImage" type="FileDialog" parent="."]
+margin_right = 307.0
+margin_bottom = 130.0
+window_title = "Open a File"
+mode = 0
+access = 2
+filters = PoolStringArray( "*.bmp", "*.jpg", "*.jpeg", "*.png" )
+current_dir = "/home/nix/Project/Ascii/OCR_Tool"
+current_path = "/home/nix/Project/Ascii/OCR_Tool/"
+
+[node name="SaveFile" type="FileDialog" parent="."]
+margin_right = 307.0
+margin_bottom = 130.0
+access = 2
+current_dir = "/home/nix/Project/Ascii/OCR_Tool"
+current_path = "/home/nix/Project/Ascii/OCR_Tool/"
+
+[node name="LoadTemplate" type="FileDialog" parent="."]
+margin_right = 307.0
+margin_bottom = 130.0
+window_title = "Open a File"
+mode = 0
+access = 2
+filters = PoolStringArray( "*.json" )
+current_dir = "/home/nix/Project/Ascii/OCR_Tool"
+current_path = "/home/nix/Project/Ascii/OCR_Tool/"
+
+[node name="KeyInput" type="PopupPanel" parent="."]
+margin_right = 194.0
+margin_bottom = 32.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="KeyInput"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Type" type="OptionButton" parent="KeyInput/HBoxContainer"]
+margin_left = 121.0
+margin_right = 186.0
+margin_bottom = 24.0
+text = "string"
+items = [ "string", null, false, 0, null, "number", null, false, 1, null ]
+selected = 0
+
+[node name="Key" type="LineEdit" parent="KeyInput/HBoxContainer"]
+margin_right = 117.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+[connection signal="gui_input" from="Main/ScrollContainer/Page" to="Main/ScrollContainer/Page" method="_on_TextureRect_gui_input"]
+[connection signal="select_roi" from="Main/ScrollContainer/Page" to="." method="_on_TextureRect_select_roi"]
+[connection signal="pressed" from="Menu/LoadImage" to="." method="_on_Load_pressed"]
+[connection signal="pressed" from="Menu/LoadTemplate" to="." method="_on_LoadTemplate_pressed"]
+[connection signal="pressed" from="Menu/SaveTemplate" to="." method="_on_Save_pressed"]
+[connection signal="file_selected" from="LoadImage" to="." method="_on_LoadImage_file_selected"]
+[connection signal="file_selected" from="SaveFile" to="." method="_on_SaveFile_file_selected"]
+[connection signal="file_selected" from="LoadTemplate" to="." method="_on_LoadTemplate_file_selected"]
+[connection signal="finish" from="KeyInput" to="." method="_on_KeyInput_finish"]
+[connection signal="text_entered" from="KeyInput/HBoxContainer/Key" to="KeyInput" method="_on_Key_text_entered"]

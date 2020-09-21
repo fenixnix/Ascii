@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://UI/AttNeed.gd" type="Script" id=1]
+[ext_resource path="res://images/ui/barHorizontal_shadow_mid.png" type="Texture" id=2]
+[ext_resource path="res://images/ui/barHorizontal_white_mid.png" type="Texture" id=3]
+[ext_resource path="res://font/mini_pixel.tres" type="DynamicFont" id=4]
+
+[node name="AttNeed" type="HBoxContainer"]
+modulate = Color( 1, 1, 0, 1 )
+margin_right = 149.0
+margin_bottom = 14.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_top = 1.0
+margin_right = 24.0
+margin_bottom = 13.0
+text = "ENG"
+
+[node name="Progress" type="TextureProgress" parent="."]
+margin_left = 28.0
+margin_right = 149.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+max_value = 20.0
+value = 10.0
+texture_under = ExtResource( 2 )
+texture_progress = ExtResource( 3 )
+nine_patch_stretch = true
+stretch_margin_top = 3
+stretch_margin_bottom = 3
+
+[node name="Label" type="Label" parent="Progress"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 4 )
+text = "10/20"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

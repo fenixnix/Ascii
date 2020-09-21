@@ -1,0 +1,48 @@
+[gd_scene format=2]
+
+[node name="AudioSetting" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="List" type="VBoxContainer" parent="."]
+margin_right = 186.0
+margin_bottom = 157.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BGM" type="HBoxContainer" parent="List"]
+margin_right = 186.0
+margin_bottom = 16.0
+
+[node name="Label" type="Label" parent="List/BGM"]
+margin_top = 1.0
+margin_right = 31.0
+margin_bottom = 15.0
+text = "BGM"
+
+[node name="HSlider" type="HSlider" parent="List/BGM"]
+margin_left = 35.0
+margin_right = 186.0
+margin_bottom = 16.0
+size_flags_horizontal = 3
+
+[node name="SFX" type="HBoxContainer" parent="List"]
+margin_top = 20.0
+margin_right = 186.0
+margin_bottom = 36.0
+
+[node name="Label" type="Label" parent="List/SFX"]
+margin_top = 1.0
+margin_right = 22.0
+margin_bottom = 15.0
+text = "SFX"
+
+[node name="HSlider" type="HSlider" parent="List/SFX"]
+margin_left = 26.0
+margin_right = 186.0
+margin_bottom = 16.0
+size_flags_horizontal = 3

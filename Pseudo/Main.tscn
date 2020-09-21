@@ -1,0 +1,190 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://HTTP.gd" type="Script" id=1]
+[ext_resource path="res://PsuedoPledge.gd" type="Script" id=2]
+
+[node name="Pesudo" type="Node"]
+script = ExtResource( 2 )
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+script = ExtResource( 1 )
+
+[node name="GUI" type="CanvasLayer" parent="."]
+
+[node name="HttpURL" type="LineEdit" parent="GUI"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -312.901
+margin_top = 9.10137
+margin_right = -14.9017
+margin_bottom = 33.1014
+text = "http://localhost:8001"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Msg" type="RichTextLabel" parent="GUI"]
+anchor_left = 0.486958
+anchor_top = 0.0871003
+anchor_right = 0.979145
+anchor_bottom = 0.9821
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Menu" type="VBoxContainer" parent="GUI"]
+anchor_right = 0.217773
+anchor_bottom = 0.353333
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Delegator" type="LineEdit" parent="GUI/Menu"]
+margin_right = 222.0
+margin_bottom = 24.0
+placeholder_text = "Delegator"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Validator" type="LineEdit" parent="GUI/Menu"]
+margin_top = 28.0
+margin_right = 222.0
+margin_bottom = 52.0
+placeholder_text = "Validator"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="balance" type="SpinBox" parent="GUI/Menu"]
+margin_top = 56.0
+margin_right = 222.0
+margin_bottom = 80.0
+max_value = 2.14748e+09
+step = 0.001
+align = 2
+suffix = "WHT"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pledge" type="Button" parent="GUI/Menu"]
+margin_top = 84.0
+margin_right = 222.0
+margin_bottom = 104.0
+text = "Pledge"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GUI/Menu"]
+margin_top = 108.0
+margin_right = 222.0
+margin_bottom = 132.0
+
+[node name="Epoch" type="SpinBox" parent="GUI/Menu/HBoxContainer"]
+margin_right = 145.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+max_value = 2.14748e+09
+align = 2
+suffix = "Epoch"
+
+[node name="UnPledge" type="Button" parent="GUI/Menu/HBoxContainer"]
+margin_left = 149.0
+margin_right = 222.0
+margin_bottom = 24.0
+text = "UnPledge"
+
+[node name="Query" type="Button" parent="GUI/Menu"]
+margin_top = 136.0
+margin_right = 222.0
+margin_bottom = 156.0
+text = "Query"
+
+[node name="HSeparator" type="HSeparator" parent="GUI/Menu"]
+margin_top = 160.0
+margin_right = 222.0
+margin_bottom = 164.0
+
+[node name="AddEpoch" type="Button" parent="GUI/Menu"]
+margin_top = 168.0
+margin_right = 222.0
+margin_bottom = 188.0
+text = "+Epoch"
+
+[node name="SetValidators" type="Button" parent="GUI/Menu"]
+margin_top = 192.0
+margin_right = 222.0
+margin_bottom = 212.0
+text = "Set Validators"
+
+[node name="Menu2" type="VBoxContainer" parent="GUI"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -124.0
+margin_right = 225.0
+alignment = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Addr" type="LineEdit" parent="GUI/Menu2"]
+margin_right = 225.0
+margin_bottom = 24.0
+placeholder_text = "Addr"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="GUI/Menu2"]
+margin_top = 28.0
+margin_right = 225.0
+margin_bottom = 48.0
+
+[node name="IsMain" type="Button" parent="GUI/Menu2/HBoxContainer2"]
+margin_right = 110.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+text = "Is Main"
+
+[node name="ShardID" type="Button" parent="GUI/Menu2/HBoxContainer2"]
+margin_left = 114.0
+margin_right = 225.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+text = "Shard ID"
+
+[node name="GetSubList" type="Button" parent="GUI/Menu2"]
+margin_top = 52.0
+margin_right = 225.0
+margin_bottom = 72.0
+text = "SubChain List"
+
+[node name="GetMainList" type="Button" parent="GUI/Menu2"]
+margin_top = 76.0
+margin_right = 225.0
+margin_bottom = 96.0
+text = "Get Main List"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GUI/Menu2"]
+margin_top = 100.0
+margin_right = 225.0
+margin_bottom = 124.0
+
+[node name="ID" type="SpinBox" parent="GUI/Menu2/HBoxContainer"]
+margin_right = 124.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+
+[node name="ShardList" type="Button" parent="GUI/Menu2/HBoxContainer"]
+margin_left = 128.0
+margin_right = 225.0
+margin_bottom = 24.0
+text = "Get ShardList"
+[connection signal="rcv_data" from="HTTPRequest" to="." method="_on_HTTPRequest_rcv_data"]
+[connection signal="text_entered" from="GUI/HttpURL" to="." method="_on_HttpURL_text_entered"]
+[connection signal="pressed" from="GUI/Menu/Pledge" to="." method="_on_Pledge_pressed"]
+[connection signal="pressed" from="GUI/Menu/HBoxContainer/UnPledge" to="." method="_on_UnPledge_pressed"]
+[connection signal="pressed" from="GUI/Menu/Query" to="." method="_on_Query_pressed"]
+[connection signal="pressed" from="GUI/Menu/AddEpoch" to="." method="_on_AddEpoch_pressed"]
+[connection signal="pressed" from="GUI/Menu/SetValidators" to="." method="_on_SetValidators_pressed"]
+[connection signal="pressed" from="GUI/Menu2/HBoxContainer2/IsMain" to="." method="_on_IsMain_pressed"]
+[connection signal="pressed" from="GUI/Menu2/HBoxContainer2/ShardID" to="." method="_on_ShardID_pressed"]
+[connection signal="pressed" from="GUI/Menu2/GetSubList" to="." method="_on_GetSubList_pressed"]
+[connection signal="pressed" from="GUI/Menu2/GetMainList" to="." method="_on_GetMainList_pressed"]
+[connection signal="pressed" from="GUI/Menu2/HBoxContainer/ShardList" to="." method="_on_ShardList_pressed"]

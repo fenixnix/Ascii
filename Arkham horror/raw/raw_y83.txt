@@ -1,0 +1,61 @@
+The Labyrinths of Lunacy	Mythos		Scenario			The Labyrinths of Lunacy 1	The Labyrinths of Lunacy 1
+Awakening	Mythos		Agenda			The Labyrinths of Lunacy 2	Epic Multiplayer 1
+Awakening	Mythos		Agenda			The Labyrinths of Lunacy 3	Single Group 1
+Agony and Despair	Mythos		Agenda			The Labyrinths of Lunacy 4	Epic Multiplayer 2
+Agony and Despair	Mythos		Agenda			The Labyrinths of Lunacy 5	Single Group 2
+The Mastermind	Mythos		Agenda			The Labyrinths of Lunacy 6	The Labyrinths of Lunacy 2
+Sealed In (Group A)	Mythos		Act			The Labyrinths of Lunacy 7	The Labyrinths of Lunacy 3
+Watery Grave (Group B)	Mythos		Act			The Labyrinths of Lunacy 8	The Labyrinths of Lunacy 4
+The Levers (Group C)	Mythos		Act			The Labyrinths of Lunacy 9	Epic Multiplayer 3
+The Levers (Group C)	Mythos		Act			The Labyrinths of Lunacy 10	Single Group 3
+Distortions in Time (Group A)	Mythos		Act			The Labyrinths of Lunacy 11	The Labyrinths of Lunacy 5
+Seeping Death (Group B)	Mythos		Act			The Labyrinths of Lunacy 12	The Labyrinths of Lunacy 6
+The Pet (Group C)	Mythos		Act			The Labyrinths of Lunacy 13	The Labyrinths of Lunacy 7
+The Escape	Mythos		Act			The Labyrinths of Lunacy 14	Epic Multiplayer 4
+The Escape	Mythos		Act			The Labyrinths of Lunacy 15	Single Group 4
+Chamber of Secrets: Bloody Prison	Mythos		Location		Prison. Distortion.	The Labyrinths of Lunacy 16	The Labyrinths of Lunacy 8
+Chamber of Secrets: Mysterious Prison	Mythos		Location		Prison. Distortion.	The Labyrinths of Lunacy 17	The Labyrinths of Lunacy 9
+Chamber of Secrets: Enshrouded Prison	Mythos		Location		Prison. Distortion.	The Labyrinths of Lunacy 18	The Labyrinths of Lunacy 10
+Chamber of Rain	Mythos		Location		Distortion.	The Labyrinths of Lunacy 19	The Labyrinths of Lunacy 11
+Chamber of Sorrows	Mythos		Location		Prison.	The Labyrinths of Lunacy 20	Epic Multiplayer 5
+Chamber of Sorrows	Mythos		Location		Prison.	The Labyrinths of Lunacy 21	Single Group 5
+Chamber of Night	Mythos		Location		Prison.	The Labyrinths of Lunacy 22	Epic Multiplayer 6
+Chamber of Night	Mythos		Location		Prison.	The Labyrinths of Lunacy 23	Single Group 6
+Chamber of Regret	Mythos		Location		Distortion.	The Labyrinths of Lunacy 24	The Labyrinths of Lunacy 12
+Labyrinthine Halls: Foul-smelling Path	Mythos		Location			The Labyrinths of Lunacy 25	The Labyrinths of Lunacy 13
+Labyrinthine Halls: Corpse-filled Path	Mythos		Location			The Labyrinths of Lunacy 26	The Labyrinths of Lunacy 14
+Labyrinthine Halls: Overgrown Path	Mythos		Location			The Labyrinths of Lunacy 27	The Labyrinths of Lunacy 15
+Chamber of Hunger	Mythos		Location		Distortion.	The Labyrinths of Lunacy 28	The Labyrinths of Lunacy 16
+Chamber of Decay	Mythos		Location		Distortion.	The Labyrinths of Lunacy 29	The Labyrinths of Lunacy 17
+Chamber of Rot	Mythos		Location		Distortion.	The Labyrinths of Lunacy 30	The Labyrinths of Lunacy 18
+Chamber of Poison	Mythos		Location			The Labyrinths of Lunacy 31	The Labyrinths of Lunacy 19
+Abandoned Warehouse	Mythos		Location		Distortion.	The Labyrinths of Lunacy 32	The Labyrinths of Lunacy 20
+Arcane Runes	Mythos		Story		Act 1.	The Labyrinths of Lunacy 33	Epic Multiplayer 7
+The Rift	Mythos		Story		Act 1. Act 2.	The Labyrinths of Lunacy 34	Epic Multiplayer 8
+The Vent	Mythos		Story		Act 1. Act 2.	The Labyrinths of Lunacy 35	Epic Multiplayer 9
+The Dilemma	Mythos		Story		Act 2.	The Labyrinths of Lunacy 36	Epic Multiplayer 10
+The Gate	Mythos		Story		Act 2.	The Labyrinths of Lunacy 37	Epic Multiplayer 11
+Encrypted Glyphs	Mythos		Story		Act 2.	The Labyrinths of Lunacy 38	Epic Multiplayer 12
+Eixodolon's Note	Neutral		Asset		Item. Script.	The Labyrinths of Lunacy 39	The Labyrinths of Lunacy 21
+Key of Mysteries	Neutral		Asset		Item. Key.	The Labyrinths of Lunacy 40	The Labyrinths of Lunacy 22
+Mysterious Syringe	Neutral		Asset		Item.	The Labyrinths of Lunacy 41	The Labyrinths of Lunacy 23
+Rot Diagram	Neutral		Asset		Item. Script.	The Labyrinths of Lunacy 42	Epic Multiplayer 13
+Rot Diagram	Neutral		Asset		Item. Script.	The Labyrinths of Lunacy 43	Single Group 7
+Hunger Diagram	Neutral		Asset		Item. Script.	The Labyrinths of Lunacy 44	Epic Multiplayer 14
+Hunger Diagram	Neutral		Asset		Item. Script.	The Labyrinths of Lunacy 45	Single Group 8
+Decay Diagram	Neutral		Asset		Item. Script.	The Labyrinths of Lunacy 46	Epic Multiplayer 15
+Decay Diagram	Neutral		Asset		Item. Script.	The Labyrinths of Lunacy 47	Single Group 9
+Eixodolon: Your Anguish Is My Power	Mythos		Enemy		Humanoid. Servitor. Elite.	The Labyrinths of Lunacy 48	The Labyrinths of Lunacy 24
+Eixodolon's Pet: You Are Not Its First Victim, Or Its Last	Mythos		Enemy		Monster. Elite.	The Labyrinths of Lunacy 49	Epic Multiplayer 16
+Eixodolon's Pet: You Are Not Its First Victim, Or Its Last	Mythos		Enemy		Monster. Elite.	The Labyrinths of Lunacy 50	Single Group 10
+The Jailor	Mythos		Enemy		Monster. Elite.	The Labyrinths of Lunacy 51	Epic Multiplayer 17
+Faceless Abductor	Mythos		Enemy		Monster. Nightgaunt.	The Labyrinths of Lunacy 52	The Labyrinths of Lunacy 25-26
+Tortured Victim	Mythos		Enemy		Humanoid. Extradimensional.	The Labyrinths of Lunacy 53	The Labyrinths of Lunacy 27-29
+Mi-Go Guard	Mythos		Enemy		Monster. Mi-Go.	The Labyrinths of Lunacy 54	The Labyrinths of Lunacy 30-32
+Unnatural Weariness	Mythos		Treachery		Injury. Poison.	The Labyrinths of Lunacy 55	The Labyrinths of Lunacy 33-35
+Poisonous Gas	Mythos		Treachery		Trap. Poison.	The Labyrinths of Lunacy 56	The Labyrinths of Lunacy 36-38
+Dreadful Mechanism	Mythos		Treachery		Trap.	The Labyrinths of Lunacy 57	The Labyrinths of Lunacy 39-41
+Blood and Rust	Mythos		Treachery		Trap.	The Labyrinths of Lunacy 58	The Labyrinths of Lunacy 42-44
+Paradox Effect	Mythos		Treachery		Hazard.	The Labyrinths of Lunacy 59	Epic Multiplayer 18-20
+Paradox Effect	Mythos		Treachery		Hazard.	The Labyrinths of Lunacy 60	Single Group 11-13
+Harvested Pain	Mythos		Treachery		Hex.	The Labyrinths of Lunacy 61	The Labyrinths of Lunacy 45-47
