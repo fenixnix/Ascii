@@ -7,6 +7,7 @@ func Set(dat):
 	refresh()
 	
 func refresh():
+	print(data)
 	clear()
 	newline()
 	newline()

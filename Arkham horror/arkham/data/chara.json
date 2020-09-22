@@ -1,5 +1,6 @@
 [
     {
+        "id": 1001,
         "name": "Roland Banks",
         "class": "Guardian",
         "job":"Fed",
@@ -20,6 +21,7 @@
         "deck":{"Gd":5,"Sk":2,"Nt":5}
     },
     {
+        "id": 1002,
         "name": "Daisy Walker",
         "img":"01002",
         "imgb":"01002b",
@@ -36,6 +38,7 @@
         "deck":{"Sk":5,"Ms":2,"Nt":5}
     },
     {
+        "id": 1003,
         "name": "\"Skids\" O’Toole",
         "class": "Rogue",
         "job":"Ex-Con",
@@ -52,6 +55,7 @@
         "deck":{"Rg":5,"Gd":2,"Nt":5}
     },
     {
+        "id": 1004,
         "name": "Agnes Baker",
         "class": "Mystic",
         "job":"Waitress",
@@ -68,6 +72,7 @@
         "deck":{"Ms":5,"Sv":2,"Nt":5}
     },
     {
+        "id": 1005,
         "name": "Wendy Adams",
         "class": "Survivor",
         "job":"Urchin",

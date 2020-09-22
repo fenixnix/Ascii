@@ -1,13 +1,23 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://CharaRT.gd" type="Script" id=1]
+[ext_resource path="res://CharaStatus.gd" type="Script" id=1]
 [ext_resource path="res://game.gd" type="Script" id=2]
 [ext_resource path="res://Status.gd" type="Script" id=3]
+[ext_resource path="res://MessageLog.gd" type="Script" id=4]
 
 [node name="game" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CharaStatus" type="RichTextLabel" parent="."]
+anchor_bottom = 1.0
+margin_right = 270.0
+bbcode_enabled = true
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -24,45 +34,45 @@ __meta__ = {
 [node name="Message" type="RichTextLabel" parent="msg"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 16.0
+margin_top = 8.0
+margin_right = -16.0
+margin_bottom = -8.0
 focus_mode = 2
 bbcode_enabled = true
 scroll_following = true
 selection_enabled = true
 override_selected_font_color = true
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Tween" type="Tween" parent="msg/Message"]
+
 [node name="Status" type="RichTextLabel" parent="."]
-anchor_left = 0.261719
-anchor_top = 0.168333
-anchor_right = 0.835938
-anchor_bottom = 0.913333
+anchor_left = 0.214791
+anchor_top = 0.161659
+anchor_right = 0.78901
+anchor_bottom = 0.906659
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="CharaRT" type="RichTextLabel" parent="."]
-anchor_bottom = 1.0
-margin_right = 262.0
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
-anchor_left = 1.0
+[node name="Menu2" type="HBoxContainer" parent="."]
+anchor_left = 0.5
 anchor_top = 1.0
-anchor_right = 1.0
+anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -339.0
+margin_left = -169.5
 margin_top = -40.0
+margin_right = 169.5
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="roll" type="Button" parent="HBoxContainer"]
+[node name="roll" type="Button" parent="Menu2"]
 margin_right = 44.0
 margin_bottom = 40.0
 text = "Roll"
@@ -70,7 +80,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="shuffle_ect" type="Button" parent="HBoxContainer"]
+[node name="shuffle_ect" type="Button" parent="Menu2"]
 margin_left = 48.0
 margin_right = 115.0
 margin_bottom = 40.0
@@ -79,7 +89,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="encounter" type="Button" parent="HBoxContainer"]
+[node name="encounter" type="Button" parent="Menu2"]
 margin_left = 119.0
 margin_right = 210.0
 margin_bottom = 40.0
@@ -88,7 +98,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="shuffle" type="Button" parent="HBoxContainer"]
+[node name="shuffle" type="Button" parent="Menu2"]
 margin_left = 214.0
 margin_right = 281.0
 margin_bottom = 40.0
@@ -97,7 +107,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="draw" type="Button" parent="HBoxContainer"]
+[node name="draw" type="Button" parent="Menu2"]
 margin_left = 285.0
 margin_right = 339.0
 margin_bottom = 40.0
@@ -111,9 +121,10 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-margin_left = -262.0
-margin_top = -168.0
-margin_bottom = 240.0
+margin_left = -302.045
+margin_top = -204.041
+margin_right = -40.0453
+margin_bottom = 203.959
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -184,14 +195,36 @@ margin_top = 62.0
 margin_right = 115.0
 margin_bottom = 89.0
 text = "-RES"
+
+[node name="Button" type="Button" parent="."]
+margin_right = 95.0
+margin_bottom = 27.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Push Agenda" type="Button" parent="."]
+margin_top = 32.0361
+margin_right = 95.0
+margin_bottom = 59.0361
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StoryMark" type="RichTextLabel" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -145.0
+margin_right = 146.0
+margin_bottom = 50.0
 [connection signal="meta_clicked" from="Status" to="Status" method="_on_Status_meta_clicked"]
 [connection signal="meta_hover_ended" from="Status" to="Status" method="_on_Status_meta_hover_ended"]
 [connection signal="meta_hover_started" from="Status" to="Status" method="_on_Status_meta_hover_started"]
-[connection signal="pressed" from="HBoxContainer/roll" to="." method="_on_roll_pressed"]
-[connection signal="pressed" from="HBoxContainer/shuffle_ect" to="." method="_on_shuffle_ect_pressed"]
-[connection signal="pressed" from="HBoxContainer/encounter" to="." method="_on_encounter_pressed"]
-[connection signal="pressed" from="HBoxContainer/shuffle" to="." method="_on_shuffle_pressed"]
-[connection signal="pressed" from="HBoxContainer/draw" to="." method="_on_draw_pressed"]
+[connection signal="pressed" from="Menu2/roll" to="." method="_on_roll_pressed"]
+[connection signal="pressed" from="Menu2/shuffle_ect" to="." method="_on_shuffle_ect_pressed"]
+[connection signal="pressed" from="Menu2/encounter" to="." method="_on_encounter_pressed"]
+[connection signal="pressed" from="Menu2/shuffle" to="." method="_on_shuffle_pressed"]
+[connection signal="pressed" from="Menu2/draw" to="." method="_on_draw_pressed"]
 [connection signal="pressed" from="Return" to="." method="_on_Return_pressed"]
 [connection signal="pressed" from="Menu/HP_add" to="." method="_on_HP_add_pressed"]
 [connection signal="pressed" from="Menu/HP_rmv" to="." method="_on_HP_rmv_pressed"]
@@ -199,3 +232,5 @@ text = "-RES"
 [connection signal="pressed" from="Menu/SAN_rmv" to="." method="_on_SAN_rmv_pressed"]
 [connection signal="pressed" from="Menu/RES_add" to="." method="_on_RES_add_pressed"]
 [connection signal="pressed" from="Menu/RES_rmv" to="." method="_on_RES_rmv_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Push Agenda" to="." method="_on_Push_Agenda_pressed"]

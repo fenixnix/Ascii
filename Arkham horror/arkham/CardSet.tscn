@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://CardRT.gd" type="Script" id=1]
 [ext_resource path="res://CardSet.gd" type="Script" id=2]
+[ext_resource path="res://filter.gd" type="Script" id=3]
 
 [node name="CardSet" type="Control"]
 anchor_right = 1.0
@@ -18,10 +19,99 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="DB" type="ItemList" parent="HBox"]
+[node name="VBoxA" type="VBoxContainer" parent="HBox"]
 margin_right = 338.0
 margin_bottom = 600.0
 size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Class" type="HBoxContainer" parent="HBox/VBoxA"]
+margin_right = 338.0
+margin_bottom = 29.0
+script = ExtResource( 3 )
+
+[node name="Guardian" type="CheckBox" parent="HBox/VBoxA/Class"]
+margin_right = 49.0
+margin_bottom = 29.0
+pressed = true
+text = "Gd"
+
+[node name="Seeker" type="CheckBox" parent="HBox/VBoxA/Class"]
+margin_left = 53.0
+margin_right = 101.0
+margin_bottom = 29.0
+pressed = true
+text = "Sk"
+
+[node name="Rogue" type="CheckBox" parent="HBox/VBoxA/Class"]
+margin_left = 105.0
+margin_right = 154.0
+margin_bottom = 29.0
+pressed = true
+text = "Rg"
+
+[node name="Mystic" type="CheckBox" parent="HBox/VBoxA/Class"]
+margin_left = 158.0
+margin_right = 208.0
+margin_bottom = 29.0
+pressed = true
+text = "Ms"
+
+[node name="Survivor" type="CheckBox" parent="HBox/VBoxA/Class"]
+margin_left = 212.0
+margin_right = 259.0
+margin_bottom = 29.0
+pressed = true
+text = "Sv"
+
+[node name="Neutral" type="CheckBox" parent="HBox/VBoxA/Class"]
+margin_left = 263.0
+margin_right = 310.0
+margin_bottom = 29.0
+pressed = true
+text = "Nt"
+
+[node name="Type" type="HBoxContainer" parent="HBox/VBoxA"]
+margin_top = 33.0
+margin_right = 338.0
+margin_bottom = 62.0
+script = ExtResource( 3 )
+
+[node name="Asset" type="CheckBox" parent="HBox/VBoxA/Type"]
+margin_right = 70.0
+margin_bottom = 29.0
+pressed = true
+text = "Asset"
+
+[node name="Skill" type="CheckBox" parent="HBox/VBoxA/Type"]
+margin_left = 74.0
+margin_right = 137.0
+margin_bottom = 29.0
+pressed = true
+text = "Skill"
+
+[node name="Event" type="CheckBox" parent="HBox/VBoxA/Type"]
+margin_left = 141.0
+margin_right = 214.0
+margin_bottom = 29.0
+pressed = true
+text = "Event"
+
+[node name="Treachery" type="CheckBox" parent="HBox/VBoxA/Type"]
+margin_left = 218.0
+margin_right = 321.0
+margin_bottom = 29.0
+pressed = true
+text = "Treachery"
+
+[node name="DB" type="ItemList" parent="HBox/VBoxA"]
+margin_top = 66.0
+margin_right = 338.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -131,8 +221,10 @@ margin_left = 211.0
 margin_right = 248.0
 margin_bottom = 40.0
 text = "OK"
-[connection signal="item_activated" from="HBox/DB" to="." method="_on_DB_item_activated"]
-[connection signal="item_selected" from="HBox/DB" to="." method="_on_DB_item_selected"]
+[connection signal="update_filter" from="HBox/VBoxA/Class" to="." method="_on_Class_update_filter"]
+[connection signal="update_filter" from="HBox/VBoxA/Type" to="." method="_on_Type_update_filter"]
+[connection signal="item_activated" from="HBox/VBoxA/DB" to="." method="_on_DB_item_activated"]
+[connection signal="item_selected" from="HBox/VBoxA/DB" to="." method="_on_DB_item_selected"]
 [connection signal="text_changed" from="HBox/VBox/menu/LineEdit" to="." method="_on_LineEdit_text_changed"]
 [connection signal="pressed" from="HBox/VBox/menu/new" to="." method="_on_new_pressed"]
 [connection signal="pressed" from="HBox/VBox/menu/del" to="." method="_on_del_pressed"]

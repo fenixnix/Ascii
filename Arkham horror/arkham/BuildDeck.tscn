@@ -1,0 +1,97 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://BuildDeck.gd" type="Script" id=1]
+[ext_resource path="res://CardRT.gd" type="Script" id=2]
+
+[node name="BuildDeck" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBox" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DB" type="ItemList" parent="HBox"]
+margin_right = 338.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CardRT" type="RichTextLabel" parent="HBox"]
+margin_left = 342.0
+margin_right = 681.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBox" type="VBoxContainer" parent="HBox"]
+margin_left = 685.0
+margin_right = 1024.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+
+[node name="Deck" type="ItemList" parent="HBox/VBox"]
+margin_right = 339.0
+margin_bottom = 596.0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 3.0
+
+[node name="focus" type="ItemList" parent="HBox/VBox"]
+margin_top = 600.0
+margin_right = 339.0
+margin_bottom = 600.0
+
+[node name="menu" type="HBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -100.0
+margin_top = -40.0
+margin_right = 100.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Clear" type="Button" parent="menu"]
+margin_right = 52.0
+margin_bottom = 40.0
+text = "Clear"
+
+[node name="Save" type="Button" parent="menu"]
+margin_left = 56.0
+margin_right = 104.0
+margin_bottom = 40.0
+text = "Save"
+
+[node name="Load" type="Button" parent="menu"]
+margin_left = 108.0
+margin_right = 159.0
+margin_bottom = 40.0
+text = "Load"
+
+[node name="OK" type="Button" parent="menu"]
+margin_left = 163.0
+margin_right = 200.0
+margin_bottom = 40.0
+text = "OK"
+[connection signal="item_activated" from="HBox/DB" to="." method="_on_DB_item_activated"]
+[connection signal="item_selected" from="HBox/DB" to="." method="_on_DB_item_selected"]
+[connection signal="item_activated" from="HBox/VBox/Deck" to="." method="_on_Deck_item_activated"]
+[connection signal="item_selected" from="HBox/VBox/Deck" to="." method="_on_Deck_item_selected"]
+[connection signal="pressed" from="menu/Clear" to="." method="_on_Clear_pressed"]
+[connection signal="pressed" from="menu/Save" to="." method="_on_Save_pressed"]
+[connection signal="pressed" from="menu/Load" to="." method="_on_Load_pressed"]
+[connection signal="pressed" from="menu/OK" to="." method="_on_OK_pressed"]

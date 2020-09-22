@@ -10,6 +10,7 @@ var enmDb = []
 var hidenDb = []
 
 var ectDb = {}
+var storyDb = {}
 
 var class_icon = {
 	"Guardian":"res://image/icon/guardian.png",
@@ -41,39 +42,41 @@ func _ready():
 	for f in ["core","y2","y3","y4","y5","y6","y7","y50","y51","y52","y53",
 		"y601","y602","y603","y604","y605","y81","y82","y83","y84","y98","y99","y90"]:
 		db += LoadDB("db_%s"%f)
-	charaDb.clear()
+	#charaDb.clear()
 	cardDb.clear()
+	
+	storyDb = LoadDB("story/story")
+	
 	
 	for d in db:
 		if d["class"] == "Mythos":
 			if d["type"] == "Enemy" || d["type"] == "Treachery":
 				hidenDb.append(d)
 		match d.type:
-			"Investigator":
-				charaDb.append(d)
-				pass
+#			"Investigator":
+#				charaDb.append(d)
 			"Asset","Treachery","Event","Skill":
 				if d["class"]!="Mythos":
 					cardDb.append(d)
 			"Enemy":enmDb.append(d)
-			"Scenario":
-				checkEct(d.encounter)
-				ectDb[d.encounter].scenario = d
-				
-			"Location":
-				if !d.has("encounter"):
-					print_debug("not find encounter:",d)
-				else:
-					checkEct(d.encounter)
-					ectDb[d.encounter].loc.append(d)
-			
-			"Act":
-				checkEct(d.encounter)
-				ectDb[d.encounter].act.append(d)
-				
-			"Agenda":
-				checkEct(d.encounter)
-				ectDb[d.encounter].agenda.append(d)
+#			"Scenario":
+#				checkEct(d.encounter)
+#				ectDb[d.encounter].scenario = d
+#
+#			"Location":
+#				if !d.has("encounter"):
+#					print_debug("not find encounter:",d)
+#				else:
+#					checkEct(d.encounter)
+#					ectDb[d.encounter].loc.append(d)
+#
+#			"Act":
+#				checkEct(d.encounter)
+#				ectDb[d.encounter].act.append(d)
+#
+#			"Agenda":
+#				checkEct(d.encounter)
+#				ectDb[d.encounter].agenda.append(d)
 
 func checkEct(encounter):
 	if !ectDb.has(encounter):
