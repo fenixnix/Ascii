@@ -14,6 +14,7 @@ func InitGame(_charaList,deckList):
 		var cha = _charaList[i].duplicate(true)
 		cha.hp = cha.STA
 		cha.san = cha.SAN
+		cha.clue = 0
 		cha.res = 5
 		cha.at = 3
 		cha.deck = deckList[i].duplicate(true)

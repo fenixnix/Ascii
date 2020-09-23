@@ -1,13 +1,21 @@
-extends Control
+extends Node
 
 var curAgenda = 0
 var curAct = 0
 var doom = 0
 var clue = 0
 
+var charaLabelPrefab = preload("res://CharaLabel.tscn")
+
 func _ready():
 	rand_seed(OS.get_ticks_msec())
 	$CharaStatus.Set(GlbDat.charaList)
+	for c in $CharaList.get_children():
+		c.queue_free()
+	for c in GlbDat.charaList:
+		var lab = charaLabelPrefab.instance()
+		$CharaList.add_child(lab)
+		lab.Set(c)
 	#$Status.Refresh(self)
 	
 	var agenda = GlbDat.story.agenda[curAgenda]

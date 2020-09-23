@@ -18,5 +18,6 @@ func charaInfo(chara):
 	"""%[
 		chara.name,
 		chara.W,chara.I,chara.C,chara.A,
+		chara.san,chara.SAN,chara.hp,chara.STA
 	]
 	return code 

@@ -1,19 +1,27 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://CharaStatus.gd" type="Script" id=1]
 [ext_resource path="res://game.gd" type="Script" id=2]
 [ext_resource path="res://Status.gd" type="Script" id=3]
 [ext_resource path="res://MessageLog.gd" type="Script" id=4]
+[ext_resource path="res://Location.tscn" type="PackedScene" id=5]
 
-[node name="game" type="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
+[node name="game" type="Node"]
 script = ExtResource( 2 )
+
+[node name="map" type="Node2D" parent="."]
+
+[node name="Location" parent="map" instance=ExtResource( 5 )]
+
+[node name="CharaList" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+margin_bottom = 138.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="CharaStatus" type="RichTextLabel" parent="."]
+visible = false
 anchor_bottom = 1.0
 margin_right = 270.0
 bbcode_enabled = true
@@ -23,12 +31,13 @@ __meta__ = {
 }
 
 [node name="msg" type="Panel" parent="."]
-anchor_left = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = -345.0
+visible = false
+anchor_left = 0.229492
+anchor_top = 0.59
+anchor_right = 0.773438
+anchor_bottom = 0.896667
 __meta__ = {
-"_edit_use_anchors_": false
+"_edit_use_anchors_": true
 }
 
 [node name="Message" type="RichTextLabel" parent="msg"]
@@ -132,7 +141,7 @@ __meta__ = {
 [node name="Return" type="Button" parent="."]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -67.0
+margin_left = -65.0
 margin_bottom = 27.0
 text = "Return"
 __meta__ = {
@@ -152,64 +161,66 @@ __meta__ = {
 [node name="Menu" type="GridContainer" parent="."]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_top = -89.0
+margin_top = -120.0
 margin_right = 115.0
 columns = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="HP_add" type="Button" parent="Menu"]
+[node name="Button" type="Button" parent="Menu"]
 margin_right = 57.0
 margin_bottom = 27.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Push Agenda" type="Button" parent="Menu"]
+margin_left = 61.0
+margin_right = 115.0
+margin_bottom = 27.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HP_add" type="Button" parent="Menu"]
+margin_top = 31.0
+margin_right = 57.0
+margin_bottom = 58.0
 text = "+HP"
 
 [node name="HP_rmv" type="Button" parent="Menu"]
 margin_left = 61.0
+margin_top = 31.0
 margin_right = 115.0
-margin_bottom = 27.0
+margin_bottom = 58.0
 text = "-HP"
 
 [node name="SAN_add" type="Button" parent="Menu"]
-margin_top = 31.0
+margin_top = 62.0
 margin_right = 57.0
-margin_bottom = 58.0
+margin_bottom = 89.0
 text = "+SAN"
 
 [node name="SAN_rmv" type="Button" parent="Menu"]
 margin_left = 61.0
-margin_top = 31.0
+margin_top = 62.0
 margin_right = 115.0
-margin_bottom = 58.0
+margin_bottom = 89.0
 text = "-SAN"
 
 [node name="RES_add" type="Button" parent="Menu"]
-margin_top = 62.0
+margin_top = 93.0
 margin_right = 57.0
-margin_bottom = 89.0
+margin_bottom = 120.0
 text = "+RES"
 
 [node name="RES_rmv" type="Button" parent="Menu"]
 margin_left = 61.0
-margin_top = 62.0
+margin_top = 93.0
 margin_right = 115.0
-margin_bottom = 89.0
+margin_bottom = 120.0
 text = "-RES"
-
-[node name="Button" type="Button" parent="."]
-margin_right = 95.0
-margin_bottom = 27.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Push Agenda" type="Button" parent="."]
-margin_top = 32.0361
-margin_right = 95.0
-margin_bottom = 59.0361
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="StoryMark" type="RichTextLabel" parent="."]
 anchor_left = 0.5
@@ -217,6 +228,9 @@ anchor_right = 0.5
 margin_left = -145.0
 margin_right = 146.0
 margin_bottom = 50.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="meta_clicked" from="Status" to="Status" method="_on_Status_meta_clicked"]
 [connection signal="meta_hover_ended" from="Status" to="Status" method="_on_Status_meta_hover_ended"]
 [connection signal="meta_hover_started" from="Status" to="Status" method="_on_Status_meta_hover_started"]
@@ -226,11 +240,5 @@ margin_bottom = 50.0
 [connection signal="pressed" from="Menu2/shuffle" to="." method="_on_shuffle_pressed"]
 [connection signal="pressed" from="Menu2/draw" to="." method="_on_draw_pressed"]
 [connection signal="pressed" from="Return" to="." method="_on_Return_pressed"]
-[connection signal="pressed" from="Menu/HP_add" to="." method="_on_HP_add_pressed"]
-[connection signal="pressed" from="Menu/HP_rmv" to="." method="_on_HP_rmv_pressed"]
-[connection signal="pressed" from="Menu/SAN_add" to="." method="_on_SAN_add_pressed"]
-[connection signal="pressed" from="Menu/SAN_rmv" to="." method="_on_SAN_rmv_pressed"]
-[connection signal="pressed" from="Menu/RES_add" to="." method="_on_RES_add_pressed"]
-[connection signal="pressed" from="Menu/RES_rmv" to="." method="_on_RES_rmv_pressed"]
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
-[connection signal="pressed" from="Push Agenda" to="." method="_on_Push_Agenda_pressed"]
+[connection signal="pressed" from="Menu/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Menu/Push Agenda" to="." method="_on_Push_Agenda_pressed"]
