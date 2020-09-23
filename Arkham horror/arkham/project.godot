@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Node",
+"class": "Chara",
+"language": "GDScript",
+"path": "res://Chara.gd"
+}, {
 "base": "RichTextLabel",
 "class": "CharaRT",
 "language": "GDScript",
@@ -25,6 +30,7 @@ _global_script_classes=[ {
 "path": "res://ImageQueue.gd"
 } ]
 _global_script_class_icons={
+"Chara": "",
 "CharaRT": "",
 "FileRW": "",
 "ImageQueue": ""

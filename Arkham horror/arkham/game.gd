@@ -7,12 +7,13 @@ var clue = 0
 
 onready var msg_lab = $UI/msg/Message
 
-
 func _ready():
 	rand_seed(OS.get_ticks_msec())
-	$UI/CharaStatus.Set(GlbDat.charaList)
-	$UI/CharaList.Init(GlbDat.charaList)
+	#$UI/CharaStatus.Set(GlbDat.charaList)
+	$UI/CharaList.Init(GlbDat.charas)
 	#$Status.Refresh(self)
+	for c in GlbDat.charas.get_children():
+		c.Draw(5)
 	
 	var agenda = GlbDat.story.agenda[curAgenda]
 	var act = GlbDat.story.act[curAct]
@@ -31,7 +32,7 @@ func _ready():
 	#Location
 	for l in GlbDat.story.locations:
 		$map.AddLocation(l)
-	for chara in GlbDat.charaList:
+	for chara in GlbDat.charas.get_children():
 		$map.Enter(chara,GlbDat.story.start_location)
 
 func PushAct():
@@ -81,7 +82,6 @@ func _on_encounter_pressed():
 
 func _on_shuffle_ect_pressed():
 	GlbDat.ect_deck.shuffle()
-
 
 func _on_Button_pressed():
 	PushAct()

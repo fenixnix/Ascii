@@ -13,7 +13,10 @@ func refresh():
 	position = Vector2(data.X,data.Y)
 	$Name.text = data.name
 	$Sprite.texture = GlbDb.CardImg(data.img)
-	$Menu.visible = data.has("clues")
-	if data.has("clues"):
-		$Menu/shroud.text = str(data.shroud)
-		$Menu/clues.text = str(data.clues)
+	
+	var has_clues = data.has("clues")
+	$shroud.visible = has_clues
+	$clues.visible = has_clues
+	if has_clues:
+		$shroud.text = str(data.shroud)
+		$clues.text = str(data.clues)

@@ -1,8 +1,6 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://main.gd" type="Script" id=1]
-[ext_resource path="res://CharaRT.gd" type="Script" id=2]
-[ext_resource path="res://font/mono.tres" type="DynamicFont" id=3]
 [ext_resource path="res://EnemyRT.gd" type="Script" id=4]
 
 [node name="main" type="Control"]
@@ -28,56 +26,41 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="HBox" type="HBoxContainer" parent="."]
-anchor_right = 0.659
+[node name="CharaList" type="ItemList" parent="."]
+anchor_top = 0.635
+anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = 0.18396
+size_flags_horizontal = 3
+max_columns = 4
+same_column_width = true
+icon_mode = 0
+fixed_icon_size = Vector2( 120, 90 )
 __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="CharaList" type="ItemList" parent="HBox"]
-margin_right = 335.0
-margin_bottom = 600.0
-size_flags_horizontal = 3
-icon_mode = 0
-fixed_icon_size = Vector2( 120, 90 )
-
-[node name="CharaRT" type="RichTextLabel" parent="HBox"]
-visible = false
-margin_right = 670.0
-margin_bottom = 600.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_fonts/mono_font = ExtResource( 3 )
-custom_colors/font_color_shadow = Color( 0.227451, 0.227451, 0.227451, 1 )
-bbcode_enabled = true
-script = ExtResource( 2 )
+[node name="HBox" type="HBoxContainer" parent="."]
+anchor_right = 0.604492
+anchor_bottom = 0.401667
 __meta__ = {
-"_edit_use_anchors_": false
+"_edit_use_anchors_": true
 }
 
-[node name="img" type="VBoxContainer" parent="HBox"]
-margin_left = 339.0
-margin_right = 674.0
-margin_bottom = 600.0
+[node name="img" type="HBoxContainer" parent="HBox"]
+margin_right = 619.0
+margin_bottom = 241.0
 size_flags_horizontal = 3
 
 [node name="front" type="TextureRect" parent="HBox/img"]
-margin_right = 335.0
-margin_bottom = 298.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
+margin_bottom = 241.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="back" type="TextureRect" parent="HBox/img"]
-margin_top = 302.0
-margin_right = 335.0
-margin_bottom = 600.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
+margin_left = 4.0
+margin_right = 4.0
+margin_bottom = 241.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -96,9 +79,9 @@ __meta__ = {
 
 [node name="ItemList" type="ItemList" parent="."]
 anchor_left = 0.713876
-anchor_top = 0.147308
+anchor_top = 0.145208
 anchor_right = 0.975594
-anchor_bottom = 0.570641
+anchor_bottom = 0.568541
 __meta__ = {
 "_edit_use_anchors_": true
 }
@@ -192,7 +175,7 @@ script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="item_activated" from="HBox/CharaList" to="." method="_on_CharaList_item_activated"]
+[connection signal="item_activated" from="CharaList" to="." method="_on_CharaList_item_activated"]
 [connection signal="item_activated" from="ItemList" to="." method="_on_ItemList_item_activated"]
 [connection signal="item_selected" from="ItemList" to="." method="_on_ItemList_item_selected"]
 [connection signal="item_selected" from="story/Level" to="." method="_on_Level_item_selected"]

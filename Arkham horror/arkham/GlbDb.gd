@@ -100,7 +100,6 @@ func checkEct(encounter):
 func LoadDB(db):
 	return FileRW.LoadJsonFile(dataPath%db)
 
-
 #var rootPath = "res://image/card/%s.%s"
 var rootPath = "../card/%s.%s"
 

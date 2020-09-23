@@ -52,10 +52,11 @@ margin_left = 143.364
 margin_top = 4.68179
 margin_right = 254.364
 margin_bottom = 160.682
+mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="gui_input" from="TextureRect" to="." method="_on_TextureRect_gui_input"]
+[connection signal="gui_input" from="." to="." method="_on_CharaLabel_gui_input"]

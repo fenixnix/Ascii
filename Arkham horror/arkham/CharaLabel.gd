@@ -1,15 +1,17 @@
 extends Control
 
 var data
+var chara
 
 signal select(chara)
 
 func Set(dat):
-	data = dat
-	$Name.text = dat.name
-	$TextureRect.texture = GlbDb.CardImg(dat.img)
-	$CharaRT.Set(dat)
+	chara = dat
+	data = dat.data
+	$Name.text = data.name
+	$TextureRect.texture = GlbDb.CardImg(data.img)
+	$CharaRT.Set(chara)
 
-func _on_TextureRect_gui_input(event:InputEvent):
+func _on_CharaLabel_gui_input(event):
 	if event.is_action_pressed("click"):
-		emit_signal("select",data)
+		emit_signal("select",chara)

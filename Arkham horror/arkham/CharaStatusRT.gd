@@ -14,7 +14,7 @@ func refresh():
 [img=16x16]res://image/sanity.png[/img] %d/%d [img=16x16]res://image/health.png[/img] %d/%d
 [img=16x16]res://image/clue.png[/img] %d [img=16x16]res://image/resource.png[/img] %d
 	"""%[
-		data.W,data.I,data.C,data.A,
-		data.san,data.SAN,data.hp,data.STA,
+		data.data.W,data.data.I,data.data.C,data.data.A,
+		data.san,data.data.SAN,data.hp,data.data.STA,
 		data.clue,data.res,
 	]

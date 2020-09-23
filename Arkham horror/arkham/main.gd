@@ -44,12 +44,13 @@ func _on_Scenario_pressed():
 	var ui = load("Scenario.tscn").instance()
 	add_child(ui)
 
+onready var memberList = $CharaList
 func _on_ItemList_item_activated(index):
 	charaList.append(GlbDb.charaDb[index])
 	deckList.append({})
-	$HBox/CharaList.clear()
+	memberList.clear()
 	for c in charaList:
-		$HBox/CharaList.add_item(c.name,GlbDb.CardImg(c.img))
+		memberList.add_item(c.name,GlbDb.CardImg(c.img))
 
 #edit chara deck
 func _on_CharaList_item_activated(index):

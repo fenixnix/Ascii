@@ -4,9 +4,9 @@
 [ext_resource path="res://Card.gd" type="Script" id=2]
 
 [node name="Card" type="Control"]
-margin_right = 300.0
-margin_bottom = 420.0
-rect_min_size = Vector2( 300, 420 )
+margin_right = 150.0
+margin_bottom = 210.0
+rect_min_size = Vector2( 150, 210 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -16,3 +16,9 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="mouse_entered" from="TextureRect" to="." method="_on_TextureRect_mouse_entered"]
+[connection signal="mouse_exited" from="TextureRect" to="." method="_on_TextureRect_mouse_exited"]

@@ -76,10 +76,10 @@ func _on_OK_pressed():
 	queue_free()
 
 func _on_Save_pressed():
-	FileRW.SaveJsonFile("%s.json"%chara.name,current_deck)
+	FileRW.SaveJsonFile("%d.json"%chara.id,current_deck)
 
 func _on_Load_pressed():
-	current_deck = FileRW.LoadJsonFile("%s.json"%chara.name)
+	current_deck = FileRW.LoadJsonFile("%d.json"%chara.id)
 	refresh_set()
 
 func _on_Clear_pressed():

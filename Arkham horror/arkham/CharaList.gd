@@ -7,7 +7,8 @@ signal select(chara)
 func Init(charaList):
 	for c in get_children():
 		c.queue_free()
-	for c in GlbDat.charaList:
+	yield(get_tree(),"idle_frame")
+	for c in charaList.get_children():
 		var lab = charaLabelPrefab.instance()
 		add_child(lab)
 		lab.Set(c)

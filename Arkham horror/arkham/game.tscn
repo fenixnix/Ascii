@@ -106,6 +106,7 @@ __meta__ = {
 }
 
 [node name="Status" type="RichTextLabel" parent="UI"]
+visible = false
 anchor_left = 0.214791
 anchor_top = 0.161659
 anchor_right = 0.78901
@@ -126,13 +127,10 @@ __meta__ = {
 }
 
 [node name="HandCards" type="HBoxContainer" parent="UI"]
-anchor_left = 0.5
 anchor_top = 1.0
-anchor_right = 0.5
+anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -334.0
-margin_top = -116.0
-margin_right = 334.0
+margin_top = -126.0
 alignment = 1
 script = ExtResource( 8 )
 __meta__ = {
