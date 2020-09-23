@@ -8,13 +8,15 @@
             "ending2":"e2",
             "ending3":"e3"
         },
+        "locations":["1111"],
+        "start_location":"1111",
         "agenda":[
             {
                 "name":"What`s Going On?!",
                 "doom":3,
                 "desc":"It is late at night. You are holed up in your study, researching the bloody disappearances that have been taking place in the region. A few hours into your research, you hear the sound of strange chanting coming from your parlor, down the hall. At the same time, you hear dirt churning, as if something were digging beneath the floor.",
                 "nameB":"A Lapse in Time",
-                "descB":"Your house continues to change before your very eyes. The walls have decayed, and the ground in many rooms has turned to dirt. It is almost as if you have been transported somewhere else entirely, although every now and again you recognize elements of your former home."
+                "descB":"Your house continues to change before your very eyes. The walls have decayed, and the ground in many rooms has turned to dirt. It is almost as if you have been transported somewhere else entirely, although every now and again you recognize elements of your former home.",
             },            
             {
                 "name":"Rise of the Ghouls",

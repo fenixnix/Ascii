@@ -42,16 +42,22 @@ margin_right = 1024.0
 margin_bottom = 600.0
 size_flags_horizontal = 3
 
-[node name="Deck" type="ItemList" parent="HBox/VBox"]
+[node name="Count" type="Label" parent="HBox/VBox"]
 margin_right = 339.0
-margin_bottom = 596.0
+margin_bottom = 21.0
+
+[node name="Deck" type="ItemList" parent="HBox/VBox"]
+margin_top = 25.0
+margin_right = 339.0
+margin_bottom = 453.0
 size_flags_vertical = 3
 size_flags_stretch_ratio = 3.0
 
 [node name="focus" type="ItemList" parent="HBox/VBox"]
-margin_top = 600.0
+margin_top = 457.0
 margin_right = 339.0
 margin_bottom = 600.0
+size_flags_vertical = 3
 
 [node name="menu" type="HBoxContainer" parent="."]
 anchor_left = 0.5

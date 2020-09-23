@@ -8,6 +8,7 @@ var chaosbag = []
 #var deck = []
 
 var charaList = []
+var current_chara
 
 func InitGame(_charaList,deckList):
 	for i in len(_charaList):
@@ -18,6 +19,7 @@ func InitGame(_charaList,deckList):
 		cha.res = 5
 		cha.at = 3
 		cha.deck = deckList[i].duplicate(true)
-		cha.hand = []
+		cha.hands = []
 		cha.discard = []
 		charaList.append(cha)
+	current_chara = charaList[0]

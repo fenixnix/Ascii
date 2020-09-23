@@ -1,0 +1,70 @@
+[
+    {
+        "id": 1111,
+        "name": "Study",
+        "img": "01111",
+        "imgb": "01111b",
+        "X":0,
+        "Y":0,
+        "class": "Mythos",
+        "type": "Location",
+        "set": "Core Set",
+        "encounter": "The Gathering",
+        "encounter#": "8",
+        "shroud":2,
+        "clues":2,
+        "connect":[]
+    },
+    {
+        "id": 1112,
+        "set": "Core Set",
+        "name": "Hallway",
+        "img": "01112",
+        "class": "Mythos",
+        "type": "Location",
+        "icons": "",
+        "traits": "",
+        "imgb": "01112b",
+        "encounter": "The Gathering",
+        "encounter#": "9"
+    },
+    {
+        "id": 1113,
+        "set": "Core Set",
+        "name": "Attic",
+        "img": "01113",
+        "class": "Mythos",
+        "type": "Location",
+        "icons": "",
+        "traits": "",
+        "imgb": "01113b",
+        "encounter": "The Gathering",
+        "encounter#": "10"
+    },
+    {
+        "id": 1114,
+        "set": "Core Set",
+        "name": "Cellar",
+        "img": "01114",
+        "class": "Mythos",
+        "type": "Location",
+        "icons": "",
+        "traits": "",
+        "imgb": "01114b",
+        "encounter": "The Gathering",
+        "encounter#": "11"
+    },
+    {
+        "id": 1115,
+        "set": "Core Set",
+        "name": "Parlor",
+        "img": "01115",
+        "class": "Mythos",
+        "type": "Location",
+        "icons": "",
+        "traits": "",
+        "imgb": "01115b",
+        "encounter": "The Gathering",
+        "encounter#": "12"
+    }
+]

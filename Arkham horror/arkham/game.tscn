@@ -1,26 +1,39 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://CharaStatus.gd" type="Script" id=1]
 [ext_resource path="res://game.gd" type="Script" id=2]
 [ext_resource path="res://Status.gd" type="Script" id=3]
 [ext_resource path="res://MessageLog.gd" type="Script" id=4]
-[ext_resource path="res://Location.tscn" type="PackedScene" id=5]
+[ext_resource path="res://CharaList.gd" type="Script" id=5]
+[ext_resource path="res://image/map.jpeg" type="Texture" id=6]
+[ext_resource path="res://map.gd" type="Script" id=7]
+[ext_resource path="res://HandCards.gd" type="Script" id=8]
 
 [node name="game" type="Node"]
 script = ExtResource( 2 )
 
+[node name="bg" type="Sprite" parent="."]
+modulate = Color( 0.184314, 0.184314, 0.184314, 1 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 6 )
+
 [node name="map" type="Node2D" parent="."]
+script = ExtResource( 7 )
 
-[node name="Location" parent="map" instance=ExtResource( 5 )]
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
 
-[node name="CharaList" type="HBoxContainer" parent="."]
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="CharaList" type="HBoxContainer" parent="UI"]
 anchor_right = 1.0
 margin_bottom = 138.0
+script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="CharaStatus" type="RichTextLabel" parent="."]
+[node name="CharaStatus" type="RichTextLabel" parent="UI"]
 visible = false
 anchor_bottom = 1.0
 margin_right = 270.0
@@ -30,7 +43,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="msg" type="Panel" parent="."]
+[node name="msg" type="Panel" parent="UI"]
 visible = false
 anchor_left = 0.229492
 anchor_top = 0.59
@@ -40,7 +53,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Message" type="RichTextLabel" parent="msg"]
+[node name="Message" type="RichTextLabel" parent="UI/msg"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 16.0
@@ -57,75 +70,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Tween" type="Tween" parent="msg/Message"]
+[node name="Tween" type="Tween" parent="UI/msg/Message"]
 
-[node name="Status" type="RichTextLabel" parent="."]
-anchor_left = 0.214791
-anchor_top = 0.161659
-anchor_right = 0.78901
-anchor_bottom = 0.906659
-script = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": true
-}
-
-[node name="Menu2" type="HBoxContainer" parent="."]
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-margin_left = -169.5
-margin_top = -40.0
-margin_right = 169.5
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="roll" type="Button" parent="Menu2"]
-margin_right = 44.0
-margin_bottom = 40.0
-text = "Roll"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="shuffle_ect" type="Button" parent="Menu2"]
-margin_left = 48.0
-margin_right = 115.0
-margin_bottom = 40.0
-text = "Shuffle"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="encounter" type="Button" parent="Menu2"]
-margin_left = 119.0
-margin_right = 210.0
-margin_bottom = 40.0
-text = "Encounter"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="shuffle" type="Button" parent="Menu2"]
-margin_left = 214.0
-margin_right = 281.0
-margin_bottom = 40.0
-text = "Shuffle"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="draw" type="Button" parent="Menu2"]
-margin_left = 285.0
-margin_right = 339.0
-margin_bottom = 40.0
-text = "Draw"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="UI"]
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
@@ -138,7 +85,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Return" type="Button" parent="."]
+[node name="Return" type="Button" parent="UI"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -65.0
@@ -148,7 +95,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="roll_result" type="RichTextLabel" parent="."]
+[node name="roll_result" type="RichTextLabel" parent="UI"]
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -105.0
@@ -158,7 +105,42 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Menu" type="GridContainer" parent="."]
+[node name="Status" type="RichTextLabel" parent="UI"]
+anchor_left = 0.214791
+anchor_top = 0.161659
+anchor_right = 0.78901
+anchor_bottom = 0.906659
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="StoryMark" type="RichTextLabel" parent="UI"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -145.0
+margin_right = 146.0
+margin_bottom = 50.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HandCards" type="HBoxContainer" parent="UI"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -334.0
+margin_top = -116.0
+margin_right = 334.0
+alignment = 1
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="test_Menu" type="GridContainer" parent="UI"]
+visible = false
 anchor_top = 1.0
 anchor_bottom = 1.0
 margin_top = -120.0
@@ -168,14 +150,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button" type="Button" parent="Menu"]
+[node name="Button" type="Button" parent="UI/test_Menu"]
 margin_right = 57.0
 margin_bottom = 27.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Push Agenda" type="Button" parent="Menu"]
+[node name="Push Agenda" type="Button" parent="UI/test_Menu"]
 margin_left = 61.0
 margin_right = 115.0
 margin_bottom = 27.0
@@ -183,62 +165,110 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="HP_add" type="Button" parent="Menu"]
+[node name="HP_add" type="Button" parent="UI/test_Menu"]
 margin_top = 31.0
 margin_right = 57.0
 margin_bottom = 58.0
 text = "+HP"
 
-[node name="HP_rmv" type="Button" parent="Menu"]
+[node name="HP_rmv" type="Button" parent="UI/test_Menu"]
 margin_left = 61.0
 margin_top = 31.0
 margin_right = 115.0
 margin_bottom = 58.0
 text = "-HP"
 
-[node name="SAN_add" type="Button" parent="Menu"]
+[node name="SAN_add" type="Button" parent="UI/test_Menu"]
 margin_top = 62.0
 margin_right = 57.0
 margin_bottom = 89.0
 text = "+SAN"
 
-[node name="SAN_rmv" type="Button" parent="Menu"]
+[node name="SAN_rmv" type="Button" parent="UI/test_Menu"]
 margin_left = 61.0
 margin_top = 62.0
 margin_right = 115.0
 margin_bottom = 89.0
 text = "-SAN"
 
-[node name="RES_add" type="Button" parent="Menu"]
+[node name="RES_add" type="Button" parent="UI/test_Menu"]
 margin_top = 93.0
 margin_right = 57.0
 margin_bottom = 120.0
 text = "+RES"
 
-[node name="RES_rmv" type="Button" parent="Menu"]
+[node name="RES_rmv" type="Button" parent="UI/test_Menu"]
 margin_left = 61.0
 margin_top = 93.0
 margin_right = 115.0
 margin_bottom = 120.0
 text = "-RES"
 
-[node name="StoryMark" type="RichTextLabel" parent="."]
+[node name="test_Menu2" type="HBoxContainer" parent="UI"]
+visible = false
 anchor_left = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-margin_left = -145.0
-margin_right = 146.0
-margin_bottom = 50.0
+anchor_bottom = 1.0
+margin_left = -169.5
+margin_top = -40.0
+margin_right = 169.5
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="meta_clicked" from="Status" to="Status" method="_on_Status_meta_clicked"]
-[connection signal="meta_hover_ended" from="Status" to="Status" method="_on_Status_meta_hover_ended"]
-[connection signal="meta_hover_started" from="Status" to="Status" method="_on_Status_meta_hover_started"]
-[connection signal="pressed" from="Menu2/roll" to="." method="_on_roll_pressed"]
-[connection signal="pressed" from="Menu2/shuffle_ect" to="." method="_on_shuffle_ect_pressed"]
-[connection signal="pressed" from="Menu2/encounter" to="." method="_on_encounter_pressed"]
-[connection signal="pressed" from="Menu2/shuffle" to="." method="_on_shuffle_pressed"]
-[connection signal="pressed" from="Menu2/draw" to="." method="_on_draw_pressed"]
-[connection signal="pressed" from="Return" to="." method="_on_Return_pressed"]
-[connection signal="pressed" from="Menu/Button" to="." method="_on_Button_pressed"]
-[connection signal="pressed" from="Menu/Push Agenda" to="." method="_on_Push_Agenda_pressed"]
+
+[node name="roll" type="Button" parent="UI/test_Menu2"]
+margin_right = 44.0
+margin_bottom = 40.0
+text = "Roll"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="shuffle_ect" type="Button" parent="UI/test_Menu2"]
+margin_left = 48.0
+margin_right = 115.0
+margin_bottom = 40.0
+text = "Shuffle"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="encounter" type="Button" parent="UI/test_Menu2"]
+margin_left = 119.0
+margin_right = 210.0
+margin_bottom = 40.0
+text = "Encounter"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="shuffle" type="Button" parent="UI/test_Menu2"]
+margin_left = 214.0
+margin_right = 281.0
+margin_bottom = 40.0
+text = "Shuffle"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="draw" type="Button" parent="UI/test_Menu2"]
+margin_left = 285.0
+margin_right = 339.0
+margin_bottom = 40.0
+text = "Draw"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="select" from="UI/CharaList" to="." method="_on_CharaList_select"]
+[connection signal="pressed" from="UI/Return" to="." method="_on_Return_pressed"]
+[connection signal="meta_clicked" from="UI/Status" to="UI/Status" method="_on_Status_meta_clicked"]
+[connection signal="meta_hover_ended" from="UI/Status" to="UI/Status" method="_on_Status_meta_hover_ended"]
+[connection signal="meta_hover_started" from="UI/Status" to="UI/Status" method="_on_Status_meta_hover_started"]
+[connection signal="pressed" from="UI/test_Menu/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="UI/test_Menu/Push Agenda" to="." method="_on_Push_Agenda_pressed"]
+[connection signal="pressed" from="UI/test_Menu2/roll" to="." method="_on_roll_pressed"]
+[connection signal="pressed" from="UI/test_Menu2/shuffle_ect" to="." method="_on_shuffle_ect_pressed"]
+[connection signal="pressed" from="UI/test_Menu2/encounter" to="." method="_on_encounter_pressed"]
+[connection signal="pressed" from="UI/test_Menu2/shuffle" to="." method="_on_shuffle_pressed"]
+[connection signal="pressed" from="UI/test_Menu2/draw" to="." method="_on_draw_pressed"]

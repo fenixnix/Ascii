@@ -5,46 +5,48 @@ var curAct = 0
 var doom = 0
 var clue = 0
 
-var charaLabelPrefab = preload("res://CharaLabel.tscn")
+onready var msg_lab = $UI/msg/Message
+
 
 func _ready():
 	rand_seed(OS.get_ticks_msec())
-	$CharaStatus.Set(GlbDat.charaList)
-	for c in $CharaList.get_children():
-		c.queue_free()
-	for c in GlbDat.charaList:
-		var lab = charaLabelPrefab.instance()
-		$CharaList.add_child(lab)
-		lab.Set(c)
+	$UI/CharaStatus.Set(GlbDat.charaList)
+	$UI/CharaList.Init(GlbDat.charaList)
 	#$Status.Refresh(self)
 	
 	var agenda = GlbDat.story.agenda[curAgenda]
 	var act = GlbDat.story.act[curAct]
 	
-	$msg/Message.Title(agenda.name)
-	$msg/Message.Text(agenda.desc)
-	$msg/Message.Title(act.name)
-	$msg/Message.Text(act.desc)
+	msg_lab.Title(agenda.name)
+	msg_lab.Text(agenda.desc)
+	msg_lab.Title(act.name)
+	msg_lab.Text(act.desc)
 	
 	doom = agenda.doom
 	clue = act.clues
 	
-	$StoryMark.bbcode_enabled = true
-	$StoryMark.bbcode_text = "[img=32x32]res://image/doom.png[/img] %d [img=32x32]res://image/clue.png[/img] %d"%[doom,clue]
+	$UI/StoryMark.bbcode_enabled = true
+	$UI/StoryMark.bbcode_text = "[img=32x32]res://image/doom.png[/img] %d [img=32x32]res://image/clue.png[/img] %d"%[doom,clue]
+
+	#Location
+	for l in GlbDat.story.locations:
+		$map.AddLocation(l)
+	for chara in GlbDat.charaList:
+		$map.Enter(chara,GlbDat.story.start_location)
 
 func PushAct():
-	$msg/Message.Title(GlbDat.story.act[curAct].nameB)
-	$msg/Message.Text(GlbDat.story.act[curAct].descB)
+	msg_lab.Title(GlbDat.story.act[curAct].nameB)
+	msg_lab.Text(GlbDat.story.act[curAct].descB)
 	curAct+=1
-	$msg/Message.Title(GlbDat.story.act[curAct].nameB)
-	$msg/Message.Text(GlbDat.story.act[curAct].descB)
+	msg_lab.Title(GlbDat.story.act[curAct].nameB)
+	msg_lab.Text(GlbDat.story.act[curAct].descB)
 
 func PushAgenda():	
-	$msg/Message.Title(GlbDat.story.agenda[curAgenda].nameB)
-	$msg/Message.Text(GlbDat.story.agenda[curAgenda].descB)
+	msg_lab.Title(GlbDat.story.agenda[curAgenda].nameB)
+	msg_lab.Text(GlbDat.story.agenda[curAgenda].descB)
 	curAgenda+=1
-	$msg/Message.Title(GlbDat.story.agenda[curAgenda].nameB)
-	$msg/Message.Text(GlbDat.story.agenda[curAgenda].descB)
+	msg_lab.Title(GlbDat.story.agenda[curAgenda].nameB)
+	msg_lab.Text(GlbDat.story.agenda[curAgenda].descB)
 
 func _on_roll_pressed():
 	rand_seed(OS.get_ticks_msec())
@@ -86,3 +88,10 @@ func _on_Button_pressed():
 
 func _on_Push_Agenda_pressed():
 	PushAgenda()
+
+func _on_CharaList_select(chara):
+	GlbDat.current_chara = chara
+	refresh_chara(chara)
+
+func refresh_chara(chara):
+	$UI/HandCards.Set(chara.hands)

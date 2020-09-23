@@ -4,13 +4,16 @@ var dataPath = "res://data/%s.json"
 
 var db = []
 
-onready var cardDb = LoadDB("card")
-onready var charaDb = LoadDB("chara")
+var cardDb = []
+var charaDb = []
 var enmDb = []
 var hidenDb = []
 
+var cardDict = {}
+
 var ectDb = {}
 var storyDb = {}
+var locDb = {}
 
 var class_icon = {
 	"Guardian":"res://image/icon/guardian.png",
@@ -38,15 +41,21 @@ var chaos_symbel = {
 	"*":"o",
 }
 
-func _ready():
+func _init():
 	for f in ["core","y2","y3","y4","y5","y6","y7","y50","y51","y52","y53",
 		"y601","y602","y603","y604","y605","y81","y82","y83","y84","y98","y99","y90"]:
 		db += LoadDB("db_%s"%f)
+		
+	#cardDb = LoadDB("card")
+	charaDb = LoadDB("chara")
 	#charaDb.clear()
-	cardDb.clear()
 	
 	storyDb = LoadDB("story/story")
 	
+	locDb.clear()
+	var locJson = LoadDB("story/loc")
+	for j in locJson:
+		locDb[str(j.id)] = j
 	
 	for d in db:
 		if d["class"] == "Mythos":
@@ -58,6 +67,7 @@ func _ready():
 			"Asset","Treachery","Event","Skill":
 				if d["class"]!="Mythos":
 					cardDb.append(d)
+					cardDict[str(d.id)] = d
 			"Enemy":enmDb.append(d)
 #			"Scenario":
 #				checkEct(d.encounter)
