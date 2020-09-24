@@ -16,6 +16,9 @@ var hands = []
 var discard = []
 
 var assets = []
+var threats = []
+
+var location
 
 func Set(dat,_deck):
 	data = dat
@@ -29,3 +32,14 @@ func Set(dat,_deck):
 func Draw(cnt = 1):
 	for i in cnt:
 		hands.append(deck.pop_front())
+
+func EqpAsset(asset):
+	assets.append(asset)
+
+func Encounter(card):
+	print_debug(card)
+	match card.type:
+		"Enemy":
+			var enm = location.Spawn(card.id)
+			threats.append(enm)
+		_:threats.append(card)

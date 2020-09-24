@@ -1298,7 +1298,11 @@
         "img": "01118",
         "class": "Mythos",
         "type": "Enemy",
-        "icons": "",
+        "C":4,
+        "A":1,
+        "hp":4,
+        "sta":1,
+        "san":2,
         "traits": "Humanoid. Monster. Ghoul.",
         "encounter": "The Gathering",
         "encounter#": "15"

@@ -1,0 +1,19 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://shader/masked_sprite.shader" type="Shader" id=1]
+[ext_resource path="res://image/01001.png" type="Texture" id=2]
+[ext_resource path="res://image/chara_msk.png" type="Texture" id=3]
+[ext_resource path="res://CharaSymbel.gd" type="Script" id=4]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 1 )
+shader_param/mask = ExtResource( 3 )
+
+[node name="CharaSymbel" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="img" type="Sprite" parent="."]
+material = SubResource( 1 )
+position = Vector2( 27.0948, -3.92493 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )

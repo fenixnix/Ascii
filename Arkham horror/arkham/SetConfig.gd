@@ -18,7 +18,7 @@ func InitDb(_db):
 		dbDict[str(d.id)] = d
 	$HBox/DB.clear()
 	for d in db:
-		$HBox/DB.add_item(d.name)
+		$HBox/DB.add_item("%d[%s]:%s"%[d.id,d.type,d.name])
 
 func LoadDat(file):
 	fileName = file

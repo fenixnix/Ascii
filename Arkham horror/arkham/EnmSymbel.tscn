@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://shader/masked_sprite.shader" type="Shader" id=1]
+[ext_resource path="res://image/enm_msk.png" type="Texture" id=2]
+[ext_resource path="res://image/01160.jpg" type="Texture" id=3]
+[ext_resource path="res://EnmSymbel.gd" type="Script" id=4]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 1 )
+shader_param/mask = ExtResource( 2 )
+
+[node name="Symbel" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="img" type="Sprite" parent="."]
+material = SubResource( 1 )
+position = Vector2( -0.623413, -35.423 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+
+[node name="hp" type="Label" parent="."]
+margin_left = -21.2287
+margin_top = -41.3048
+margin_right = 18.7713
+margin_bottom = -20.3048
+text = "5"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -46,8 +46,9 @@ func _on_Scenario_pressed():
 
 onready var memberList = $CharaList
 func _on_ItemList_item_activated(index):
-	charaList.append(GlbDb.charaDb[index])
-	deckList.append({})
+	var charaDat = GlbDb.charaDb[index]
+	charaList.append(charaDat)
+	deckList.append(FileRW.LoadJsonFile("%d.json"%charaDat.id))
 	memberList.clear()
 	for c in charaList:
 		memberList.add_item(c.name,GlbDb.CardImg(c.img))

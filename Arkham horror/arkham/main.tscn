@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://main.gd" type="Script" id=1]
+[ext_resource path="res://CharaIcon.tscn" type="PackedScene" id=2]
 [ext_resource path="res://EnemyRT.gd" type="Script" id=4]
 
 [node name="main" type="Control"]
@@ -14,7 +15,7 @@ __meta__ = {
 [node name="bg" type="ColorRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-color = Color( 0.596078, 0.596078, 0.596078, 1 )
+color = Color( 0, 0, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -27,7 +28,7 @@ __meta__ = {
 }
 
 [node name="CharaList" type="ItemList" parent="."]
-anchor_top = 0.635
+anchor_top = 0.776667
 anchor_right = 1.0
 anchor_bottom = 1.0
 size_flags_horizontal = 3
@@ -47,7 +48,7 @@ __meta__ = {
 }
 
 [node name="img" type="HBoxContainer" parent="HBox"]
-margin_right = 619.0
+margin_right = 618.0
 margin_bottom = 241.0
 size_flags_horizontal = 3
 
@@ -175,6 +176,98 @@ script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -434.0
+margin_top = -204.0
+margin_right = 434.0
+margin_bottom = 204.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="ScrollContainer"]
+margin_right = 852.0
+margin_bottom = 728.0
+columns = 4
+
+[node name="CharaIcon" parent="ScrollContainer/GridContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 210.0
+margin_bottom = 240.0
+
+[node name="CharaIcon5" parent="ScrollContainer/GridContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 214.0
+margin_right = 424.0
+margin_bottom = 240.0
+
+[node name="CharaIcon6" parent="ScrollContainer/GridContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 428.0
+margin_right = 638.0
+margin_bottom = 240.0
+
+[node name="CharaIcon7" parent="ScrollContainer/GridContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 642.0
+margin_right = 852.0
+margin_bottom = 240.0
+
+[node name="CharaIcon8" parent="ScrollContainer/GridContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 244.0
+margin_right = 210.0
+margin_bottom = 484.0
+
+[node name="CharaIcon9" parent="ScrollContainer/GridContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 214.0
+margin_top = 244.0
+margin_right = 424.0
+margin_bottom = 484.0
+
+[node name="CharaIcon10" parent="ScrollContainer/GridContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 428.0
+margin_top = 244.0
+margin_right = 638.0
+margin_bottom = 484.0
+
+[node name="CharaIcon2" parent="ScrollContainer/GridContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 642.0
+margin_top = 244.0
+margin_right = 852.0
+margin_bottom = 484.0
+
+[node name="CharaIcon3" parent="ScrollContainer/GridContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 488.0
+margin_right = 210.0
+margin_bottom = 728.0
+
+[node name="CharaIcon4" parent="ScrollContainer/GridContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 214.0
+margin_top = 488.0
+margin_right = 424.0
+margin_bottom = 728.0
 [connection signal="item_activated" from="CharaList" to="." method="_on_CharaList_item_activated"]
 [connection signal="item_activated" from="ItemList" to="." method="_on_ItemList_item_activated"]
 [connection signal="item_selected" from="ItemList" to="." method="_on_ItemList_item_selected"]

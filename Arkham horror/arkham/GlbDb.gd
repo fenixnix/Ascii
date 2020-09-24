@@ -12,6 +12,8 @@ var hidenDb = []
 var cardDict = {}
 
 var ectDb = {}
+var ectDict = {}
+
 var storyDb = {}
 var locDb = {}
 
@@ -57,10 +59,16 @@ func _init():
 	for j in locJson:
 		locDb[str(j.id)] = j
 	
+	var ectJson = LoadDB("ect_set")
+	ectDict.clear()
+	for ect in ectJson:
+		ectDict[ect.name] = ect.set 
+	
 	for d in db:
 		if d["class"] == "Mythos":
 			if d["type"] == "Enemy" || d["type"] == "Treachery":
 				hidenDb.append(d)
+				cardDict[str(d.id)] = d
 		match d.type:
 #			"Investigator":
 #				charaDb.append(d)

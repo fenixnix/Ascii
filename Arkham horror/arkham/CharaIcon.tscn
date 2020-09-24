@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://shader/masked_sprite.shader" type="Shader" id=1]
+[ext_resource path="res://image/01001.png" type="Texture" id=2]
+[ext_resource path="res://image/chara_msk.png" type="Texture" id=3]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 1 )
+shader_param/mask = ExtResource( 3 )
+
+[node name="CharaIcon" type="Control"]
+anchor_right = 0.205078
+anchor_bottom = 0.396667
+rect_min_size = Vector2( 210, 240 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+material = SubResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -7.4162
+margin_top = -44.4974
+margin_right = 200.584
+margin_bottom = 17.5026
+mouse_filter = 2
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

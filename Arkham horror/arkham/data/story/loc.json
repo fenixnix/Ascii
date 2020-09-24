@@ -20,11 +20,14 @@
         "name": "Hallway",
         "img": "01112",
         "X":0,
-        "y":0,
+        "Y":0,
         "type": "Location",
         "imgb": "01112b",
         "encounter": "The Gathering",
-        "encounter#": "9"
+        "encounter#": "9",
+        "shroud":1,
+        "clues":0,
+        "connect":["1113","1114","1115"]
     },
     {
         "id": 1113,
@@ -37,7 +40,10 @@
         "type": "Location",
         "imgb": "01113b",
         "encounter": "The Gathering",
-        "encounter#": "10"
+        "encounter#": "10",
+        "shroud":1,
+        "clues":2,
+        "connect":["1112"]
     },
     {
         "id": 1114,
@@ -50,7 +56,10 @@
         "type": "Location",
         "imgb": "01114b",
         "encounter": "The Gathering",
-        "encounter#": "11"
+        "encounter#": "11",
+        "shroud":4,
+        "clues":2,
+        "connect":["1112"]
     },
     {
         "id": 1115,
@@ -63,6 +72,9 @@
         "type": "Location",
         "imgb": "01115b",
         "encounter": "The Gathering",
-        "encounter#": "12"
+        "encounter#": "12",
+        "shroud":2,
+        "clues":0,
+        "connect":["1112"]
     }
 ]

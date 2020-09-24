@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Asset.gd" type="Script" id=1]
+[ext_resource path="res://image/resource.png" type="Texture" id=2]
+
+[node name="Asset" type="Control"]
+margin_right = 180.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 180, 40 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 183.0
+margin_bottom = 23.0
+color = Color( 1, 1, 1, 0.12549 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Icon" type="TextureRect" parent="."]
+margin_right = 22.0
+margin_bottom = 21.0
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 25.3984
+margin_right = 109.398
+margin_bottom = 21.0
+text = "Asset Card"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Ammo" type="RichTextLabel" parent="."]
+margin_left = 22.827
+margin_top = -23.4454
+margin_right = 132.827
+margin_bottom = -1.44545
+fit_content_height = true
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
