@@ -28,40 +28,50 @@ __meta__ = {
 }
 
 [node name="CharaList" type="ItemList" parent="."]
-anchor_top = 0.776667
-anchor_right = 1.0
+anchor_top = 1.0
 anchor_bottom = 1.0
+margin_top = -115.0
+margin_right = 446.0
 size_flags_horizontal = 3
 max_columns = 4
 same_column_width = true
 icon_mode = 0
 fixed_icon_size = Vector2( 120, 90 )
 __meta__ = {
-"_edit_use_anchors_": true
+"_edit_use_anchors_": false
 }
 
 [node name="HBox" type="HBoxContainer" parent="."]
-anchor_right = 0.604492
-anchor_bottom = 0.401667
+anchor_right = 0.333984
+anchor_bottom = 0.736667
 __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="img" type="HBoxContainer" parent="HBox"]
-margin_right = 618.0
-margin_bottom = 241.0
+[node name="img" type="VBoxContainer" parent="HBox"]
+margin_right = 341.0
+margin_bottom = 442.0
 size_flags_horizontal = 3
 
 [node name="front" type="TextureRect" parent="HBox/img"]
-margin_bottom = 241.0
+margin_right = 341.0
+margin_bottom = 219.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+expand = true
+stretch_mode = 6
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="back" type="TextureRect" parent="HBox/img"]
-margin_left = 4.0
-margin_right = 4.0
-margin_bottom = 241.0
+margin_top = 223.0
+margin_right = 341.0
+margin_bottom = 442.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+expand = true
+stretch_mode = 6
 __meta__ = {
 "_edit_use_anchors_": false
 }

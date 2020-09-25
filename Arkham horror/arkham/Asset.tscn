@@ -7,6 +7,8 @@
 margin_right = 180.0
 margin_bottom = 40.0
 rect_min_size = Vector2( 180, 40 )
+mouse_filter = 1
+mouse_default_cursor_shape = 16
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -33,6 +35,7 @@ __meta__ = {
 margin_left = 25.3984
 margin_right = 109.398
 margin_bottom = 21.0
+mouse_filter = 1
 text = "Asset Card"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -48,3 +51,5 @@ scroll_active = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="mouse_entered" from="." to="." method="_on_Asset_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_Asset_mouse_exited"]

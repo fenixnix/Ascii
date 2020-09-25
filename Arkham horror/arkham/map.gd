@@ -22,9 +22,10 @@ func SetupAction(chara):
 		c.SetActionType("")
 	if chara.at<=0:
 		return
-	for c in get_children():	
+	for c in get_children():
 		if c.chara.has(chara):
-			c.SetActionType("scan")
+			if c.clue>0:
+				c.SetActionType("scan")
 			for negh in c.data.connect:
 				get_node("%s"%negh).SetActionType("move")
 

@@ -25,6 +25,13 @@ var class_icon = {
 	"Survivor":"res://image/icon/survivor.png",
 }
 
+var attr_icon_dict = {
+	"W":"[color=#008080] %d [font=res://font/icon.tres]p[/font][/color]",
+	"I":"[color=#f0f000] %d [font=res://font/icon.tres]b[/font][/color]",
+	"C":"[color=#f0f000] %d [font=res://font/icon.tres]c[/font][/color]",
+	"A":"[color=#f0f000] %d [font=res://font/icon.tres]d[/font][/color]",
+}
+ 
 var class_color = {
 	"Guardian":"#2b80c5",
 	"Mystic":"#4331b9",

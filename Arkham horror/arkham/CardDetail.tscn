@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://image/01016.png" type="Texture" id=1]
+[ext_resource path="res://CardDetail.gd" type="Script" id=2]
+
+[node name="CardDetail" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="img" type="TextureRect" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -150.0
+margin_top = -209.5
+margin_right = 150.0
+margin_bottom = 209.5
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

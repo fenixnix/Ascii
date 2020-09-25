@@ -100,6 +100,16 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="PayClue" type="Button" parent="UI/StoryMark"]
+margin_left = 207.255
+margin_top = 2.1143
+margin_right = 268.255
+margin_bottom = 34.1143
+text = "+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Threats" type="VBoxContainer" parent="UI"]
 anchor_top = 0.5
 anchor_bottom = 0.5
@@ -188,6 +198,7 @@ __meta__ = {
 }
 
 [node name="test_Menu" type="GridContainer" parent="UI"]
+visible = false
 anchor_top = 1.0
 anchor_bottom = 1.0
 margin_top = -120.0
@@ -326,6 +337,7 @@ __meta__ = {
 script = ExtResource( 11 )
 [connection signal="select" from="UI/CharaList" to="." method="_on_CharaList_select"]
 [connection signal="use" from="UI/HandCards" to="." method="_on_HandCards_use"]
+[connection signal="pressed" from="UI/StoryMark/PayClue" to="." method="_on_PayClue_pressed"]
 [connection signal="pressed" from="UI/Return" to="." method="_on_Return_pressed"]
 [connection signal="meta_clicked" from="UI/Status" to="UI/Status" method="_on_Status_meta_clicked"]
 [connection signal="meta_hover_ended" from="UI/Status" to="UI/Status" method="_on_Status_meta_hover_ended"]

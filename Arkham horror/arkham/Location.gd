@@ -52,6 +52,9 @@ func refresh():
 		cha.Set(c)
 		cnt += 1
 
+func GetShroud():
+	return data.get("shroud",0)
+
 func SetActionType(type):
 	match type:
 		"scan":

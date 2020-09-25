@@ -1,7 +1,6 @@
 extends Node
 
 var story
-var doom = 0
 var ect_deck = []
 var ect_discard = []
 var chaosbag = []
@@ -34,7 +33,7 @@ func CharaCount():
 	return $charas.get_child_count()
 
 func Use(card):
-	#check action	
+	#check action
 	var cost = card.get("cost",0)
 	if current_chara.res>=cost:
 		current_chara.at -= 1
@@ -63,10 +62,31 @@ func MoveTo(loc):
 func Scan(loc):
 	current_chara.at -= 1
 	#TODO show chaos token
-	#success
-	loc.clue -= 1
-	current_chara.clue += 1
+	ChaosCheck.Set({
+		"chara":current_chara,
+		"type":"I",
+		"chaos":"???",
+		"dst":loc.GetShroud()
+	})
+	if Roll(current_chara,"I",loc.GetShroud()):
+		#success
+		if loc.clue>0:
+			loc.clue -= 1
+			current_chara.clue += 1
 
+func Roll(chara,type,dst):
+	var src = chara.GetAttr(type)
+	var token = chaosbag[randi()%len(chaosbag)]
+	var val = 0
+	match token:
+		"X":val = src + 1
+		"@":val = src + CharaCount()
+		"#":pass 
+		"&":val = -1
+		"*":pass
+		_:val = src+token
+	return val>=dst
+	
 func ActionDrawCard():
 	if current_chara.at >0:
 		current_chara.Draw()
@@ -92,7 +112,8 @@ func SupplyPhase():
 		#TODO discard hand card
 
 func MythosPhase():
-	doom -= 1
+	Story.AddDoom()
+	Story.CheckDoom()
 	#Check agenda
 	for chara in charas.get_children():
 		chara.Encounter(ect_deck.pop_front())

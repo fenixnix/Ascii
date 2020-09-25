@@ -29,6 +29,9 @@ func Set(dat,_deck):
 			deck.append(k)
 	deck.shuffle()
 
+func GetAttr(key):
+	return data.get(key,0)
+
 func Draw(cnt = 1):
 	for i in cnt:
 		hands.append(deck.pop_front())

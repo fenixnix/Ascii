@@ -1824,7 +1824,11 @@
         "img": "01159",
         "class": "Mythos",
         "type": "Enemy",
-        "icons": "",
+        "hp":1,
+        "C":1,
+        "A":3,
+        "sta":1,
+        "san":0,
         "traits": "Creature.",
         "encounter": "Rats",
         "encounter#": "1-3"

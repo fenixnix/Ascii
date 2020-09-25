@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://shader/masked_sprite.shader" type="Shader" id=1]
+[ext_resource path="res://image/chara_msk.png" type="Texture" id=2]
+[ext_resource path="res://image/01001.png" type="Texture" id=3]
+[ext_resource path="res://ChaosCheck.gd" type="Script" id=4]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 1 )
+shader_param/mask = ExtResource( 2 )
+
+[node name="ChaosCheck" type="CanvasLayer"]
+script = ExtResource( 4 )
+
+[node name="root" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="img" type="TextureRect" parent="root"]
+material = SubResource( 1 )
+anchor_left = 0.337712
+anchor_top = 0.211667
+anchor_right = 0.745915
+anchor_bottom = 0.711667
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="code" type="RichTextLabel" parent="root"]
+anchor_left = 0.533203
+anchor_top = 0.436667
+anchor_right = 0.736328
+anchor_bottom = 0.593333
+bbcode_enabled = true
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="OK" type="Button" parent="root"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = 2.13623
+margin_top = -215.901
+margin_right = 39.1362
+margin_bottom = -188.901
+text = "OK"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="root/OK" to="." method="_on_OK_pressed"]

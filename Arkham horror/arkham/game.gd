@@ -1,9 +1,5 @@
 extends Node
 
-var curAgenda = 0
-var curAct = 0
-var clue = 0
-
 onready var msg_lab = $UI/msg/Message
 
 func _ready():
@@ -12,46 +8,29 @@ func _ready():
 	for c in GlbDat.charas.get_children():
 		c.Draw(5)
 	
-	var agenda = GlbDat.story.agenda[curAgenda]
-	var act = GlbDat.story.act[curAct]
-	
-	msg_lab.Title(agenda.name)
-	msg_lab.Text(agenda.desc)
-	msg_lab.Title(act.name)
-	msg_lab.Text(act.desc)
-	
-	GlbDat.doom = agenda.doom
-	clue = act.clues
-	
-	$UI/StoryMark.bbcode_enabled = true
-	$UI/StoryMark.bbcode_text = "[img=32x32]res://image/doom.png[/img] %d [img=32x32]res://image/clue.png[/img] %d"%[GlbDat.doom,clue]
+	Story.connect("send_msg",self,"on_msg")
+	Story.connect("remap",self,"on_remap")
+	Story.Set(GlbDat.story)
+	refresh_story()
+	GlbDat.ect_deck.shuffle()
 
-	$map.SetLocation(GlbDat.story.locations)
-	for chara in GlbDat.charas.get_children():
-		$map.Enter(chara,GlbDat.story.start_location)
-	
 	if GlbDat.charas.get_child_count()>0:
 		_on_CharaList_select(GlbDat.charas.get_child(0))
 
-func PushAct():
-	var act = GlbDat.story.act[curAct]
-	msg_lab.Title(act.nameB)
-	msg_lab.Text(act.descB)
-	$map.SetLocation(act.get("locations",[]))
-	if act.has("start_location"):
-		for chara in GlbDat.charas.get_children():
-			$map.Enter(chara,act.start_location)
-	curAct+=1
-	msg_lab.Title(GlbDat.story.act[curAct].nameB)
-	msg_lab.Text(GlbDat.story.act[curAct].descB)
-	$map.Refresh()
+func refresh_story():
+	$UI/StoryMark.bbcode_enabled = true
+	$UI/StoryMark.bbcode_text = "[img=32x32]res://image/doom.png[/img] %d/%d [img=32x32]res://image/clue.png[/img] %d/%d"%[Story.doom,Story.curAgenda.doom,Story.clue,Story.curAct.clues]
 
-func PushAgenda():	
-	msg_lab.Title(GlbDat.story.agenda[curAgenda].nameB)
-	msg_lab.Text(GlbDat.story.agenda[curAgenda].descB)
-	curAgenda+=1
-	msg_lab.Title(GlbDat.story.agenda[curAgenda].nameB)
-	msg_lab.Text(GlbDat.story.agenda[curAgenda].descB)
+func on_msg(type,content):
+	match type:
+		"title":msg_lab.Title(content)
+		"text":msg_lab.Text(content)
+
+func on_remap(dat):
+	$map.SetLocation(dat.locations)
+	for chara in GlbDat.charas.get_children():
+		$map.Enter(chara,dat.start_location)
+	$map.Refresh()
 
 func _on_roll_pressed():
 	rand_seed(OS.get_ticks_msec())
@@ -88,10 +67,10 @@ func _on_shuffle_ect_pressed():
 	GlbDat.ect_deck.shuffle()
 
 func _on_Button_pressed():
-	PushAct()
+	Story.PushAct()
 
 func _on_Push_Agenda_pressed():
-	PushAgenda()
+	Story.PushAgenda()
 
 func _on_CharaList_select(chara):
 	GlbDat.current_chara = chara
@@ -126,3 +105,8 @@ func _on_EndTurn_pressed():
 	GlbDat.MythosPhase()
 	refresh_chara(GlbDat.current_chara)
 	$map.Refresh()
+	refresh_story()
+
+func _on_PayClue_pressed():
+	Story.PayClue(GlbDat.current_chara.clue)
+	refresh_story()
