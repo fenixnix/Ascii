@@ -1,6 +1,13 @@
 import json
 from imgCrawler import GrabByName
 
+def SplitTraits(traits):
+    tmp = []
+    for t in traits.split('.'):
+        c = t.strip()
+        if c != '':
+            tmp.append(c)
+    return tmp
 
 def Cvt(start,src,dst):
     db = []
@@ -27,7 +34,7 @@ def Cvt(start,src,dst):
                     "class":d[1].strip(),
                     "type":d[3].strip(),
                     "icons":d[4],
-                    "traits":d[5],
+                    "traits":SplitTraits(d[5]),
                     #"encounter":d[7]
                 }
             #GrabByName(dat["img"])

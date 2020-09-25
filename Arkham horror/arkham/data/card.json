@@ -1,35 +1,1098 @@
 [
     {
-        "id":1006,
-        "name":"Roland`s .38 Special",
-        "img":"res://image/card/01006.png",
-        "type":"support",
-        "slot":"weapon",
-        "cost":3,
+        "id": 1006,
+        "set": "Core Set",
+        "name": "Roland's .38 Special",
+        "img": "01006",
+        "class": "Neutral",
+        "type": "Asset",
+        "icons": "  ",
+        "traits":[
+            "Item","Weapon","Firearm"
+        ],
         "check":["C","A","U"],
-        "bullet":4,
+        "charge":4,
+        "cost": 3,
         "desc":"花費一顆子彈：攻擊，這次攻擊力量+1（如果地點有至少一個線索，則力量+3）。這次攻擊傷害+1"
-    },    
+    },
     {
-        "id":1007,
-        "name":"Cover Up",
-        "img":"res://image/card/01007.png",
-        "type":"support",
-        "slot":"weapon",
-        "cost":3,
-        "check":[],
-        "bullet":4,
-        "desc":"花費一顆子彈：攻擊，這次攻擊力量+1（如果地點有至少一個線索，則力量+3）。這次攻擊傷害+1"
-    },    
+        "id": 1016,
+        "set": "Core Set",
+        "name": ".45 Automatic",
+        "img": "01016",
+        "class": "Guardian",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Item",
+            "Weapon",
+            "Firearm"
+        ],
+        "charge":4,
+        "cost": 4
+    },
     {
-        "id":1008,
-        "name":"Daisy`s Tote Bag",
-        "img":"res://image/card/01008.jpg",
-        "type":"support",
-        "slot":"weapon",
-        "cost":3,
-        "check":["W","I","U"],
-        "bullet":4,
-        "desc":"花費一顆子彈：攻擊，這次攻擊力量+1（如果地點有至少一個線索，則力量+3）。這次攻擊傷害+1"
+        "id": 1017,
+        "set": "Core Set",
+        "name": "Physical Training",
+        "img": "01017",
+        "class": "Guardian",
+        "type": "Asset",
+        "icons": " ",
+        "traits": [
+            "Talent"
+        ],
+        "cost": 2
+    },
+    {
+        "id": 1018,
+        "set": "Core Set",
+        "name": "Beat Cop",
+        "img": "01018",
+        "class": "Guardian",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Ally",
+            "Police"
+        ],
+        "cost": 4
+    },
+    {
+        "id": 1019,
+        "set": "Core Set",
+        "name": "First Aid",
+        "img": "01019",
+        "class": "Guardian",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Talent",
+            "Science"
+        ],
+        "charge":3,
+        "cost": 2
+    },
+    {
+        "id": 1020,
+        "set": "Core Set",
+        "name": "Machete",
+        "img": "01020",
+        "class": "Guardian",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Item",
+            "Weapon",
+            "Melee"
+        ],
+        "cost": 3
+    },
+    {
+        "id": 1021,
+        "set": "Core Set",
+        "name": "Guard Dog",
+        "img": "01021",
+        "class": "Guardian",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Ally",
+            "Creature"
+        ],
+        "cost": 3
+    },
+    {
+        "id": 1022,
+        "set": "Core Set",
+        "name": "Evidence!",
+        "img": "01022",
+        "class": "Guardian",
+        "type": "Event",
+        "icons": " ",
+        "traits": [
+            "Insight"
+        ],
+        "cost": 1
+    },
+    {
+        "id": 1023,
+        "set": "Core Set",
+        "name": "Dodge",
+        "img": "01023",
+        "class": "Guardian",
+        "type": "Event",
+        "icons": " ",
+        "traits": [
+            "Tactic"
+        ],
+        "cost": 1
+    },
+    {
+        "id": 1024,
+        "set": "Core Set",
+        "name": "Dynamite Blast",
+        "img": "01024",
+        "class": "Guardian",
+        "type": "Event",
+        "icons": "",
+        "traits": [
+            "Tactic"
+        ],
+        "cost": 5
+    },
+    {
+        "id": 1025,
+        "set": "Core Set",
+        "name": "Vicious Blow",
+        "img": "01025",
+        "class": "Guardian",
+        "type": "Skill",
+        "icons": "",
+        "traits": [
+            "Practiced"
+        ]
+    },
+    {
+        "id": 1026,
+        "set": "Core Set",
+        "name": "Extra Ammunition (1)",
+        "img": "01026",
+        "class": "Guardian",
+        "type": "Event",
+        "icons": "",
+        "traits": [
+            "Supply"
+        ],
+        "cost": 2
+    },
+    {
+        "id": 1027,
+        "set": "Core Set",
+        "name": "Police Badge (2)",
+        "img": "01027",
+        "class": "Guardian",
+        "type": "Asset",
+        "icons": " ",
+        "traits": [
+            "Item"
+        ],
+        "cost": 3
+    },
+    {
+        "id": 1028,
+        "set": "Core Set",
+        "name": "Beat Cop (2)",
+        "img": "01028",
+        "class": "Guardian",
+        "type": "Asset",
+        "icons": " ",
+        "traits": [
+            "Ally",
+            "Police"
+        ],
+        "cost": 4
+    },
+    {
+        "id": 1029,
+        "set": "Core Set",
+        "name": "Shotgun (4)",
+        "img": "01029",
+        "class": "Guardian",
+        "type": "Asset",
+        "icons": " ",
+        "traits": [
+            "Item",
+            "Weapon",
+            "Firearm"
+        ],
+        "cost": 5
+    },
+    {
+        "id": 1030,
+        "set": "Core Set",
+        "name": "Magnifying Glass",
+        "img": "01030",
+        "class": "Seeker",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Item",
+            "Tool"
+        ],
+        "cost": 1
+    },
+    {
+        "id": 1031,
+        "set": "Core Set",
+        "name": "Old Book of Lore",
+        "img": "01031",
+        "class": "Seeker",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Item",
+            "Tome"
+        ],
+        "cost": 3
+    },
+    {
+        "id": 1032,
+        "set": "Core Set",
+        "name": "Research Librarian",
+        "img": "01032",
+        "class": "Seeker",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Ally",
+            "Miskatonic"
+        ],
+        "cost": 2
+    },
+    {
+        "id": 1033,
+        "set": "Core Set",
+        "name": "Dr. Milan Christopher: Professor of Entomology",
+        "img": "01033",
+        "class": "Seeker",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Ally",
+            "Miskatonic"
+        ],
+        "cost": 4
+    },
+    {
+        "id": 1034,
+        "set": "Core Set",
+        "name": "Hyperawareness",
+        "img": "01034",
+        "class": "Seeker",
+        "type": "Asset",
+        "icons": " ",
+        "traits": [
+            "Talent"
+        ],
+        "cost": 2
+    },
+    {
+        "id": 1035,
+        "set": "Core Set",
+        "name": "Medical Texts",
+        "img": "01035",
+        "class": "Seeker",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Item",
+            "Tome"
+        ],
+        "cost": 2
+    },
+    {
+        "id": 1036,
+        "set": "Core Set",
+        "name": "Mind over Matter",
+        "img": "01036",
+        "class": "Seeker",
+        "type": "Event",
+        "icons": " ",
+        "traits": [
+            "Insight"
+        ],
+        "cost": 1
+    },
+    {
+        "id": 1037,
+        "set": "Core Set",
+        "name": "Working a Hunch",
+        "img": "01037",
+        "class": "Seeker",
+        "type": "Event",
+        "icons": " ",
+        "traits": [
+            "Insight"
+        ],
+        "cost": 2
+    },
+    {
+        "id": 1038,
+        "set": "Core Set",
+        "name": "Barricade",
+        "img": "01038",
+        "class": "Seeker",
+        "type": "Event",
+        "icons": "  ",
+        "traits": [
+            "Insight",
+            "Tactic"
+        ],
+        "cost": 0
+    },
+    {
+        "id": 1039,
+        "set": "Core Set",
+        "name": "Deduction",
+        "img": "01039",
+        "class": "Seeker",
+        "type": "Skill",
+        "icons": "",
+        "traits": [
+            "Practiced"
+        ]
+    },
+    {
+        "id": 1040,
+        "set": "Core Set",
+        "name": "Magnifying Glass (1)",
+        "img": "01040",
+        "class": "Seeker",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Item",
+            "Tool"
+        ],
+        "cost": 0
+    },
+    {
+        "id": 1041,
+        "set": "Core Set",
+        "name": "Disc of Itzamna: Protective Amulet (2)",
+        "img": "01041",
+        "class": "Seeker",
+        "type": "Asset",
+        "icons": "  ",
+        "traits": [
+            "Item",
+            "Relic"
+        ],
+        "cost": 3
+    },
+    {
+        "id": 1042,
+        "set": "Core Set",
+        "name": "Encyclopedia (2)",
+        "img": "01042",
+        "class": "Seeker",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Item",
+            "Tome"
+        ],
+        "cost": 2
+    },
+    {
+        "id": 1043,
+        "set": "Core Set",
+        "name": "Cryptic Research (4)",
+        "img": "01043",
+        "class": "Seeker",
+        "type": "Event",
+        "icons": "",
+        "traits": [
+            "Insight"
+        ],
+        "cost": 0
+    },
+    {
+        "id": 1044,
+        "set": "Core Set",
+        "name": "Switchblade",
+        "img": "01044",
+        "class": "Rogue",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Item",
+            "Weapon",
+            "Melee",
+            "Illicit"
+        ],
+        "cost": 1
+    },
+    {
+        "id": 1045,
+        "set": "Core Set",
+        "name": "Burglary",
+        "img": "01045",
+        "class": "Rogue",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Talent",
+            "Illicit"
+        ],
+        "cost": 1
+    },
+    {
+        "id": 1046,
+        "set": "Core Set",
+        "name": "Pickpocketing",
+        "img": "01046",
+        "class": "Rogue",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Talent",
+            "Illicit"
+        ],
+        "cost": 2
+    },
+    {
+        "id": 1047,
+        "set": "Core Set",
+        "name": ".41 Derringer",
+        "img": "01047",
+        "class": "Rogue",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Item",
+            "Weapon",
+            "Firearm",
+            "Illicit"
+        ],
+        "cost": 3
+    },
+    {
+        "id": 1048,
+        "set": "Core Set",
+        "name": "Leo De Luca: The Louisiana Lion",
+        "img": "01048",
+        "class": "Rogue",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Ally",
+            "Criminal"
+        ],
+        "cost": 6
+    },
+    {
+        "id": 1049,
+        "set": "Core Set",
+        "name": "Hard Knocks",
+        "img": "01049",
+        "class": "Rogue",
+        "type": "Asset",
+        "icons": " ",
+        "traits": [
+            "Talent"
+        ],
+        "cost": 2
+    },
+    {
+        "id": 1050,
+        "set": "Core Set",
+        "name": "Elusive",
+        "img": "01050",
+        "class": "Rogue",
+        "type": "Event",
+        "icons": " ",
+        "traits": [
+            "Tactic"
+        ],
+        "cost": 2
+    },
+    {
+        "id": 1051,
+        "set": "Core Set",
+        "name": "Backstab",
+        "img": "01051",
+        "class": "Rogue",
+        "type": "Event",
+        "icons": " ",
+        "traits": [
+            "Tactic"
+        ],
+        "cost": 3
+    },
+    {
+        "id": 1052,
+        "set": "Core Set",
+        "name": "Sneak Attack",
+        "img": "01052",
+        "class": "Rogue",
+        "type": "Event",
+        "icons": " ",
+        "traits": [
+            "Tactic"
+        ],
+        "cost": 2
+    },
+    {
+        "id": 1053,
+        "set": "Core Set",
+        "name": "Opportunist",
+        "img": "01053",
+        "class": "Rogue",
+        "type": "Skill",
+        "icons": "",
+        "traits": [
+            "Innate"
+        ]
+    },
+    {
+        "id": 1054,
+        "set": "Core Set",
+        "name": "Leo De Luca: The Louisiana Lion (1)",
+        "img": "01054",
+        "class": "Rogue",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Ally",
+            "Criminal"
+        ],
+        "cost": 5
+    },
+    {
+        "id": 1055,
+        "set": "Core Set",
+        "name": "Cat Burglar (1)",
+        "img": "01055",
+        "class": "Rogue",
+        "type": "Asset",
+        "icons": " ",
+        "traits": [
+            "Ally",
+            "Criminal"
+        ],
+        "cost": 4
+    },
+    {
+        "id": 1056,
+        "set": "Core Set",
+        "name": "Sure Gamble (3)",
+        "img": "01056",
+        "class": "Rogue",
+        "type": "Event",
+        "icons": "",
+        "traits": [
+            "Fortune",
+            "Insight"
+        ],
+        "cost": 2
+    },
+    {
+        "id": 1057,
+        "set": "Core Set",
+        "name": "Hot Streak (4)",
+        "img": "01057",
+        "class": "Rogue",
+        "type": "Event",
+        "icons": "",
+        "traits": [
+            "Fortune"
+        ],
+        "cost": 3
+    },
+    {
+        "id": 1058,
+        "set": "Core Set",
+        "name": "Forbidden Knowledge",
+        "img": "01058",
+        "class": "Mystic",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Talent"
+        ],
+        "cost": 0
+    },
+    {
+        "id": 1059,
+        "set": "Core Set",
+        "name": "Holy Rosary",
+        "img": "01059",
+        "class": "Mystic",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Item",
+            "Charm"
+        ],
+        "cost": 2
+    },
+    {
+        "id": 1060,
+        "set": "Core Set",
+        "name": "Shrivelling",
+        "img": "01060",
+        "class": "Mystic",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Spell"
+        ],
+        "cost": 3
+    },
+    {
+        "id": 1061,
+        "set": "Core Set",
+        "name": "Scrying",
+        "img": "01061",
+        "class": "Mystic",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Spell"
+        ],
+        "cost": 1
+    },
+    {
+        "id": 1062,
+        "set": "Core Set",
+        "name": "Arcane Studies",
+        "img": "01062",
+        "class": "Mystic",
+        "type": "Asset",
+        "icons": " ",
+        "traits": [
+            "Talent"
+        ],
+        "cost": 2
+    },
+    {
+        "id": 1063,
+        "set": "Core Set",
+        "name": "Arcane Initiate",
+        "img": "01063",
+        "class": "Mystic",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Ally",
+            "Sorcerer"
+        ],
+        "cost": 1
+    },
+    {
+        "id": 1064,
+        "set": "Core Set",
+        "name": "Drawn to the Flame",
+        "img": "01064",
+        "class": "Mystic",
+        "type": "Event",
+        "icons": " ",
+        "traits": [
+            "Insight"
+        ],
+        "cost": 0
+    },
+    {
+        "id": 1065,
+        "set": "Core Set",
+        "name": "Ward of Protection",
+        "img": "01065",
+        "class": "Mystic",
+        "type": "Event",
+        "icons": "",
+        "traits": [
+            "Spell",
+            "Spirit"
+        ],
+        "cost": 1
+    },
+    {
+        "id": 1066,
+        "set": "Core Set",
+        "name": "Blinding Light",
+        "img": "01066",
+        "class": "Mystic",
+        "type": "Event",
+        "icons": " ",
+        "traits": [
+            "Spell"
+        ],
+        "cost": 2
+    },
+    {
+        "id": 1067,
+        "set": "Core Set",
+        "name": "Fearless",
+        "img": "01067",
+        "class": "Mystic",
+        "type": "Skill",
+        "icons": "",
+        "traits": [
+            "Innate"
+        ]
+    },
+    {
+        "id": 1068,
+        "set": "Core Set",
+        "name": "Mind Wipe (1)",
+        "img": "01068",
+        "class": "Mystic",
+        "type": "Event",
+        "icons": " ",
+        "traits": [
+            "Spell"
+        ],
+        "cost": 1
+    },
+    {
+        "id": 1069,
+        "set": "Core Set",
+        "name": "Blinding Light (2)",
+        "img": "01069",
+        "class": "Mystic",
+        "type": "Event",
+        "icons": " ",
+        "traits": [
+            "Spell"
+        ],
+        "cost": 1
+    },
+    {
+        "id": 1070,
+        "set": "Core Set",
+        "name": "Book of Shadows (3)",
+        "img": "01070",
+        "class": "Mystic",
+        "type": "Asset",
+        "icons": " ",
+        "traits": [
+            "Item",
+            "Tome"
+        ],
+        "cost": 4
+    },
+    {
+        "id": 1071,
+        "set": "Core Set",
+        "name": "Grotesque Statue (4)",
+        "img": "01071",
+        "class": "Mystic",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Item",
+            "Relic"
+        ],
+        "cost": 2
+    },
+    {
+        "id": 1072,
+        "set": "Core Set",
+        "name": "Leather Coat",
+        "img": "01072",
+        "class": "Survivor",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Item",
+            "Armor"
+        ],
+        "cost": 0
+    },
+    {
+        "id": 1073,
+        "set": "Core Set",
+        "name": "Scavenging",
+        "img": "01073",
+        "class": "Survivor",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Talent"
+        ],
+        "cost": 1
+    },
+    {
+        "id": 1074,
+        "set": "Core Set",
+        "name": "Baseball Bat",
+        "img": "01074",
+        "class": "Survivor",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Item",
+            "Weapon",
+            "Melee"
+        ],
+        "cost": 2
+    },
+    {
+        "id": 1075,
+        "set": "Core Set",
+        "name": "Rabbit's Foot",
+        "img": "01075",
+        "class": "Survivor",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Item",
+            "Charm"
+        ],
+        "cost": 1
+    },
+    {
+        "id": 1076,
+        "set": "Core Set",
+        "name": "Stray Cat",
+        "img": "01076",
+        "class": "Survivor",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Ally",
+            "Creature"
+        ],
+        "cost": 1
+    },
+    {
+        "id": 1077,
+        "set": "Core Set",
+        "name": "Dig Deep",
+        "img": "01077",
+        "class": "Survivor",
+        "type": "Asset",
+        "icons": " ",
+        "traits": [
+            "Talent"
+        ],
+        "cost": 2
+    },
+    {
+        "id": 1078,
+        "set": "Core Set",
+        "name": "Cunning Distraction",
+        "img": "01078",
+        "class": "Survivor",
+        "type": "Event",
+        "icons": " ",
+        "traits": [
+            "Tactic"
+        ],
+        "cost": 5
+    },
+    {
+        "id": 1079,
+        "set": "Core Set",
+        "name": "\"Look what I found!\"",
+        "img": "01079",
+        "class": "Survivor",
+        "type": "Event",
+        "icons": " ",
+        "traits": [
+            "Fortune"
+        ],
+        "cost": 2
+    },
+    {
+        "id": 1080,
+        "set": "Core Set",
+        "name": "Lucky!",
+        "img": "01080",
+        "class": "Survivor",
+        "type": "Event",
+        "icons": "",
+        "traits": [
+            "Fortune"
+        ],
+        "cost": 1
+    },
+    {
+        "id": 1081,
+        "set": "Core Set",
+        "name": "Survival Instinct",
+        "img": "01081",
+        "class": "Survivor",
+        "type": "Skill",
+        "icons": "",
+        "traits": [
+            "Innate"
+        ]
+    },
+    {
+        "id": 1082,
+        "set": "Core Set",
+        "name": "Aquinnah: The Forgotten Daughter (1)",
+        "img": "01082",
+        "class": "Survivor",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Ally"
+        ],
+        "cost": 5
+    },
+    {
+        "id": 1083,
+        "set": "Core Set",
+        "name": "Close Call (2)",
+        "img": "01083",
+        "class": "Survivor",
+        "type": "Event",
+        "icons": " ",
+        "traits": [
+            "Fortune"
+        ],
+        "cost": 2
+    },
+    {
+        "id": 1084,
+        "set": "Core Set",
+        "name": "Lucky! (2)",
+        "img": "01084",
+        "class": "Survivor",
+        "type": "Event",
+        "icons": "",
+        "traits": [
+            "Fortune"
+        ],
+        "cost": 1
+    },
+    {
+        "id": 1085,
+        "set": "Core Set",
+        "name": "Will to Survive (3)",
+        "img": "01085",
+        "class": "Survivor",
+        "type": "Event",
+        "icons": " ",
+        "traits": [
+            "Spirit"
+        ],
+        "cost": 4
+    },
+    {
+        "id": 1086,
+        "set": "Core Set",
+        "name": "Knife",
+        "img": "01086",
+        "class": "Neutral",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Item",
+            "Weapon",
+            "Melee"
+        ],
+        "cost": 1
+    },
+    {
+        "id": 1087,
+        "set": "Core Set",
+        "name": "Flashlight",
+        "img": "01087",
+        "class": "Neutral",
+        "type": "Asset",
+        "icons": "",
+        "traits": [
+            "Item",
+            "Tool"
+        ],
+        "check":["I"],
+        "cost":2,
+        "charge":3
+    },
+    {
+        "id": 1088,
+        "set": "Core Set",
+        "name": "Emergency Cache",
+        "img": "01088",
+        "class": "Neutral",
+        "type": "Event",
+        "icons": "",
+        "traits": [
+            "Supply"
+        ],
+        "cost": 0
+    },
+    {
+        "id": 1089,
+        "set": "Core Set",
+        "name": "Guts",
+        "img": "01089",
+        "class": "Neutral",
+        "type": "Skill",
+        "icons": " ",
+        "traits": [
+            "Innate"
+        ]
+    },
+    {
+        "id": 1090,
+        "set": "Core Set",
+        "name": "Perception",
+        "img": "01090",
+        "class": "Neutral",
+        "type": "Skill",
+        "icons": " ",
+        "traits": [
+            "Practiced"
+        ]
+    },
+    {
+        "id": 1091,
+        "set": "Core Set",
+        "name": "Overpower",
+        "img": "01091",
+        "class": "Neutral",
+        "type": "Skill",
+        "icons": " ",
+        "traits": [
+            "Practiced"
+        ]
+    },
+    {
+        "id": 1092,
+        "set": "Core Set",
+        "name": "Manual Dexterity",
+        "img": "01092",
+        "class": "Neutral",
+        "type": "Skill",
+        "icons": " ",
+        "traits": [
+            "Innate"
+        ]
+    },
+    {
+        "id": 1093,
+        "set": "Core Set",
+        "name": "Unexpected Courage",
+        "img": "01093",
+        "class": "Neutral",
+        "type": "Skill",
+        "icons": " ",
+        "traits": [
+            "Innate"
+        ]
+    },
+    {
+        "id": 1094,
+        "set": "Core Set",
+        "name": "Bulletproof Vest (3)",
+        "img": "01094",
+        "class": "Neutral",
+        "type": "Asset",
+        "icons": " ",
+        "traits": [
+            "Item",
+            "Armor"
+        ],
+        "cost": 2
+    },
+    {
+        "id": 1095,
+        "set": "Core Set",
+        "name": "Elder Sign Amulet (3)",
+        "img": "01095",
+        "class": "Neutral",
+        "type": "Asset",
+        "icons": " ",
+        "traits": [
+            "Item",
+            "Relic"
+        ],
+        "cost": 2
     }
 ]

@@ -85,5 +85,5 @@ func _on_Move_pressed():
 	get_parent().SetupAction(GlbDat.current_chara)
 
 func _on_Scan_pressed():
-	GlbDat.Scan(self)
+	GlbDat.Scan()
 	refresh()

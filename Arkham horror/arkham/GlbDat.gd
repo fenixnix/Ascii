@@ -59,8 +59,9 @@ func MoveTo(loc):
 	current_chara.location.chara.erase(current_chara)
 	loc.Enter(current_chara)
 
-func Scan(loc):
+func Scan():
 	current_chara.at -= 1
+	var loc = current_chara.location
 	#TODO show chaos token
 	ChaosCheck.Set({
 		"chara":current_chara,

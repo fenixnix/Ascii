@@ -84,6 +84,7 @@ func _init():
 					cardDb.append(d)
 					cardDict[str(d.id)] = d
 			"Enemy":enmDb.append(d)
+	LoadDict("card",cardDict)
 #			"Scenario":
 #				checkEct(d.encounter)
 #				ectDb[d.encounter].scenario = d
@@ -114,6 +115,11 @@ func checkEct(encounter):
 
 func LoadDB(db):
 	return FileRW.LoadJsonFile(dataPath%db)
+
+func LoadDict(db,dict):
+	var dat = FileRW.LoadJsonFile(dataPath%db)
+	for d in dat:
+		dict[str(d.id)] = d
 
 #var rootPath = "res://image/card/%s.%s"
 var rootPath = "../card/%s.%s"

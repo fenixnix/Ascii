@@ -7,7 +7,10 @@
         "class": "Guardian",
         "type": "Investigator",
         "icons": "",
-        "traits": "Agency. Detective.",
+        "traits": [
+            "Agency",
+            "Detective"
+        ],
         "imgb": "01001b"
     },
     {
@@ -18,7 +21,9 @@
         "class": "Seeker",
         "type": "Investigator",
         "icons": "",
-        "traits": "Miskatonic.",
+        "traits": [
+            "Miskatonic"
+        ],
         "imgb": "01002b"
     },
     {
@@ -29,7 +34,9 @@
         "class": "Rogue",
         "type": "Investigator",
         "icons": "",
-        "traits": "Criminal.",
+        "traits": [
+            "Criminal"
+        ],
         "imgb": "01003b"
     },
     {
@@ -40,7 +47,9 @@
         "class": "Mystic",
         "type": "Investigator",
         "icons": "",
-        "traits": "Sorcerer.",
+        "traits": [
+            "Sorcerer"
+        ],
         "imgb": "01004b"
     },
     {
@@ -51,7 +60,9 @@
         "class": "Survivor",
         "type": "Investigator",
         "icons": "",
-        "traits": "Drifter.",
+        "traits": [
+            "Drifter"
+        ],
         "imgb": "01005b"
     },
     {
@@ -62,7 +73,11 @@
         "class": "Neutral",
         "type": "Asset",
         "icons": "  ",
-        "traits": "Item. Weapon. Firearm.",
+        "traits": [
+            "Item",
+            "Weapon",
+            "Firearm"
+        ],
         "cost": 3
     },
     {
@@ -73,7 +88,9 @@
         "class": "Neutral",
         "type": "Treachery",
         "icons": "",
-        "traits": "Task."
+        "traits": [
+            "Task"
+        ]
     },
     {
         "id": 1008,
@@ -83,7 +100,9 @@
         "class": "Neutral",
         "type": "Asset",
         "icons": "  ",
-        "traits": "Item.",
+        "traits": [
+            "Item"
+        ],
         "cost": 2
     },
     {
@@ -94,7 +113,10 @@
         "class": "Neutral",
         "type": "Asset",
         "icons": "",
-        "traits": "Item. Tome."
+        "traits": [
+            "Item",
+            "Tome"
+        ]
     },
     {
         "id": 1010,
@@ -104,7 +126,9 @@
         "class": "Neutral",
         "type": "Event",
         "icons": "   ",
-        "traits": "Tactic.",
+        "traits": [
+            "Tactic"
+        ],
         "cost": 1
     },
     {
@@ -115,7 +139,9 @@
         "class": "Neutral",
         "type": "Treachery",
         "icons": "",
-        "traits": "Task."
+        "traits": [
+            "Task"
+        ]
     },
     {
         "id": 1012,
@@ -125,7 +151,10 @@
         "class": "Neutral",
         "type": "Asset",
         "icons": "  ",
-        "traits": "Item. Relic.",
+        "traits": [
+            "Item",
+            "Relic"
+        ],
         "cost": 3
     },
     {
@@ -136,7 +165,9 @@
         "class": "Neutral",
         "type": "Event",
         "icons": "",
-        "traits": "Spell.",
+        "traits": [
+            "Spell"
+        ],
         "cost": 2
     },
     {
@@ -147,7 +178,10 @@
         "class": "Neutral",
         "type": "Asset",
         "icons": " ",
-        "traits": "Item. Relic.",
+        "traits": [
+            "Item",
+            "Relic"
+        ],
         "cost": 2
     },
     {
@@ -158,7 +192,9 @@
         "class": "Neutral",
         "type": "Treachery",
         "icons": "",
-        "traits": "Madness."
+        "traits": [
+            "Madness"
+        ]
     },
     {
         "id": 1016,
@@ -168,7 +204,11 @@
         "class": "Guardian",
         "type": "Asset",
         "icons": "",
-        "traits": "Item. Weapon. Firearm.",
+        "traits": [
+            "Item",
+            "Weapon",
+            "Firearm"
+        ],
         "cost": 4
     },
     {
@@ -179,7 +219,9 @@
         "class": "Guardian",
         "type": "Asset",
         "icons": " ",
-        "traits": "Talent.",
+        "traits": [
+            "Talent"
+        ],
         "cost": 2
     },
     {
@@ -190,7 +232,10 @@
         "class": "Guardian",
         "type": "Asset",
         "icons": "",
-        "traits": "Ally. Police.",
+        "traits": [
+            "Ally",
+            "Police"
+        ],
         "cost": 4
     },
     {
@@ -201,7 +246,10 @@
         "class": "Guardian",
         "type": "Asset",
         "icons": "",
-        "traits": "Talent. Science.",
+        "traits": [
+            "Talent",
+            "Science"
+        ],
         "cost": 2
     },
     {
@@ -212,7 +260,11 @@
         "class": "Guardian",
         "type": "Asset",
         "icons": "",
-        "traits": "Item. Weapon. Melee.",
+        "traits": [
+            "Item",
+            "Weapon",
+            "Melee"
+        ],
         "cost": 3
     },
     {
@@ -223,7 +275,10 @@
         "class": "Guardian",
         "type": "Asset",
         "icons": "",
-        "traits": "Ally. Creature.",
+        "traits": [
+            "Ally",
+            "Creature"
+        ],
         "cost": 3
     },
     {
@@ -234,7 +289,9 @@
         "class": "Guardian",
         "type": "Event",
         "icons": " ",
-        "traits": "Insight.",
+        "traits": [
+            "Insight"
+        ],
         "cost": 1
     },
     {
@@ -245,7 +302,9 @@
         "class": "Guardian",
         "type": "Event",
         "icons": " ",
-        "traits": "Tactic.",
+        "traits": [
+            "Tactic"
+        ],
         "cost": 1
     },
     {
@@ -256,7 +315,9 @@
         "class": "Guardian",
         "type": "Event",
         "icons": "",
-        "traits": "Tactic.",
+        "traits": [
+            "Tactic"
+        ],
         "cost": 5
     },
     {
@@ -267,7 +328,9 @@
         "class": "Guardian",
         "type": "Skill",
         "icons": "",
-        "traits": "Practiced."
+        "traits": [
+            "Practiced"
+        ]
     },
     {
         "id": 1026,
@@ -277,7 +340,9 @@
         "class": "Guardian",
         "type": "Event",
         "icons": "",
-        "traits": "Supply.",
+        "traits": [
+            "Supply"
+        ],
         "cost": 2
     },
     {
@@ -288,7 +353,9 @@
         "class": "Guardian",
         "type": "Asset",
         "icons": " ",
-        "traits": "Item.",
+        "traits": [
+            "Item"
+        ],
         "cost": 3
     },
     {
@@ -299,7 +366,10 @@
         "class": "Guardian",
         "type": "Asset",
         "icons": " ",
-        "traits": "Ally. Police.",
+        "traits": [
+            "Ally",
+            "Police"
+        ],
         "cost": 4
     },
     {
@@ -310,7 +380,11 @@
         "class": "Guardian",
         "type": "Asset",
         "icons": " ",
-        "traits": "Item. Weapon. Firearm.",
+        "traits": [
+            "Item",
+            "Weapon",
+            "Firearm"
+        ],
         "cost": 5
     },
     {
@@ -321,7 +395,10 @@
         "class": "Seeker",
         "type": "Asset",
         "icons": "",
-        "traits": "Item. Tool.",
+        "traits": [
+            "Item",
+            "Tool"
+        ],
         "cost": 1
     },
     {
@@ -332,7 +409,10 @@
         "class": "Seeker",
         "type": "Asset",
         "icons": "",
-        "traits": "Item. Tome.",
+        "traits": [
+            "Item",
+            "Tome"
+        ],
         "cost": 3
     },
     {
@@ -343,7 +423,10 @@
         "class": "Seeker",
         "type": "Asset",
         "icons": "",
-        "traits": "Ally. Miskatonic.",
+        "traits": [
+            "Ally",
+            "Miskatonic"
+        ],
         "cost": 2
     },
     {
@@ -354,7 +437,10 @@
         "class": "Seeker",
         "type": "Asset",
         "icons": "",
-        "traits": "Ally. Miskatonic.",
+        "traits": [
+            "Ally",
+            "Miskatonic"
+        ],
         "cost": 4
     },
     {
@@ -365,7 +451,9 @@
         "class": "Seeker",
         "type": "Asset",
         "icons": " ",
-        "traits": "Talent.",
+        "traits": [
+            "Talent"
+        ],
         "cost": 2
     },
     {
@@ -376,7 +464,10 @@
         "class": "Seeker",
         "type": "Asset",
         "icons": "",
-        "traits": "Item. Tome.",
+        "traits": [
+            "Item",
+            "Tome"
+        ],
         "cost": 2
     },
     {
@@ -387,7 +478,9 @@
         "class": "Seeker",
         "type": "Event",
         "icons": " ",
-        "traits": "Insight.",
+        "traits": [
+            "Insight"
+        ],
         "cost": 1
     },
     {
@@ -398,7 +491,9 @@
         "class": "Seeker",
         "type": "Event",
         "icons": " ",
-        "traits": "Insight.",
+        "traits": [
+            "Insight"
+        ],
         "cost": 2
     },
     {
@@ -409,7 +504,10 @@
         "class": "Seeker",
         "type": "Event",
         "icons": "  ",
-        "traits": "Insight. Tactic.",
+        "traits": [
+            "Insight",
+            "Tactic"
+        ],
         "cost": 0
     },
     {
@@ -420,7 +518,9 @@
         "class": "Seeker",
         "type": "Skill",
         "icons": "",
-        "traits": "Practiced."
+        "traits": [
+            "Practiced"
+        ]
     },
     {
         "id": 1040,
@@ -430,7 +530,10 @@
         "class": "Seeker",
         "type": "Asset",
         "icons": "",
-        "traits": "Item. Tool.",
+        "traits": [
+            "Item",
+            "Tool"
+        ],
         "cost": 0
     },
     {
@@ -441,7 +544,10 @@
         "class": "Seeker",
         "type": "Asset",
         "icons": "  ",
-        "traits": "Item. Relic.",
+        "traits": [
+            "Item",
+            "Relic"
+        ],
         "cost": 3
     },
     {
@@ -452,7 +558,10 @@
         "class": "Seeker",
         "type": "Asset",
         "icons": "",
-        "traits": "Item. Tome.",
+        "traits": [
+            "Item",
+            "Tome"
+        ],
         "cost": 2
     },
     {
@@ -463,7 +572,9 @@
         "class": "Seeker",
         "type": "Event",
         "icons": "",
-        "traits": "Insight.",
+        "traits": [
+            "Insight"
+        ],
         "cost": 0
     },
     {
@@ -474,7 +585,12 @@
         "class": "Rogue",
         "type": "Asset",
         "icons": "",
-        "traits": "Item. Weapon. Melee. Illicit.",
+        "traits": [
+            "Item",
+            "Weapon",
+            "Melee",
+            "Illicit"
+        ],
         "cost": 1
     },
     {
@@ -485,7 +601,10 @@
         "class": "Rogue",
         "type": "Asset",
         "icons": "",
-        "traits": "Talent. Illicit.",
+        "traits": [
+            "Talent",
+            "Illicit"
+        ],
         "cost": 1
     },
     {
@@ -496,7 +615,10 @@
         "class": "Rogue",
         "type": "Asset",
         "icons": "",
-        "traits": "Talent. Illicit.",
+        "traits": [
+            "Talent",
+            "Illicit"
+        ],
         "cost": 2
     },
     {
@@ -507,7 +629,12 @@
         "class": "Rogue",
         "type": "Asset",
         "icons": "",
-        "traits": "Item. Weapon. Firearm. Illicit.",
+        "traits": [
+            "Item",
+            "Weapon",
+            "Firearm",
+            "Illicit"
+        ],
         "cost": 3
     },
     {
@@ -518,7 +645,10 @@
         "class": "Rogue",
         "type": "Asset",
         "icons": "",
-        "traits": "Ally. Criminal.",
+        "traits": [
+            "Ally",
+            "Criminal"
+        ],
         "cost": 6
     },
     {
@@ -529,7 +659,9 @@
         "class": "Rogue",
         "type": "Asset",
         "icons": " ",
-        "traits": "Talent.",
+        "traits": [
+            "Talent"
+        ],
         "cost": 2
     },
     {
@@ -540,7 +672,9 @@
         "class": "Rogue",
         "type": "Event",
         "icons": " ",
-        "traits": "Tactic.",
+        "traits": [
+            "Tactic"
+        ],
         "cost": 2
     },
     {
@@ -551,7 +685,9 @@
         "class": "Rogue",
         "type": "Event",
         "icons": " ",
-        "traits": "Tactic.",
+        "traits": [
+            "Tactic"
+        ],
         "cost": 3
     },
     {
@@ -562,7 +698,9 @@
         "class": "Rogue",
         "type": "Event",
         "icons": " ",
-        "traits": "Tactic.",
+        "traits": [
+            "Tactic"
+        ],
         "cost": 2
     },
     {
@@ -573,7 +711,9 @@
         "class": "Rogue",
         "type": "Skill",
         "icons": "",
-        "traits": "Innate."
+        "traits": [
+            "Innate"
+        ]
     },
     {
         "id": 1054,
@@ -583,7 +723,10 @@
         "class": "Rogue",
         "type": "Asset",
         "icons": "",
-        "traits": "Ally. Criminal.",
+        "traits": [
+            "Ally",
+            "Criminal"
+        ],
         "cost": 5
     },
     {
@@ -594,7 +737,10 @@
         "class": "Rogue",
         "type": "Asset",
         "icons": " ",
-        "traits": "Ally. Criminal.",
+        "traits": [
+            "Ally",
+            "Criminal"
+        ],
         "cost": 4
     },
     {
@@ -605,7 +751,10 @@
         "class": "Rogue",
         "type": "Event",
         "icons": "",
-        "traits": "Fortune. Insight.",
+        "traits": [
+            "Fortune",
+            "Insight"
+        ],
         "cost": 2
     },
     {
@@ -616,7 +765,9 @@
         "class": "Rogue",
         "type": "Event",
         "icons": "",
-        "traits": "Fortune.",
+        "traits": [
+            "Fortune"
+        ],
         "cost": 3
     },
     {
@@ -627,7 +778,9 @@
         "class": "Mystic",
         "type": "Asset",
         "icons": "",
-        "traits": "Talent.",
+        "traits": [
+            "Talent"
+        ],
         "cost": 0
     },
     {
@@ -638,7 +791,10 @@
         "class": "Mystic",
         "type": "Asset",
         "icons": "",
-        "traits": "Item. Charm.",
+        "traits": [
+            "Item",
+            "Charm"
+        ],
         "cost": 2
     },
     {
@@ -649,7 +805,9 @@
         "class": "Mystic",
         "type": "Asset",
         "icons": "",
-        "traits": "Spell.",
+        "traits": [
+            "Spell"
+        ],
         "cost": 3
     },
     {
@@ -660,7 +818,9 @@
         "class": "Mystic",
         "type": "Asset",
         "icons": "",
-        "traits": "Spell.",
+        "traits": [
+            "Spell"
+        ],
         "cost": 1
     },
     {
@@ -671,7 +831,9 @@
         "class": "Mystic",
         "type": "Asset",
         "icons": " ",
-        "traits": "Talent.",
+        "traits": [
+            "Talent"
+        ],
         "cost": 2
     },
     {
@@ -682,7 +844,10 @@
         "class": "Mystic",
         "type": "Asset",
         "icons": "",
-        "traits": "Ally. Sorcerer.",
+        "traits": [
+            "Ally",
+            "Sorcerer"
+        ],
         "cost": 1
     },
     {
@@ -693,7 +858,9 @@
         "class": "Mystic",
         "type": "Event",
         "icons": " ",
-        "traits": "Insight.",
+        "traits": [
+            "Insight"
+        ],
         "cost": 0
     },
     {
@@ -704,7 +871,10 @@
         "class": "Mystic",
         "type": "Event",
         "icons": "",
-        "traits": "Spell. Spirit.",
+        "traits": [
+            "Spell",
+            "Spirit"
+        ],
         "cost": 1
     },
     {
@@ -715,7 +885,9 @@
         "class": "Mystic",
         "type": "Event",
         "icons": " ",
-        "traits": "Spell.",
+        "traits": [
+            "Spell"
+        ],
         "cost": 2
     },
     {
@@ -726,7 +898,9 @@
         "class": "Mystic",
         "type": "Skill",
         "icons": "",
-        "traits": "Innate."
+        "traits": [
+            "Innate"
+        ]
     },
     {
         "id": 1068,
@@ -736,7 +910,9 @@
         "class": "Mystic",
         "type": "Event",
         "icons": " ",
-        "traits": "Spell.",
+        "traits": [
+            "Spell"
+        ],
         "cost": 1
     },
     {
@@ -747,7 +923,9 @@
         "class": "Mystic",
         "type": "Event",
         "icons": " ",
-        "traits": "Spell.",
+        "traits": [
+            "Spell"
+        ],
         "cost": 1
     },
     {
@@ -758,7 +936,10 @@
         "class": "Mystic",
         "type": "Asset",
         "icons": " ",
-        "traits": "Item. Tome.",
+        "traits": [
+            "Item",
+            "Tome"
+        ],
         "cost": 4
     },
     {
@@ -769,7 +950,10 @@
         "class": "Mystic",
         "type": "Asset",
         "icons": "",
-        "traits": "Item. Relic.",
+        "traits": [
+            "Item",
+            "Relic"
+        ],
         "cost": 2
     },
     {
@@ -780,7 +964,10 @@
         "class": "Survivor",
         "type": "Asset",
         "icons": "",
-        "traits": "Item. Armor.",
+        "traits": [
+            "Item",
+            "Armor"
+        ],
         "cost": 0
     },
     {
@@ -791,7 +978,9 @@
         "class": "Survivor",
         "type": "Asset",
         "icons": "",
-        "traits": "Talent.",
+        "traits": [
+            "Talent"
+        ],
         "cost": 1
     },
     {
@@ -802,7 +991,11 @@
         "class": "Survivor",
         "type": "Asset",
         "icons": "",
-        "traits": "Item. Weapon. Melee.",
+        "traits": [
+            "Item",
+            "Weapon",
+            "Melee"
+        ],
         "cost": 2
     },
     {
@@ -813,7 +1006,10 @@
         "class": "Survivor",
         "type": "Asset",
         "icons": "",
-        "traits": "Item. Charm.",
+        "traits": [
+            "Item",
+            "Charm"
+        ],
         "cost": 1
     },
     {
@@ -824,7 +1020,10 @@
         "class": "Survivor",
         "type": "Asset",
         "icons": "",
-        "traits": "Ally. Creature.",
+        "traits": [
+            "Ally",
+            "Creature"
+        ],
         "cost": 1
     },
     {
@@ -835,7 +1034,9 @@
         "class": "Survivor",
         "type": "Asset",
         "icons": " ",
-        "traits": "Talent.",
+        "traits": [
+            "Talent"
+        ],
         "cost": 2
     },
     {
@@ -846,7 +1047,9 @@
         "class": "Survivor",
         "type": "Event",
         "icons": " ",
-        "traits": "Tactic.",
+        "traits": [
+            "Tactic"
+        ],
         "cost": 5
     },
     {
@@ -857,7 +1060,9 @@
         "class": "Survivor",
         "type": "Event",
         "icons": " ",
-        "traits": "Fortune.",
+        "traits": [
+            "Fortune"
+        ],
         "cost": 2
     },
     {
@@ -868,7 +1073,9 @@
         "class": "Survivor",
         "type": "Event",
         "icons": "",
-        "traits": "Fortune.",
+        "traits": [
+            "Fortune"
+        ],
         "cost": 1
     },
     {
@@ -879,7 +1086,9 @@
         "class": "Survivor",
         "type": "Skill",
         "icons": "",
-        "traits": "Innate."
+        "traits": [
+            "Innate"
+        ]
     },
     {
         "id": 1082,
@@ -889,7 +1098,9 @@
         "class": "Survivor",
         "type": "Asset",
         "icons": "",
-        "traits": "Ally.",
+        "traits": [
+            "Ally"
+        ],
         "cost": 5
     },
     {
@@ -900,7 +1111,9 @@
         "class": "Survivor",
         "type": "Event",
         "icons": " ",
-        "traits": "Fortune.",
+        "traits": [
+            "Fortune"
+        ],
         "cost": 2
     },
     {
@@ -911,7 +1124,9 @@
         "class": "Survivor",
         "type": "Event",
         "icons": "",
-        "traits": "Fortune.",
+        "traits": [
+            "Fortune"
+        ],
         "cost": 1
     },
     {
@@ -922,7 +1137,9 @@
         "class": "Survivor",
         "type": "Event",
         "icons": " ",
-        "traits": "Spirit.",
+        "traits": [
+            "Spirit"
+        ],
         "cost": 4
     },
     {
@@ -933,7 +1150,11 @@
         "class": "Neutral",
         "type": "Asset",
         "icons": "",
-        "traits": "Item. Weapon. Melee.",
+        "traits": [
+            "Item",
+            "Weapon",
+            "Melee"
+        ],
         "cost": 1
     },
     {
@@ -944,7 +1165,10 @@
         "class": "Neutral",
         "type": "Asset",
         "icons": "",
-        "traits": "Item. Tool.",
+        "traits": [
+            "Item",
+            "Tool"
+        ],
         "cost": 2
     },
     {
@@ -955,7 +1179,9 @@
         "class": "Neutral",
         "type": "Event",
         "icons": "",
-        "traits": "Supply.",
+        "traits": [
+            "Supply"
+        ],
         "cost": 0
     },
     {
@@ -966,7 +1192,9 @@
         "class": "Neutral",
         "type": "Skill",
         "icons": " ",
-        "traits": "Innate."
+        "traits": [
+            "Innate"
+        ]
     },
     {
         "id": 1090,
@@ -976,7 +1204,9 @@
         "class": "Neutral",
         "type": "Skill",
         "icons": " ",
-        "traits": "Practiced."
+        "traits": [
+            "Practiced"
+        ]
     },
     {
         "id": 1091,
@@ -986,7 +1216,9 @@
         "class": "Neutral",
         "type": "Skill",
         "icons": " ",
-        "traits": "Practiced."
+        "traits": [
+            "Practiced"
+        ]
     },
     {
         "id": 1092,
@@ -996,7 +1228,9 @@
         "class": "Neutral",
         "type": "Skill",
         "icons": " ",
-        "traits": "Innate."
+        "traits": [
+            "Innate"
+        ]
     },
     {
         "id": 1093,
@@ -1006,7 +1240,9 @@
         "class": "Neutral",
         "type": "Skill",
         "icons": " ",
-        "traits": "Innate."
+        "traits": [
+            "Innate"
+        ]
     },
     {
         "id": 1094,
@@ -1016,7 +1252,10 @@
         "class": "Neutral",
         "type": "Asset",
         "icons": " ",
-        "traits": "Item. Armor.",
+        "traits": [
+            "Item",
+            "Armor"
+        ],
         "cost": 2
     },
     {
@@ -1027,7 +1266,10 @@
         "class": "Neutral",
         "type": "Asset",
         "icons": " ",
-        "traits": "Item. Relic.",
+        "traits": [
+            "Item",
+            "Relic"
+        ],
         "cost": 2
     },
     {
@@ -1038,7 +1280,9 @@
         "class": "Neutral",
         "type": "Treachery",
         "icons": "",
-        "traits": "Madness."
+        "traits": [
+            "Madness"
+        ]
     },
     {
         "id": 1097,
@@ -1048,7 +1292,9 @@
         "class": "Neutral",
         "type": "Treachery",
         "icons": "",
-        "traits": "Madness."
+        "traits": [
+            "Madness"
+        ]
     },
     {
         "id": 1098,
@@ -1058,7 +1304,9 @@
         "class": "Neutral",
         "type": "Treachery",
         "icons": "",
-        "traits": "Curse."
+        "traits": [
+            "Curse"
+        ]
     },
     {
         "id": 1099,
@@ -1068,7 +1316,9 @@
         "class": "Neutral",
         "type": "Treachery",
         "icons": "",
-        "traits": "Madness."
+        "traits": [
+            "Madness"
+        ]
     },
     {
         "id": 1100,
@@ -1078,7 +1328,9 @@
         "class": "Neutral",
         "type": "Treachery",
         "icons": "",
-        "traits": "Madness."
+        "traits": [
+            "Madness"
+        ]
     },
     {
         "id": 1101,
@@ -1088,7 +1340,10 @@
         "class": "Neutral",
         "type": "Enemy",
         "icons": "",
-        "traits": "Humanoid. Criminal."
+        "traits": [
+            "Humanoid",
+            "Criminal"
+        ]
     },
     {
         "id": 1102,
@@ -1098,7 +1353,11 @@
         "class": "Neutral",
         "type": "Enemy",
         "icons": "",
-        "traits": "Humanoid. Cultist. Silver Twilight."
+        "traits": [
+            "Humanoid",
+            "Cultist",
+            "Silver Twilight"
+        ]
     },
     {
         "id": 1103,
@@ -1108,7 +1367,10 @@
         "class": "Neutral",
         "type": "Enemy",
         "icons": "",
-        "traits": "Humanoid. Detective."
+        "traits": [
+            "Humanoid",
+            "Detective"
+        ]
     },
     {
         "id": 1104,
@@ -1118,7 +1380,7 @@
         "class": "Mythos",
         "type": "Scenario",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "imgb": "01104b",
         "encounter": "The Gathering",
         "encounter#": "1"
@@ -1131,7 +1393,7 @@
         "class": "Mythos",
         "type": "Agenda",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "imgb": "01105b",
         "encounter": "The Gathering",
         "encounter#": "2"
@@ -1144,7 +1406,7 @@
         "class": "Mythos",
         "type": "Agenda",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "imgb": "01106b",
         "encounter": "The Gathering",
         "encounter#": "3"
@@ -1157,7 +1419,7 @@
         "class": "Mythos",
         "type": "Agenda",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "imgb": "01107b",
         "encounter": "The Gathering",
         "encounter#": "4"
@@ -1170,7 +1432,7 @@
         "class": "Mythos",
         "type": "Act",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "imgb": "01108b",
         "encounter": "The Gathering",
         "encounter#": "5"
@@ -1183,7 +1445,7 @@
         "class": "Mythos",
         "type": "Act",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "imgb": "01109b",
         "encounter": "The Gathering",
         "encounter#": "6"
@@ -1196,7 +1458,7 @@
         "class": "Mythos",
         "type": "Act",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "imgb": "01110b",
         "encounter": "The Gathering",
         "encounter#": "7"
@@ -1209,7 +1471,7 @@
         "class": "Mythos",
         "type": "Location",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "imgb": "01111b",
         "encounter": "The Gathering",
         "encounter#": "8"
@@ -1222,7 +1484,7 @@
         "class": "Mythos",
         "type": "Location",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "imgb": "01112b",
         "encounter": "The Gathering",
         "encounter#": "9"
@@ -1235,7 +1497,7 @@
         "class": "Mythos",
         "type": "Location",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "imgb": "01113b",
         "encounter": "The Gathering",
         "encounter#": "10"
@@ -1248,7 +1510,7 @@
         "class": "Mythos",
         "type": "Location",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "imgb": "01114b",
         "encounter": "The Gathering",
         "encounter#": "11"
@@ -1261,7 +1523,7 @@
         "class": "Mythos",
         "type": "Location",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "imgb": "01115b",
         "encounter": "The Gathering",
         "encounter#": "12"
@@ -1274,7 +1536,12 @@
         "class": "Mythos",
         "type": "Enemy",
         "icons": "",
-        "traits": "Humanoid. Monster. Ghoul. Elite.",
+        "traits": [
+            "Humanoid",
+            "Monster",
+            "Ghoul",
+            "Elite"
+        ],
         "encounter": "The Gathering",
         "encounter#": "13"
     },
@@ -1286,7 +1553,9 @@
         "class": "Neutral",
         "type": "Asset",
         "icons": "",
-        "traits": "Ally.",
+        "traits": [
+            "Ally"
+        ],
         "cost": 0,
         "encounter": "The Gathering",
         "encounter#": "14"
@@ -1298,12 +1567,12 @@
         "img": "01118",
         "class": "Mythos",
         "type": "Enemy",
-        "C":4,
-        "A":1,
-        "hp":4,
-        "sta":1,
-        "san":2,
-        "traits": "Humanoid. Monster. Ghoul.",
+        "icons": "",
+        "traits": [
+            "Humanoid",
+            "Monster",
+            "Ghoul"
+        ],
         "encounter": "The Gathering",
         "encounter#": "15"
     },
@@ -1315,7 +1584,11 @@
         "class": "Mythos",
         "type": "Enemy",
         "icons": "",
-        "traits": "Humanoid. Monster. Ghoul.",
+        "traits": [
+            "Humanoid",
+            "Monster",
+            "Ghoul"
+        ],
         "encounter": "The Gathering",
         "encounter#": "16"
     },
@@ -1327,7 +1600,7 @@
         "class": "Mythos",
         "type": "Scenario",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "imgb": "01120b",
         "encounter": "The Midnight Masks",
         "encounter#": "1"
@@ -1340,7 +1613,7 @@
         "class": "Mythos",
         "type": "Agenda",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "imgb": "01121b",
         "encounter": "The Midnight Masks",
         "encounter#": "2"
@@ -1353,7 +1626,7 @@
         "class": "Mythos",
         "type": "Agenda",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "imgb": "01122b",
         "encounter": "The Midnight Masks",
         "encounter#": "3"
@@ -1366,7 +1639,7 @@
         "class": "Mythos",
         "type": "Act",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "imgb": "01123b",
         "encounter": "The Midnight Masks",
         "encounter#": "4"
@@ -1379,7 +1652,9 @@
         "class": "Mythos",
         "type": "Location",
         "icons": "",
-        "traits": "Arkham.",
+        "traits": [
+            "Arkham"
+        ],
         "imgb": "01124b",
         "encounter": "The Midnight Masks",
         "encounter#": "5"
@@ -1392,7 +1667,10 @@
         "class": "Mythos",
         "type": "Location",
         "icons": "",
-        "traits": "Arkham. Central.",
+        "traits": [
+            "Arkham",
+            "Central"
+        ],
         "imgb": "01125b",
         "encounter": "The Midnight Masks",
         "encounter#": "6"
@@ -1405,7 +1683,9 @@
         "class": "Mythos",
         "type": "Location",
         "icons": "",
-        "traits": "Arkham.",
+        "traits": [
+            "Arkham"
+        ],
         "imgb": "01126b",
         "encounter": "The Midnight Masks",
         "encounter#": "7"
@@ -1418,7 +1698,9 @@
         "class": "Mythos",
         "type": "Location",
         "icons": "",
-        "traits": "Arkham.",
+        "traits": [
+            "Arkham"
+        ],
         "imgb": "01127b",
         "encounter": "The Midnight Masks",
         "encounter#": "8"
@@ -1431,7 +1713,9 @@
         "class": "Mythos",
         "type": "Location",
         "icons": "",
-        "traits": "Arkham.",
+        "traits": [
+            "Arkham"
+        ],
         "imgb": "01128b",
         "encounter": "The Midnight Masks",
         "encounter#": "9"
@@ -1444,7 +1728,9 @@
         "class": "Mythos",
         "type": "Location",
         "icons": "",
-        "traits": "Arkham.",
+        "traits": [
+            "Arkham"
+        ],
         "imgb": "01129b",
         "encounter": "The Midnight Masks",
         "encounter#": "10"
@@ -1457,7 +1743,9 @@
         "class": "Mythos",
         "type": "Location",
         "icons": "",
-        "traits": "Arkham.",
+        "traits": [
+            "Arkham"
+        ],
         "imgb": "01130b",
         "encounter": "The Midnight Masks",
         "encounter#": "11"
@@ -1470,7 +1758,9 @@
         "class": "Mythos",
         "type": "Location",
         "icons": "",
-        "traits": "Arkham.",
+        "traits": [
+            "Arkham"
+        ],
         "imgb": "01131b",
         "encounter": "The Midnight Masks",
         "encounter#": "12"
@@ -1483,7 +1773,9 @@
         "class": "Mythos",
         "type": "Location",
         "icons": "",
-        "traits": "Arkham.",
+        "traits": [
+            "Arkham"
+        ],
         "imgb": "01132b",
         "encounter": "The Midnight Masks",
         "encounter#": "13"
@@ -1496,7 +1788,9 @@
         "class": "Mythos",
         "type": "Location",
         "icons": "",
-        "traits": "Arkham.",
+        "traits": [
+            "Arkham"
+        ],
         "imgb": "01133b",
         "encounter": "The Midnight Masks",
         "encounter#": "14"
@@ -1509,7 +1803,9 @@
         "class": "Mythos",
         "type": "Location",
         "icons": "",
-        "traits": "Arkham.",
+        "traits": [
+            "Arkham"
+        ],
         "imgb": "01134b",
         "encounter": "The Midnight Masks",
         "encounter#": "15"
@@ -1522,7 +1818,9 @@
         "class": "Mythos",
         "type": "Treachery",
         "icons": "",
-        "traits": "Curse.",
+        "traits": [
+            "Curse"
+        ],
         "encounter": "The Midnight Masks",
         "encounter#": "16-18"
     },
@@ -1534,7 +1832,7 @@
         "class": "Mythos",
         "type": "Treachery",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "encounter": "The Midnight Masks",
         "encounter#": "19-20"
     },
@@ -1546,7 +1844,10 @@
         "class": "Mythos",
         "type": "Enemy",
         "icons": "",
-        "traits": "Humanoid. Cultist.",
+        "traits": [
+            "Humanoid",
+            "Cultist"
+        ],
         "encounter": "Cult of Um\u00f4rdhoth",
         "encounter#": "1"
     },
@@ -1558,7 +1859,10 @@
         "class": "Mythos",
         "type": "Enemy",
         "icons": "",
-        "traits": "Humanoid. Cultist.",
+        "traits": [
+            "Humanoid",
+            "Cultist"
+        ],
         "encounter": "Cult of Um\u00f4rdhoth",
         "encounter#": "2"
     },
@@ -1570,7 +1874,10 @@
         "class": "Mythos",
         "type": "Enemy",
         "icons": "",
-        "traits": "Humanoid. Cultist.",
+        "traits": [
+            "Humanoid",
+            "Cultist"
+        ],
         "encounter": "Cult of Um\u00f4rdhoth",
         "encounter#": "3"
     },
@@ -1582,7 +1889,10 @@
         "class": "Mythos",
         "type": "Enemy",
         "icons": "",
-        "traits": "Humanoid. Cultist.",
+        "traits": [
+            "Humanoid",
+            "Cultist"
+        ],
         "encounter": "Cult of Um\u00f4rdhoth",
         "encounter#": "4"
     },
@@ -1594,7 +1904,10 @@
         "class": "Mythos",
         "type": "Enemy",
         "icons": "",
-        "traits": "Humanoid. Cultist.",
+        "traits": [
+            "Humanoid",
+            "Cultist"
+        ],
         "encounter": "Cult of Um\u00f4rdhoth",
         "encounter#": "5"
     },
@@ -1606,7 +1919,7 @@
         "class": "Mythos",
         "type": "Scenario",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "imgb": "01142b",
         "encounter": "The Devourer Below",
         "encounter#": "1"
@@ -1619,7 +1932,7 @@
         "class": "Mythos",
         "type": "Agenda",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "imgb": "01143b",
         "encounter": "The Devourer Below",
         "encounter#": "2"
@@ -1632,7 +1945,7 @@
         "class": "Mythos",
         "type": "Agenda",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "imgb": "01144b",
         "encounter": "The Devourer Below",
         "encounter#": "3"
@@ -1645,7 +1958,7 @@
         "class": "Mythos",
         "type": "Agenda",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "imgb": "01145b",
         "encounter": "The Devourer Below",
         "encounter#": "4"
@@ -1658,7 +1971,7 @@
         "class": "Mythos",
         "type": "Act",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "imgb": "01146b",
         "encounter": "The Devourer Below",
         "encounter#": "5"
@@ -1671,7 +1984,7 @@
         "class": "Mythos",
         "type": "Act",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "imgb": "01147b",
         "encounter": "The Devourer Below",
         "encounter#": "6"
@@ -1684,7 +1997,7 @@
         "class": "Mythos",
         "type": "Act",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "imgb": "01148b",
         "encounter": "The Devourer Below",
         "encounter#": "7"
@@ -1697,7 +2010,9 @@
         "class": "Mythos",
         "type": "Location",
         "icons": "",
-        "traits": "Woods.",
+        "traits": [
+            "Woods"
+        ],
         "imgb": "01149b",
         "encounter": "The Devourer Below",
         "encounter#": "8"
@@ -1710,7 +2025,9 @@
         "class": "Mythos",
         "type": "Location",
         "icons": "",
-        "traits": "Woods.",
+        "traits": [
+            "Woods"
+        ],
         "imgb": "01150b",
         "encounter": "The Devourer Below",
         "encounter#": "9"
@@ -1723,7 +2040,9 @@
         "class": "Mythos",
         "type": "Location",
         "icons": "",
-        "traits": "Woods.",
+        "traits": [
+            "Woods"
+        ],
         "imgb": "01151b",
         "encounter": "The Devourer Below",
         "encounter#": "10"
@@ -1736,7 +2055,9 @@
         "class": "Mythos",
         "type": "Location",
         "icons": "",
-        "traits": "Woods.",
+        "traits": [
+            "Woods"
+        ],
         "imgb": "01152b",
         "encounter": "The Devourer Below",
         "encounter#": "11"
@@ -1749,7 +2070,9 @@
         "class": "Mythos",
         "type": "Location",
         "icons": "",
-        "traits": "Woods.",
+        "traits": [
+            "Woods"
+        ],
         "imgb": "01153b",
         "encounter": "The Devourer Below",
         "encounter#": "12"
@@ -1762,7 +2085,9 @@
         "class": "Mythos",
         "type": "Location",
         "icons": "",
-        "traits": "Woods.",
+        "traits": [
+            "Woods"
+        ],
         "imgb": "01154b",
         "encounter": "The Devourer Below",
         "encounter#": "13"
@@ -1775,7 +2100,9 @@
         "class": "Mythos",
         "type": "Location",
         "icons": "",
-        "traits": "Woods.",
+        "traits": [
+            "Woods"
+        ],
         "imgb": "01155b",
         "encounter": "The Devourer Below",
         "encounter#": "14"
@@ -1788,7 +2115,9 @@
         "class": "Mythos",
         "type": "Location",
         "icons": "",
-        "traits": "Cave.",
+        "traits": [
+            "Cave"
+        ],
         "imgb": "01156b",
         "encounter": "The Devourer Below",
         "encounter#": "15"
@@ -1801,7 +2130,10 @@
         "class": "Mythos",
         "type": "Enemy",
         "icons": "",
-        "traits": "Ancient One. Elite.",
+        "traits": [
+            "Ancient One",
+            "Elite"
+        ],
         "encounter": "The Devourer Below",
         "encounter#": "16"
     },
@@ -1813,7 +2145,9 @@
         "class": "Mythos",
         "type": "Treachery",
         "icons": "",
-        "traits": "Curse.",
+        "traits": [
+            "Curse"
+        ],
         "encounter": "The Devourer Below",
         "encounter#": "17-18"
     },
@@ -1824,12 +2158,10 @@
         "img": "01159",
         "class": "Mythos",
         "type": "Enemy",
-        "hp":1,
-        "C":1,
-        "A":3,
-        "sta":1,
-        "san":0,
-        "traits": "Creature.",
+        "icons": "",
+        "traits": [
+            "Creature"
+        ],
         "encounter": "Rats",
         "encounter#": "1-3"
     },
@@ -1841,7 +2173,11 @@
         "class": "Mythos",
         "type": "Enemy",
         "icons": "",
-        "traits": "Humanoid. Monster. Ghoul.",
+        "traits": [
+            "Humanoid",
+            "Monster",
+            "Ghoul"
+        ],
         "encounter": "Ghouls",
         "encounter#": "1-3"
     },
@@ -1853,7 +2189,11 @@
         "class": "Mythos",
         "type": "Enemy",
         "icons": "",
-        "traits": "Humanoid. Monster. Ghoul.",
+        "traits": [
+            "Humanoid",
+            "Monster",
+            "Ghoul"
+        ],
         "encounter": "Ghouls",
         "encounter#": "4"
     },
@@ -1865,7 +2205,9 @@
         "class": "Mythos",
         "type": "Treachery",
         "icons": "",
-        "traits": "Hazard.",
+        "traits": [
+            "Hazard"
+        ],
         "encounter": "Ghouls",
         "encounter#": "5-7"
     },
@@ -1877,7 +2219,9 @@
         "class": "Mythos",
         "type": "Treachery",
         "icons": "",
-        "traits": "Terror.",
+        "traits": [
+            "Terror"
+        ],
         "encounter": "Striking Fear",
         "encounter#": "1-3"
     },
@@ -1889,7 +2233,9 @@
         "class": "Mythos",
         "type": "Treachery",
         "icons": "",
-        "traits": "Terror.",
+        "traits": [
+            "Terror"
+        ],
         "encounter": "Striking Fear",
         "encounter#": "4-5"
     },
@@ -1901,7 +2247,9 @@
         "class": "Mythos",
         "type": "Treachery",
         "icons": "",
-        "traits": "Terror.",
+        "traits": [
+            "Terror"
+        ],
         "encounter": "Striking Fear",
         "encounter#": "6-7"
     },
@@ -1913,7 +2261,9 @@
         "class": "Mythos",
         "type": "Treachery",
         "icons": "",
-        "traits": "Omen.",
+        "traits": [
+            "Omen"
+        ],
         "encounter": "Ancient Evils",
         "encounter#": "1-3"
     },
@@ -1925,7 +2275,9 @@
         "class": "Mythos",
         "type": "Treachery",
         "icons": "",
-        "traits": "Hazard.",
+        "traits": [
+            "Hazard"
+        ],
         "encounter": "Chilling Cold",
         "encounter#": "1-2"
     },
@@ -1937,7 +2289,9 @@
         "class": "Mythos",
         "type": "Treachery",
         "icons": "",
-        "traits": "Hazard.",
+        "traits": [
+            "Hazard"
+        ],
         "encounter": "Chilling Cold",
         "encounter#": "3-4"
     },
@@ -1949,7 +2303,10 @@
         "class": "Mythos",
         "type": "Enemy",
         "icons": "",
-        "traits": "Humanoid. Cultist.",
+        "traits": [
+            "Humanoid",
+            "Cultist"
+        ],
         "encounter": "Dark Cult",
         "encounter#": "1-3"
     },
@@ -1961,7 +2318,10 @@
         "class": "Mythos",
         "type": "Enemy",
         "icons": "",
-        "traits": "Humanoid. Cultist.",
+        "traits": [
+            "Humanoid",
+            "Cultist"
+        ],
         "encounter": "Dark Cult",
         "encounter#": "4"
     },
@@ -1973,7 +2333,9 @@
         "class": "Mythos",
         "type": "Treachery",
         "icons": "",
-        "traits": "Hex.",
+        "traits": [
+            "Hex"
+        ],
         "encounter": "Dark Cult",
         "encounter#": "5-6"
     },
@@ -1985,7 +2347,10 @@
         "class": "Mythos",
         "type": "Enemy",
         "icons": "",
-        "traits": "Monster. Nightgaunt.",
+        "traits": [
+            "Monster",
+            "Nightgaunt"
+        ],
         "encounter": "Nightgaunts",
         "encounter#": "1-2"
     },
@@ -1997,7 +2362,7 @@
         "class": "Mythos",
         "type": "Treachery",
         "icons": "",
-        "traits": "",
+        "traits": [],
         "encounter": "Nightgaunts",
         "encounter#": "3-4"
     },
@@ -2009,7 +2374,9 @@
         "class": "Mythos",
         "type": "Treachery",
         "icons": "",
-        "traits": "Obstacle.",
+        "traits": [
+            "Obstacle"
+        ],
         "encounter": "Locked Doors",
         "encounter#": "1-2"
     },
@@ -2021,7 +2388,10 @@
         "class": "Mythos",
         "type": "Enemy",
         "icons": "",
-        "traits": "Monster. Byakhee.",
+        "traits": [
+            "Monster",
+            "Byakhee"
+        ],
         "encounter": "Agents of Hastur",
         "encounter#": "1-2"
     },
@@ -2033,7 +2403,9 @@
         "class": "Mythos",
         "type": "Treachery",
         "icons": "",
-        "traits": "Omen.",
+        "traits": [
+            "Omen"
+        ],
         "encounter": "Agents of Hastur",
         "encounter#": "3-4"
     },
@@ -2045,7 +2417,10 @@
         "class": "Mythos",
         "type": "Enemy",
         "icons": "",
-        "traits": "Monster. Yithian.",
+        "traits": [
+            "Monster",
+            "Yithian"
+        ],
         "encounter": "Agents of Yog-Sothoth",
         "encounter#": "1-2"
     },
@@ -2057,7 +2432,9 @@
         "class": "Mythos",
         "type": "Treachery",
         "icons": "",
-        "traits": "Pact.",
+        "traits": [
+            "Pact"
+        ],
         "encounter": "Agents of Yog-Sothoth",
         "encounter#": "3-4"
     },
@@ -2069,7 +2446,10 @@
         "class": "Mythos",
         "type": "Enemy",
         "icons": "",
-        "traits": "Monster. Dark Young.",
+        "traits": [
+            "Monster",
+            "Dark Young"
+        ],
         "encounter": "Agents of Shub-Niggurath",
         "encounter#": "1"
     },
@@ -2081,7 +2461,10 @@
         "class": "Mythos",
         "type": "Enemy",
         "icons": "",
-        "traits": "Humanoid. Monster.",
+        "traits": [
+            "Humanoid",
+            "Monster"
+        ],
         "encounter": "Agents of Shub-Niggurath",
         "encounter#": "2-4"
     },
@@ -2093,7 +2476,11 @@
         "class": "Mythos",
         "type": "Enemy",
         "icons": "",
-        "traits": "Humanoid. Monster. Deep One.",
+        "traits": [
+            "Humanoid",
+            "Monster",
+            "Deep One"
+        ],
         "encounter": "Agents of Cthulhu",
         "encounter#": "1-2"
     },
@@ -2105,7 +2492,9 @@
         "class": "Mythos",
         "type": "Treachery",
         "icons": "",
-        "traits": "Omen.",
+        "traits": [
+            "Omen"
+        ],
         "encounter": "Agents of Cthulhu",
         "encounter#": "3-4"
     }

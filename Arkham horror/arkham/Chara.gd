@@ -37,6 +37,7 @@ func Draw(cnt = 1):
 		hands.append(deck.pop_front())
 
 func EqpAsset(asset):
+	asset.cd = false
 	assets.append(asset)
 
 func Encounter(card):
