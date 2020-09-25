@@ -1,0 +1,54 @@
+Ascender's Bane	Ascender's Bane.png
+Unplayable.
+Cannot be removed from your deck. Ethereal.
+
+(Obtained from Ascension level 10 and higher at the start of the game.)
+Clumsy	Clumsy.png
+Unplayable.
+Ethereal.
+
+Curse of the Bell	CurseoftheBell.png
+Unplayable. Cannot be removed from your deck.	(Obtained from Calling Bell when acquired.)
+Decay	Decay.png
+Unplayable.
+At the end of your turn, take 2 damage.
+
+Doubt	Doubt.png
+Unplayable.
+At the end of your turn, gain 1 Icon Weak.png Weak.
+
+Injury	Injury.png
+Unplayable.	
+Necronomicurse	Necronomicurse.png
+Unplayable.
+There is no escape from this Curse. (Cannot be Removed from your deck. When Exhausted, a new copy appears in your hand.)
+
+(Obtained when Necronomicon.png Necronomicon is acquired. Removed if Necronomicon is disacquired.)
+Normality	Normality.png
+Unplayable.
+You cannot play more than 3 cards this turn.
+
+Pain	Pain.png
+Unplayable.
+While in hand, lose 1 HP when other cards are played.
+
+Parasite	Parasite.png
+Unplayable.
+If transformed or removed from your deck, lose 3 Max HP.
+
+Pride	Pride.png
+Innate.
+At the end of your turn, put a copy of this card on top of your draw pile. Exhaust.
+
+(Obtained from the Grotesque Trophy Blight in Endless Mode.)
+Regret	Regret.png
+Unplayable.
+At the end of your turn, lose HP equal to the number of cards in your hand.
+
+Shame	Shame.png
+Unplayable.
+At the end of your turn, gain 1 Icon Frail.png Frail.
+
+Writhe	Writhe.png
+Unplayable.
+Innate.

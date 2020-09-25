@@ -49,6 +49,7 @@ GlbDat="*res://GlbDat.gd"
 CardDetail="*res://CardDetail.tscn"
 Story="*res://Story.gd"
 ChaosCheck="*res://ChaosCheck.tscn"
+GlbUi="*res://GlbUI.tscn"
 
 [gui]
 

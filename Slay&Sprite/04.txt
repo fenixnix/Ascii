@@ -1,0 +1,143 @@
+Bandage Up	BandageUp.png
+Uncommon	Skill	0	Heal 4(6) HP.
+Exhaust.
+
+Blind	Blind.png
+Uncommon	Skill	0	Apply 2 Icon Weak.png Weak (to ALL enemies).
+Dark Shackles	DarkShackles.png
+Uncommon	Skill	0	Enemy loses 9(15) Icon Strength.png Strength for the rest of this turn.
+Exhaust.
+
+Deep Breath	DeepBreath.png
+Uncommon	Skill	0	Shuffle your discard pile into your draw pile.
+Draw 1(2) card(s).
+
+Discovery	Discovery.png
+Uncommon	Skill	1	Choose 1 of 3 random cards to add to your hand. It costs 0 this turn. Exhaust. (Don't Exhaust.)
+Dramatic Entrance	DramaticEntrance.png
+Uncommon	Attack	0	Innate.
+Deal 6(8) damage to ALL enemies. Exhaust.
+
+Enlightenment	Enlightenment.png
+Uncommon	Skill	0	Reduce the cost of cards in your hand to 1 this turn(combat).
+Finesse	Finesse.png
+Uncommon	Skill	0	Gain 2(4) Icon Block.png Block.
+Draw 1 card.
+
+Flash of Steel	FlashofSteel.png
+Uncommon	Attack	0	Deal 3(6) damage.
+Draw 1 card.
+
+Forethought	Forethought.png
+Uncommon	Skill	0	Place a card(any number of cards) from your hand on the bottom of your draw pile. It (They) costs 0 until played.
+Good Instincts	GoodInstincts.png
+Uncommon	Skill	0	Gain 5(8) Icon Block.png Block.
+Impatience	Impatience.png
+Uncommon	Skill	0	If you have no Attack cards in your hand, draw 2(3) cards.
+Jack Of All Trades	JackOfAllTrades.png
+Uncommon	Skill	0	Add 1(2) random Colorless card(s) to your hand.
+Exhaust.
+
+Madness	Madness.png
+Uncommon	Skill	1(0)	A random card in your hand costs 0 for the rest of combat. Exhaust.
+Mind Blast	MindBlast.png
+Uncommon	Attack	2(1)	Innate.
+Deal damage equal to the number of cards in your draw pile.
+
+Panacea	Panacea.png
+Uncommon	Skill	0	Gain 1(2) Icon Artifact.png Artifact.
+Exhaust.
+
+Panic Button	PanicButton.png
+Uncommon	Skill	0	Gain 30(40) Icon Block.png Block. You cannot gain Icon Block.png Block from cards for the next 2 turns. Exhaust.
+Purity	Purity.png
+Uncommon	Skill	0	Choose and exhaust 3(5) cards in your hand. Exhaust.
+Swift Strike	SwiftStrike.png
+Uncommon	Attack	0	Deal 6(9) damage.
+Trip	Trip.png
+Uncommon	Skill	0	Apply 2 Icon Vulnerable.png Vulnerable (to ALL enemies).
+Apotheosis	Apotheosis.png
+Rare	Skill	2(1)	Upgrade ALL of your cards for the rest of combat. Exhaust.
+Chrysalis	Chrysalis.png
+Rare	Skill	2	Add 3(5) random Skills into your Draw Pile. They cost 0 this combat. Exhaust.
+Hand of Greed	HandOfGreed.png
+Rare	Attack	2	Deal 20(25) damage. If this kills a non-minion enemy, gain 20(25) Gold.
+Magnetism	Magnetism.png
+Rare	Power	2(1)	At the start of each turn, add a random colorless card to your hand.
+Master Of Strategy	MasterOfStrategy.png
+Rare	Skill	0	Draw 3(4) cards. Exhaust.
+Mayhem	Mayhem.png
+Rare	Power	2(1)	At the start of your turn, play the top card of your draw pile.
+Metamorphosis	Metamorphosis.png
+Rare	Skill	2	Add 3(5) random Attacks into your Draw Pile. They cost 0 this combat. Exhaust.
+Panache	Panache.png
+Rare	Power	0	Every time you play 5 cards in a single turn, deal 10(14) damage to ALL enemies.
+Sadistic Nature	SadisticNature.png
+Rare	Power	0	Whenever you apply a Debuff to an enemy, they take 3(4) damage.
+Secret Technique	SecretTechnique.png
+Rare	Skill	0	Choose a Skill from your draw pile and place it into your hand. Exhaust. (Don't Exhaust)
+Secret Weapon	SecretWeapon.png
+Rare	Skill	0	Choose an Attack from your draw pile and place it into your hand. Exhaust. (Don't Exhaust)
+The Bomb	TheBomb.png
+Rare	Skill	2	At the end of 3 turns, deal 40(50) damage to ALL enemies.
+Thinking Ahead	ThinkingAhead.png
+Rare	Skill	0	Draw 2 cards. Place a card from your hand on top of your draw pile. Exhaust.
+(Don't Exhaust)
+
+Transmutation	Transmutation.png
+Rare	Skill	X	Add X random (Upgraded) colorless cards into your hand. They cost 0 this turn. Exhaust.
+Violence	Violence.png
+Rare	Skill	0	Place 3(4) random Attack cards from your draw pile into your hand. Exhaust.
+Apparition	Apparition.png
+Special	Skill	1	Gain 1 Icon Intangible.png Intangible. Exhaust. Ethereal. (no longer Ethereal.)
+(Obtained from event: Council of Ghosts).
+
+Beta	Beta.png
+Special	Skill	2(1)	Shuffle an
+Omega into your draw pile. Exhaust. (Obtained from Alpha).
+
+Bite	Bite.png
+Special	Attack	1	Deal 7(8) damage. Heal 2(3) HP.
+(Obtained from event: Vampires(?)).
+
+Expunger	Expunger.png
+Special	Attack	1	Deal 9(15) damage X times. (Obtained from
+Conjure Blade).
+
+Insight	Insight.png
+Special	Skill	0	Icon Retain.png Retain. Draw 2(3) cards. Exhaust. (Obtained from
+Evaluate, Pray and Study).
+
+J.A.X.	J.A.X..png
+Special	Skill	0	Lose 3 HP.
+Gain 2(3) Icon Strength.png Strength.
+
+(Obtained from event: Augmenter).
+
+Miracle	Miracle.png
+Special	Skill	0	Icon Retain.png Retain. Gain (2) Energy. Exhaust. (Obtained from
+Collect, Deus Ex Machina, PureWater-0.png Pure Water, and Holy water.png Holy Water).
+
+Omega	Omega.png
+Special	Power	3	At the end of your turn deal 50(60) damage to ALL enemies. (Obtained from
+Beta).
+
+Ritual Dagger	RitualDagger.png
+Special	Attack	1	Deal 15 damage. If this kills an enemy then permanently increase this card's damage by 3(5)
+(Obtained during event: The Nest)
+
+Safety	Safety.png
+Special	Skill	1	Icon Retain.png Retain. Gain 12(16) Icon Block.png Block. Exhaust.
+(Obtained from Deceive Reality).
+
+Shiv	Shiv.png
+Special	Attack	0	Deal 4(6) damage. Exhaust. (Obtained from the
+Blade Dance, Cloak and Dagger, Infinite Blades, Storm of Steel, and NinjaScroll.png Ninja Scroll).
+
+Smite	Smite.png
+Special	Attack	1	Icon Retain.png Retain. Deal 12(16) damage. Exhaust. (Obtained from
+Carve Reality and Battle Hymn).
+
+Through Violence	ThroughViolence.png
+Special	Attack	0	Icon Retain.png Retain. Deal 20(30) damage. Exhaust. (Obtained from
+Reach Heaven).

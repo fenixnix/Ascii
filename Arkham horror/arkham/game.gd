@@ -12,7 +12,8 @@ func _ready():
 	Story.connect("remap",self,"on_remap")
 	Story.Set(GlbDat.story)
 	refresh_story()
-	GlbDat.ect_deck.shuffle()
+	#TODO for Test :
+	#GlbDat.ect_deck.shuffle()
 
 	if GlbDat.charas.get_child_count()>0:
 		_on_CharaList_select(GlbDat.charas.get_child(0))

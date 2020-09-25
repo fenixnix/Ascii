@@ -23,7 +23,7 @@ func SetupAction(chara):
 	if chara.at<=0:
 		return
 	for c in get_children():
-		if c.chara.has(chara):
+		if c.charas.has(chara):
 			if c.clue>0:
 				c.SetActionType("scan")
 			for negh in c.data.connect:

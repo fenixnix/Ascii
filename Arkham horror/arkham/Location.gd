@@ -3,8 +3,8 @@ extends Node2D
 var data
 var clue = 0
 var front = false
-var chara = []
-var enm = []
+var charas = []
+var enms = []
 
 onready var charaPrefab = preload("res://CharaSymbel.tscn")
 onready var enmPrefab = preload("res://EnmSymbel.tscn")
@@ -34,7 +34,7 @@ func refresh():
 		c.queue_free()
 	yield(get_tree(),"idle_frame")
 	var cnt = 0
-	for c in chara:
+	for c in charas:
 		var cha = charaPrefab.instance()
 		$chara.add_child(cha)
 		cha.position += Vector2.RIGHT*40*cnt
@@ -45,7 +45,7 @@ func refresh():
 		c.queue_free()
 	yield(get_tree(),"idle_frame")
 	cnt = 0
-	for c in enm:
+	for c in enms:
 		var cha = enmPrefab.instance()
 		$enm.add_child(cha)
 		cha.position += Vector2.LEFT*40*cnt
@@ -69,12 +69,13 @@ func SetActionType(type):
 
 func Spawn(id):
 	var enemy = GlbDb.cardDict[str(id)].duplicate(true)
-	enm.append(enemy)
+	enemy.cd = false
+	enms.append(enemy)
 	return enemy
 
 func Enter(_chara):
 	_chara.location = self
-	chara.append(_chara)
+	charas.append(_chara)
 	clue = data.clues*GlbDat.CharaCount()
 	front = true
 	refresh()

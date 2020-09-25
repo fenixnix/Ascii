@@ -32,6 +32,7 @@ func InitGame(_charaList,deckList):
 func CharaCount():
 	return $charas.get_child_count()
 
+var script_path = "res://data/event/%s.gd"
 func Use(card):
 	#check action
 	var cost = card.get("cost",0)
@@ -44,7 +45,7 @@ func Use(card):
 				current_chara.EqpAsset(card)
 			"Event":
 				print("Event:",card)
-				var s = load("res://data/event/%s.gd"%str(card.id))
+				var s = load(script_path%str(card.id))
 				if s==null:
 					print_debug("no script:",card.id)
 				else:
@@ -54,6 +55,16 @@ func Use(card):
 		return true
 	return false
 
+var s
+func UseAsset(asset):
+	print_debug(asset)
+	var res
+	if current_chara.at>0 || asset.has("fast"):
+		s = load(script_path%str(asset.id))
+		res = s.Use(current_chara,asset)
+	if !asset.has("fast")&&res:
+		current_chara.at -= 1
+		
 func MoveTo(loc):
 	current_chara.at -= 1
 	current_chara.location.chara.erase(current_chara)
@@ -75,10 +86,10 @@ func Scan():
 			loc.clue -= 1
 			current_chara.clue += 1
 
-func Roll(chara,type,dst):
+func Roll(chara,type,dst,bonus = 0):
 	var src = chara.GetAttr(type)
 	var token = chaosbag[randi()%len(chaosbag)]
-	var val = 0
+	var val = bonus
 	match token:
 		"X":val = src + 1
 		"@":val = src + CharaCount()

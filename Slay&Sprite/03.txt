@@ -1,0 +1,150 @@
+Defend	Defend P.png
+Starter	Skill	1	Gain 5(8) Icon Block.png Block.
+Eruption	Eruption.png
+Starter	Attack	2(1)	Deal 9 damage. Enter Wrath.
+Strike	Strike P.png
+Starter	Attack	1	Deal 6(9) damage.
+Vigilance	Vigilance.png
+Starter	Skill	2	Enter Calm. Gain 8(12) Icon Block.png Block.
+Bowling Bash	BowlingBash.png
+Common	Attack	1	Deal 7(10) damage for each enemy in combat.
+Consecrate	Consecrate.png
+Common	Attack	0	Deal 5(8) damage to ALL enemies.
+Crescendo	Crescendo.png
+Common	Skill	1(0)	Icon Retain.png Retain. Enter Wrath. Exhaust.
+Crush Joints	CrushJoints.png
+Common	Attack	1	Deal 8(11) damage. If the previous card played was a skill, apply 1(2) Icon Vulnerable.png Vulnerable.
+Cut Through Fate	CutThroughFate.png
+Common	Attack	1	Deal 7(9) damage. Scry 2(3). Draw 1 card.
+Empty Body	EmptyBody.png
+Common	Skill	1	Gain 7(10) Icon Block.png Block. Exit your Stance.
+Empty Fist	EmptyFist.png
+Common	Attack	1	Deal 9(14) damage. Exit your Stance.
+Evaluate	Evaluate.png
+Common	Skill	1	Gain 6(10) Icon Block.png Block. Shuffle an Insight into your draw pile.
+Flurry of Blows	FlurryOfBlows.png
+Common	Attack	0	Deal 4(6) damage. On Stance change, returns from the Discard Pile into your hand.
+Flying Sleeves	FlyingSleeves.png
+Common	Attack	1	Icon Retain.png Retain. Deal 4(6) damage twice.
+Follow-Up	Follow-Up.png
+Common	Attack	1	Deal 7(11) damage. If the previous card played was an Attack, gain Energy.
+Halt	Halt.png
+Common	Skill	0	Gain 3(4) Icon Block.png Block. Wrath: Gain 9(14) additional Icon Block.png block.
+Just Lucky	JustLucky.png
+Common	Attack	0	Scry 1(2). Gain 2(3) Icon Block.png Block. Deal 3(4) damage.
+Pressure Points	PressurePoints.png
+Common	Skill	1	Apply 8(11) Mark. ALL enemies lose HP equal to their Mark.
+Prostrate	Prostrate.png
+Common	Skill	0	Gain 2(3) Icon Mantra.png Mantra. Gain 4 Icon Block.png Block.
+Protect	Protect.png
+Common	Skill	2	Icon Retain.png Retain. Gain 12(16) Icon Block.png Block.
+Sash Whip	SashWhip.png
+Common	Attack	1	Deal 8(10) damage. If the last card played this combat was an Attack, apply 1(2) Icon Weak.png Weak.
+Third Eye	ThirdEye.png
+Common	Skill	1	Gain 7(9) Icon Block.png Block. Scry 3(5).
+Tranquility	Tranquility.png
+Common	Skill	1(0)	Icon Retain.png Retain. Enter Calm. Exhaust.
+Battle Hymn	BattleHymn.png
+Uncommon	Power	1	(Innate.) At the start of each turn add a Smite into your hand.
+Carve Reality	CarveReality.png
+Uncommon	Attack	1	Deal 6(10) damage. Add a Smite into your hand.
+Collect	Collect.png
+Uncommon	Skill	X	Put an Upgraded Miracle into your hand at the start of your next X(+1) turns. Exhaust.
+Conclude	Conclude.png
+Uncommon	Attack	1	Deal 12(16) damage to ALL enemies. End your turn.
+Deceive Reality	DeceiveReality.png
+Uncommon	Skill	1	Gain 4(7) Icon Block.png Block. Add a Safety to your hand.
+Empty Mind	EmptyMind.png
+Uncommon	Skill	1	Exit your Stance. Draw 2(3) cards.
+Fasting	Fasting.png
+Uncommon	Power	2	Gain 3(4) Icon Strength.png Strength. Gain 3(4) Icon Dexterity.png Dexterity. Gain 1 less Energy at the start of each turn.
+Fear No Evil	FearNoEvil.png
+Uncommon	Attack	1	Deal 8(11) damage. If the enemy intends to Attack, enter Calm.
+Foreign Influence	ForeignInfluence.png
+Uncommon	Skill	0	Choose 1 of 3 Attacks of any color to add to your hand. (It costs 0 this turn.) Exhaust.
+Foresight	Foresight.png
+Uncommon	Power	1	At the start of your turn, Scry 3(4).
+Indignation	Indignation.png
+Uncommon	Skill	1	If you are in Wrath, apply 3(5) Icon Vulnerable.png Vulnerable to ALL enemies, otherwise enter Wrath.
+Inner Peace	InnerPeace.png
+Uncommon	Skill	1	If you are in Calm, draw 3(4) cards, otherwise Enter Calm.
+Like Water	LikeWater.png
+Uncommon	Power	1	At the end of your turn, if you are in Calm, gain 5(7) Icon Block.png Block.
+Meditate	Meditate.png
+Uncommon	Skill	1	Put 1(2) card(s) from your discard pile into your hand and Icon Retain.png Retain it. Enter Calm. End your turn.
+Mental Fortress	MentalFortress.png
+Uncommon	Power	1	Whenever you switch Stances, gain 4(6) Icon Block.png Block.
+Nirvana	Nirvana.png
+Uncommon	Power	1	Whenever you Scry, gain 3(4) Icon Block.png Block.
+Perseverance	Perseverance.png
+Uncommon	Skill	1	Icon Retain.png Retain. Gain 5(7) Icon Block.png Block. Whenever this card is Icon Retain.png Retained, increase its Icon Block.png Block by 2(3).
+Pray	Pray.png
+Uncommon	Skill	1	Gain 3(4) Icon Mantra.png Mantra. Shuffle an Insight into your draw pile.
+Reach Heaven	ReachHeaven.png
+Uncommon	Attack	2	Deal 10(15) damage. Shuffle a Through Violence into your draw pile.
+Rushdown	Rushdown.png
+Uncommon	Power	1(0)	Whenever you enter Wrath, draw 2 cards.
+Sanctity	Sanctity.png
+Uncommon	Skill	1	Gain 6(9) Icon Block.png Block. If the previous card played was a Skill, draw 2 card.
+Sands of Time	SandsofTime.png
+Uncommon	Attack	4	Icon Retain.png Retain. Deal 20(26) damage. Whenever this card is Icon Retain.png Retained, lower its cost by 1.
+Signature Move	SignatureMove.png
+Uncommon	Attack	2	Can only be played if this is the only attack in your hand. Deal 30(40) damage.
+Simmering Fury	SimmeringFury.png
+Uncommon	Skill	1	At the start of your next turn, enter Wrath and draw 2(3) cards.
+Study	Study.png
+Uncommon	Power	2(1)	At the end of your turn, shuffle an Insight into your draw pile.
+Swivel	Swivel.png
+Uncommon	Skill	2	Gain 8(11) Icon Block.png Block. The next Attack you play costs 0.
+Talk to the Hand	TalktotheHand.png
+Uncommon	Attack	1	Deal 5(7) damage. Whenever you attack this enemy, gain 2(3) Icon Block.png Block. Exhaust.
+Tantrum	Tantrum.png
+Uncommon	Attack	1	Deal 3 damage 3(4) times. Enter Wrath. Shuffle this card into your draw pile.
+Wallop	Wallop.png
+Uncommon	Attack	2	Deal 9(12) damage. Gain Icon Block.png Block equal to unblocked damage dealt.
+Wave of the Hand	WaveoftheHand.png
+Uncommon	Skill	1	Whenever you gain Icon Block.png Block this turn, apply 1(2) Icon Weak.png Weak to ALL enemies.
+Weave	Weave.png
+Uncommon	Attack	0	Deal 4(6) damage. Whenever you Scry and would discard this card, add it into your hand instead.
+Wheel Kick	WheelKick.png
+Uncommon	Attack	2	Deal 15(20) damage. Draw 2 cards.
+Windmill Strike	WindmillStrike.png
+Uncommon	Attack	2	Icon Retain.png Retain. Deal 7(10) damage. Whenever this card is Icon Retain.png Retained, increase its damage by 4(5).
+Worship	Worship.png
+Uncommon	Skill	2	(Icon Retain.png Retain.) Gain 5 Icon Mantra.png Mantra.
+Wreath of Flame	WreathofFlame.png
+Uncommon	Skill	1	Your next Attack deals 5(8) additional damage.
+Alpha	Alpha.png
+Rare	Skill	1	(Innate.) Shuffle a Beta into your draw pile. Exhaust.
+Blasphemy	Blasphemy.png
+Rare	Skill	1	(Retain.) Enter Divinity. Die next turn. Exhaust.
+Brilliance	Brilliance.png
+Rare	Attack	1	Deal 12(16) damage. Deals additional damage for all Icon Mantra.png Mantra gained this combat.
+Conjure Blade	ConjureBlade.png
+Rare	Skill	X	Shuffle an Expunger with X(+1) into your draw pile. Exhaust.
+Deus Ex Machina	DeusExMachina.png
+Rare	Skill	Unplayable	Unplayable. When you draw this card, add 2(3) Miracles into your hand. Exhaust.
+Deva Form	DevaForm.png
+Rare	Power	3	Ethereal. At the start of your turn, gain Energy and increase this gain by 1. (not Ethereal.)
+Devotion	Devotion.png
+Rare	Power	1	At the start of your turn, gain 2(3) Icon Mantra.png Mantra.
+Establishment	Establishment.png
+Rare	Power	1	(Innate.) Whenever a card is Icon Retain.png Retained, lower its cost by 1.
+Judgment	Judgment.png
+Rare	Skill	1	If the enemy has 30(40) or less HP, set their HP to 0.
+Lesson Learned	LessonLearned.png
+Rare	Attack	2	Deal 10(12) damage. If this kills an enemy, Upgrade a random card in your deck. Exhaust.
+Master Reality	MasterReality.png
+Rare	Power	1(0)	Whenever a card is created during combat, Upgrade it.
+Omniscience	Omniscience.png
+Rare	Skill	4(3)	Choose a card in your draw pile. Play the chosen card twice and Exhaust it. Exhaust.
+Ragnarok	Ragnarok.png
+Rare	Attack	3	Deal 5(6) damage to a random enemy 5(6) times.
+Scrawl	Scrawl.png
+Rare	Skill	1(0)	Draw cards until your hand is full. Exhaust.
+Spirit Shield	SpiritShield.png
+Rare	Skill	2	Gain 3(4) Icon Block.png Block for each card in your hand.
+Vault	Vault.png
+Rare	Skill	3(2)	Skip the next enemy turn. End your turn. Exhaust.
+Wish	Wish.png
+Rare	Skill	3	Choose one: Gain 6(8) Icon PlatedArmor.png Plated Armor, 3(4) Icon Strength.png Strength, or 25(30) Gold. Exhaust.

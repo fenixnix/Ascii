@@ -41,7 +41,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Ammo" type="RichTextLabel" parent="."]
+[node name="charge" type="RichTextLabel" parent="."]
 margin_left = 22.827
 margin_top = -23.4454
 margin_right = 132.827
@@ -51,5 +51,6 @@ scroll_active = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="gui_input" from="." to="." method="_on_Asset_gui_input"]
 [connection signal="mouse_entered" from="." to="." method="_on_Asset_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_Asset_mouse_exited"]

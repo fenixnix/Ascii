@@ -1,0 +1,602 @@
+[
+    {
+        "desc": "Gain 5(8) Block.",
+        "name": "Defend",
+        "img": "Defend B.png",
+        "rarity": "Starter",
+        "type": "Skill",
+        "cost": "1"
+    },
+    {
+        "desc": "Evoke your next Orb 2 times.",
+        "name": "Dualcast",
+        "img": "Dualcast.png",
+        "rarity": "Starter",
+        "type": "Skill",
+        "cost": "1(0)"
+    },
+    {
+        "desc": "Deal 6(9) damage.",
+        "name": "Strike",
+        "img": "Strike B.png",
+        "rarity": "Starter",
+        "type": "Attack",
+        "cost": "1"
+    },
+    {
+        "desc": "Channel 1 Lightning.",
+        "name": "Zap",
+        "img": "Zap.png",
+        "rarity": "Starter",
+        "type": "Skill",
+        "cost": "1(0)"
+    },
+    {
+        "desc": "Deal 7(10) damage. Channel 1 Lightning.",
+        "name": "Ball Lightning",
+        "img": "BallLightning.png",
+        "rarity": "Common",
+        "type": "Attack",
+        "cost": "1"
+    },
+    {
+        "desc": "Deal 4(6) damage for each Channeled Orb.",
+        "name": "Barrage",
+        "img": "Barrage.png",
+        "rarity": "Common",
+        "type": "Attack",
+        "cost": "1"
+    },
+    {
+        "desc": "Deal 3(4) damage and apply 1(2) Vulnerable.",
+        "name": "Beam Cell",
+        "img": "BeamCell.png",
+        "rarity": "Common",
+        "type": "Attack",
+        "cost": "0"
+    },
+    {
+        "desc": "Gain 7(10) Block.\nNext turn, gain 1 Energy.",
+        "name": "Charge Battery",
+        "img": "ChargeBattery.png",
+        "rarity": "Common",
+        "type": "Skill",
+        "cost": "1"
+    },
+    {
+        "desc": "Deal 3(5) damage.\nAll Claw cards deal 2 additional damage this combat.",
+        "name": "Claw",
+        "img": "Claw.png",
+        "rarity": "Common",
+        "type": "Attack",
+        "cost": "0"
+    },
+    {
+        "desc": "Deal 6(9) damage. Channel 1 Frost.",
+        "name": "Cold Snap",
+        "img": "ColdSnap.png",
+        "rarity": "Common",
+        "type": "Attack",
+        "cost": "1"
+    },
+    {
+        "desc": "Deal 7(10) damage. Draw 1 card for each unique Orb you have.",
+        "name": "Compile Driver",
+        "img": "CompileDriver.png",
+        "rarity": "Common",
+        "type": "Attack",
+        "cost": "1"
+    },
+    {
+        "desc": "Channel 1 Frost.\nDraw 1(2) card(s).",
+        "name": "Coolheaded",
+        "img": "Coolheaded.png",
+        "rarity": "Common",
+        "type": "Skill",
+        "cost": "1"
+    },
+    {
+        "desc": "Deal 3(4) damage. If the enemy intends to attack, apply 1(2) Weak.",
+        "name": "Go for the Eyes",
+        "img": "GofortheEyes.png",
+        "rarity": "Common",
+        "type": "Attack",
+        "cost": "0"
+    },
+    {
+        "desc": "Gain 3(5) Block.\nReturn a card from your discard pile to your hand. Exhaust (does not Exhaust).",
+        "name": "Hologram",
+        "img": "Hologram-0.png",
+        "rarity": "Common",
+        "type": "Skill",
+        "cost": "1"
+    },
+    {
+        "desc": "Gain 9(12) Block.",
+        "name": "Leap",
+        "img": "Leap.png",
+        "rarity": "Common",
+        "type": "Skill",
+        "cost": "1"
+    },
+    {
+        "desc": "Deal 9(12) damage.\nPut the next card you play this turn on top of your draw pile.",
+        "name": "Rebound",
+        "img": "Rebound.png",
+        "rarity": "Common",
+        "type": "Attack",
+        "cost": "1"
+    },
+    {
+        "desc": "Evoke your next Orb.\nChannel the Orb that was just Evoked.",
+        "name": "Recursion",
+        "img": "Recursion.png",
+        "rarity": "Common",
+        "type": "Skill",
+        "cost": "1(0)"
+    },
+    {
+        "desc": "Gain Block equal to the number of cards in your discard pile (+3).",
+        "name": "Stack",
+        "img": "Stack.png",
+        "rarity": "Common",
+        "type": "Skill",
+        "cost": "1"
+    },
+    {
+        "desc": "Gain 6(8) Block. Decrease this card's Block by 1 this combat.",
+        "name": "Steam Barrier",
+        "img": "SteamBarrier.png",
+        "rarity": "Common",
+        "type": "Skill",
+        "cost": "0"
+    },
+    {
+        "desc": "Deal 15(20) damage.\nWhenever you play this card, reduce its cost by 1 for this combat.",
+        "name": "Streamline",
+        "img": "Streamline.png",
+        "rarity": "Common",
+        "type": "Attack",
+        "cost": "2"
+    },
+    {
+        "desc": "Deal 6(9) damage to ALL enemies.\nDraw 1 card.",
+        "name": "Sweeping Beam",
+        "img": "SweepingBeam.png",
+        "rarity": "Common",
+        "type": "Attack",
+        "cost": "1"
+    },
+    {
+        "desc": "Gain 2(3) Energy.\nAdd a Void into your discard pile.",
+        "name": "TURBO",
+        "img": "TURBO.png",
+        "rarity": "Common",
+        "type": "Skill",
+        "cost": "0"
+    },
+    {
+        "desc": "Gain 1 Energy for every 6(5) cards in your draw pile.",
+        "name": "Aggregate",
+        "img": "Aggregate.png",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": "1"
+    },
+    {
+        "desc": "If you have 0 Block, gain 11(15) Block.",
+        "name": "Auto-Shields",
+        "img": "Auto-Shields.png",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": "1"
+    },
+    {
+        "desc": "Deal damage equal to 2(3) times the Frost Channeled this combat to ALL enemies.",
+        "name": "Blizzard",
+        "img": "Blizzard.png",
+        "rarity": "Uncommon",
+        "type": "Attack",
+        "cost": "1"
+    },
+    {
+        "desc": "Gain 10(13) Block.\nInnate. Exhaust.",
+        "name": "Boot Sequence",
+        "img": "BootSequence.png",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": "0"
+    },
+    {
+        "desc": "Deal 8(11) damage.\nApply 2(3) Lock-On",
+        "name": "Bullseye",
+        "img": "BullsEye.png",
+        "rarity": "Uncommon",
+        "type": "Attack",
+        "cost": "1"
+    },
+    {
+        "desc": "Gain 2(3) Orb slots.",
+        "name": "Capacitor",
+        "img": "Capacitor.png",
+        "rarity": "Uncommon",
+        "type": "Power",
+        "cost": "1"
+    },
+    {
+        "desc": "Channel 1(2) random Orb(s).",
+        "name": "Chaos",
+        "img": "Chaos.png",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": "1"
+    },
+    {
+        "desc": "(Innate.)\nChannel 1 Frost for each enemy in combat (per enemy in combat). Exhaust.",
+        "name": "Chill",
+        "img": "Chill.png",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": "0"
+    },
+    {
+        "desc": "Gain 2(3) Focus.\nLose 1 Orb Slot.",
+        "name": "Consume",
+        "img": "Consume.png",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": "2"
+    },
+    {
+        "desc": "Channel 1 Dark. (Trigger the passive ability of all Dark orbs.)",
+        "name": "Darkness",
+        "img": "Darkness.png",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": "1"
+    },
+    {
+        "desc": "Gain 1(2) Focus.",
+        "name": "Defragment",
+        "img": "Defragment.png",
+        "rarity": "Uncommon",
+        "type": "Power",
+        "cost": "1"
+    },
+    {
+        "desc": "Deal 10(14) damage to ALL enemies.\nChannel 1 Dark.",
+        "name": "Doom and Gloom",
+        "img": "DoomandGloom.png",
+        "rarity": "Uncommon",
+        "type": "Attack",
+        "cost": "2"
+    },
+    {
+        "desc": "Double your Energy.\nExhaust.",
+        "name": "Double Energy",
+        "img": "DoubleEnergy.png",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": "1(0)"
+    },
+    {
+        "desc": "Gain 13(16)\nRetain your hand this turn.",
+        "name": "Equilibrium",
+        "img": "Equilibrium.png",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": "2"
+    },
+    {
+        "desc": "Deal 5(6) damage. If you have played less than 3(4) cards this turn, draw 1 card.",
+        "name": "FTL",
+        "img": "FTL.png",
+        "rarity": "Uncommon",
+        "type": "Attack",
+        "cost": "0"
+    },
+    {
+        "desc": "Costs 1 less Energy for each Power card played this combat.\nGain 12(16) Block.",
+        "name": "Force Field",
+        "img": "ForceField.png",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": "4"
+    },
+    {
+        "desc": "Channel 1 Plasma.",
+        "name": "Fusion",
+        "img": "Fusion.png",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": "2(1)"
+    },
+    {
+        "desc": "Gain 1 Block. When played, permanently increase this card's Block by 2(3).\nExhaust.",
+        "name": "Genetic Algorithm",
+        "img": "GeneticAlgorithm.png",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": "1"
+    },
+    {
+        "desc": "Gain 7(10) Block.\nChannel 2 Frost.",
+        "name": "Glacier",
+        "img": "Glacier.png",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": "2"
+    },
+    {
+        "desc": "Whenever you play a Power card, draw 1(2) card(s).",
+        "name": "Heatsinks",
+        "img": "Heatsinks.png",
+        "rarity": "Uncommon",
+        "type": "Power",
+        "cost": "1"
+    },
+    {
+        "desc": "(Innate.)\nAt the start of your turn, add a random Common card into your hand.",
+        "name": "Hello World",
+        "img": "HelloWorld.png",
+        "rarity": "Uncommon",
+        "type": "Power",
+        "cost": "1"
+    },
+    {
+        "desc": "At the start of your turn, trigger the passive ability of your next Orb (2 times).",
+        "name": "Loop",
+        "img": "Loop.png",
+        "rarity": "Uncommon",
+        "type": "Power",
+        "cost": "1"
+    },
+    {
+        "desc": "Remove all Block from an enemy.\nDeal 10(14) damage.",
+        "name": "Melter",
+        "img": "Melter.png",
+        "rarity": "Uncommon",
+        "type": "Attack",
+        "cost": "1"
+    },
+    {
+        "desc": "Draw 2(3) cards.\nAdd a Burn into your discard pile.",
+        "name": "Overclock",
+        "img": "Overclock.png",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": "0"
+    },
+    {
+        "desc": "Exhaust a card.\nGain Energy equal to its cost.",
+        "name": "Recycle",
+        "img": "Recycle.png",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": "1(0)"
+    },
+    {
+        "desc": "Gain 7(9) Block X times.",
+        "name": "Reinforced Body",
+        "img": "ReinforcedBody.png",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": "X"
+    },
+    {
+        "desc": "Lose 2(1) Icon Focus.png Focus. Gain 1 Icon Strength.png Strength. Gain 1 Icon Dexterity.png Dexterity.",
+        "name": "Reprogram",
+        "img": "Reprogram.png",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": "1"
+    },
+    {
+        "desc": "Deal 7(9) damage to a random enemy 2 times.",
+        "name": "Rip and Tear",
+        "img": "RipandTear.png",
+        "rarity": "Uncommon",
+        "type": "Attack",
+        "cost": "1"
+    },
+    {
+        "desc": "Deal 7(9) damage.\nDraw 3(4) cards. Discard all cards drawn this way that do not cost 0.",
+        "name": "Scrape",
+        "img": "Scrape.png",
+        "rarity": "Uncommon",
+        "type": "Attack",
+        "cost": "1"
+    },
+    {
+        "desc": "At the end of combat, heal 7(10) HP.",
+        "name": "Self Repair",
+        "img": "SelfRepair.png",
+        "rarity": "Uncommon",
+        "type": "Power",
+        "cost": "1"
+    },
+    {
+        "desc": "Draw 3(4) cards.",
+        "name": "Skim",
+        "img": "Skim.png",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": "1"
+    },
+    {
+        "desc": "Whenever you take attack damage, Channel 1(2) Lightning.",
+        "name": "Static Discharge",
+        "img": "StaticDischarge.png",
+        "rarity": "Uncommon",
+        "type": "Power",
+        "cost": "1"
+    },
+    {
+        "desc": "(Innate.)\nWhenever you play a Power, Channel 1 Lightning.",
+        "name": "Storm",
+        "img": "Storm.png",
+        "rarity": "Uncommon",
+        "type": "Power",
+        "cost": "1"
+    },
+    {
+        "desc": "Deal 24(32) damage.\nIf this kills the enemy, gain 3 Energy.",
+        "name": "Sunder",
+        "img": "Sunder.png",
+        "rarity": "Uncommon",
+        "type": "Attack",
+        "cost": "3"
+    },
+    {
+        "desc": "Channel X(+1) Lightning.\nExhaust.",
+        "name": "Tempest",
+        "img": "Tempest.png",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": "X"
+    },
+    {
+        "desc": "Add a random Power to your hand.\nIt costs 0 this turn. Exhaust.",
+        "name": "White Noise",
+        "img": "WhiteNoise.png",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": "1(0)"
+    },
+    {
+        "desc": "Deal 10(14) damage. Put all Cost 0 cards from your discard pile into your hand.",
+        "name": "All for One",
+        "img": "AllforOne.png",
+        "rarity": "Rare",
+        "type": "Attack",
+        "cost": "2"
+    },
+    {
+        "desc": "This turn, your next (1(2)) Power(s) is (are) played twice.",
+        "name": "Amplify",
+        "img": "Amplify.png",
+        "rarity": "Rare",
+        "type": "Skill",
+        "cost": "1"
+    },
+    {
+        "desc": "Gain 4(5) Focus.\nAt the start of each turn, lose 1 Focus.",
+        "name": "Biased Cognition",
+        "img": "BiasedCognition.png",
+        "rarity": "Rare",
+        "type": "Power",
+        "cost": "1"
+    },
+    {
+        "desc": "Prevent the next (1(2)) time(s) you would lose HP.",
+        "name": "Buffer",
+        "img": "Buffer.png",
+        "rarity": "Rare",
+        "type": "Power",
+        "cost": "2"
+    },
+    {
+        "desc": "Deal 11(15) damage.\nGain 1 Artifact. Exhaust.",
+        "name": "Core Surge",
+        "img": "CoreSurge.png",
+        "rarity": "Rare",
+        "type": "Attack",
+        "cost": "1"
+    },
+    {
+        "desc": "At the start of each turn, add a random Power card to your hand.",
+        "name": "Creative AI",
+        "img": "CreativeAI.png",
+        "rarity": "Rare",
+        "type": "Power",
+        "cost": "3(2)"
+    },
+    {
+        "desc": "The first card you play each turn is played twice.\nEthereal. (not Ethereal.)",
+        "name": "Echo Form",
+        "img": "EchoForm.png",
+        "rarity": "Rare",
+        "type": "Power",
+        "cost": "3"
+    },
+    {
+        "desc": "Lightning now hits ALL enemies.\nChannel 2(3) Lightning.",
+        "name": "Electrodynamics",
+        "img": "Electrodynamics.png",
+        "rarity": "Rare",
+        "type": "Power",
+        "cost": "2"
+    },
+    {
+        "desc": "Remove (Evoke) ALL of your Orbs, gain 1 Energy and draw 1 card for each Orb removed(evoked). Exhaust.",
+        "name": "Fission",
+        "img": "Fission.png",
+        "rarity": "Rare",
+        "type": "Skill",
+        "cost": "0"
+    },
+    {
+        "desc": "Deal 26(34) damage to ALL enemies.\nLose 3 Focus.",
+        "name": "Hyperbeam",
+        "img": "Hyperbeam.png",
+        "rarity": "Rare",
+        "type": "Attack",
+        "cost": "2"
+    },
+    {
+        "desc": "(Innate.)\nAt the start of your turn, draw 1 additional card.",
+        "name": "Machine Learning",
+        "img": "MachineLearning.png",
+        "rarity": "Rare",
+        "type": "Power",
+        "cost": "1"
+    },
+    {
+        "desc": "Deal 24(30) damage.\nChannel 3 Plasma.",
+        "name": "Meteor Strike",
+        "img": "MeteorStrike.png",
+        "rarity": "Rare",
+        "type": "Attack",
+        "cost": "5"
+    },
+    {
+        "desc": "Evoke your next Orb X (X+1) times.",
+        "name": "Multi-Cast",
+        "img": "Multi-Cast.png",
+        "rarity": "Rare",
+        "type": "Skill",
+        "cost": "X"
+    },
+    {
+        "desc": "Channel 1 Lightning, 1 Frost, and 1 Dark.\nExhaust. (does not Exhaust.)",
+        "name": "Rainbow",
+        "img": "Rainbow.png",
+        "rarity": "Rare",
+        "type": "Skill",
+        "cost": "2"
+    },
+    {
+        "desc": "Shuffle all of your cards into your draw pile, then draw 4(6) cards.\nExhaust.",
+        "name": "Reboot",
+        "img": "Reboot.png",
+        "rarity": "Rare",
+        "type": "Skill",
+        "cost": "0"
+    },
+    {
+        "desc": "Choose a (2) card(s) from your draw pile and place it (them) into your hand.\nExhaust.",
+        "name": "Seek",
+        "img": "Seek.png",
+        "rarity": "Rare",
+        "type": "Skill",
+        "cost": "0"
+    },
+    {
+        "desc": "Deal 7(9) damage to a random enemy for each Lightning Channeled this combat.",
+        "name": "Thunder Strike",
+        "img": "ThunderStrike.png",
+        "rarity": "Rare",
+        "type": "Attack",
+        "cost": "3"
+    }
+]

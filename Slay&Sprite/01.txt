@@ -1,0 +1,168 @@
+Defend	Defend G.png
+Starter	Skill	1	Gain 5(8) Block.
+Neutralize	Neutralize.png
+Starter	Attack	0	Deal 3(4) damage. Apply 1(2) Weak.
+Strike	Strike G.png
+Starter	Attack	1	Deal 6(9) damage.
+Survivor	Survivor.png
+Starter	Skill	1	Gain 8(11) Block. Discard a card.
+Acrobatics	Acrobatics.png
+Common	Skill	1	Draw 3(4) cards. Discard 1 card.
+Backflip	Backflip.png
+Common	Skill	1	Gain 5(8) block. Draw 2 cards.
+Bane	Bane.png
+Common	Attack	1	Deal 7(10) damage. If the enemy is Poisoned, deal 7(10) damage again.
+Blade Dance	BladeDance.png
+Common	Skill	1	Add 2(3) Shivs to your hand.
+Cloak And Dagger	CloakAndDagger.png
+Common	Skill	1	Gain 6 Block. Add 1(2) Shiv(s) to your hand.
+Dagger Spray	DaggerSpray.png
+Common	Attack	1	Deal 4(6) damage to ALL enemies twice.
+Dagger Throw	R dagger-throw.png
+Common	Attack	1	Deal 9(12) damage. Draw 1 card. Discard 1 card.
+Deadly Poison	DeadlyPoison.png
+Common	Skill	1	Apply 5(7) Poison.
+Deflect	Deflect.png
+Common	Skill	0	Gain 4(7) Block.
+Dodge and Roll	DodgeandRoll.png
+Common	Skill	1	Gain 4(6) Block. Next turn gain 4(6) Block.
+Flying Knee	FlyingKnee.png
+Common	Attack	1	Deal 8(11) damage. Next turn gain 1 Energy.
+Outmaneuver	Outmaneuver.png
+Common	Skill	1	Next turn gain 2(3) Energy.
+Piercing Wail	PiercingWail.png
+Common	Skill	1	ALL enemies lose 6(8) Strength for 1 turn. Exhaust.
+Poisoned Stab	PoisonedStab.png
+Common	Attack	1	Deal 6(8) damage. Apply 3(4) Poison.
+Prepared	Prepared.png
+Common	Skill	0	Draw 1(2) card(s). Discard 1(2) card(s).
+Quick Slash	QuickSlash.png
+Common	Attack	1	Deal 8(12) damage. Draw 1 card.
+Slice	Slice.png
+Common	Attack	0	Deal 5(8) damage.
+Sneaky Strike	SneakyStrike.png
+Common	Attack	2	Deal 10(14) damage. If you have discarded a card this turn, gain 2 Energy.
+Sucker Punch	SuckerPunch.png
+Common	Attack	1	Deal 7(9) damage. Apply 1(2) Weak.					
+Accuracy	Accuracy.png
+Uncommon	Power	1	Shivs deal 3(5) additional damage.					
+All-Out Attack	All-OutAttack.png
+Uncommon	Attack	1	Deal 10(14) damage to ALL enemies. Discard 1 card at random.
+Backstab	Backstab.png
+Uncommon	Attack	0	Deal 11(15) damage. Innate. Exhaust.
+Blur	Blur.png
+Uncommon	Skill	1	Gain 5(8) Block. Block is not removed at the start of your next turn.
+Bouncing Flask	BouncingFlask.png
+Uncommon	Skill	2	Apply 3 poison to a random enemy 3(4) times.
+Calculated Gamble	CalculatedGamble.png
+Uncommon	Skill	0	
+Discard your hand, then draw that many cards.
+
+Exhaust. (Don't exhaust)
+
+Caltrops	Caltrops.png
+Uncommon	Power	1	Whenever you are attacked, deal 3(5) damage to the attacker.
+Catalyst	Catalyst.png
+Uncommon	Skill	1	Double(Triple) an enemy's Poison. Exhaust.
+Choke	Choke.png
+Uncommon	Attack	2	Deal 12 damage. Whenever you play a card this turn, targeted enemy loses 3(5) HP.
+Concentrate	Concentrate.png
+Uncommon	Skill	0	Discard 3(2) cards. Gain 2 Energy.
+Crippling Cloud	CripplingCloud.png
+Uncommon	Skill	2	Apply 4(7) Poison and 2 Weak to ALL enemies. Exhaust.
+Dash	Dash.png
+Uncommon	Attack	2	Gain 10(13) Block. Deal 10(13) damage.
+Distraction	Distraction.png
+Uncommon	Skill	1(0)	Add a random Skill to your hand. It costs 0 this turn. Exhaust.
+Endless Agony	EndlessAgony.png
+Uncommon	Attack	0	Whenever you draw this card, add a copy of it to your hand. Deal 4(6) damage. Exhaust.
+Escape Plan	EscapePlan.png
+Uncommon	Skill	0	Draw 1 card. If the card is a Skill, gain 3(5) Block.
+Eviscerate	Eviscerate.png
+Uncommon	Attack	3	Costs 1 less Energy for each card discarded this turn. Deal 6(8) damage three times.
+Expertise	Expertise.png
+Uncommon	Skill	1	Draw cards until you have 6(7) in your hand.
+Finisher	Finisher.png
+Uncommon	Attack	1	Deal 6(8) damage for each Attack played this turn.
+Flechettes	Flechettes.png
+Uncommon	Attack	1	Deal 4(6) damage for each Skill in your hand.
+Footwork	Footwork.png
+Uncommon	Power	1	Gain 2(3) Dexterity.
+Heel Hook	HeelHook.png
+Uncommon	Attack	1	Deal 5(8) damage. If the enemy is Weak, Gain 1 Energy and draw 1 card.
+Infinite Blades	InfiniteBlades.png
+Uncommon	Power	1	(Innate.)
+At the start of your turn, add a Shiv to your hand.
+
+Leg Sweep	LegSweep.png
+Uncommon	Skill	2	Apply 2(3) Weak. Gain 11(14) Block.
+Masterful Stab	MasterfulStab.png
+Uncommon	Attack	0	Costs 1 additional Energy for each time you lose HP this combat. Deal 12(16) damage.
+Noxious Fumes	NoxiousFumes.png
+Uncommon	Power	1	At the start of your turn, apply 2(3) Poison to ALL enemies.
+Predator	Predator.png
+Uncommon	Attack	2	Deal 15(20) damage. Draw 2 more cards next turn.
+Reflex	Reflex.png
+Uncommon	Skill		Unplayable. If this card is discarded from your hand, draw 1(2) cards.
+Riddle With Holes	RiddleWithHoles.png
+Uncommon	Attack	2	Deal 3(4) damage 5 times.
+Setup	Setup.png
+Uncommon	Skill	1(0)	Place a card in your hand on top of your draw pile. It costs 0 until it is played.
+Skewer	Skewer.png
+Uncommon	Attack	X	Deal 7(10) damage X times.
+Tactician	Tactician.png
+Uncommon	Skill		Unplayable. If this card is discarded from your hand, gain 1(2) Energy.
+Terror	Terror.png
+Uncommon	Skill	1(0)	Apply 99 Vulnerable. Exhaust.
+Well-Laid Plans	Well-LaidPlans.png
+Uncommon	Power	1	At the end of your turn, Retain up to 1(2) card(s).
+A Thousand Cuts	AThousandCuts.png
+Rare	Power	2	Whenever you play a card, deal 1(2) damage to ALL enemies.
+Adrenaline	Adrenaline.png
+Rare	Skill	1	Gain 1(2) Energy. Draw 2 cards. Exhaust.
+After Image	AfterImage.png
+Rare	Power	1	(Innate.)
+Whenever you play a card, gain 1 Block.
+
+Alchemize	Alchemize.png
+Rare	Skill	1(0)	Obtain a random potion.
+Exhaust.
+
+Bullet Time	BulletTime.png
+Rare	Skill	3(2)	You cannot draw additional cards this turn. Reduce the cost of cards in your hand to 0 this turn.
+Burst	Burst.png
+Rare	Skill	1	This turn your next 1(2) Skill(s) is(are) played twice.
+Corpse Explosion	CorpseExplosion.png
+Rare	Skill	2	Apply 6(9) Poison. When the enemy dies, deal damage equal to its max HP to ALL enemies.
+Die Die Die	DieDieDie.png
+Rare	Attack	1	
+Deal 13(17) damage to ALL enemies. 
+
+Exhaust.
+
+Doppelganger	Doppelganger.png
+Rare	Skill	X	Next turn, draw X(+1) cards and gain X(+1) Energy.
+Envenom	Envenom.png
+Rare	Power	2(1)	Whenever an attack deals unblocked damage, apply 1 Poison.
+Glass Knife	GlassKnife.png
+Rare	Attack	1	Deal 8(12) damage twice. Glass Knife's damage is lowered by 2 this combat.
+Grand Finale	GrandFinale.png
+Rare	Attack	0	Can only be played if there are no cards in your draw pile. Deal 50(60) damage to ALL enemies.
+Malaise	Malaise.png
+Rare	Skill	X	Enemy loses X(+1) Strength. Apply X(+1) Weak. Exhaust.
+Nightmare	Nightmare.png
+Rare	Skill	3(2)	Choose a card.
+Next turn, add 3 copies of that card into your hand.
+
+Exhaust.
+
+Phantasmal Killer	PhantasmalKiller.png
+Rare	Skill	2(1)	On your next turn, your Attack damage is doubled.
+Storm of Steel	StormofSteel.png
+Rare	Skill	2	Discard your hand. Add 1 (Upgraded) Shiv to your hand for each card discarded.
+Tools of the Trade	ToolsoftheTrade.png
+Rare	Power	1(0)	At the start of your turn, draw 1 card and discard 1 card.
+Unload	Unload.png
+Rare	Attack	1	Deal 14(18) damage. Discard all non-Attack cards.
+Wraith Form	WraithForm.png
+Rare	Power	3	Gain 2(3) Intangible. At the end of your turn, lose 1 Dexterity.

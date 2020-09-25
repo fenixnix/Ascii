@@ -19,3 +19,8 @@ func _on_Asset_mouse_entered():
 
 func _on_Asset_mouse_exited():
 	CardDetail.Hide()
+
+func _on_Asset_gui_input(event:InputEvent):
+	if data.type == "Asset":
+		if event.is_action_pressed("click"):
+			GlbDat.UseAsset(data)

@@ -1,8 +1,8 @@
-static func Use(chara,asset):
+static func Use(chara:Chara,asset):
 	asset.charge -= 1
-	var shroud = chara.loc.shroud
-	chara.loc.shroud -= 2
+	var shroud = chara.location.shroud
+	chara.location.shroud -= 2
 	GlbDat.Scan()
-	chara.loc.shroud = shroud
+	chara.location.shroud = shroud
 	if asset.charge<=0:
 		chara.assets.erase(asset)
