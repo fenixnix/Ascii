@@ -1,0 +1,76 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://image/Immolate.png" type="Texture" id=1]
+[ext_resource path="res://image/icon.png" type="Texture" id=2]
+[ext_resource path="res://image/nopants.png" type="Texture" id=3]
+[ext_resource path="res://image/merchantObjects.png" type="Texture" id=4]
+[ext_resource path="res://Hands.gd" type="Script" id=5]
+
+[node name="battle" type="Node"]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="icon" type="Sprite" parent="UI"]
+visible = false
+position = Vector2( 90.3798, 528.008 )
+texture = ExtResource( 2 )
+
+[node name="icon2" type="Sprite" parent="UI"]
+visible = false
+position = Vector2( 309.194, 432.872 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 2 )
+
+[node name="Hands" type="Control" parent="UI"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="UI/Hands"]
+
+[node name="Card" type="Control" parent="UI/Hands"]
+margin_left = 289.689
+margin_top = 423.09
+margin_right = 289.689
+margin_bottom = 423.09
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.5, 0.5 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="UI/Hands/Card"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -121.0
+margin_top = -163.0
+margin_right = 121.0
+margin_bottom = 163.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BattleGround" type="Node2D" parent="."]
+
+[node name="merchantObjects" type="Sprite" parent="BattleGround"]
+position = Vector2( 192.019, -4.74756 )
+texture = ExtResource( 4 )
+
+[node name="nopants" type="Sprite" parent="BattleGround"]
+position = Vector2( 215.803, 154.606 )
+texture = ExtResource( 3 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( -33.2977, -23.7841 )
+current = true
