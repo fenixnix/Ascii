@@ -31,6 +31,20 @@ raw_eot = {
 
 data_path = "%s.txt"
 
+def cvtBuffer(buffer):
+    if buffer["desc"] != "":
+        detail = buffer["desc"].split('\t')
+        buffer["rarity"] = detail[0].strip()
+        buffer["type"] = detail[1].strip()
+        buffer["cost"] = detail[2].strip()
+        trait = detail[3].strip().split('.')
+        tmp = []
+        for t in trait:
+            tt = t.strip()
+            if tt!="":
+                tmp.append(tt)
+        buffer["desc"] = tmp
+
 def LoadDb(file):
     db = []
     with open(file,'r',encoding='UTF-8') as f:
@@ -43,23 +57,37 @@ def LoadDb(file):
             arrays = line.split('\t')
             if len(arrays)==2:
                 if arrays[1].strip().endswith(".png"):
-                    if buffer["desc"] != "":
-                        detail = buffer["desc"].split('\t')
-                        buffer["rarity"] = detail[0].strip()
-                        buffer["type"] = detail[1].strip()
-                        buffer["cost"] = detail[2].strip()
-                        buffer["desc"] = detail[3].strip()
+                    cvtBuffer(buffer)
+                    # if buffer["desc"] != "":
+                    #     detail = buffer["desc"].split('\t')
+                    #     buffer["rarity"] = detail[0].strip()
+                    #     buffer["type"] = detail[1].strip()
+                    #     buffer["cost"] = detail[2].strip()
+                    #     trait = detail[3].strip().split('.')
+                    #     tmp = []
+                    #     for t in trait:
+                    #         tt = t.strip()
+                    #         if tt!="":
+                    #             tmp.append(tt)
+                    #     buffer["desc"] = tmp
                     db.append(buffer)
                     buffer = {"desc":""}
                     buffer["name"] = arrays[0].strip()
                     buffer["img"] = arrays[1].strip()
             else:
                 buffer["desc"]+=line
-        detail = buffer["desc"].split('\t')
-        buffer["rarity"] = detail[0].strip()
-        buffer["type"] = detail[1].strip()
-        buffer["cost"] = detail[2].strip()
-        buffer["desc"] = detail[3].strip()
+        cvtBuffer(buffer)
+        # detail = buffer["desc"].split('\t')
+        # buffer["rarity"] = detail[0].strip()
+        # buffer["type"] = detail[1].strip()
+        # buffer["cost"] = detail[2].strip()
+        # trait = detail[3].strip().split('.')
+        # tmp = []
+        # for t in trait:
+        #     tt = t.strip()
+        #     if tt!="":
+        #         tmp.append(tt)
+        # buffer["desc"] = tmp
         db.append(buffer)
         db = db[1:]
     for d in db:
@@ -91,4 +119,4 @@ for k in raw_datas.keys():
     db = LoadDb(file)
     with open("slay_sprite/data/%s.json"%k,'w') as f:
         f.write(json.dumps(db))
-    CrawlerImage(db,root_url+urls_dict[k])
+    #CrawlerImage(db,root_url+urls_dict[k])
