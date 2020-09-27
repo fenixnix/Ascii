@@ -8,9 +8,26 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Node",
+"class": "Chara",
+"language": "GDScript",
+"path": "res://Chara.gd"
+}, {
+"base": "Node",
+"class": "CharaBtl",
+"language": "GDScript",
+"path": "res://CharaBtl.gd"
+}, {
+"base": "Node",
+"class": "FileRW",
+"language": "GDScript",
+"path": "res://FileRW.gd"
+} ]
 _global_script_class_icons={
-
+"Chara": "",
+"CharaBtl": "",
+"FileRW": ""
 }
 
 [application]
@@ -18,6 +35,10 @@ _global_script_class_icons={
 config/name="Slay Sprite"
 run/main_scene="res://battle.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+GlbDb="*res://GlbDb.gd"
 
 [rendering]
 
