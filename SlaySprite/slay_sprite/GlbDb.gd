@@ -4,7 +4,7 @@ var cardDb = []
 var cardDict = {}
 
 func _init():
-	var res = LoadDb("ironclad")
+	var res = LoadDb("red")
 	cardDb = res[0]
 	cardDict = res[1]
 
@@ -20,5 +20,4 @@ func LoadDat(file):
 	return FileRW.LoadJsonFile(dbPath%file)
 
 func CardImage(img):
-	#return FileRW.LoadTexture("./card/%s.png"%img)
-	return load("res://image/Immolate.png")
+	return FileRW.LoadTexture("../card/%s.png"%img)
