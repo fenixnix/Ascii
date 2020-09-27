@@ -18,3 +18,7 @@ func LoadDb(file):
 	
 func LoadDat(file):
 	return FileRW.LoadJsonFile(dbPath%file)
+
+func CardImage(img):
+	#return FileRW.LoadTexture("./card/%s.png"%img)
+	return load("res://image/Immolate.png")

@@ -1,8 +1,27 @@
 extends Control
 
-func _ready():
-	DrawAnim(Vector2(0,0),Vector2.ONE*500)
+export(NodePath) var deck_position_node
 
-func DrawAnim(from,to):
-	$Tween.interpolate_property($Card,"rect_position",from,to,1,Tween.TRANS_BACK,Tween.EASE_IN)
-	$Tween.start()
+var card_init_position
+
+var hands = []
+
+onready var card_prefab = preload("res://Card.tscn")
+
+func _ready():
+	card_init_position = get_node(deck_position_node).position
+
+func Draw(card):
+	var Card = card_prefab.instance()
+	add_child(Card)
+	Card.Set(card)
+	hands.append(Card)
+	Card.rect_position = card_init_position
+	PositionAnim()
+
+func PositionAnim():
+	var x_start_position = len(hands)*50/2
+	var offset = x_start_position
+	for card in hands:
+		card.AnimMove(Vector2(offset,0))
+		offset -= 50
