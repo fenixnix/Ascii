@@ -17,6 +17,7 @@ var discard = []
 
 signal exhaust(card)
 signal draw(card)
+signal gain_block(val)
 signal hurt(attacker,dmg)
 signal cost_hp(amount)
 signal dead()
@@ -43,20 +44,46 @@ func Draw():
 	if len(deck)<=0:
 		ReChargeDeck()
 	if len(deck)>0:
-		print_debug("Draw")
 		var c= deck.pop_front()
 		hand.push_back(c)
 		emit_signal("draw",c)
 		return c
 	return null
 
-func Attack(card,target):
-	for d in card.desc:
-		print(d)
+func PlayCard(card):
+	match card.type:
+		"Attack":
+			var target
+			#get target
+			RunDesc(card,target)
+		"Skill":
+			RunDesc(card)
+		"Power":
+			pass
 	if card.desc.has("Exhaust"):
 		Exhaust(card)
 	else:
 		Discard(card)
+
+func RunDesc(card,target = null):
+	for d in card.desc:
+		match d.type:
+			"dmg":DuelDamage(d,target)
+			"blk":GainBlock(d)
+			"script":ExecuteScript(d,target)
+
+func DuelDamage(dat,target):
+	var dmg = dat.val + attr.get("str")*dat.get("str_bonus",1)
+	target.TakeDamage(dmg)
+
+func GainBlock(dat):
+	var blkVal = dat.val
+	if status.has("Frail"):
+		blkVal = ceil(blkVal*.75)
+	emit_signal("gain_block",blkVal)
+
+func ExecuteScript(d,target):
+	pass
 
 func CostHp(amount):
 	chara.hp -= amount

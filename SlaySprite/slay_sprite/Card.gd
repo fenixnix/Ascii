@@ -16,9 +16,16 @@ func AnimMove(goal):
 func _on_HotArea_mouse_entered():
 	$Control.rect_scale = Vector2.ONE
 	$Control.rect_position += Vector2.UP*100
-	show_behind_parent = true
 
 func _on_HotArea_mouse_exited():
 	$Control.rect_scale = Vector2.ONE*0.5
 	$Control.rect_position -= Vector2.UP*100
-	show_behind_parent = false
+
+func _on_HotArea_gui_input(event:InputEvent):
+	if event.is_action_pressed("click"):
+		if !GlbUi.is_dragging:
+			GlbUi.is_dragging = true
+			GlbUi.src_card = data
+			print("drawing")
+	if event.is_action_released("click"):
+		print("release")

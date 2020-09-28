@@ -7,11 +7,31 @@
         "cost": "1"
     },
     {
-        "desc": ["Deal 7(9) damage to a random enemy for each Lightning Channeled this combat"],
-        "name": "Thunder Strike",
-        "img": "blue/Attack/thunder_strike",
-        "rarity": "Rare",
-        "type": "Attack",
-        "cost": "3"
+        "desc": ["Unplayable"],
+        "name": "Burn",
+        "img": "status/burn",
+        "type": "Status",
+        "cost": "0"
+    },
+    {
+        "desc": ["Unplayable"],
+        "name": "Wound",
+        "img": "status/wound",
+        "type": "Status",
+        "cost": "0"
+    },
+    {
+        "desc": ["Unplayable"],
+        "name": "Injury",
+        "img": "status/injury",
+        "type": "Status",
+        "cost": "0"
+    },
+    {
+        "desc": ["Unplayable","Ethereal"],
+        "name": "Dazed",
+        "img": "status/dazed",
+        "type": "Status",
+        "cost": "0"
     }
 ]

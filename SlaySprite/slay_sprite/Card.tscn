@@ -130,7 +130,6 @@ margin_bottom = 68.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="mouse_entered" from="Control/CardPanel" to="." method="_on_CardPanel_mouse_entered"]
-[connection signal="mouse_exited" from="Control/CardPanel" to="." method="_on_CardPanel_mouse_exited"]
+[connection signal="gui_input" from="HotArea" to="." method="_on_HotArea_gui_input"]
 [connection signal="mouse_entered" from="HotArea" to="." method="_on_HotArea_mouse_entered"]
 [connection signal="mouse_exited" from="HotArea" to="." method="_on_HotArea_mouse_exited"]
