@@ -12,7 +12,6 @@ func _on_Area2D_mouse_entered():
 func _on_Area2D_mouse_exited():
 	pass # Replace with function body.
 
-
 func _on_Area2D_input_event(viewport, event:InputEvent, shape_idx):
 	if event.is_action_released("click"):
 		print(event)
