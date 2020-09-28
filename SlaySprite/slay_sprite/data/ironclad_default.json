@@ -1,5 +1,9 @@
 {
-    "Strike":5,
-    "Bash":1,
-    "Defend":4
+    "class":"IronClad",
+    "hp":80,
+    "cards":{
+        "Strike":5,
+        "Bash":1,
+        "Defend":4
+    }
 }

@@ -8,14 +8,25 @@
 [node name="Card" type="Control"]
 grow_horizontal = 2
 grow_vertical = 2
-rect_scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
 }
 
-[node name="CardPanel" type="Panel" parent="."]
+[node name="Tween" type="Tween" parent="."]
+
+[node name="Control" type="Control" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+rect_scale = Vector2( 0.5, 0.5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CardPanel" type="Panel" parent="Control"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -29,7 +40,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Cost" type="TextureRect" parent="CardPanel"]
+[node name="Cost" type="TextureRect" parent="Control/CardPanel"]
 margin_left = -17.0
 margin_top = -17.0
 margin_right = 17.0
@@ -37,15 +48,20 @@ margin_bottom = 17.0
 texture = ExtResource( 1 )
 expand = true
 stretch_mode = 6
-
-[node name="Cost" type="Label" parent="CardPanel/Cost"]
-anchor_right = 1.0
-anchor_bottom = 1.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect" type="TextureRect" parent="CardPanel"]
+[node name="Cost" type="Label" parent="Control/CardPanel/Cost"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Frame" type="TextureRect" parent="Control/CardPanel"]
 anchor_right = 1.0
 margin_bottom = 45.0
 texture = ExtResource( 4 )
@@ -55,17 +71,23 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Name" type="Label" parent="CardPanel/TextureRect"]
+[node name="Name" type="Label" parent="Control/CardPanel/Frame"]
+modulate = Color( 0, 0, 0, 1 )
 anchor_left = 0.5
+anchor_top = 0.5
 anchor_right = 0.5
+anchor_bottom = 0.5
 margin_left = -103.5
+margin_top = -23.5676
 margin_right = 103.5
-margin_bottom = 40.0
+margin_bottom = 16.4324
+align = 1
+valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Image" type="TextureRect" parent="CardPanel"]
+[node name="Image" type="TextureRect" parent="Control/CardPanel"]
 anchor_left = 0.0956938
 anchor_top = 0.10473
 anchor_right = 0.913876
@@ -76,7 +98,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Type" type="Label" parent="CardPanel"]
+[node name="Type" type="Label" parent="Control/CardPanel"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -91,17 +113,24 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Desc" type="RichTextLabel" parent="CardPanel"]
-anchor_left = 0.076555
-anchor_top = 0.533784
-anchor_right = 0.942584
+[node name="Desc" type="RichTextLabel" parent="Control/CardPanel"]
+anchor_left = 0.138756
+anchor_top = 0.601351
+anchor_right = 0.885167
 anchor_bottom = 0.935811
 __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Tween" type="Tween" parent="."]
-[connection signal="mouse_entered" from="." to="." method="_on_Card_mouse_entered"]
-[connection signal="mouse_exited" from="." to="." method="_on_Card_mouse_exited"]
-[connection signal="mouse_entered" from="CardPanel" to="." method="_on_CardPanel_mouse_entered"]
-[connection signal="mouse_exited" from="CardPanel" to="." method="_on_CardPanel_mouse_exited"]
+[node name="HotArea" type="Control" parent="."]
+margin_left = -50.0
+margin_top = -68.0
+margin_right = 48.0
+margin_bottom = 68.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="mouse_entered" from="Control/CardPanel" to="." method="_on_CardPanel_mouse_entered"]
+[connection signal="mouse_exited" from="Control/CardPanel" to="." method="_on_CardPanel_mouse_exited"]
+[connection signal="mouse_entered" from="HotArea" to="." method="_on_HotArea_mouse_entered"]
+[connection signal="mouse_exited" from="HotArea" to="." method="_on_HotArea_mouse_exited"]

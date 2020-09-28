@@ -1,1 +1,600 @@
-[{"desc": ["Gain 5(8) Icon Block", "png Block"], "name": "Defend", "img": "purple/Skill/defend", "rarity": "Starter", "type": "Skill", "cost": "1", "class": "watcher"}, {"desc": ["Deal 9 damage", "Enter Wrath"], "name": "Eruption", "img": "purple/Attack/eruption", "rarity": "Starter", "type": "Attack", "cost": "2(1)", "class": "watcher"}, {"desc": ["Deal 6(9) damage"], "name": "Strike", "img": "purple/Attack/strike", "rarity": "Starter", "type": "Attack", "cost": "1", "class": "watcher"}, {"desc": ["Enter Calm", "Gain 8(12) Icon Block", "png Block"], "name": "Vigilance", "img": "purple/Skill/vigilance", "rarity": "Starter", "type": "Skill", "cost": "2", "class": "watcher"}, {"desc": ["Deal 7(10) damage for each enemy in combat"], "name": "Bowling Bash", "img": "purple/Attack/bowling_bash", "rarity": "Common", "type": "Attack", "cost": "1", "class": "watcher"}, {"desc": ["Deal 5(8) damage to ALL enemies"], "name": "Consecrate", "img": "purple/Attack/consecrate", "rarity": "Common", "type": "Attack", "cost": "0", "class": "watcher"}, {"desc": ["Icon Retain", "png Retain", "Enter Wrath", "Exhaust"], "name": "Crescendo", "img": "purple/Skill/crescendo", "rarity": "Common", "type": "Skill", "cost": "1(0)", "class": "watcher"}, {"desc": ["Deal 8(11) damage", "If the previous card played was a skill, apply 1(2) Icon Vulnerable", "png Vulnerable"], "name": "Crush Joints", "img": "purple/Attack/crush_joints", "rarity": "Common", "type": "Attack", "cost": "1", "class": "watcher"}, {"desc": ["Deal 7(9) damage", "Scry 2(3)", "Draw 1 card"], "name": "Cut Through Fate", "img": "purple/Attack/cut_through_fate", "rarity": "Common", "type": "Attack", "cost": "1", "class": "watcher"}, {"desc": ["Gain 7(10) Icon Block", "png Block", "Exit your Stance"], "name": "Empty Body", "img": "purple/Skill/empty_body", "rarity": "Common", "type": "Skill", "cost": "1", "class": "watcher"}, {"desc": ["Deal 9(14) damage", "Exit your Stance"], "name": "Empty Fist", "img": "purple/Attack/empty_fist", "rarity": "Common", "type": "Attack", "cost": "1", "class": "watcher"}, {"desc": ["Gain 6(10) Icon Block", "png Block", "Shuffle an Insight into your draw pile"], "name": "Evaluate", "img": "purple/Skill/evaluate", "rarity": "Common", "type": "Skill", "cost": "1", "class": "watcher"}, {"desc": ["Deal 4(6) damage", "On Stance change, returns from the Discard Pile into your hand"], "name": "Flurry of Blows", "img": "purple/Attack/flurry_of_blows", "rarity": "Common", "type": "Attack", "cost": "0", "class": "watcher"}, {"desc": ["Icon Retain", "png Retain", "Deal 4(6) damage twice"], "name": "Flying Sleeves", "img": "purple/Attack/flying_sleeves", "rarity": "Common", "type": "Attack", "cost": "1", "class": "watcher"}, {"desc": ["Deal 7(11) damage", "If the previous card played was an Attack, gain Energy"], "name": "Follow-Up", "img": "purple/Attack/follow-up", "rarity": "Common", "type": "Attack", "cost": "1", "class": "watcher"}, {"desc": ["Gain 3(4) Icon Block", "png Block", "Wrath: Gain 9(14) additional Icon Block", "png block"], "name": "Halt", "img": "purple/Skill/halt", "rarity": "Common", "type": "Skill", "cost": "0", "class": "watcher"}, {"desc": ["Scry 1(2)", "Gain 2(3) Icon Block", "png Block", "Deal 3(4) damage"], "name": "Just Lucky", "img": "purple/Attack/just_lucky", "rarity": "Common", "type": "Attack", "cost": "0", "class": "watcher"}, {"desc": ["Apply 8(11) Mark", "ALL enemies lose HP equal to their Mark"], "name": "Pressure Points", "img": "purple/Skill/pressure_points", "rarity": "Common", "type": "Skill", "cost": "1", "class": "watcher"}, {"desc": ["Gain 2(3) Icon Mantra", "png Mantra", "Gain 4 Icon Block", "png Block"], "name": "Prostrate", "img": "purple/Skill/prostrate", "rarity": "Common", "type": "Skill", "cost": "0", "class": "watcher"}, {"desc": ["Icon Retain", "png Retain", "Gain 12(16) Icon Block", "png Block"], "name": "Protect", "img": "purple/Skill/protect", "rarity": "Common", "type": "Skill", "cost": "2", "class": "watcher"}, {"desc": ["Deal 8(10) damage", "If the last card played this combat was an Attack, apply 1(2) Icon Weak", "png Weak"], "name": "Sash Whip", "img": "purple/Attack/sash_whip", "rarity": "Common", "type": "Attack", "cost": "1", "class": "watcher"}, {"desc": ["Gain 7(9) Icon Block", "png Block", "Scry 3(5)"], "name": "Third Eye", "img": "purple/Skill/third_eye", "rarity": "Common", "type": "Skill", "cost": "1", "class": "watcher"}, {"desc": ["Icon Retain", "png Retain", "Enter Calm", "Exhaust"], "name": "Tranquility", "img": "purple/Skill/tranquility", "rarity": "Common", "type": "Skill", "cost": "1(0)", "class": "watcher"}, {"desc": ["(Innate", ") At the start of each turn add a Smite into your hand"], "name": "Battle Hymn", "img": "purple/Power/battle_hymn", "rarity": "Uncommon", "type": "Power", "cost": "1", "class": "watcher"}, {"desc": ["Deal 6(10) damage", "Add a Smite into your hand"], "name": "Carve Reality", "img": "purple/Attack/carve_reality", "rarity": "Uncommon", "type": "Attack", "cost": "1", "class": "watcher"}, {"desc": ["Put an Upgraded Miracle into your hand at the start of your next X(+1) turns", "Exhaust"], "name": "Collect", "img": "purple/Skill/collect", "rarity": "Uncommon", "type": "Skill", "cost": "X", "class": "watcher"}, {"desc": ["Deal 12(16) damage to ALL enemies", "End your turn"], "name": "Conclude", "img": "purple/Attack/conclude", "rarity": "Uncommon", "type": "Attack", "cost": "1", "class": "watcher"}, {"desc": ["Gain 4(7) Icon Block", "png Block", "Add a Safety to your hand"], "name": "Deceive Reality", "img": "purple/Skill/deceive_reality", "rarity": "Uncommon", "type": "Skill", "cost": "1", "class": "watcher"}, {"desc": ["Exit your Stance", "Draw 2(3) cards"], "name": "Empty Mind", "img": "purple/Skill/empty_mind", "rarity": "Uncommon", "type": "Skill", "cost": "1", "class": "watcher"}, {"desc": ["Gain 3(4) Icon Strength", "png Strength", "Gain 3(4) Icon Dexterity", "png Dexterity", "Gain 1 less Energy at the start of each turn"], "name": "Fasting", "img": "purple/Power/fasting", "rarity": "Uncommon", "type": "Power", "cost": "2", "class": "watcher"}, {"desc": ["Deal 8(11) damage", "If the enemy intends to Attack, enter Calm"], "name": "Fear No Evil", "img": "purple/Attack/fear_no_evil", "rarity": "Uncommon", "type": "Attack", "cost": "1", "class": "watcher"}, {"desc": ["Choose 1 of 3 Attacks of any color to add to your hand", "(It costs 0 this turn", ") Exhaust"], "name": "Foreign Influence", "img": "purple/Skill/foreign_influence", "rarity": "Uncommon", "type": "Skill", "cost": "0", "class": "watcher"}, {"desc": ["At the start of your turn, Scry 3(4)"], "name": "Foresight", "img": "purple/Power/foresight", "rarity": "Uncommon", "type": "Power", "cost": "1", "class": "watcher"}, {"desc": ["If you are in Wrath, apply 3(5) Icon Vulnerable", "png Vulnerable to ALL enemies, otherwise enter Wrath"], "name": "Indignation", "img": "purple/Skill/indignation", "rarity": "Uncommon", "type": "Skill", "cost": "1", "class": "watcher"}, {"desc": ["If you are in Calm, draw 3(4) cards, otherwise Enter Calm"], "name": "Inner Peace", "img": "purple/Skill/inner_peace", "rarity": "Uncommon", "type": "Skill", "cost": "1", "class": "watcher"}, {"desc": ["At the end of your turn, if you are in Calm, gain 5(7) Icon Block", "png Block"], "name": "Like Water", "img": "purple/Power/like_water", "rarity": "Uncommon", "type": "Power", "cost": "1", "class": "watcher"}, {"desc": ["Put 1(2) card(s) from your discard pile into your hand and Icon Retain", "png Retain it", "Enter Calm", "End your turn"], "name": "Meditate", "img": "purple/Skill/meditate", "rarity": "Uncommon", "type": "Skill", "cost": "1", "class": "watcher"}, {"desc": ["Whenever you switch Stances, gain 4(6) Icon Block", "png Block"], "name": "Mental Fortress", "img": "purple/Power/mental_fortress", "rarity": "Uncommon", "type": "Power", "cost": "1", "class": "watcher"}, {"desc": ["Whenever you Scry, gain 3(4) Icon Block", "png Block"], "name": "Nirvana", "img": "purple/Power/nirvana", "rarity": "Uncommon", "type": "Power", "cost": "1", "class": "watcher"}, {"desc": ["Icon Retain", "png Retain", "Gain 5(7) Icon Block", "png Block", "Whenever this card is Icon Retain", "png Retained, increase its Icon Block", "png Block by 2(3)"], "name": "Perseverance", "img": "purple/Skill/perseverance", "rarity": "Uncommon", "type": "Skill", "cost": "1", "class": "watcher"}, {"desc": ["Gain 3(4) Icon Mantra", "png Mantra", "Shuffle an Insight into your draw pile"], "name": "Pray", "img": "purple/Skill/pray", "rarity": "Uncommon", "type": "Skill", "cost": "1", "class": "watcher"}, {"desc": ["Deal 10(15) damage", "Shuffle a Through Violence into your draw pile"], "name": "Reach Heaven", "img": "purple/Attack/reach_heaven", "rarity": "Uncommon", "type": "Attack", "cost": "2", "class": "watcher"}, {"desc": ["Whenever you enter Wrath, draw 2 cards"], "name": "Rushdown", "img": "purple/Power/rushdown", "rarity": "Uncommon", "type": "Power", "cost": "1(0)", "class": "watcher"}, {"desc": ["Gain 6(9) Icon Block", "png Block", "If the previous card played was a Skill, draw 2 card"], "name": "Sanctity", "img": "purple/Skill/sanctity", "rarity": "Uncommon", "type": "Skill", "cost": "1", "class": "watcher"}, {"desc": ["Icon Retain", "png Retain", "Deal 20(26) damage", "Whenever this card is Icon Retain", "png Retained, lower its cost by 1"], "name": "Sands of Time", "img": "purple/Attack/sands_of_time", "rarity": "Uncommon", "type": "Attack", "cost": "4", "class": "watcher"}, {"desc": ["Can only be played if this is the only attack in your hand", "Deal 30(40) damage"], "name": "Signature Move", "img": "purple/Attack/signature_move", "rarity": "Uncommon", "type": "Attack", "cost": "2", "class": "watcher"}, {"desc": ["At the start of your next turn, enter Wrath and draw 2(3) cards"], "name": "Simmering Fury", "img": "purple/Skill/simmering_fury", "rarity": "Uncommon", "type": "Skill", "cost": "1", "class": "watcher"}, {"desc": ["At the end of your turn, shuffle an Insight into your draw pile"], "name": "Study", "img": "purple/Power/study", "rarity": "Uncommon", "type": "Power", "cost": "2(1)", "class": "watcher"}, {"desc": ["Gain 8(11) Icon Block", "png Block", "The next Attack you play costs 0"], "name": "Swivel", "img": "purple/Skill/swivel", "rarity": "Uncommon", "type": "Skill", "cost": "2", "class": "watcher"}, {"desc": ["Deal 5(7) damage", "Whenever you attack this enemy, gain 2(3) Icon Block", "png Block", "Exhaust"], "name": "Talk to the Hand", "img": "purple/Attack/talk_to_the_hand", "rarity": "Uncommon", "type": "Attack", "cost": "1", "class": "watcher"}, {"desc": ["Deal 3 damage 3(4) times", "Enter Wrath", "Shuffle this card into your draw pile"], "name": "Tantrum", "img": "purple/Attack/tantrum", "rarity": "Uncommon", "type": "Attack", "cost": "1", "class": "watcher"}, {"desc": ["Deal 9(12) damage", "Gain Icon Block", "png Block equal to unblocked damage dealt"], "name": "Wallop", "img": "purple/Attack/wallop", "rarity": "Uncommon", "type": "Attack", "cost": "2", "class": "watcher"}, {"desc": ["Whenever you gain Icon Block", "png Block this turn, apply 1(2) Icon Weak", "png Weak to ALL enemies"], "name": "Wave of the Hand", "img": "purple/Skill/wave_of_the_hand", "rarity": "Uncommon", "type": "Skill", "cost": "1", "class": "watcher"}, {"desc": ["Deal 4(6) damage", "Whenever you Scry and would discard this card, add it into your hand instead"], "name": "Weave", "img": "purple/Attack/weave", "rarity": "Uncommon", "type": "Attack", "cost": "0", "class": "watcher"}, {"desc": ["Deal 15(20) damage", "Draw 2 cards"], "name": "Wheel Kick", "img": "purple/Attack/wheel_kick", "rarity": "Uncommon", "type": "Attack", "cost": "2", "class": "watcher"}, {"desc": ["Icon Retain", "png Retain", "Deal 7(10) damage", "Whenever this card is Icon Retain", "png Retained, increase its damage by 4(5)"], "name": "Windmill Strike", "img": "purple/Attack/windmill_strike", "rarity": "Uncommon", "type": "Attack", "cost": "2", "class": "watcher"}, {"desc": ["(Icon Retain", "png Retain", ") Gain 5 Icon Mantra", "png Mantra"], "name": "Worship", "img": "purple/Skill/worship", "rarity": "Uncommon", "type": "Skill", "cost": "2", "class": "watcher"}, {"desc": ["Your next Attack deals 5(8) additional damage"], "name": "Wreath of Flame", "img": "purple/Skill/wreath_of_flame", "rarity": "Uncommon", "type": "Skill", "cost": "1", "class": "watcher"}, {"desc": ["(Innate", ") Shuffle a Beta into your draw pile", "Exhaust"], "name": "Alpha", "img": "purple/Skill/alpha", "rarity": "Rare", "type": "Skill", "cost": "1", "class": "watcher"}, {"desc": ["(Retain", ") Enter Divinity", "Die next turn", "Exhaust"], "name": "Blasphemy", "img": "purple/Skill/blasphemy", "rarity": "Rare", "type": "Skill", "cost": "1", "class": "watcher"}, {"desc": ["Deal 12(16) damage", "Deals additional damage for all Icon Mantra", "png Mantra gained this combat"], "name": "Brilliance", "img": "purple/Attack/brilliance", "rarity": "Rare", "type": "Attack", "cost": "1", "class": "watcher"}, {"desc": ["Shuffle an Expunger with X(+1) into your draw pile", "Exhaust"], "name": "Conjure Blade", "img": "purple/Skill/conjure_blade", "rarity": "Rare", "type": "Skill", "cost": "X", "class": "watcher"}, {"desc": ["Unplayable", "When you draw this card, add 2(3) Miracles into your hand", "Exhaust"], "name": "Deus Ex Machina", "img": "purple/Skill/deus_ex_machina", "rarity": "Rare", "type": "Skill", "cost": "Unplayable", "class": "watcher"}, {"desc": ["Ethereal", "At the start of your turn, gain Energy and increase this gain by 1", "(not Ethereal", ")"], "name": "Deva Form", "img": "purple/Power/deva_form", "rarity": "Rare", "type": "Power", "cost": "3", "class": "watcher"}, {"desc": ["At the start of your turn, gain 2(3) Icon Mantra", "png Mantra"], "name": "Devotion", "img": "purple/Power/devotion", "rarity": "Rare", "type": "Power", "cost": "1", "class": "watcher"}, {"desc": ["(Innate", ") Whenever a card is Icon Retain", "png Retained, lower its cost by 1"], "name": "Establishment", "img": "purple/Power/establishment", "rarity": "Rare", "type": "Power", "cost": "1", "class": "watcher"}, {"desc": ["If the enemy has 30(40) or less HP, set their HP to 0"], "name": "Judgment", "img": "purple/Skill/judgment", "rarity": "Rare", "type": "Skill", "cost": "1", "class": "watcher"}, {"desc": ["Deal 10(12) damage", "If this kills an enemy, Upgrade a random card in your deck", "Exhaust"], "name": "Lesson Learned", "img": "purple/Attack/lesson_learned", "rarity": "Rare", "type": "Attack", "cost": "2", "class": "watcher"}, {"desc": ["Whenever a card is created during combat, Upgrade it"], "name": "Master Reality", "img": "purple/Power/master_reality", "rarity": "Rare", "type": "Power", "cost": "1(0)", "class": "watcher"}, {"desc": ["Choose a card in your draw pile", "Play the chosen card twice and Exhaust it", "Exhaust"], "name": "Omniscience", "img": "purple/Skill/omniscience", "rarity": "Rare", "type": "Skill", "cost": "4(3)", "class": "watcher"}, {"desc": ["Deal 5(6) damage to a random enemy 5(6) times"], "name": "Ragnarok", "img": "purple/Attack/ragnarok", "rarity": "Rare", "type": "Attack", "cost": "3", "class": "watcher"}, {"desc": ["Draw cards until your hand is full", "Exhaust"], "name": "Scrawl", "img": "purple/Skill/scrawl", "rarity": "Rare", "type": "Skill", "cost": "1(0)", "class": "watcher"}, {"desc": ["Gain 3(4) Icon Block", "png Block for each card in your hand"], "name": "Spirit Shield", "img": "purple/Skill/spirit_shield", "rarity": "Rare", "type": "Skill", "cost": "2", "class": "watcher"}, {"desc": ["Skip the next enemy turn", "End your turn", "Exhaust"], "name": "Vault", "img": "purple/Skill/vault", "rarity": "Rare", "type": "Skill", "cost": "3(2)", "class": "watcher"}, {"desc": ["Choose one: Gain 6(8) Icon PlatedArmor", "png Plated Armor, 3(4) Icon Strength", "png Strength, or 25(30) Gold", "Exhaust"], "name": "Wish", "img": "purple/Skill/wish", "rarity": "Rare", "type": "Skill", "cost": "3"}]
+[{
+    "desc": ["Gain 5(8) Icon Block", "png Block"],
+    "name": "Defend",
+    "img": "purple/Skill/defend",
+    "rarity": "Starter",
+    "type": "Skill",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Deal 9 damage", "Enter Wrath"],
+    "name": "Eruption",
+    "img": "purple/Attack/eruption",
+    "rarity": "Starter",
+    "type": "Attack",
+    "cost": "2(1)",
+    "class": "watcher"
+}, {
+    "desc": ["Deal 6(9) damage"],
+    "name": "Strike",
+    "img": "purple/Attack/strike",
+    "rarity": "Starter",
+    "type": "Attack",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Enter Calm", "Gain 8(12) Icon Block", "png Block"],
+    "name": "Vigilance",
+    "img": "purple/Skill/vigilance",
+    "rarity": "Starter",
+    "type": "Skill",
+    "cost": "2",
+    "class": "watcher"
+}, {
+    "desc": ["Deal 7(10) damage for each enemy in combat"],
+    "name": "Bowling Bash",
+    "img": "purple/Attack/bowling_bash",
+    "rarity": "Common",
+    "type": "Attack",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Deal 5(8) damage to ALL enemies"],
+    "name": "Consecrate",
+    "img": "purple/Attack/consecrate",
+    "rarity": "Common",
+    "type": "Attack",
+    "cost": "0",
+    "class": "watcher"
+}, {
+    "desc": ["Icon Retain", "png Retain", "Enter Wrath", "Exhaust"],
+    "name": "Crescendo",
+    "img": "purple/Skill/crescendo",
+    "rarity": "Common",
+    "type": "Skill",
+    "cost": "1(0)",
+    "class": "watcher"
+}, {
+    "desc": ["Deal 8(11) damage", "If the previous card played was a skill, apply 1(2) Icon Vulnerable", "png Vulnerable"],
+    "name": "Crush Joints",
+    "img": "purple/Attack/crush_joints",
+    "rarity": "Common",
+    "type": "Attack",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Deal 7(9) damage", "Scry 2(3)", "Draw 1 card"],
+    "name": "Cut Through Fate",
+    "img": "purple/Attack/cut_through_fate",
+    "rarity": "Common",
+    "type": "Attack",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Gain 7(10) Icon Block", "png Block", "Exit your Stance"],
+    "name": "Empty Body",
+    "img": "purple/Skill/empty_body",
+    "rarity": "Common",
+    "type": "Skill",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Deal 9(14) damage", "Exit your Stance"],
+    "name": "Empty Fist",
+    "img": "purple/Attack/empty_fist",
+    "rarity": "Common",
+    "type": "Attack",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Gain 6(10) Icon Block", "png Block", "Shuffle an Insight into your draw pile"],
+    "name": "Evaluate",
+    "img": "purple/Skill/evaluate",
+    "rarity": "Common",
+    "type": "Skill",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Deal 4(6) damage", "On Stance change, returns from the Discard Pile into your hand"],
+    "name": "Flurry of Blows",
+    "img": "purple/Attack/flurry_of_blows",
+    "rarity": "Common",
+    "type": "Attack",
+    "cost": "0",
+    "class": "watcher"
+}, {
+    "desc": ["Icon Retain", "png Retain", "Deal 4(6) damage twice"],
+    "name": "Flying Sleeves",
+    "img": "purple/Attack/flying_sleeves",
+    "rarity": "Common",
+    "type": "Attack",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Deal 7(11) damage", "If the previous card played was an Attack, gain Energy"],
+    "name": "Follow-Up",
+    "img": "purple/Attack/follow-up",
+    "rarity": "Common",
+    "type": "Attack",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Gain 3(4) Icon Block", "png Block", "Wrath: Gain 9(14) additional Icon Block", "png block"],
+    "name": "Halt",
+    "img": "purple/Skill/halt",
+    "rarity": "Common",
+    "type": "Skill",
+    "cost": "0",
+    "class": "watcher"
+}, {
+    "desc": ["Scry 1(2)", "Gain 2(3) Icon Block", "png Block", "Deal 3(4) damage"],
+    "name": "Just Lucky",
+    "img": "purple/Attack/just_lucky",
+    "rarity": "Common",
+    "type": "Attack",
+    "cost": "0",
+    "class": "watcher"
+}, {
+    "desc": ["Apply 8(11) Mark", "ALL enemies lose HP equal to their Mark"],
+    "name": "Pressure Points",
+    "img": "purple/Skill/pressure_points",
+    "rarity": "Common",
+    "type": "Skill",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Gain 2(3) Icon Mantra", "png Mantra", "Gain 4 Icon Block", "png Block"],
+    "name": "Prostrate",
+    "img": "purple/Skill/prostrate",
+    "rarity": "Common",
+    "type": "Skill",
+    "cost": "0",
+    "class": "watcher"
+}, {
+    "desc": ["Icon Retain", "png Retain", "Gain 12(16) Icon Block", "png Block"],
+    "name": "Protect",
+    "img": "purple/Skill/protect",
+    "rarity": "Common",
+    "type": "Skill",
+    "cost": "2",
+    "class": "watcher"
+}, {
+    "desc": ["Deal 8(10) damage", "If the last card played this combat was an Attack, apply 1(2) Icon Weak", "png Weak"],
+    "name": "Sash Whip",
+    "img": "purple/Attack/sash_whip",
+    "rarity": "Common",
+    "type": "Attack",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Gain 7(9) Icon Block", "png Block", "Scry 3(5)"],
+    "name": "Third Eye",
+    "img": "purple/Skill/third_eye",
+    "rarity": "Common",
+    "type": "Skill",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Icon Retain", "png Retain", "Enter Calm", "Exhaust"],
+    "name": "Tranquility",
+    "img": "purple/Skill/tranquility",
+    "rarity": "Common",
+    "type": "Skill",
+    "cost": "1(0)",
+    "class": "watcher"
+}, {
+    "desc": ["(Innate", ") At the start of each turn add a Smite into your hand"],
+    "name": "Battle Hymn",
+    "img": "purple/Power/battle_hymn",
+    "rarity": "Uncommon",
+    "type": "Power",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Deal 6(10) damage", "Add a Smite into your hand"],
+    "name": "Carve Reality",
+    "img": "purple/Attack/carve_reality",
+    "rarity": "Uncommon",
+    "type": "Attack",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Put an Upgraded Miracle into your hand at the start of your next X(+1) turns", "Exhaust"],
+    "name": "Collect",
+    "img": "purple/Skill/collect",
+    "rarity": "Uncommon",
+    "type": "Skill",
+    "cost": "X",
+    "class": "watcher"
+}, {
+    "desc": ["Deal 12(16) damage to ALL enemies", "End your turn"],
+    "name": "Conclude",
+    "img": "purple/Attack/conclude",
+    "rarity": "Uncommon",
+    "type": "Attack",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Gain 4(7) Icon Block", "png Block", "Add a Safety to your hand"],
+    "name": "Deceive Reality",
+    "img": "purple/Skill/deceive_reality",
+    "rarity": "Uncommon",
+    "type": "Skill",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Exit your Stance", "Draw 2(3) cards"],
+    "name": "Empty Mind",
+    "img": "purple/Skill/empty_mind",
+    "rarity": "Uncommon",
+    "type": "Skill",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Gain 3(4) Icon Strength", "png Strength", "Gain 3(4) Icon Dexterity", "png Dexterity", "Gain 1 less Energy at the start of each turn"],
+    "name": "Fasting",
+    "img": "purple/Power/fasting",
+    "rarity": "Uncommon",
+    "type": "Power",
+    "cost": "2",
+    "class": "watcher"
+}, {
+    "desc": ["Deal 8(11) damage", "If the enemy intends to Attack, enter Calm"],
+    "name": "Fear No Evil",
+    "img": "purple/Attack/fear_no_evil",
+    "rarity": "Uncommon",
+    "type": "Attack",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Choose 1 of 3 Attacks of any color to add to your hand", "(It costs 0 this turn", ") Exhaust"],
+    "name": "Foreign Influence",
+    "img": "purple/Skill/foreign_influence",
+    "rarity": "Uncommon",
+    "type": "Skill",
+    "cost": "0",
+    "class": "watcher"
+}, {
+    "desc": ["At the start of your turn, Scry 3(4)"],
+    "name": "Foresight",
+    "img": "purple/Power/foresight",
+    "rarity": "Uncommon",
+    "type": "Power",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["If you are in Wrath, apply 3(5) Icon Vulnerable", "png Vulnerable to ALL enemies, otherwise enter Wrath"],
+    "name": "Indignation",
+    "img": "purple/Skill/indignation",
+    "rarity": "Uncommon",
+    "type": "Skill",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["If you are in Calm, draw 3(4) cards, otherwise Enter Calm"],
+    "name": "Inner Peace",
+    "img": "purple/Skill/inner_peace",
+    "rarity": "Uncommon",
+    "type": "Skill",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["At the end of your turn, if you are in Calm, gain 5(7) Icon Block", "png Block"],
+    "name": "Like Water",
+    "img": "purple/Power/like_water",
+    "rarity": "Uncommon",
+    "type": "Power",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Put 1(2) card(s) from your discard pile into your hand and Icon Retain", "png Retain it", "Enter Calm", "End your turn"],
+    "name": "Meditate",
+    "img": "purple/Skill/meditate",
+    "rarity": "Uncommon",
+    "type": "Skill",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Whenever you switch Stances, gain 4(6) Icon Block", "png Block"],
+    "name": "Mental Fortress",
+    "img": "purple/Power/mental_fortress",
+    "rarity": "Uncommon",
+    "type": "Power",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Whenever you Scry, gain 3(4) Icon Block", "png Block"],
+    "name": "Nirvana",
+    "img": "purple/Power/nirvana",
+    "rarity": "Uncommon",
+    "type": "Power",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Icon Retain", "png Retain", "Gain 5(7) Icon Block", "png Block", "Whenever this card is Icon Retain", "png Retained, increase its Icon Block", "png Block by 2(3)"],
+    "name": "Perseverance",
+    "img": "purple/Skill/perseverance",
+    "rarity": "Uncommon",
+    "type": "Skill",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Gain 3(4) Icon Mantra", "png Mantra", "Shuffle an Insight into your draw pile"],
+    "name": "Pray",
+    "img": "purple/Skill/pray",
+    "rarity": "Uncommon",
+    "type": "Skill",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Deal 10(15) damage", "Shuffle a Through Violence into your draw pile"],
+    "name": "Reach Heaven",
+    "img": "purple/Attack/reach_heaven",
+    "rarity": "Uncommon",
+    "type": "Attack",
+    "cost": "2",
+    "class": "watcher"
+}, {
+    "desc": ["Whenever you enter Wrath, draw 2 cards"],
+    "name": "Rushdown",
+    "img": "purple/Power/rushdown",
+    "rarity": "Uncommon",
+    "type": "Power",
+    "cost": "1(0)",
+    "class": "watcher"
+}, {
+    "desc": ["Gain 6(9) Icon Block", "png Block", "If the previous card played was a Skill, draw 2 card"],
+    "name": "Sanctity",
+    "img": "purple/Skill/sanctity",
+    "rarity": "Uncommon",
+    "type": "Skill",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Icon Retain", "png Retain", "Deal 20(26) damage", "Whenever this card is Icon Retain", "png Retained, lower its cost by 1"],
+    "name": "Sands of Time",
+    "img": "purple/Attack/sands_of_time",
+    "rarity": "Uncommon",
+    "type": "Attack",
+    "cost": "4",
+    "class": "watcher"
+}, {
+    "desc": ["Can only be played if this is the only attack in your hand", "Deal 30(40) damage"],
+    "name": "Signature Move",
+    "img": "purple/Attack/signature_move",
+    "rarity": "Uncommon",
+    "type": "Attack",
+    "cost": "2",
+    "class": "watcher"
+}, {
+    "desc": ["At the start of your next turn, enter Wrath and draw 2(3) cards"],
+    "name": "Simmering Fury",
+    "img": "purple/Skill/simmering_fury",
+    "rarity": "Uncommon",
+    "type": "Skill",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["At the end of your turn, shuffle an Insight into your draw pile"],
+    "name": "Study",
+    "img": "purple/Power/study",
+    "rarity": "Uncommon",
+    "type": "Power",
+    "cost": "2(1)",
+    "class": "watcher"
+}, {
+    "desc": ["Gain 8(11) Icon Block", "png Block", "The next Attack you play costs 0"],
+    "name": "Swivel",
+    "img": "purple/Skill/swivel",
+    "rarity": "Uncommon",
+    "type": "Skill",
+    "cost": "2",
+    "class": "watcher"
+}, {
+    "desc": ["Deal 5(7) damage", "Whenever you attack this enemy, gain 2(3) Icon Block", "png Block", "Exhaust"],
+    "name": "Talk to the Hand",
+    "img": "purple/Attack/talk_to_the_hand",
+    "rarity": "Uncommon",
+    "type": "Attack",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Deal 3 damage 3(4) times", "Enter Wrath", "Shuffle this card into your draw pile"],
+    "name": "Tantrum",
+    "img": "purple/Attack/tantrum",
+    "rarity": "Uncommon",
+    "type": "Attack",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Deal 9(12) damage", "Gain Icon Block", "png Block equal to unblocked damage dealt"],
+    "name": "Wallop",
+    "img": "purple/Attack/wallop",
+    "rarity": "Uncommon",
+    "type": "Attack",
+    "cost": "2",
+    "class": "watcher"
+}, {
+    "desc": ["Whenever you gain Icon Block", "png Block this turn, apply 1(2) Icon Weak", "png Weak to ALL enemies"],
+    "name": "Wave of the Hand",
+    "img": "purple/Skill/wave_of_the_hand",
+    "rarity": "Uncommon",
+    "type": "Skill",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Deal 4(6) damage", "Whenever you Scry and would discard this card, add it into your hand instead"],
+    "name": "Weave",
+    "img": "purple/Attack/weave",
+    "rarity": "Uncommon",
+    "type": "Attack",
+    "cost": "0",
+    "class": "watcher"
+}, {
+    "desc": ["Deal 15(20) damage", "Draw 2 cards"],
+    "name": "Wheel Kick",
+    "img": "purple/Attack/wheel_kick",
+    "rarity": "Uncommon",
+    "type": "Attack",
+    "cost": "2",
+    "class": "watcher"
+}, {
+    "desc": ["Icon Retain", "png Retain", "Deal 7(10) damage", "Whenever this card is Icon Retain", "png Retained, increase its damage by 4(5)"],
+    "name": "Windmill Strike",
+    "img": "purple/Attack/windmill_strike",
+    "rarity": "Uncommon",
+    "type": "Attack",
+    "cost": "2",
+    "class": "watcher"
+}, {
+    "desc": ["(Icon Retain", "png Retain", ") Gain 5 Icon Mantra", "png Mantra"],
+    "name": "Worship",
+    "img": "purple/Skill/worship",
+    "rarity": "Uncommon",
+    "type": "Skill",
+    "cost": "2",
+    "class": "watcher"
+}, {
+    "desc": ["Your next Attack deals 5(8) additional damage"],
+    "name": "Wreath of Flame",
+    "img": "purple/Skill/wreath_of_flame",
+    "rarity": "Uncommon",
+    "type": "Skill",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["(Innate", ") Shuffle a Beta into your draw pile", "Exhaust"],
+    "name": "Alpha",
+    "img": "purple/Skill/alpha",
+    "rarity": "Rare",
+    "type": "Skill",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["(Retain", ") Enter Divinity", "Die next turn", "Exhaust"],
+    "name": "Blasphemy",
+    "img": "purple/Skill/blasphemy",
+    "rarity": "Rare",
+    "type": "Skill",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Deal 12(16) damage", "Deals additional damage for all Icon Mantra", "png Mantra gained this combat"],
+    "name": "Brilliance",
+    "img": "purple/Attack/brilliance",
+    "rarity": "Rare",
+    "type": "Attack",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Shuffle an Expunger with X(+1) into your draw pile", "Exhaust"],
+    "name": "Conjure Blade",
+    "img": "purple/Skill/conjure_blade",
+    "rarity": "Rare",
+    "type": "Skill",
+    "cost": "X",
+    "class": "watcher"
+}, {
+    "desc": ["Unplayable", "When you draw this card, add 2(3) Miracles into your hand", "Exhaust"],
+    "name": "Deus Ex Machina",
+    "img": "purple/Skill/deus_ex_machina",
+    "rarity": "Rare",
+    "type": "Skill",
+    "cost": "Unplayable",
+    "class": "watcher"
+}, {
+    "desc": ["Ethereal", "At the start of your turn, gain Energy and increase this gain by 1", "(not Ethereal", ")"],
+    "name": "Deva Form",
+    "img": "purple/Power/deva_form",
+    "rarity": "Rare",
+    "type": "Power",
+    "cost": "3",
+    "class": "watcher"
+}, {
+    "desc": ["At the start of your turn, gain 2(3) Icon Mantra", "png Mantra"],
+    "name": "Devotion",
+    "img": "purple/Power/devotion",
+    "rarity": "Rare",
+    "type": "Power",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["(Innate", ") Whenever a card is Icon Retain", "png Retained, lower its cost by 1"],
+    "name": "Establishment",
+    "img": "purple/Power/establishment",
+    "rarity": "Rare",
+    "type": "Power",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["If the enemy has 30(40) or less HP, set their HP to 0"],
+    "name": "Judgment",
+    "img": "purple/Skill/judgment",
+    "rarity": "Rare",
+    "type": "Skill",
+    "cost": "1",
+    "class": "watcher"
+}, {
+    "desc": ["Deal 10(12) damage", "If this kills an enemy, Upgrade a random card in your deck", "Exhaust"],
+    "name": "Lesson Learned",
+    "img": "purple/Attack/lesson_learned",
+    "rarity": "Rare",
+    "type": "Attack",
+    "cost": "2",
+    "class": "watcher"
+}, {
+    "desc": ["Whenever a card is created during combat, Upgrade it"],
+    "name": "Master Reality",
+    "img": "purple/Power/master_reality",
+    "rarity": "Rare",
+    "type": "Power",
+    "cost": "1(0)",
+    "class": "watcher"
+}, {
+    "desc": ["Choose a card in your draw pile", "Play the chosen card twice and Exhaust it", "Exhaust"],
+    "name": "Omniscience",
+    "img": "purple/Skill/omniscience",
+    "rarity": "Rare",
+    "type": "Skill",
+    "cost": "4(3)",
+    "class": "watcher"
+}, {
+    "desc": ["Deal 5(6) damage to a random enemy 5(6) times"],
+    "name": "Ragnarok",
+    "img": "purple/Attack/ragnarok",
+    "rarity": "Rare",
+    "type": "Attack",
+    "cost": "3",
+    "class": "watcher"
+}, {
+    "desc": ["Draw cards until your hand is full", "Exhaust"],
+    "name": "Scrawl",
+    "img": "purple/Skill/scrawl",
+    "rarity": "Rare",
+    "type": "Skill",
+    "cost": "1(0)",
+    "class": "watcher"
+}, {
+    "desc": ["Gain 3(4) Icon Block", "png Block for each card in your hand"],
+    "name": "Spirit Shield",
+    "img": "purple/Skill/spirit_shield",
+    "rarity": "Rare",
+    "type": "Skill",
+    "cost": "2",
+    "class": "watcher"
+}, {
+    "desc": ["Skip the next enemy turn", "End your turn", "Exhaust"],
+    "name": "Vault",
+    "img": "purple/Skill/vault",
+    "rarity": "Rare",
+    "type": "Skill",
+    "cost": "3(2)",
+    "class": "watcher"
+}, {
+    "desc": ["Choose one: Gain 6(8) Icon PlatedArmor", "png Plated Armor, 3(4) Icon Strength", "png Strength, or 25(30) Gold", "Exhaust"],
+    "name": "Wish",
+    "img": "purple/Skill/wish",
+    "rarity": "Rare",
+    "type": "Skill",
+    "cost": "3"
+}]

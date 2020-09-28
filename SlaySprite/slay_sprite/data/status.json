@@ -1,0 +1,17 @@
+[
+    {
+        "desc": ["Exhaust"],
+        "name": "Slime",
+        "img": "status/slimed",
+        "type": "Status",
+        "cost": "1"
+    },
+    {
+        "desc": ["Deal 7(9) damage to a random enemy for each Lightning Channeled this combat"],
+        "name": "Thunder Strike",
+        "img": "blue/Attack/thunder_strike",
+        "rarity": "Rare",
+        "type": "Attack",
+        "cost": "3"
+    }
+]

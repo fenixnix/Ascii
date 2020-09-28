@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
+[ext_resource path="res://BattleGround.gd" type="Script" id=1]
 [ext_resource path="res://image/icon.png" type="Texture" id=2]
-[ext_resource path="res://image/nopants.png" type="Texture" id=3]
-[ext_resource path="res://image/merchantObjects.png" type="Texture" id=4]
+[ext_resource path="res://Enemy.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Player.gd" type="Script" id=4]
 [ext_resource path="res://Hands.gd" type="Script" id=5]
 [ext_resource path="res://battle.gd" type="Script" id=6]
+[ext_resource path="res://CharaInfoRT.gd" type="Script" id=7]
 
 [node name="battle" type="Node"]
 script = ExtResource( 6 )
@@ -22,10 +24,8 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = 4.97974
-margin_top = -104.389
-margin_right = 12.9797
-margin_bottom = -104.389
+margin_left = -3.99997
+margin_right = -3.99997
 mouse_filter = 2
 script = ExtResource( 5 )
 __meta__ = {
@@ -34,7 +34,7 @@ __meta__ = {
 deck_position_node = NodePath("icon")
 
 [node name="icon" type="Sprite" parent="UI/Hands"]
-position = Vector2( -462.508, 49.4058 )
+position = Vector2( -435.599, -81.774 )
 texture = ExtResource( 2 )
 
 [node name="deckCount" type="Label" parent="UI"]
@@ -68,15 +68,29 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Player" type="Node2D" parent="."]
+position = Vector2( -272.867, -2.13263 )
+script = ExtResource( 4 )
+
+[node name="Chara" type="Sprite" parent="Player"]
+texture = ExtResource( 2 )
+
+[node name="Label" type="RichTextLabel" parent="Player"]
+margin_left = -57.3182
+margin_top = 32.1137
+margin_right = 61.6818
+margin_bottom = 84.1137
+scroll_active = false
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="BattleGround" type="Node2D" parent="."]
+script = ExtResource( 1 )
 
-[node name="merchantObjects" type="Sprite" parent="BattleGround"]
-position = Vector2( 192.019, -4.74756 )
-texture = ExtResource( 4 )
-
-[node name="nopants" type="Sprite" parent="BattleGround"]
-position = Vector2( 215.803, 154.606 )
-texture = ExtResource( 3 )
+[node name="Enemy" parent="BattleGround" instance=ExtResource( 3 )]
+position = Vector2( 245.888, 1.78183 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( -33.2977, -23.7841 )

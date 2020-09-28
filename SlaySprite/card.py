@@ -57,11 +57,12 @@ def LoadDb(file,k):
         print(d)
     return db
 
-for k in raw_datas.keys():
-    v = raw_datas[k]
-    file = data_path%k
-    print(k,file)
-    db = LoadDb(file,k)
-    with open("slay_sprite/data/%s.json"%k,'w') as f:
-        f.write(json.dumps(db))
-    #CrawlerImage(db,root_url+urls_dict[k])
+def CvtCardRawDatToJsonDat():
+    for k in raw_datas.keys():
+        v = raw_datas[k]
+        file = data_path%k
+        print(k,file)
+        db = LoadDb(file,k)
+        with open("slay_sprite/data/%s.json"%k,'w') as f:
+            f.write(json.dumps(db))
+        #CrawlerImage(db,root_url+urls_dict[k])

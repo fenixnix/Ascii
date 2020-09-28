@@ -13,6 +13,7 @@ func refresh():
 	print(plrBtl.deck)
 	$UI/deckCount.text = str(len(plrBtl.deck))
 	$UI/discardCount.text = str(len(plrBtl.discard))
+	$Player.Set(plrBtl)
 
 func DrawCard(cnt = 1):
 	for i in cnt:

@@ -1,37 +1,39 @@
 [
     {
         "desc": [
-            "Deal 8(10) damage",
-            "Apply 2(3) Vulnerable"
+            {"type":"dmg","val":8},
+            {"type":"vul","val":2}
         ],
         "name": "Bash",
         "img": "red/Attack/bash",
         "rarity": "Starter",
         "type": "Attack",
         "cost": "2",
-        "class": "ironclad"
+        "class": "ironclad",
+        "upgrade":{
+            "dmg":2,
+            "vul":1
+        }
     },
     {
-        "desc": [
-            "Gain 5(8) Block"
-        ],
+        "desc": [{"type":"blk","val":5}],
         "name": "Defend",
         "img": "red/Skill/defend",
         "rarity": "Starter",
         "type": "Skill",
         "cost": "1",
-        "class": "ironclad"
+        "class": "ironclad",
+        "upgrade":{"blk":3}
     },
     {
-        "desc": [
-            "Deal 6(9) damage"
-        ],
+        "desc": [{"type":"dmg","val":6}],
         "name": "Strike",
         "img": "red/Attack/strike",
         "rarity": "Starter",
         "type": "Attack",
         "cost": "1",
-        "class": "ironclad"
+        "class": "ironclad",
+        "upgrade":{"dmg":3}
     },
     {
         "desc": [
