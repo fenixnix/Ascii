@@ -132,6 +132,5 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="gui_input" from="HotArea" to="." method="_on_HotArea_gui_input"]
 [connection signal="mouse_entered" from="HotArea" to="." method="_on_HotArea_mouse_entered"]
 [connection signal="mouse_exited" from="HotArea" to="." method="_on_HotArea_mouse_exited"]

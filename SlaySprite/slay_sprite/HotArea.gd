@@ -2,11 +2,10 @@ extends Control
 
 func get_drag_data(position):
 	print("drag",position)
-	return get_parent()
-
-#func drop_data(position, data):
-#	print("hot drop",position,data)
-#
-#func can_drop_data(position, data):
-#	print("hot can_drop")
-#	return true
+	var card = get_parent()
+	var curser = load("res://DragCurser.tscn").instance()
+	var ori_position = get_parent().rect_position + get_parent().get_parent().rect_position
+	print(ori_position)
+	curser.Set(ori_position)
+	force_drag(card,curser)
+	return card
