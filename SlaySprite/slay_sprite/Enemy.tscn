@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://image/icon.png" type="Texture" id=1]
 [ext_resource path="res://Enemy.gd" type="Script" id=2]
 [ext_resource path="res://EnemyUI.gd" type="Script" id=3]
+[ext_resource path="res://BtlInfo.gd" type="Script" id=4]
 
 [node name="Enemy" type="Node2D"]
 script = ExtResource( 2 )
@@ -22,6 +23,20 @@ margin_top = -71.5
 margin_right = 62.0
 margin_bottom = 71.5
 script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Info" type="RichTextLabel" parent="EnemyUI"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -126.882
+margin_top = 6.31369
+margin_right = 135.118
+margin_bottom = 113.314
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

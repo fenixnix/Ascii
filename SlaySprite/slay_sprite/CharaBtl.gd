@@ -16,6 +16,7 @@ var hand = []
 var discard = []
 
 signal exhaust(card)
+signal discard(card)
 signal draw(card)
 signal gain_block(val)
 signal hurt(attacker,dmg)
@@ -23,6 +24,7 @@ signal cost_hp(amount)
 signal dead()
 signal end_turn()
 signal new_turn()
+signal refresh_card()
 
 func Set(_chara):
 	chara = _chara
@@ -32,6 +34,10 @@ func Set(_chara):
 	for card in chara.cards:
 		deck.append(card)
 	deck.shuffle()
+	refresh()
+
+func refresh():
+	$Info.Set(self)
 
 func StartNewTurn():
 	if !power.has("barricade"):
@@ -39,6 +45,13 @@ func StartNewTurn():
 	emit_signal("new_turn")
 	for i in new_turn_draw_cnt:
 		Draw()
+
+func EndTurn():
+	for card in hand:
+		if card.desc.has("Ethereal"):
+			Exhaust(card)
+		else:
+			Discard(card)
 
 func Draw():
 	if len(deck)<=0:
@@ -50,11 +63,10 @@ func Draw():
 		return c
 	return null
 
-func PlayCard(card):
+func PlayCard(card,target = null):
+	en -= card.cost
 	match card.type:
 		"Attack":
-			var target
-			#get target
 			RunDesc(card,target)
 		"Skill":
 			RunDesc(card)
@@ -64,6 +76,7 @@ func PlayCard(card):
 		Exhaust(card)
 	else:
 		Discard(card)
+	refresh()
 
 func RunDesc(card,target = null):
 	for d in card.desc:
@@ -73,13 +86,14 @@ func RunDesc(card,target = null):
 			"script":ExecuteScript(d,target)
 
 func DuelDamage(dat,target):
-	var dmg = dat.val + attr.get("str")*dat.get("str_bonus",1)
+	var dmg = dat.val + attr.get("str",0)*dat.get("str_bonus",1)
 	target.TakeDamage(dmg)
 
 func GainBlock(dat):
 	var blkVal = dat.val
 	if status.has("Frail"):
 		blkVal = ceil(blkVal*.75)
+	blk += blkVal
 	emit_signal("gain_block",blkVal)
 
 func ExecuteScript(d,target):
@@ -118,8 +132,9 @@ func ReChargeDeck():
 
 func Exhaust(card):
 	hand.erase(card)
-	emit_signal("exhaust")
+	emit_signal("exhaust",card)
 
 func Discard(card):
 	hand.erase(card)
 	discard.append(card)
+	emit_signal("discard",card)

@@ -8,7 +8,7 @@
         "img": "red/Attack/bash",
         "rarity": "Starter",
         "type": "Attack",
-        "cost": "2",
+        "cost": 2,
         "class": "ironclad",
         "upgrade":{
             "dmg":2,
@@ -21,7 +21,7 @@
         "img": "red/Skill/defend",
         "rarity": "Starter",
         "type": "Skill",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad",
         "upgrade":{"blk":3}
     },
@@ -31,7 +31,7 @@
         "img": "red/Attack/strike",
         "rarity": "Starter",
         "type": "Attack",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad",
         "upgrade":{"dmg":3}
     },

@@ -1,12 +1,13 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://BattleGround.gd" type="Script" id=1]
 [ext_resource path="res://image/icon.png" type="Texture" id=2]
 [ext_resource path="res://Enemy.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Player.gd" type="Script" id=4]
+[ext_resource path="res://CharaBtl.gd" type="Script" id=4]
 [ext_resource path="res://Hands.gd" type="Script" id=5]
 [ext_resource path="res://battle.gd" type="Script" id=6]
 [ext_resource path="res://CharaInfoRT.gd" type="Script" id=7]
+[ext_resource path="res://NoTargetCast.gd" type="Script" id=8]
 
 [node name="battle" type="Node"]
 script = ExtResource( 6 )
@@ -24,10 +25,6 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = 2.11902
-margin_top = -303.007
-margin_right = 2.11902
-margin_bottom = -303.007
 mouse_filter = 2
 script = ExtResource( 5 )
 __meta__ = {
@@ -70,6 +67,30 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="NoTargetCast" type="Control" parent="UI"]
+anchor_left = 0.37793
+anchor_top = 0.406667
+anchor_right = 0.631836
+anchor_bottom = 0.703333
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="EndTurn" type="Button" parent="UI"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -218.453
+margin_top = -139.38
+margin_right = -151.453
+margin_bottom = -119.38
+text = "End Turn"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Player" type="Node2D" parent="."]
 position = Vector2( -272.867, -2.13263 )
 script = ExtResource( 4 )
@@ -77,7 +98,7 @@ script = ExtResource( 4 )
 [node name="Chara" type="Sprite" parent="Player"]
 texture = ExtResource( 2 )
 
-[node name="Label" type="RichTextLabel" parent="Player"]
+[node name="Info" type="RichTextLabel" parent="Player"]
 margin_left = -57.3182
 margin_top = 32.1137
 margin_right = 61.6818
@@ -98,3 +119,7 @@ position = Vector2( 245.888, 1.78183 )
 position = Vector2( -33.2977, -23.7841 )
 current = true
 [connection signal="pressed" from="UI/TestDraw" to="." method="_on_TestDraw_pressed"]
+[connection signal="pressed" from="UI/EndTurn" to="." method="_on_EndTurn_pressed"]
+[connection signal="draw" from="Player" to="." method="_on_Player_draw"]
+[connection signal="draw" from="Player" to="." method="_on_Player_draw"]
+[connection signal="refresh_card" from="Player" to="." method="_on_Player_refresh_card"]

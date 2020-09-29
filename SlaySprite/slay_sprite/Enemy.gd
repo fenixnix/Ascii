@@ -1,20 +1,30 @@
 extends Node2D
 
-var hp = 0
+var mhp = 20
+var hp = 15
+var blk = 0
+
 var skills = []
+var attr = {}
+var status = {}
 
 signal select(target)
 
-func _on_Area2D_mouse_entered():
-	if GlbUi.is_dragging:
-		GlbUi.target = self
+func _ready():
+	refresh_info()
 
-func _on_Area2D_mouse_exited():
-	pass # Replace with function body.
+func refresh_info():
+	$EnemyUI/Info.Set(self)
 
-func _on_Area2D_input_event(viewport, event:InputEvent, shape_idx):
-	if event.is_action_released("click"):
-		print(event)
-		if GlbUi.is_dragging:
-			emit_signal("select",self)
-			print_debug("select:",self)
+func TakeDamage(_dmg):
+	var dmg = _dmg
+	if status.has("vul"):
+		dmg = ceil(dmg*1.5)
+	var overDmg = clamp(dmg-blk,0,65535)
+	blk = clamp(blk-dmg,0,65535)
+	hp -= overDmg
+	if hp<=0:
+		hp = 0
+	refresh_info()
+#		on_dead()
+#	emit_signal("hurt",attacker,dmg)
