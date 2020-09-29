@@ -33,7 +33,15 @@ func refresh_info():
 func Action():
 	var skl = data.skl[action_index]
 	print("%s action use %s"%[enemy_name,str(skl)])
+	match skl.type:
+		"dmg":Attack(skl)
 	action_index = posmod(action_index+1,len(data.skl_loop))
+
+func Attack(dat):
+	var dmg = dat.get("val",0)+attr.get("str",0)
+	if status.has("weak"):
+		dmg = ceil(dmg*.75)
+	GlbAct.GetChara().TakeDamage(self,dmg)
 
 func TakeDamage(_dmg):
 	var dmg = _dmg
@@ -45,7 +53,11 @@ func TakeDamage(_dmg):
 	if hp<=0:
 		hp = 0
 	refresh_info()
+	
+	#AnimEffect
 	$TextPartical.Play(str(overDmg))
+	$Tween.interpolate_method($Anim,"shake",.1,.5,.5)
+	$Tween.start()
 #		on_dead()
 #	emit_signal("hurt",attacker,dmg)
 

@@ -1,18 +1,20 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://image/icon.png" type="Texture" id=1]
 [ext_resource path="res://Enemy.gd" type="Script" id=2]
 [ext_resource path="res://EnemyUI.gd" type="Script" id=3]
 [ext_resource path="res://BtlInfo.gd" type="Script" id=4]
 [ext_resource path="res://TextPartical.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Anim.gd" type="Script" id=6]
 
 [node name="Enemy" type="Node2D"]
 script = ExtResource( 2 )
 
-[node name="icon" type="Sprite" parent="."]
+[node name="Anim" type="Sprite" parent="."]
 position = Vector2( 0.697136, 0.857507 )
 scale = Vector2( 2.04284, 1.98027 )
 texture = ExtResource( 1 )
+script = ExtResource( 6 )
 
 [node name="EnemyUI" type="Control" parent="."]
 anchor_left = 0.5
@@ -43,3 +45,5 @@ __meta__ = {
 }
 
 [node name="TextPartical" parent="." instance=ExtResource( 5 )]
+
+[node name="Tween" type="Tween" parent="."]
