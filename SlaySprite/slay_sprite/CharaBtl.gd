@@ -8,8 +8,8 @@ var en = 0
 var blk = 0
 var new_turn_draw_cnt = 5
 var attr = {}
-var power = {}
 var status = {}
+var power = {}
 
 var deck = []
 var hand = []
@@ -40,18 +40,32 @@ func refresh():
 	$Info.Set(self)
 
 func StartNewTurn():
+	en = chara.en
 	if !power.has("barricade"):
 		blk = 0
 	emit_signal("new_turn")
+	
+	#update status
+	var dead_keys = []
+	for k in status.keys():
+		status[k] -= 1
+		if status[k]<=0:
+			dead_keys.append(k)
+	for d in dead_keys:
+		status.erase(d)
+	
 	for i in new_turn_draw_cnt:
 		Draw()
 
 func EndTurn():
+	var dead_queue = []
 	for card in hand:
 		if card.desc.has("Ethereal"):
-			Exhaust(card)
+			emit_signal("exhaust",card)
 		else:
-			Discard(card)
+			emit_signal("discard",card)
+			discard.append(card)
+	hand.clear()
 
 func Draw():
 	if len(deck)<=0:
@@ -83,6 +97,7 @@ func RunDesc(card,target = null):
 		match d.type:
 			"dmg":DuelDamage(d,target)
 			"blk":GainBlock(d)
+			"vul","weak","frail":target.AddStatus(d)
 			"script":ExecuteScript(d,target)
 
 func DuelDamage(dat,target):
@@ -91,10 +106,16 @@ func DuelDamage(dat,target):
 
 func GainBlock(dat):
 	var blkVal = dat.val
-	if status.has("Frail"):
+	if status.has("frail"):
 		blkVal = ceil(blkVal*.75)
 	blk += blkVal
 	emit_signal("gain_block",blkVal)
+
+func AddStatus(d):
+	if status.has(d.type):
+		status[d.type] += d.val
+	else:
+		status[d.type] = d.val
 
 func ExecuteScript(d,target):
 	pass
@@ -105,7 +126,7 @@ func CostHp(amount):
 
 func TakeDamage(attacker,_dmg):
 	var dmg = _dmg
-	if status.has("Vul"):
+	if status.has("vul"):
 		dmg = ceil(dmg*1.5)
 	var overDmg = clamp(dmg-blk,0,65535)
 	blk = clamp(blk-dmg,0,65535)

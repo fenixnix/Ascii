@@ -1,0 +1,16 @@
+[{
+    "id": "curlUp",
+    "name": "Curl Up",
+    "desc": "Gain Block on hit (once per combat)"
+}, {
+    "id": "ritual",
+    "name": "Ritual",
+    "desc": [
+        "on_turn_start",
+        "str +3"
+    ]
+}, {
+    "id": "artifact",
+    "name": "Artifact",
+    "desc": ["negitive X debuff"]
+}]

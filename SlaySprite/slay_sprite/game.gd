@@ -10,6 +10,6 @@ func _ready():
 	var battle = battle_prefab.instance()
 	add_child(battle)
 	battle.Start({
-		"chara":chara
+		"chara":chara,
+		"enm":["goblin"]
 	})
-

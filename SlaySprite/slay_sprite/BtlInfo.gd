@@ -2,10 +2,17 @@ extends RichTextLabel
 
 func Set(dat):
 	bbcode_enabled = true
-	var hpRate = dat.hp*80/dat.mhp
-	var nhpRate = 80 - hpRate
-	print(hpRate," ",nhpRate)
-	bbcode_text = """Block %d [img=%dx16]res://image/green_button12.png[/img][img=%dx16]res://image/whiteSquare32.png[/img] %d/%d
+	bbcode_text = """BLK %d HP %d/%d
+attr:%s
+status:%s
 	"""%[
-		dat.blk,hpRate,nhpRate,dat.hp,dat.mhp
+		dat.blk,dat.hp,dat.mhp,
+		dict_code(dat.attr),
+		dict_code(dat.status)
 	]
+
+func dict_code(dict):
+	var tmp = ""
+	for key in dict.keys():
+		tmp += "[%s:%d]"%[key,dict[key]]
+	return tmp

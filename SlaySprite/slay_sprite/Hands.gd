@@ -19,6 +19,22 @@ func Draw(card):
 	Card.rect_position = card_init_position
 	PositionAnim()
 
+func Discard(card):
+	for c in hands:
+		if c.data == card:
+			hands.erase(c)
+			c.queue_free()
+			break
+	PositionAnim()
+
+func Exhaust(card):
+	for c in hands:
+		if c.data == card:
+			hands.erase(c)
+			c.queue_free()
+			break
+	PositionAnim()
+
 func PositionAnim():
 	var x_start_position = len(hands)*50/2
 	var offset = x_start_position

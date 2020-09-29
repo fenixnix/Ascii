@@ -1,20 +1,33 @@
 extends Node2D
 
+class_name Enemy
+
+var enemy_name = "enemy"
+var img
+
 var mhp = 20
 var hp = 15
 var blk = 0
 
-var skills = []
 var attr = {}
 var status = {}
 
-signal select(target)
+var skills = []
+
+func Set(enm):
+	mhp = enm.hp.val+randi()%int(enm.hp.rnd)
+	hp = mhp
+	skills = enm.skl.duplicate(true)
+	refresh_info()
 
 func _ready():
 	refresh_info()
 
 func refresh_info():
 	$EnemyUI/Info.Set(self)
+
+func Action():
+	print("%s action"%enemy_name)
 
 func TakeDamage(_dmg):
 	var dmg = _dmg
@@ -28,3 +41,10 @@ func TakeDamage(_dmg):
 	refresh_info()
 #		on_dead()
 #	emit_signal("hurt",attacker,dmg)
+
+func AddStatus(d):
+	if status.has(d.type):
+		status[d.type] += d.val
+	else:
+		status[d.type] = d.val
+	refresh_info()
