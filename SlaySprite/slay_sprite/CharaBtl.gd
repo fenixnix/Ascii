@@ -17,7 +17,8 @@ var discard = []
 
 signal exhaust(card)
 signal discard(card)
-signal draw(card)
+signal draw_card(card)
+signal play(card)
 signal gain_block(val)
 signal hurt(attacker,dmg)
 signal cost_hp(amount)
@@ -73,7 +74,7 @@ func Draw():
 	if len(deck)>0:
 		var c= deck.pop_front()
 		hand.push_back(c)
-		emit_signal("draw",c)
+		emit_signal("draw_card",c)
 		return c
 	return null
 
@@ -91,6 +92,7 @@ func PlayCard(card,target = null):
 	else:
 		Discard(card)
 	refresh()
+	emit_signal("play",card)
 
 func RunDesc(card,target = null):
 	for d in card.desc:

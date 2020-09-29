@@ -9,7 +9,8 @@
             "type": "dmg",
             "val": 6,
             "rnd": 3
-        }]
+        }],
+        "skl_loop":[0]
     },
     {
         "id": "louseRed",

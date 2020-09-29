@@ -19,6 +19,10 @@ func Draw(card):
 	Card.rect_position = card_init_position
 	PositionAnim()
 
+func Refresh():
+	for h in hands:
+		h.Refresh()
+
 func Discard(card):
 	for c in hands:
 		if c.data == card:

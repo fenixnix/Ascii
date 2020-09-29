@@ -14,7 +14,11 @@ var status = {}
 
 var skills = []
 
+var data
+var action_index = 0
+
 func Set(enm):
+	data = enm
 	mhp = enm.hp.val+randi()%int(enm.hp.rnd)
 	hp = mhp
 	skills = enm.skl.duplicate(true)
@@ -27,7 +31,9 @@ func refresh_info():
 	$EnemyUI/Info.Set(self)
 
 func Action():
-	print("%s action"%enemy_name)
+	var skl = data.skl[action_index]
+	print("%s action use %s"%[enemy_name,str(skl)])
+	action_index = posmod(action_index+1,len(data.skl_loop))
 
 func TakeDamage(_dmg):
 	var dmg = _dmg
@@ -39,6 +45,7 @@ func TakeDamage(_dmg):
 	if hp<=0:
 		hp = 0
 	refresh_info()
+	$TextPartical.Play(str(overDmg))
 #		on_dead()
 #	emit_signal("hurt",attacker,dmg)
 

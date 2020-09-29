@@ -99,15 +99,24 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Type" type="Label" parent="Control/CardPanel"]
+[node name="Type" type="PanelContainer" parent="Control/CardPanel"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -20.0
-margin_top = -7.0
-margin_right = 20.0
-margin_bottom = 7.0
+margin_left = -49.0
+margin_top = -14.0
+margin_right = 49.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Control/CardPanel/Type"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 91.0
+margin_bottom = 21.0
 align = 1
 valign = 1
 __meta__ = {
@@ -132,5 +141,6 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="gui_input" from="HotArea" to="HotArea" method="_on_HotArea_gui_input"]
 [connection signal="mouse_entered" from="HotArea" to="." method="_on_HotArea_mouse_entered"]
 [connection signal="mouse_exited" from="HotArea" to="." method="_on_HotArea_mouse_exited"]
