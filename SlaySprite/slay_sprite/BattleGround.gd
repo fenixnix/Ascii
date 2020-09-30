@@ -14,3 +14,13 @@ func AddEnm(_enm):
 func EnemyPhase():
 	for c in get_children():
 		c.Action()
+
+func ShowEnmAction():
+	for c in get_children():
+		c.ShowAction()
+
+func EnemyAllDead():
+	for c in get_children():
+		if c.hp>0:
+			return false
+	return true

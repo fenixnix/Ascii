@@ -30,6 +30,12 @@ func _ready():
 func refresh_info():
 	$EnemyUI/Info.Set(self)
 
+func ShowAction():
+	var skl = data.skl[action_index]
+	match skl.type:
+		"dmg":
+			$EnemyUI/plan.text = "%s %d"%["Attack",sklDmg(skl)]
+
 func Action():
 	var skl = data.skl[action_index]
 	print("%s action use %s"%[enemy_name,str(skl)])
@@ -38,10 +44,15 @@ func Action():
 	action_index = posmod(action_index+1,len(data.skl_loop))
 
 func Attack(dat):
-	var dmg = dat.get("val",0)+attr.get("str",0)
+	var dmg = sklDmg(dat)
+	$Anim.Charge()
+	GlbAct.GetChara().TakeDamage(self,dmg)
+
+func sklDmg(skl):
+	var dmg = skl.get("val",0)+attr.get("str",0)
 	if status.has("weak"):
 		dmg = ceil(dmg*.75)
-	GlbAct.GetChara().TakeDamage(self,dmg)
+	return dmg
 
 func TakeDamage(_dmg):
 	var dmg = _dmg
@@ -50,16 +61,23 @@ func TakeDamage(_dmg):
 	var overDmg = clamp(dmg-blk,0,65535)
 	blk = clamp(blk-dmg,0,65535)
 	hp -= overDmg
-	if hp<=0:
-		hp = 0
-	refresh_info()
 	
 	#AnimEffect
 	$TextPartical.Play(str(overDmg))
-	$Tween.interpolate_method($Anim,"shake",.1,.5,.5)
-	$Tween.start()
-#		on_dead()
-#	emit_signal("hurt",attacker,dmg)
+	$Anim.Shake()
+	$Anim/Sprite.Shake()
+
+	if hp<=0:
+		hp = 0
+		on_dead()
+	refresh_info()
+
+func on_dead():
+	#Play Dead Anim
+	if get_parent().EnemyAllDead():
+		GlbAct.BattleWin()
+	yield(get_tree().create_timer(1),"timeout")
+	queue_free()
 
 func AddStatus(d):
 	if status.has(d.type):

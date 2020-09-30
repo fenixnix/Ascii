@@ -22,9 +22,9 @@ func AnimMove(_goal):
 
 func SetActive(val):
 	if val:
-		$Control/CardPanel/Cost.modulate = Color.green
+		$Control/CardPanel/Cost/Cost.modulate = Color.green
 	else:
-		$Control/CardPanel/Cost.modulate = Color.red
+		$Control/CardPanel/Cost/Cost.modulate = Color.red
 	$HotArea.active = val
 
 var prePos

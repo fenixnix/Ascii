@@ -8,6 +8,17 @@ func Start(dat):
 	refresh()
 	for e in dat.get("enm",[]):
 		$BattleGround.AddEnm(GlbDb.enmDict[e])
+	
+	$UI/Hands.visible = true
+	$UI/deckCount.visible = true
+	$UI/discardCount.visible = true
+	$UI/EndTurn.visible = true
+	
+func Stop():
+	$UI/Hands.visible = false
+	$UI/deckCount.visible = false
+	$UI/discardCount.visible = false
+	$UI/EndTurn.visible = false
 
 func refresh():
 	$UI/deckCount.text = str(len(plrBtl.deck))
@@ -18,13 +29,11 @@ func DrawCard(cnt = 1):
 	for i in cnt:
 		var card = plrBtl.Draw()
 
-func _on_TestDraw_pressed():
-	DrawCard()
-
 func _on_EndTurn_pressed():
 	$Player.EndTurn()
 	$BattleGround.EnemyPhase()
 	$Player.StartNewTurn()
+	$BattleGround.ShowEnmAction()
 
 func _on_Player_refresh_card():
 	refresh()
@@ -43,3 +52,9 @@ func _on_Player_play(card):
 func _on_Player_draw_card(card):
 	$UI/Hands.Draw(card)
 	refresh()
+
+func _on_Player_hurt(attacker, dmg):
+	var text = preload("res://EnlargeText.tscn").instance()
+	$UI.add_child(text)
+	text.Set(str(-dmg))
+	$Camera2D/Shake.Shake(dmg)

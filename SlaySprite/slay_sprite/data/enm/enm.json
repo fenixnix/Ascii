@@ -2,8 +2,8 @@
         "id": "goblin",
         "name": "Goblin",
         "hp": {
-            "val": 100,
-            "rnd": 20
+            "val": 10,
+            "rnd": 3
         },
         "skl": [{
             "type": "dmg",

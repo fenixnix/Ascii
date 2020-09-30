@@ -1,15 +1,15 @@
 extends Node
 
-var chara
 
 onready var battle_prefab = preload("res://battle.tscn")
 
 func _ready():
-	chara = Chara.new()
-	chara.Set(GlbDb.LoadDat("ironclad_default"))
+	seed(OS.get_system_time_msecs())
+	GlbDat.chara = Chara.new()
+	GlbDat.chara.Set(GlbDb.LoadDat("ironclad_default"))
 	var battle = battle_prefab.instance()
 	add_child(battle)
 	battle.Start({
-		"chara":chara,
+		"chara":GlbDat.chara,
 		"enm":["goblin"]
 	})

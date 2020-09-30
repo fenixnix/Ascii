@@ -1,20 +1,31 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://image/icon.png" type="Texture" id=1]
+[ext_resource path="res://image/slime.png" type="Texture" id=1]
 [ext_resource path="res://Enemy.gd" type="Script" id=2]
 [ext_resource path="res://EnemyUI.gd" type="Script" id=3]
 [ext_resource path="res://BtlInfo.gd" type="Script" id=4]
 [ext_resource path="res://TextPartical.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Anim.gd" type="Script" id=6]
+[ext_resource path="res://image/icon.png" type="Texture" id=7]
 
 [node name="Enemy" type="Node2D"]
 script = ExtResource( 2 )
 
+[node name="TextPartical" parent="." instance=ExtResource( 5 )]
+
 [node name="Anim" type="Sprite" parent="."]
-position = Vector2( 0.697136, 0.857507 )
-scale = Vector2( 2.04284, 1.98027 )
+texture = ExtResource( 7 )
+script = ExtResource( 6 )
+
+[node name="Tween" type="Tween" parent="Anim"]
+
+[node name="Sprite" type="Sprite" parent="Anim"]
+position = Vector2( -2, -16 )
+scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 1 )
 script = ExtResource( 6 )
+
+[node name="Tween" type="Tween" parent="Anim/Sprite"]
 
 [node name="EnemyUI" type="Control" parent="."]
 anchor_left = 0.5
@@ -26,6 +37,17 @@ margin_top = -71.5
 margin_right = 62.0
 margin_bottom = 71.5
 script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="plan" type="RichTextLabel" parent="EnemyUI"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -56.0858
+margin_top = -53.7401
+margin_right = 58.9142
+margin_bottom = -16.7401
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -43,7 +65,3 @@ script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="TextPartical" parent="." instance=ExtResource( 5 )]
-
-[node name="Tween" type="Tween" parent="."]

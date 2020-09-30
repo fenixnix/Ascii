@@ -12,6 +12,10 @@ func _init():
 	cardDict = res[1]
 	enmDict = FileRW.LoadJsonFileArray2Dict(dbPath%"enm/enm")
 
+func RandomSelect():
+	var index = randi()%len(cardDict.keys())
+	return cardDict[cardDict.keys()[index]]
+
 func LoadDb(file):
 	var db = LoadDat(file)
 	var dict = {}

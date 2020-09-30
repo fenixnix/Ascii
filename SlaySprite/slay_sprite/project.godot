@@ -45,8 +45,9 @@ config/icon="res://icon.png"
 [autoload]
 
 GlbDb="*res://GlbDb.gd"
-GlbUi="*res://GlbUi.gd"
 GlbAct="*res://GlbAct.gd"
+GlbDat="*res://GlbDat.gd"
+GlbUi="*res://ui/GlbUi.tscn"
 
 [input]
 
