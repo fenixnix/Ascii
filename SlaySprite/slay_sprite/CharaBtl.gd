@@ -14,11 +14,14 @@ var power = {}
 var deck = []
 var hand = []
 var discard = []
+var exhaust = []
 
 signal exhaust(card)
 signal discard(card)
+signal clone(card)
 signal draw_card(card)
 signal play(card)
+
 signal gain_block(val)
 signal hurt(attacker,dmg)
 signal cost_hp(amount)
@@ -80,6 +83,9 @@ func Draw():
 
 func PlayCard(card,target = null):
 	en -= card.cost
+	if target == null:
+		target = $"../BattleGrond".RndSel()
+		print_debug("Random Select Target:",target)
 	match card.type:
 		"Attack":
 			RunDesc(card,target)
@@ -99,7 +105,7 @@ func RunDesc(card,target = null):
 		match d.type:
 			"dmg":DuelDamage(d,target)
 			"blk":GainBlock(d)
-			"vul","weak","frail":target.AddStatus(d)
+			"vul","weak","frail":target.ModStatus(d)
 			"script":ExecuteScript(d,target)
 
 func DuelDamage(dat,target):
@@ -113,11 +119,19 @@ func GainBlock(dat):
 	blk += blkVal
 	emit_signal("gain_block",blkVal)
 
-func AddStatus(d):
-	if status.has(d.type):
-		status[d.type] += d.val
+func ModAttr(d):
+	modDict(d,attr)
+
+func ModStatus(d):
+	modDict(d,status)
+
+func modDict(dat,dict):
+	if !dict.has(dat.type):
+		dict[dat.type] = dat.val
 	else:
-		status[d.type] = d.val
+		dict[dat.type] += dat.val
+	if dict[dat.type] == 0:
+		dict.erase(dat.type)
 
 func ExecuteScript(d,target):
 	pass
@@ -155,9 +169,14 @@ func ReChargeDeck():
 
 func Exhaust(card):
 	hand.erase(card)
+	exhaust.append(card)
 	emit_signal("exhaust",card)
 
 func Discard(card):
 	hand.erase(card)
 	discard.append(card)
 	emit_signal("discard",card)
+
+func Clone(card):
+	hand.append(card)
+	emit_signal("clone",card)

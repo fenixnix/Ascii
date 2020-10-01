@@ -79,7 +79,7 @@ func on_dead():
 	yield(get_tree().create_timer(1),"timeout")
 	queue_free()
 
-func AddStatus(d):
+func ModStatus(d):
 	if status.has(d.type):
 		status[d.type] += d.val
 	else:

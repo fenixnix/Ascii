@@ -1,8 +1,14 @@
 [
     {
         "desc": [
-            {"type":"dmg","val":8},
-            {"type":"vul","val":2}
+            {
+                "type": "dmg",
+                "val": 8
+            },
+            {
+                "type": "vul",
+                "val": 2
+            }
         ],
         "name": "Bash",
         "img": "red/Attack/bash",
@@ -10,71 +16,118 @@
         "type": "Attack",
         "cost": 2,
         "class": "ironclad",
-        "upgrade":{
-            "dmg":2,
-            "vul":1
+        "upgrade": {
+            "dmg": 2,
+            "vul": 1
         }
     },
     {
-        "desc": [{"type":"blk","val":5}],
+        "desc": [
+            {
+                "type": "blk",
+                "val": 5
+            }
+        ],
         "name": "Defend",
         "img": "red/Skill/defend",
         "rarity": "Starter",
         "type": "Skill",
         "cost": 1,
         "class": "ironclad",
-        "upgrade":{"blk":3}
+        "upgrade": {
+            "blk": 3
+        }
     },
     {
-        "desc": [{"type":"dmg","val":6}],
+        "desc": [
+            {
+                "type": "dmg",
+                "val": 6
+            }
+        ],
         "name": "Strike",
         "img": "red/Attack/strike",
         "rarity": "Starter",
         "type": "Attack",
         "cost": 1,
         "class": "ironclad",
-        "upgrade":{"dmg":3}
+        "upgrade": {
+            "dmg": 3
+        }
     },
     {
         "desc": [
-            "Deal 6(8) damage",
-            "Add a copy of this card to your discard pile"
+            {
+                "type": "dmg",
+                "val": 6
+            },
+            {
+                "type": "script",
+                "val": "cloneToDiscard"
+            }
         ],
         "name": "Anger",
         "img": "red/Attack/anger",
         "rarity": "Common",
         "type": "Attack",
         "cost": "0",
-        "class": "ironclad"
+        "class": "ironclad",
+        "upgrade": {
+            "dmg": 2
+        }
     },
     {
         "desc": [
-            "Gain 5 Block",
-            "Upgrade a(ALL) card(s) in your hand for the rest of combat"
+            {
+                "type": "blk",
+                "val": 5
+            },
+            {
+                "type": "script",
+                "val": "upgradeOneHandCard"
+            }
         ],
         "name": "Armaments",
         "img": "red/Skill/armaments",
         "rarity": "Common",
         "type": "Skill",
-        "cost": "1",
-        "class": "ironclad"
+        "cost": 1,
+        "class": "ironclad",
+        "upgrade": {
+            "replace_script": {
+                "from": "upgradeOneHandCard",
+                "to": "upgradeHandCard"
+            }
+        }
     },
     {
         "desc": [
-            "Deal damage equal to your current Block"
+            {
+                "type": "script",
+                "val": "blockStrike"
+            }
         ],
+        "upgrade": {
+            "cost": -1
+        },
         "name": "Body Slam",
         "img": "red/Attack/body_slam",
         "rarity": "Common",
         "type": "Attack",
-        "cost": "1(0)",
+        "cost": 1,
         "class": "ironclad"
     },
     {
         "desc": [
-            "Can only be played if every card in your hand is an Attack",
-            "Deal 14(18) damage"
+            {
+                "type": "dmg",
+                "val": 14
+            },
+            "Can only be played if every card in your hand is an Attack"
         ],
+        "upgrade": {
+            "dmg": 4
+        },
         "name": "Clash",
         "img": "red/Attack/clash",
         "rarity": "Common",
@@ -84,8 +137,17 @@
     },
     {
         "desc": [
-            "Deal 8(11) damage to ALL enemies"
+            {
+                "type": "script",
+                "val": "strikeAll",
+                "para": {
+                    "dmg": 8
+                }
+            }
         ],
+        "upgrade": {
+            "dmg": 3
+        },
         "name": "Cleave",
         "img": "red/Attack/cleave",
         "rarity": "Common",
@@ -95,9 +157,19 @@
     },
     {
         "desc": [
-            "Deal 12(14) damage",
-            "Apply 2(3) Weak"
+            {
+                "type": "dmg",
+                "val": 12
+            },
+            {
+                "type": "weak",
+                "val": 2
+            }
         ],
+        "upgrade": {
+            "dmg": 2,
+            "weak": 1
+        },
         "name": "Clothesline",
         "img": "red/Attack/clothesline",
         "rarity": "Common",
@@ -107,9 +179,21 @@
     },
     {
         "desc": [
-            "Gain 2(4) Strength",
-            "At the end of your turn, lose 2(4) Strength"
+            {
+                "type": "script",
+                "val": "flex",
+                "para": {
+                    "val": 2
+                }
+            }
         ],
+        "upgrade": {
+            "replace_script_para": {
+                "para": {
+                    "val": 4
+                }
+            }
+        },
         "name": "Flex",
         "img": "red/Skill/flex",
         "rarity": "Common",
@@ -118,21 +202,33 @@
         "class": "ironclad"
     },
     {
-        "desc": [
-            "Play the top card of your draw pile and Exhaust it"
+        "desc": [{
+            "type":"script",
+            "val":"drawPlayExhaust"
+        }
         ],
+        "upgrade":{
+            "cost":-1
+        },
         "name": "Havoc",
         "img": "red/Skill/havoc",
         "rarity": "Common",
         "type": "Skill",
-        "cost": "1(0)",
+        "cost": 1,
         "class": "ironclad"
     },
     {
-        "desc": [
-            "Deal 9(12) damage",
-            "Place a card from your discard pile on top of your draw pile"
+        "desc": [{
+            "type":"dmg",
+            "val":9
+        },{
+            "type":"script",
+            "val":"discardToDeckTop"
+        }
         ],
+        "upgrade":{
+            "dmg":3
+        },
         "name": "Headbutt",
         "img": "red/Attack/headbutt",
         "rarity": "Common",
@@ -142,9 +238,15 @@
     },
     {
         "desc": [
-            "Deal 14 damage",
-            "Strength affects Heavy Blade 3(5) times"
+            {
+                "type":"dmg",
+                "val":"14",
+                "str_bonus":3
+            }
         ],
+        "upgrade":{
+            "str_bonus":2
+        },
         "name": "Heavy Blade",
         "img": "red/Attack/heavy_blade",
         "rarity": "Common",
@@ -153,10 +255,14 @@
         "class": "ironclad"
     },
     {
-        "desc": [
-            "Gain 5(7) Block",
-            "Deal 5(7) damage"
-        ],
+        "desc": [{
+            "type":"dmg",
+            "val":5
+        },{
+            "type":"blk",
+            "val":5
+        }
+        ],"upgrade":{"dmg":2,"blk":2},
         "name": "Iron Wave",
         "img": "red/Attack/iron_wave",
         "rarity": "Common",
@@ -166,9 +272,16 @@
     },
     {
         "desc": [
-            "Deal 6 damage",
-            "Deals an additional 2(3) damage for ALL of your cards containing \"Strike\""
-        ],
+            {
+                "type":"dmg",
+                "val":6
+            },
+            {
+                "type":"desc",
+                "val":"countStrikeStrike",
+                "para":{"bonus":2}
+            }
+        ],"upgrade":{"replace_script_para":{"bonus":3}},
         "name": "Perfected Strike",
         "img": "red/Attack/perfected_strike",
         "rarity": "Common",
