@@ -7,8 +7,14 @@
         "cost": "1"
     },
     {
-        "desc": ["Unplayable"],
+        "desc": ["Unplayable","Take 2 damage at end turn"],
         "name": "Burn",
+        "img": "status/burn",
+        "type": "Status",
+        "cost": "0"
+    },{
+        "desc": ["Unplayable","Take 4 damage at end turn"],
+        "name": "Burn+",
         "img": "status/burn",
         "type": "Status",
         "cost": "0"
@@ -31,6 +37,13 @@
         "desc": ["Unplayable","Ethereal"],
         "name": "Dazed",
         "img": "status/dazed",
+        "type": "Status",
+        "cost": "0"
+    },
+    {
+        "desc": ["Unplayable","Ethereal","lose 1 Energy when drawed"],
+        "name": "Void",
+        "img": "status/void",
         "type": "Status",
         "cost": "0"
     }
