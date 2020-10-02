@@ -80,8 +80,5 @@ func on_dead():
 	queue_free()
 
 func ModStatus(d):
-	if status.has(d.type):
-		status[d.type] += d.val
-	else:
-		status[d.type] = d.val
+	GlbAct.modDict(d,status)
 	refresh_info()

@@ -72,6 +72,8 @@ func EndTurn():
 	hand.clear()
 
 func Draw():
+	if status.has("can_not_draw"):
+		return
 	if len(deck)<=0:
 		ReChargeDeck()
 	if len(deck)>0:
@@ -106,6 +108,9 @@ func RunDesc(card,target = null):
 			"dmg":DuelDamage(d,target)
 			"blk":GainBlock(d)
 			"vul","weak","frail":target.ModStatus(d)
+			"draw":
+				for i in d.get("val",1):
+					Draw()
 			"script":ExecuteScript(d,target)
 
 func DuelDamage(dat,target):
@@ -120,18 +125,10 @@ func GainBlock(dat):
 	emit_signal("gain_block",blkVal)
 
 func ModAttr(d):
-	modDict(d,attr)
+	GlbAct.modDict(d,attr)
 
 func ModStatus(d):
-	modDict(d,status)
-
-func modDict(dat,dict):
-	if !dict.has(dat.type):
-		dict[dat.type] = dat.val
-	else:
-		dict[dat.type] += dat.val
-	if dict[dat.type] == 0:
-		dict.erase(dat.type)
+	GlbAct.modDict(d,status)
 
 func ExecuteScript(d,target):
 	pass

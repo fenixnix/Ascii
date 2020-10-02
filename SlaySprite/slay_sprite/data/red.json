@@ -1,7 +1,5 @@
-[
-    {
-        "desc": [
-            {
+[{
+        "desc": [{
                 "type": "dmg",
                 "val": 8
             },
@@ -22,12 +20,10 @@
         }
     },
     {
-        "desc": [
-            {
-                "type": "blk",
-                "val": 5
-            }
-        ],
+        "desc": [{
+            "type": "blk",
+            "val": 5
+        }],
         "name": "Defend",
         "img": "red/Skill/defend",
         "rarity": "Starter",
@@ -39,12 +35,10 @@
         }
     },
     {
-        "desc": [
-            {
-                "type": "dmg",
-                "val": 6
-            }
-        ],
+        "desc": [{
+            "type": "dmg",
+            "val": 6
+        }],
         "name": "Strike",
         "img": "red/Attack/strike",
         "rarity": "Starter",
@@ -56,8 +50,7 @@
         }
     },
     {
-        "desc": [
-            {
+        "desc": [{
                 "type": "dmg",
                 "val": 6
             },
@@ -77,8 +70,7 @@
         }
     },
     {
-        "desc": [
-            {
+        "desc": [{
                 "type": "blk",
                 "val": 5
             },
@@ -101,12 +93,10 @@
         }
     },
     {
-        "desc": [
-            {
-                "type": "script",
-                "val": "blockStrike"
-            }
-        ],
+        "desc": [{
+            "type": "script",
+            "val": "blockStrike"
+        }],
         "upgrade": {
             "cost": -1
         },
@@ -118,8 +108,7 @@
         "class": "ironclad"
     },
     {
-        "desc": [
-            {
+        "desc": [{
                 "type": "dmg",
                 "val": 14
             },
@@ -136,15 +125,13 @@
         "class": "ironclad"
     },
     {
-        "desc": [
-            {
-                "type": "script",
-                "val": "strikeAll",
-                "para": {
-                    "dmg": 8
-                }
+        "desc": [{
+            "type": "script",
+            "val": "strikeAll",
+            "para": {
+                "dmg": 8
             }
-        ],
+        }],
         "upgrade": {
             "dmg": 3
         },
@@ -156,8 +143,7 @@
         "class": "ironclad"
     },
     {
-        "desc": [
-            {
+        "desc": [{
                 "type": "dmg",
                 "val": 12
             },
@@ -178,15 +164,13 @@
         "class": "ironclad"
     },
     {
-        "desc": [
-            {
-                "type": "script",
-                "val": "flex",
-                "para": {
-                    "val": 2
-                }
+        "desc": [{
+            "type": "script",
+            "val": "flex",
+            "para": {
+                "val": 2
             }
-        ],
+        }],
         "upgrade": {
             "replace_script_para": {
                 "para": {
@@ -203,12 +187,11 @@
     },
     {
         "desc": [{
-            "type":"script",
-            "val":"drawPlayExhaust"
-        }
-        ],
-        "upgrade":{
-            "cost":-1
+            "type": "script",
+            "val": "drawPlayExhaust"
+        }],
+        "upgrade": {
+            "cost": -1
         },
         "name": "Havoc",
         "img": "red/Skill/havoc",
@@ -219,50 +202,50 @@
     },
     {
         "desc": [{
-            "type":"dmg",
-            "val":9
-        },{
-            "type":"script",
-            "val":"discardToDeckTop"
-        }
-        ],
-        "upgrade":{
-            "dmg":3
+            "type": "dmg",
+            "val": 9
+        }, {
+            "type": "script",
+            "val": "discardToDeckTop"
+        }],
+        "upgrade": {
+            "dmg": 3
         },
         "name": "Headbutt",
         "img": "red/Attack/headbutt",
         "rarity": "Common",
         "type": "Attack",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
-        "desc": [
-            {
-                "type":"dmg",
-                "val":"14",
-                "str_bonus":3
-            }
-        ],
-        "upgrade":{
-            "str_bonus":2
+        "desc": [{
+            "type": "dmg",
+            "val": "14",
+            "str_bonus": 3
+        }],
+        "upgrade": {
+            "str_bonus": 2
         },
         "name": "Heavy Blade",
         "img": "red/Attack/heavy_blade",
         "rarity": "Common",
         "type": "Attack",
-        "cost": "2",
+        "cost": 2,
         "class": "ironclad"
     },
     {
         "desc": [{
-            "type":"dmg",
-            "val":5
-        },{
-            "type":"blk",
-            "val":5
-        }
-        ],"upgrade":{"dmg":2,"blk":2},
+            "type": "dmg",
+            "val": 5
+        }, {
+            "type": "blk",
+            "val": 5
+        }],
+        "upgrade": {
+            "dmg": 2,
+            "blk": 2
+        },
         "name": "Iron Wave",
         "img": "red/Attack/iron_wave",
         "rarity": "Common",
@@ -271,17 +254,23 @@
         "class": "ironclad"
     },
     {
-        "desc": [
-            {
-                "type":"dmg",
-                "val":6
+        "desc": [{
+                "type": "dmg",
+                "val": 6
             },
             {
-                "type":"desc",
-                "val":"countStrikeStrike",
-                "para":{"bonus":2}
+                "type": "desc",
+                "val": "countStrikeStrike",
+                "para": {
+                    "bonus": 2
+                }
             }
-        ],"upgrade":{"replace_script_para":{"bonus":3}},
+        ],
+        "upgrade": {
+            "replace_script_para": {
+                "bonus": 3
+            }
+        },
         "name": "Perfected Strike",
         "img": "red/Attack/perfected_strike",
         "rarity": "Common",
@@ -290,10 +279,17 @@
         "class": "ironclad"
     },
     {
-        "desc": [
-            "Deal 9(10) damage",
-            "Draw 1(2) card(s)"
-        ],
+        "desc": [{
+            "type": "dmg",
+            "val": 9
+        }, {
+            "type": "draw",
+            "val": 1
+        }],
+        "upgrade": {
+            "dmg": 1,
+            "draw": 1
+        },
         "name": "Pommel Strike",
         "img": "red/Attack/pommel_strike",
         "rarity": "Common",
@@ -302,80 +298,144 @@
         "class": "ironclad"
     },
     {
-        "desc": [
-            "Gain 8(11) Block",
-            "Draw 1 card"
-        ],
+        "desc": [{
+            "type": "blk",
+            "val": 8
+        }, {
+            "type": "draw",
+            "val": 1
+        }],
+        "upgrade": {
+            "blk": 3,
+            "draw": 1
+        },
         "name": "Shrug it Off",
         "img": "red/Skill/shrug_it_off",
         "rarity": "Common",
         "type": "Skill",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
-        "desc": [
-            "Deal 3 damage to a random enemy 3(4) times"
-        ],
+        "desc": [{
+            "type": "script",
+            "val": "randomStrike",
+            "para": {
+                "dmg": 3,
+                "times": 3
+            }
+        }],
+        "upgrade": {
+            "replace_script_para": {
+                "times": 1
+            }
+        },
         "name": "Sword Boomerang",
         "img": "red/Attack/sword_boomerang",
         "rarity": "Common",
         "type": "Attack",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
-        "desc": [
-            "Deal 4(7) damage and apply 1 Vulnerable to ALL enemies"
+        "desc": [{
+                "type": "script",
+                "val": "strikeAll",
+                "para": {
+                    "dmg": 4
+                }
+            },
+            {
+                "type": "script",
+                "val": "statusAll",
+                "para": {
+                    "type": "vul",
+                    "val": 1
+                }
+            }
         ],
+        "upgrade": {
+            "dmg": 3
+        },
         "name": "Thunderclap",
         "img": "red/Attack/thunderclap",
         "rarity": "Common",
         "type": "Attack",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
-        "desc": [
-            "Gain 7(9) Block",
-            "Exhaust a random(not random) card from your hand"
-        ],
+        "desc": [{
+            "type": "blk",
+            "val": 7
+        }, {
+            "type": "script",
+            "val": "exhaustRandomHand"
+        }],
+        "upgrade": {
+            "blk": 2,
+            "replace_script": {
+                "from": "exhaustRandomHand",
+                "to": "exhaustOneHand"
+            }
+        },
         "name": "True Grit",
         "img": "red/Skill/true_grit",
         "rarity": "Common",
         "type": "Skill",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
-        "desc": [
-            "Deal 5(7) damage twice"
-        ],
+        "desc": [{
+            "type": "dmg",
+            "val": 5,
+            "times": 2
+        }],
+        "upgrade": {
+            "dmg": 2
+        },
         "name": "Twin Strike",
         "img": "red/Attack/twin_strike",
         "rarity": "Common",
         "type": "Attack",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
-        "desc": [
-            "Draw 1(2) card(s)",
-            "Place a card from your hand on top of your draw pile",
+        "desc": [{
+                "type": "draw",
+                "val": 1
+            }, {
+                "type": "script",
+                "val": "handToDeck"
+            },
             "Exhaust"
         ],
+        "upgrade": {
+            "draw": 1
+        },
         "name": "Warcry",
         "img": "red/Skill/warcry",
         "rarity": "Common",
         "type": "Skill",
-        "cost": "0",
+        "cost": 0,
         "class": "ironclad"
     },
     {
-        "desc": [
-            "Deal 12(17) damage",
-            "Shuffle a Wound into your draw pile"
-        ],
+        "desc": [{
+            "type": "dmg",
+            "val": 12
+        }, {
+            "type": "script",
+            "val": "gainStatueCard",
+            "para": {
+                "type": "Wound"
+            }
+        }],
+        "upgrade": {
+            "dmg": 5
+        },
         "name": "Wild Strike",
         "img": "red/Attack/wild_strike",
         "rarity": "Common",
@@ -384,10 +444,22 @@
         "class": "ironclad"
     },
     {
-        "desc": [
-            "Draw 3(4) cards",
-            "You cannot draw additional cards this turn"
+        "desc": [{
+                "type": "draw",
+                "val": 3
+            },
+            {
+                "type": "script",
+                "val": "status",
+                "para": {
+                    "type": "can_not_draw",
+                    "val": 1
+                }
+            }
         ],
+        "upgrade": {
+            "draw": 1
+        },
         "name": "Battle Trance",
         "img": "red/Skill/battle_trance",
         "rarity": "Uncommon",
