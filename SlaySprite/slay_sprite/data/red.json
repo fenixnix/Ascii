@@ -464,7 +464,7 @@
         "img": "red/Skill/battle_trance",
         "rarity": "Uncommon",
         "type": "Skill",
-        "cost": "0",
+        "cost": 0,
         "class": "ironclad"
     },
     {
