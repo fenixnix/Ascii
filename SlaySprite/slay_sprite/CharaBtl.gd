@@ -84,21 +84,20 @@ func Draw():
 	return null
 
 func PlayCard(card,target = null):
-	en -= card.cost
+	if typeof(card.cost) != typeof("X"):
+		en -= card.cost
 	if target == null:
 		target = $"../BattleGrond".RndSel()
 		print_debug("Random Select Target:",target)
-	match card.type:
-		"Attack":
-			RunDesc(card,target)
-		"Skill":
-			RunDesc(card)
-		"Power":
-			pass
+	RunDesc(card,target)
+	if card.type == "Power":
+		Inuse(card)
 	if card.desc.has("Exhaust"):
 		Exhaust(card)
 	else:
 		Discard(card)
+	if typeof(card.cost) == typeof("X"):
+		en = 0
 	refresh()
 	emit_signal("play",card)
 
@@ -106,6 +105,8 @@ func RunDesc(card,target = null):
 	for d in card.desc:
 		match d.type:
 			"dmg":DuelDamage(d,target)
+			"costHp":CostHp(d.get("val",0))
+			"en":en+=d.get("val",0)
 			"blk":GainBlock(d)
 			"vul","weak","frail":target.ModStatus(d)
 			"draw":
@@ -115,7 +116,7 @@ func RunDesc(card,target = null):
 
 func DuelDamage(dat,target):
 	var dmg = dat.val + attr.get("str",0)*dat.get("str_bonus",1)
-	target.TakeDamage(dmg)
+	return target.TakeDamage(dmg)
 
 func GainBlock(dat):
 	var blkVal = dat.val
@@ -173,6 +174,9 @@ func Discard(card):
 	hand.erase(card)
 	discard.append(card)
 	emit_signal("discard",card)
+
+func Inuse(card):
+	hand.erase(card)
 
 func PutIntoDiscard(card):
 	discard.append(card)

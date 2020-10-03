@@ -58,5 +58,16 @@ text = "OK"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="TestUpgrade" type="Button" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -20.0
+margin_right = 65.0
+text = "$Upgrade"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="item_selected" from="List" to="." method="_on_List_item_selected"]
 [connection signal="pressed" from="OK" to="." method="_on_OK_pressed"]
+[connection signal="pressed" from="TestUpgrade" to="." method="_on_TestUpgrade_pressed"]

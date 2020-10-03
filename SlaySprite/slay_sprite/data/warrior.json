@@ -393,8 +393,8 @@
         "upgrade": {
             "dmg": 3
         },
-        "name": "Thunderclap",
-        "img": "red/Attack/thunderclap",
+        "name": "Thunder Clap",
+        "img": "red/Attack/thunder_clap",
         "rarity": "Common",
         "type": "Attack",
         "cost": 1,
@@ -616,8 +616,9 @@
     {
         "desc": [
             "Whenever a card is Exhausted, draw 1 card"
-        ],"upgrade":{
-            "cost":-1
+        ],
+        "upgrade": {
+            "cost": -1
         },
         "name": "Dark Embrace",
         "img": "red/Power/dark_embrace",
@@ -643,8 +644,8 @@
             "Deal 5(8) damage",
             "If the enemy is Vulnerable, gain 1 energy and draw 1 card"
         ],
-        "name": "Dropkick",
-        "img": "red/Attack/dropkick",
+        "name": "Drop Kick",
+        "img": "red/Attack/drop_kick",
         "rarity": "Uncommon",
         "type": "Attack",
         "cost": 1,
@@ -664,7 +665,10 @@
     {
         "desc": [
             "Double your current Block"
-        ],"upgrade":{"cost":-1},
+        ],
+        "upgrade": {
+            "cost": -1
+        },
         "name": "Entrench",
         "img": "red/Skill/entrench",
         "rarity": "Uncommon",
@@ -738,7 +742,7 @@
         "img": "red/Attack/hemokinesis",
         "rarity": "Uncommon",
         "type": "Attack",
-        "cost":1,
+        "cost": 1,
         "class": "ironclad"
     },
     {
@@ -746,7 +750,10 @@
             "Add a random Attack to your hand",
             "It costs 0 this turn",
             "Exhaust"
-        ],"upgrade":{"cost":-1},
+        ],
+        "upgrade": {
+            "cost": -1
+        },
         "name": "Infernal Blade",
         "img": "red/Skill/infernal_blade",
         "rarity": "Uncommon",
@@ -850,7 +857,10 @@
     {
         "desc": [
             "Whenever you lose HP from a card, gain 1 Strength"
-        ],"upgrade":{"cost":-1}
+        ],
+        "upgrade": {
+            "cost": -1
+        },
         "name": "Rupture",
         "img": "red/Power/rupture",
         "rarity": "Uncommon",
@@ -859,9 +869,16 @@
         "class": "ironclad"
     },
     {
-        "desc": [{"type":"dmg","val":12},
+        "desc": [
+            {
+                "type": "dmg",
+                "val": 12
+            },
             "Can be upgraded any number of times"
-        ],"upgrade":{"dmg":4},
+        ],
+        "upgrade": {
+            "dmg": 4
+        },
         "name": "Searing Blow",
         "img": "red/Attack/searing_blow",
         "rarity": "Uncommon",
@@ -884,7 +901,10 @@
         "desc": [
             "Gain 2 energy",
             "Exhaust"
-        ],"upgrade":{"cost":-1},
+        ],
+        "upgrade": {
+            "cost": -1
+        },
         "name": "Seeing Red",
         "img": "red/Skill/seeing_red",
         "rarity": "Uncommon",
@@ -966,7 +986,10 @@
     {
         "desc": [
             "Block no longer expires at the start of your turn"
-        ],"upgrade":{"cost":-1},
+        ],
+        "upgrade": {
+            "cost": -1
+        },
         "name": "Barricade",
         "img": "red/Power/barricade",
         "rarity": "Rare",
@@ -1013,8 +1036,9 @@
         "desc": [
             "Skills cost 0",
             "Whenever you play a Skill, Exhaust it"
-        ],"upgrade":{
-            "cost":-1
+        ],
+        "upgrade": {
+            "cost": -1
         },
         "name": "Corruption",
         "img": "red/Power/corruption",
@@ -1050,11 +1074,14 @@
             "Place a card from your Exhaust pile into your hand",
             "Exhaust"
         ],
+        "upgrade": {
+            "cost": -1
+        },
         "name": "Exhume",
         "img": "red/Skill/exhume",
         "rarity": "Rare",
         "type": "Skill",
-        "cost": "1(0)",
+        "cost": 1,
         "class": "ironclad"
     },
     {
@@ -1067,93 +1094,153 @@
         "img": "red/Attack/feed",
         "rarity": "Rare",
         "type": "Attack",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
-        "desc": [
-            "Exhaust your hand",
-            "Deal 7(10) damage for each Exhausted card",
+        "desc": [{"type":"script","val":"exhaustAllHandDuelDmgToAllEnm","para":{"bonus":7}},
             "Exhaust"
-        ],
+        ],"upgrade":{"replace_script_para":{"bonus":3}},
         "name": "Fiend Fire",
         "img": "red/Attack/fiend_fire",
         "rarity": "Rare",
         "type": "Attack",
-        "cost": "2",
+        "cost": 2,
         "class": "ironclad"
     },
     {
         "desc": [
-            "Deal 21(28) damage to ALL enemies",
-            "Add a Burn to your discard pile"
+            {
+                "type": "script",
+                "val": "strikeAll",
+                "para": {
+                    "dmg": 21
+                }
+            },
+            {
+                "type": "script",
+                "val": "gainStatueCard",
+                "para": {
+                    "type": "Burn"
+                }
+            }
         ],
+        "upgrade": {
+            "replace_script_para": {
+                "dmg": 7
+            }
+        },
         "name": "Immolate",
         "img": "red/Attack/immolate",
         "rarity": "Rare",
         "type": "Attack",
-        "cost": "2",
+        "cost": 2,
         "class": "ironclad"
     },
     {
         "desc": [
-            "Gain 30(40) Block",
+            {
+                "type": "blk",
+                "val": 30
+            },
             "Exhaust"
         ],
+        "upgrade": {
+            "blk": 10
+        },
         "name": "Impervious",
         "img": "red/Skill/impervious",
         "rarity": "Rare",
         "type": "Skill",
-        "cost": "2",
+        "cost": 2,
         "class": "ironclad"
     },
     {
         "desc": [
-            "Whenever you gain Block, deal 5(7) damage to a random enemy"
+            {
+                "type": "script",
+                "val": "duelDmgToRndEnmOnGainBlk",
+                "para": {
+                    "dmg": 5
+                }
+            }
         ],
+        "upgrade": {
+            "replace_script_para": {
+                "dmg": 2
+            }
+        },
         "name": "Juggernaut",
         "img": "red/Power/juggernaut",
         "rarity": "Rare",
         "type": "Power",
-        "cost": "2",
+        "cost": 2,
         "class": "ironclad"
     },
     {
         "desc": [
-            "Double your Strength",
-            "Exhaust(Don't Exhaust)"
+            {
+                "type": "script",
+                "val": "doubleStrength"
+            },
+            "Exhaust"
         ],
+        "upgrade": {
+            "rmv": "exhaust"
+        },
         "name": "Limit Break",
         "img": "red/Skill/limit_break",
         "rarity": "Rare",
         "type": "Skill",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
         "desc": [
-            "Lose 6 HP",
-            "Gain 2 energy",
-            "Draw 3(5) cards",
+            {
+                "type": "costHp",
+                "val": 6
+            },
+            {
+                "type": "en",
+                "val": 2
+            },
+            {
+                "type": "draw",
+                "val": 3
+            },
             "Exhaust"
         ],
+        "upgrade": {
+            "draw": 2
+        },
         "name": "Offering",
         "img": "red/Skill/offering",
         "rarity": "Rare",
         "type": "Skill",
-        "cost": "0",
+        "cost": 1,
         "class": "ironclad"
     },
     {
         "desc": [
-            "Deal 4(5) damage to ALL enemies",
-            "Heal for unblocked damage dealt",
+            {
+                "type": "script",
+                "val": "leechAll",
+                "para": {
+                    "dmg": 4
+                }
+            },
             "Exhaust"
         ],
+        "upgrade": {
+            "replace_script_para": {
+                "dmg": 1
+            }
+        },
         "name": "Reaper",
         "img": "red/Attack/reaper",
         "rarity": "Rare",
         "type": "Attack",
-        "cost": "2"
+        "cost": 2
     }
 ]

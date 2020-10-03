@@ -71,6 +71,8 @@ func TakeDamage(_dmg):
 		hp = 0
 		on_dead()
 	refresh_info()
+	
+	return overDmg
 
 func on_dead():
 	#Play Dead Anim

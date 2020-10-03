@@ -8,7 +8,10 @@ onready var panel = $Control/CardPanel
 func Set(card):
 	data = card
 	panel.Set(card)
-	SetActive(card.cost<=GlbAct.GetChara().en)
+	if typeof(card.cost) == typeof("X"):
+		SetActive(true)
+	else:
+		SetActive(card.cost<=GlbAct.GetChara().en)
 
 func Refresh():
 	Set(data)

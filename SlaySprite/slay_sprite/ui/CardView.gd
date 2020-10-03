@@ -1,6 +1,7 @@
 extends Control
 
 var data
+var currentCard
 
 func Set(card_list):
 	data = card_list
@@ -12,5 +13,13 @@ func _on_OK_pressed():
 	queue_free()
 
 func _on_List_item_selected(index):
-	$Info.Set(data[index])
-	$Card.Set(data[index])
+	currentCard = data[index]
+	refresh()
+
+func refresh():
+	$Info.Set(currentCard)
+	$Card.Set(currentCard)
+
+func _on_TestUpgrade_pressed():
+	currentCard = GlbAct.UpgradeCard(currentCard)
+	refresh()

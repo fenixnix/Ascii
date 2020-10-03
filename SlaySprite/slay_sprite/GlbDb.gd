@@ -8,7 +8,7 @@ var statusCardDict = {}
 var dbPath = "./data/%s.json"
 
 func _init():
-	var res = LoadDb("red")
+	var res = LoadDb("warrior")
 	cardDb = res[0]
 	cardDict = res[1]
 	enmDict = FileRW.LoadJsonFileArray2Dict(dbPath%"enm/enm")
