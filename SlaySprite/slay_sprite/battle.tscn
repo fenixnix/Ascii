@@ -47,6 +47,7 @@ __meta__ = {
 
 [node name="Menu" type="HBoxContainer" parent="UI"]
 anchor_right = 1.0
+mouse_filter = 2
 alignment = 2
 script = ExtResource( 12 )
 __meta__ = {

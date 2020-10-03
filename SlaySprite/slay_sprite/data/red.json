@@ -70,7 +70,7 @@
         "img": "red/Attack/anger",
         "rarity": "Common",
         "type": "Attack",
-        "cost": "0",
+        "cost": 0,
         "class": "ironclad",
         "upgrade": {
             "dmg": 2
@@ -132,7 +132,7 @@
         "img": "red/Attack/clash",
         "rarity": "Common",
         "type": "Attack",
-        "cost": "0",
+        "cost": 0,
         "class": "ironclad"
     },
     {
@@ -152,7 +152,7 @@
         "img": "red/Attack/cleave",
         "rarity": "Common",
         "type": "Attack",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
@@ -174,7 +174,7 @@
         "img": "red/Attack/clothesline",
         "rarity": "Common",
         "type": "Attack",
-        "cost": "2",
+        "cost": 2,
         "class": "ironclad"
     },
     {
@@ -198,7 +198,7 @@
         "img": "red/Skill/flex",
         "rarity": "Common",
         "type": "Skill",
-        "cost": "0",
+        "cost": 0,
         "class": "ironclad"
     },
     {
@@ -276,7 +276,7 @@
         "img": "red/Attack/iron_wave",
         "rarity": "Common",
         "type": "Attack",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
@@ -302,7 +302,7 @@
         "img": "red/Attack/perfected_strike",
         "rarity": "Common",
         "type": "Attack",
-        "cost": "2",
+        "cost": 2,
         "class": "ironclad"
     },
     {
@@ -324,7 +324,7 @@
         "img": "red/Attack/pommel_strike",
         "rarity": "Common",
         "type": "Attack",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
@@ -486,7 +486,7 @@
         "img": "red/Attack/wild_strike",
         "rarity": "Common",
         "type": "Attack",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
@@ -552,9 +552,18 @@
     },
     {
         "desc": [
-            {"type":"script","val":"exhaustOneHand"},
-            {"type":"draw","val":2}
-        ],"upgrade":{"draw":1},
+            {
+                "type": "draw",
+                "val": 2
+            },
+            {
+                "type": "script",
+                "val": "exhaustOneHand"
+            }
+        ],
+        "upgrade": {
+            "draw": 1
+        },
         "name": "Burning Pact",
         "img": "red/Skill/burning_pact",
         "rarity": "Uncommon",
@@ -565,35 +574,56 @@
     {
         "desc": [
             "Ethereal",
-            {"type":"dmg","val":20}
-        ],"upgrade":{"dmg":8},
+            {
+                "type": "dmg",
+                "val": 20
+            }
+        ],
+        "upgrade": {
+            "dmg": 8
+        },
         "name": "Carnage",
         "img": "red/Attack/carnage",
         "rarity": "Uncommon",
         "type": "Attack",
-        "cost": "2",
+        "cost": 2,
         "class": "ironclad"
     },
     {
         "desc": [
-            {"type":"script","val":"burnOnEndTurn","para":{"hp":1,"dmg":5}}
-        ],"upgrade":{"replace_script_para":{"hp":1,"dmg":7}},
+            {
+                "type": "script",
+                "val": "burnOnEndTurn",
+                "para": {
+                    "hp": 1,
+                    "dmg": 5
+                }
+            }
+        ],
+        "upgrade": {
+            "replace_script_para": {
+                "hp": 1,
+                "dmg": 7
+            }
+        },
         "name": "Combust",
         "img": "red/Power/combust",
         "rarity": "Uncommon",
         "type": "Power",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
         "desc": [
             "Whenever a card is Exhausted, draw 1 card"
-        ],
+        ],"upgrade":{
+            "cost":-1
+        },
         "name": "Dark Embrace",
         "img": "red/Power/dark_embrace",
         "rarity": "Uncommon",
         "type": "Power",
-        "cost": "2(1)",
+        "cost": 2,
         "class": "ironclad"
     },
     {
@@ -605,7 +635,7 @@
         "img": "red/Skill/disarm",
         "rarity": "Uncommon",
         "type": "Skill",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
@@ -628,18 +658,18 @@
         "img": "red/Skill/dual_wield",
         "rarity": "Uncommon",
         "type": "Skill",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
         "desc": [
             "Double your current Block"
-        ],
+        ],"upgrade":{"cost":-1},
         "name": "Entrench",
         "img": "red/Skill/entrench",
         "rarity": "Uncommon",
         "type": "Skill",
-        "cost": "2(1)",
+        "cost": 2,
         "class": "ironclad"
     },
     {
@@ -650,7 +680,7 @@
         "img": "red/Power/evolve",
         "rarity": "Uncommon",
         "type": "Power",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
@@ -661,7 +691,7 @@
         "img": "red/Power/feel_no_pain",
         "rarity": "Uncommon",
         "type": "Power",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
@@ -672,7 +702,7 @@
         "img": "red/Power/fire_breathing",
         "rarity": "Uncommon",
         "type": "Power",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
@@ -684,7 +714,7 @@
         "img": "red/Skill/flame_barrier",
         "rarity": "Uncommon",
         "type": "Skill",
-        "cost": "2",
+        "cost": 1,
         "class": "ironclad"
     },
     {
@@ -696,7 +726,7 @@
         "img": "red/Skill/ghostly_armor",
         "rarity": "Uncommon",
         "type": "Skill",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
@@ -708,7 +738,7 @@
         "img": "red/Attack/hemokinesis",
         "rarity": "Uncommon",
         "type": "Attack",
-        "cost": "1",
+        "cost":1,
         "class": "ironclad"
     },
     {
@@ -716,12 +746,12 @@
             "Add a random Attack to your hand",
             "It costs 0 this turn",
             "Exhaust"
-        ],
+        ],"upgrade":{"cost":-1},
         "name": "Infernal Blade",
         "img": "red/Skill/infernal_blade",
         "rarity": "Uncommon",
         "type": "Skill",
-        "cost": "1(0)",
+        "cost": 1,
         "class": "ironclad"
     },
     {
@@ -732,7 +762,7 @@
         "img": "red/Power/inflame",
         "rarity": "Uncommon",
         "type": "Power",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
@@ -744,7 +774,7 @@
         "img": "red/Skill/intimidate",
         "rarity": "Uncommon",
         "type": "Skill",
-        "cost": "0",
+        "cost": 0,
         "class": "ironclad"
     },
     {
@@ -755,7 +785,7 @@
         "img": "red/Power/metallicize",
         "rarity": "Uncommon",
         "type": "Power",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
@@ -767,7 +797,7 @@
         "img": "red/Skill/power_through",
         "rarity": "Uncommon",
         "type": "Skill",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
@@ -779,7 +809,7 @@
         "img": "red/Attack/pummel",
         "rarity": "Uncommon",
         "type": "Attack",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
@@ -790,7 +820,7 @@
         "img": "red/Skill/rage",
         "rarity": "Uncommon",
         "type": "Skill",
-        "cost": "0",
+        "cost": 0,
         "class": "ironclad"
     },
     {
@@ -802,7 +832,7 @@
         "img": "red/Attack/rampage",
         "rarity": "Uncommon",
         "type": "Attack",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
@@ -814,30 +844,29 @@
         "img": "red/Attack/reckless_charge",
         "rarity": "Uncommon",
         "type": "Attack",
-        "cost": "0",
+        "cost": 0,
         "class": "ironclad"
     },
     {
         "desc": [
             "Whenever you lose HP from a card, gain 1 Strength"
-        ],
+        ],"upgrade":{"cost":-1}
         "name": "Rupture",
         "img": "red/Power/rupture",
         "rarity": "Uncommon",
         "type": "Power",
-        "cost": "1(0)",
+        "cost": 1,
         "class": "ironclad"
     },
     {
-        "desc": [
-            "Deal 12(16) damage",
+        "desc": [{"type":"dmg","val":12},
             "Can be upgraded any number of times"
-        ],
+        ],"upgrade":{"dmg":4},
         "name": "Searing Blow",
         "img": "red/Attack/searing_blow",
         "rarity": "Uncommon",
         "type": "Attack",
-        "cost": "2",
+        "cost": 2,
         "class": "ironclad"
     },
     {
@@ -848,19 +877,19 @@
         "img": "red/Skill/second_wind",
         "rarity": "Uncommon",
         "type": "Skill",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
         "desc": [
             "Gain 2 energy",
             "Exhaust"
-        ],
+        ],"upgrade":{"cost":-1},
         "name": "Seeing Red",
         "img": "red/Skill/seeing_red",
         "rarity": "Uncommon",
         "type": "Skill",
-        "cost": "1(0)",
+        "cost": 1,
         "class": "ironclad"
     },
     {
@@ -872,7 +901,7 @@
         "img": "red/Skill/sentinel",
         "rarity": "Uncommon",
         "type": "Skill",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
@@ -884,7 +913,7 @@
         "img": "red/Attack/sever_soul",
         "rarity": "Uncommon",
         "type": "Attack",
-        "cost": "2",
+        "cost": 2,
         "class": "ironclad"
     },
     {
@@ -896,7 +925,7 @@
         "img": "red/Skill/shockwave",
         "rarity": "Uncommon",
         "type": "Skill",
-        "cost": "2",
+        "cost": 2,
         "class": "ironclad"
     },
     {
@@ -907,7 +936,7 @@
         "img": "red/Skill/spot_weakness",
         "rarity": "Uncommon",
         "type": "Skill",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
@@ -920,7 +949,7 @@
         "img": "red/Attack/uppercut",
         "rarity": "Uncommon",
         "type": "Attack",
-        "cost": "2",
+        "cost": 2,
         "class": "ironclad"
     },
     {
@@ -937,12 +966,12 @@
     {
         "desc": [
             "Block no longer expires at the start of your turn"
-        ],
+        ],"upgrade":{"cost":-1},
         "name": "Barricade",
         "img": "red/Power/barricade",
         "rarity": "Rare",
         "type": "Power",
-        "cost": "3(2)",
+        "cost": 3,
         "class": "ironclad"
     },
     {
@@ -954,7 +983,7 @@
         "img": "red/Power/berserk",
         "rarity": "Rare",
         "type": "Power",
-        "cost": "0",
+        "cost": 0,
         "class": "ironclad"
     },
     {
@@ -965,7 +994,7 @@
         "img": "red/Attack/bludgeon",
         "rarity": "Rare",
         "type": "Attack",
-        "cost": "3",
+        "cost": 3,
         "class": "ironclad"
     },
     {
@@ -977,19 +1006,21 @@
         "img": "red/Power/brutality",
         "rarity": "Rare",
         "type": "Power",
-        "cost": "0",
+        "cost": 0,
         "class": "ironclad"
     },
     {
         "desc": [
             "Skills cost 0",
             "Whenever you play a Skill, Exhaust it"
-        ],
+        ],"upgrade":{
+            "cost":-1
+        },
         "name": "Corruption",
         "img": "red/Power/corruption",
         "rarity": "Rare",
         "type": "Power",
-        "cost": "3(2)",
+        "cost": 3,
         "class": "ironclad"
     },
     {
@@ -1000,7 +1031,7 @@
         "img": "red/Power/demon_form",
         "rarity": "Rare",
         "type": "Power",
-        "cost": "3",
+        "cost": 3,
         "class": "ironclad"
     },
     {
@@ -1011,7 +1042,7 @@
         "img": "red/Skill/double_tap",
         "rarity": "Rare",
         "type": "Skill",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {

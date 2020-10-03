@@ -4,7 +4,7 @@ raw_datas = {
     "red":"ironclad",
     "green":"silence",
     "blue":"defect",
-    "purple":"watcher",
+#    "purple":"watcher",
     "gray":"colorless"
 }
 
@@ -15,12 +15,26 @@ raw_eot = {
 
 data_path = "%s.txt"
 
+def ParseCost(buffer,cost_str):
+    if cost_str == "":
+        return
+    if cost_str == "X":
+        buffer["cost"] = "X"
+        return
+    if '(' in  cost_str:
+        pair = cost_str.split('(')
+        buffer["cost"] = int(pair[0])
+        buffer["upgrade"] = {}
+        buffer["upgrade"]["cost"] = int(pair[1][:-1])-int(pair[0])
+    else:
+        buffer["cost"] = int(cost_str)
+
 def cvtBuffer(buffer,k):
     if buffer["desc"] != "":
         detail = buffer["desc"].split('\t')
         buffer["rarity"] = detail[0].strip()
         buffer["type"] = detail[1].strip()
-        buffer["cost"] = detail[2].strip()
+        ParseCost(buffer,detail[2].strip())
         buffer["img"] = "%s/%s/%s"%(k,buffer["type"],buffer["name"].lower().replace(' ','_'))
         trait = detail[3].strip().split('.')
         tmp = []
@@ -66,3 +80,5 @@ def CvtCardRawDatToJsonDat():
         with open("slay_sprite/data/%s.json"%k,'w') as f:
             f.write(json.dumps(db))
         #CrawlerImage(db,root_url+urls_dict[k])
+    
+CvtCardRawDatToJsonDat()
