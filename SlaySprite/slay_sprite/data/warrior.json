@@ -94,10 +94,7 @@
         "cost": 1,
         "class": "ironclad",
         "upgrade": {
-            "replace_script": {
-                "from": "upgradeOneHandCard",
-                "to": "upgradeHandCard"
-            }
+            "replace_script":"upgradeHandCard"
         }
     },
     {

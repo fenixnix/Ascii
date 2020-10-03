@@ -112,7 +112,7 @@ func RunDesc(card,target = null):
 			"draw":
 				for i in d.get("val",1):
 					Draw()
-			"script":ExecuteScript(d,target)
+			"script":ExecuteScript(d,card,target)
 
 func DuelDamage(dat,target):
 	var dmg = dat.val + attr.get("str",0)*dat.get("str_bonus",1)
@@ -125,14 +125,20 @@ func GainBlock(dat):
 	blk += blkVal
 	emit_signal("gain_block",blkVal)
 
+func Heal(val):
+	chara.hp += val
+	if chara.hp > chara.mhp:
+		chara.hp = chara.mhp
+
 func ModAttr(d):
 	GlbAct.modDict(d,attr)
 
 func ModStatus(d):
 	GlbAct.modDict(d,status)
 
-func ExecuteScript(d,target):
-	pass
+func ExecuteScript(dat,card,target):
+	var s = load("res://script/%s.gd"%dat.val)
+	s.run(self,card,target,dat.get("para",{}))
 
 func CostHp(amount):
 	chara.hp -= amount

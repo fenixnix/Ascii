@@ -1,6 +1,8 @@
 {
     "class":"IronClad",
     "hp":80,
+    "$":99,
+    "relics":[],
     "cards":{
         "Strike":5,
         "Bash":1,

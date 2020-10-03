@@ -13,13 +13,9 @@ func UpgradeCard(card):
 	card.name += "+"
 	for k in dict.keys():
 		match k:
-			"dmg":
+			"dmg","blk","vul","weak","frail","draw":
 				for d in card.desc:
-					if d.type == "dmg":
-						d.val += dict[k]
-			"blk":
-				for d in card.desc:
-					if d.type == "blk":
+					if d.type == k:
 						d.val += dict[k]
 			"cost":
 				card.cost += dict[k]
@@ -30,8 +26,12 @@ func UpgradeCard(card):
 			"replace_script_para":
 				for d in card.desc:
 					if d.type == "script":
-						print(dict[k])
-						#TODO
+						for kk in d.val.keys():
+							for pk in d.para.keys():
+								if pk == kk:
+									d.para[kk] += d.val[kk]
+									#TODO
+									print(dict[k])
 	if !card.desc.has("InfUpgrade"):
 		card.erase("upgrade")
 	return card
