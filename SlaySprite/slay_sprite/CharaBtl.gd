@@ -174,6 +174,9 @@ func Discard(card):
 	discard.append(card)
 	emit_signal("discard",card)
 
+func PutIntoDiscard(card):
+	discard.append(card)
+
 func Clone(card):
 	hand.append(card)
 	emit_signal("clone",card)

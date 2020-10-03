@@ -3,6 +3,7 @@ extends Node
 var cardDb = []
 var cardDict = {}
 var enmDict = {}
+var statusCardDict = {}
 
 var dbPath = "./data/%s.json"
 
@@ -11,6 +12,8 @@ func _init():
 	cardDb = res[0]
 	cardDict = res[1]
 	enmDict = FileRW.LoadJsonFileArray2Dict(dbPath%"enm/enm")
+	res = LoadDb("status")
+	statusCardDict = res[1]
 
 func RandomSelect():
 	var index = randi()%len(cardDict.keys())

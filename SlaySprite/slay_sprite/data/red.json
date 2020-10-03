@@ -1,5 +1,7 @@
-[{
-        "desc": [{
+[
+    {
+        "desc": [
+            {
                 "type": "dmg",
                 "val": 8
             },
@@ -20,10 +22,12 @@
         }
     },
     {
-        "desc": [{
-            "type": "blk",
-            "val": 5
-        }],
+        "desc": [
+            {
+                "type": "blk",
+                "val": 5
+            }
+        ],
         "name": "Defend",
         "img": "red/Skill/defend",
         "rarity": "Starter",
@@ -35,10 +39,12 @@
         }
     },
     {
-        "desc": [{
-            "type": "dmg",
-            "val": 6
-        }],
+        "desc": [
+            {
+                "type": "dmg",
+                "val": 6
+            }
+        ],
         "name": "Strike",
         "img": "red/Attack/strike",
         "rarity": "Starter",
@@ -50,7 +56,8 @@
         }
     },
     {
-        "desc": [{
+        "desc": [
+            {
                 "type": "dmg",
                 "val": 6
             },
@@ -70,7 +77,8 @@
         }
     },
     {
-        "desc": [{
+        "desc": [
+            {
                 "type": "blk",
                 "val": 5
             },
@@ -93,10 +101,12 @@
         }
     },
     {
-        "desc": [{
-            "type": "script",
-            "val": "blockStrike"
-        }],
+        "desc": [
+            {
+                "type": "script",
+                "val": "blockStrike"
+            }
+        ],
         "upgrade": {
             "cost": -1
         },
@@ -108,7 +118,8 @@
         "class": "ironclad"
     },
     {
-        "desc": [{
+        "desc": [
+            {
                 "type": "dmg",
                 "val": 14
             },
@@ -125,13 +136,15 @@
         "class": "ironclad"
     },
     {
-        "desc": [{
-            "type": "script",
-            "val": "strikeAll",
-            "para": {
-                "dmg": 8
+        "desc": [
+            {
+                "type": "script",
+                "val": "strikeAll",
+                "para": {
+                    "dmg": 8
+                }
             }
-        }],
+        ],
         "upgrade": {
             "dmg": 3
         },
@@ -143,7 +156,8 @@
         "class": "ironclad"
     },
     {
-        "desc": [{
+        "desc": [
+            {
                 "type": "dmg",
                 "val": 12
             },
@@ -164,13 +178,15 @@
         "class": "ironclad"
     },
     {
-        "desc": [{
-            "type": "script",
-            "val": "flex",
-            "para": {
-                "val": 2
+        "desc": [
+            {
+                "type": "script",
+                "val": "flex",
+                "para": {
+                    "val": 2
+                }
             }
-        }],
+        ],
         "upgrade": {
             "replace_script_para": {
                 "para": {
@@ -186,10 +202,12 @@
         "class": "ironclad"
     },
     {
-        "desc": [{
-            "type": "script",
-            "val": "drawPlayExhaust"
-        }],
+        "desc": [
+            {
+                "type": "script",
+                "val": "drawPlayExhaust"
+            }
+        ],
         "upgrade": {
             "cost": -1
         },
@@ -201,13 +219,16 @@
         "class": "ironclad"
     },
     {
-        "desc": [{
-            "type": "dmg",
-            "val": 9
-        }, {
-            "type": "script",
-            "val": "discardToDeckTop"
-        }],
+        "desc": [
+            {
+                "type": "dmg",
+                "val": 9
+            },
+            {
+                "type": "script",
+                "val": "discardToDeckTop"
+            }
+        ],
         "upgrade": {
             "dmg": 3
         },
@@ -219,11 +240,13 @@
         "class": "ironclad"
     },
     {
-        "desc": [{
-            "type": "dmg",
-            "val": "14",
-            "str_bonus": 3
-        }],
+        "desc": [
+            {
+                "type": "dmg",
+                "val": "14",
+                "str_bonus": 3
+            }
+        ],
         "upgrade": {
             "str_bonus": 2
         },
@@ -235,13 +258,16 @@
         "class": "ironclad"
     },
     {
-        "desc": [{
-            "type": "dmg",
-            "val": 5
-        }, {
-            "type": "blk",
-            "val": 5
-        }],
+        "desc": [
+            {
+                "type": "dmg",
+                "val": 5
+            },
+            {
+                "type": "blk",
+                "val": 5
+            }
+        ],
         "upgrade": {
             "dmg": 2,
             "blk": 2
@@ -254,7 +280,8 @@
         "class": "ironclad"
     },
     {
-        "desc": [{
+        "desc": [
+            {
                 "type": "dmg",
                 "val": 6
             },
@@ -279,13 +306,16 @@
         "class": "ironclad"
     },
     {
-        "desc": [{
-            "type": "dmg",
-            "val": 9
-        }, {
-            "type": "draw",
-            "val": 1
-        }],
+        "desc": [
+            {
+                "type": "dmg",
+                "val": 9
+            },
+            {
+                "type": "draw",
+                "val": 1
+            }
+        ],
         "upgrade": {
             "dmg": 1,
             "draw": 1
@@ -298,13 +328,16 @@
         "class": "ironclad"
     },
     {
-        "desc": [{
-            "type": "blk",
-            "val": 8
-        }, {
-            "type": "draw",
-            "val": 1
-        }],
+        "desc": [
+            {
+                "type": "blk",
+                "val": 8
+            },
+            {
+                "type": "draw",
+                "val": 1
+            }
+        ],
         "upgrade": {
             "blk": 3,
             "draw": 1
@@ -317,14 +350,16 @@
         "class": "ironclad"
     },
     {
-        "desc": [{
-            "type": "script",
-            "val": "randomStrike",
-            "para": {
-                "dmg": 3,
-                "times": 3
+        "desc": [
+            {
+                "type": "script",
+                "val": "randomStrike",
+                "para": {
+                    "dmg": 3,
+                    "times": 3
+                }
             }
-        }],
+        ],
         "upgrade": {
             "replace_script_para": {
                 "times": 1
@@ -338,7 +373,8 @@
         "class": "ironclad"
     },
     {
-        "desc": [{
+        "desc": [
+            {
                 "type": "script",
                 "val": "strikeAll",
                 "para": {
@@ -365,13 +401,16 @@
         "class": "ironclad"
     },
     {
-        "desc": [{
-            "type": "blk",
-            "val": 7
-        }, {
-            "type": "script",
-            "val": "exhaustRandomHand"
-        }],
+        "desc": [
+            {
+                "type": "blk",
+                "val": 7
+            },
+            {
+                "type": "script",
+                "val": "exhaustRandomHand"
+            }
+        ],
         "upgrade": {
             "blk": 2,
             "replace_script": {
@@ -387,11 +426,13 @@
         "class": "ironclad"
     },
     {
-        "desc": [{
-            "type": "dmg",
-            "val": 5,
-            "times": 2
-        }],
+        "desc": [
+            {
+                "type": "dmg",
+                "val": 5,
+                "times": 2
+            }
+        ],
         "upgrade": {
             "dmg": 2
         },
@@ -403,10 +444,12 @@
         "class": "ironclad"
     },
     {
-        "desc": [{
+        "desc": [
+            {
                 "type": "draw",
                 "val": 1
-            }, {
+            },
+            {
                 "type": "script",
                 "val": "handToDeck"
             },
@@ -423,16 +466,19 @@
         "class": "ironclad"
     },
     {
-        "desc": [{
-            "type": "dmg",
-            "val": 12
-        }, {
-            "type": "script",
-            "val": "gainStatueCard",
-            "para": {
-                "type": "Wound"
+        "desc": [
+            {
+                "type": "dmg",
+                "val": 12
+            },
+            {
+                "type": "script",
+                "val": "gainStatueCard",
+                "para": {
+                    "type": "Wound"
+                }
             }
-        }],
+        ],
         "upgrade": {
             "dmg": 5
         },
@@ -444,7 +490,8 @@
         "class": "ironclad"
     },
     {
-        "desc": [{
+        "desc": [
+            {
                 "type": "draw",
                 "val": 3
             },
@@ -469,15 +516,27 @@
     },
     {
         "desc": [
-            "Cost 1 less energy for each time you lose HP in combat",
-            "Deal 18(22) damage"
+            {
+                "type": "dmg",
+                "val": 18
+            }
         ],
+        "upgrade": {
+            "dmg": 4,
+            "cost": -1
+        },
         "name": "Blood for Blood",
         "img": "red/Attack/blood_for_blood",
         "rarity": "Uncommon",
         "type": "Attack",
-        "cost": "4(3)",
-        "class": "ironclad"
+        "cost": 4,
+        "class": "ironclad",
+        "init": [
+            {
+                "type": "script",
+                "val": "costDownOnHurt"
+            }
+        ]
     },
     {
         "desc": [
@@ -488,26 +547,26 @@
         "img": "red/Skill/bloodletting",
         "rarity": "Uncommon",
         "type": "Skill",
-        "cost": "0",
+        "cost": 0,
         "class": "ironclad"
     },
     {
         "desc": [
-            "Exhaust 1 card",
-            "Draw 2(3) cards"
-        ],
+            {"type":"script","val":"exhaustOneHand"},
+            {"type":"draw","val":2}
+        ],"upgrade":{"draw":1},
         "name": "Burning Pact",
         "img": "red/Skill/burning_pact",
         "rarity": "Uncommon",
         "type": "Skill",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {
         "desc": [
             "Ethereal",
-            "Deal 20(28) damage"
-        ],
+            {"type":"dmg","val":20}
+        ],"upgrade":{"dmg":8},
         "name": "Carnage",
         "img": "red/Attack/carnage",
         "rarity": "Uncommon",
@@ -517,8 +576,8 @@
     },
     {
         "desc": [
-            "At the end of your turn, lose 1 HP and deal 5(7) damage to ALL enemies"
-        ],
+            {"type":"script","val":"burnOnEndTurn","para":{"hp":1,"dmg":5}}
+        ],"upgrade":{"replace_script_para":{"hp":1,"dmg":7}},
         "name": "Combust",
         "img": "red/Power/combust",
         "rarity": "Uncommon",
@@ -558,7 +617,7 @@
         "img": "red/Attack/dropkick",
         "rarity": "Uncommon",
         "type": "Attack",
-        "cost": "1",
+        "cost": 1,
         "class": "ironclad"
     },
     {

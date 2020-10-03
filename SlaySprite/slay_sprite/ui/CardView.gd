@@ -13,3 +13,4 @@ func _on_OK_pressed():
 
 func _on_List_item_selected(index):
 	$Info.Set(data[index])
+	$Card.Set(data[index])
