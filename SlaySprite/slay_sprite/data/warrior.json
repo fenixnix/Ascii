@@ -1238,9 +1238,8 @@
     },
     {
         "desc": [
-            "Innate",
-            "At the start of your turn, lose 1 HP and draw 1 card"
-        ],
+            {"type":"script","val":"costHpDrawCardOnStartTurn"}
+        ],"upgrade":{"add_desc":"Innate"},
         "name": "Brutality",
         "img": "red/Power/brutality",
         "rarity": "Rare",
@@ -1249,8 +1248,7 @@
         "class": "ironclad"
     },
     {
-        "desc": [
-            "Skills cost 0, Whenever you play a Skill, Exhaust it"
+        "desc": [{"type":"script","val":"allSkillCost0Exhaust"}
         ],
         "upgrade": {
             "cost": -1
@@ -1263,9 +1261,8 @@
         "class": "ironclad"
     },
     {
-        "desc": [
-            "At the start of each turn, gain 2(3) Strength"
-        ],
+        "desc": [{"type":"script","val":"gainAttrOnNewTurn","para":{"type":"str","val":2}}
+        ],"upgrade":{"replace_script_para":{"val":1}},
         "name": "Demon Form",
         "img": "red/Power/demon_form",
         "rarity": "Rare",
@@ -1285,8 +1282,7 @@
         "class": "ironclad"
     },
     {
-        "desc": [
-            "Place a card from your Exhaust pile into your hand",
+        "desc": [{"type":"script","val":"exhaustToHand"},
             "Exhaust"
         ],
         "upgrade": {

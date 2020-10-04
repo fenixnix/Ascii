@@ -181,6 +181,18 @@ func ReChargeDeck():
 	discard.clear()
 	deck.shuffle()
 
+func AllCardInBattle():
+	var tmp = []
+	for c in deck:
+		tmp.append(c)
+	for c in hand:
+		tmp.append(c)
+	for c in discard:
+		tmp.append(c)
+	for c in exhaust:
+		tmp.append(c)
+	return tmp
+
 func Exhaust(card):
 	hand.erase(card)
 	exhaust.append(card)
