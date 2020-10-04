@@ -1,8 +1,10 @@
 extends Control
 
 export(NodePath) var deck_position_node
+export(NodePath) var discard_position_node
 
 var card_init_position
+var card_discard_position
 
 var hands = []
 
@@ -10,6 +12,7 @@ onready var card_prefab = preload("res://Card.tscn")
 
 func _ready():
 	card_init_position = get_node(deck_position_node).position
+	card_discard_position = get_node(discard_position_node).position
 
 func Draw(card):
 	var Card = card_prefab.instance()
@@ -23,11 +26,20 @@ func Refresh():
 	for h in hands:
 		h.Refresh()
 
+func Invoke(card):
+	var Card = card_prefab.instance()
+	add_child(Card)
+	Card.Set(card)
+	PositionAnim()
+
 func Discard(card):
+	var Card
 	for c in hands:
 		if c.data == card:
+			Card = c
+			Card.AnimMove(card_discard_position)
+			Card.Discard()
 			hands.erase(c)
-			c.queue_free()
 			break
 	PositionAnim()
 
@@ -35,7 +47,7 @@ func Exhaust(card):
 	for c in hands:
 		if c.data == card:
 			hands.erase(c)
-			c.queue_free()
+			c.Exhaust()
 			break
 	PositionAnim()
 

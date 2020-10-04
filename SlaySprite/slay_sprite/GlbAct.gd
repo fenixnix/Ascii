@@ -6,6 +6,10 @@ func GetChara():
 func PlayCard(card,target = null):
 	GetChara().PlayCard(card,target)
 
+func RndGenAtkCard():
+	#TODO
+	return GlbDb.cardDict["Strike"].duplicate(true)
+
 func UpgradeCard(card):
 	var dict = card.get("upgrade",{})
 	if len(dict) == 0:
@@ -13,10 +17,14 @@ func UpgradeCard(card):
 	card.name += "+"
 	for k in dict.keys():
 		match k:
-			"dmg","blk","vul","weak","frail","draw":
+			"dmg","blk","vul","weak","frail","draw","costHp","en":
 				for d in card.desc:
 					if d.type == k:
 						d.val += dict[k]
+			"dmg_times":
+				for d in card.desc:
+					if d.type == "dmg":
+						d.times == dict[k]
 			"cost":
 				card.cost += dict[k]
 			"replace_script":

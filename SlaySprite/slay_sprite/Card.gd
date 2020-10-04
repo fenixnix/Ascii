@@ -23,6 +23,20 @@ func AnimMove(_goal):
 		0.5,Tween.TRANS_QUAD,Tween.EASE_IN)
 		$Tween.start()
 
+func Exhause():
+	$Control.rect_scale = Vector2.ONE
+	$Control.rect_position += Vector2.UP*100
+	$Tween.interpolate_property(self,"modulate",Color.white,Color(1,1,1,0),1)
+	$Tween.start()
+	yield($Tween,"tween_all_completed")
+	queue_free()
+
+func Discard():
+	$Tween.interpolate_property(self,"rect_scale",Vector2.ONE,Vector2.ZERO,1)
+	$Tween.start()
+	yield($Tween,"tween_all_completed")
+	queue_free()
+
 func SetActive(val):
 	if val:
 		$Control/CardPanel/Cost/Cost.modulate = Color.green

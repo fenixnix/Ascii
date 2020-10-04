@@ -94,7 +94,7 @@
         "cost": 1,
         "class": "ironclad",
         "upgrade": {
-            "replace_script":"upgradeHandCard"
+            "replace_script": "upgradeHandCard"
         }
     },
     {
@@ -537,9 +537,18 @@
     },
     {
         "desc": [
-            "Lose 3 HP",
-            "Gain 1(2) Energy"
+            {
+                "type": "costHp",
+                "val": 3
+            },
+            {
+                "type": "en",
+                "val": 1
+            }
         ],
+        "upgrade": {
+            "en": 1
+        },
         "name": "Bloodletting",
         "img": "red/Skill/bloodletting",
         "rarity": "Uncommon",
@@ -638,9 +647,18 @@
     },
     {
         "desc": [
-            "Deal 5(8) damage",
-            "If the enemy is Vulnerable, gain 1 energy and draw 1 card"
+            {
+                "type": "dmg",
+                "val": 5
+            },
+            {
+                "type": "script",
+                "val": "dripKick"
+            }
         ],
+        "upgrade": {
+            "dmg": 3
+        },
         "name": "Drop Kick",
         "img": "red/Attack/drop_kick",
         "rarity": "Uncommon",
@@ -650,8 +668,19 @@
     },
     {
         "desc": [
-            "Create a(2) copy(s) of an Attack or Power card in your hand"
+            {
+                "type": "script",
+                "val": "dualWield",
+                "para": {
+                    "val": 1
+                }
+            }
         ],
+        "upgrade": {
+            "replace_script_para": {
+                "val": 2
+            }
+        },
         "name": "Dual Wield",
         "img": "red/Skill/dual_wield",
         "rarity": "Uncommon",
@@ -661,7 +690,10 @@
     },
     {
         "desc": [
-            "Double your current Block"
+            {
+                "type": "script",
+                "val": "doubleBlock"
+            }
         ],
         "upgrade": {
             "cost": -1
@@ -675,8 +707,19 @@
     },
     {
         "desc": [
-            "Whenever you draw a Status, draw 1(2) card(s)"
+            {
+                "type": "script",
+                "val": "drawOnDrawStatus",
+                "para": {
+                    "val": 1
+                }
+            }
         ],
+        "upgrade": {
+            "replace_script_para": {
+                "val": 1
+            }
+        },
         "name": "Evolve",
         "img": "red/Power/evolve",
         "rarity": "Uncommon",
@@ -686,8 +729,19 @@
     },
     {
         "desc": [
-            "Whenever a card is Exhausted, gain 3(4) Block"
+            {
+                "type": "script",
+                "val": "gainBlkOnExhaust",
+                "para": {
+                    "blk": 3
+                }
+            }
         ],
+        "upgrade": {
+            "replace_script_para": {
+                "blk": 1
+            }
+        },
         "name": "Feel No Pain",
         "img": "red/Power/feel_no_pain",
         "rarity": "Uncommon",
@@ -697,8 +751,19 @@
     },
     {
         "desc": [
-            "Whenever you draw a Status or Curse card, deal 6(10) damage to all enemies"
+            {
+                "type": "script",
+                "val": "dmgAllOnDrawStatusOrCurse",
+                "para": {
+                    "dmg": 6
+                }
+            }
         ],
+        "upgrade": {
+            "replace_script_para": {
+                "dmg": 4
+            }
+        },
         "name": "Fire Breathing",
         "img": "red/Power/fire_breathing",
         "rarity": "Uncommon",
@@ -708,9 +773,24 @@
     },
     {
         "desc": [
-            "Gain 12(16) Block",
-            "Whenever you are attacked this turn, deal 4(6) damage to the attacker"
+            {
+                "type": "blk",
+                "val": 12
+            },
+            {
+                "type": "script",
+                "val": "reflectOneTurn",
+                "para": {
+                    "dmg": 4
+                }
+            }
         ],
+        "upgrade": {
+            "blk": 4,
+            "replace_script_para": {
+                "dmg": 2
+            }
+        },
         "name": "Flame Barrier",
         "img": "red/Skill/flame_barrier",
         "rarity": "Uncommon",
@@ -721,8 +801,14 @@
     {
         "desc": [
             "Ethereal",
-            "Gain 10(13) Block"
+            {
+                "type": "blk",
+                "val": 10
+            }
         ],
+        "upgrade": {
+            "blk": 3
+        },
         "name": "Ghostly Armor",
         "img": "red/Skill/ghostly_armor",
         "rarity": "Uncommon",
@@ -732,9 +818,19 @@
     },
     {
         "desc": [
-            "Lose 3(2) HP",
-            "Deal 14(18) damage"
+            {
+                "type": "costHp",
+                "val": 3
+            },
+            {
+                "type": "dmg",
+                "val": 14
+            }
         ],
+        "upgrade": {
+            "costHp": -1,
+            "dmg": 4
+        },
         "name": "Hemokinesis",
         "img": "red/Attack/hemokinesis",
         "rarity": "Uncommon",
@@ -744,8 +840,10 @@
     },
     {
         "desc": [
-            "Add a random Attack to your hand",
-            "It costs 0 this turn",
+            {
+                "type": "script",
+                "val": "addRndAtkToHandCost0"
+            },
             "Exhaust"
         ],
         "upgrade": {
@@ -760,8 +858,20 @@
     },
     {
         "desc": [
-            "Gain 2(3) Strength"
+            {
+                "type": "script",
+                "val": "gainAttr",
+                "para": {
+                    "type": "str",
+                    "val": 2
+                }
+            }
         ],
+        "upgrade": {
+            "replace_script_para": {
+                "val": 1
+            }
+        },
         "name": "Inflame",
         "img": "red/Power/inflame",
         "rarity": "Uncommon",
@@ -771,9 +881,21 @@
     },
     {
         "desc": [
-            "Apply 1(2) Weak to ALL enemies",
+            {
+                "type": "script",
+                "val": "statusAll",
+                "para": {
+                    "type": "weak",
+                    "val": 1
+                }
+            },
             "Exhaust"
         ],
+        "upgrade": {
+            "replace_script_para": {
+                "val": 1
+            }
+        },
         "name": "Intimidate",
         "img": "red/Skill/intimidate",
         "rarity": "Uncommon",
@@ -783,8 +905,19 @@
     },
     {
         "desc": [
-            "At the end of your turn, gain 3(4) Block"
+            {
+                "type": "script",
+                "val": "gainBlkOnEndTurn",
+                "para": {
+                    "blk": 3
+                }
+            }
         ],
+        "upgrade": {
+            "replace_script_para": {
+                "blk": 1
+            }
+        },
         "name": "Metallicize",
         "img": "red/Power/metallicize",
         "rarity": "Uncommon",
@@ -794,9 +927,22 @@
     },
     {
         "desc": [
-            "Add 2 Wounds to your hand",
-            "Gain 15(20) Block"
+            {
+                "type": "script",
+                "val": "gainStatueCard",
+                "para": {
+                    "type": "Wound",
+                    "val": 2
+                }
+            },
+            {
+                "type": "blk",
+                "val": 15
+            }
         ],
+        "upgrade": {
+            "blk": 5
+        },
         "name": "Power Through",
         "img": "red/Skill/power_through",
         "rarity": "Uncommon",
@@ -806,9 +952,16 @@
     },
     {
         "desc": [
-            "Deal 2 damage 4(5) times",
+            {
+                "type": "dmg",
+                "val": 2,
+                "times": 4
+            },
             "Exhaust"
         ],
+        "upgrade": {
+            "dmg_times": 1
+        },
         "name": "Pummel",
         "img": "red/Attack/pummel",
         "rarity": "Uncommon",
@@ -818,8 +971,19 @@
     },
     {
         "desc": [
-            "Whenever you play an Attack this turn, gain 3(5) Block"
+            {
+                "type": "script",
+                "val": "atkGainBlkOneTurn",
+                "para": {
+                    "blk": 3
+                }
+            }
         ],
+        "upgrade": {
+            "replace_script_para": {
+                "blk": 2
+            }
+        },
         "name": "Rage",
         "img": "red/Skill/rage",
         "rarity": "Uncommon",
@@ -829,9 +993,23 @@
     },
     {
         "desc": [
-            "Deal 8 damage",
-            "Every time this card is played, increase its damage by 5(8) for this combat"
+            {
+                "type": "dmg",
+                "val": 8
+            },
+            {
+                "type": "script",
+                "val": "gainDmgOnPlay",
+                "para": {
+                    "dmg": 5
+                }
+            }
         ],
+        "upgrade": {
+            "replace_script_para": {
+                "dmg": 3
+            }
+        },
         "name": "Rampage",
         "img": "red/Attack/rampage",
         "rarity": "Uncommon",
@@ -841,9 +1019,22 @@
     },
     {
         "desc": [
-            "Deal 7(10) damage",
-            "Shuffle a Dazed into your draw pile"
+            {
+                "type": "dmg",
+                "val": 7
+            },
+            {
+                "type": "script",
+                "val": "addStatusToDrawPile",
+                "para": {
+                    "type": "Dazed",
+                    "val": 1
+                }
+            }
         ],
+        "upgrade": {
+            "dmg": "3"
+        },
         "name": "Reckless Charge",
         "img": "red/Attack/reckless_charge",
         "rarity": "Uncommon",
@@ -853,7 +1044,14 @@
     },
     {
         "desc": [
-            "Whenever you lose HP from a card, gain 1 Strength"
+            {
+                "type": "script",
+                "val": "gainAttrOnCostHp",
+                "para": {
+                    "type": "str",
+                    "val": 1
+                }
+            }
         ],
         "upgrade": {
             "cost": -1
@@ -870,8 +1068,7 @@
             {
                 "type": "dmg",
                 "val": 12
-            },
-            "Can be upgraded any number of times"
+            },"InfUpgrade"
         ],
         "upgrade": {
             "dmg": 4
@@ -1095,9 +1292,21 @@
         "class": "ironclad"
     },
     {
-        "desc": [{"type":"script","val":"exhaustAllHandDuelDmgToAllEnm","para":{"bonus":7}},
+        "desc": [
+            {
+                "type": "script",
+                "val": "exhaustAllHandDuelDmgToAllEnm",
+                "para": {
+                    "bonus": 7
+                }
+            },
             "Exhaust"
-        ],"upgrade":{"replace_script_para":{"bonus":3}},
+        ],
+        "upgrade": {
+            "replace_script_para": {
+                "bonus": 3
+            }
+        },
         "name": "Fiend Fire",
         "img": "red/Attack/fiend_fire",
         "rarity": "Rare",

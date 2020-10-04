@@ -70,10 +70,15 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-deck_position_node = NodePath("icon")
+deck_position_node = NodePath("deck")
+discard_position_node = NodePath("discard")
 
-[node name="icon" type="Sprite" parent="UI/Hands"]
+[node name="deck" type="Sprite" parent="UI/Hands"]
 position = Vector2( -435.599, -81.774 )
+texture = ExtResource( 2 )
+
+[node name="discard" type="Sprite" parent="UI/Hands"]
+position = Vector2( 450.706, -71.6832 )
 texture = ExtResource( 2 )
 
 [node name="deckCount" type="Label" parent="UI"]
@@ -199,5 +204,6 @@ script = ExtResource( 3 )
 [connection signal="draw_card" from="Player" to="." method="_on_Player_draw_card"]
 [connection signal="exhaust" from="Player" to="." method="_on_Player_exhaust"]
 [connection signal="hurt" from="Player" to="." method="_on_Player_hurt"]
+[connection signal="invoke" from="Player" to="." method="_on_Player_invoke"]
 [connection signal="play" from="Player" to="." method="_on_Player_play"]
 [connection signal="refresh_card" from="Player" to="." method="_on_Player_refresh_card"]

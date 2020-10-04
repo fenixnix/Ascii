@@ -52,9 +52,14 @@ func _on_Player_play(card):
 func _on_Player_draw_card(card):
 	$UI/Hands.Draw(card)
 	refresh()
+	
+func _on_Player_invoke(card):
+	$UI/Hands.Invoke(card)
 
 func _on_Player_hurt(attacker, dmg):
 	var text = preload("res://EnlargeText.tscn").instance()
 	$UI.add_child(text)
 	text.Set(str(-dmg))
 	$Camera2D/Shake.Shake(dmg)
+
+

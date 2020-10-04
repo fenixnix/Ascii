@@ -18,11 +18,13 @@ var exhaust = []
 
 signal exhaust(card)
 signal discard(card)
+signal invoke(card)
 signal clone(card)
 signal draw_card(card)
 signal play(card)
 
 signal gain_block(val)
+signal take_dmg(atker,val)
 signal hurt(attacker,dmg)
 signal cost_hp(amount)
 signal dead()
@@ -155,6 +157,7 @@ func TakeDamage(attacker,_dmg):
 		chara.hp = 0
 		on_dead()
 	emit_signal("hurt",attacker,dmg)
+	emit_signal("take_dmg",attacker,dmg)
 
 func on_dead():
 	print("dead")
@@ -163,6 +166,10 @@ func on_dead():
 func on_end_turn():
 	print("end turn")
 	emit_signal("end_turn")
+
+func InvokeCard(card):
+	hand.append(card)
+	emit_signal("invoke",card)
 
 func ReChargeDeck():
 	print_debug("Refesh Deck")
@@ -186,6 +193,10 @@ func Inuse(card):
 
 func PutIntoDiscard(card):
 	discard.append(card)
+
+func PutIntoDrawPile(card):
+	deck.append(card)
+	deck.shuffle()
 
 func Clone(card):
 	hand.append(card)

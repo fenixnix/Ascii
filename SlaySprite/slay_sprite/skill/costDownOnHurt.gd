@@ -4,6 +4,7 @@ var card_
 
 func run(src:CharaBtl,card,dst,para):
 	card_ = card
+	src.add_child(self)
 	src.connect("hurt",self,"on_hurt")
 
 func on_hurt():
