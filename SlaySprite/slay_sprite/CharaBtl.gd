@@ -138,6 +138,9 @@ func ModAttr(d):
 func ModStatus(d):
 	GlbAct.modDict(d,status)
 
+func ModPower(d):
+	GlbAct.modDict(d,power)
+
 func ExecuteScript(dat,card,target):
 	var s = load("res://script/%s.gd"%dat.val)
 	s.run(self,card,target,dat.get("para",{}))

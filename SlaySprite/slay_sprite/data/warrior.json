@@ -1068,7 +1068,8 @@
             {
                 "type": "dmg",
                 "val": 12
-            },"InfUpgrade"
+            },
+            "InfUpgrade"
         ],
         "upgrade": {
             "dmg": 4
@@ -1082,8 +1083,19 @@
     },
     {
         "desc": [
-            "Exhaust all non-Attack cards in your hand and gain 5(7) Block for each"
+            {
+                "type": "script",
+                "val": "exhaustNonAtkToGainBlk",
+                "para": {
+                    "blk": 5
+                }
+            }
         ],
+        "upgrade": {
+            "replace_script_para": {
+                "blk": 7
+            }
+        },
         "name": "Second Wind",
         "img": "red/Skill/second_wind",
         "rarity": "Uncommon",
@@ -1093,7 +1105,10 @@
     },
     {
         "desc": [
-            "Gain 2 energy",
+            {
+                "type": "en",
+                "val": 2
+            },
             "Exhaust"
         ],
         "upgrade": {
@@ -1108,9 +1123,15 @@
     },
     {
         "desc": [
-            "Gain 5(8) Block",
+            {
+                "type": "blk",
+                "val": 5
+            },
             "If this card is Exhausted, gain 2(3) energy"
         ],
+        "upgrade": {
+            "blk": 3
+        },
         "name": "Sentinel",
         "img": "red/Skill/sentinel",
         "rarity": "Uncommon",
@@ -1120,9 +1141,18 @@
     },
     {
         "desc": [
-            "Exhaust all non-Attack cards in your hand",
-            "Deal 16(20) damage"
+            {
+                "type": "script",
+                "val": "exhaustAllHandNonAtk"
+            },
+            {
+                "type": "dmg",
+                "val": 16
+            }
         ],
+        "upgrade": {
+            "dmg": 4
+        },
         "name": "Sever Soul",
         "img": "red/Attack/sever_soul",
         "rarity": "Uncommon",
@@ -1131,10 +1161,10 @@
         "class": "ironclad"
     },
     {
-        "desc": [
-            "Apply 3(5) Weak and Vulnerable to ALL enemies",
+        "desc": [{"type":"script","val":"statusAll","para":{"type":"weak","val":3}},
+            {"type":"script","val":"statusAll","para":{"type":"vul","val":3}},
             "Exhaust"
-        ],
+        ],"upgrade":{"replace_script_para":{"val":2}},
         "name": "Shockwave",
         "img": "red/Skill/shockwave",
         "rarity": "Uncommon",
@@ -1143,9 +1173,8 @@
         "class": "ironclad"
     },
     {
-        "desc": [
-            "If an enemy intends to attack, gain 3(4) Strength"
-        ],
+        "desc": [{"type":"script","val":"spotWeakness","para":{"type":"str","val":3}}
+        ],"upgrade":{"val":1},
         "name": "Spot Weakness",
         "img": "red/Skill/spot_weakness",
         "rarity": "Uncommon",
@@ -1154,11 +1183,8 @@
         "class": "ironclad"
     },
     {
-        "desc": [
-            "Deal 13 damage",
-            "Apply 1(2) Weak",
-            "Apply 1(2) Vulnerable"
-        ],
+        "desc": [{"type":"dmg","val":13},{"type":"weak","val":1},{"type":"vul","val":1}
+        ],"upgrade":{"weak":1,"vul":1},
         "name": "Uppercut",
         "img": "red/Attack/uppercut",
         "rarity": "Uncommon",
@@ -1168,8 +1194,8 @@
     },
     {
         "desc": [
-            "Deal 5(8) damage to ALL enemies X times"
-        ],
+            {"type":"script","val":"dmgAllX","para":{"dmg":5}}
+        ],"upgrade":{"replace_script_para":{"dmg":3}},
         "name": "Whirlwind",
         "img": "red/Attack/whirlwind",
         "rarity": "Uncommon",
@@ -1178,8 +1204,7 @@
         "class": "ironclad"
     },
     {
-        "desc": [
-            "Block no longer expires at the start of your turn"
+        "desc": [{"type":"script","val":"gainPower","para":{"type":"barricade"}}
         ],
         "upgrade": {
             "cost": -1
@@ -1192,10 +1217,8 @@
         "class": "ironclad"
     },
     {
-        "desc": [
-            "Gain 2(1) Vulnerable",
-            "Gain 1 Energy at the start of your turn"
-        ],
+        "desc": [{"type":"script","val":"berserk","para":{"vul":2}}
+        ],"upgrade":{"replace_script_para":{"vul":-1}},
         "name": "Berserk",
         "img": "red/Power/berserk",
         "rarity": "Rare",
@@ -1204,9 +1227,8 @@
         "class": "ironclad"
     },
     {
-        "desc": [
-            "Deal 32(42) damage"
-        ],
+        "desc": [{"type":"dmg","val":32}
+        ],"upgrade":{"dmg":10},
         "name": "Bludgeon",
         "img": "red/Attack/bludgeon",
         "rarity": "Rare",
@@ -1216,8 +1238,8 @@
     },
     {
         "desc": [
-            "(Innate",
-            ") At the start of your turn, lose 1 HP and draw 1 card"
+            "Innate",
+            "At the start of your turn, lose 1 HP and draw 1 card"
         ],
         "name": "Brutality",
         "img": "red/Power/brutality",
@@ -1228,8 +1250,7 @@
     },
     {
         "desc": [
-            "Skills cost 0",
-            "Whenever you play a Skill, Exhaust it"
+            "Skills cost 0, Whenever you play a Skill, Exhaust it"
         ],
         "upgrade": {
             "cost": -1
@@ -1279,11 +1300,10 @@
         "class": "ironclad"
     },
     {
-        "desc": [
-            "Deal 10(12) damage",
+        "desc": [{"type":"dmg","val":10},
             "If this kills a non-minion enemy, gain 3(4) permanent Max HP",
             "Exhaust"
-        ],
+        ],"upgrade":{"dmg":2},
         "name": "Feed",
         "img": "red/Attack/feed",
         "rarity": "Rare",
