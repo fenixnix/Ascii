@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Burning Blood",
+        "desc": "At the end of combat, heal 6 HP.",
+        "rarity": "Starter",
+        "class": "Ironclad"
+    },
+    {
+        "name": "Red Skull",
+        "desc": "While your HP is at or below 50%, you have 3 additional Strength.",
+        "rarity": "Common",
+        "class": "Ironclad"
+    },
+    {
+        "name": "Paper Phrog",
+        "desc": "Enemies with Vulnerable take 75% more damage rather than 50%.",
+        "rarity": "Uncommon",
+        "class": "Ironclad"
+    },
+    {
+        "name": "Self-Forming Clay",
+        "desc": "Whenever you lose HP in combat, gain 3 Block next turn.",
+        "rarity": "Uncommon",
+        "class": "Ironclad"
+    },
+    {
+        "name": "Champion Belt",
+        "desc": "Whenever you apply Vulnerable, also apply 1 Weak.",
+        "rarity": "Rare",
+        "class": "Ironclad"
+    },
+    {
+        "name": "Charon's Ashes",
+        "desc": "Whenever you Exhaust a card, deal 3 damage to ALL enemies.",
+        "rarity": "Rare",
+        "class": "Ironclad"
+    },
+    {
+        "name": "Magic Flower",
+        "desc": "Healing is 50% more effective during combat.",
+        "rarity": "Rare",
+        "class": "Ironclad"
+    },
+    {
+        "name": "Black Blood",
+        "desc": "Replaces Burning Blood. At the end of combat, heal 12 HP.",
+        "rarity": "Boss",
+        "class": "Ironclad"
+    },
+    {
+        "name": "Mark of Pain",
+        "desc": "Gain 1 Energy at the start of each turn. Start combats with 2 Wounds in your draw pile.",
+        "rarity": "Boss",
+        "class": "Ironclad"
+    },
+    {
+        "name": "Runic Cube",
+        "desc": "Whenever you lose HP, draw 1 card.",
+        "rarity": "Boss",
+        "class": "Ironclad"
+    },
+    {
+        "name": "Brimstone",
+        "desc": "At the start of your turn, gain 2 Strength and ALL enemies gain 1 Strength.",
+        "rarity": "Shop",
+        "class": "Ironclad"
+    }
+]

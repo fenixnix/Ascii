@@ -1,0 +1,14 @@
+
+#Desc:Every time you play 3 Attacks in a single turn, gain 4 Block.
+func OnBattleStart(chara:CharaBtl):
+    pass
+
+func OnBattleEnd(chara:CharaBtl):
+    pass
+
+func OnEnterSite(chara,site):
+    pass
+
+func OnPickUp():
+    pass
+            

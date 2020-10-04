@@ -1,13 +1,11 @@
 BurningBlood.png
 Burning Blood	Starter (Ironclad only)	At the end of combat, heal 6 HP.
 CrackedCore.png
-Cracked Core	Starter
-(Defect only)
-
-At the Start of each combat, Channel 1 Lightning.
+Cracked Core	Starter (Defect only)	At the Start of each combat, Channel 1 Lightning.
 PureWater-0.png
 Pure Water	Starter (Watcher only)	At the start of each combat, add a Miracle to your hand.
-RingoftheSnake.png	Ring of the Snake	Starter (Silent only)	At the start of each combat, draw 2 additional cards.
+RingoftheSnake.png
+Ring of the Snake	Starter (Silent only)	At the start of each combat, draw 2 additional cards.
 Akabeko.png
 Akabeko	Common	Your first attack each combat deals 8 additional damage.
 Anchor.png
@@ -31,10 +29,7 @@ Ceramic Fish	Common	Whenever you add a card to your deck, gain 9 gold.
 Damaru.png
 Damaru	Common (Watcher only)	At the start of your turn, gain 1 Mantra.
 DataDisk.png
-Data Disk	Common
-(Defect only)
-
-Start each combat with 1 Focus.
+Data Disk	Common(Defect only)	Start each combat with 1 Focus.
 DreamCatcher.png
 Dream Catcher	Common	Whenever you rest, you may add a card to your deck.
 HappyFlower.png
@@ -62,16 +57,13 @@ Potion Belt	Common	Upon pickup, gain 2 Potion slots.
 PreservedInsect.png
 Preserved Insect	Common	Enemies in Elite rooms have 25% less HP.
 RedSkull.png
-Red Skull	Common
-(Ironclad only)
-
-While your HP is at or below 50%, you have 3 additional Strength.
+Red Skull	Common(Ironclad only)	While your HP is at or below 50%, you have 3 additional Strength.
 RegalPillow.png
 Regal Pillow	Common	Heal an additional 15 HP when you Rest.
 SmilingMask.png
 Smiling Mask	Common	The merchant's card removal service now always costs 50 Gold.
 SnakeSkull.png
-Snecko Skull	Common (Silent only)	Whenever you apply Poison, apply an additional 1 Poison.
+Snecko Skull	Common(Silent only)	Whenever you apply Poison, apply an additional 1 Poison.
 Strawberry.png
 Strawberry	Common	Raise your Max HP by 7.
 Boot.png
@@ -103,10 +95,7 @@ Eternal Feather	Uncommon	For every 5 cards in your deck, heal 3 HP whenever you 
 FrozenEgg2.png
 Frozen Egg	Uncommon	Whenever you add a Power card to your deck, it is Upgraded.
 Cables.png
-Gold-Plated Cables	Uncommon
-(Defect only)
-
-Your rightmost Orb triggers its passive an additional time.
+Gold-Plated Cables	Uncommon(Defect only)	Your rightmost Orb triggers its passive an additional time.
 GremlinHorn.png
 Gremlin Horn	Uncommon	Whenever an enemy dies, gain 1 Energy and draw 1 card.
 Horn cleat.png
@@ -142,10 +131,7 @@ Pear	Uncommon	Raise your Max HP by 10.
 QuestionCard.png
 Question Card	Uncommon	On future Card Reward screens you have 1 additional card to choose from.
 SelfFormingClay.png
-Self-Forming Clay	Uncommon
-(Ironclad only)
-
-Whenever you lose HP in combat, gain 3 Block next turn.
+Self-Forming Clay	Uncommon(Ironclad only)	Whenever you lose HP in combat, gain 3 Block next turn.
 Shuriken.png
 Shuriken	Uncommon	Every time you play 3 Attacks in a single turn, gain 1 Strength.
 SingingBowl.png
@@ -155,12 +141,9 @@ Strike Dummy	Uncommon	Cards containing "Strike" deal 3 additional damage.
 Sundial.png
 Sundial	Uncommon	Every 3 times you shuffle your deck, gain 2 Energy.
 SymbioticVirus.png
-Symbiotic Virus	Uncommon
-(Defect only)
-
-At the start of each combat, Channel 1 Dark.
+Symbiotic Virus	Uncommon(Defect only)	At the start of each combat, Channel 1 Dark.
 Tear drop locket.png
-Teardrop Locket	Uncommon (Watcher only)	Start each combat in Calm.
+Teardrop Locket	Uncommon(Watcher only)	Start each combat in Calm.
 TheCourier.png
 The Courier	Uncommon	The merchant no longer runs out of cards, relics, or potions and his prices are reduced by 20%.
 ToxicEgg2.png
@@ -184,10 +167,7 @@ Dead Branch	Rare	Whenever you Exhaust a card, add a random card to your hand.
 Du-VuDoll.png
 Du-Vu Doll	Rare	For each Curse in your deck, start each combat with 1 additional Strength.
 EmotionChip.png
-Emotion Chip	Rare
-(Defect only)
-
-At the start of each turn, if you took any damage last turn, trigger the passive ability of all your Orbs.
+Emotion Chip	Rare(Defect only)	At the start of each turn, if you took any damage last turn, trigger the passive ability of all your Orbs.
 FossilizedHelix.png
 Fossilized Helix	Rare	Prevent the first time you would lose HP in combat.
 GamblingChip.png
@@ -257,32 +237,19 @@ Ectoplasm	Boss	Gain 1 Energy at the start of each turn. You can no longer gain G
 EmptyCage.png
 Empty Cage	Boss	Upon pickup, remove 2 cards from your deck.
 FrozenCore.png
-Frozen Core	Boss
-(Defect only)
-
-Replaces Cracked Core. If you end your turn with empty Orb slots, Channel 1 Frost.
+Frozen Core	Boss(Defect only)	Replaces Cracked Core. If you end your turn with empty Orb slots, Channel 1 Frost.
 FusionHammer.png
 Fusion Hammer	Boss	Gain 1 Energy at the start of each turn. You can no longer Smith at Rest Sites.
 Holy water.png
 Holy Water	Boss (Watcher only)	Replaces Pure Water. At the start of each combat, add 3 Miracles to your hand.
 HoveringKite.png
-Hovering Kite	Boss (Silent only)	The first time you discard a card each turn, gain 1 Energy.
-(BETA: Gain 1 Energy and discard 2 cards at the start of each turn.)
+Hovering Kite	Boss(Silent only)	The first time you discard a card each turn, gain 1 Energy.
 Inserter.png
-Inserter	Boss
-(Defect only)
-
-Every 2 turns, gain 1 Orb slot.
+Inserter	Boss(Defect only)	Every 2 turns, gain 1 Orb slot.
 MarkofPain.png
-Mark of Pain	Boss
-(Ironclad only)
-
-Gain 1 Energy at the start of each turn. Start combats with 2 Wounds in your draw pile.
+Mark of Pain	Boss(Ironclad only)	Gain 1 Energy at the start of each turn. Start combats with 2 Wounds in your draw pile.
 NuclearBattery.png
-Nuclear Battery	Boss
-(Defect only)
-
-At the start of each combat, Channel 1 Plasma.
+Nuclear Battery	Boss(Defect only)	At the start of each combat, Channel 1 Plasma.
 PandorasBox.png
 Pandora's Box	Boss	Transform all Strikes and Defends.
 PhilosophersStone.png
@@ -330,9 +297,7 @@ Mutagenic Strength	Event	Start each combat with 3 Strength that is lost at the e
 NlothsMask.png
 N'loth's Hungry Face	Event	The next non-boss chest you open is empty.
 Necronomicon.png
-Necronomicon	Event	The first Attack played each turn that costs 2 or more is played twice. When you take this relic, become
-Cursed.
-
+Necronomicon	Event	The first Attack played each turn that costs 2 or more is played twice. When you take this relic, become Cursed.
 NeowsBlessing.png
 Neow's Lament	Event	Enemies in your first 3 combats will have 1 HP.
 NilrysCodex.png
@@ -378,10 +343,7 @@ Orrery	Shop	Choose and add 5 cards to your deck.
 PrismaticShard.png
 Prismatic Shard	Shop	Combat reward screens now contain colorless cards and cards from other colors.
 RunicCapacitor.png
-Runic Capacitor	Shop
-(Defect only)
-
-Start each combat with 3 additional Orb slots.
+Runic Capacitor	Shop(Defect only)	Start each combat with 3 additional Orb slots.
 Sling.png
 Sling of Courage	Shop	Start each Elite combat with 2 Strength.
 StrangeSpoon.png
@@ -391,9 +353,6 @@ The Abacus	Shop	Gain 6 Block whenever you shuffle your draw pile.
 Toolbox.png
 Toolbox	Shop	At the start of each combat, choose 1 of 3 random Colorless cards and add the chosen card into your hand.
 TwistedFunnel.png
-Twisted Funnel	Shop
-(Silent only)
-
-At the start of each combat, apply 4 Poison to ALL enemies.
+Twisted Funnel	Shop(Silent only)	At the start of each combat, apply 4 Poison to ALL enemies.
 Circlet.png
 Circlet	Special	Collect as many as you can. (Given when you exhaust the relic pool)

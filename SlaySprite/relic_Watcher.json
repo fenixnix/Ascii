@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Pure Water",
+        "desc": "At the start of each combat, add a Miracle to your hand.",
+        "rarity": "Starter",
+        "class": "Watcher"
+    },
+    {
+        "name": "Damaru",
+        "desc": "At the start of your turn, gain 1 Mantra.",
+        "rarity": "Common",
+        "class": "Watcher"
+    },
+    {
+        "name": "Duality",
+        "desc": "Whenever you play an Attack, gain 1 temporary Icon Dexterity.png Dexterity.",
+        "rarity": "Uncommon",
+        "class": "Watcher"
+    },
+    {
+        "name": "Teardrop Locket",
+        "desc": "Start each combat in Calm.",
+        "rarity": "Uncommon",
+        "class": "Watcher"
+    },
+    {
+        "name": "Cloak Clasp",
+        "desc": "At the end of your turn, gain 1 Icon Block.png block for each card in your hand.",
+        "rarity": "Rare",
+        "class": "Watcher"
+    },
+    {
+        "name": "Golden Eye",
+        "desc": "Whenever you Scry, Scry 2 additional cards.",
+        "rarity": "Rare",
+        "class": "Watcher"
+    },
+    {
+        "name": "Holy Water",
+        "desc": "Replaces Pure Water. At the start of each combat, add 3 Miracles to your hand.",
+        "rarity": "Boss",
+        "class": "Watcher"
+    },
+    {
+        "name": "Violet Lotus",
+        "desc": "Whenever you exit Calm, gain an additional Energy.",
+        "rarity": "Boss",
+        "class": "Watcher"
+    },
+    {
+        "name": "Melange",
+        "desc": "Whenever you shuffle your draw pile, Scry 3.",
+        "rarity": "Shop",
+        "class": "Watcher"
+    }
+]
