@@ -10,19 +10,14 @@ func Start(dat):
 		$BattleGround.AddEnm(GlbDb.enmDict[e])
 	
 	$UI/Hands.visible = true
-	$UI/deckCount.visible = true
-	$UI/discardCount.visible = true
 	$UI/EndTurn.visible = true
 	
 func Stop():
 	$UI/Hands.visible = false
-	$UI/deckCount.visible = false
-	$UI/discardCount.visible = false
 	$UI/EndTurn.visible = false
 
 func refresh():
-	$UI/deckCount.text = str(len(plrBtl.deck))
-	$UI/discardCount.text = str(len(plrBtl.discard))
+	$UI.Refresh(plrBtl)
 	$Player.refresh()
 
 func DrawCard(cnt = 1):

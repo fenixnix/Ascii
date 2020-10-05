@@ -2,10 +2,12 @@ extends RichTextLabel
 
 func Set(dat):
 	bbcode_enabled = true
-	bbcode_text = """BLK %d HP %d/%d
+	bbcode_text = """%s
+BLK %d HP %d/%d
 attr:%s
 status:%s
 	"""%[
+		dat.data.name,
 		dat.blk,dat.hp,dat.mhp,
 		dict_code(dat.attr),
 		dict_code(dat.status)

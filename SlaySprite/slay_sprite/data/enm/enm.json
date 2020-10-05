@@ -1,75 +1,131 @@
-[{
+[
+    {
         "id": "goblin",
         "name": "Goblin",
         "hp": {
             "val": 10,
             "rnd": 3
         },
-        "skl": [{
-            "type": "dmg",
-            "val": 6,
-            "rnd": 3
-        }],
-        "skl_loop":[0]
+        "skl": [
+            {
+                "type": "dmg",
+                "val": 6,
+                "rnd": 3
+            }
+        ],
+        "skl_loop": [
+            0
+        ]
     },
     {
-        "id": "louse",
+        "id": "louse_R",
         "name": "louse",
+        "img":"enm/Louse-red-pretty",
         "hp": {
             "val": 10,
             "rnd": 6
         },
-        "skl": [{
-            "type": "dmg",
-            "val": 6
-        }],
-        "status": ["curlUp"]
-    }, {
+        "skl": [
+            {
+                "type": "dmg",
+                "val": 6
+            }
+        ],
+        "status": [
+            "curlUp"
+        ]
+    },
+    {
+        "id": "louse_G",
+        "name": "louse",
+        "img":"enm/Louse-green-pretty",
+        "hp": {
+            "val": 10,
+            "rnd": 6
+        },
+        "skl": [
+            {
+                "type": "dmg",
+                "val": 6
+            }
+        ],
+        "status": [
+            "curlUp"
+        ]
+    },
+    {
         "id": "cultist",
         "name": "Cultist",
+        "img":"enm/Cultist-pretty",
         "hp": {
             "val": 45,
             "rnd": 10
         },
-        "skl": [{
-            "type": "dmg",
-            "val": 6
-        }]
-    }, {
-        "id": "jawWorm",
+        "skl": [
+            {
+                "type": "dmg",
+                "val": 6
+            }
+        ]
+    },
+    {
+        "id": "jaw_worm",
         "name": "Jaw Worm",
+        "img":"enm/Jaw-worm-pretty",
         "hp": {
-            "val": "40",
-            "rnd": "5"
+            "val": 40,
+            "rnd": 5
         },
-        "skl": [{
-            "type": "dmg",
-            "val": 6
-        }, {
-            "type": "dmg",
-            "val": 11
-        }, "bellow"]
-    }, {
+        "skl": [
+            {
+                "type": "dmg",
+                "val": 6
+            },
+            {
+                "type": "dmg",
+                "val": 11
+            },
+            "bellow"
+        ]
+    },
+    {
         "id": "sentry",
         "name": "Sentry",
         "hp": {
             "val": 38,
             "rnd": 5
         },
-        "skl": [{
-            "type": "dmg",
-            "val": "9"
-        }, "dazed"],
-        "status": ["artifact"]
-    }, {
+        "skl": [
+            {
+                "type": "dmg",
+                "val": "9"
+            },
+            "dazed"
+        ],
+        "status": [
+            "artifact"
+        ]
+    },
+    {
         "id": "looter",
         "name": "Looter",
         "hp": {
             "val": 44,
             "rnd": 6
         },
-        "skl": ["loot", "block", "escape"],
-        "skl_queue": [0, 0, 0, 0, 1, 2],
+        "skl": [
+            "loot",
+            "block",
+            "escape"
+        ],
+        "skl_queue": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2
+        ],
         "skl_loop": []
     }
 ]

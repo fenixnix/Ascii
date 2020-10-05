@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://BattleGround.gd" type="Script" id=1]
 [ext_resource path="res://image/icon.png" type="Texture" id=2]
@@ -12,6 +12,11 @@
 [ext_resource path="res://image/bg.tres" type="Texture" id=10]
 [ext_resource path="res://TestPanel.gd" type="Script" id=11]
 [ext_resource path="res://Menu.gd" type="Script" id=12]
+[ext_resource path="res://image/icon/base.png" type="Texture" id=13]
+[ext_resource path="res://image/icon/discard.png" type="Texture" id=14]
+[ext_resource path="res://image/icon/deck.png" type="Texture" id=15]
+[ext_resource path="res://image/icon/countCircle.png" type="Texture" id=16]
+[ext_resource path="res://battleUI.gd" type="Script" id=17]
 
 [node name="battle" type="Node"]
 script = ExtResource( 6 )
@@ -44,6 +49,7 @@ __meta__ = {
 }
 
 [node name="UI" type="CanvasLayer" parent="."]
+script = ExtResource( 17 )
 
 [node name="Menu" type="HBoxContainer" parent="UI"]
 anchor_right = 1.0
@@ -55,10 +61,11 @@ __meta__ = {
 }
 
 [node name="Deck" type="Button" parent="UI/Menu"]
-margin_left = 980.0
+margin_left = 914.0
 margin_right = 1024.0
-margin_bottom = 20.0
+margin_bottom = 70.0
 text = "Deck"
+icon = ExtResource( 15 )
 
 [node name="Hands" type="Control" parent="UI"]
 anchor_left = 0.5
@@ -75,19 +82,21 @@ discard_position_node = NodePath("discard")
 
 [node name="deck" type="Sprite" parent="UI/Hands"]
 position = Vector2( -435.599, -81.774 )
-texture = ExtResource( 2 )
+texture = ExtResource( 13 )
 
-[node name="discard" type="Sprite" parent="UI/Hands"]
-position = Vector2( 450.706, -71.6832 )
-texture = ExtResource( 2 )
+[node name="countCircle" type="TextureRect" parent="UI/Hands/deck"]
+margin_left = -31.498
+margin_top = -32.7579
+margin_right = 96.502
+margin_bottom = 95.2421
+texture = ExtResource( 16 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="deckCount" type="Label" parent="UI"]
-anchor_top = 1.0
+[node name="deckCount" type="Label" parent="UI/Hands/deck/countCircle"]
+anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 59.6403
-margin_top = -97.8546
-margin_right = 94.6403
-margin_bottom = -63.8546
 text = "AAA"
 align = 1
 valign = 1
@@ -95,15 +104,23 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="discardCount" type="Label" parent="UI"]
-anchor_left = 1.0
-anchor_top = 1.0
+[node name="discard" type="Sprite" parent="UI/Hands"]
+position = Vector2( 450.706, -71.6832 )
+texture = ExtResource( 14 )
+
+[node name="countCircle" type="TextureRect" parent="UI/Hands/discard"]
+margin_left = -95.754
+margin_top = -36.5377
+margin_right = 32.246
+margin_bottom = 91.4623
+texture = ExtResource( 16 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="discardCount" type="Label" parent="UI/Hands/discard/countCircle"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -211.879
-margin_top = -169.573
-margin_right = -163.879
-margin_bottom = -133.573
 text = "BBB"
 align = 1
 valign = 1

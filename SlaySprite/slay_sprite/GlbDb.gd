@@ -5,6 +5,8 @@ var cardDict = {}
 var enmDict = {}
 var statusCardDict = {}
 
+var lvDb = {}
+
 var dbPath = "./data/%s.json"
 
 func _init():
@@ -14,6 +16,8 @@ func _init():
 	enmDict = FileRW.LoadJsonFileArray2Dict(dbPath%"enm/enm")
 	res = LoadDb("status")
 	statusCardDict = res[1]
+	
+	lvDb=LoadDat("enm/enm_ect01")
 
 func RandomSelect():
 	var index = randi()%len(cardDict.keys())

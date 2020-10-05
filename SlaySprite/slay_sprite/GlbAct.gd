@@ -1,7 +1,7 @@
 extends Node
 
 func GetChara():
-	return get_tree().current_scene.get_node("battle").plrBtl
+	return GlbDat.battle.plrBtl
 
 func PlayCard(card,target = null):
 	GetChara().PlayCard(card,target)
@@ -45,18 +45,70 @@ func UpgradeCard(card):
 	return card
 
 func BattleGround():
-	return get_tree().current_scene.get_node("battle")
+	return GlbDat.battle
 
 func BattleWin():
-	get_tree().current_scene.get_node("battle").Stop()
+	BattleGround().Stop()
 	print_debug("Battle Win!!!")
 	GlbUi.CardReward()
 
+func EnterSite():
+	GlbUi.SelectSite(GlbDat.CurrentSiteOptions())
+	var site = yield(GlbUi,"select_site")
+	match site:
+		"enm":EncounterEnm()
+		_:pass
+	print_debug("select site:",site)
+
+var enmCnt = 0
+func EncounterEnm():
+	var set
+	if enmCnt < GlbDb.lvDb.start.cnt:
+		set = RndSelEctMst(GlbDb.lvDb.start.sets)
+	else:
+		set = RndSelEctMst(GlbDb.lvDb.remains.sets)
+	TrigBattle(set)
+
+func RndSelEctMst(set):
+	var rate_sum:int = 0
+	for s in set:
+		rate_sum += s.rate
+	var val = randi()%rate_sum
+	var cnt = 0
+	for s in set:
+		cnt += s.rate
+		if cnt>val:
+			return s.mst
+	return set[len(set)-1].mst
+
+func TrigBattle(enmSet):
+	var tmpList = GetSetEnmLst(enmSet)
+	GlbDat.battle = load("res://battle.tscn").instance()
+	add_child(GlbDat.battle)
+	GlbDat.battle.Start({
+		"chara":GlbDat.chara,
+		"enm":tmpList
+	})
+
+func GetSetEnmLst(set):
+	var tmpList = []
+	for elmt in set:
+		var mst = elmt
+		var num = 1
+		if elmt.find('*')!=-1:
+			var pair = elmt.split('*')
+			mst = pair[0]
+			num = int(pair[1])
+		for n in num:
+			if mst.find("|")!=-1:
+				var pairs = mst.split('|')
+				mst = pairs[randi()%len(pairs)]
+			tmpList.append(mst)
+	return tmpList
+
 func NextSite():
 	GlbDat.currentLevel += 1
-	GlbUi.SelectSite(GlbDat.map[GlbDat.currentLevel])
-	var site = yield(GlbUi,"select_site")
-	print_debug("select site:",site)
+	EnterSite()
 
 static func modDict(dat,dict):
 	if !dict.has(dat.type):

@@ -18,13 +18,11 @@ var data
 var action_index = 0
 
 func Set(enm):
+	$Anim/Sprite.texture = load("res://image/%s.png"%enm.get("img","enm/Cultist-pretty"))
 	data = enm
 	mhp = enm.hp.val+randi()%int(enm.hp.rnd)
 	hp = mhp
 	skills = enm.skl.duplicate(true)
-	refresh_info()
-
-func _ready():
 	refresh_info()
 
 func refresh_info():
