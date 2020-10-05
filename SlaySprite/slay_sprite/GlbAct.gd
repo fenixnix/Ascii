@@ -52,6 +52,12 @@ func BattleWin():
 	print_debug("Battle Win!!!")
 	GlbUi.CardReward()
 
+func NextSite():
+	GlbDat.currentLevel += 1
+	GlbUi.SelectSite(GlbDat.map[GlbDat.currentLevel])
+	var site = yield(GlbUi,"select_site")
+	print_debug("select site:",site)
+
 static func modDict(dat,dict):
 	if !dict.has(dat.type):
 		dict[dat.type] = dat.val

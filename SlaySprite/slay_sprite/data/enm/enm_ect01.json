@@ -1,0 +1,104 @@
+{
+    "start": {
+        "cnt": 2,
+        "sets": [
+            {
+                "mst": [
+                    "cultist"
+                ],
+                "rate": 1
+            },
+            {
+                "mst": [
+                    "jaw_worm"
+                ],
+                "rate": 1
+            },
+            {
+                "mst": [
+                    "louse*2"
+                ],
+                "rate": 1
+            },
+            {
+                "mst": [
+                    "acid_slime_M|spike_slime_M",
+                    "acid_slime_S|spike_slime_S"
+                ],
+                "rate": 1
+            }
+        ]
+    },
+    "remains": {
+        "sets": [
+            {
+                "mst": [
+                    "mad_gremlin",
+                    "sneaky_gremlin",
+                    "fat_gremlin",
+                    "wizard_gremlin",
+                    "shield_gremlin"
+                ],
+                "rate": 2
+            },
+            {
+                "mst": [
+                    "acid_slime_L",
+                    "spike_slime_L"
+                ],
+                "rate": 4
+            },
+            {
+                "mst": [
+                    "spike_slime_S*3",
+                    "acid_slime_S*2"
+                ],
+                "rate": 2
+            },
+            {
+                "mst": [
+                    "blue_slaver"
+                ],
+                "rate": 4
+            },
+            {
+                "mst": [
+                    "red_slaver"
+                ],
+                "rate": 2
+            },
+            {
+                "mst": [
+                    "louse*3"
+                ],
+                "rate": 4
+            },
+            {
+                "mst": [
+                    "fungi_beast*2"
+                ],
+                "rate": 4
+            },
+            {
+                "mst": [
+                    "louse|acid_slime_M|spike_slime_M",
+                    "looter|cultist|red_slaver|blue_slaver"
+                ],
+                "rate": 3
+            },
+            {
+                "mst": [
+                    "fungi_beast|jaw_worm",
+                    "louse|acid_slime_M|spike_slime_M"
+                ],
+                "rate": 3
+            },
+            {
+                "mst": [
+                    "looter"
+                ],
+                "rate": 4
+            }
+        ]
+    }
+}
