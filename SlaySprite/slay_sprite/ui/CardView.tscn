@@ -21,11 +21,10 @@ __meta__ = {
 }
 
 [node name="Card" parent="." instance=ExtResource( 3 )]
-margin_left = 139.691
-margin_top = 217.474
-margin_right = 139.691
-margin_bottom = 217.474
-rect_scale = Vector2( 2, 2 )
+margin_left = 299.506
+margin_top = 297.461
+margin_right = 299.506
+margin_bottom = 297.461
 
 [node name="List" type="ItemList" parent="."]
 anchor_left = 0.59668

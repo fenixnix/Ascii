@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://ui/RewardCards.gd" type="Script" id=1]
+[ext_resource path="res://Card.tscn" type="PackedScene" id=2]
 
 [node name="RewardCards" type="Control"]
 anchor_right = 1.0
@@ -63,5 +64,12 @@ margin_left = 502.0
 margin_right = 556.0
 margin_bottom = 20.0
 text = "Cancel"
+
+[node name="Card" parent="." instance=ExtResource( 2 )]
+margin_left = 244.276
+margin_top = 301.674
+margin_right = 244.276
+margin_bottom = 301.674
+[connection signal="item_selected" from="ItemList" to="." method="_on_ItemList_item_selected"]
 [connection signal="pressed" from="Menu/OK" to="." method="_on_OK_pressed"]
 [connection signal="pressed" from="Menu/Cancel" to="." method="_on_Cancel_pressed"]

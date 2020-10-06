@@ -23,3 +23,6 @@ func _on_OK_pressed():
 
 func _on_Cancel_pressed():
 	queue_free()
+
+func _on_ItemList_item_selected(index):
+	$Card.Set(lst[index])

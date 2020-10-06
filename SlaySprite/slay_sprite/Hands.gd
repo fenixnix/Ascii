@@ -17,6 +17,7 @@ func _ready():
 func Draw(card):
 	var Card = card_prefab.instance()
 	add_child(Card)
+	Card.is_thumbnail = true
 	Card.Set(card)
 	hands.append(Card)
 	Card.rect_position = card_init_position

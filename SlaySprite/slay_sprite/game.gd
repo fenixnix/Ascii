@@ -9,4 +9,3 @@ func _ready():
 	GlbDat.map = FileRW.LoadJsonFile("res://data/map/map01.json")
 	
 	GlbAct.EnterSite()
-	

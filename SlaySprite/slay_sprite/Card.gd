@@ -3,15 +3,19 @@ extends Control
 var data
 var tmp_goal = Vector2.ZERO
 
+var is_thumbnail = false
+
 onready var panel = $Control/CardPanel
 
 func Set(card):
 	data = card
 	panel.Set(card)
-	if typeof(card.cost) == typeof("X"):
-		SetActive(true)
-	else:
-		SetActive(card.cost<=GlbAct.GetChara().en)
+	if is_thumbnail:
+		if typeof(card.cost) == typeof("X"):
+			SetActive(true)
+		else:
+			SetActive(card.cost<=GlbAct.GetChara().en)
+		$Control.rect_scale = Vector2.ONE*0.5
 
 func Refresh():
 	Set(data)
@@ -38,21 +42,24 @@ func Discard():
 	queue_free()
 
 func SetActive(val):
-	if val:
-		$Control/CardPanel/Cost/Cost.modulate = Color.green
-	else:
-		$Control/CardPanel/Cost/Cost.modulate = Color.red
-	$HotArea.active = val
+	if is_thumbnail:
+		if val:
+			$Control/CardPanel/Cost/Cost.modulate = Color.green
+		else:
+			$Control/CardPanel/Cost/Cost.modulate = Color.red
+		$HotArea.active = val
 
 var prePos
 
 func _on_HotArea_mouse_entered():
-	$Control.rect_scale = Vector2.ONE
-	$Control.rect_position += Vector2.UP*100
-	prePos = get_index()
-	get_parent().move_child(self,get_parent().get_child_count())
+	if is_thumbnail:
+		$Control.rect_scale = Vector2.ONE
+		$Control.rect_position += Vector2.UP*100
+		prePos = get_index()
+		get_parent().move_child(self,get_parent().get_child_count())
 
 func _on_HotArea_mouse_exited():
-	$Control.rect_scale = Vector2.ONE*0.5
-	$Control.rect_position -= Vector2.UP*100
-	get_parent().move_child(self,prePos)
+	if is_thumbnail:
+		$Control.rect_scale = Vector2.ONE*0.5
+		$Control.rect_position -= Vector2.UP*100
+		get_parent().move_child(self,prePos)

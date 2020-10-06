@@ -15,5 +15,23 @@
         "skl":["bellow","rush","skull_bash"],
         "skl_quque":["bellow"],
         "skl_rate":[0,2,1]
+    },
+    {
+        "id": "sentry",
+        "name": "Sentry",
+        "hp": {
+            "val": 38,
+            "rnd": 5
+        },
+        "skl": [
+            {
+                "type": "dmg",
+                "val": "9"
+            },
+            "dazed"
+        ],
+        "status": [
+            "artifact"
+        ]
     }
 ]

@@ -67,6 +67,7 @@ func EncounterEnm():
 		set = RndSelEctMst(GlbDb.lvDb.start.sets)
 	else:
 		set = RndSelEctMst(GlbDb.lvDb.remains.sets)
+	enmCnt += 1
 	TrigBattle(set)
 
 func RndSelEctMst(set):
@@ -83,6 +84,9 @@ func RndSelEctMst(set):
 
 func TrigBattle(enmSet):
 	var tmpList = GetSetEnmLst(enmSet)
+	if GlbDat.battle!=null:
+		GlbDat.battle.queue_free()
+		GlbDat.battle = null
 	GlbDat.battle = load("res://battle.tscn").instance()
 	add_child(GlbDat.battle)
 	GlbDat.battle.Start({

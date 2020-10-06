@@ -5,41 +5,81 @@ class_name Enemy
 var enemy_name = "enemy"
 var img
 
-var mhp = 20
-var hp = 15
-var blk = 0
+var mhp:int = 20
+var hp:int = 15
+var blk:int = 0
 
 var attr = {}
 var status = {}
+var power = {}
 
-var skills = []
+var skl = []
+var skl_queue = []
+var skl_rate = []
 
 var data
-var action_index = 0
+
+signal end_turn()
 
 func Set(enm):
 	$Anim/Sprite.texture = load("res://image/%s.png"%enm.get("img","enm/Cultist-pretty"))
 	data = enm
 	mhp = enm.hp.val+randi()%int(enm.hp.rnd)
 	hp = mhp
-	skills = enm.skl.duplicate(true)
+	skl = enm.get("skl",[]).duplicate(true)
+	skl_queue = enm.get("skl_queue",[])
+	skl_rate = enm.get("skl_rate",[])
 	refresh_info()
 
 func refresh_info():
 	$EnemyUI/Info.Set(self)
 
+var turn = 0
+var cur_skl = null
+func sel_skl():
+	for queue in skl_queue:
+		if queue.turn == turn:
+			cur_skl = skl[queue.index]
+			return cur_skl
+	return skl[rndSelIndexByRate()]
+	
+func rndSelIndexByRate():
+	var sum:int = 0
+	for r in skl_rate:
+		sum += r
+	var roll = randi()%sum
+	var count = 0
+	for i in len(skl_rate):
+		count += skl_rate[i]
+		if count>=roll:
+			return i
+	return len(skl_rate)-1
+
 func ShowAction():
-	var skl = data.skl[action_index]
-	match skl.type:
-		"dmg":
-			$EnemyUI/plan.text = "%s %d"%["Attack",sklDmg(skl)]
+	var skl = sel_skl()
+	for e in skl.efx:
+		if e.type == "dmg":
+			$EnemyUI/plan.text = "%s %d"%["Damage",sklDmg(e)]
 
 func Action():
-	var skl = data.skl[action_index]
-	print("%s action use %s"%[enemy_name,str(skl)])
-	match skl.type:
-		"dmg":Attack(skl)
-	action_index = posmod(action_index+1,len(data.skl_loop))
+	blk = 0
+	var skl = sel_skl()
+	print("%s action use %s"%[enemy_name,str(skl.name)])
+	for e in skl.efx:
+		match e.type:
+			"dmg":Attack(e)
+			"blk":
+				print_debug("Gain_Block:",e.val)
+				blk+=e.val
+			"str","dex":GlbAct.modDict(e,attr)
+			"vul","weak","frail","entangle":
+				print_debug("affix status:",e.type)
+				GlbAct.GetChara().ModStatus(e)
+			"script":
+				print_debug("script:",str(e))
+			_:print_debug("unknow efx:",str(e))
+	emit_signal("end_turn")
+	turn += 1
 
 func Attack(dat):
 	var dmg = sklDmg(dat)

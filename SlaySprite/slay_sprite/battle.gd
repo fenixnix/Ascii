@@ -8,7 +8,7 @@ func Start(dat):
 	refresh()
 	for e in dat.get("enm",[]):
 		$BattleGround.AddEnm(GlbDb.enmDict[e])
-	
+
 	$UI/Hands.visible = true
 	$UI/EndTurn.visible = true
 	

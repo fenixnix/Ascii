@@ -57,13 +57,13 @@
             },
             {
                 "mst": [
-                    "blue_slaver"
+                    "slaver_B"
                 ],
                 "rate": 4
             },
             {
                 "mst": [
-                    "red_slaver"
+                    "slaver_R"
                 ],
                 "rate": 2
             },
