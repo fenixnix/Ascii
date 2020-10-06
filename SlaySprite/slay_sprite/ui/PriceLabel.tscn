@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://ui/PriceLabel.gd" type="Script" id=1]
+[ext_resource path="res://image/icon/gold.png" type="Texture" id=2]
+
+[node name="PriceLabel" type="Control"]
+anchor_right = 0.125
+anchor_bottom = 0.107
+margin_bottom = -0.200005
+rect_min_size = Vector2( 128, 64 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="frame" type="PanelContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="price" type="ToolButton" parent="frame"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 121.0
+margin_bottom = 57.0
+rect_pivot_offset = Vector2( 698.849, 593 )
+text = "1000"
+icon = ExtResource( 2 )
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

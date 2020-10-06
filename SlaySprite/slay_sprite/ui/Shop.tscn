@@ -1,0 +1,122 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://ui/Shop.gd" type="Script" id=1]
+[ext_resource path="res://Card.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Relic.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Potion.tscn" type="PackedScene" id=4]
+
+[node name="Shop" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CardList" type="GridContainer" parent="."]
+anchor_right = 1.0
+margin_left = 52.0
+margin_top = 69.0
+margin_right = -61.0
+margin_bottom = 517.0
+columns = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Card" parent="CardList" instance=ExtResource( 2 )]
+margin_right = 179.0
+margin_bottom = 222.0
+
+[node name="Card2" parent="CardList" instance=ExtResource( 2 )]
+margin_left = 183.0
+margin_right = 362.0
+margin_bottom = 222.0
+
+[node name="Card3" parent="CardList" instance=ExtResource( 2 )]
+margin_left = 366.0
+margin_right = 545.0
+margin_bottom = 222.0
+
+[node name="Card4" parent="CardList" instance=ExtResource( 2 )]
+margin_left = 549.0
+margin_right = 728.0
+margin_bottom = 222.0
+
+[node name="Card5" parent="CardList" instance=ExtResource( 2 )]
+margin_left = 732.0
+margin_right = 911.0
+margin_bottom = 222.0
+
+[node name="Card6" parent="CardList" instance=ExtResource( 2 )]
+margin_top = 226.0
+margin_right = 179.0
+margin_bottom = 448.0
+
+[node name="Card7" parent="CardList" instance=ExtResource( 2 )]
+margin_left = 183.0
+margin_top = 226.0
+margin_right = 362.0
+margin_bottom = 448.0
+
+[node name="RelicList" type="HBoxContainer" parent="."]
+margin_left = 464.011
+margin_top = 352.665
+margin_right = 664.011
+margin_bottom = 416.665
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Relic" parent="RelicList" instance=ExtResource( 3 )]
+
+[node name="Relic2" parent="RelicList" instance=ExtResource( 3 )]
+margin_left = 68.0
+margin_right = 132.0
+
+[node name="Relic3" parent="RelicList" instance=ExtResource( 3 )]
+margin_left = 136.0
+margin_right = 200.0
+
+[node name="PotionList" type="HBoxContainer" parent="."]
+margin_left = 460.0
+margin_top = 438.0
+margin_right = 660.0
+margin_bottom = 502.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Potion" parent="PotionList" instance=ExtResource( 4 )]
+
+[node name="Potion2" parent="PotionList" instance=ExtResource( 4 )]
+margin_left = 68.0
+margin_right = 132.0
+
+[node name="Potion3" parent="PotionList" instance=ExtResource( 4 )]
+margin_left = 136.0
+margin_right = 200.0
+
+[node name="RemoveCard" type="Button" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -229.64
+margin_top = -262.941
+margin_right = -65.6395
+margin_bottom = -59.9412
+text = "Remove Card"
+
+[node name="Leave" type="Button" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -91.0
+margin_bottom = 35.0
+text = "X"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Leave" to="." method="_on_Leave_pressed"]

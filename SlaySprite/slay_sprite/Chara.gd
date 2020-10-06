@@ -2,9 +2,9 @@ extends Node
 
 class_name Chara
 
-var mhp = 100
-var hp = 100
-var en = 3
+var mhp:int = 100
+var hp:int = 100
+var en:int = 3
 
 var cards = []
 var relic = []
@@ -15,6 +15,12 @@ func Set(dat):
 	hp = mhp
 	class_ = dat["class"]
 	cards.clear()
+	GlbDat.gold = dat['$']
 	for card in dat.cards.keys():
 		for i in dat.cards[card]:
 			cards.append(GlbDb.cardDict[card])
+
+func Rest():
+	hp += mhp*.3
+	if hp>mhp:
+		hp = mhp

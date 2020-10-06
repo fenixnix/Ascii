@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://BattleGround.gd" type="Script" id=1]
 [ext_resource path="res://image/icon.png" type="Texture" id=2]
@@ -11,10 +11,8 @@
 [ext_resource path="res://image/shoulder2.png" type="Texture" id=9]
 [ext_resource path="res://image/bg.tres" type="Texture" id=10]
 [ext_resource path="res://TestPanel.gd" type="Script" id=11]
-[ext_resource path="res://Menu.gd" type="Script" id=12]
 [ext_resource path="res://image/icon/base.png" type="Texture" id=13]
 [ext_resource path="res://image/icon/discard.png" type="Texture" id=14]
-[ext_resource path="res://image/icon/deck.png" type="Texture" id=15]
 [ext_resource path="res://image/icon/countCircle.png" type="Texture" id=16]
 [ext_resource path="res://battleUI.gd" type="Script" id=17]
 
@@ -50,22 +48,6 @@ __meta__ = {
 
 [node name="UI" type="CanvasLayer" parent="."]
 script = ExtResource( 17 )
-
-[node name="Menu" type="HBoxContainer" parent="UI"]
-anchor_right = 1.0
-mouse_filter = 2
-alignment = 2
-script = ExtResource( 12 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Deck" type="Button" parent="UI/Menu"]
-margin_left = 914.0
-margin_right = 1024.0
-margin_bottom = 70.0
-text = "Deck"
-icon = ExtResource( 15 )
 
 [node name="Hands" type="Control" parent="UI"]
 anchor_left = 0.5
@@ -213,7 +195,6 @@ current = true
 
 [node name="Shake" type="Tween" parent="Camera2D"]
 script = ExtResource( 3 )
-[connection signal="pressed" from="UI/Menu/Deck" to="UI/Menu" method="_on_Deck_pressed"]
 [connection signal="pressed" from="UI/EndTurn" to="." method="_on_EndTurn_pressed"]
 [connection signal="pressed" from="UI/TestPanel/TestDraw" to="UI/TestPanel" method="_on_TestDraw_pressed"]
 [connection signal="pressed" from="UI/TestPanel/TestWin" to="UI/TestPanel" method="_on_TestWin_pressed"]

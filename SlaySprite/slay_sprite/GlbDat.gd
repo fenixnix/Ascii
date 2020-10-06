@@ -4,7 +4,8 @@ var chara
 var battle
 
 var map
-var currentLevel = 0
+var gold = 0
+var cur_floor = 0
 
 func CurrentSiteOptions():
-	return map[currentLevel]
+	return map[cur_floor]

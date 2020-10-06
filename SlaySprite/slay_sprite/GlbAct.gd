@@ -57,6 +57,19 @@ func EnterSite():
 	var site = yield(GlbUi,"select_site")
 	match site:
 		"enm":EncounterEnm()
+		"enmX":EncounterEnm()
+		"boss":EncounterEnm()
+		"chest":pass
+		"rest":
+			GlbDat.chara.Rest()
+			NextSite()
+		"forge":
+			var forge = GlbUi.LoadUI("Forge")
+			yield(forge,"finish")
+		"shop":
+			var shop = GlbUi.LoadUI("Shop")
+			yield(shop,"finish")
+		"?":pass
 		_:pass
 	print_debug("select site:",site)
 
@@ -111,7 +124,7 @@ func GetSetEnmLst(set):
 	return tmpList
 
 func NextSite():
-	GlbDat.currentLevel += 1
+	GlbDat.cur_floor += 1
 	EnterSite()
 
 static func modDict(dat,dict):

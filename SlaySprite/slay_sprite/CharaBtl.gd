@@ -89,7 +89,7 @@ func PlayCard(card,target = null):
 	if typeof(card.cost) != typeof("X"):
 		en -= card.cost
 	if target == null:
-		target = $"../BattleGrond".RndSel()
+		target = GlbAct.BattleGround().RndSel()
 		print_debug("Random Select Target:",target)
 	RunDesc(card,target)
 	if card.type == "Power":
@@ -105,6 +105,9 @@ func PlayCard(card,target = null):
 
 func RunDesc(card,target = null):
 	for d in card.desc:
+		if typeof(d) == typeof("string"):
+			print_debug("TODO:",d)
+			return
 		match d.type:
 			"dmg":DuelDamage(d,target)
 			"costHp":CostHp(d.get("val",0))
@@ -142,7 +145,7 @@ func ModPower(d):
 	GlbAct.modDict(d,power)
 
 func ExecuteScript(dat,card,target):
-	var s = load("res://script/%s.gd"%dat.val)
+	var s = load("res://skill/%s.gd"%dat.val)
 	s.run(self,card,target,dat.get("para",{}))
 
 func CostHp(amount):

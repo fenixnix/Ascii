@@ -18,10 +18,20 @@ func _init():
 	statusCardDict = res[1]
 	
 	lvDb=LoadDat("enm/enm_ect01")
+	
+	InitPotionDict()
 
 func RandomSelect():
 	var index = randi()%len(cardDict.keys())
 	return cardDict[cardDict.keys()[index]]
+
+func RndSelCard(cnt):
+	var lst = cardDict.keys().duplicate(true)
+	lst.shuffle()
+	var tmp = []
+	for c in cnt:
+		tmp.append(cardDict[lst.pop_front()].duplicate(true))
+	return tmp
 
 func LoadDb(file):
 	var db = LoadDat(file)
@@ -35,3 +45,24 @@ func LoadDat(file):
 
 func CardImage(img):
 	return FileRW.LoadTexture("../card/%s.png"%img)
+
+const potion_img_path = "res://image/potion/"
+var potionImgDict = {}
+func InitPotionDict():
+	var lst = FileRW.GetFolderList(potion_img_path)
+	for l in lst:
+		var tmpList = []
+		var fileList = FileRW.GetFileList(potion_img_path+l+"/","*.png")
+		tmpList.append(findInList(["outline"],fileList))
+		tmpList.append(findInList(["body","glass"],fileList))
+		tmpList.append(findInList(["hybrid"],fileList))
+		tmpList.append(findInList(["liquid"],fileList))
+		tmpList.append(findInList(["spots"],fileList))
+		potionImgDict[l] = tmpList
+
+func findInList(keys,list):
+	for l in list:
+		for key in keys:
+			if l.match("*%s*.png"%key):
+				return l
+	return false

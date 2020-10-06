@@ -1161,10 +1161,30 @@
         "class": "ironclad"
     },
     {
-        "desc": [{"type":"script","val":"statusAll","para":{"type":"weak","val":3}},
-            {"type":"script","val":"statusAll","para":{"type":"vul","val":3}},
+        "desc": [
+            {
+                "type": "script",
+                "val": "statusAll",
+                "para": {
+                    "type": "weak",
+                    "val": 3
+                }
+            },
+            {
+                "type": "script",
+                "val": "statusAll",
+                "para": {
+                    "type": "vul",
+                    "val": 3
+                }
+            },
             "Exhaust"
-        ],"upgrade":{"replace_script_para":{"val":2}},
+        ],
+        "upgrade": {
+            "replace_script_para": {
+                "val": 2
+            }
+        },
         "name": "Shockwave",
         "img": "red/Skill/shockwave",
         "rarity": "Uncommon",
@@ -1173,8 +1193,19 @@
         "class": "ironclad"
     },
     {
-        "desc": [{"type":"script","val":"spotWeakness","para":{"type":"str","val":3}}
-        ],"upgrade":{"val":1},
+        "desc": [
+            {
+                "type": "script",
+                "val": "spotWeakness",
+                "para": {
+                    "type": "str",
+                    "val": 3
+                }
+            }
+        ],
+        "upgrade": {
+            "val": 1
+        },
         "name": "Spot Weakness",
         "img": "red/Skill/spot_weakness",
         "rarity": "Uncommon",
@@ -1183,8 +1214,24 @@
         "class": "ironclad"
     },
     {
-        "desc": [{"type":"dmg","val":13},{"type":"weak","val":1},{"type":"vul","val":1}
-        ],"upgrade":{"weak":1,"vul":1},
+        "desc": [
+            {
+                "type": "dmg",
+                "val": 13
+            },
+            {
+                "type": "weak",
+                "val": 1
+            },
+            {
+                "type": "vul",
+                "val": 1
+            }
+        ],
+        "upgrade": {
+            "weak": 1,
+            "vul": 1
+        },
         "name": "Uppercut",
         "img": "red/Attack/uppercut",
         "rarity": "Uncommon",
@@ -1194,8 +1241,19 @@
     },
     {
         "desc": [
-            {"type":"script","val":"dmgAllX","para":{"dmg":5}}
-        ],"upgrade":{"replace_script_para":{"dmg":3}},
+            {
+                "type": "script",
+                "val": "dmgAllX",
+                "para": {
+                    "dmg": 5
+                }
+            }
+        ],
+        "upgrade": {
+            "replace_script_para": {
+                "dmg": 3
+            }
+        },
         "name": "Whirlwind",
         "img": "red/Attack/whirlwind",
         "rarity": "Uncommon",
@@ -1204,7 +1262,14 @@
         "class": "ironclad"
     },
     {
-        "desc": [{"type":"script","val":"gainPower","para":{"type":"barricade"}}
+        "desc": [
+            {
+                "type": "script",
+                "val": "gainPower",
+                "para": {
+                    "type": "barricade"
+                }
+            }
         ],
         "upgrade": {
             "cost": -1
@@ -1217,8 +1282,20 @@
         "class": "ironclad"
     },
     {
-        "desc": [{"type":"script","val":"berserk","para":{"vul":2}}
-        ],"upgrade":{"replace_script_para":{"vul":-1}},
+        "desc": [
+            {
+                "type": "script",
+                "val": "berserk",
+                "para": {
+                    "vul": 2
+                }
+            }
+        ],
+        "upgrade": {
+            "replace_script_para": {
+                "vul": -1
+            }
+        },
         "name": "Berserk",
         "img": "red/Power/berserk",
         "rarity": "Rare",
@@ -1227,8 +1304,15 @@
         "class": "ironclad"
     },
     {
-        "desc": [{"type":"dmg","val":32}
-        ],"upgrade":{"dmg":10},
+        "desc": [
+            {
+                "type": "dmg",
+                "val": 32
+            }
+        ],
+        "upgrade": {
+            "dmg": 10
+        },
         "name": "Bludgeon",
         "img": "red/Attack/bludgeon",
         "rarity": "Rare",
@@ -1238,8 +1322,14 @@
     },
     {
         "desc": [
-            {"type":"script","val":"costHpDrawCardOnStartTurn"}
-        ],"upgrade":{"add_desc":"Innate"},
+            {
+                "type": "script",
+                "val": "costHpDrawCardOnStartTurn"
+            }
+        ],
+        "upgrade": {
+            "add_desc": "Innate"
+        },
         "name": "Brutality",
         "img": "red/Power/brutality",
         "rarity": "Rare",
@@ -1248,7 +1338,11 @@
         "class": "ironclad"
     },
     {
-        "desc": [{"type":"script","val":"allSkillCost0Exhaust"}
+        "desc": [
+            {
+                "type": "script",
+                "val": "allSkillCost0Exhaust"
+            }
         ],
         "upgrade": {
             "cost": -1
@@ -1261,8 +1355,21 @@
         "class": "ironclad"
     },
     {
-        "desc": [{"type":"script","val":"gainAttrOnNewTurn","para":{"type":"str","val":2}}
-        ],"upgrade":{"replace_script_para":{"val":1}},
+        "desc": [
+            {
+                "type": "script",
+                "val": "gainAttrOnNewTurn",
+                "para": {
+                    "type": "str",
+                    "val": 2
+                }
+            }
+        ],
+        "upgrade": {
+            "replace_script_para": {
+                "val": 1
+            }
+        },
         "name": "Demon Form",
         "img": "red/Power/demon_form",
         "rarity": "Rare",
@@ -1282,7 +1389,11 @@
         "class": "ironclad"
     },
     {
-        "desc": [{"type":"script","val":"exhaustToHand"},
+        "desc": [
+            {
+                "type": "script",
+                "val": "exhaustToHand"
+            },
             "Exhaust"
         ],
         "upgrade": {
@@ -1296,10 +1407,17 @@
         "class": "ironclad"
     },
     {
-        "desc": [{"type":"dmg","val":10},
+        "desc": [
+            {
+                "type": "dmg",
+                "val": 10
+            },
             "If this kills a non-minion enemy, gain 3(4) permanent Max HP",
             "Exhaust"
-        ],"upgrade":{"dmg":2},
+        ],
+        "upgrade": {
+            "dmg": 2
+        },
         "name": "Feed",
         "img": "red/Attack/feed",
         "rarity": "Rare",

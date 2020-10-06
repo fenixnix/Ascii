@@ -1,0 +1,60 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://image/potion/bottle/body.png" type="Texture" id=1]
+[ext_resource path="res://image/potion/bottle/liquid.png" type="Texture" id=2]
+[ext_resource path="res://image/potion/bottle/outline.png" type="Texture" id=3]
+[ext_resource path="res://image/potion/bottle/spots.png" type="Texture" id=4]
+[ext_resource path="res://image/potion/potion_shadow.png" type="Texture" id=5]
+[ext_resource path="res://Potion.gd" type="Script" id=6]
+
+[node name="Potion" type="Control"]
+margin_right = 64.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 64, 64 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="potion_shadow" type="TextureRect" parent="."]
+margin_left = -0.561241
+margin_top = 8.97969
+margin_right = 63.4388
+margin_bottom = 72.9797
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="outline" type="TextureRect" parent="."]
+self_modulate = Color( 0.490196, 0.490196, 0.490196, 0.588235 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="liquid" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="spots" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="body" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

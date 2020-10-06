@@ -1,0 +1,75 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://ui/MainMenu.gd" type="Script" id=1]
+[ext_resource path="res://image/icon/deck.png" type="Texture" id=2]
+[ext_resource path="res://image/icon/floor.png" type="Texture" id=3]
+[ext_resource path="res://image/icon/panelGoldBag.png" type="Texture" id=4]
+[ext_resource path="res://image/icon/settings.png" type="Texture" id=5]
+[ext_resource path="res://image/icon/panelHeart.png" type="Texture" id=6]
+
+[node name="MainMenu" type="PanelContainer"]
+anchor_right = 1.0
+margin_bottom = 84.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Menu" type="HBoxContainer" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 1017.0
+margin_bottom = 79.0
+mouse_filter = 2
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Menu"]
+margin_top = 29.0
+margin_right = 53.0
+margin_bottom = 43.0
+text = "IronClan"
+
+[node name="HP" type="ToolButton" parent="Menu"]
+margin_left = 57.0
+margin_right = 154.0
+margin_bottom = 72.0
+text = "HP"
+icon = ExtResource( 6 )
+
+[node name="Gold" type="ToolButton" parent="Menu"]
+margin_left = 158.0
+margin_right = 255.0
+margin_bottom = 72.0
+text = "HP"
+icon = ExtResource( 4 )
+
+[node name="Floor" type="ToolButton" parent="Menu"]
+margin_left = 259.0
+margin_right = 356.0
+margin_bottom = 72.0
+text = "HP"
+icon = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="Menu"]
+margin_left = 360.0
+margin_top = 29.0
+margin_right = 850.0
+margin_bottom = 43.0
+size_flags_horizontal = 3
+
+[node name="Deck" type="Button" parent="Menu"]
+margin_left = 854.0
+margin_right = 930.0
+margin_bottom = 72.0
+icon = ExtResource( 2 )
+
+[node name="Setting" type="Button" parent="Menu"]
+margin_left = 934.0
+margin_right = 1010.0
+margin_bottom = 72.0
+icon = ExtResource( 5 )
+[connection signal="pressed" from="Menu/Deck" to="." method="_on_Deck_pressed"]

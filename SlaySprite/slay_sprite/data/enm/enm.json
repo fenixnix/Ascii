@@ -24,10 +24,6 @@
                 "efx": [
                     {
                         "type": "script",
-                        "val": 7
-                    },
-                    {
-                        "type": "blk",
                         "val": "gainAttrAtEndTurn",
                         "para": {
                             "type": "str",

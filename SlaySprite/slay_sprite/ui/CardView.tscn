@@ -36,10 +36,11 @@ __meta__ = {
 }
 
 [node name="Info" type="RichTextLabel" parent="."]
-anchor_left = 0.21677
-anchor_top = 0.119417
-anchor_right = 0.535129
-anchor_bottom = 0.869417
+visible = false
+anchor_left = 0.176746
+anchor_top = 0.782022
+anchor_right = 0.495105
+anchor_bottom = 0.905355
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": true

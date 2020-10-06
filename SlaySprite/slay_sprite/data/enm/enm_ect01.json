@@ -81,7 +81,7 @@
             },
             {
                 "mst": [
-                    "louse|acid_slime_M|spike_slime_M",
+                    "louse_R|louse_G|acid_slime_M|spike_slime_M",
                     "looter|cultist|red_slaver|blue_slaver"
                 ],
                 "rate": 3
@@ -89,7 +89,7 @@
             {
                 "mst": [
                     "fungi_beast|jaw_worm",
-                    "louse|acid_slime_M|spike_slime_M"
+                    "louse_R|louse_G|acid_slime_M|spike_slime_M"
                 ],
                 "rate": 3
             },

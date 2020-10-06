@@ -133,6 +133,20 @@ static func GetFileList(path,filter):
 					tmpList.append(f)
 	return tmpList
 
+static func GetFolderList(path):
+	var tmpList = []
+	var dir = Directory.new()
+	dir.open(path)
+	dir.list_dir_begin()
+	while true:
+		var f = dir.get_next()
+		if f == "":
+			break;
+		else:
+			if !f.match("*.*"):
+				tmpList.append(f)
+	return tmpList
+
 static func LoadSequnce(path):
 	var imgSeq = AnimatedTexture.new()
 	var filter = ["*.png","*.jpg","*.bmp","*.svg"]
