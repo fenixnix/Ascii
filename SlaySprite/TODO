@@ -19,3 +19,10 @@ relic
 potion
 
 战斗掉落清单，金币，药水，卡牌
+
+potion:
+40%dropRate
+
+Common:65%
+Uncommon:35%
+Rare:10%

@@ -1,0 +1,21 @@
+Attack Potion	Common	Add (2 copies of) 1 of 3 random Attack cards to your hand, it costs 0 this turn.
+Blessing of the Forge	Common	Upgrade all cards in your hand for the rest of combat.
+Block Potion	Common	Gain 12 (24) Icon Block.png Block.
+Colorless Potion	Common	Choose 1 of 3 random Colorless cards to add (2 copies of it) to your hand, it costs 0 this turn.
+Dexterity Potion	Common	Gain 2 (4) Icon Dexterity.png Dexterity.
+Energy Potion	Common	Gain 2 (4) Energy.
+Explosive Potion	Common	Deal 10 (20) Damage to all enemies.
+Fear Potion	Common	Apply 3 (6) Icon Vulnerable.png Vulnerable.
+Fire Potion	Common	Deal 20 (40) Damage to target enemy.
+Flex Potion	Common	Gain 5 (10) Icon Strength.png Strength. At the end of your turn, lose 5 (10) Icon Strength.png Strength.
+Power Potion	Common	Add (2 copies of) 1 of 3 random Power cards to your hand, it costs 0 this turn.
+Skill Potion	Common	Add (2 copies of) 1 of 3 random Skill cards to your hand, it costs 0 this turn.
+Speed Potion	Common	Gain 5 (10) Icon Dexterity.png Dexterity. At the end of your turn, lose 5 (10) Icon Dexterity.png Dexterity.
+Strength Potion	Common	Gain 2 (4) Icon Strength.png Strength.
+Swift Potion	Common	Draw 3 (6) cards.
+Weak Potion	Common	Apply 3 (6) Icon Weak.png Weak to target enemy.
+Focus Potion	Common (Defect only)	Gain 2 (4) Icon Focus.png Focus.
+Blood Potion	Common (Ironclad only)	Heal for 20% (40%) of your Max HP.
+Poison Potion	Common (Silent only)	Apply 6 (12) Icon Poison.png Poison to target enemy.
+Bottled Miracle	Common (Watcher only)	Add 2 (4) Miracles to your hand.
+

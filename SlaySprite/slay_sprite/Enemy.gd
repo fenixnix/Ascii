@@ -30,6 +30,7 @@ func Set(enm):
 	skl_queue = enm.get("skl_queue",[])
 	skl_rate = enm.get("skl_rate",[])
 	refresh_info()
+	ShowAction()
 
 func refresh_info():
 	$EnemyUI/Info.Set(self)
@@ -57,9 +58,11 @@ func rndSelIndexByRate():
 
 func ShowAction():
 	var skl = sel_skl()
+	var dmg = 0
 	for e in skl.efx:
 		if e.type == "dmg":
-			$EnemyUI/plan.text = "%s %d"%["Damage",sklDmg(e)]
+			dmg += sklDmg(e)
+	$EnemyUI/Intent.Set(skl,dmg)
 
 func Action():
 	blk = 0

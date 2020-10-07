@@ -44,3 +44,6 @@ func rnd_card_price(card):
 func _on_Leave_pressed():
 	emit_signal("finish")
 	queue_free()
+
+func _on_RemoveCard_pressed():
+	GlbAct.RemoveCard()

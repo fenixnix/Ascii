@@ -21,7 +21,6 @@
 *.zip
 
 /Arkham horror/card/
-/Slay&Sprite/slay_sprite/image
-/SlaySprite/card
+/SlaySprite/slay_sprite/image/card/
 # Dependency directories (remove the comment below to include it)
 # vendor/

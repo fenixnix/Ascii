@@ -1,0 +1,257 @@
+{
+    "common": [
+        {
+            "name": "Attack Potion",
+            "efx": {
+                "type": "script",
+                "val": "rndSelCard",
+                "para": {
+                    "type": "Attack",
+                    "cnt": 1,
+                    "sel_cnt": 3,
+                    "cost": 0
+                }
+            }
+        },
+        {
+            "name": "Blessing of the Forge",
+            "efx": [
+                {
+                    "val": "upgradeAllHand"
+                }
+            ]
+        },
+        {
+            "name": "Block Potion",
+            "efx": {
+                "type": "blk",
+                "val": 12
+            }
+        },
+        {
+            "name": "Gray Potion",
+            "efx": {
+                "type": "script",
+                "val": "rndSelCard",
+                "para": {
+                    "type": "gray",
+                    "cnt": 1,
+                    "sel_cnt": 3,
+                    "cost": 0
+                }
+            }
+        },
+        {
+            "name": "Dexterity Potion",
+            "efx": {
+                "type": "dex",
+                "val": 2
+            }
+        },
+        {
+            "name": "Energy Potion",
+            "efx": {
+                "type": "en",
+                "val": 2
+            }
+        },
+        {
+            "name": "Explosive Potion",
+            "efx": {
+                "type": "dmg_all",
+                "val": 10
+            }
+        },
+        {
+            "name": "Fear Potion",
+            "efx": {
+                "type": "vul",
+                "val": 3
+            }
+        },
+        {
+            "name": "Fire Potion",
+            "efx": {
+                "type": "dmg",
+                "val": 20
+            }
+        },
+        {
+            "name": "Flex Potion",
+            "efx": {
+                "type": "script",
+                "val": "oneTurnStr",
+                "para": {
+                    "type": "str",
+                    "val": 5
+                }
+            }
+        },
+        {
+            "name": "Power Potion",
+            "efx": {
+                "type": "script",
+                "val": "rndSelCard",
+                "para": {
+                    "type": "Power",
+                    "cnt": 1,
+                    "sel_cnt": 3,
+                    "cost": 0
+                }
+            }
+        },
+        {
+            "name": "Skill Potion",
+            "efx": {
+                "type": "script",
+                "val": "rndSelCard",
+                "para": {
+                    "type": "Skill",
+                    "cnt": 1,
+                    "sel_cnt": 3,
+                    "cost": 0
+                }
+            }
+        },
+        {
+            "name": "Speed Potion",
+            "efx": {
+                "type": "script",
+                "val": "oneTurnStr",
+                "para": {
+                    "type": "dex",
+                    "val": 5
+                }
+            }
+        },
+        {
+            "name": "Strength Potion",
+            "efx": {
+                "type": "str",
+                "val": 2
+            }
+        },
+        {
+            "name": "Swift Potion",
+            "efx": {
+                "type": "draw",
+                "val": 3
+            }
+        },
+        {
+            "name": "Weak Potion",
+            "efx": {
+                "type": "weak",
+                "val": 3
+            }
+        },
+        {
+            "name": "Focus Potion",
+            "efx": "(Defect only) Gain 2 (4) Focus."
+        },
+        {
+            "name": "Blood Potion",
+            "efx": "(Ironclad only) Heal for 20% (40%) of your Max HP."
+        },
+        {
+            "name": "Poison Potion",
+            "efx": "(Silent only) Apply 6 (12) Poison to target enemy."
+        },
+        {
+            "name": "Bottled Miracle",
+            "efx": "(Watcher only) Add 2 (4) Miracles to your hand."
+        }
+    ],
+    "uncommon": [
+        {
+            "name": "Ancient Potion",
+            "efx": "Gain 1 (2) Icon Artifact.png Artifact."
+        },
+        {
+            "name": "Distilled Chaos",
+            "efx": "Play the top 3 (6) cards of your draw pile."
+        },
+        {
+            "name": "Duplication Potion",
+            "efx": "This turn, your next card (next 2 cards) is played twice."
+        },
+        {
+            "name": "Essence of Steel",
+            "efx": "Gain 4 (8) Plated Armor."
+        },
+        {
+            "name": "Gambler's Brew",
+            "efx": "Discard any number of cards, then draw that many."
+        },
+        {
+            "name": "Liquid Bronze",
+            "efx": "Gain 3 (6) Thorns."
+        },
+        {
+            "name": "Liquid Memories",
+            "efx": "Choose a card (2 cards) in your discard pile and return it (them) to your hand. It costs (They cost) 0 this turn."
+        },
+        {
+            "name": "Regen Potion",
+            "efx": "Gain 5 (10) Regeneration."
+        },
+        {
+            "name": "Potion of Capacity",
+            "efx": " (Defect only)Gain 2 (4) Orb slots."
+        },
+        {
+            "name": "Elixir",
+            "efx": " (Ironclad only)Exhaust any number of cards in your hand."
+        },
+        {
+            "name": "Cunning Potion",
+            "efx": " (Silent only)Add 3 (6) Upgraded Shivs to your hand."
+        },
+        {
+            "name": "Stance Potion",
+            "efx": " (Watcher only)Enter Calm or Wrath."
+        }
+    ],
+    "rare": [
+        {
+            "name": "Cultist Potion",
+            "efx": "Gain 1 (2) Icon Ritual.png Ritual."
+        },
+        {
+            "name": "Entropic Brew",
+            "efx": "Fill all your empty potion slots with random potions."
+        },
+        {
+            "name": "Fairy in a Bottle",
+            "efx": "When you would die, heal to 30% (60%) of your Max HP instead and discard this potion."
+        },
+        {
+            "name": "Fruit Juice",
+            "efx": "Gain 5 (10) Max HP."
+        },
+        {
+            "name": "Smoke Bomb",
+            "efx": "Escape from a non-boss combat. Receive no rewards."
+        },
+        {
+            "name": "Snecko Oil",
+            "efx": "Draw 5 (10) cards. Randomize the costs of all cards in your hand for the rest of the combat."
+        },
+        {
+            "name": "Essence of Darkness",
+            "efx": " (Defect only)Channel 1 (2) Dark.png Dark for each orb slot."
+        },
+        {
+            "name": "Heart of Iron",
+            "efx": " (Ironclad only)Gain 6 (12) Icon Metallicize.png Metallicize."
+        },
+        {
+            "name": "Ghost In A Jar",
+            "efx": " (Silent only)Gain 1 (2) Icon Intangible.png Intangible."
+        },
+        {
+            "name": "Ambrosia",
+            "efx": " (Watcher only)Enter Divinity Stance."
+        }
+    ]
+}

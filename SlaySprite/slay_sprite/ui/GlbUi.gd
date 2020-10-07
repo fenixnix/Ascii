@@ -34,4 +34,6 @@ func _on_DbView_pressed():
 
 func _on_NextSite_pressed():
 	GlbAct.NextSite()
-	
+
+func _on_Forge_pressed():
+	GlbAct.Forge()

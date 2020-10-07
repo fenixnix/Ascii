@@ -24,5 +24,12 @@ margin_top = 24.0
 margin_right = 89.0
 margin_bottom = 44.0
 text = "Next Site"
+
+[node name="Forge" type="Button" parent="TestPanel"]
+margin_top = 48.0
+margin_right = 89.0
+margin_bottom = 68.0
+text = "$Forge"
 [connection signal="pressed" from="TestPanel/DbView" to="." method="_on_DbView_pressed"]
 [connection signal="pressed" from="TestPanel/NextSite" to="." method="_on_NextSite_pressed"]
+[connection signal="pressed" from="TestPanel/Forge" to="." method="_on_Forge_pressed"]

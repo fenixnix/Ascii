@@ -43,7 +43,7 @@ func Set(_chara):
 	refresh()
 
 func refresh():
-	$Info.Set(self)
+	$"../UI/CharaPanel".Set(self)
 
 func StartNewTurn():
 	en = chara.en

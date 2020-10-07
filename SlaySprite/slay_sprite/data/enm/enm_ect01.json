@@ -82,7 +82,7 @@
             {
                 "mst": [
                     "louse_R|louse_G|acid_slime_M|spike_slime_M",
-                    "looter|cultist|red_slaver|blue_slaver"
+                    "looter|cultist|slaver_R|slaver_B"
                 ],
                 "rate": 3
             },

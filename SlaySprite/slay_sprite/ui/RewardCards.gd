@@ -9,6 +9,7 @@ func Reward(type="red",lv=0,cnt=3):
 	$ItemList.clear()
 	for card in lst:
 		$ItemList.add_item(card.name)
+	_on_ItemList_item_selected(0)
 
 func rand(type,lv):
 	match type:

@@ -240,7 +240,7 @@
         "desc": [
             {
                 "type": "dmg",
-                "val": "14",
+                "val": 14,
                 "str_bonus": 3
             }
         ],

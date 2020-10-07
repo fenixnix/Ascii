@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://ui/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://image/icon/deck.png" type="Texture" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://image/icon/panelGoldBag.png" type="Texture" id=4]
 [ext_resource path="res://image/icon/settings.png" type="Texture" id=5]
 [ext_resource path="res://image/icon/panelHeart.png" type="Texture" id=6]
+[ext_resource path="res://image/potion/potion_placeholder.png" type="Texture" id=7]
+[ext_resource path="res://ui/PotionSlots.gd" type="Script" id=8]
 
 [node name="MainMenu" type="PanelContainer"]
 anchor_right = 1.0
@@ -54,8 +56,31 @@ margin_bottom = 72.0
 text = "HP"
 icon = ExtResource( 3 )
 
-[node name="Label" type="Label" parent="Menu"]
+[node name="PotionSlots" type="HBoxContainer" parent="Menu"]
 margin_left = 360.0
+margin_right = 560.0
+margin_bottom = 72.0
+script = ExtResource( 8 )
+
+[node name="PotionSlot" type="TextureRect" parent="Menu/PotionSlots"]
+margin_right = 64.0
+margin_bottom = 72.0
+texture = ExtResource( 7 )
+
+[node name="PotionSlot2" type="TextureRect" parent="Menu/PotionSlots"]
+margin_left = 68.0
+margin_right = 132.0
+margin_bottom = 72.0
+texture = ExtResource( 7 )
+
+[node name="PotionSlot3" type="TextureRect" parent="Menu/PotionSlots"]
+margin_left = 136.0
+margin_right = 200.0
+margin_bottom = 72.0
+texture = ExtResource( 7 )
+
+[node name="Label" type="Label" parent="Menu"]
+margin_left = 564.0
 margin_top = 29.0
 margin_right = 850.0
 margin_bottom = 43.0

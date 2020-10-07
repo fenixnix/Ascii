@@ -1,8 +1,53 @@
-[gd_scene format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Card.tscn" type="PackedScene" id=1]
+[ext_resource path="res://ui/Forge.gd" type="Script" id=2]
 
 [node name="Forge" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Card" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -840.592
+margin_top = -390.482
+margin_right = 183.408
+margin_bottom = 209.518
+
+[node name="Card2" parent="." instance=ExtResource( 1 )]
+margin_left = 360.878
+margin_top = 388.852
+margin_right = 360.878
+margin_bottom = 388.852
+
+[node name="Deck" type="ItemList" parent="."]
+anchor_left = 0.512695
+anchor_top = 0.0583333
+anchor_right = 0.958008
+anchor_bottom = 0.936667
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OK" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -52.2498
+margin_top = -61.5305
+margin_right = 51.7502
+margin_bottom = -18.5305
+text = "OK"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="item_selected" from="Deck" to="." method="_on_Deck_item_selected"]
+[connection signal="pressed" from="OK" to="." method="_on_OK_pressed"]

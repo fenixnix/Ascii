@@ -13,12 +13,12 @@ func Set(list):
 		match l:
 			"enm":btn.icon = mapIcon("monster")
 			"enmX":btn.icon = mapIcon("elite")
-			"?":btn.icon = mapIcon("event")
+			"?":btn.icon = mapIcon("unknown")
 			"shop":btn.icon = mapIcon("shop")
 			"chest":btn.icon = mapIcon("chest")
-			"forge":btn.icon = mapIcon("dot1")
+			"forge":btn.icon = mapIcon("vintage")
 			"rest":btn.icon = mapIcon("rest")
-			"boss":btn.icon = mapIcon("heart")
+			"boss":btn.icon = mapIcon("boss")
 		$ItemList.add_child(btn)
 		btn.connect("pressed",self,"on_select",[l])
 
@@ -27,4 +27,4 @@ func on_select(type):
 	queue_free()
 
 func mapIcon(icon):
-	return load("res://image/map/%s.png"%icon)
+	return load("res://image/icon/%s.png"%icon)

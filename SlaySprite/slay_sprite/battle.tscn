@@ -1,20 +1,28 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://BattleGround.gd" type="Script" id=1]
-[ext_resource path="res://image/icon.png" type="Texture" id=2]
+[ext_resource path="res://image/icon/energyRedVFX.png" type="Texture" id=2]
 [ext_resource path="res://Shake.gd" type="Script" id=3]
 [ext_resource path="res://CharaBtl.gd" type="Script" id=4]
 [ext_resource path="res://Hands.gd" type="Script" id=5]
 [ext_resource path="res://battle.gd" type="Script" id=6]
 [ext_resource path="res://CharaInfoRT.gd" type="Script" id=7]
 [ext_resource path="res://NoTargetCast.gd" type="Script" id=8]
-[ext_resource path="res://image/shoulder2.png" type="Texture" id=9]
+[ext_resource path="res://image/chara/ironclad.png" type="Texture" id=9]
 [ext_resource path="res://image/bg.tres" type="Texture" id=10]
 [ext_resource path="res://TestPanel.gd" type="Script" id=11]
+[ext_resource path="res://image/icon/defend.png" type="Texture" id=12]
 [ext_resource path="res://image/icon/base.png" type="Texture" id=13]
 [ext_resource path="res://image/icon/discard.png" type="Texture" id=14]
+[ext_resource path="res://image/whiteSquare32.png" type="Texture" id=15]
 [ext_resource path="res://image/icon/countCircle.png" type="Texture" id=16]
 [ext_resource path="res://battleUI.gd" type="Script" id=17]
+[ext_resource path="res://image/green_button12.png" type="Texture" id=18]
+[ext_resource path="res://ui/CharaPanel.gd" type="Script" id=19]
+[ext_resource path="res://font/number.tres" type="DynamicFont" id=20]
+[ext_resource path="res://font/label.tres" type="DynamicFont" id=21]
+[ext_resource path="res://image/endTurnButton.png" type="Texture" id=22]
+[ext_resource path="res://image/endTurnButtonGlow.png" type="Texture" id=23]
 
 [node name="battle" type="Node"]
 script = ExtResource( 6 )
@@ -110,16 +118,27 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="EndTurn" type="Button" parent="UI"]
+[node name="EndTurn" type="TextureButton" parent="UI"]
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -219.575
-margin_top = -116.931
-margin_right = -152.575
-margin_bottom = -96.9308
+margin_left = -267.617
+margin_top = -165.877
+margin_right = -46.6171
+margin_bottom = -47.877
+texture_normal = ExtResource( 22 )
+texture_hover = ExtResource( 23 )
+expand = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="UI/EndTurn"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 21 )
 text = "End Turn"
+align = 1
+valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -154,23 +173,97 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Player" type="Node2D" parent="."]
-position = Vector2( -417.383, -199.102 )
-script = ExtResource( 4 )
+[node name="CharaPanel" type="Control" parent="UI"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -63.0
+margin_right = 309.0
+margin_bottom = 63.0
+script = ExtResource( 19 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Chara" type="Sprite" parent="Player"]
+[node name="EN" type="TextureRect" parent="UI/CharaPanel"]
+margin_right = 64.0
+margin_bottom = 64.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
 
-[node name="Info" type="RichTextLabel" parent="Player"]
-margin_left = -63.4073
-margin_top = 49.9594
-margin_right = 208.593
-margin_bottom = 178.959
+[node name="Label" type="Label" parent="UI/CharaPanel/EN"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 20 )
+text = "3/3"
+align = 1
+valign = 1
+
+[node name="Shield" type="TextureRect" parent="UI/CharaPanel"]
+margin_left = 47.7681
+margin_top = 0.353546
+margin_right = 111.768
+margin_bottom = 64.3535
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 12 )
+expand = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="UI/CharaPanel/Shield"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 20 )
+text = "3/3"
+align = 1
+valign = 1
+
+[node name="HP" type="TextureProgress" parent="UI/CharaPanel"]
+margin_left = 108.64
+margin_top = 20.1122
+margin_right = 306.64
+margin_bottom = 44.1122
+value = 50.0
+texture_under = ExtResource( 15 )
+texture_progress = ExtResource( 18 )
+nine_patch_stretch = true
+stretch_margin_left = 5
+stretch_margin_top = 5
+stretch_margin_right = 5
+stretch_margin_bottom = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="UI/CharaPanel/HP"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 20 )
+text = "100/100"
+align = 1
+valign = 1
+
+[node name="Info" type="RichTextLabel" parent="UI/CharaPanel"]
+margin_left = 111.842
+margin_top = 51.1433
+margin_right = 304.842
+margin_bottom = 129.143
 scroll_active = false
 script = ExtResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Player" type="Node" parent="."]
+script = ExtResource( 4 )
 
 [node name="BattleGround" type="Node2D" parent="."]
 position = Vector2( 0, 79 )

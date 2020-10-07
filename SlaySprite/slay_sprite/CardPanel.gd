@@ -23,7 +23,8 @@ func Set(card):
 	$Image.texture = GlbDb.CardImage(card.img)
 	$Type.self_modulate = type_dict[card.get("type","Attack")]
 	$Type/Label.text = card.type
-	$Desc.text = PoolStringArray(card.desc).join("\n")
+	#$Desc.text = PoolStringArray(card.desc).join("\n")
+	$Desc.Set(card.desc)
 
 func Upgrade():
 	#TODO

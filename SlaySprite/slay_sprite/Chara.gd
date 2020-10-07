@@ -8,6 +8,7 @@ var en:int = 3
 
 var cards = []
 var relic = []
+var potionSlots = [{"potion":null},{"potion":null},{"potion":null}]
 var class_ = ""
 
 func Set(dat):
@@ -18,7 +19,7 @@ func Set(dat):
 	GlbDat.gold = dat['$']
 	for card in dat.cards.keys():
 		for i in dat.cards[card]:
-			cards.append(GlbDb.cardDict[card])
+			cards.append(GlbDb.cardDict[card].duplicate(true))
 
 func Rest():
 	hp += mhp*.3

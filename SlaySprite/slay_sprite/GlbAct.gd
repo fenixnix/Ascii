@@ -1,7 +1,16 @@
 extends Node
 
+#func _ready():
+#	randomize()
+#	GetSetEnmLst([
+#					"louse_R|louse_G*2"
+#				])
+
 func GetChara():
 	return GlbDat.battle.plrBtl
+
+func RefreshMainMenu():
+	get_node("/root/game/UI/MainMenu").Refresh()
 
 func PlayCard(card,target = null):
 	GetChara().PlayCard(card,target)
@@ -9,6 +18,16 @@ func PlayCard(card,target = null):
 func RndGenAtkCard():
 	#TODO
 	return GlbDb.cardDict["Strike"].duplicate(true)
+
+func Forge():
+	var forge = GlbUi.LoadUI("Forge")
+	forge.Set(GlbDat.chara.cards)
+	yield(forge,"finish")
+
+func RemoveCard():
+	var remove = GlbUi.LoadUI("RemoveCard")
+	remove.Set(GlbDat.chara.cards)
+	yield(remove,"finish")
 
 func UpgradeCard(card):
 	var dict = card.get("upgrade",{})
@@ -50,7 +69,11 @@ func BattleGround():
 func BattleWin():
 	BattleGround().Stop()
 	print_debug("Battle Win!!!")
-	GlbUi.CardReward()
+	var ui = GlbUi.LoadUI("Reward")
+	yield(ui,"finish")
+
+	RefreshMainMenu()
+	NextSite()
 
 func EnterSite():
 	GlbUi.SelectSite(GlbDat.CurrentSiteOptions())
@@ -63,9 +86,7 @@ func EnterSite():
 		"rest":
 			GlbDat.chara.Rest()
 			NextSite()
-		"forge":
-			var forge = GlbUi.LoadUI("Forge")
-			yield(forge,"finish")
+		"forge":Forge()
 		"shop":
 			var shop = GlbUi.LoadUI("Shop")
 			yield(shop,"finish")
@@ -119,8 +140,10 @@ func GetSetEnmLst(set):
 		for n in num:
 			if mst.find("|")!=-1:
 				var pairs = mst.split('|')
-				mst = pairs[randi()%len(pairs)]
-			tmpList.append(mst)
+				var rand_sel_mst = pairs[randi()%len(pairs)]
+				tmpList.append(rand_sel_mst)
+			else:
+				tmpList.append(mst)
 	return tmpList
 
 func NextSite():

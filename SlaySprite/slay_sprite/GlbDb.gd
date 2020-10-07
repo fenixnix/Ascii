@@ -4,6 +4,7 @@ var cardDb = []
 var cardDict = {}
 var enmDict = {}
 var statusCardDict = {}
+var potionDb = {}
 
 var lvDb = {}
 
@@ -16,7 +17,7 @@ func _init():
 	enmDict = FileRW.LoadJsonFileArray2Dict(dbPath%"enm/enm")
 	res = LoadDb("status")
 	statusCardDict = res[1]
-	
+	potionDb=LoadDat("potion")
 	lvDb=LoadDat("enm/enm_ect01")
 	
 	InitPotionDict()
@@ -44,7 +45,8 @@ func LoadDat(file):
 	return FileRW.LoadJsonFile(dbPath%file)
 
 func CardImage(img):
-	return FileRW.LoadTexture("../card/%s.png"%img)
+#	return FileRW.LoadTexture("../card/%s.png"%img)
+	return FileRW.LoadTexture("res://image/card/%s.png"%img)
 
 const potion_img_path = "res://image/potion/"
 var potionImgDict = {}
@@ -59,6 +61,10 @@ func InitPotionDict():
 		tmpList.append(findInList(["liquid"],fileList))
 		tmpList.append(findInList(["spots"],fileList))
 		potionImgDict[l] = tmpList
+
+func RandomPotionByRarity(rarity):
+	var set = potionDb[rarity]
+	return set[randi()%len(set)].duplicate(true)
 
 func findInList(keys,list):
 	for l in list:
