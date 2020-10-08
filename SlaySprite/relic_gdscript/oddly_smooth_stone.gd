@@ -1,6 +1,7 @@
 
 #Desc:At the start of each combat, gain 1 Dexterity.
 func OnBattleStart(chara:CharaBtl):
+    chara.ModAttr({"type":"dex","val":1})
     pass
 
 func OnBattleEnd(chara:CharaBtl):
@@ -9,6 +10,6 @@ func OnBattleEnd(chara:CharaBtl):
 func OnEnterSite(chara,site):
     pass
 
-func OnPickUp():
+func OnPickUp(chara):
     pass
             

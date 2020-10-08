@@ -1,7 +1,7 @@
 
 #Desc:Whenever you take damage, deal 3 damage back.
 func OnBattleStart(chara:CharaBtl):
-    pass
+    chara.ModPower({"type":"thorn","val":3})
 
 func OnBattleEnd(chara:CharaBtl):
     pass
@@ -9,6 +9,6 @@ func OnBattleEnd(chara:CharaBtl):
 func OnEnterSite(chara,site):
     pass
 
-func OnPickUp():
+func OnPickUp(chara):
     pass
             

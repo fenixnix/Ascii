@@ -1,5 +1,5 @@
 
-#Desc:Whenever you obtain a Curse, increase your Max HP by 6.
+#Desc:Whenever you obtain a Curse, increase your Max HP by 6. #TODO
 func OnBattleStart(chara:CharaBtl):
     pass
 
@@ -9,6 +9,6 @@ func OnBattleEnd(chara:CharaBtl):
 func OnEnterSite(chara,site):
     pass
 
-func OnPickUp():
+func OnPickUp(chara):
     pass
             

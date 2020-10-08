@@ -1,7 +1,8 @@
 
 #Desc:At the start of each combat, apply 1 Vulnerable to ALL enemies.
 func OnBattleStart(chara:CharaBtl):
-    pass
+    for enm in GlbAct.BattleGround().get_children():
+        enm.ModStatus({"type":"vul","val":1})
 
 func OnBattleEnd(chara:CharaBtl):
     pass
@@ -9,6 +10,6 @@ func OnBattleEnd(chara:CharaBtl):
 func OnEnterSite(chara,site):
     pass
 
-func OnPickUp():
+func OnPickUp(chara):
     pass
             

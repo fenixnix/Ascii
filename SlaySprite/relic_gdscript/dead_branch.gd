@@ -1,5 +1,5 @@
 
-#Desc:Whenever you Exhaust a card, add a random card to your hand.
+#Desc:Whenever you Exhaust a card, add a random card to your hand.#TODO
 func OnBattleStart(chara:CharaBtl):
     pass
 
@@ -9,6 +9,6 @@ func OnBattleEnd(chara:CharaBtl):
 func OnEnterSite(chara,site):
     pass
 
-func OnPickUp():
+func OnPickUp(chara):
     pass
             

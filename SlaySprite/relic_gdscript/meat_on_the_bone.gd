@@ -4,11 +4,12 @@ func OnBattleStart(chara:CharaBtl):
     pass
 
 func OnBattleEnd(chara:CharaBtl):
-    pass
-
+    if chara.hp<chara.mhp/2:
+        chara.Heal(12)
+        
 func OnEnterSite(chara,site):
     pass
 
-func OnPickUp():
+func OnPickUp(chara):
     pass
             

@@ -9,6 +9,8 @@ func OnBattleEnd(chara:CharaBtl):
 func OnEnterSite(chara,site):
     pass
 
-func OnPickUp():
+func OnPickUp(chara):
+    chara.mhp += 10
+    chara.hp += 10
     pass
             

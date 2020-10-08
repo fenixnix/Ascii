@@ -1,6 +1,7 @@
 
 #Desc:At the start of each combat, draw 2 additional cards.
 func OnBattleStart(chara:CharaBtl):
+    chara.Draw(2)
     pass
 
 func OnBattleEnd(chara:CharaBtl):
@@ -9,6 +10,6 @@ func OnBattleEnd(chara:CharaBtl):
 func OnEnterSite(chara,site):
     pass
 
-func OnPickUp():
+func OnPickUp(chara):
     pass
             

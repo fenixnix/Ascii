@@ -9,6 +9,7 @@ func OnBattleEnd(chara:CharaBtl):
 func OnEnterSite(chara,site):
     pass
 
-func OnPickUp():
-    pass
+func OnPickUp(chara):
+    chara.en += 1
+    GlbDat.card_dat.option_cnt -= 2
             

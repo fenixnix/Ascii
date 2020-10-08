@@ -46,7 +46,11 @@ func refresh():
 	$"../UI/CharaPanel".Set(self)
 
 func StartNewTurn():
-	en = chara.en
+	if GlbDat.marks.get("en_conserved",false):
+		en += chara.en
+	else:
+		en = chara.en
+		
 	if !power.has("barricade"):
 		blk = 0
 	emit_signal("new_turn")
@@ -131,9 +135,7 @@ func GainBlock(dat):
 	emit_signal("gain_block",blkVal)
 
 func Heal(val):
-	chara.hp += val
-	if chara.hp > chara.mhp:
-		chara.hp = chara.mhp
+	chara.Heal(val)
 
 func ModAttr(d):
 	GlbAct.modDict(d,attr)

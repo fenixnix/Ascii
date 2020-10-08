@@ -9,6 +9,5 @@ func OnBattleEnd(chara:CharaBtl):
 func OnEnterSite(chara,site):
     pass
 
-func OnPickUp():
-    pass
-            
+func OnPickUp(chara):
+    chara.GainGold(300)            

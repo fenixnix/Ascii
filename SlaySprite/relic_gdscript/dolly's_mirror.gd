@@ -9,6 +9,6 @@ func OnBattleEnd(chara:CharaBtl):
 func OnEnterSite(chara,site):
     pass
 
-func OnPickUp():
-    pass
-            
+func OnPickUp(chara):
+    var selcard = GlbUi.SelectCard(chara.cards)
+    chara.GainCard(selcard.duplicate(true))

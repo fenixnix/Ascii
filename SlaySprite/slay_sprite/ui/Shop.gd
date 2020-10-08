@@ -33,6 +33,7 @@ func add_card(c,on_sale = false):
 	var price = rnd_card_price(c)
 	if on_sale:
 		price = ceil(price/2)
+	price *= ceil(1.0-GlbDat.marks.get("discount",0))
 	$CardList.add_child(card)
 	card.Set(c,{"good":c,"price":price,"on_sale":on_sale})
 

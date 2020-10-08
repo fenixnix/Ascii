@@ -9,6 +9,7 @@ func OnBattleEnd(chara:CharaBtl):
 func OnEnterSite(chara,site):
     pass
 
-func OnPickUp():
-    pass
+func OnPickUp(chara):
+    var selcard = GlbUi.SelectCard(GlbAct.CardFilter(GlbDat.chara.card,"Skill"))
+    sel.desc.append("Start in Hand")
             

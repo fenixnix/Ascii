@@ -9,6 +9,7 @@ func OnBattleEnd(chara:CharaBtl):
 func OnEnterSite(chara,site):
     pass
 
-func OnPickUp():
-    pass
-            
+func OnPickUp(chara):
+    var cards = GlbAct.Transform(3)
+    for card in cards:
+        GlbAct.Upgrade(card)            

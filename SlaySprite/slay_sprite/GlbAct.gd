@@ -24,7 +24,7 @@ func Forge():
 	forge.Set(GlbDat.chara.cards)
 	yield(forge,"finish")
 
-func RemoveCard():
+func RemoveCard(cnt = 1):
 	var remove = GlbUi.LoadUI("RemoveCard")
 	remove.Set(GlbDat.chara.cards)
 	yield(remove,"finish")
@@ -116,6 +116,9 @@ func RndSelEctMst(set):
 			return s.mst
 	return set[len(set)-1].mst
 
+func GainCard():
+	pass#TODO
+
 func TrigBattle(enmSet):
 	var tmpList = GetSetEnmLst(enmSet)
 	if GlbDat.battle!=null:
@@ -149,6 +152,13 @@ func GetSetEnmLst(set):
 func NextSite():
 	GlbDat.cur_floor += 1
 	EnterSite()
+
+static func CardFilter(list,type):
+	var tmp = []
+	for card in list:
+		if card.type == type:
+			tmp.append(card)
+	return tmp
 
 static func modDict(dat,dict):
 	if !dict.has(dat.type):

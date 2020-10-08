@@ -7,8 +7,9 @@ func OnBattleEnd(chara:CharaBtl):
     pass
 
 func OnEnterSite(chara,site):
-    pass
+    if site.type == "shop":
+        chara.Heal(15)
 
-func OnPickUp():
+func OnPickUp(chara):
     pass
             

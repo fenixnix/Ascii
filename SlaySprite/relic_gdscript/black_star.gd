@@ -9,6 +9,7 @@ func OnBattleEnd(chara:CharaBtl):
 func OnEnterSite(chara,site):
     pass
 
-func OnPickUp():
+func OnPickUp(chara):
+    GlbDat.relic_dat["elite_drop_cnt"] = 2
     pass
             

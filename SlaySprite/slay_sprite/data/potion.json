@@ -185,7 +185,7 @@
         },
         {
             "name": "Liquid Bronze",
-            "efx": "Gain 3 (6) Thorns."
+            "efx": {"type":"mod_power","para":{"type":"thorn","val":3}}
         },
         {
             "name": "Liquid Memories",
