@@ -8,7 +8,8 @@ force
 Power:
     thorn
     artifact
-    plated_armor
+    metal
+    armor
     fossil
 
 卡片（Card）
