@@ -24,40 +24,6 @@
     {
         "desc": [
             {
-                "type": "blk",
-                "val": 5
-            }
-        ],
-        "name": "Defend",
-        "img": "red/Skill/defend",
-        "rarity": "Starter",
-        "type": "Skill",
-        "cost": 1,
-        "class": "ironclad",
-        "upgrade": {
-            "blk": 3
-        }
-    },
-    {
-        "desc": [
-            {
-                "type": "dmg",
-                "val": 6
-            }
-        ],
-        "name": "Strike",
-        "img": "red/Attack/strike",
-        "rarity": "Starter",
-        "type": "Attack",
-        "cost": 1,
-        "class": "ironclad",
-        "upgrade": {
-            "dmg": 3
-        }
-    },
-    {
-        "desc": [
-            {
                 "type": "dmg",
                 "val": 6
             },
@@ -135,11 +101,9 @@
     {
         "desc": [
             {
-                "type": "script",
-                "val": "strikeAll",
-                "para": {
-                    "dmg": 8
-                }
+                "type": "dmg",
+                "val": 8,
+                "target":"all"
             }
         ],
         "upgrade": {
@@ -349,16 +313,14 @@
     {
         "desc": [
             {
-                "type": "script",
-                "val": "randomStrike",
-                "para": {
-                    "dmg": 3,
-                    "times": 3
-                }
+                "type": "dmg",
+                "val": 3,
+                "times":3,
+                "target":"rnd"
             }
         ],
         "upgrade": {
-            "replace_script_para": {
+            "mod_para": {
                 "times": 1
             }
         },
@@ -372,11 +334,9 @@
     {
         "desc": [
             {
-                "type": "script",
-                "val": "strikeAll",
-                "para": {
-                    "dmg": 4
-                }
+                "type": "dmg",
+                "val": 4,
+                "target":"all"
             },
             {
                 "type": "script",
@@ -1451,11 +1411,9 @@
     {
         "desc": [
             {
-                "type": "script",
-                "val": "strikeAll",
-                "para": {
-                    "dmg": 21
-                }
+                "type": "dmg",
+                "val": 21,
+                "target":"all"
             },
             {
                 "type": "script",
@@ -1466,9 +1424,7 @@
             }
         ],
         "upgrade": {
-            "replace_script_para": {
-                "dmg": 7
-            }
+            "dmg": 7
         },
         "name": "Immolate",
         "img": "red/Attack/immolate",
@@ -1567,7 +1523,8 @@
                 "type": "script",
                 "val": "leechAll",
                 "para": {
-                    "dmg": 4
+                    "dmg": 4,
+                    "target":"all"
                 }
             },
             "Exhaust"

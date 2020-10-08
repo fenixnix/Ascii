@@ -7,7 +7,7 @@ func Set(card_info):
 	%s
 	"""%[
 		card_info.name,
-		str(card_info.cost),
+		str(card_info.get("cost",0)),
 		card_info.rarity,
 		str(card_info)
 	]

@@ -1,6 +1,5 @@
 extends Node
 
-var cardDb = []
 var cardDict = {}
 var enmDict = {}
 var statusCardDict = {}
@@ -11,20 +10,36 @@ var lvDb = {}
 var dbPath = "./data/%s.json"
 
 func _init():
-	var res = LoadDb("warrior")
-	cardDb = res[0]
-	cardDict = res[1]
-	enmDict = FileRW.LoadJsonFileArray2Dict(dbPath%"enm/enm")
-	res = LoadDb("status")
+	AppendDict(cardDict,"gray")
+	AppendDict(cardDict,"warrior")
+	AppendDict(cardDict,"rogue")
+	AppendDict(cardDict,"wizard")
+	AppendDict(cardDict,"purple")
+	
+	var res = LoadDb("status")
 	statusCardDict = res[1]
+	
 	potionDb=LoadDat("potion")
+	InitPotionDict()
+	
+	enmDict = FileRW.LoadJsonFileArray2Dict(dbPath%"enm/enm")
 	lvDb=LoadDat("enm/enm_ect01")
 	
-	InitPotionDict()
 
 func RandomSelect():
 	var index = randi()%len(cardDict.keys())
 	return cardDict[cardDict.keys()[index]]
+
+func RandomGainCardByClass(_class,count):
+	var tmpList = []
+	for card in cardDict.values():
+		if card.get("class","all") == _class:
+			tmpList.append(card)
+	tmpList.shuffle()
+	var tmp = []
+	for c in count:
+		tmp.append(tmpList.pop_front())
+	return tmp
 
 func RndSelCard(cnt):
 	var lst = cardDict.keys().duplicate(true)
@@ -40,6 +55,11 @@ func LoadDb(file):
 	for d in db:
 		dict[d.name] = d
 	return [db,dict]
+
+func AppendDict(db,file):
+	var tmp = LoadDat(file)
+	for d in tmp:
+		db[d.name] = d
 
 func LoadDat(file):
 	return FileRW.LoadJsonFile(dbPath%file)

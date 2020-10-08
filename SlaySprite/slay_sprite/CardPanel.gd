@@ -1,10 +1,19 @@
 extends Panel
 
+const class_dict = {
+	"all":Color.gray,
+	"ironclad":Color.red,
+	"silence":Color.green,
+	"defect":Color.blue,
+	"watcher":Color.purple
+}
+
 const rarity_dict = {
 	"Starter":Color.gray,
 	"Common":Color.green,
 	"Uncommon":Color.aqua,
 	"Rare":Color.gold,
+	"Special":Color.peru
 }
 
 const type_dict = {
@@ -16,6 +25,7 @@ const type_dict = {
 }
 
 func Set(card):
+	self_modulate = class_dict[card.get("class","all")]
 	$Cost/Cost.text = str(card.get("cost",0))
 	$Cost.self_modulate = rarity_dict[card.get("rarity","Starter")]
 	$Frame.self_modulate = rarity_dict[card.get("rarity","Starter")]
@@ -24,7 +34,7 @@ func Set(card):
 	$Type.self_modulate = type_dict[card.get("type","Attack")]
 	$Type/Label.text = card.type
 	#$Desc.text = PoolStringArray(card.desc).join("\n")
-	$Desc.Set(card.desc)
+	$Panel/Desc.Set(card.desc)
 
 func Upgrade():
 	#TODO

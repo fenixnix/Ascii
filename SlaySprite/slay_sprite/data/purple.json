@@ -1,26 +1,10 @@
 [{
-    "desc": ["Gain 5(8) Icon Block", "png Block"],
-    "name": "Defend",
-    "img": "purple/Skill/defend",
-    "rarity": "Starter",
-    "type": "Skill",
-    "cost": "1",
-    "class": "watcher"
-}, {
     "desc": ["Deal 9 damage", "Enter Wrath"],
     "name": "Eruption",
     "img": "purple/Attack/eruption",
     "rarity": "Starter",
     "type": "Attack",
     "cost": "2(1)",
-    "class": "watcher"
-}, {
-    "desc": ["Deal 6(9) damage"],
-    "name": "Strike",
-    "img": "purple/Attack/strike",
-    "rarity": "Starter",
-    "type": "Attack",
-    "cost": "1",
     "class": "watcher"
 }, {
     "desc": ["Enter Calm", "Gain 8(12) Icon Block", "png Block"],

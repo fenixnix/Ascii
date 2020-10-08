@@ -123,9 +123,19 @@ func RunDesc(card,target = null):
 					Draw()
 			"script":ExecuteScript(d,card,target)
 
-func DuelDamage(dat,target):
+func DuelDamage(dat,target = null):
 	var dmg = dat.val + attr.get("str",0)*dat.get("str_bonus",1)
-	return target.TakeDamage(dmg)
+	var totelDmg = 0
+	for i in dat.get("times",1):
+		match dat.get("target","one"):
+			"one":totelDmg += target.TakeDamage(dmg)
+			"all":
+				for enm in GlbAct.BattleGround().get_children():
+					totelDmg += enm.TakeDamage(dmg)
+			"rnd":
+				totelDmg += GlbAct.BattleGround().RndSel()
+		yield(get_tree().create_timer(.5),"timeout")
+	return totelDmg
 
 func GainBlock(dat):
 	var blkVal = dat.val

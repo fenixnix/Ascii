@@ -30,7 +30,7 @@ func SelectSite(list):
 	emit_signal("select_site",site)
 
 func _on_DbView_pressed():
-	OpenView(GlbDb.cardDb)
+	OpenView(GlbDb.cardDict.values())
 
 func _on_NextSite_pressed():
 	GlbAct.NextSite()

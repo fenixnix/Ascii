@@ -35,7 +35,7 @@ def cvtBuffer(buffer,k):
         buffer["rarity"] = detail[0].strip()
         buffer["type"] = detail[1].strip()
         ParseCost(buffer,detail[2].strip())
-        buffer["img"] = "%s/%s/%s"%(k,buffer["type"],buffer["name"].lower().replace(' ','_'))
+        buffer["img"] = "%s/%s/%s"%(k,buffer["type"],buffer["name"].lower().replace(' ','_').replace('-','_').replace('.',''))
         trait = detail[3].strip().split('.')
         tmp = []
         for t in trait:

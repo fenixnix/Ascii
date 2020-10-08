@@ -1,1 +1,667 @@
-[{"desc": ["Heal 4(6) HP", "Exhaust"], "name": "Bandage Up", "img": "gray/Skill/bandage_up", "rarity": "Uncommon", "type": "Skill", "cost": 0, "class": "colorless"}, {"desc": ["Apply 2 Icon Weak", "png Weak (to ALL enemies)"], "name": "Blind", "img": "gray/Skill/blind", "rarity": "Uncommon", "type": "Skill", "cost": 0, "class": "colorless"}, {"desc": ["Enemy loses 9(15) Icon Strength", "png Strength for the rest of this turn", "Exhaust"], "name": "Dark Shackles", "img": "gray/Skill/dark_shackles", "rarity": "Uncommon", "type": "Skill", "cost": 0, "class": "colorless"}, {"desc": ["Shuffle your discard pile into your draw pile", "Draw 1(2) card(s)"], "name": "Deep Breath", "img": "gray/Skill/deep_breath", "rarity": "Uncommon", "type": "Skill", "cost": 0, "class": "colorless"}, {"desc": ["Choose 1 of 3 random cards to add to your hand", "It costs 0 this turn", "Exhaust", "(Don't Exhaust", ")"], "name": "Discovery", "img": "gray/Skill/discovery", "rarity": "Uncommon", "type": "Skill", "cost": 1, "class": "colorless"}, {"desc": ["Innate", "Deal 6(8) damage to ALL enemies", "Exhaust"], "name": "Dramatic Entrance", "img": "gray/Attack/dramatic_entrance", "rarity": "Uncommon", "type": "Attack", "cost": 0, "class": "colorless"}, {"desc": ["Reduce the cost of cards in your hand to 1 this turn(combat)"], "name": "Enlightenment", "img": "gray/Skill/enlightenment", "rarity": "Uncommon", "type": "Skill", "cost": 0, "class": "colorless"}, {"desc": ["Gain 2(4) Icon Block", "png Block", "Draw 1 card"], "name": "Finesse", "img": "gray/Skill/finesse", "rarity": "Uncommon", "type": "Skill", "cost": 0, "class": "colorless"}, {"desc": ["Deal 3(6) damage", "Draw 1 card"], "name": "Flash of Steel", "img": "gray/Attack/flash_of_steel", "rarity": "Uncommon", "type": "Attack", "cost": 0, "class": "colorless"}, {"desc": ["Place a card(any number of cards) from your hand on the bottom of your draw pile", "It (They) costs 0 until played"], "name": "Forethought", "img": "gray/Skill/forethought", "rarity": "Uncommon", "type": "Skill", "cost": 0, "class": "colorless"}, {"desc": ["Gain 5(8) Icon Block", "png Block"], "name": "Good Instincts", "img": "gray/Skill/good_instincts", "rarity": "Uncommon", "type": "Skill", "cost": 0, "class": "colorless"}, {"desc": ["If you have no Attack cards in your hand, draw 2(3) cards"], "name": "Impatience", "img": "gray/Skill/impatience", "rarity": "Uncommon", "type": "Skill", "cost": 0, "class": "colorless"}, {"desc": ["Add 1(2) random Colorless card(s) to your hand", "Exhaust"], "name": "Jack Of All Trades", "img": "gray/Skill/jack_of_all_trades", "rarity": "Uncommon", "type": "Skill", "cost": 0, "class": "colorless"}, {"desc": ["A random card in your hand costs 0 for the rest of combat", "Exhaust"], "name": "Madness", "img": "gray/Skill/madness", "rarity": "Uncommon", "type": "Skill", "cost": 1, "upgrade": {"cost": -1}, "class": "colorless"}, {"desc": ["Innate", "Deal damage equal to the number of cards in your draw pile"], "name": "Mind Blast", "img": "gray/Attack/mind_blast", "rarity": "Uncommon", "type": "Attack", "cost": 2, "upgrade": {"cost": -1}, "class": "colorless"}, {"desc": ["Gain 1(2) Icon Artifact", "png Artifact", "Exhaust"], "name": "Panacea", "img": "gray/Skill/panacea", "rarity": "Uncommon", "type": "Skill", "cost": 0, "class": "colorless"}, {"desc": ["Gain 30(40) Icon Block", "png Block", "You cannot gain Icon Block", "png Block from cards for the next 2 turns", "Exhaust"], "name": "Panic Button", "img": "gray/Skill/panic_button", "rarity": "Uncommon", "type": "Skill", "cost": 0, "class": "colorless"}, {"desc": ["Choose and exhaust 3(5) cards in your hand", "Exhaust"], "name": "Purity", "img": "gray/Skill/purity", "rarity": "Uncommon", "type": "Skill", "cost": 0, "class": "colorless"}, {"desc": ["Deal 6(9) damage"], "name": "Swift Strike", "img": "gray/Attack/swift_strike", "rarity": "Uncommon", "type": "Attack", "cost": 0, "class": "colorless"}, {"desc": ["Apply 2 Icon Vulnerable", "png Vulnerable (to ALL enemies)"], "name": "Trip", "img": "gray/Skill/trip", "rarity": "Uncommon", "type": "Skill", "cost": 0, "class": "colorless"}, {"desc": ["Upgrade ALL of your cards for the rest of combat", "Exhaust"], "name": "Apotheosis", "img": "gray/Skill/apotheosis", "rarity": "Rare", "type": "Skill", "cost": 2, "upgrade": {"cost": -1}, "class": "colorless"}, {"desc": ["Add 3(5) random Skills into your Draw Pile", "They cost 0 this combat", "Exhaust"], "name": "Chrysalis", "img": "gray/Skill/chrysalis", "rarity": "Rare", "type": "Skill", "cost": 2, "class": "colorless"}, {"desc": ["Deal 20(25) damage", "If this kills a non-minion enemy, gain 20(25) Gold"], "name": "Hand of Greed", "img": "gray/Attack/hand_of_greed", "rarity": "Rare", "type": "Attack", "cost": 2, "class": "colorless"}, {"desc": ["At the start of each turn, add a random colorless card to your hand"], "name": "Magnetism", "img": "gray/Power/magnetism", "rarity": "Rare", "type": "Power", "cost": 2, "upgrade": {"cost": -1}, "class": "colorless"}, {"desc": ["Draw 3(4) cards", "Exhaust"], "name": "Master Of Strategy", "img": "gray/Skill/master_of_strategy", "rarity": "Rare", "type": "Skill", "cost": 0, "class": "colorless"}, {"desc": ["At the start of your turn, play the top card of your draw pile"], "name": "Mayhem", "img": "gray/Power/mayhem", "rarity": "Rare", "type": "Power", "cost": 2, "upgrade": {"cost": -1}, "class": "colorless"}, {"desc": ["Add 3(5) random Attacks into your Draw Pile", "They cost 0 this combat", "Exhaust"], "name": "Metamorphosis", "img": "gray/Skill/metamorphosis", "rarity": "Rare", "type": "Skill", "cost": 2, "class": "colorless"}, {"desc": ["Every time you play 5 cards in a single turn, deal 10(14) damage to ALL enemies"], "name": "Panache", "img": "gray/Power/panache", "rarity": "Rare", "type": "Power", "cost": 0, "class": "colorless"}, {"desc": ["Whenever you apply a Debuff to an enemy, they take 3(4) damage"], "name": "Sadistic Nature", "img": "gray/Power/sadistic_nature", "rarity": "Rare", "type": "Power", "cost": 0, "class": "colorless"}, {"desc": ["Choose a Skill from your draw pile and place it into your hand", "Exhaust", "(Don't Exhaust)"], "name": "Secret Technique", "img": "gray/Skill/secret_technique", "rarity": "Rare", "type": "Skill", "cost": 0, "class": "colorless"}, {"desc": ["Choose an Attack from your draw pile and place it into your hand", "Exhaust", "(Don't Exhaust)"], "name": "Secret Weapon", "img": "gray/Skill/secret_weapon", "rarity": "Rare", "type": "Skill", "cost": 0, "class": "colorless"}, {"desc": ["At the end of 3 turns, deal 40(50) damage to ALL enemies"], "name": "The Bomb", "img": "gray/Skill/the_bomb", "rarity": "Rare", "type": "Skill", "cost": 2, "class": "colorless"}, {"desc": ["Draw 2 cards", "Place a card from your hand on top of your draw pile", "Exhaust", "(Don't Exhaust)"], "name": "Thinking Ahead", "img": "gray/Skill/thinking_ahead", "rarity": "Rare", "type": "Skill", "cost": 0, "class": "colorless"}, {"desc": ["Add X random (Upgraded) colorless cards into your hand", "They cost 0 this turn", "Exhaust"], "name": "Transmutation", "img": "gray/Skill/transmutation", "rarity": "Rare", "type": "Skill", "cost": "X", "class": "colorless"}, {"desc": ["Place 3(4) random Attack cards from your draw pile into your hand", "Exhaust"], "name": "Violence", "img": "gray/Skill/violence", "rarity": "Rare", "type": "Skill", "cost": 0, "class": "colorless"}, {"desc": ["Gain 1 Icon Intangible", "png Intangible", "Exhaust", "Ethereal", "(no longer Ethereal", ")\n(Obtained from event: Council of Ghosts)"], "name": "Apparition", "img": "gray/Skill/apparition", "rarity": "Special", "type": "Skill", "cost": 1, "class": "colorless"}, {"desc": ["Shuffle an\nOmega into your draw pile", "Exhaust", "(Obtained from Alpha)"], "name": "Beta", "img": "gray/Skill/beta", "rarity": "Special", "type": "Skill", "cost": 2, "upgrade": {"cost": -1}, "class": "colorless"}, {"desc": ["Deal 7(8) damage", "Heal 2(3) HP", "(Obtained from event: Vampires(?))"], "name": "Bite", "img": "gray/Attack/bite", "rarity": "Special", "type": "Attack", "cost": 1, "class": "colorless"}, {"desc": ["Deal 9(15) damage X times", "(Obtained from\nConjure Blade)"], "name": "Expunger", "img": "gray/Attack/expunger", "rarity": "Special", "type": "Attack", "cost": 1, "class": "colorless"}, {"desc": ["Icon Retain", "png Retain", "Draw 2(3) cards", "Exhaust", "(Obtained from\nEvaluate, Pray and Study)"], "name": "Insight", "img": "gray/Skill/insight", "rarity": "Special", "type": "Skill", "cost": 0, "class": "colorless"}, {"desc": ["Lose 3 HP", "Gain 2(3) Icon Strength", "png Strength", "(Obtained from event: Augmenter)"], "name": "J.A.X.", "img": "gray/Skill/j.a.x.", "rarity": "Special", "type": "Skill", "cost": 0, "class": "colorless"}, {"desc": ["Icon Retain", "png Retain", "Gain (2) Energy", "Exhaust", "(Obtained from\nCollect, Deus Ex Machina, PureWater-0", "png Pure Water, and Holy water", "png Holy Water)"], "name": "Miracle", "img": "gray/Skill/miracle", "rarity": "Special", "type": "Skill", "cost": 0, "class": "colorless"}, {"desc": ["At the end of your turn deal 50(60) damage to ALL enemies", "(Obtained from\nBeta)"], "name": "Omega", "img": "gray/Power/omega", "rarity": "Special", "type": "Power", "cost": 3, "class": "colorless"}, {"desc": ["Deal 15 damage", "If this kills an enemy then permanently increase this card's damage by 3(5)\n(Obtained during event: The Nest)"], "name": "Ritual Dagger", "img": "gray/Attack/ritual_dagger", "rarity": "Special", "type": "Attack", "cost": 1, "class": "colorless"}, {"desc": ["Icon Retain", "png Retain", "Gain 12(16) Icon Block", "png Block", "Exhaust", "(Obtained from Deceive Reality)"], "name": "Safety", "img": "gray/Skill/safety", "rarity": "Special", "type": "Skill", "cost": 1, "class": "colorless"}, {"desc": ["Deal 4(6) damage", "Exhaust", "(Obtained from the\nBlade Dance, Cloak and Dagger, Infinite Blades, Storm of Steel, and NinjaScroll", "png Ninja Scroll)"], "name": "Shiv", "img": "gray/Attack/shiv", "rarity": "Special", "type": "Attack", "cost": 0, "class": "colorless"}, {"desc": ["Icon Retain", "png Retain", "Deal 12(16) damage", "Exhaust", "(Obtained from\nCarve Reality and Battle Hymn)"], "name": "Smite", "img": "gray/Attack/smite", "rarity": "Special", "type": "Attack", "cost": 1, "class": "colorless"}, {"desc": ["Icon Retain", "png Retain", "Deal 20(30) damage", "Exhaust", "(Obtained from\nReach Heaven)"], "name": "Through Violence", "img": "gray/Attack/through_violence", "rarity": "Special", "type": "Attack", "cost": 0}]
+[
+    {
+        "desc": [
+            {
+                "type": "blk",
+                "val": 5
+            }
+        ],
+        "name": "Defend",
+        "img": "gray/Skill/defend",
+        "rarity": "Starter",
+        "type": "Skill",
+        "cost": 1,
+        "class": "all",
+        "upgrade": {
+            "blk": 3
+        }
+    },
+    {
+        "desc": [
+            {
+                "type": "dmg",
+                "val": 6
+            }
+        ],
+        "name": "Strike",
+        "img": "gray/Attack/strike",
+        "rarity": "Starter",
+        "type": "Attack",
+        "cost": 1,
+        "class": "all",
+        "upgrade": {
+            "dmg": 3
+        }
+    },
+    {
+        "desc": [
+            "Heal 4(6) HP",
+            "Exhaust"
+        ],
+        "name": "Bandage Up",
+        "img": "gray/Skill/bandage_up",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Apply 2 Icon Weak",
+            "png Weak (to ALL enemies)"
+        ],
+        "name": "Blind",
+        "img": "gray/Skill/blind",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Enemy loses 9(15) Icon Strength",
+            "png Strength for the rest of this turn",
+            "Exhaust"
+        ],
+        "name": "Dark Shackles",
+        "img": "gray/Skill/dark_shackles",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Shuffle your discard pile into your draw pile",
+            "Draw 1(2) card(s)"
+        ],
+        "name": "Deep Breath",
+        "img": "gray/Skill/deep_breath",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Choose 1 of 3 random cards to add to your hand",
+            "It costs 0 this turn",
+            "Exhaust",
+            "(Don't Exhaust",
+            ")"
+        ],
+        "name": "Discovery",
+        "img": "gray/Skill/discovery",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": 1,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Innate",
+            "Deal 6(8) damage to ALL enemies",
+            "Exhaust"
+        ],
+        "name": "Dramatic Entrance",
+        "img": "gray/Attack/dramatic_entrance",
+        "rarity": "Uncommon",
+        "type": "Attack",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Reduce the cost of cards in your hand to 1 this turn(combat)"
+        ],
+        "name": "Enlightenment",
+        "img": "gray/Skill/enlightenment",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Gain 2(4) Icon Block",
+            "png Block",
+            "Draw 1 card"
+        ],
+        "name": "Finesse",
+        "img": "gray/Skill/finesse",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Deal 3(6) damage",
+            "Draw 1 card"
+        ],
+        "name": "Flash of Steel",
+        "img": "gray/Attack/flash_of_steel",
+        "rarity": "Uncommon",
+        "type": "Attack",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Place a card(any number of cards) from your hand on the bottom of your draw pile",
+            "It (They) costs 0 until played"
+        ],
+        "name": "Forethought",
+        "img": "gray/Skill/forethought",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Gain 5(8) Icon Block",
+            "png Block"
+        ],
+        "name": "Good Instincts",
+        "img": "gray/Skill/good_instincts",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "If you have no Attack cards in your hand, draw 2(3) cards"
+        ],
+        "name": "Impatience",
+        "img": "gray/Skill/impatience",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Add 1(2) random Colorless card(s) to your hand",
+            "Exhaust"
+        ],
+        "name": "Jack Of All Trades",
+        "img": "gray/Skill/jack_of_all_trades",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "A random card in your hand costs 0 for the rest of combat",
+            "Exhaust"
+        ],
+        "name": "Madness",
+        "img": "gray/Skill/madness",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": 1,
+        "upgrade": {
+            "cost": -1
+        },
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Innate",
+            "Deal damage equal to the number of cards in your draw pile"
+        ],
+        "name": "Mind Blast",
+        "img": "gray/Attack/mind_blast",
+        "rarity": "Uncommon",
+        "type": "Attack",
+        "cost": 2,
+        "upgrade": {
+            "cost": -1
+        },
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Gain 1(2) Icon Artifact",
+            "png Artifact",
+            "Exhaust"
+        ],
+        "name": "Panacea",
+        "img": "gray/Skill/panacea",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Gain 30(40) Icon Block",
+            "png Block",
+            "You cannot gain Icon Block",
+            "png Block from cards for the next 2 turns",
+            "Exhaust"
+        ],
+        "name": "Panic Button",
+        "img": "gray/Skill/panic_button",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Choose and exhaust 3(5) cards in your hand",
+            "Exhaust"
+        ],
+        "name": "Purity",
+        "img": "gray/Skill/purity",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Deal 6(9) damage"
+        ],
+        "name": "Swift Strike",
+        "img": "gray/Attack/swift_strike",
+        "rarity": "Uncommon",
+        "type": "Attack",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Apply 2 Icon Vulnerable",
+            "png Vulnerable (to ALL enemies)"
+        ],
+        "name": "Trip",
+        "img": "gray/Skill/trip",
+        "rarity": "Uncommon",
+        "type": "Skill",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Upgrade ALL of your cards for the rest of combat",
+            "Exhaust"
+        ],
+        "name": "Apotheosis",
+        "img": "gray/Skill/apotheosis",
+        "rarity": "Rare",
+        "type": "Skill",
+        "cost": 2,
+        "upgrade": {
+            "cost": -1
+        },
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Add 3(5) random Skills into your Draw Pile",
+            "They cost 0 this combat",
+            "Exhaust"
+        ],
+        "name": "Chrysalis",
+        "img": "gray/Skill/chrysalis",
+        "rarity": "Rare",
+        "type": "Skill",
+        "cost": 2,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Deal 20(25) damage",
+            "If this kills a non-minion enemy, gain 20(25) Gold"
+        ],
+        "name": "Hand of Greed",
+        "img": "gray/Attack/hand_of_greed",
+        "rarity": "Rare",
+        "type": "Attack",
+        "cost": 2,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "At the start of each turn, add a random colorless card to your hand"
+        ],
+        "name": "Magnetism",
+        "img": "gray/Power/magnetism",
+        "rarity": "Rare",
+        "type": "Power",
+        "cost": 2,
+        "upgrade": {
+            "cost": -1
+        },
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Draw 3(4) cards",
+            "Exhaust"
+        ],
+        "name": "Master Of Strategy",
+        "img": "gray/Skill/master_of_strategy",
+        "rarity": "Rare",
+        "type": "Skill",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "At the start of your turn, play the top card of your draw pile"
+        ],
+        "name": "Mayhem",
+        "img": "gray/Power/mayhem",
+        "rarity": "Rare",
+        "type": "Power",
+        "cost": 2,
+        "upgrade": {
+            "cost": -1
+        },
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Add 3(5) random Attacks into your Draw Pile",
+            "They cost 0 this combat",
+            "Exhaust"
+        ],
+        "name": "Metamorphosis",
+        "img": "gray/Skill/metamorphosis",
+        "rarity": "Rare",
+        "type": "Skill",
+        "cost": 2,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Every time you play 5 cards in a single turn, deal 10(14) damage to ALL enemies"
+        ],
+        "name": "Panache",
+        "img": "gray/Power/panache",
+        "rarity": "Rare",
+        "type": "Power",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Whenever you apply a Debuff to an enemy, they take 3(4) damage"
+        ],
+        "name": "Sadistic Nature",
+        "img": "gray/Power/sadistic_nature",
+        "rarity": "Rare",
+        "type": "Power",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Choose a Skill from your draw pile and place it into your hand",
+            "Exhaust",
+            "(Don't Exhaust)"
+        ],
+        "name": "Secret Technique",
+        "img": "gray/Skill/secret_technique",
+        "rarity": "Rare",
+        "type": "Skill",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Choose an Attack from your draw pile and place it into your hand",
+            "Exhaust",
+            "(Don't Exhaust)"
+        ],
+        "name": "Secret Weapon",
+        "img": "gray/Skill/secret_weapon",
+        "rarity": "Rare",
+        "type": "Skill",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "At the end of 3 turns, deal 40(50) damage to ALL enemies"
+        ],
+        "name": "The Bomb",
+        "img": "gray/Skill/the_bomb",
+        "rarity": "Rare",
+        "type": "Skill",
+        "cost": 2,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Draw 2 cards",
+            "Place a card from your hand on top of your draw pile",
+            "Exhaust",
+            "(Don't Exhaust)"
+        ],
+        "name": "Thinking Ahead",
+        "img": "gray/Skill/thinking_ahead",
+        "rarity": "Rare",
+        "type": "Skill",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Add X random (Upgraded) colorless cards into your hand",
+            "They cost 0 this turn",
+            "Exhaust"
+        ],
+        "name": "Transmutation",
+        "img": "gray/Skill/transmutation",
+        "rarity": "Rare",
+        "type": "Skill",
+        "cost": "X",
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Place 3(4) random Attack cards from your draw pile into your hand",
+            "Exhaust"
+        ],
+        "name": "Violence",
+        "img": "gray/Skill/violence",
+        "rarity": "Rare",
+        "type": "Skill",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Gain 1 Icon Intangible",
+            "png Intangible",
+            "Exhaust",
+            "Ethereal",
+            "(no longer Ethereal",
+            ")\n(Obtained from event: Council of Ghosts)"
+        ],
+        "name": "Apparition",
+        "img": "gray/Skill/apparition",
+        "rarity": "Special",
+        "type": "Skill",
+        "cost": 1,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Shuffle an\nOmega into your draw pile",
+            "Exhaust",
+            "(Obtained from Alpha)"
+        ],
+        "name": "Beta",
+        "img": "gray/Skill/beta",
+        "rarity": "Special",
+        "type": "Skill",
+        "cost": 2,
+        "upgrade": {
+            "cost": -1
+        },
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Deal 7(8) damage",
+            "Heal 2(3) HP",
+            "(Obtained from event: Vampires(?))"
+        ],
+        "name": "Bite",
+        "img": "gray/Attack/bite",
+        "rarity": "Special",
+        "type": "Attack",
+        "cost": 1,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Deal 9(15) damage X times",
+            "(Obtained from\nConjure Blade)"
+        ],
+        "name": "Expunger",
+        "img": "gray/Attack/expunger",
+        "rarity": "Special",
+        "type": "Attack",
+        "cost": 1,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Icon Retain",
+            "png Retain",
+            "Draw 2(3) cards",
+            "Exhaust",
+            "(Obtained from\nEvaluate, Pray and Study)"
+        ],
+        "name": "Insight",
+        "img": "gray/Skill/insight",
+        "rarity": "Special",
+        "type": "Skill",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Lose 3 HP",
+            "Gain 2(3) Icon Strength",
+            "png Strength",
+            "(Obtained from event: Augmenter)"
+        ],
+        "name": "J.A.X.",
+        "img": "gray/Skill/jax",
+        "rarity": "Special",
+        "type": "Skill",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Icon Retain",
+            "png Retain",
+            "Gain (2) Energy",
+            "Exhaust",
+            "(Obtained from\nCollect, Deus Ex Machina, PureWater-0",
+            "png Pure Water, and Holy water",
+            "png Holy Water)"
+        ],
+        "name": "Miracle",
+        "img": "gray/Skill/miracle",
+        "rarity": "Special",
+        "type": "Skill",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "At the end of your turn deal 50(60) damage to ALL enemies",
+            "(Obtained from\nBeta)"
+        ],
+        "name": "Omega",
+        "img": "gray/Power/omega",
+        "rarity": "Special",
+        "type": "Power",
+        "cost": 3,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Deal 15 damage",
+            "If this kills an enemy then permanently increase this card's damage by 3(5)\n(Obtained during event: The Nest)"
+        ],
+        "name": "Ritual Dagger",
+        "img": "gray/Attack/ritual_dagger",
+        "rarity": "Special",
+        "type": "Attack",
+        "cost": 1,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Icon Retain",
+            "png Retain",
+            "Gain 12(16) Icon Block",
+            "png Block",
+            "Exhaust",
+            "(Obtained from Deceive Reality)"
+        ],
+        "name": "Safety",
+        "img": "gray/Skill/safety",
+        "rarity": "Special",
+        "type": "Skill",
+        "cost": 1,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Deal 4(6) damage",
+            "Exhaust",
+            "(Obtained from the\nBlade Dance, Cloak and Dagger, Infinite Blades, Storm of Steel, and NinjaScroll",
+            "png Ninja Scroll)"
+        ],
+        "name": "Shiv",
+        "img": "gray/Attack/shiv",
+        "rarity": "Special",
+        "type": "Attack",
+        "cost": 0,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Icon Retain",
+            "png Retain",
+            "Deal 12(16) damage",
+            "Exhaust",
+            "(Obtained from\nCarve Reality and Battle Hymn)"
+        ],
+        "name": "Smite",
+        "img": "gray/Attack/smite",
+        "rarity": "Special",
+        "type": "Attack",
+        "cost": 1,
+        "class": "all"
+    },
+    {
+        "desc": [
+            "Icon Retain",
+            "png Retain",
+            "Deal 20(30) damage",
+            "Exhaust",
+            "(Obtained from\nReach Heaven)"
+        ],
+        "name": "Through Violence",
+        "img": "gray/Attack/through_violence",
+        "rarity": "Special",
+        "type": "Attack",
+        "cost": 0,
+        "class": "all"
+    }
+]

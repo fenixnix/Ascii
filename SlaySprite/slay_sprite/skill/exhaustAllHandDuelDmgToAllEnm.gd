@@ -5,6 +5,5 @@ func run(src:CharaBtl,card,dst,para):
 	for c in src.hand:
 		src.Exhaust(c)
 		cnt += 1
-	var dmg = para.get("bonus",5)*cnt
-	for e in GlbAct.BattleGround().get_children():
-		src.DuelDamage({"val":dmg},e)
+	var dmg = para.get("bonus",5)
+	src.DuelDamage({"val":dmg,"times":cnt,"target":"all"})

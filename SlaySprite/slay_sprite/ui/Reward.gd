@@ -12,7 +12,7 @@ func _ready():
 	#potion
 	var rarity = GlbDat.RollPotionRarity()
 	if rarity!=null:
-		var potion = GlbDb.RandomPotion(rarity)
+		var potion = GlbDb.RandomPotionByRarity(rarity)
 		print_debug(potion)
 	#ralic
 	#TODO

@@ -44,12 +44,13 @@ __meta__ = {
 }
 
 [node name="Cost" type="PanelContainer" parent="."]
-margin_left = 3.31371
-margin_top = 3.25305
-margin_right = 34.3137
-margin_bottom = 39.2531
+margin_left = -4.68629
+margin_top = -5.24695
+margin_right = 26.3137
+margin_bottom = 30.7531
 theme = ExtResource( 1 )
 __meta__ = {
+"_edit_group_": true,
 "_edit_use_anchors_": false
 }
 
@@ -84,6 +85,30 @@ custom_fonts/font = ExtResource( 7 )
 align = 1
 valign = 1
 
+[node name="Panel" type="Panel" parent="."]
+self_modulate = Color( 0.372549, 0.372549, 0.372549, 1 )
+anchor_top = 0.561
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 8.0
+margin_top = -0.056015
+margin_right = -8.0
+margin_bottom = -8.0
+theme = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Desc" type="RichTextLabel" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_right = -9.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Type" type="PanelContainer" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
@@ -108,14 +133,4 @@ valign = 1
 uppercase = true
 __meta__ = {
 "_edit_use_anchors_": false
-}
-
-[node name="Desc" type="RichTextLabel" parent="."]
-anchor_left = 0.138756
-anchor_top = 0.601351
-anchor_right = 0.885167
-anchor_bottom = 0.935811
-script = ExtResource( 5 )
-__meta__ = {
-"_edit_use_anchors_": true
 }
