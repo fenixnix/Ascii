@@ -34,6 +34,8 @@ func Set(enm):
 
 func refresh_info():
 	$EnemyUI/Info.Set(self)
+	$EnemyUI/HP.Set(hp,mhp)
+	$EnemyUI/Block/Label.text = str(blk)
 
 var turn = 0
 var cur_skl = null
@@ -48,6 +50,8 @@ func rndSelIndexByRate():
 	var sum:int = 0
 	for r in skl_rate:
 		sum += r
+	if sum == 0:
+		return 0
 	var roll = randi()%sum
 	var count = 0
 	for i in len(skl_rate):

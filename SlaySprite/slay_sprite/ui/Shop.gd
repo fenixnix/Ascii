@@ -17,21 +17,24 @@ func _ready():
 
 func RndInit():
 	var cards = GlbDb.RndSelCard(cnts.card)
+	var on_sale_index = randi()%cnts.card
+	var index:int = 0
 	for c in cards:
-		add_card(c)
+		add_card(c,on_sale_index == index)
+		index += 1
 	var gray_cards = GlbDb.RndSelCard(cnts.gray_card)
 	for c in gray_cards:
 		add_card(c)
 
-onready var card_prefab = preload("res://Card.tscn")
-onready var price_label_prefab = preload("res://ui/PriceLabel.tscn")
-func add_card(c):
+onready var card_prefab = preload("res://ui/ShopCardSlot.tscn")
+func add_card(c,on_sale = false):
+	print(on_sale)
 	var card  = card_prefab.instance()
+	var price = rnd_card_price(c)
+	if on_sale:
+		price = ceil(price/2)
 	$CardList.add_child(card)
-	card.Set(c)
-	var pLabel = price_label_prefab.instance()
-	card.add_child(pLabel)
-	pLabel.Set({"good":c,"price":rnd_card_price(c)})
+	card.Set(c,{"good":c,"price":price,"on_sale":on_sale})
 
 func rnd_card_price(card):
 	var price:int = 0

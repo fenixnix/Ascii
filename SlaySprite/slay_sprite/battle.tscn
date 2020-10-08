@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://BattleGround.gd" type="Script" id=1]
 [ext_resource path="res://image/icon/energyRedVFX.png" type="Texture" id=2]
@@ -14,10 +14,9 @@
 [ext_resource path="res://image/icon/defend.png" type="Texture" id=12]
 [ext_resource path="res://image/icon/base.png" type="Texture" id=13]
 [ext_resource path="res://image/icon/discard.png" type="Texture" id=14]
-[ext_resource path="res://image/whiteSquare32.png" type="Texture" id=15]
+[ext_resource path="res://ui/ValBar.tscn" type="PackedScene" id=15]
 [ext_resource path="res://image/icon/countCircle.png" type="Texture" id=16]
 [ext_resource path="res://battleUI.gd" type="Script" id=17]
-[ext_resource path="res://image/green_button12.png" type="Texture" id=18]
 [ext_resource path="res://ui/CharaPanel.gd" type="Script" id=19]
 [ext_resource path="res://font/number.tres" type="DynamicFont" id=20]
 [ext_resource path="res://font/label.tres" type="DynamicFont" id=21]
@@ -226,30 +225,11 @@ text = "3/3"
 align = 1
 valign = 1
 
-[node name="HP" type="TextureProgress" parent="UI/CharaPanel"]
-margin_left = 108.64
-margin_top = 20.1122
-margin_right = 306.64
-margin_bottom = 44.1122
-value = 50.0
-texture_under = ExtResource( 15 )
-texture_progress = ExtResource( 18 )
-nine_patch_stretch = true
-stretch_margin_left = 5
-stretch_margin_top = 5
-stretch_margin_right = 5
-stretch_margin_bottom = 5
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="UI/CharaPanel/HP"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-custom_fonts/font = ExtResource( 20 )
-text = "100/100"
-align = 1
-valign = 1
+[node name="HP" parent="UI/CharaPanel" instance=ExtResource( 15 )]
+margin_left = 103.826
+margin_top = 22.653
+margin_right = 301.826
+margin_bottom = 46.653
 
 [node name="Info" type="RichTextLabel" parent="UI/CharaPanel"]
 margin_left = 111.842

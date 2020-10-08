@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://image/enm/acid_slime_m.png" type="Texture" id=1]
 [ext_resource path="res://Enemy.gd" type="Script" id=2]
@@ -7,6 +7,8 @@
 [ext_resource path="res://TextPartical.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Anim.gd" type="Script" id=6]
 [ext_resource path="res://ui/IntentRT.gd" type="Script" id=7]
+[ext_resource path="res://ui/ValBar.tscn" type="PackedScene" id=8]
+[ext_resource path="res://image/icon/defend.png" type="Texture" id=9]
 
 [node name="Enemy" type="Node2D"]
 script = ExtResource( 2 )
@@ -56,10 +58,37 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -38.0
-margin_right = 126.0
-margin_bottom = 142.0
+margin_left = -41.9286
+margin_top = 3.36737
+margin_right = 122.071
+margin_bottom = 145.367
 script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HP" parent="EnemyUI" instance=ExtResource( 8 )]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -42.8258
+margin_top = -10.9489
+margin_right = 43.1742
+margin_bottom = 3.05107
+
+[node name="Block" type="Sprite" parent="EnemyUI"]
+position = Vector2( 5.85056, 138.322 )
+scale = Vector2( 0.5355, 0.470894 )
+texture = ExtResource( 9 )
+
+[node name="Label" type="Label" parent="EnemyUI/Block"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -32.0
+margin_top = -32.0
+margin_right = -32.0
+margin_bottom = -32.0
 __meta__ = {
 "_edit_use_anchors_": false
 }

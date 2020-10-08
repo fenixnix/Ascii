@@ -7,13 +7,10 @@ func _ready():
 
 func Set(dat):
 	good = dat.get("good",null)
-	if dat.has("on_sale"):
-		$frame.self_modulate = Color.red
-	else:
-		$frame.self_modulate = Color.white
-	$frame/price.text = str(dat.price)
-	$frame/price.disabled = dat.has("short_of_money")
+	$sale.visible = dat.get("on_sale",false)
+	$price.text = str(dat.price)
+	$price.disabled = dat.has("short_of_money")
 	if dat.has("short_of_money"):
-		$frame/price.self_modulate = Color.red
+		$price.self_modulate = Color.red
 	else:
-		$frame/price.self_modulate = Color.white
+		$price.self_modulate = Color.white
