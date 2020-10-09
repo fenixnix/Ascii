@@ -4,7 +4,10 @@ func _ready():
 	Set(RndSel())
 
 func Set(dat):
-	$Icon.texture = load("res://image/relic/%s.png"%dat.img)
+	print(dat)
+	var img = dat.name.to_lower().replace(' ','_')
+	print(img)
+	$Icon.texture = load("res://image/relic/%s.png"%img)
 
 func RndSel():
-	return {"img":"ancientCoin"}
+	return GlbDb.relicDict.values()[randi()%len(GlbDb.relicDict.keys())]

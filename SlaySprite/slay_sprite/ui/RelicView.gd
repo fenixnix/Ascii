@@ -6,7 +6,7 @@ func Set(list):
 	data = list
 	$ItemList.clear()
 	for relic in data:
-		$ItemList.add_child(relic.name)
+		$ItemList.add_item(relic.name)
 	_on_ItemList_item_selected(0)
 
 func _on_ItemList_item_selected(index):

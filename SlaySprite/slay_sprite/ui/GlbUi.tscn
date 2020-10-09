@@ -17,13 +17,13 @@ __meta__ = {
 [node name="DbView" type="Button" parent="TestPanel"]
 margin_right = 89.0
 margin_bottom = 20.0
-text = "CardDBView"
+text = "$Card"
 
 [node name="RelicView" type="Button" parent="TestPanel"]
 margin_top = 24.0
 margin_right = 89.0
 margin_bottom = 44.0
-text = "CardDBView"
+text = "$Relic"
 
 [node name="NextSite" type="Button" parent="TestPanel"]
 margin_top = 48.0
