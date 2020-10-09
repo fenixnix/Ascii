@@ -20,7 +20,7 @@ func _on_OK_pressed():
 
 func _on_Deck_item_selected(index):
 	curCard = data[index]
-	$Card.Set(curCard)
+	$Src.Set(curCard)
 	var tmpUpgradeCard = curCard.duplicate(true)
 	tmpUpgradeCard = GlbAct.UpgradeCard(tmpUpgradeCard)
-	$Card2.Set(tmpUpgradeCard)
+	$Dst.Set(tmpUpgradeCard)

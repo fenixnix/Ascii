@@ -57,4 +57,5 @@ func _on_Player_hurt(attacker, dmg):
 	text.Set(str(-dmg))
 	$Camera2D/Shake.Shake(dmg)
 
-
+func _on_discardCount_pressed():
+	GlbUi.OpenView(plrBtl.discard)

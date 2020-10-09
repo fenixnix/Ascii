@@ -30,11 +30,13 @@ __meta__ = {
 }
 
 [node name="CardList" type="GridContainer" parent="."]
+anchor_top = 0.5
 anchor_right = 1.0
-margin_left = 81.0
-margin_top = 1.0
-margin_right = -61.0
-margin_bottom = 523.0
+anchor_bottom = 0.5
+margin_left = 101.0
+margin_top = -215.0
+margin_right = -58.0
+margin_bottom = 261.0
 columns = 5
 __meta__ = {
 "_edit_use_anchors_": false
@@ -43,63 +45,63 @@ __meta__ = {
 [node name="ShopCardSlot" parent="CardList" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 173.0
-margin_bottom = 259.0
+margin_right = 169.0
+margin_bottom = 236.0
 
 [node name="ShopCardSlot2" parent="CardList" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 177.0
-margin_right = 350.0
-margin_bottom = 259.0
+margin_left = 173.0
+margin_right = 342.0
+margin_bottom = 236.0
 
 [node name="ShopCardSlot3" parent="CardList" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 354.0
-margin_right = 527.0
-margin_bottom = 259.0
+margin_left = 346.0
+margin_right = 515.0
+margin_bottom = 236.0
 
 [node name="ShopCardSlot4" parent="CardList" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 531.0
-margin_right = 704.0
-margin_bottom = 259.0
+margin_left = 519.0
+margin_right = 688.0
+margin_bottom = 236.0
 
 [node name="ShopCardSlot5" parent="CardList" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 708.0
-margin_right = 881.0
-margin_bottom = 259.0
+margin_left = 692.0
+margin_right = 861.0
+margin_bottom = 236.0
 
 [node name="ShopCardSlot6" parent="CardList" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 263.0
-margin_right = 173.0
-margin_bottom = 522.0
+margin_top = 240.0
+margin_right = 169.0
+margin_bottom = 476.0
 
 [node name="ShopCardSlot7" parent="CardList" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 177.0
-margin_top = 263.0
-margin_right = 350.0
-margin_bottom = 522.0
+margin_left = 173.0
+margin_top = 240.0
+margin_right = 342.0
+margin_bottom = 476.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-anchor_left = 0.44043
-anchor_top = 0.523333
-anchor_right = 0.749023
-anchor_bottom = 0.82
+anchor_left = 0.453584
+anchor_top = 0.590681
+anchor_right = 0.762177
+anchor_bottom = 0.887348
 __meta__ = {
 "_edit_use_anchors_": true
 }
 
 [node name="RelicList" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 316.0
+margin_right = 315.0
 margin_bottom = 64.0
 alignment = 1
 __meta__ = {
@@ -111,15 +113,15 @@ margin_right = 102.0
 
 [node name="Relic2" parent="VBoxContainer/RelicList" instance=ExtResource( 3 )]
 margin_left = 106.0
-margin_right = 209.0
+margin_right = 208.0
 
 [node name="Relic3" parent="VBoxContainer/RelicList" instance=ExtResource( 3 )]
-margin_left = 213.0
-margin_right = 316.0
+margin_left = 212.0
+margin_right = 315.0
 
 [node name="PotionList" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 68.0
-margin_right = 316.0
+margin_right = 315.0
 margin_bottom = 132.0
 alignment = 1
 __meta__ = {
@@ -131,34 +133,37 @@ margin_right = 102.0
 
 [node name="Potion2" parent="VBoxContainer/PotionList" instance=ExtResource( 4 )]
 margin_left = 106.0
-margin_right = 209.0
+margin_right = 208.0
 
 [node name="Potion3" parent="VBoxContainer/PotionList" instance=ExtResource( 4 )]
-margin_left = 213.0
-margin_right = 316.0
+margin_left = 212.0
+margin_right = 315.0
 
 [node name="RemoveCard" type="TextureButton" parent="."]
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -273.384
-margin_top = -315.671
-margin_right = -52.3842
-margin_bottom = -66.6708
+margin_left = -270.209
+margin_top = -258.525
+margin_right = -49.2094
+margin_bottom = -9.52435
 texture_normal = ExtResource( 5 )
 expand = true
 stretch_mode = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Leave" type="Button" parent="."]
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -201.596
-margin_top = -67.1086
-margin_right = -110.596
-margin_bottom = -32.1086
+margin_left = -458.755
+margin_top = -70.2834
+margin_right = -367.755
+margin_bottom = -35.2834
 text = "X"
 __meta__ = {
 "_edit_use_anchors_": false

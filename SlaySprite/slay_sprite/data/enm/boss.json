@@ -1,5 +1,4 @@
-[
-    {
+[{
         "id": "slime_boss",
         "name": "Slime Boss",
         "img": "slime_boss",
@@ -8,19 +7,16 @@
         "power": {
             "split": 1
         },
-        "skl": [
-            {
+        "skl": [{
                 "name": "Goop Spray",
-                "efx": [
-                    {
-                        "type": "script",
-                        "val": "sentStatusCard",
-                        "para": {
-                            "type": "Slimed",
-                            "val": 3
-                        }
+                "efx": [{
+                    "type": "script",
+                    "val": "sentStatusCard",
+                    "para": {
+                        "type": "Slimed",
+                        "val": 3
                     }
-                ]
+                }]
             },
             {
                 "name": "Preparing",
@@ -28,17 +24,14 @@
             },
             {
                 "name": "Slam",
-                "efx": [
-                    {
-                        "type": "dmg",
-                        "val": "35"
-                    }
-                ]
+                "efx": [{
+                    "type": "dmg",
+                    "val": "35"
+                }]
             },
             {
                 "name": "Split",
-                "efx": [
-                    {
+                "efx": [{
                         "type": "dead"
                     },
                     {
@@ -68,29 +61,23 @@
         "power": {
             "mode_shift": 30
         },
-        "skl": [
-            {
+        "skl": [{
                 "name": "Charging Up",
-                "efx": [
-                    {
-                        "type": "blk",
-                        "val": "9"
-                    }
-                ]
+                "efx": [{
+                    "type": "blk",
+                    "val": "9"
+                }]
             },
             {
                 "name": "Fierce Bash",
-                "efx": [
-                    {
-                        "type": "dmg",
-                        "val": 36
-                    }
-                ]
+                "efx": [{
+                    "type": "dmg",
+                    "val": 36
+                }]
             },
             {
                 "name": "Vent Steam",
-                "efx": [
-                    {
+                "efx": [{
                         "type": "vul",
                         "val": "2"
                     },
@@ -102,39 +89,32 @@
             },
             {
                 "name": "Whirlwind",
-                "efx": [
-                    {
-                        "type": "dmg",
-                        "val": 5,
-                        "times": 4
-                    }
-                ]
+                "efx": [{
+                    "type": "dmg",
+                    "val": 5,
+                    "times": 4
+                }]
             },
             {
                 "name": "Defensive Mode",
-                "efx": [
-                    {
-                        "type": "power",
-                        "para": {
-                            "type": "thorn",
-                            "val": 3
-                        }
+                "efx": [{
+                    "type": "power",
+                    "para": {
+                        "type": "thorn",
+                        "val": 3
                     }
-                ]
+                }]
             },
             {
                 "name": "Roll Attack",
-                "efx": [
-                    {
-                        "type": "dmg",
-                        "val": 9
-                    }
-                ]
+                "efx": [{
+                    "type": "dmg",
+                    "val": 9
+                }]
             },
             {
                 "name": "Twin Slam",
-                "efx": [
-                    {
+                "efx": [{
                         "type": "dmg",
                         "val": 8,
                         "times": 2
@@ -163,24 +143,20 @@
         "img": "hexaghost",
         "lv": 0,
         "hp": 250,
-        "skl": [
-            {
+        "skl": [{
                 "name": "Activate"
             },
             {
                 "name": "Divider",
-                "efx": [
-                    {
-                        "type": "dmg",
-                        "val": 2,
-                        "times": 6
-                    }
-                ]
+                "efx": [{
+                    "type": "dmg",
+                    "val": 2,
+                    "times": 6
+                }]
             },
             {
                 "name": "Inferno",
-                "efx": [
-                    {
+                "efx": [{
                         "type": "dmg",
                         "val": "35"
                     },
@@ -196,8 +172,7 @@
             },
             {
                 "name": "Sear",
-                "efx": [
-                    {
+                "efx": [{
                         "type": "dmg",
                         "val": 6
                     },
@@ -213,18 +188,15 @@
             },
             {
                 "name": "Tackle",
-                "efx": [
-                    {
-                        "type": "dmg",
-                        "val": 5,
-                        "times": 2
-                    }
-                ]
+                "efx": [{
+                    "type": "dmg",
+                    "val": 5,
+                    "times": 2
+                }]
             },
             {
                 "name": "Inflame",
-                "efx": [
-                    {
+                "efx": [{
                         "type": "str",
                         "val": 3
                     },
@@ -235,8 +207,7 @@
                 ]
             }
         ],
-        "skl_quque": [
-            {
+        "skl_quque": [{
                 "turn": 0,
                 "index": 0
             },

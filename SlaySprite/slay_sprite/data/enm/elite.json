@@ -1,20 +1,19 @@
-[
-    {
-        "id":"gremlin_nob",
+[{
+        "id": "gremlin_nob",
         "name": "Gremlin Nob",
-        "img":"elite/Gremlin-nob-pretty",
-        "hp":85,
-        "skl":["bellow","rush","skull_bash"],
-        "skl_quque":["bellow"],
-        "skl_rate":[0,2,1]
-    },    {
-        "id":"lagavulin",
+        "img": "elite/Gremlin-nob-pretty",
+        "hp": 85,
+        "skl": ["bellow", "rush", "skull_bash"],
+        "skl_quque": ["bellow"],
+        "skl_rate": [0, 2, 1]
+    }, {
+        "id": "lagavulin",
         "name": "Lagavulin",
-        "img":"elite/Gremlin-nob-pretty",
-        "hp":85,
-        "skl":["bellow","rush","skull_bash"],
-        "skl_quque":["bellow"],
-        "skl_rate":[0,2,1]
+        "img": "elite/Gremlin-nob-pretty",
+        "hp": 85,
+        "skl": ["bellow", "rush", "skull_bash"],
+        "skl_quque": ["bellow"],
+        "skl_rate": [0, 2, 1]
     },
     {
         "id": "sentry",
@@ -23,8 +22,7 @@
             "val": 38,
             "rnd": 5
         },
-        "skl": [
-            {
+        "skl": [{
                 "type": "dmg",
                 "val": "9"
             },

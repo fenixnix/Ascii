@@ -48,12 +48,13 @@ __meta__ = {
 
 [node name="OK" type="Button" parent="."]
 anchor_left = 0.5
-anchor_top = 1.0
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 1.0
-margin_left = -15.5
-margin_top = -20.0
-margin_right = 15.5
+anchor_bottom = 0.5
+margin_left = -35.0226
+margin_top = 195.565
+margin_right = 40.9774
+margin_bottom = 223.565
 text = "OK"
 __meta__ = {
 "_edit_use_anchors_": false

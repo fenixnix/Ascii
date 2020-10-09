@@ -16,19 +16,18 @@ func _ready():
 	RndInit()
 
 func RndInit():
-	var cards = GlbDb.RndSelCard(cnts.card)
+	var cards = GlbDb.RandomShopCard(GlbDat.chara.class_)
 	var on_sale_index = randi()%cnts.card
 	var index:int = 0
 	for c in cards:
 		add_card(c,on_sale_index == index)
 		index += 1
-	var gray_cards = GlbDb.RndSelCard(cnts.gray_card)
+	var gray_cards = GlbDb.RandomGrayCard(cnts.gray_card)
 	for c in gray_cards:
 		add_card(c)
 
 onready var card_prefab = preload("res://ui/ShopCardSlot.tscn")
 func add_card(c,on_sale = false):
-	print(on_sale)
 	var card  = card_prefab.instance()
 	var price = rnd_card_price(c)
 	if on_sale:

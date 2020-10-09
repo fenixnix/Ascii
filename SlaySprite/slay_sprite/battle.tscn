@@ -73,17 +73,22 @@ discard_position_node = NodePath("discard")
 position = Vector2( -435.599, -81.774 )
 texture = ExtResource( 13 )
 
-[node name="countCircle" type="TextureRect" parent="UI/Hands/deck"]
-margin_left = -31.498
-margin_top = -32.7579
-margin_right = 96.502
-margin_bottom = 95.2421
-texture = ExtResource( 16 )
+[node name="deckCount" type="ToolButton" parent="UI/Hands/deck"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -134.0
+margin_top = -132.0
+margin_right = 6.0
+margin_bottom = 4.0
+mouse_default_cursor_shape = 16
+icon = ExtResource( 16 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="deckCount" type="Label" parent="UI/Hands/deck/countCircle"]
+[node name="Label" type="Label" parent="UI/Hands/deck/deckCount"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 text = "AAA"
@@ -97,17 +102,22 @@ __meta__ = {
 position = Vector2( 450.706, -71.6832 )
 texture = ExtResource( 14 )
 
-[node name="countCircle" type="TextureRect" parent="UI/Hands/discard"]
-margin_left = -95.754
-margin_top = -36.5377
-margin_right = 32.246
-margin_bottom = 91.4623
-texture = ExtResource( 16 )
+[node name="discardCount" type="ToolButton" parent="UI/Hands/discard"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -134.0
+margin_top = -132.0
+margin_right = 6.0
+margin_bottom = 4.0
+mouse_default_cursor_shape = 16
+icon = ExtResource( 16 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="discardCount" type="Label" parent="UI/Hands/discard/countCircle"]
+[node name="Label" type="Label" parent="UI/Hands/discard/discardCount"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 text = "BBB"
@@ -122,14 +132,18 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -267.617
-margin_top = -165.877
-margin_right = -46.6171
-margin_bottom = -47.877
+margin_left = -267.587
+margin_top = -245.853
+margin_right = -46.5876
+margin_bottom = -127.853
 texture_normal = ExtResource( 22 )
 texture_hover = ExtResource( 23 )
 expand = true
 stretch_mode = 5
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
 
 [node name="Label" type="Label" parent="UI/EndTurn"]
 anchor_right = 1.0
@@ -226,10 +240,10 @@ align = 1
 valign = 1
 
 [node name="HP" parent="UI/CharaPanel" instance=ExtResource( 15 )]
-margin_left = 103.826
-margin_top = 22.653
-margin_right = 301.826
-margin_bottom = 46.653
+margin_left = 108.719
+margin_top = 23.9439
+margin_right = 306.719
+margin_bottom = 41.9439
 
 [node name="Info" type="RichTextLabel" parent="UI/CharaPanel"]
 margin_left = 111.842
@@ -268,6 +282,7 @@ current = true
 
 [node name="Shake" type="Tween" parent="Camera2D"]
 script = ExtResource( 3 )
+[connection signal="pressed" from="UI/Hands/discard/discardCount" to="." method="_on_discardCount_pressed"]
 [connection signal="pressed" from="UI/EndTurn" to="." method="_on_EndTurn_pressed"]
 [connection signal="pressed" from="UI/TestPanel/TestDraw" to="UI/TestPanel" method="_on_TestDraw_pressed"]
 [connection signal="pressed" from="UI/TestPanel/TestWin" to="UI/TestPanel" method="_on_TestWin_pressed"]

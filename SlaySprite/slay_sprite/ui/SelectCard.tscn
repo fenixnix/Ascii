@@ -1,0 +1,68 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://ui/SelectCard.gd" type="Script" id=1]
+[ext_resource path="res://ui/CardPanel.tscn" type="PackedScene" id=2]
+
+[node name="CardSelect" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.752941 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+visible = false
+anchor_top = 0.118333
+anchor_right = 1.0
+anchor_bottom = 0.873333
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="GridContainer" type="GridContainer" parent="ScrollContainer"]
+margin_right = 1024.0
+margin_bottom = 453.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 5
+
+[node name="ItemList" type="ItemList" parent="."]
+anchor_left = 0.640625
+anchor_top = 0.12
+anchor_right = 0.925781
+anchor_bottom = 0.886667
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="CardPanel" parent="." instance=ExtResource( 2 )]
+margin_left = -347.914
+margin_top = -131.524
+margin_right = -147.914
+margin_bottom = 148.476
+
+[node name="OK" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -51.2408
+margin_top = -50.447
+margin_right = 60.7592
+margin_bottom = -17.447
+text = "OK"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="item_selected" from="ItemList" to="." method="_on_ItemList_item_selected"]
+[connection signal="multi_selected" from="ItemList" to="." method="_on_ItemList_multi_selected"]
+[connection signal="pressed" from="OK" to="." method="_on_OK_pressed"]

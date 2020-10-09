@@ -90,6 +90,7 @@ func EnterSite():
 		"shop":
 			var shop = GlbUi.LoadUI("Shop")
 			yield(shop,"finish")
+			NextSite()
 		"?":pass
 		_:pass
 	print_debug("select site:",site)
@@ -116,8 +117,11 @@ func RndSelEctMst(set):
 			return s.mst
 	return set[len(set)-1].mst
 
-func GainCard():
-	pass#TODO
+func GainCard(card):
+	GlbDat.chara.cards.append(card.duplicate(true))
+	
+func CostGold(gold):
+	GlbDat.gold -= gold
 
 func TrigBattle(enmSet):
 	var tmpList = GetSetEnmLst(enmSet)

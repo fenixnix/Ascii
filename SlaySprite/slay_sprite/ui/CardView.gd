@@ -8,6 +8,7 @@ func Set(card_list):
 	$List.clear()
 	for card in data:
 		$List.add_item(card.name)
+	_on_List_item_selected(0)
 
 func _on_OK_pressed():
 	queue_free()

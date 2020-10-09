@@ -16,7 +16,10 @@ func CardView():
 	OpenView(GlbDat.chara.cards)
 
 func SelectCard(list):
-	pass
+	var ui = LoadUI("SelectCard")
+	ui.Set(list)
+	var card = yield(ui,"select")
+	emit_signal("select_card",card)
 
 func OpenView(list):
 	var ui = LoadUI("CardView")

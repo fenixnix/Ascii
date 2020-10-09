@@ -30,6 +30,8 @@ func _init():
 	InitPotionDict()
 	
 	enmDict = FileRW.LoadJsonFileArray2Dict(dbPath%"enm/enm")
+	AppendDictByID(enmDict,"enm/elite")
+	AppendDictByID(enmDict,"enm/boss")
 	lvDb=LoadDat("enm/enm_ect01")
 	
 
@@ -37,15 +39,78 @@ func RandomSelect():
 	var index = randi()%len(cardDict.keys())
 	return cardDict[cardDict.keys()[index]]
 
-func RandomGainCardByClass(_class,count):
+func RandomShopCard(_class):
 	var tmpList = []
 	for card in cardDict.values():
 		if card.get("class","all") == _class:
 			tmpList.append(card)
+	
+	var attackList = FilterByType(tmpList,"Attack")
+	var skillList = FilterByType(tmpList,"Skill")
+	var powrList = FilterByType(tmpList,"Power")
+	attackList.shuffle()
+	skillList.shuffle()
+	powrList.shuffle()
+	
+	var tmp = []
+	for c in 2:
+		tmp.append(attackList.pop_front())
+	for c in 2:
+		tmp.append(skillList.pop_front())
+	for c in 1:
+		tmp.append(powrList.pop_front())
+	return tmp
+
+func RandomGrayCard(count):
+	var tmpList = []
+	for c in cardDict.values():
+		if c.get("class","all") == "all":
+			if c.rarity == "Common"||c.rarity == "Uncommon":
+				tmpList.append(c)
 	tmpList.shuffle()
 	var tmp = []
 	for c in count:
 		tmp.append(tmpList.pop_front())
+	return tmp
+
+func RandomGainCardByClass(_class,count):
+	var rarityDat = {"common":0,"uncommon":0,"rare":0}
+	for c in count:
+		rarityDat[GlbDat.RollCardRarity()] += 1
+
+	var tmpList = []
+	for card in cardDict.values():
+		if card.get("class","all") == _class:
+			tmpList.append(card)
+	
+	var commonList = FilterByRarity(tmpList,"Common")
+	var uncommonList = FilterByRarity(tmpList,"Uncommon")
+	var rareList = FilterByRarity(tmpList,"Rare")
+	commonList.shuffle()
+	uncommonList.shuffle()
+	rareList.shuffle()
+	
+	var tmp = []
+	for c in rarityDat["common"]:
+		tmp.append(commonList.pop_front())
+	for c in rarityDat["uncommon"]:
+		tmp.append(uncommonList.pop_front())
+	for c in rarityDat["rare"]:
+		tmp.append(rareList.pop_front())
+	return tmp
+
+func FilterByRarity(list,rarity):
+	var tmp = []
+	for l in list:
+		if l.rarity == rarity:
+			tmp.append(l)
+	return tmp
+
+func FilterByType(list,type):
+	var tmp = []
+	for l in list:
+		if l.type == type:
+			tmp.append(l)
 	return tmp
 
 func RndSelCard(cnt):
@@ -67,6 +132,11 @@ func AppendDict(db,file):
 	var tmp = LoadDat(file)
 	for d in tmp:
 		db[d.name] = d
+
+func AppendDictByID(db,file):
+	var tmp = LoadDat(file)
+	for d in tmp:
+		db[d.id] = d
 
 func LoadDat(file):
 	return FileRW.LoadJsonFile(dbPath%file)

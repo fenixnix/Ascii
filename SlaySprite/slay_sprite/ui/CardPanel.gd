@@ -10,10 +10,10 @@ const class_dict = {
 
 const rarity_dict = {
 	"Starter":Color.gray,
-	"Common":Color.green,
-	"Uncommon":Color.aqua,
-	"Rare":Color.gold,
-	"Special":Color.peru
+	"Common":Color.white,
+	"Uncommon":Color.green,
+	"Rare":Color.yellow,
+	"Special":Color.purple
 }
 
 const type_dict = {

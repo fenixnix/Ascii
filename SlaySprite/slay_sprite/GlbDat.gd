@@ -10,7 +10,10 @@ var cur_floor = 0
 var marks = {}
 
 var card_dat = {
-	"option_cnt":3
+	"option_cnt":3,
+	"common":.65,
+	"uncommon":.25,
+	"rare":.1
 }
 
 var potion_dat = {
@@ -44,14 +47,20 @@ var shop_dat = {
 	},"remove":{"cost":75,"addtive":25,"cnt":0}
 }
 
+func RollRarity(dat):
+	var rarity = rand_range(0,1)
+	if rarity>(1-dat.rare):
+		return "rare"
+	if rarity>(1-dat.rare-dat.uncommon):
+		return "uncommon"
+	return "common"
+
+func RollCardRarity():
+	return RollRarity(card_dat)
+
 func RollPotionRarity():
 	if rand_range(0,1)<potion_dat.drop_rate:
-		var rarity = rand_range(0,1)
-		if rarity>(1-potion_dat.rare):
-			return "rare"
-		if rarity>(1-potion_dat.rare-potion_dat.uncommon):
-			return "uncommon"
-		return "common"
+		return RollRarity(potion_dat)
 	return null
 
 func CurrentSiteOptions():
