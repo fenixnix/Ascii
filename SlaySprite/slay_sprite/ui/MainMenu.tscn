@@ -11,7 +11,7 @@
 
 [node name="MainMenu" type="PanelContainer"]
 anchor_right = 1.0
-margin_bottom = 84.0
+margin_bottom = 36.0
 mouse_filter = 2
 script = ExtResource( 1 )
 __meta__ = {
@@ -58,29 +58,31 @@ icon = ExtResource( 3 )
 
 [node name="PotionSlots" type="HBoxContainer" parent="Menu"]
 margin_left = 360.0
-margin_right = 560.0
+margin_right = 368.0
 margin_bottom = 72.0
 script = ExtResource( 8 )
 
 [node name="PotionSlot" type="TextureRect" parent="Menu/PotionSlots"]
-margin_right = 64.0
 margin_bottom = 72.0
 texture = ExtResource( 7 )
+expand = true
 
 [node name="PotionSlot2" type="TextureRect" parent="Menu/PotionSlots"]
-margin_left = 68.0
-margin_right = 132.0
+margin_left = 4.0
+margin_right = 4.0
 margin_bottom = 72.0
 texture = ExtResource( 7 )
+expand = true
 
 [node name="PotionSlot3" type="TextureRect" parent="Menu/PotionSlots"]
-margin_left = 136.0
-margin_right = 200.0
+margin_left = 8.0
+margin_right = 8.0
 margin_bottom = 72.0
 texture = ExtResource( 7 )
+expand = true
 
 [node name="Label" type="Label" parent="Menu"]
-margin_left = 564.0
+margin_left = 372.0
 margin_top = 29.0
 margin_right = 850.0
 margin_bottom = 43.0
