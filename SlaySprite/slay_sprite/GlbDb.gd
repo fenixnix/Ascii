@@ -4,6 +4,7 @@ var cardDict = {}
 var enmDict = {}
 var statusCardDict = {}
 var potionDb = {}
+var relicDict = {}
 
 var lvDb = {}
 
@@ -15,6 +16,12 @@ func _init():
 	AppendDict(cardDict,"rogue")
 	AppendDict(cardDict,"wizard")
 	AppendDict(cardDict,"purple")
+	
+	AppendDict(relicDict,"relic_All")
+	AppendDict(relicDict,"relic_IronClad")
+	AppendDict(relicDict,"relic_Silent")
+	AppendDict(relicDict,"relic_Defect")
+	AppendDict(relicDict,"relic_Watcher")
 	
 	var res = LoadDb("status")
 	statusCardDict = res[1]

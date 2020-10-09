@@ -37,3 +37,8 @@ func _on_NextSite_pressed():
 
 func _on_Forge_pressed():
 	GlbAct.Forge()
+
+func _on_RelicView_pressed():
+	var ui = LoadUI("RelicView")
+	add_child(ui)
+	ui.Set(GlbDb.relicDict.values())

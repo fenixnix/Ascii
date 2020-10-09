@@ -130,10 +130,10 @@ func DuelDamage(dat,target = null):
 		match dat.get("target","one"):
 			"one":totelDmg += target.TakeDamage(dmg)
 			"all":
-				for enm in GlbAct.BattleGround().get_children():
+				for enm in $"../BattleGround".get_children():
 					totelDmg += enm.TakeDamage(dmg)
 			"rnd":
-				totelDmg += GlbAct.BattleGround().RndSel()
+				totelDmg += $"../BattleGround".RndSel()
 		yield(get_tree().create_timer(.5),"timeout")
 	return totelDmg
 
@@ -157,7 +157,7 @@ func ModPower(d):
 	GlbAct.modDict(d,power)
 
 func ExecuteScript(dat,card,target):
-	var s = load("res://skill/%s.gd"%dat.val)
+	var s = load("res://script/skill/%s.gd"%dat.val)
 	s.run(self,card,target,dat.get("para",{}))
 
 func CostHp(amount):

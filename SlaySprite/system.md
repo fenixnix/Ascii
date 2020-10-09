@@ -6,11 +6,12 @@ dex
 force
 
 Power:
-    thorn
-    artifact
-    metal
-    armor
-    fossil
+    ritual str+
+    thorn reflex dmg
+    artifact immue status
+    metal blk
+    armor blk,decreased
+    fossil immue dmg
 
 卡片（Card）
     卡片升级

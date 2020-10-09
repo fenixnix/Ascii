@@ -430,7 +430,7 @@
             },
             {
                 "type": "script",
-                "val": "gainStatueCard",
+                "val": "gainStatusCard",
                 "para": {
                     "type": "Wound"
                 }
@@ -889,7 +889,7 @@
         "desc": [
             {
                 "type": "script",
-                "val": "gainStatueCard",
+                "val": "gainStatusCard",
                 "para": {
                     "type": "Wound",
                     "val": 2
@@ -1417,7 +1417,7 @@
             },
             {
                 "type": "script",
-                "val": "gainStatueCard",
+                "val": "gainStatusCard",
                 "para": {
                     "type": "Burn"
                 }

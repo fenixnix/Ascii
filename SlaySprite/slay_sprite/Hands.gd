@@ -52,9 +52,10 @@ func Exhaust(card):
 			break
 	PositionAnim()
 
+const hand_card_offset = 80
 func PositionAnim():
-	var x_start_position = len(hands)*50/2
+	var x_start_position = len(hands)*hand_card_offset/2
 	var offset = x_start_position
 	for card in hands:
 		card.AnimMove(Vector2(offset,0))
-		offset -= 50
+		offset -= hand_card_offset
