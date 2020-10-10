@@ -70,6 +70,7 @@ func BattleWin():
 	BattleGround().Stop()
 	print_debug("Battle Win!!!")
 	var ui = GlbUi.LoadUI("Reward")
+	ui.Set(BattleGround().result)
 	yield(ui,"finish")
 
 	RefreshMainMenu()
@@ -79,10 +80,15 @@ func EnterSite():
 	GlbUi.SelectSite(GlbDat.CurrentSiteOptions())
 	var site = yield(GlbUi,"select_site")
 	match site:
-		"enm":EncounterEnm()
-		"enmX":EncounterEnm()
-		"boss":EncounterEnm()
-		"chest":pass
+		"enm":Encounter('enm')
+		"elite":Encounter('elite')
+		"boss":Encounter('boss')
+		"chest":
+			var ui = GlbUi.LoadUI("Reward")
+			ui.Set({"type":"chest","para":GlbDat.RollChest()})
+			yield(ui,"finish")
+			RefreshMainMenu()
+			NextSite()
 		"rest":
 			GlbDat.chara.Rest()
 			NextSite()
@@ -96,14 +102,15 @@ func EnterSite():
 	print_debug("select site:",site)
 
 var enmCnt = 0
-func EncounterEnm():
+func Encounter(type):
 	var set
 	if enmCnt < GlbDb.lvDb.start.cnt:
 		set = RndSelEctMst(GlbDb.lvDb.start.sets)
 	else:
 		set = RndSelEctMst(GlbDb.lvDb.remains.sets)
 	enmCnt += 1
-	TrigBattle(set)
+	var data = {"type":type,"set":set}
+	TrigBattle(data)
 
 func RndSelEctMst(set):
 	var rate_sum:int = 0
@@ -123,14 +130,15 @@ func GainCard(card):
 func CostGold(gold):
 	GlbDat.gold -= gold
 
-func TrigBattle(enmSet):
-	var tmpList = GetSetEnmLst(enmSet)
+func TrigBattle(data):
+	var tmpList = GetSetEnmLst(data.set)
 	if GlbDat.battle!=null:
 		GlbDat.battle.queue_free()
 		GlbDat.battle = null
 	GlbDat.battle = load("res://battle.tscn").instance()
 	add_child(GlbDat.battle)
 	GlbDat.battle.Start({
+		"type":data.type,
 		"chara":GlbDat.chara,
 		"enm":tmpList
 	})

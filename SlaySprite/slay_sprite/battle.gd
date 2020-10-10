@@ -2,7 +2,10 @@ extends Node
 
 onready var plrBtl = $Player
 
+var result = {}
+
 func Start(dat):
+	result["type"] = dat.type
 	plrBtl.Set(dat.chara)
 	DrawCard(5)
 	refresh()

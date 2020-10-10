@@ -28,12 +28,18 @@ _global_script_classes=[ {
 "class": "FileRW",
 "language": "GDScript",
 "path": "res://FileRW.gd"
+}, {
+"base": "Node",
+"class": "NixRnd",
+"language": "GDScript",
+"path": "res://NixRnd.gd"
 } ]
 _global_script_class_icons={
 "Chara": "",
 "CharaBtl": "",
 "Enemy": "",
-"FileRW": ""
+"FileRW": "",
+"NixRnd": ""
 }
 
 [application]

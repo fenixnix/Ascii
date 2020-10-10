@@ -29,20 +29,15 @@ func RndInit():
 onready var card_prefab = preload("res://ui/ShopCardSlot.tscn")
 func add_card(c,on_sale = false):
 	var card  = card_prefab.instance()
-	var price = rnd_card_price(c)
+	var card_type = "gray"
+	if c["class"] != "all":
+		card_type = "color"
+	var price = GlbDat.RndPrice(card_type,c.rarity)
 	if on_sale:
 		price = ceil(price/2)
 	price *= ceil(1.0-GlbDat.marks.get("discount",0))
 	$CardList.add_child(card)
 	card.Set(c,{"good":c,"price":price,"on_sale":on_sale})
-
-func rnd_card_price(card):
-	var price:int = 0
-	match card.rarity:
-		"Starter","Common":price = 50
-		"Uncommon":price = 75
-		"Rare":price = 150
-	return price + randi()%10-5
 
 func _on_Leave_pressed():
 	emit_signal("finish")

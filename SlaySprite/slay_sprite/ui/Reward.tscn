@@ -19,6 +19,9 @@ margin_left = -149.5
 margin_top = -192.0
 margin_right = 149.5
 margin_bottom = 192.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Button" type="Button" parent="."]
 anchor_left = 0.5
