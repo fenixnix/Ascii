@@ -10,14 +10,3 @@ script = ExtResource( 1 )
 layer = 2
 
 [node name="MainMenu" parent="UI" instance=ExtResource( 2 )]
-
-[node name="RelicList" type="HBoxContainer" parent="UI"]
-anchor_right = 1.0
-margin_left = -1.49835
-margin_top = 85.4035
-margin_right = -1.49835
-margin_bottom = 137.404
-mouse_filter = 2
-__meta__ = {
-"_edit_use_anchors_": false
-}

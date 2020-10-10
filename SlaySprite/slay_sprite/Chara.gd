@@ -17,14 +17,16 @@ signal rest()
 signal heal(val)
 
 func Set(dat):
+	GlbDat.gold = dat['$']
 	mhp = dat.hp
 	hp = mhp
 	class_ = dat["class"]
 	cards.clear()
-	GlbDat.gold = dat['$']
 	for card in dat.cards.keys():
 		for i in dat.cards[card]:
 			cards.append(GlbDb.cardDict[card].duplicate(true))
+	for relic in dat.relics:
+		GainRelic(relic)
 
 func GainCard(card):
 	if card.type == "Cursed":
@@ -38,6 +40,14 @@ func GainGold(gold):
 	GlbDat.gold += gold
 	emit_signal("gain_gold",gold)
 
+func GainRelic(rlc):
+	relic.append(rlc)
+	var node = Node.new()
+	node.script = load("res://script/relic/%s.gd"%rlc.replace(' ','_').to_lower())
+	add_child(node)
+	node.Pickup(self)
+	node.Init(self)
+
 func Rest(rate = .3):
 	hp += mhp*rate
 	if hp>mhp:
@@ -45,7 +55,7 @@ func Rest(rate = .3):
 	emit_signal("rest")
 
 func Heal(val):
-	if GlbDat.has("no_heal"):
+	if GlbDat.marks.has("no_heal"):
 		return
 	hp += val
 	if hp > mhp:

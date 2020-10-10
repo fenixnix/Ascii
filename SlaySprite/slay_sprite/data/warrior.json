@@ -142,19 +142,13 @@
         "desc": [
             {
                 "type": "script",
-                "val": "flex",
-                "para": {
-                    "val": 2
-                }
+                "val": "oneTurnAttr",
+                "para": {"type":"str","val":"2"}
             }
         ],
         "upgrade": {
-            "replace_script_para": {
-                "para": {
-                    "val": 4
-                }
-            }
-        },
+            "replace_script_para":{"val":2}
+            },
         "name": "Flex",
         "img": "red/Skill/flex",
         "rarity": "Common",
@@ -490,7 +484,7 @@
         "class": "ironclad",
         "init": [
             {
-                "type": "script",
+                "type": "init_script",
                 "val": "costDownOnHurt"
             }
         ]
@@ -568,8 +562,7 @@
         ],
         "upgrade": {
             "replace_script_para": {
-                "hp": 1,
-                "dmg": 7
+                "dmg":2
             }
         },
         "name": "Combust",
@@ -581,7 +574,7 @@
     },
     {
         "desc": [
-            "Whenever a card is Exhausted, draw 1 card"
+            {"type":"script","val":"drawCardOnExhaust"}
         ],
         "upgrade": {
             "cost": -1
@@ -595,9 +588,11 @@
     },
     {
         "desc": [
-            "Enemy loses 2(3) Strength",
+            {"type":"script","val":"modAttr","para":{"type":"str","val":-2}},
             "Exhaust"
-        ],
+        ],"upgrade":{
+            "replace_script_para":{"val":-1}
+        },
         "name": "Disarm",
         "img": "red/Skill/disarm",
         "rarity": "Uncommon",
@@ -630,15 +625,15 @@
         "desc": [
             {
                 "type": "script",
-                "val": "dualWield",
+                "val": "cloneCard",
                 "para": {
-                    "val": 1
+                    "count": 1
                 }
             }
         ],
         "upgrade": {
             "replace_script_para": {
-                "val": 2
+                "count": 1
             }
         },
         "name": "Dual Wield",
@@ -671,13 +666,13 @@
                 "type": "script",
                 "val": "drawOnDrawStatus",
                 "para": {
-                    "val": 1
+                    "count": 1
                 }
             }
         ],
         "upgrade": {
             "replace_script_para": {
-                "val": 1
+                "count": 1
             }
         },
         "name": "Evolve",

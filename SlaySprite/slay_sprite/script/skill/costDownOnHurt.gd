@@ -1,13 +1,10 @@
 extends Node
 
-var card_
-
-func run(src:CharaBtl,card,dst,para):
-	card_ = card
+func init(src:CharaBtl,card,dst,para):
 	src.add_child(self)
-	src.connect("hurt",self,"on_hurt")
+	src.connect("hurt",self,"on_hurt",[card])
 
-func on_hurt():
-	card_.cost -= 1
-	if card_.cost<0:
-		card_.cost = 0
+func on_hurt(card):
+	card.cost -= 1
+	if card.cost<0:
+		card.cost = 0

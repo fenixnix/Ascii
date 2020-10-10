@@ -55,6 +55,10 @@ GlbAct="*res://GlbAct.gd"
 GlbDat="*res://GlbDat.gd"
 GlbUi="*res://ui/GlbUi.tscn"
 
+[gui]
+
+timers/tooltip_delay_sec=0.3
+
 [input]
 
 click={

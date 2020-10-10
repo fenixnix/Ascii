@@ -59,18 +59,13 @@ with open(file,'r') as f:
     for relic in jsonDat:
         fileName = relic["name"].replace(' ','_').lower()
         with open("%s%s.gd"%(path,fileName),'w') as wf:
-            content = """
+            content = """extends Node
 #Desc:%s
-func OnBattleStart(chara:CharaBtl):
+
+func PickUp(chara):
     pass
 
-func OnBattleEnd(chara:CharaBtl):
-    pass
-
-func OnEnterSite(chara,site):
-    pass
-
-func OnPickUp(chara):
+func Init(chara):
     pass
             """%(relic["desc"])
             wf.write(content)

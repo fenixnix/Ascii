@@ -1,0 +1,17 @@
+[{
+    "id":"a_note_for_yourself",
+    "name":"A Note For Yourself",
+    "encounter":"You spot a loose brick within a pillar that catches your eye.\n    You find a folded note and a card inside. It reads \"The Heart awaits.\" This is your handwriting.",
+    "desc":"You found a card left by someone, along with a mysterious note that is supposedly written by yourself.",
+    "options":[
+        {"text":"Take and Give"},
+        {"text":"Ignore"}
+    ],
+    "leave":"What is going on?"
+},{
+    "id":"bonfire_spirits",
+    "name":"Bonfire Spirits",
+    "encounter":"You happen upon a group of what looks like purple fire spirits dancing around a large bonfire.\n    The spirits toss small bones and fragments into the fire, which brilliantly erupts each time. As you approach, the spirits all turn to you, expectantly...",
+    "offer":"You toss an offering into the bonfire."
+}
+]

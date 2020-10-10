@@ -1,14 +1,10 @@
 extends Node
 
-var src_
-var para_
 func run(src:CharaBtl,card,dst,para):
-	src_ = src
-	para_ = para
 	src.add_child(self)
-	src.connect("draw_card",self,"on_draw")
+	src.connect("draw_card",self,"on_draw",[src,para])
 
-func on_draw(card):
+func on_draw(card,src,para):
 	if card.type == "Status":
-		for i in para_.val:
-			src_.Draw()
+		for i in para.count:
+			src.Draw()

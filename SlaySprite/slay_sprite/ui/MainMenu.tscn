@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://ui/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://image/icon/deck.png" type="Texture" id=2]
@@ -8,15 +8,13 @@
 [ext_resource path="res://image/icon/panelHeart.png" type="Texture" id=6]
 [ext_resource path="res://image/potion/potion_placeholder.png" type="Texture" id=7]
 [ext_resource path="res://ui/PotionSlots.gd" type="Script" id=8]
+[ext_resource path="res://Relic.tscn" type="PackedScene" id=9]
 
-[node name="MainMenu" type="PanelContainer"]
+[node name="MainMenu" type="Control"]
 anchor_right = 1.0
 margin_bottom = 36.0
 mouse_filter = 2
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Menu" type="HBoxContainer" parent="."]
 margin_left = 7.0
@@ -99,4 +97,17 @@ margin_left = 934.0
 margin_right = 1010.0
 margin_bottom = 72.0
 icon = ExtResource( 5 )
+
+[node name="RelicList" type="VBoxContainer" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 2.0
+margin_top = 43.0
+margin_right = 1012.0
+margin_bottom = 115.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Relic" parent="RelicList" instance=ExtResource( 9 )]
 [connection signal="pressed" from="Menu/Deck" to="." method="_on_Deck_pressed"]

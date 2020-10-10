@@ -15,6 +15,7 @@ var deck = []
 var hand = []
 var discard = []
 var exhaust = []
+var marks = {}
 
 signal exhaust(card)
 signal discard(card)
@@ -172,12 +173,19 @@ func TakeDamage(attacker,_dmg):
 		dmg = ceil(dmg*1.5)
 	var overDmg = clamp(dmg-blk,0,65535)
 	blk = clamp(blk-dmg,0,65535)
-	chara.hp -= overDmg
-	if chara.hp<=0:
-		chara.hp = 0
-		on_dead()
-	emit_signal("hurt",attacker,dmg)
+	Hurt(attacker, overDmg)
 	emit_signal("take_dmg",attacker,dmg)
+
+func Hurt(attacker,dmg):
+	if dmg>0:
+		chara.hp -= dmg
+		if chara.hp<=0:
+			chara.hp = 0
+			on_dead()
+		emit_signal("hurt",attacker,dmg)
+		if !marks.has("hurt"):
+			marks["hurt"] = 0
+		marks["hurt"] += 1
 
 func on_dead():
 	print("dead")

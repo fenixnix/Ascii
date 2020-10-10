@@ -1,10 +1,6 @@
 extends Node
 
-#func _ready():
-#	randomize()
-#	GetSetEnmLst([
-#					"louse_R|louse_G*2"
-#				])
+signal battle_win() 
 
 func GetChara():
 	return GlbDat.battle.plrBtl
@@ -72,8 +68,8 @@ func BattleWin():
 	var ui = GlbUi.LoadUI("Reward")
 	ui.Set(BattleGround().result)
 	yield(ui,"finish")
-
 	RefreshMainMenu()
+	emit_signal("battle_win")
 	NextSite()
 
 func EnterSite():

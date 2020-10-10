@@ -25,6 +25,8 @@ const type_dict = {
 }
 
 func Set(card):
+	$Cost.visible = !card.desc.has("Unplayable")
+	
 	self_modulate = class_dict[card.get("class","all")]
 	$Cost/Cost.text = str(card.get("cost",0))
 	$Cost.self_modulate = rarity_dict[card.get("rarity","Starter")]

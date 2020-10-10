@@ -7,5 +7,5 @@ func run(src:CharaBtl,card,dst,para):
 			tmp.append(c)
 	GlbUi.SelectCard(tmp)
 	var c = yield(GlbUi,"select_card")
-	for i in para.val:
+	for i in para.count:
 		src.Invoke(c.duplicate(true))
