@@ -1,5 +1,6 @@
 extends Node
 
+signal battle_start()
 signal battle_win() 
 
 func GetChara():
@@ -68,8 +69,8 @@ func BattleWin():
 	var ui = GlbUi.LoadUI("Reward")
 	ui.Set(BattleGround().result)
 	yield(ui,"finish")
-	RefreshMainMenu()
 	emit_signal("battle_win")
+	RefreshMainMenu()
 	NextSite()
 
 func EnterSite():
@@ -138,6 +139,7 @@ func TrigBattle(data):
 		"chara":GlbDat.chara,
 		"enm":tmpList
 	})
+	emit_signal("battle_start")
 
 func GetSetEnmLst(set):
 	var tmpList = []

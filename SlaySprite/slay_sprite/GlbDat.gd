@@ -1,5 +1,7 @@
 extends Node
 
+var selectChara
+
 var chara
 var battle
 

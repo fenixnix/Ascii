@@ -1,7 +1,8 @@
 extends Control
 
 func _ready():
-	Set(RndSel())
+	#Set(RndSel())
+	pass
 
 func Set(dat):
 	print(dat)

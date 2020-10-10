@@ -47,6 +47,10 @@ func GainRelic(rlc):
 	add_child(node)
 	node.Pickup(self)
 	node.Init(self)
+	#var list = node.script.get_script_method_list()
+	#print(list)
+	#if list.has("Pickup"):
+	#if list.has("Init"):
 
 func Rest(rate = .3):
 	hp += mhp*rate
