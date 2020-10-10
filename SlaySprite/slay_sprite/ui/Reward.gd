@@ -8,16 +8,16 @@ func Set(dat):
 	data.clear()
 	match dat.type:
 		"enm":
-			AppendGold(ceil(rand_range(11,21)))
+			AppendGold(ceil(rand_range(10,20)))
 			data.append({"type":"card","val":"normal"})
 			AppendPotion()
 		"elite":
-			AppendGold(ceil(rand_range(28,35)))
+			AppendGold(ceil(rand_range(25,35)))
 			data.append({"type":"card","val":"normal"})
 			AppendPotion()
 			AppendRelic(GlbDat.RollEliteRelic())
 		"boss":
-			AppendGold(ceil(rand_range(95,100)))
+			AppendGold(ceil(rand_range(95,105)))
 			data.append({"type":"card","val":"boss"})
 			AppendPotion()
 			data.append({"type":"boss_relic"})

@@ -8,12 +8,17 @@ var gold = 0
 var cur_floor = 0
 
 var marks = {}
-
+# card ect 3 37 60
+# card shop 9 37 54
+# upgrade chance
+# act1 0%
+# act2 25%
+# act3 50%
 var card_dat = {
 	"option_cnt":3,
-	"common":.65,
-	"uncommon":.25,
-	"rare":.1
+	"common":.54,
+	"uncommon":.37,
+	"rare":.09
 }
 
 var potion_dat = {
