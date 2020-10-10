@@ -2,7 +2,7 @@
     "class":"ironclad",
     "hp":80,
     "$":99,
-    "relics":[],
+    "relics":["burning_blood"],
     "cards":{
         "Strike":5,
         "Bash":1,

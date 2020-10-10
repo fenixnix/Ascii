@@ -1,5 +1,6 @@
 [
     {
+        "id":"burning_blood",
         "name": "Burning Blood",
         "desc": "At the end of combat, heal 6 HP.",
         "rarity": "Starter",
