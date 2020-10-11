@@ -32,7 +32,7 @@ func _init():
 	enmDict = FileRW.LoadJsonFileArray2Dict(dbPath%"enm/enm")
 	AppendDictByID(enmDict,"enm/elite")
 	AppendDictByID(enmDict,"enm/boss")
-	lvDb=LoadDat("enm/enm_ect01")
+	lvDb=LoadDat("enm/enm_act1")
 	
 
 func RandomSelect():

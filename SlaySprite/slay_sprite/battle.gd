@@ -3,6 +3,7 @@ extends Node
 onready var plrBtl = $Player
 
 var result = {}
+var turn = 0
 
 func Start(dat):
 	result["type"] = dat.type
@@ -29,7 +30,8 @@ func DrawCard(cnt = 1):
 
 func _on_EndTurn_pressed():
 	$Player.EndTurn()
-	$BattleGround.EnemyPhase()
+	$BattleGround.EnemyPhase(turn)
+	turn += 1
 	$Player.StartNewTurn()
 	$BattleGround.ShowEnmAction()
 

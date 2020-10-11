@@ -171,16 +171,16 @@ __meta__ = {
 
 [node name="TestDraw" type="Button" parent="UI/TestPanel"]
 margin_right = 71.0
-margin_bottom = 20.0
+margin_bottom = 22.0
 text = "TestDraw"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TestWin" type="Button" parent="UI/TestPanel"]
-margin_top = 24.0
+margin_top = 26.0
 margin_right = 71.0
-margin_bottom = 44.0
+margin_bottom = 48.0
 text = "TestWin"
 __meta__ = {
 "_edit_use_anchors_": false

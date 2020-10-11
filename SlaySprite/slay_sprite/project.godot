@@ -45,7 +45,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Slay Sprite"
-run/main_scene="res://ui/MainTitle.tscn"
+run/main_scene="res://game.tscn"
 config/icon="res://image/icon.png"
 
 [autoload]

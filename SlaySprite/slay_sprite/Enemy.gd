@@ -26,6 +26,9 @@ func Set(enm):
 	data = enm
 	mhp = enm.hp.val+randi()%int(enm.hp.rnd)
 	hp = mhp
+	if data.has("power"):
+		for p in data.power.keys():
+			GlbAct.modDict({"type":p,"val":data.power[p]},power)
 	skl = enm.get("skl",[]).duplicate(true)
 	skl_queue = enm.get("skl_queue",[])
 	skl_rate = enm.get("skl_rate",[])
@@ -37,13 +40,26 @@ func refresh_info():
 	$EnemyUI/HP.Set(hp,mhp)
 	$EnemyUI/Block/Label.text = str(blk)
 
-var turn = 0
-var cur_skl = null
+var turn:int = 0
+func EndTurn(_turn):
+	turn = _turn
+	#update status
+	var dead_keys = []
+	for k in status.keys():
+		status[k] -= 1
+		if status[k]<=0:
+			dead_keys.append(k)
+	for d in dead_keys:
+		status.erase(d)
+	refresh_info()
+
 func sel_skl():
 	for queue in skl_queue:
 		if queue.turn == turn:
-			cur_skl = skl[queue.index]
+			var cur_skl = skl[queue.index]
 			return cur_skl
+	if data.has("skl_loop"):
+		return skl[data.skl_loop[turn%len(data.skl_loop)]]
 	return skl[rndSelIndexByRate()]
 	
 func rndSelIndexByRate():
@@ -82,9 +98,10 @@ func Action():
 			"vul","weak","frail","entangle":
 				print_debug("affix status:",e.type)
 				GlbAct.GetChara().ModStatus(e)
+			"power":GlbAct.modDict(e.val,power)
 			"script":
 				print_debug("script:",str(e))
-			_:print_debug("unknow efx:",str(e))
+			_:print_debug("!!!unknow efx:",str(e))
 	emit_signal("end_turn")
 	turn += 1
 

@@ -21,10 +21,12 @@ func AddEnm(_enm):
 	enm.Set(_enm)
 	RemapEnemy()
 
-func EnemyPhase():
+func EnemyPhase(turn):
 	for c in get_children():
 		c.Action()
 		yield(get_tree().create_timer(.5),"timeout")
+	for c in get_children():
+		c.EndTurn(turn)
 
 func ShowEnmAction():
 	for c in get_children():

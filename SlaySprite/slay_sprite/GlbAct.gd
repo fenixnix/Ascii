@@ -101,11 +101,17 @@ func EnterSite():
 var enmCnt = 0
 func Encounter(type):
 	var set
-	if enmCnt < GlbDb.lvDb.start.cnt:
-		set = RndSelEctMst(GlbDb.lvDb.start.sets)
-	else:
-		set = RndSelEctMst(GlbDb.lvDb.remains.sets)
-	enmCnt += 1
+	match type:
+		"enm":
+			if enmCnt < GlbDb.lvDb.start.cnt:
+				set = RndSelEctMst(GlbDb.lvDb.start.sets)
+			else:
+				set = RndSelEctMst(GlbDb.lvDb.remains.sets)
+			enmCnt += 1
+		"elite":
+			set = RndSelEctMst(GlbDb.lvDb.elite.sets)
+		"boss":
+			set = RndSelEctMst(GlbDb.lvDb.boss.sets)
 	var data = {"type":type,"set":set}
 	TrigBattle(data)
 

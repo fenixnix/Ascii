@@ -1,9 +1,12 @@
 [{
         "id": "slime_boss",
         "name": "Slime Boss",
-        "img": "slime_boss",
+        "img": "boss/slime_boss",
         "lv": 0,
-        "hp": 140,
+        "hp": {
+            "val": 140,
+            "rnd": 5
+        },
         "power": {
             "split": 1
         },
@@ -55,9 +58,12 @@
     {
         "id": "the_guardian",
         "name": "The Guardian",
-        "img": "the_guardian",
+        "img": "boss/the_guardian",
         "lv": 0,
-        "hp": 240,
+        "hp": {
+            "val": 240,
+            "rnd": 5
+        },
         "power": {
             "mode_shift": 30
         },
@@ -140,9 +146,12 @@
     {
         "id": "hexaghost",
         "name": "Hexaghost",
-        "img": "hexaghost",
+        "img": "img/hexaghost",
         "lv": 0,
-        "hp": 250,
+        "hp": {
+            "val": 250,
+            "rnd": 10
+        },
         "skl": [{
                 "name": "Activate"
             },

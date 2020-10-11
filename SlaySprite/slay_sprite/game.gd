@@ -7,6 +7,6 @@ func _ready():
 	$UI/MainMenu.Refresh()
 	
 	GlbDat.cur_floor = 0
-	GlbDat.map = FileRW.LoadJsonFile("res://data/map/map01.json")
+	GlbDat.map = FileRW.LoadJsonFile("res://data/map/map_act1.json")
 	
 	GlbAct.EnterSite()

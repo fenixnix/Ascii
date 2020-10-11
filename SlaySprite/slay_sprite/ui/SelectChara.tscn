@@ -35,8 +35,8 @@ __meta__ = {
 }
 
 [node name="Warrior" type="TextureButton" parent="HBoxContainer"]
-margin_left = 412.0
-margin_right = 476.0
+margin_left = 408.0
+margin_right = 472.0
 margin_bottom = 64.0
 rect_min_size = Vector2( 64, 64 )
 texture_normal = ExtResource( 4 )
@@ -44,8 +44,8 @@ expand = true
 stretch_mode = 5
 
 [node name="Rogue" type="TextureButton" parent="HBoxContainer"]
-margin_left = 480.0
-margin_right = 544.0
+margin_left = 476.0
+margin_right = 540.0
 margin_bottom = 64.0
 rect_min_size = Vector2( 64, 64 )
 texture_normal = ExtResource( 2 )
@@ -53,14 +53,14 @@ expand = true
 stretch_mode = 5
 
 [node name="Label" type="Label" parent="HBoxContainer"]
-margin_left = 548.0
-margin_top = 25.0
-margin_right = 548.0
-margin_bottom = 39.0
+margin_left = 544.0
+margin_top = 21.0
+margin_right = 552.0
+margin_bottom = 43.0
 
 [node name="Embark" type="Button" parent="HBoxContainer"]
-margin_left = 552.0
-margin_right = 611.0
+margin_left = 556.0
+margin_right = 615.0
 margin_bottom = 64.0
 text = "Embark"
 [connection signal="pressed" from="HBoxContainer/Warrior" to="." method="_on_Warrior_pressed"]

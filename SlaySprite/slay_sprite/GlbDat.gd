@@ -1,6 +1,6 @@
 extends Node
 
-var selectChara
+var selectChara = "warrior"
 
 var chara
 var battle

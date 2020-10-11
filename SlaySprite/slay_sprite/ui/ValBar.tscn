@@ -6,8 +6,8 @@
 [ext_resource path="res://ui/ValBar.gd" type="Script" id=4]
 
 [node name="ValBar" type="TextureProgress"]
-margin_right = 85.0
-margin_bottom = 15.0
+margin_right = 192.0
+margin_bottom = 24.0
 value = 50.0
 texture_under = ExtResource( 2 )
 texture_progress = ExtResource( 3 )
@@ -24,6 +24,8 @@ __meta__ = {
 [node name="Label" type="Label" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_top = -0.374573
+margin_bottom = -0.374573
 custom_fonts/font = ExtResource( 1 )
 text = "100/100"
 align = 1

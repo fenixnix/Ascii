@@ -1,0 +1,18 @@
+[
+    ["enm","elite","boss","shop","chest","rest","forge"],
+    ["enm","?"],
+    ["enm"],
+    ["enm","?"],
+    ["enm","shop"],
+    ["elite","?","enm"],
+    ["rest","forge","enm"],
+    ["chest"],
+    ["enm","?","forge"],
+    ["elite"],
+    ["enm","?"],
+    ["shop","rest"],
+    ["enm","?"],
+    ["elite","enm"],
+    ["forge","rest"],
+    ["boss"]
+]

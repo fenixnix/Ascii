@@ -2,25 +2,45 @@
     {
         "id": "gremlin_nob",
         "name": "Gremlin Nob",
-        "img": "elite/Gremlin-nob-pretty",
+        "img": "elite/gremlin_nob",
         "hp": {
             "val": 84,
             "rnd": 2
         },
         "skl": [
             {
-                "name": "Bellow"
+                "name": "Bellow",
+                "efx": [
+                    {
+                        "type": "power",
+                        "val": {"type":"enrage","val":1}
+                    }
+                ]
             },
             {
-                "name": "Rush"
+                "name": "Rush",
+                "efx": [
+                    {
+                        "type": "dmg",
+                        "val": 14
+                    }
+                ]
             },
             {
-                "name": "Skull Bash"
+                "name": "Skull Bash",
+                "efx": [
+                    {
+                        "type": "dmg",
+                        "val": 6
+                    },
+                    {
+                        "type": "vul",
+                        "val": 2
+                    }
+                ]
             }
         ],
-        "skl_queue": [
-            0
-        ],
+        "skl_queue": [{"turn":0,"index":0}],
         "skl_rate": [
             0,
             2,
@@ -30,7 +50,7 @@
     {
         "id": "lagavulin",
         "name": "Lagavulin",
-        "img": "elite/Gremlin-nob-pretty",
+        "img": "elite/lagavulin",
         "hp": {
             "val": 110,
             "rnd": 3
@@ -78,19 +98,52 @@
     {
         "id": "sentry",
         "name": "Sentry",
+        "img": "elite/sentry",
         "hp": {
-            "val": 38,
-            "rnd": 5
+            "val": 40,
+            "rnd": 2
         },
+        "power":{"artifact":1},
         "skl": [
             {
-                "type": "dmg",
-                "val": "9"
-            },
-            "dazed"
+                "name": "Beam",
+                "efx":[
+                    {"type":"dmg","val":9}
+                ]
+            },{
+                "name":"Bolt",
+                "efx":[
+                    {"type":"script","val":"sentStatusCard","para":{"type":"Dazed","val":2}}
+                ]
+            }
         ],
-        "status": [
-            "artifact"
+        "skl_loop":[
+            1,0
+        ]
+    },{
+        "id": "sentry1",
+        "name": "Sentry",
+        "img": "elite/sentry",
+        "hp": {
+            "val": 40,
+            "rnd": 2
+        },
+        "power":{"artifact":1},
+        "skl": [
+            {
+                "name": "Beam",
+                "efx":[
+                    {"type":"dmg","val":9}
+                ]
+            },{
+                "name":"Bolt",
+                "efx":[
+                    {"type":"script","val":"sentStatusCard","para":{"type":"Dazed","val":2}}
+                ]
+            }
+        ],
+        "skl_loop":[
+            0,1
         ]
     }
 ]
