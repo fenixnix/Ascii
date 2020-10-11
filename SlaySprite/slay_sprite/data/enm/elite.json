@@ -13,7 +13,7 @@
                 "efx": [
                     {
                         "type": "power",
-                        "val": {"type":"enrage","val":1}
+                        "val": {"type":"enrage","val":2}
                     }
                 ]
             },
