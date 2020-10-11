@@ -1,19 +1,79 @@
-[{
+[
+    {
         "id": "gremlin_nob",
         "name": "Gremlin Nob",
         "img": "elite/Gremlin-nob-pretty",
-        "hp": 85,
-        "skl": ["bellow", "rush", "skull_bash"],
-        "skl_quque": ["bellow"],
-        "skl_rate": [0, 2, 1]
-    }, {
+        "hp": {
+            "val": 84,
+            "rnd": 2
+        },
+        "skl": [
+            {
+                "name": "Bellow"
+            },
+            {
+                "name": "Rush"
+            },
+            {
+                "name": "Skull Bash"
+            }
+        ],
+        "skl_queue": [
+            0
+        ],
+        "skl_rate": [
+            0,
+            2,
+            1
+        ]
+    },
+    {
         "id": "lagavulin",
         "name": "Lagavulin",
         "img": "elite/Gremlin-nob-pretty",
-        "hp": 85,
-        "skl": ["bellow", "rush", "skull_bash"],
-        "skl_quque": ["bellow"],
-        "skl_rate": [0, 2, 1]
+        "hp": {
+            "val": 110,
+            "rnd": 3
+        },
+        "power": {
+            "metal": 8,
+            "asleep": 3
+        },
+        "skl": [
+            {
+                "name": "Attack",
+                "efx": [
+                    {
+                        "type": "dmg",
+                        "val": 18
+                    }
+                ]
+            },
+            {
+                "name": "Siphon Soul",
+                "efx": [
+                    {
+                        "type": "modAttr",
+                        "para": {
+                            "type": "str",
+                            "val": -1
+                        }
+                    },
+                    {
+                        "type": "modAttr",
+                        "para": {
+                            "type": "dex",
+                            "val": -1
+                        }
+                    }
+                ]
+            }
+        ],
+        "skl_loop": [
+            0,
+            0,
+            1
+        ]
     },
     {
         "id": "sentry",
@@ -22,7 +82,8 @@
             "val": 38,
             "rnd": 5
         },
-        "skl": [{
+        "skl": [
+            {
                 "type": "dmg",
                 "val": "9"
             },

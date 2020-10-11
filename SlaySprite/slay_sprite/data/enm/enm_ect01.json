@@ -100,5 +100,45 @@
                 "rate": 4
             }
         ]
+    },
+    "elite":{
+        "sets":[
+            {
+                "mst":[
+                    "gremlin_nob"
+                ],
+                "rate":1
+            },{
+                "mst":[
+                    "lagavulin"
+                ],
+                "rate":1
+            },{
+                "mst":[
+                    "sentry*3"
+                ],
+                "rate":1
+            }
+        ]
+    },
+    "boss":{
+        "sets":[
+            {
+                "mst":[
+                    "slime_boss"
+                ],
+                "rate":1
+            },{
+                "mst":[
+                    "the_guardian"
+                ],
+                "rate":1
+            },{
+                "mst":[
+                    "hexaghost"
+                ],
+                "rate":1
+            }
+        ]
     }
 }
