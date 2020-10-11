@@ -58,7 +58,6 @@ GlbUi="*res://ui/GlbUi.tscn"
 [gui]
 
 theme/custom="res://ui/theme/flat.tres"
-theme/custom_font="res://font/ui_default.tres"
 timers/tooltip_delay_sec=0.3
 
 [input]
