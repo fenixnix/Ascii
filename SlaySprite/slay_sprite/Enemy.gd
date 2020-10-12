@@ -40,7 +40,8 @@ func Set(enm):
 func refresh_info():
 	$EnemyUI/Info.Set(self)
 	$EnemyUI/HP.Set(hp,mhp)
-	$EnemyUI/Block/Label.text = str(blk)
+	$EnemyUI/HP/Block/Label.text = str(blk)
+	$EnemyUI/HP/Block.visible = blk!=0
 
 var turn:int = 0
 func NewTurn(_turn):
