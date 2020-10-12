@@ -1,0 +1,246 @@
+[gd_scene load_steps=44 format=2]
+
+[ext_resource path="res://map/Default/castle.png" type="Texture" id=1]
+[ext_resource path="res://map/parchmentFoldedCrinkled.png" type="Texture" id=2]
+[ext_resource path="res://map/Site.tscn" type="PackedScene" id=3]
+[ext_resource path="res://map/Default/castleTall.png" type="Texture" id=4]
+[ext_resource path="res://map/Default/castleWide.png" type="Texture" id=5]
+[ext_resource path="res://map/Default/chest.png" type="Texture" id=6]
+[ext_resource path="res://map/Default/church.png" type="Texture" id=7]
+[ext_resource path="res://map/Default/churchLarge.png" type="Texture" id=8]
+[ext_resource path="res://map/Default/watchtower.png" type="Texture" id=9]
+[ext_resource path="res://map/Default/waterWheel.png" type="Texture" id=10]
+[ext_resource path="res://map/Default/treePine.png" type="Texture" id=11]
+[ext_resource path="res://map/Default/well.png" type="Texture" id=12]
+[ext_resource path="res://map/Default/vulcano.png" type="Texture" id=13]
+[ext_resource path="res://map/Default/tower.png" type="Texture" id=14]
+[ext_resource path="res://map/Default/houseSmall.png" type="Texture" id=15]
+[ext_resource path="res://map/Default/palmLarge.png" type="Texture" id=16]
+[ext_resource path="res://map/Default/lighthouse.png" type="Texture" id=17]
+[ext_resource path="res://map/Default/pyramid.png" type="Texture" id=18]
+[ext_resource path="res://map/Default/lake.png" type="Texture" id=19]
+[ext_resource path="res://map/Default/houseChimney.png" type="Texture" id=20]
+[ext_resource path="res://map/Default/houses.png" type="Texture" id=21]
+[ext_resource path="res://map/Default/houseViking.png" type="Texture" id=22]
+[ext_resource path="res://map/Default/lakeRound.png" type="Texture" id=23]
+[ext_resource path="res://map/Default/rocks.png" type="Texture" id=24]
+[ext_resource path="res://map/Default/runis.png" type="Texture" id=25]
+[ext_resource path="res://map/Default/mine.png" type="Texture" id=26]
+[ext_resource path="res://map/Default/skull.png" type="Texture" id=27]
+[ext_resource path="res://map/Default/stable.png" type="Texture" id=28]
+[ext_resource path="res://map/Default/tent.png" type="Texture" id=29]
+[ext_resource path="res://map/Default/tipi.png" type="Texture" id=32]
+[ext_resource path="res://map/Default/rocksA.png" type="Texture" id=33]
+[ext_resource path="res://map/Default/mill.png" type="Texture" id=34]
+[ext_resource path="res://map/Default/palm.png" type="Texture" id=35]
+[ext_resource path="res://map/Default/rocksMountain.png" type="Texture" id=36]
+[ext_resource path="res://map/Default/compass.png" type="Texture" id=37]
+[ext_resource path="res://map/Default/dock.png" type="Texture" id=38]
+[ext_resource path="res://map/Default/fence.png" type="Texture" id=39]
+[ext_resource path="res://map/Default/gate.png" type="Texture" id=41]
+[ext_resource path="res://map/Default/graveyard.png" type="Texture" id=42]
+[ext_resource path="res://map/Default/house.png" type="Texture" id=43]
+
+[sub_resource type="Curve" id=3]
+_data = [ Vector2( 0, 0 ), 0.0, 0.0, 0, 0, Vector2( 0.5, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="OpenSimplexNoise" id=1]
+seed = 4
+
+[sub_resource type="NoiseTexture" id=2]
+width = 32
+height = 32
+seamless = true
+as_normalmap = true
+noise = SubResource( 1 )
+
+[node name="WorldMap" type="Node2D"]
+
+[node name="BG" type="Sprite" parent="."]
+scale = Vector2( 5, 5 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="compass" type="TextureRect" parent="CanvasLayer"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -64.0
+margin_bottom = 64.0
+texture = ExtResource( 37 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+
+[node name="Sites" type="Position2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="castle" type="Sprite" parent="Sites"]
+position = Vector2( -476.187, -526.727 )
+texture = ExtResource( 1 )
+
+[node name="castleTall" type="Sprite" parent="Sites"]
+position = Vector2( 365.57, -302.841 )
+texture = ExtResource( 4 )
+
+[node name="castleWide" type="Sprite" parent="Sites"]
+position = Vector2( -321.791, 296.519 )
+texture = ExtResource( 5 )
+
+[node name="chest" type="Sprite" parent="Sites"]
+position = Vector2( 431.562, 9.96277 )
+texture = ExtResource( 6 )
+
+[node name="church" type="Sprite" parent="Sites"]
+position = Vector2( 41.4944, -76.506 )
+texture = ExtResource( 7 )
+
+[node name="churchLarge" type="Sprite" parent="Sites"]
+position = Vector2( 104.266, 3.9734 )
+texture = ExtResource( 8 )
+
+[node name="dock" type="Sprite" parent="Sites"]
+position = Vector2( 590.669, 343.354 )
+texture = ExtResource( 38 )
+
+[node name="fence" type="Sprite" parent="Sites"]
+position = Vector2( -150.546, 113.381 )
+texture = ExtResource( 39 )
+
+[node name="gate" type="Sprite" parent="Sites"]
+position = Vector2( 163.405, 199.004 )
+texture = ExtResource( 41 )
+
+[node name="graveyard" type="Sprite" parent="Sites"]
+position = Vector2( -314.455, -564.782 )
+texture = ExtResource( 42 )
+
+[node name="house" type="Sprite" parent="Sites"]
+position = Vector2( -42.8094, -50.2485 )
+texture = ExtResource( 43 )
+
+[node name="houseChimney" type="Sprite" parent="Sites"]
+position = Vector2( -36.285, 54.081 )
+texture = ExtResource( 20 )
+
+[node name="houses" type="Sprite" parent="Sites"]
+position = Vector2( 114.648, -183.921 )
+texture = ExtResource( 21 )
+
+[node name="houseSmall" type="Sprite" parent="Sites"]
+position = Vector2( 43.2952, 114.57 )
+texture = ExtResource( 15 )
+
+[node name="houseViking" type="Sprite" parent="Sites"]
+position = Vector2( -240.724, -468.456 )
+texture = ExtResource( 22 )
+
+[node name="lake" type="Sprite" parent="Sites"]
+position = Vector2( 353.678, 121.706 )
+texture = ExtResource( 19 )
+
+[node name="lakeRound" type="Sprite" parent="Sites"]
+position = Vector2( 139.621, 302.465 )
+texture = ExtResource( 23 )
+
+[node name="lighthouse" type="Sprite" parent="Sites"]
+position = Vector2( 295.407, 145.49 )
+texture = ExtResource( 17 )
+
+[node name="mill" type="Sprite" parent="Sites"]
+position = Vector2( -192.168, -51.9185 )
+texture = ExtResource( 34 )
+
+[node name="mine" type="Sprite" parent="Sites"]
+position = Vector2( 337.029, -112.568 )
+texture = ExtResource( 26 )
+
+[node name="palm" type="Sprite" parent="Sites"]
+position = Vector2( 245.46, 271.546 )
+texture = ExtResource( 35 )
+
+[node name="palmLarge" type="Sprite" parent="Sites"]
+position = Vector2( 216.919, 326.249 )
+texture = ExtResource( 16 )
+
+[node name="pyramid" type="Sprite" parent="Sites"]
+position = Vector2( -142.221, 334.574 )
+texture = ExtResource( 18 )
+
+[node name="rocks" type="Sprite" parent="Sites"]
+position = Vector2( -452.403, -404.239 )
+texture = ExtResource( 24 )
+
+[node name="rocksA" type="Sprite" parent="Sites"]
+position = Vector2( -362.023, -445.861 )
+texture = ExtResource( 33 )
+
+[node name="rocksMountain" type="Sprite" parent="Sites"]
+position = Vector2( 52.184, -563.008 )
+texture = ExtResource( 36 )
+
+[node name="runis" type="Sprite" parent="Sites"]
+position = Vector2( 323.948, -183.921 )
+texture = ExtResource( 25 )
+
+[node name="skull" type="Sprite" parent="Sites"]
+position = Vector2( 670.439, -799.198 )
+texture = ExtResource( 27 )
+
+[node name="stable" type="Sprite" parent="Sites"]
+position = Vector2( 67.0152, 61.5712 )
+texture = ExtResource( 28 )
+
+[node name="tent" type="Sprite" parent="Sites"]
+position = Vector2( -124.383, 31.3259 )
+texture = ExtResource( 29 )
+
+[node name="tipi" type="Sprite" parent="Sites"]
+position = Vector2( 40.9168, 247.762 )
+texture = ExtResource( 32 )
+
+[node name="tower" type="Sprite" parent="Sites"]
+position = Vector2( -321.791, 43.218 )
+texture = ExtResource( 14 )
+
+[node name="treePine" type="Sprite" parent="Sites"]
+position = Vector2( -243.304, 150.247 )
+texture = ExtResource( 11 )
+
+[node name="vulcano" type="Sprite" parent="Sites"]
+position = Vector2( 196.078, -528.521 )
+texture = ExtResource( 13 )
+
+[node name="watchtower" type="Sprite" parent="Sites"]
+position = Vector2( 243.082, -69.7567 )
+texture = ExtResource( 9 )
+
+[node name="waterWheel" type="Sprite" parent="Sites"]
+position = Vector2( 313.245, 76.5158 )
+texture = ExtResource( 10 )
+
+[node name="well" type="Sprite" parent="Sites"]
+position = Vector2( -57.511, 3.69527 )
+texture = ExtResource( 12 )
+
+[node name="campfire" parent="." instance=ExtResource( 3 )]
+
+[node name="Line2D" type="Line2D" parent="."]
+position = Vector2( -4.67194, -12.681 )
+points = PoolVector2Array( 35.9451, 3.15851, 64.6441, -2.18088, 84.6667, -12.8596, 102.687, -30.2125, 118.038, -36.8867 )
+width = 3.0
+width_curve = SubResource( 3 )
+default_color = Color( 0.137255, 0.137255, 0.137255, 1 )
+texture = SubResource( 2 )
+texture_mode = 1
+begin_cap_mode = 2
+end_cap_mode = 2
+antialiased = true

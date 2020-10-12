@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://BattleGround.gd" type="Script" id=1]
 [ext_resource path="res://image/icon/energyRedVFX.png" type="Texture" id=2]
@@ -8,8 +8,6 @@
 [ext_resource path="res://battle.gd" type="Script" id=6]
 [ext_resource path="res://CharaInfoRT.gd" type="Script" id=7]
 [ext_resource path="res://NoTargetCast.gd" type="Script" id=8]
-[ext_resource path="res://image/chara/ironclad.png" type="Texture" id=9]
-[ext_resource path="res://image/bg.tres" type="Texture" id=10]
 [ext_resource path="res://TestPanel.gd" type="Script" id=11]
 [ext_resource path="res://image/icon/defend.png" type="Texture" id=12]
 [ext_resource path="res://image/icon/base.png" type="Texture" id=13]
@@ -25,35 +23,6 @@
 
 [node name="battle" type="Node"]
 script = ExtResource( 6 )
-
-[node name="BG" type="CanvasLayer" parent="."]
-layer = -2
-
-[node name="BG" type="TextureRect" parent="BG"]
-visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-mouse_filter = 2
-texture = ExtResource( 10 )
-expand = true
-stretch_mode = 7
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Shoulder" type="TextureRect" parent="BG/BG"]
-visible = false
-anchor_top = 1.0
-anchor_bottom = 1.0
-margin_top = -521.0
-margin_right = 854.0
-mouse_filter = 2
-texture = ExtResource( 9 )
-expand = true
-stretch_mode = 7
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="UI" type="CanvasLayer" parent="."]
 script = ExtResource( 17 )

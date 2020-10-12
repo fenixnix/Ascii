@@ -10,12 +10,11 @@ var lvDb = {}
 
 var dbPath = "./data/%s.json"
 
+const cardsFiles = ["gray","status","curse","warrior","rogue","wizard","purple"]
+
 func _init():
-	AppendDict(cardDict,"gray")
-	AppendDict(cardDict,"warrior")
-	AppendDict(cardDict,"rogue")
-	AppendDict(cardDict,"wizard")
-	AppendDict(cardDict,"purple")
+	for file in cardsFiles:
+		AppendDict(cardDict,file)
 	
 	AppendDict(relicDict,"relic_All")
 	AppendDict(relicDict,"relic_IronClad")

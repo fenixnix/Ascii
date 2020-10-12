@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://image/icon.png" type="Texture" id=1]
+[ext_resource path="res://map/mapCompleteIcon.png" type="Texture" id=1]
 [ext_resource path="res://DragCurser.gd" type="Script" id=2]
+
+[sub_resource type="Curve" id=1]
+_data = [ Vector2( 0, 0 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
 
 [node name="DragCurser" type="Control"]
 script = ExtResource( 2 )
@@ -10,8 +13,11 @@ __meta__ = {
 }
 
 [node name="icon" type="Sprite" parent="."]
-position = Vector2( 0.213715, -1.80959 )
+self_modulate = Color( 0.141176, 0.141176, 0.141176, 1 )
+scale = Vector2( 0.7, 0.7 )
 texture = ExtResource( 1 )
 
 [node name="Line2D" type="Line2D" parent="."]
 points = PoolVector2Array( 0, 0, 0, 0 )
+width_curve = SubResource( 1 )
+default_color = Color( 0.67451, 0.67451, 0.67451, 1 )
