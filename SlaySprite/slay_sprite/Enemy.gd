@@ -16,9 +16,11 @@ var power = {}
 var skl = []
 var skl_queue = []
 var skl_rate = []
+var cur_skl
 
 var data
 
+signal new_turn()
 signal end_turn()
 
 func Set(enm):
@@ -28,12 +30,11 @@ func Set(enm):
 	hp = mhp
 	if data.has("power"):
 		for p in data.power.keys():
-			GlbAct.modDict({"type":p,"val":data.power[p]},power)
+			GainPower(p,data.power[p])
 	skl = enm.get("skl",[]).duplicate(true)
 	skl_queue = enm.get("skl_queue",[])
 	skl_rate = enm.get("skl_rate",[])
 	refresh_info()
-	ShowAction()
 
 func refresh_info():
 	$EnemyUI/Info.Set(self)
@@ -41,8 +42,12 @@ func refresh_info():
 	$EnemyUI/Block/Label.text = str(blk)
 
 var turn:int = 0
-func EndTurn(_turn):
+func NewTurn(_turn):
 	turn = _turn
+	cur_skl = sel_skl()
+	emit_signal("new_turn",turn)
+
+func EndTurn(_turn):
 	#update status
 	var dead_keys = []
 	for k in status.keys():
@@ -56,12 +61,12 @@ func EndTurn(_turn):
 func sel_skl():
 	for queue in skl_queue:
 		if queue.turn == turn:
-			var cur_skl = skl[queue.index]
-			return cur_skl
+			return skl[queue.index]
 	if data.has("skl_loop"):
-		return skl[data.skl_loop[turn%len(data.skl_loop)]]
+		var index = posmod(turn,len(data.skl_loop))
+		return skl[data.skl_loop[index]]
 	return skl[rndSelIndexByRate()]
-	
+
 func rndSelIndexByRate():
 	var sum:int = 0
 	for r in skl_rate:
@@ -72,12 +77,13 @@ func rndSelIndexByRate():
 	var count = 0
 	for i in len(skl_rate):
 		count += skl_rate[i]
-		if count>=roll:
+		if count>roll:
 			return i
 	return len(skl_rate)-1
 
 func ShowAction():
-	var skl = sel_skl()
+	var skl = cur_skl
+	print(cur_skl)
 	var dmg = 0
 	for e in skl.efx:
 		if e.type == "dmg":
@@ -86,24 +92,22 @@ func ShowAction():
 
 func Action():
 	blk = 0
-	var skl = sel_skl()
-	print("%s action use %s"%[enemy_name,str(skl.name)])
-	for e in skl.efx:
+	$TextPartical.Play(cur_skl.name)
+	print("%s action use %s"%[enemy_name,str(cur_skl.name)])
+	for e in cur_skl.efx:
 		match e.type:
 			"dmg":Attack(e)
-			"blk":
-				print_debug("Gain_Block:",e.val)
-				blk+=e.val
+			"blk":GainBlock(e.val)
 			"str","dex":GlbAct.modDict(e,attr)
 			"vul","weak","frail","entangle":
-				print_debug("affix status:",e.type)
+				#print_debug("affix status:",e.type)
 				GlbAct.GetChara().ModStatus(e)
-			"power":GlbAct.modDict(e.val,power)
+			"power":GainPower(e.val.type,e.val.val)
 			"script":
-				print_debug("script:",str(e))
+				pass
+				#print_debug("script:",str(e))
 			_:print_debug("!!!unknow efx:",str(e))
 	emit_signal("end_turn")
-	turn += 1
 
 func Attack(dat):
 	var dmg = sklDmg(dat)
@@ -143,6 +147,26 @@ func on_dead():
 	yield(get_tree().create_timer(1),"timeout")
 	queue_free()
 
+func GainPower(type,val):
+	var node = Node.new()
+	node.name = type
+	add_child(node)
+	var s = load("res://script/enm_power/%s.gd"%type)
+	if s!=null:
+		node.set_script(s)
+		node.init(val)
+	GlbAct.modDict({"type":type,"val":val},power)
+
+func GainBlock(_blk):
+	blk += _blk
+
+func ModAttr(d):
+	GlbAct.modDict(d,attr)
+	refresh_info()
+
 func ModStatus(d):
-	GlbAct.modDict(d,status)
+	if power.has("artifact"):
+		GlbAct.modDict({"type":"artifact","val":-1},power)
+	else:
+		GlbAct.modDict(d,status)
 	refresh_info()

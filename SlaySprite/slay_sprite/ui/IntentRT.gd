@@ -3,6 +3,7 @@ extends RichTextLabel
 func Set(skl,dmg):
 	bbcode_enabled = true
 	bbcode_text = ""
+	append_bbcode(skl.name)
 	for e in skl.efx:
 		if e.type == "dmg":
 			append_bbcode("[img=32x32]%s[/img] %d"%[attack_icon(dmg),dmg])

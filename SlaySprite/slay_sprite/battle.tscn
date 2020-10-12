@@ -30,6 +30,7 @@ script = ExtResource( 6 )
 layer = -2
 
 [node name="BG" type="TextureRect" parent="BG"]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
@@ -41,6 +42,7 @@ __meta__ = {
 }
 
 [node name="Shoulder" type="TextureRect" parent="BG/BG"]
+visible = false
 anchor_top = 1.0
 anchor_bottom = 1.0
 margin_top = -521.0

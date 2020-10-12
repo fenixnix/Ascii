@@ -15,7 +15,8 @@ func Start(dat):
 
 	$UI/Hands.visible = true
 	$UI/EndTurn.visible = true
-	
+	$BattleGround.NewTurn(turn)
+
 func Stop():
 	$UI/Hands.visible = false
 	$UI/EndTurn.visible = false
@@ -31,9 +32,10 @@ func DrawCard(cnt = 1):
 func _on_EndTurn_pressed():
 	$Player.EndTurn()
 	$BattleGround.EnemyPhase(turn)
+	yield($BattleGround,"enemy_finish")
 	turn += 1
+	$BattleGround.NewTurn(turn)
 	$Player.StartNewTurn()
-	$BattleGround.ShowEnmAction()
 
 func _on_Player_refresh_card():
 	refresh()

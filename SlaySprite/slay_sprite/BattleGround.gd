@@ -2,6 +2,8 @@ extends Node2D
 
 onready var enm_prefab = preload("res://Enemy.tscn")
 
+signal enemy_finish()
+
 func Clear():
 	for c in get_children():
 		c.queue_free()
@@ -21,16 +23,18 @@ func AddEnm(_enm):
 	enm.Set(_enm)
 	RemapEnemy()
 
+func NewTurn(turn):
+	for c in get_children():
+		c.NewTurn(turn)
+		c.ShowAction()
+
 func EnemyPhase(turn):
 	for c in get_children():
 		c.Action()
 		yield(get_tree().create_timer(.5),"timeout")
 	for c in get_children():
 		c.EndTurn(turn)
-
-func ShowEnmAction():
-	for c in get_children():
-		c.ShowAction()
+	emit_signal("enemy_finish")
 
 func EnemyAllDead():
 	for c in get_children():

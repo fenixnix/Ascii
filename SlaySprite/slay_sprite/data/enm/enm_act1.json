@@ -107,12 +107,12 @@
                 "mst":[
                     "gremlin_nob"
                 ],
-                "rate":1
+                "rate":0
             },{
                 "mst":[
                     "lagavulin"
                 ],
-                "rate":1
+                "rate":0
             },{
                 "mst":[
                     "sentry","sentry1","sentry"

@@ -13,8 +13,6 @@
 [node name="Enemy" type="Node2D"]
 script = ExtResource( 2 )
 
-[node name="TextPartical" parent="." instance=ExtResource( 5 )]
-
 [node name="Anim" type="Sprite" parent="."]
 script = ExtResource( 6 )
 
@@ -44,10 +42,11 @@ __meta__ = {
 [node name="Intent" type="RichTextLabel" parent="EnemyUI"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -56.0858
-margin_top = -53.7401
-margin_right = 58.9142
-margin_bottom = -16.7401
+margin_left = -57.0858
+margin_top = -38.7401
+margin_right = 57.9142
+margin_bottom = -1.7401
+scroll_active = false
 script = ExtResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -92,3 +91,6 @@ margin_bottom = -32.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="TextPartical" parent="." instance=ExtResource( 5 )]
+position = Vector2( -71, -40 )
