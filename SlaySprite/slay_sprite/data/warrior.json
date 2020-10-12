@@ -147,7 +147,7 @@
             }
         ],
         "upgrade": {
-            "replace_script_para":{"val":2}
+            "mod_script_para":{"val":2}
             },
         "name": "Flex",
         "img": "red/Skill/flex",
@@ -249,7 +249,7 @@
             }
         ],
         "upgrade": {
-            "replace_script_para": {
+            "mod_script_para": {
                 "bonus": 3
             }
         },
@@ -561,7 +561,7 @@
             }
         ],
         "upgrade": {
-            "replace_script_para": {
+            "mod_script_para": {
                 "dmg":2
             }
         },
@@ -591,7 +591,7 @@
             {"type":"script","val":"modAttr","para":{"type":"str","val":-2}},
             "Exhaust"
         ],"upgrade":{
-            "replace_script_para":{"val":-1}
+            "mod_script_para":{"val":-1}
         },
         "name": "Disarm",
         "img": "red/Skill/disarm",
@@ -632,7 +632,7 @@
             }
         ],
         "upgrade": {
-            "replace_script_para": {
+            "mod_script_para": {
                 "count": 1
             }
         },
@@ -671,7 +671,7 @@
             }
         ],
         "upgrade": {
-            "replace_script_para": {
+            "mod_script_para": {
                 "count": 1
             }
         },
@@ -693,7 +693,7 @@
             }
         ],
         "upgrade": {
-            "replace_script_para": {
+            "mod_script_para": {
                 "blk": 1
             }
         },
@@ -715,7 +715,7 @@
             }
         ],
         "upgrade": {
-            "replace_script_para": {
+            "mod_script_para": {
                 "dmg": 4
             }
         },
@@ -742,7 +742,7 @@
         ],
         "upgrade": {
             "blk": 4,
-            "replace_script_para": {
+            "mod_script_para": {
                 "dmg": 2
             }
         },
@@ -823,7 +823,7 @@
             }
         ],
         "upgrade": {
-            "replace_script_para": {
+            "mod_script_para": {
                 "val": 1
             }
         },
@@ -847,7 +847,7 @@
             "Exhaust"
         ],
         "upgrade": {
-            "replace_script_para": {
+            "mod_script_para": {
                 "val": 1
             }
         },
@@ -869,7 +869,7 @@
             }
         ],
         "upgrade": {
-            "replace_script_para": {
+            "mod_script_para": {
                 "blk": 1
             }
         },
@@ -935,7 +935,7 @@
             }
         ],
         "upgrade": {
-            "replace_script_para": {
+            "mod_script_para": {
                 "blk": 2
             }
         },
@@ -961,7 +961,7 @@
             }
         ],
         "upgrade": {
-            "replace_script_para": {
+            "mod_script_para": {
                 "dmg": 3
             }
         },
@@ -1047,7 +1047,7 @@
             }
         ],
         "upgrade": {
-            "replace_script_para": {
+            "mod_script_para": {
                 "blk": 7
             }
         },
@@ -1136,7 +1136,7 @@
             "Exhaust"
         ],
         "upgrade": {
-            "replace_script_para": {
+            "mod_script_para": {
                 "val": 2
             }
         },
@@ -1205,7 +1205,7 @@
             }
         ],
         "upgrade": {
-            "replace_script_para": {
+            "mod_script_para": {
                 "dmg": 3
             }
         },
@@ -1247,7 +1247,7 @@
             }
         ],
         "upgrade": {
-            "replace_script_para": {
+            "mod_script_para": {
                 "vul": -1
             }
         },
@@ -1321,7 +1321,7 @@
             }
         ],
         "upgrade": {
-            "replace_script_para": {
+            "mod_script_para": {
                 "val": 1
             }
         },
@@ -1392,7 +1392,7 @@
             "Exhaust"
         ],
         "upgrade": {
-            "replace_script_para": {
+            "mod_script_para": {
                 "bonus": 3
             }
         },
@@ -1457,7 +1457,7 @@
             }
         ],
         "upgrade": {
-            "replace_script_para": {
+            "mod_script_para": {
                 "dmg": 2
             }
         },
@@ -1525,7 +1525,7 @@
             "Exhaust"
         ],
         "upgrade": {
-            "replace_script_para": {
+            "mod_script_para": {
                 "dmg": 1
             }
         },

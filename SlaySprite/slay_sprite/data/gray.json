@@ -35,9 +35,15 @@
     },
     {
         "desc": [
-            "Heal 4(6) HP",
+            {
+                "type": "heal",
+                "val": 4
+            },
             "Exhaust"
         ],
+        "upgrade": {
+            "heal": 2
+        },
         "name": "Bandage Up",
         "img": "gray/Skill/bandage_up",
         "rarity": "Uncommon",
@@ -47,9 +53,14 @@
     },
     {
         "desc": [
-            "Apply 2 Icon Weak",
-            "png Weak (to ALL enemies)"
+            {
+                "type": "weak",
+                "val": 2
+            }
         ],
+        "upgrade": {
+            "target": "all"
+        },
         "name": "Blind",
         "img": "gray/Skill/blind",
         "rarity": "Uncommon",
@@ -59,10 +70,15 @@
     },
     {
         "desc": [
-            "Enemy loses 9(15) Icon Strength",
-            "png Strength for the rest of this turn",
+            {
+                "type": "str",
+                "val": -9
+            },
             "Exhaust"
         ],
+        "upgrade": {
+            "str": -6
+        },
         "name": "Dark Shackles",
         "img": "gray/Skill/dark_shackles",
         "rarity": "Uncommon",
@@ -72,9 +88,18 @@
     },
     {
         "desc": [
-            "Shuffle your discard pile into your draw pile",
-            "Draw 1(2) card(s)"
+            {
+                "type": "script",
+                "val": "discardToDraw"
+            },
+            {
+                "type": "draw",
+                "val": 1
+            }
         ],
+        "upgrade": {
+            "draw": 1
+        },
         "name": "Deep Breath",
         "img": "gray/Skill/deep_breath",
         "rarity": "Uncommon",
@@ -84,12 +109,15 @@
     },
     {
         "desc": [
-            "Choose 1 of 3 random cards to add to your hand",
-            "It costs 0 this turn",
-            "Exhaust",
-            "(Don't Exhaust",
-            ")"
+            {
+                "type": "script",
+                "val": "rand_choice_cost0"
+            },
+            "Exhaust"
         ],
+        "upgrade": {
+            "rmv_efx": "Exhaust"
+        },
         "name": "Discovery",
         "img": "gray/Skill/discovery",
         "rarity": "Uncommon",
@@ -100,9 +128,16 @@
     {
         "desc": [
             "Innate",
-            "Deal 6(8) damage to ALL enemies",
+            {
+                "type": "dmg",
+                "val": 6,
+                "target": "all"
+            },
             "Exhaust"
         ],
+        "upgrade": {
+            "dmg": 2
+        },
         "name": "Dramatic Entrance",
         "img": "gray/Attack/dramatic_entrance",
         "rarity": "Uncommon",
@@ -123,10 +158,18 @@
     },
     {
         "desc": [
-            "Gain 2(4) Icon Block",
-            "png Block",
-            "Draw 1 card"
+            {
+                "type": "blk",
+                "val": 2
+            },
+            {
+                "type": "draw",
+                "val": 1
+            }
         ],
+        "upgrade": {
+            "blk": 2
+        },
         "name": "Finesse",
         "img": "gray/Skill/finesse",
         "rarity": "Uncommon",
@@ -135,10 +178,8 @@
         "class": "all"
     },
     {
-        "desc": [
-            "Deal 3(6) damage",
-            "Draw 1 card"
-        ],
+        "desc": [{"type":"dmg","val":3},{"type":"draw","val":1}
+        ],"upgrade":{"dmg":3},
         "name": "Flash of Steel",
         "img": "gray/Attack/flash_of_steel",
         "rarity": "Uncommon",
@@ -159,10 +200,8 @@
         "class": "all"
     },
     {
-        "desc": [
-            "Gain 5(8) Icon Block",
-            "png Block"
-        ],
+        "desc": [{"type":"blk","val":5}
+        ],"upgrade":{"blk":3},
         "name": "Good Instincts",
         "img": "gray/Skill/good_instincts",
         "rarity": "Uncommon",
@@ -224,11 +263,9 @@
         "class": "all"
     },
     {
-        "desc": [
-            "Gain 1(2) Icon Artifact",
-            "png Artifact",
+        "desc": [{"type":"power","para":{"type":"artifact","val":1}},
             "Exhaust"
-        ],
+        ],"upgrade":{"mod_para":{"val":1}},
         "name": "Panacea",
         "img": "gray/Skill/panacea",
         "rarity": "Uncommon",
@@ -237,13 +274,11 @@
         "class": "all"
     },
     {
-        "desc": [
-            "Gain 30(40) Icon Block",
-            "png Block",
+        "desc": [{"type":"blk","val":30},
             "You cannot gain Icon Block",
             "png Block from cards for the next 2 turns",
             "Exhaust"
-        ],
+        ],"upgrade":{"blk":10},
         "name": "Panic Button",
         "img": "gray/Skill/panic_button",
         "rarity": "Uncommon",
@@ -252,10 +287,9 @@
         "class": "all"
     },
     {
-        "desc": [
-            "Choose and exhaust 3(5) cards in your hand",
+        "desc": [{"type":"exhaust","val":3},
             "Exhaust"
-        ],
+        ],"upgrade":{"exhaust":2},
         "name": "Purity",
         "img": "gray/Skill/purity",
         "rarity": "Uncommon",
@@ -264,9 +298,8 @@
         "class": "all"
     },
     {
-        "desc": [
-            "Deal 6(9) damage"
-        ],
+        "desc": [{"type":"dmg","val":6}
+        ],"upgrade":{"dmg":3},
         "name": "Swift Strike",
         "img": "gray/Attack/swift_strike",
         "rarity": "Uncommon",
@@ -276,9 +309,8 @@
     },
     {
         "desc": [
-            "Apply 2 Icon Vulnerable",
-            "png Vulnerable (to ALL enemies)"
-        ],
+            {"type":"vul","val":2}
+        ],"upgrade":{"target":"all"},
         "name": "Trip",
         "img": "gray/Skill/trip",
         "rarity": "Uncommon",
@@ -341,10 +373,9 @@
         "class": "all"
     },
     {
-        "desc": [
-            "Draw 3(4) cards",
+        "desc": [{"type":"draw","val":3},
             "Exhaust"
-        ],
+        ],"upgrade":{"draw":1},
         "name": "Master Of Strategy",
         "img": "gray/Skill/master_of_strategy",
         "rarity": "Rare",

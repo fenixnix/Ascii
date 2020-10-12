@@ -49,7 +49,7 @@ func UpgradeCard(card):
 				for d in card.desc:
 					if d.type == "script":
 						d.val = dict[k]
-			"replace_script_para":
+			"mod_script_para":
 				for d in card.desc:
 					if d.type == "script":
 						for kk in d.val.keys():
