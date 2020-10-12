@@ -36,4 +36,5 @@ text = "OK"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="item_activated" from="ItemList" to="." method="_on_ItemList_item_activated"]
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

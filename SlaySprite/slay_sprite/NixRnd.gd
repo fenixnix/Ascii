@@ -5,7 +5,7 @@ class_name NixRnd
 static func RandIndexByRate(rateList):
 	var rate_sum = 0
 	for r in rateList:
-		rate_sum+=r
+		rate_sum += r
 	var val = randi()%rate_sum
 	var cnt = 0
 	var index = 0

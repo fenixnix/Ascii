@@ -886,6 +886,7 @@
         "img": "blue/Attack/thunder_strike",
         "rarity": "Rare",
         "type": "Attack",
+        "class":"defect",
         "cost": 3
     }
 ]

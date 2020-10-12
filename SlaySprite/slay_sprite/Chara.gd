@@ -6,6 +6,9 @@ var mhp:int = 100
 var hp:int = 100
 var en:int = 3
 
+var at:int = 0
+var res:int = 0
+
 var cards = []
 var relic = []
 var potionSlots = [{"potion":null},{"potion":null},{"potion":null}]

@@ -8,10 +8,6 @@ func LoadUI(name):
 	add_child(ui)
 	return ui
 
-func CardReward():
-	var ui = LoadUI("RewardCards")
-	ui.Reward()
-
 func CardView():
 	OpenView(GlbDat.chara.cards)
 

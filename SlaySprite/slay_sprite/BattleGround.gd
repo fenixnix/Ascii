@@ -30,6 +30,8 @@ func NewTurn(turn):
 
 func EnemyPhase(turn):
 	for c in get_children():
+		if c == null:
+			return
 		c.Action()
 		yield(get_tree().create_timer(.5),"timeout")
 	for c in get_children():

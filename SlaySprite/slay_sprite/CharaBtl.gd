@@ -39,7 +39,7 @@ func Set(_chara):
 	deck.clear()
 	discard.clear()
 	for card in chara.cards:
-		deck.append(card)
+		deck.append(card.duplicate(true))
 	deck.shuffle()
 	refresh()
 

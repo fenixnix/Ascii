@@ -27,7 +27,7 @@ func AnimMove(_goal):
 		0.5,Tween.TRANS_QUAD,Tween.EASE_IN)
 		$Tween.start()
 
-func Exhause():
+func Exhaust():
 	$Control.rect_scale = Vector2.ONE
 	$Control.rect_position += Vector2.UP*100
 	$Tween.interpolate_property(self,"modulate",Color.white,Color(1,1,1,0),1)

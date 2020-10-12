@@ -23,12 +23,7 @@
                 "intent": "",
                 "efx": [
                     {
-                        "type": "script",
-                        "val": "gainAttrAtEndTurn",
-                        "para": {
-                            "type": "str",
-                            "val": 3
-                        }
+                        "type": "power","val":{"type":"ritual","val":3}
                     }
                 ]
             }
@@ -40,7 +35,7 @@
             }
         ],
         "skl_rate": [
-            100,
+            1,
             0
         ]
     },
@@ -128,12 +123,12 @@
                 ]
             }
         ],
-        "status": [
-            "curlUp"
-        ],
+        "power": {
+            "curl_up":7
+        },
         "skl_rate": [
-            75,
-            25
+            3,
+            1
         ]
     },
     {
@@ -166,9 +161,9 @@
                 ]
             }
         ],
-        "status": [
-            "curlUp"
-        ],
+        "power": {
+            "curl_up":7
+        },
         "skl_rate": [
             75,
             25
@@ -205,8 +200,8 @@
             }
         ],
         "skl_rate": [
-            50,
-            50
+            1,
+            1
         ]
     },
     {
@@ -248,7 +243,7 @@
                     },
                     {
                         "type": "script",
-                        "val": "sentStatusCard",
+                        "val": "sendStatusCard",
                         "para": {
                             "type": "Slimed",
                             "val": 1
@@ -302,7 +297,7 @@
                     },
                     {
                         "type": "script",
-                        "val": "sentStatusCard",
+                        "val": "sendStatusCard",
                         "para": {
                             "type": "Slimed",
                             "val": 2
@@ -370,7 +365,7 @@
                     },
                     {
                         "type": "script",
-                        "val": "sentStatusCard",
+                        "val": "sendStatusCard",
                         "para": {
                             "type": "Slimed",
                             "val": 1

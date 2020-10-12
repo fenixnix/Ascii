@@ -580,5 +580,6 @@
     "img": "purple/Skill/wish",
     "rarity": "Rare",
     "type": "Skill",
+    "class":"watcher",
     "cost": "3"
 }]

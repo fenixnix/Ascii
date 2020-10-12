@@ -1532,6 +1532,7 @@
         "name": "Reaper",
         "img": "red/Attack/reaper",
         "rarity": "Rare",
+        "class":"ironclad",
         "type": "Attack",
         "cost": 2
     }

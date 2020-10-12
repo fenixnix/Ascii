@@ -22,6 +22,7 @@ var data
 
 signal new_turn()
 signal end_turn()
+signal take_dmg(dmg)
 
 func Set(enm):
 	$Anim/Sprite.texture = load("res://image/%s.png"%enm.get("img","enm/Cultist-pretty"))
@@ -30,7 +31,7 @@ func Set(enm):
 	hp = mhp
 	if data.has("power"):
 		for p in data.power.keys():
-			GainPower(p,data.power[p])
+			ModPower(p,data.power[p])
 	skl = enm.get("skl",[]).duplicate(true)
 	skl_queue = enm.get("skl_queue",[])
 	skl_rate = enm.get("skl_rate",[])
@@ -102,10 +103,11 @@ func Action():
 			"vul","weak","frail","entangle":
 				#print_debug("affix status:",e.type)
 				GlbAct.GetChara().ModStatus(e)
-			"power":GainPower(e.val.type,e.val.val)
+			"power":ModPower(e.val.type,e.val.val)
 			"script":
-				pass
-				#print_debug("script:",str(e))
+				var node = Node.new()
+				node.set_script(load("res://script/enm_skl/%s.gd"%e.val))
+				node.run(self,GlbAct.GetChara(),e.get("para",{}))
 			_:print_debug("!!!unknow efx:",str(e))
 	emit_signal("end_turn")
 
@@ -136,8 +138,8 @@ func TakeDamage(_dmg):
 	if hp<=0:
 		hp = 0
 		on_dead()
+	emit_signal("take_dmg",_dmg)
 	refresh_info()
-	
 	return overDmg
 
 func on_dead():
@@ -147,7 +149,7 @@ func on_dead():
 	yield(get_tree().create_timer(1),"timeout")
 	queue_free()
 
-func GainPower(type,val):
+func ModPower(type,val):
 	var node = Node.new()
 	node.name = type
 	add_child(node)

@@ -2,8 +2,11 @@ extends Control
 
 var lst = []
 
-func Reward(lv=0,cnt=3):
-	lst = GlbDb.RandomGainCardByClass(GlbDat.chara.class_,cnt)
+func Reward(type,cnt=3):
+	if type == "boss":
+		lst = GlbDb.RandBossCardByClass(GlbDat.chara.class_)
+	else:
+		lst = GlbDb.RandomGainCardByClass(GlbDat.chara.class_,cnt)
 	$ItemList.clear()
 	for card in lst:
 		$ItemList.add_item(card.name)

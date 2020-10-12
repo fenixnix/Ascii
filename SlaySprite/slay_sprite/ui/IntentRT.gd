@@ -6,7 +6,7 @@ func Set(skl,dmg):
 	append_bbcode(skl.name)
 	for e in skl.efx:
 		if e.type == "dmg":
-			append_bbcode("[img=32x32]%s[/img] %d"%[attack_icon(dmg),dmg])
+			append_bbcode("\n[img=32x32]%s[/img] %d"%[attack_icon(dmg),dmg])
 
 func attack_icon(dmg):
 	var level = floor(dmg/5)

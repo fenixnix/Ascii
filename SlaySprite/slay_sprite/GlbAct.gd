@@ -3,6 +3,8 @@ extends Node
 signal battle_start()
 signal battle_win() 
 
+signal gain_gold(gold)
+
 func GetChara():
 	return GlbDat.battle.plrBtl
 
@@ -73,6 +75,10 @@ func BattleWin():
 	RefreshMainMenu()
 	NextSite()
 
+func RewardCard(type):
+	var ui = GlbUi.LoadUI("RewardCards")
+	ui.Reward(type)
+
 func EnterSite():
 	GlbUi.SelectSite(GlbDat.CurrentSiteOptions())
 	var site = yield(GlbUi,"select_site")
@@ -129,7 +135,11 @@ func RndSelEctMst(set):
 
 func GainCard(card):
 	GlbDat.chara.cards.append(card.duplicate(true))
-	
+
+func GainGold(gold):
+	GlbDat.gold += gold
+	emit_signal("gain_gold",gold)
+
 func CostGold(gold):
 	GlbDat.gold -= gold
 

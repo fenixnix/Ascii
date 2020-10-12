@@ -13,7 +13,8 @@ def bufToDict(buffer):
     pairs = buffer.strip().split('\t')
     if len(pairs)!=4:
         print(pairs)
-    tmp = {
+    tmp = { 
+        "id":pairs[1].lower().replace(' ','_').replace('-','_'),
         "name":pairs[1],
         "desc":pairs[3]
     }
@@ -51,21 +52,25 @@ def datClassify():# json data classify
             with open("relic_%s.json"%k,'w') as wf:
                 wf.write(json.dumps(tmp[k]))
 
-#generate gdscript
-file = "relic_All.json"
-path = "./relic_gdscript/"
-with open(file,'r') as f:
-    jsonDat = json.loads(f.read())
-    for relic in jsonDat:
-        fileName = relic["name"].replace(' ','_').lower()
-        with open("%s%s.gd"%(path,fileName),'w') as wf:
-            content = """extends Node
-#Desc:%s
+def GenScript():
+    #generate gdscript
+    file = "relic_All.json"
+    path = "./relic_gdscript/"
+    with open(file,'r') as f:
+        jsonDat = json.loads(f.read())
+        for relic in jsonDat:
+            fileName = relic["name"].replace(' ','_').lower()
+            with open("%s%s.gd"%(path,fileName),'w') as wf:
+                content = """extends Node
+    #Desc:%s
 
-func PickUp(chara):
-    pass
+    func PickUp(chara):
+        pass
 
-func Init(chara):
-    pass
-            """%(relic["desc"])
-            wf.write(content)
+    func Init(chara):
+        pass
+                """%(relic["desc"])
+                wf.write(content)
+
+rawToJson()
+datClassify()

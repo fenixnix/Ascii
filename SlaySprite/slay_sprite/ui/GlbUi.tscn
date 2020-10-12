@@ -16,25 +16,25 @@ __meta__ = {
 
 [node name="DbView" type="Button" parent="TestPanel"]
 margin_right = 88.0
-margin_bottom = 20.0
+margin_bottom = 22.0
 text = "$Card"
 
 [node name="RelicView" type="Button" parent="TestPanel"]
-margin_top = 24.0
+margin_top = 26.0
 margin_right = 88.0
-margin_bottom = 44.0
+margin_bottom = 48.0
 text = "$Relic"
 
 [node name="NextSite" type="Button" parent="TestPanel"]
-margin_top = 48.0
+margin_top = 52.0
 margin_right = 88.0
-margin_bottom = 68.0
+margin_bottom = 74.0
 text = "Next Site"
 
 [node name="Forge" type="Button" parent="TestPanel"]
-margin_top = 72.0
+margin_top = 78.0
 margin_right = 88.0
-margin_bottom = 92.0
+margin_bottom = 100.0
 text = "$Forge"
 [connection signal="pressed" from="TestPanel/DbView" to="." method="_on_DbView_pressed"]
 [connection signal="pressed" from="TestPanel/RelicView" to="." method="_on_RelicView_pressed"]

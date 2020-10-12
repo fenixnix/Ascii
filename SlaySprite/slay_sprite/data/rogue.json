@@ -882,6 +882,7 @@
         "img": "green/Power/wraith_form",
         "rarity": "Rare",
         "type": "Power",
+        "class":"silence",
         "cost": 3
     }
 ]

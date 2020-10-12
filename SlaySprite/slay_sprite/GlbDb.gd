@@ -61,6 +61,9 @@ func RandomShopCard(_class):
 		tmp.append(powrList.pop_front())
 	return tmp
 
+func GetIcon(id):
+	return load("res://image/icon/%s.png"%id)
+
 func RandomGrayCard(count):
 	var tmpList = []
 	for c in cardDict.values():
@@ -97,6 +100,29 @@ func RandomGainCardByClass(_class,count):
 		tmp.append(uncommonList.pop_front())
 	for c in rarityDat["rare"]:
 		tmp.append(rareList.pop_front())
+	return tmp
+
+func RandBossCardByClass(class_,cnt = 3):
+	var tmp = FilterByClass(cardDict.values(),class_)
+	tmp = FilterByRarity(tmp,"Rare")
+	tmp.shuffle()
+	return tmp.slice(0,cnt-1)
+
+func RandRelicByClass(class_):
+	var tmp = FilterByClass(relicDict.values(),"All")
+	tmp = FilterByRarity(tmp,"Common")
+	return tmp[randi()%len(tmp)]
+
+func RandBossRelicByClass(class_):
+	var tmp = FilterByClass(relicDict.values(),class_)
+	tmp = FilterByRarity(tmp,"Boss")
+	return tmp[randi()%len(tmp)]
+
+func FilterByClass(list,class_):
+	var tmp = []
+	for l in list:
+		if l["class"] == class_:
+			tmp.append(l)
 	return tmp
 
 func FilterByRarity(list,rarity):

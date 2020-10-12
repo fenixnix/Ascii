@@ -98,13 +98,13 @@ __meta__ = {
 [node name="OK" type="Button" parent="Menu"]
 margin_left = 467.0
 margin_right = 498.0
-margin_bottom = 20.0
+margin_bottom = 22.0
 text = "OK"
 
 [node name="Cancel" type="Button" parent="Menu"]
 margin_left = 502.0
 margin_right = 556.0
-margin_bottom = 20.0
+margin_bottom = 22.0
 text = "Cancel"
 
 [node name="Card" parent="." instance=ExtResource( 2 )]

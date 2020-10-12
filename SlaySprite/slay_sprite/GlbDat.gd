@@ -107,7 +107,7 @@ func RollCardRarity():
 func RollChest(data=chest_dat):
 	var result = {}
 	var tmp = []
-	for d in data:
+	for d in data.values():
 		tmp.append(d.rate)
 	var index = NixRnd.RandIndexByRate(tmp)
 	result["rarity"] = data.keys()[index]
@@ -129,9 +129,6 @@ func RollRelic(already_have_list,rarity):
 		if !already_have_list.has(r.name)&&r.rarity == rarity:
 			tmp.append(r)
 	return tmp[randi()%len(tmp)]
-
-func RollEliteRelic():
-	return GlbDb.relicDict.values()[randi()%len(GlbDb.relicDict)]
 
 func RollPotionRarity():
 	if rand_range(0,1)<potion_dat.drop_rate:
