@@ -1,2 +1,0 @@
-#Double your Energy
-#Exhaust
