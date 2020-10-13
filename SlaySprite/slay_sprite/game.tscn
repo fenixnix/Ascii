@@ -10,3 +10,4 @@ script = ExtResource( 1 )
 layer = 2
 
 [node name="MainMenu" parent="UI" instance=ExtResource( 2 )]
+margin_bottom = 91.0

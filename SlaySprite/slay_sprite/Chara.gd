@@ -11,11 +11,12 @@ var res:int = 0
 
 var cards = []
 var relic = []
-var potionSlots = [{"potion":null},{"potion":null},{"potion":null}]
+var potionSlots = [null,null,null]
 var class_ = ""
 
 signal gain_card(card)
 signal gain_gold(gold)
+signal gain_potion(potion)
 signal rest()
 signal heal(val)
 
@@ -42,6 +43,14 @@ func GainCard(card):
 func GainGold(gold):
 	GlbDat.gold += gold
 	emit_signal("gain_gold",gold)
+
+func GainPotion(potion):
+	for i in len(potionSlots):
+		if potionSlots[i] == null:
+			potionSlots[i] = potion
+			emit_signal("gain_potion",potion)
+			return true
+	return false
 
 func GainRelic(rlc):
 	relic.append(rlc)

@@ -1,11 +1,8 @@
-[
-    {
-        "desc": [
-            {
-                "type": "blk",
-                "val": 5
-            }
-        ],
+[{
+        "desc": [{
+            "type": "blk",
+            "val": 5
+        }],
         "name": "Defend",
         "img": "gray/Skill/defend",
         "rarity": "Starter",
@@ -17,12 +14,10 @@
         }
     },
     {
-        "desc": [
-            {
-                "type": "dmg",
-                "val": 6
-            }
-        ],
+        "desc": [{
+            "type": "dmg",
+            "val": 6
+        }],
         "name": "Strike",
         "img": "gray/Attack/strike",
         "rarity": "Starter",
@@ -34,8 +29,7 @@
         }
     },
     {
-        "desc": [
-            {
+        "desc": [{
                 "type": "heal",
                 "val": 4
             },
@@ -52,12 +46,10 @@
         "class": "all"
     },
     {
-        "desc": [
-            {
-                "type": "weak",
-                "val": 2
-            }
-        ],
+        "desc": [{
+            "type": "weak",
+            "val": 2
+        }],
         "upgrade": {
             "target": "all"
         },
@@ -69,8 +61,7 @@
         "class": "all"
     },
     {
-        "desc": [
-            {
+        "desc": [{
                 "type": "str",
                 "val": -9
             },
@@ -87,8 +78,7 @@
         "class": "all"
     },
     {
-        "desc": [
-            {
+        "desc": [{
                 "type": "script",
                 "val": "discardToDraw"
             },
@@ -108,8 +98,7 @@
         "class": "all"
     },
     {
-        "desc": [
-            {
+        "desc": [{
                 "type": "script",
                 "val": "rand_choice_cost0"
             },
@@ -157,8 +146,7 @@
         "class": "all"
     },
     {
-        "desc": [
-            {
+        "desc": [{
                 "type": "blk",
                 "val": 2
             },
@@ -178,8 +166,16 @@
         "class": "all"
     },
     {
-        "desc": [{"type":"dmg","val":3},{"type":"draw","val":1}
-        ],"upgrade":{"dmg":3},
+        "desc": [{
+            "type": "dmg",
+            "val": 3
+        }, {
+            "type": "draw",
+            "val": 1
+        }],
+        "upgrade": {
+            "dmg": 3
+        },
         "name": "Flash of Steel",
         "img": "gray/Attack/flash_of_steel",
         "rarity": "Uncommon",
@@ -200,8 +196,13 @@
         "class": "all"
     },
     {
-        "desc": [{"type":"blk","val":5}
-        ],"upgrade":{"blk":3},
+        "desc": [{
+            "type": "blk",
+            "val": 5
+        }],
+        "upgrade": {
+            "blk": 3
+        },
         "name": "Good Instincts",
         "img": "gray/Skill/good_instincts",
         "rarity": "Uncommon",
@@ -263,9 +264,20 @@
         "class": "all"
     },
     {
-        "desc": [{"type":"power","para":{"type":"artifact","val":1}},
+        "desc": [{
+                "type": "power",
+                "para": {
+                    "type": "artifact",
+                    "val": 1
+                }
+            },
             "Exhaust"
-        ],"upgrade":{"mod_para":{"val":1}},
+        ],
+        "upgrade": {
+            "mod_para": {
+                "val": 1
+            }
+        },
         "name": "Panacea",
         "img": "gray/Skill/panacea",
         "rarity": "Uncommon",
@@ -274,11 +286,17 @@
         "class": "all"
     },
     {
-        "desc": [{"type":"blk","val":30},
+        "desc": [{
+                "type": "blk",
+                "val": 30
+            },
             "You cannot gain Icon Block",
             "png Block from cards for the next 2 turns",
             "Exhaust"
-        ],"upgrade":{"blk":10},
+        ],
+        "upgrade": {
+            "blk": 10
+        },
         "name": "Panic Button",
         "img": "gray/Skill/panic_button",
         "rarity": "Uncommon",
@@ -287,9 +305,15 @@
         "class": "all"
     },
     {
-        "desc": [{"type":"exhaust","val":3},
+        "desc": [{
+                "type": "exhaust",
+                "val": 3
+            },
             "Exhaust"
-        ],"upgrade":{"exhaust":2},
+        ],
+        "upgrade": {
+            "exhaust": 2
+        },
         "name": "Purity",
         "img": "gray/Skill/purity",
         "rarity": "Uncommon",
@@ -298,8 +322,13 @@
         "class": "all"
     },
     {
-        "desc": [{"type":"dmg","val":6}
-        ],"upgrade":{"dmg":3},
+        "desc": [{
+            "type": "dmg",
+            "val": 6
+        }],
+        "upgrade": {
+            "dmg": 3
+        },
         "name": "Swift Strike",
         "img": "gray/Attack/swift_strike",
         "rarity": "Uncommon",
@@ -308,9 +337,13 @@
         "class": "all"
     },
     {
-        "desc": [
-            {"type":"vul","val":2}
-        ],"upgrade":{"target":"all"},
+        "desc": [{
+            "type": "vul",
+            "val": 2
+        }],
+        "upgrade": {
+            "target": "all"
+        },
         "name": "Trip",
         "img": "gray/Skill/trip",
         "rarity": "Uncommon",
@@ -373,9 +406,15 @@
         "class": "all"
     },
     {
-        "desc": [{"type":"draw","val":3},
+        "desc": [{
+                "type": "draw",
+                "val": 3
+            },
             "Exhaust"
-        ],"upgrade":{"draw":1},
+        ],
+        "upgrade": {
+            "draw": 1
+        },
         "name": "Master Of Strategy",
         "img": "gray/Skill/master_of_strategy",
         "rarity": "Rare",
@@ -581,12 +620,18 @@
         "class": "all"
     },
     {
-        "desc": [
-            "Lose 3 HP",
-            "Gain 2(3) Icon Strength",
-            "png Strength",
-            "(Obtained from event: Augmenter)"
+        "desc": [{
+                "type": "costHp",
+                "val": 3
+            },
+            {
+                "type": "str",
+                "val": 2
+            }
         ],
+        "upgrade": {
+            "str": 1
+        },
         "name": "J.A.X.",
         "img": "gray/Skill/jax",
         "rarity": "Special",
@@ -595,15 +640,16 @@
         "class": "all"
     },
     {
-        "desc": [
-            "Icon Retain",
-            "png Retain",
-            "Gain (2) Energy",
-            "Exhaust",
-            "(Obtained from\nCollect, Deus Ex Machina, PureWater-0",
-            "png Pure Water, and Holy water",
-            "png Holy Water)"
+        "desc": [{
+                "type": "en",
+                "val": 1
+            },
+            "Retain",
+            "Exhaust"
         ],
+        "upgrade": {
+            "en": 1
+        },
         "name": "Miracle",
         "img": "gray/Skill/miracle",
         "rarity": "Special",
@@ -612,10 +658,20 @@
         "class": "all"
     },
     {
-        "desc": [
-            "At the end of your turn deal 50(60) damage to ALL enemies",
-            "(Obtained from\nBeta)"
-        ],
+        "desc": [{
+            "type": "power",
+            "val": "omega",
+            "para": {
+                "type": "dmg",
+                "val": 50,
+                "target": "all"
+            }
+        }],
+        "upgrade": {
+            "mod_script_para": {
+                "val": 10
+            }
+        },
         "name": "Omega",
         "img": "gray/Power/omega",
         "rarity": "Special",
@@ -636,14 +692,16 @@
         "class": "all"
     },
     {
-        "desc": [
-            "Icon Retain",
-            "png Retain",
-            "Gain 12(16) Icon Block",
-            "png Block",
-            "Exhaust",
-            "(Obtained from Deceive Reality)"
+        "desc": [{
+                "type": "blk",
+                "val": 12
+            },
+            "Retain",
+            "Exhaust"
         ],
+        "upgrade": {
+            "blk": 4
+        },
         "name": "Safety",
         "img": "gray/Skill/safety",
         "rarity": "Special",
@@ -652,12 +710,15 @@
         "class": "all"
     },
     {
-        "desc": [
-            "Deal 4(6) damage",
-            "Exhaust",
-            "(Obtained from the\nBlade Dance, Cloak and Dagger, Infinite Blades, Storm of Steel, and NinjaScroll",
-            "png Ninja Scroll)"
+        "desc": [{
+                "type": "dmg",
+                "val": 4
+            },
+            "Exhaust"
         ],
+        "upgrade": {
+            "dmg": 2
+        },
         "name": "Shiv",
         "img": "gray/Attack/shiv",
         "rarity": "Special",
@@ -666,13 +727,16 @@
         "class": "all"
     },
     {
-        "desc": [
-            "Icon Retain",
-            "png Retain",
-            "Deal 12(16) damage",
-            "Exhaust",
-            "(Obtained from\nCarve Reality and Battle Hymn)"
+        "desc": [{
+                "type": "dmg",
+                "val": 12
+            },
+            "Retain",
+            "Exhaust"
         ],
+        "upgrade": {
+            "dmg": 4
+        },
         "name": "Smite",
         "img": "gray/Attack/smite",
         "rarity": "Special",
@@ -681,13 +745,16 @@
         "class": "all"
     },
     {
-        "desc": [
-            "Icon Retain",
-            "png Retain",
-            "Deal 20(30) damage",
-            "Exhaust",
-            "(Obtained from\nReach Heaven)"
+        "desc": [{
+                "type": "dmg",
+                "val": 20
+            },
+            "Retain",
+            "Exhaust"
         ],
+        "upgrade": {
+            "dmg": 10
+        },
         "name": "Through Violence",
         "img": "gray/Attack/through_violence",
         "rarity": "Special",

@@ -70,10 +70,10 @@ align = 1
 valign = 1
 
 [node name="Cost" type="PanelContainer" parent="."]
-margin_left = -10.3514
-margin_top = -9.16223
-margin_right = 27.6486
-margin_bottom = 26.8378
+margin_left = 4.52808
+margin_top = 7.7755
+margin_right = 34.5281
+margin_bottom = 43.7755
 mouse_filter = 2
 theme = ExtResource( 1 )
 __meta__ = {
@@ -84,9 +84,10 @@ __meta__ = {
 [node name="Cost" type="Label" parent="Cost"]
 margin_left = 6.0
 margin_top = 6.0
-margin_right = 32.0
-margin_bottom = 38.0
+margin_right = 24.0
+margin_bottom = 30.0
 custom_fonts/font = ExtResource( 6 )
+text = "8"
 align = 1
 valign = 1
 __meta__ = {
@@ -130,9 +131,6 @@ margin_right = 39.0
 margin_bottom = 17.5
 mouse_filter = 2
 theme = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Label" type="Label" parent="Type"]
 margin_left = 2.0
@@ -145,3 +143,4 @@ uppercase = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="gui_input" from="." to="." method="_on_CardPanel_gui_input"]

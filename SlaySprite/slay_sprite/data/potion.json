@@ -6,7 +6,7 @@
                 "type": "script",
                 "val": "rndSelCard",
                 "para": {
-                    "type": "Attack",
+                    "type": ["Attack"],
                     "cnt": 1,
                     "sel_cnt": 3,
                     "cost": 0
@@ -14,19 +14,29 @@
             }
         },
         {
-            "name": "Blessing of the Forge",
-            "efx": [
-                {
-                    "type":"script",
-                    "val": "upgradeAllHand"
+            "name": "Skill Potion",
+            "efx": {
+                "type": "script",
+                "val": "rndSelCard",
+                "para": {
+                    "type": ["Skill"],
+                    "cnt": 1,
+                    "sel_cnt": 3,
+                    "cost": 0
                 }
-            ]
+            }
         },
         {
-            "name": "Block Potion",
+            "name": "Power Potion",
             "efx": {
-                "type": "blk",
-                "val": 12
+                "type": "script",
+                "val": "rndSelCard",
+                "para": {
+                    "type": ["Power"],
+                    "cnt": 1,
+                    "sel_cnt": 3,
+                    "cost": 0
+                }
             }
         },
         {
@@ -35,11 +45,25 @@
                 "type": "script",
                 "val": "rndSelCard",
                 "para": {
-                    "type": "gray",
+                    "class": ["all"],
                     "cnt": 1,
                     "sel_cnt": 3,
                     "cost": 0
                 }
+            }
+        },
+        {
+            "name": "Blessing of the Forge",
+            "efx": [{
+                "type": "script",
+                "val": "upgradeAllHand"
+            }]
+        },
+        {
+            "name": "Block Potion",
+            "efx": {
+                "type": "blk",
+                "val": 12
             }
         },
         {
@@ -61,7 +85,7 @@
             "efx": {
                 "type": "dmg",
                 "val": 10,
-                "target":"all"
+                "target": "all"
             }
         },
         {
@@ -86,32 +110,6 @@
                 "para": {
                     "type": "str",
                     "val": 5
-                }
-            }
-        },
-        {
-            "name": "Power Potion",
-            "efx": {
-                "type": "script",
-                "val": "rndSelCard",
-                "para": {
-                    "type": "Power",
-                    "cnt": 1,
-                    "sel_cnt": 3,
-                    "cost": 0
-                }
-            }
-        },
-        {
-            "name": "Skill Potion",
-            "efx": {
-                "type": "script",
-                "val": "rndSelCard",
-                "para": {
-                    "type": "Skill",
-                    "cnt": 1,
-                    "sel_cnt": 3,
-                    "cost": 0
                 }
             }
         },
@@ -149,124 +147,225 @@
         },
         {
             "name": "Focus Potion",
-            "class":"Defect",
+            "class": "Defect",
             "efx": {
-                "focus":2}
+                "focus": 2
+            }
         },
         {
             "name": "Blood Potion",
-            "class":"Ironclad",
-            "efx":{"heal":"20%"}
+            "class": "Ironclad",
+            "efx": {
+                "heal": "20%"
+            }
         },
         {
             "name": "Poison Potion",
-            "class":"Silent",
-            "efx": {"pos":6}
+            "class": "Silent",
+            "efx": {
+                "pos": 6
+            }
         },
         {
             "name": "Bottled Miracle",
-            "class":"Watcher",
-            "efx": {"miracles":2}
+            "class": "Watcher",
+            "efx": {
+                "miracles": 2
+            }
         }
     ],
     "uncommon": [
         {
             "name": "Ancient Potion",
-            "efx": {"type":"power","para":{"type":"artifact","val":1}}
+            "efx": {
+                "type": "power",
+                "para": {
+                    "type": "artifact",
+                    "val": 1
+                }
+            }
         },
         {
             "name": "Distilled Chaos",
-            "efx":{"type":"script","val":"drawAndPlay","para":{"val":3}} 
+            "efx": {
+                "type": "script",
+                "val": "drawAndPlay",
+                "para": {
+                    "val": 3
+                }
+            }
         },
         {
             "name": "Duplication Potion",
-            "efx":{"type":"power","val":"echo"}
+            "efx": {
+                "type": "power",
+                "val": "echo"
+            }
         },
         {
             "name": "Essence of Steel",
-            "efx": {"type":"power","para":{"type":"armor","val":4}}
+            "efx": {
+                "type": "power",
+                "para": {
+                    "type": "armor",
+                    "val": 4
+                }
+            }
         },
         {
             "name": "Gambler's Brew",
-            "efx":{"type":"script","val":"discardAndDraw","para":{"val":-1}}
+            "efx": {
+                "type": "script",
+                "val": "discardAndDraw",
+                "para": {
+                    "val": -1
+                }
+            }
         },
         {
             "name": "Liquid Bronze",
-            "efx": {"type":"power","para":{"type":"thorn","val":3}}
+            "efx": {
+                "type": "power",
+                "para": {
+                    "type": "thorn",
+                    "val": 3
+                }
+            }
         },
         {
             "name": "Liquid Memories",
-            "efx": {"type":"script","val":"discardToHand0Cost","para":{"val":1}}
+            "efx": {
+                "type": "script",
+                "val": "discardToHand0Cost",
+                "para": {
+                    "val": 1
+                }
+            }
         },
         {
             "name": "Regen Potion",
-            "efx": {"type":"power","para":{"type":"regen","val":5}}
+            "efx": {
+                "type": "power",
+                "para": {
+                    "type": "regen",
+                    "val": 5
+                }
+            }
         },
         {
             "name": "Potion of Capacity",
-            "class":"Defect",
-            "efx": {"type":"orb_slot","val":2}
+            "class": "Defect",
+            "efx": {
+                "type": "orb_slot",
+                "val": 2
+            }
         },
         {
             "name": "Elixir",
-            "class":"Ironclad",
-            "efx": {"type":"script","val":"exhaustAny"}
+            "class": "Ironclad",
+            "efx": {
+                "type": "script",
+                "val": "exhaustAny"
+            }
         },
         {
             "name": "Cunning Potion",
-            "class":"Silent",
-            "efx": {"type":"script","val":"gainHandCard","para":{"type":"shiv","val":3}}
+            "class": "Silent",
+            "efx": {
+                "type": "script",
+                "val": "gainHandCard",
+                "para": {
+                    "type": "shiv",
+                    "val": 3
+                }
+            }
         },
         {
             "name": "Stance Potion",
-            "class":"Watcher",
+            "class": "Watcher",
             "efx": "Enter Calm or Wrath."
         }
     ],
     "rare": [
         {
             "name": "Cultist Potion",
-            "efx": {"type":"power","para":{"type":"ritual","val":1}}
+            "efx": {
+                "type": "power",
+                "para": {
+                    "type": "ritual",
+                    "val": 1
+                }
+            }
         },
         {
             "name": "Entropic Brew",
-            "efx": {"type":"script","val":"fillSlotRndPotion"}
+            "efx": {
+                "type": "script",
+                "val": "fillSlotRndPotion"
+            }
         },
         {
             "name": "Fairy in a Bottle",
-            "efx": {"type":"script","val":"phoenix","para":{"val":30}}
+            "efx": {
+                "type": "script",
+                "val": "phoenix",
+                "para": {
+                    "val": 30
+                }
+            }
         },
         {
             "name": "Fruit Juice",
-            "efx": {"type":"mhp","val":5}
+            "efx": {
+                "type": "mhp",
+                "val": 5
+            }
         },
         {
             "name": "Smoke Bomb",
-            "efx": {"type":"script","val":"escape"}
+            "efx": {
+                "type": "script",
+                "val": "escape"
+            }
         },
         {
             "name": "Snecko Oil",
-            "efx": {"type":"script","val":"snake_eye"}
+            "efx": {
+                "type": "script",
+                "val": "snake_eye"
+            }
         },
         {
             "name": "Essence of Darkness",
-            "class":"Watcher",
-            "efx": " (Defect only)Channel 1 (2) Dark.png Dark for each orb slot."
+            "class": "Watcher",
+            "efx": "Channel 1 (2) Dark.png Dark for each orb slot."
         },
         {
             "name": "Heart of Iron",
-            "class":"Ironclad",
-            "efx":{"type":"power","para":{"type":"metal","val":6}}
+            "class": "Ironclad",
+            "efx": {
+                "type": "power",
+                "para": {
+                    "type": "metal",
+                    "val": 6
+                }
+            }
         },
         {
             "name": "Ghost In A Jar",
-            "class":"Silent",
-            "efx":{"type":"power","para":{"type":"intangible","val":1}}
+            "class": "Silent",
+            "efx": {
+                "type": "power",
+                "para": {
+                    "type": "intangible",
+                    "val": 1
+                }
+            }
         },
         {
             "name": "Ambrosia",
-            "class":"Watcher",
-            "efx": " (Watcher only)Enter Divinity Stance."
+            "class": "Watcher",
+            "efx": "Enter Divinity Stance."
         }
     ]
 }

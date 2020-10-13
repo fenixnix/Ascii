@@ -39,7 +39,11 @@ func Set(_chara):
 	deck.clear()
 	discard.clear()
 	for card in chara.cards:
-		deck.append(card.duplicate(true))
+		var card_instance = card.duplicate(true)
+		if card.desc.has("Innate"):
+			hand.append(card_instance)
+		else:
+			deck.append(card_instance)
 	deck.shuffle()
 	refresh()
 
@@ -71,6 +75,8 @@ func StartNewTurn():
 func EndTurn():
 	var dead_queue = []
 	for card in hand:
+		if card.desc.has("Retain"):
+			continue
 		if card.desc.has("Ethereal"):
 			emit_signal("exhaust",card)
 		else:
@@ -91,6 +97,9 @@ func Draw():
 	return null
 
 func PlayCard(card,target = null):
+	if card.desc.has("Unplayable"):
+		print("%s unplayable !"%card.name)
+		return
 	if typeof(card.cost) != typeof("X"):
 		en -= card.cost
 	if target == null:
@@ -115,13 +124,18 @@ func RunDesc(card,target = null):
 			return
 		match d.type:
 			"dmg":DuelDamage(d,target)
+			"blk":GainBlock(d)
 			"costHp":CostHp(d.get("val",0))
 			"en":en+=d.get("val",0)
-			"blk":GainBlock(d)
-			"vul","weak","frail":target.ModStatus(d)
 			"draw":
 				for i in d.get("val",1):
 					Draw()
+			#Mod Self
+			"attr":ModAttr(d.get("para",{}))
+			"power":ModPower(d.get("para",{}))
+			"status":ModStatus(d.get("para",{}))
+			"str","dex":target.ModAttr(d)
+			"vul","weak","frail":target.ModStatus(d)
 			"script":ExecuteScript(d,card,target)
 
 func DuelDamage(dat,target = null):

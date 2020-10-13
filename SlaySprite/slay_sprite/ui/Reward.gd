@@ -35,6 +35,7 @@ func AppendPotion():
 	if rarity!=null:
 		var potion = GlbDb.RandomPotionByRarity(rarity)
 		print_debug(potion)
+		data.append({"type":"potion","val":potion})
 
 func AppendRelic(relic):
 	data.append({"type":"relic","val":relic})
@@ -54,6 +55,8 @@ func refresh():
 					$ItemList.add_item("Boss Card",GlbDb.GetIcon("bossCardReward"))
 				else:
 					$ItemList.add_item("Card",GlbDb.GetIcon("normalCardReward"))
+			"potion":
+				$ItemList.add_item("Potion",GlbDb.GetIcon("brewmaster"))
 			"relic":
 				$ItemList.add_item(d.val.name,GlbDb.GetIcon("vintage"))
 			"boss_relic":
@@ -67,6 +70,8 @@ func _on_ItemList_item_activated(index):
 			GlbAct.GainGold(rwd.val)
 		"card":
 			GlbAct.RewardCard(rwd.val)
+		"potion":
+			GlbDat.chara.GainPotion(rwd.val)
 		"relic":
 			GlbDat.chara.GainRelic(rwd.val.id)
 		"boss_relic":

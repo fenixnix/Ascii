@@ -10,7 +10,7 @@ var lvDb = {}
 
 var dbPath = "./data/%s.json"
 
-const cardsFiles = ["gray","status","curse","warrior","rogue","wizard","purple"]
+const cardsFiles = ["gray","status","curse","red","green","blue","purple"]
 
 func _init():
 	for file in cardsFiles:
@@ -44,9 +44,9 @@ func RandomShopCard(_class):
 		if card.get("class","all") == _class:
 			tmpList.append(card)
 	
-	var attackList = FilterByType(tmpList,"Attack")
-	var skillList = FilterByType(tmpList,"Skill")
-	var powrList = FilterByType(tmpList,"Power")
+	var attackList = FilterByType(tmpList,["Attack"])
+	var skillList = FilterByType(tmpList,["Skill"])
+	var powrList = FilterByType(tmpList,["Power"])
 	attackList.shuffle()
 	skillList.shuffle()
 	powrList.shuffle()
@@ -85,9 +85,9 @@ func RandomGainCardByClass(_class,count):
 		if card.get("class","all") == _class:
 			tmpList.append(card)
 	
-	var commonList = FilterByRarity(tmpList,"Common")
-	var uncommonList = FilterByRarity(tmpList,"Uncommon")
-	var rareList = FilterByRarity(tmpList,"Rare")
+	var commonList = FilterByRarity(tmpList,["Common"])
+	var uncommonList = FilterByRarity(tmpList,["Uncommon"])
+	var rareList = FilterByRarity(tmpList,["Rare"])
 	commonList.shuffle()
 	uncommonList.shuffle()
 	rareList.shuffle()
@@ -102,39 +102,34 @@ func RandomGainCardByClass(_class,count):
 	return tmp
 
 func RandBossCardByClass(class_,cnt = 3):
-	var tmp = FilterByClass(cardDict.values(),class_)
-	tmp = FilterByRarity(tmp,"Rare")
+	var tmp = FilterByClass(cardDict.values(),[class_])
+	tmp = FilterByRarity(tmp,["Rare"])
 	tmp.shuffle()
 	return tmp.slice(0,cnt-1)
 
 func RandRelicByClass(class_):
-	var tmp = FilterByClass(relicDict.values(),"All")
-	tmp = FilterByRarity(tmp,"Common")
+	var tmp = FilterByClass(relicDict.values(),["All"])
+	tmp = FilterByRarity(tmp,["Common"])
 	return tmp[randi()%len(tmp)]
 
 func RandBossRelicByClass(class_):
-	var tmp = FilterByClass(relicDict.values(),class_)
-	tmp = FilterByRarity(tmp,"Boss")
+	var tmp = FilterByClass(relicDict.values(),[class_])
+	tmp = FilterByRarity(tmp,["Boss"])
 	return tmp[randi()%len(tmp)]
 
-func FilterByClass(list,class_):
-	var tmp = []
-	for l in list:
-		if l["class"] == class_:
-			tmp.append(l)
-	return tmp
+func FilterByClass(list,classes):
+	return Filter(list,"class",classes)
 
 func FilterByRarity(list,rarity):
-	var tmp = []
-	for l in list:
-		if l.rarity == rarity:
-			tmp.append(l)
-	return tmp
+	return Filter(list,"rarity",rarity)
 
-func FilterByType(list,type):
+func FilterByType(list,types):
+	return Filter(list,"type",types)
+
+func Filter(list,key,filters):
 	var tmp = []
 	for l in list:
-		if l.type == type:
+		if filters.has(l[key]):
 			tmp.append(l)
 	return tmp
 

@@ -1,5 +1,9 @@
 extends Panel
 
+var data
+
+signal select(card)
+
 const class_dict = {
 	"all":Color.gray,
 	"ironclad":Color.red,
@@ -25,6 +29,7 @@ const type_dict = {
 }
 
 func Set(card):
+	data = card
 	$Cost.visible = !card.desc.has("Unplayable")
 	
 	self_modulate = class_dict[card.get("class","all")]
@@ -41,3 +46,7 @@ func Set(card):
 func Upgrade():
 	#TODO
 	pass
+	
+func _on_CardPanel_gui_input(event):
+	if event.is_action_pressed("click"):
+		emit_signal("select",data)

@@ -9,6 +9,13 @@ const defaultAppearanceSet = {
 	"spot_clr":"#ffffffff"
 }
 
+var data
+
+func Set(dat):
+	data = dat
+	hint_tooltip = "%s\n\t%s"%[data.get("name","Potion"),str(data.get("efx","desc"))]
+	SetAppearance(RndAppearanceSet())
+
 const path_tmp = "res://image/potion/%s/%s"
 func SetAppearance(set):
 	$outline.texture = load(path_tmp%[set.type,GlbDb.potionImgDict[set.type][0]])

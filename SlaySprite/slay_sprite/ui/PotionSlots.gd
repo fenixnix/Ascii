@@ -8,10 +8,11 @@ func Set(slots):
 		c.queue_free()
 	yield(get_tree(),"idle_frame")
 	for s in slots:
-		if s.potion==null:
+		if s==null:
 			var placeHolder = TextureRect.new()
 			placeHolder.texture = placeHolderIcon
 			add_child(placeHolder)
 		else:
 			var potion = potionPrefab.instance()
 			add_child(potion)
+			potion.Set(s)
