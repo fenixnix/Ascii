@@ -219,7 +219,7 @@ _global_script_class_icons={
 [application]
 
 config/name="GodotPlayGround"
-run/main_scene="res://BattleEffect/Test.tscn"
+run/main_scene="res://TopDownShootGame/Stage/ShootGame.tscn"
 boot_splash/image="res://tmp.png"
 boot_splash/fullsize=false
 config/icon="res://tmp.png"
