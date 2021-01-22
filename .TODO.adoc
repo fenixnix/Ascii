@@ -1,3 +1,13 @@
+- [ ] PixCiv Gameplay data barbarain mechanic
+- [ ] odoo docker TMS Module
+- [ ] DFQ 游戏剧本怎么写
+- [ ] 塔木德
+- [ ] PCCtrl Python tk
+
+
+---
+
+
 ===== TODO
 
 NOTE: Every thing need to be done
