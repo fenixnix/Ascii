@@ -29,6 +29,4 @@ ls2.pack()
 btn = Button(gui,text="Click",command=on_start)
 btn.pack()
 
-
-
 gui.mainloop()
