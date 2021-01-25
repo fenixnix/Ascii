@@ -1,10 +1,12 @@
-- [ ] PixCiv Gameplay data barbarain mechanic
+- [ ] PixCiv Gameplay data barbarain mechanic,camp spawn, auto assign citizen, city enlarge hex mechanic
 - [ ] odoo docker TMS Module
+- [ ] PCCtrl Python tk
 - [ ] DFQ 游戏剧本怎么写
 - [ ] 塔木德
-- [ ] PCCtrl Python tk
 
+https://swapp.singlewindow.cn/qspserver/sw/qsp/query/view/export?ngBasePath=https://swapp.singlewindow.cn:443/qspserver/
 
+PASU5141340230
 ---
 
 
