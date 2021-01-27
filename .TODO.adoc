@@ -1,6 +1,6 @@
+- [ ] DFQ 故事游戏剧本怎么写
 - [ ] PixCiv Gameplay data barbarain mechanic
-- [ ] odoo docker TMS Module
-- [ ] DFQ 游戏剧本怎么写
+- [ ] odoo TMS Module
 - [ ] 塔木德
 - [ ] PCCtrl Python tk
 
