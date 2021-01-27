@@ -2,7 +2,7 @@ import os
 from PIL import Image
 
 def SplitGif(fileName):
-    im = Image.open(fileName)
+    im = Image.open()
     os.mkdir('图形拆分')
     try:
     i = 0
@@ -14,4 +14,4 @@ def SplitGif(fileName):
     pass
     print('共拆解图像帧数'+str(i))
 
-SplitGif('D:\\Python\\gif\\first.gif')
+SplitGif()
