@@ -1,7 +1,9 @@
+- [ ] DFQ 游戏剧本怎么写
+故事描写框架 NVS 改进，朴素简单的通用对话系统，通用的脚本编辑器，再改进
+DFQ故事实现
 - [ ] PixCiv Gameplay data barbarain mechanic,camp spawn, auto assign citizen, city enlarge hex mechanic
 - [ ] odoo docker TMS Module
 - [ ] PCCtrl Python tk
-- [ ] DFQ 游戏剧本怎么写
 - [ ] 塔木德
 * system menu DFQ
 * system narrat NVS
