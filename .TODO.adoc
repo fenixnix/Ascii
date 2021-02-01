@@ -1,4 +1,15 @@
 - [ ] DFQ 游戏剧本怎么写
+
+NVS 改写插件 inky作为脚本描述方式，人物设置（名字，头像，音效）
+音频管理插件
+通用工具插件
+文件读写插件
+UI插件
+
+DFQ故事剧本撰写，inky
+
+xsd 文件解析成输入UI
+
 故事描写框架 NVS 改进，朴素简单的通用对话系统，通用的脚本编辑器，再改进
 DFQ故事实现
 - [ ] PixCiv Gameplay data barbarain mechanic,camp spawn, auto assign citizen, city enlarge hex mechanic
