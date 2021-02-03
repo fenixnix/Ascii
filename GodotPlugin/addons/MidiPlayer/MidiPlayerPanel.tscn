@@ -1,0 +1,91 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://addons/midi/MidiPlayer.gd" type="Script" id=1]
+[ext_resource path="res://addons/MidiPlayer/MidiPanel.gd" type="Script" id=2]
+[ext_resource path="res://addons/MidiPlayer/MidiPlayerPanel.gd" type="Script" id=3]
+
+[node name="MidiPlayer" type="Control"]
+anchor_right = 0.250781
+anchor_bottom = 0.505556
+size_flags_vertical = 3
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="GodotMIDIPlayer" type="Node" parent="."]
+script = ExtResource( 1 )
+soundfont = "res://audio/setzer_spc.sf2"
+
+[node name="MidiPanel" type="PanelContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FileDialog" type="FileDialog" parent="MidiPanel"]
+margin_left = 14.0
+margin_top = 14.0
+margin_right = 1010.0
+margin_bottom = 586.0
+window_title = "Open a Directory"
+mode = 2
+current_dir = "res://audio"
+current_path = "res://audio/"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MidiPanel"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 314.0
+margin_bottom = 357.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MidiPanel/VBoxContainer"]
+margin_right = 307.0
+margin_bottom = 25.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ItemList" type="ItemList" parent="MidiPanel/VBoxContainer"]
+margin_top = 29.0
+margin_right = 307.0
+margin_bottom = 315.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MidiPanel/VBoxContainer"]
+margin_top = 319.0
+margin_right = 307.0
+margin_bottom = 350.0
+
+[node name="Folder" type="Button" parent="MidiPanel/VBoxContainer/HBoxContainer"]
+margin_right = 61.0
+margin_bottom = 31.0
+text = "Folder"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionButton" type="OptionButton" parent="MidiPanel/VBoxContainer/HBoxContainer"]
+margin_left = 65.0
+margin_right = 307.0
+margin_bottom = 31.0
+size_flags_horizontal = 3
+text = "sequence"
+items = [ "loop", null, false, 0, null, "sequence", null, false, 1, null, "random", null, false, 2, null ]
+selected = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="play" from="MidiPanel" to="." method="_on_MidiPanel_play"]
+[connection signal="dir_selected" from="MidiPanel/FileDialog" to="MidiPanel" method="_on_FileDialog_dir_selected"]
+[connection signal="item_activated" from="MidiPanel/VBoxContainer/ItemList" to="MidiPanel" method="_on_ItemList_item_activated"]
+[connection signal="pressed" from="MidiPanel/VBoxContainer/HBoxContainer/Folder" to="MidiPanel" method="_on_Folder_pressed"]

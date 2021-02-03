@@ -1,0 +1,12 @@
+{
+    "scn_town":{
+        "tscn":"Control.tscn",
+        "time":"2021Feb02",
+        "bg":[
+            "res://sample_data/img/battlebacks1/Castle1.png",
+            "res://sample_data/img/battlebacks2/Brick.png"
+        ],
+        "eax":"res://sample_data/audio/bgs/City.ogg",
+        "bgm":"res://sample_data/audio/bgm/Town1.ogg"
+    }
+}

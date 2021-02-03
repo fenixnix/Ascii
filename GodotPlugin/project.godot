@@ -8,9 +8,80 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "AudioStreamPlayer",
+"class": "AudioStreamPlayerADSR",
+"language": "GDScript",
+"path": "res://addons/midi/ADSR.gd"
+}, {
+"base": "Reference",
+"class": "Bank",
+"language": "GDScript",
+"path": "res://addons/midi/Bank.gd"
+}, {
+"base": "Node",
+"class": "ComFun",
+"language": "GDScript",
+"path": "res://common/ComFun.gd"
+}, {
+"base": "Node",
+"class": "Counter",
+"language": "GDScript",
+"path": "res://common/Counter.gd"
+}, {
+"base": "Node",
+"class": "FileRW",
+"language": "GDScript",
+"path": "res://common/FileRW.gd"
+}, {
+"base": "CanvasLayer",
+"class": "GlobalUI",
+"language": "GDScript",
+"path": "res://common/GlbUi.gd"
+}, {
+"base": "Reference",
+"class": "HexGrid",
+"language": "GDScript",
+"path": "res://common/hex.gd"
+}, {
+"base": "Node",
+"class": "MidiPlayer",
+"language": "GDScript",
+"path": "res://addons/midi/MidiPlayer.gd"
+}, {
+"base": "Node",
+"class": "NixRnd",
+"language": "GDScript",
+"path": "res://common/NixRnd.gd"
+}, {
+"base": "Reference",
+"class": "RandomJunk",
+"language": "GDScript",
+"path": "res://common/RandomJunk.gd"
+}, {
+"base": "Reference",
+"class": "SMF",
+"language": "GDScript",
+"path": "res://addons/midi/SMF.gd"
+}, {
+"base": "Reference",
+"class": "SoundFont",
+"language": "GDScript",
+"path": "res://addons/midi/SoundFont.gd"
+} ]
 _global_script_class_icons={
-
+"AudioStreamPlayerADSR": "",
+"Bank": "",
+"ComFun": "",
+"Counter": "",
+"FileRW": "",
+"GlobalUI": "",
+"HexGrid": "",
+"MidiPlayer": "",
+"NixRnd": "",
+"RandomJunk": "",
+"SMF": "",
+"SoundFont": ""
 }
 
 [application]
@@ -19,9 +90,20 @@ config/name="Godot Plugin"
 run/main_scene="res://main.tscn"
 config/icon="res://icon.png"
 
+[audio]
+
+default_bus_layout="res://addons/NixAudio/AudioBus.tres"
+
+[autoload]
+
+GlbAudio="*res://addons/NixAudio/GlbAudio.gd"
+Narrative="*res://addons/NixStory/Narrative.tscn"
+Dialog="*res://addons/NixStory/Dialog.tscn"
+Scene="*res://addons/NixStory/Scene.tscn"
+
 [editor_plugins]
 
-enabled=PoolStringArray( "NixLib" )
+enabled=PoolStringArray( "NixAudio", "NixStory", "midi" )
 
 [rendering]
 
