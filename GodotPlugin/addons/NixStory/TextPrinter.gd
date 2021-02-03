@@ -42,5 +42,7 @@ func Click():
 		emit_signal("finish")
 
 func on_gui_input(event):
-	if event.is_action_pressed("click_L"):
-		Click()
+	if event is InputEventMouseButton:
+		if event.pressed and event.button_index == 1:
+			Click()
+

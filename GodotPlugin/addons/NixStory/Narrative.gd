@@ -4,9 +4,9 @@ extends Node
 signal finish
 
 func _ready():
-	$TextPrinter/next.hide()
 	Clear()
 	Close()
+	$TextPrinter/next.hide()
 
 func Clear():
 	$TextPrinter.Clear()

@@ -4,14 +4,11 @@ GlbUI插件 转场，UI管理，对话框，消息框，选项
 
 xsd 文件解析成输入UI
 
-故事描写框架 NVS 改进，朴素简单的通用对话系统，通用的脚本编辑器，再改进
-DFQ故事实现
 - [ ] PixCiv Gameplay data barbarain mechanic,camp spawn, auto assign citizen, city enlarge hex mechanic
 - [ ] odoo docker TMS Module
 - [ ] PCCtrl Python tk
 - [ ] 塔木德
 * system menu DFQ
-* system narrat NVS
 
 https://swapp.singlewindow.cn/qspserver/sw/qsp/query/view/export?ngBasePath=https://swapp.singlewindow.cn:443/qspserver/
 

@@ -2,8 +2,8 @@ extends Node
 
 export(String) var storyScript = ""
 
-var scnDb = {}
-var chaDb = {}
+var scnDb = FileRW.LoadJsonFile("res://data/scene.json")
+var chaDb = FileRW.LoadJsonFile("res://data/chara.json")
 
 var cmd_queue = []
 var curIndex = 0
@@ -12,16 +12,13 @@ signal finish()
 
 func _ready():
 	Clear()
-	scnDb = FileRW.LoadJsonFile("res://data/scene.json")
-	chaDb = FileRW.LoadJsonFile("res://data/chara.json")
 	Narrative.connect("finish",self,"on_finish")
 	Dialog.connect("finish",self,"on_finish")
 
 func Clear():
 	Scene.Clear()
+	Narrative.Close()
 	Dialog.Close()
-	GlbAudio.MuteBGM()
-	GlbAudio.MuteEAX()
 
 func Play(story = null):
 	if story != null:
