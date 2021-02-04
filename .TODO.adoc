@@ -1,7 +1,6 @@
-- [ ] DFQ 游戏剧本怎么写
-
 GlbUI插件 转场，UI管理，对话框，消息框，选项
-
+CheatCode
+- [ ] DFQ 游戏剧本怎么写
 xsd 文件解析成输入UI
 
 - [ ] PixCiv Gameplay data barbarain mechanic,camp spawn, auto assign citizen, city enlarge hex mechanic
