@@ -7,7 +7,7 @@ url = siteUrl + "midiindexcomplete.html"
 soup = func.GetSoup(url)
 
 skip_mark = "http://www.bachcentral.com/Organchorales/BSGJG_J.MID"
-skip = True
+skip = False
 
 midiList = []
 for l in soup.find_all("a"):
