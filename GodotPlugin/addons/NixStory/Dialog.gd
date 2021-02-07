@@ -7,6 +7,8 @@ onready var nextMark = $Frame/next
 signal finish()
 
 func _ready():
+	if $voice.stream is AudioStreamOGGVorbis:
+		$voice.stream.loop = false
 	Close()
 
 func Close():

@@ -36,3 +36,6 @@ func _on_TextPrinter_finish():
 
 func _on_TextPrinter_wait():
 	$TextPrinter/next.show()
+
+func _on_TextPrinter_putChar():
+	$sfx.play()

@@ -1,8 +1,9 @@
 extends Node
 
-export(String,FILE,"*.nvs") var storyScript
+export(String,DIR) var rootPath = "res://"
 export(String,FILE,"*.json") var sceneDB
 export(String,FILE,"*.json") var charaDB
+export(String,FILE,"*.nvs") var storyScript
 
 var scnDb
 var chaDb
@@ -51,6 +52,7 @@ func Step():
 
 	curIndex += 1
 	match cmd:
+		"bg":Scene.PushBG("%s/%s"%[rootPath,dat])
 		"scn":
 			Scene(dat)
 		"!scn":Scene.Clear()
@@ -75,9 +77,11 @@ func Step():
 		"#say":Dialog.Clear()
 		"!say":Dialog.Close()
 		"se":
-			GlbAudio.PlaySFX(dat)
+			GlbAudio.PlaySFX(rootPath + "/" + dat)
+		"eax":
+			GlbAudio.PlayEAX(rootPath + "/" + dat)
 		"bgm":
-			GlbAudio.PlayBGM(dat)
+			GlbAudio.PlayBGM(rootPath + "/" + dat)
 		"select":
 			var options = dat.split("|")
 			var selLst = []

@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://addons/NixStory/Narrative.gd" type="Script" id=1]
 [ext_resource path="res://addons/NixStory/TextPrinter.gd" type="Script" id=2]
 [ext_resource path="res://addons/NixStory/nextMark.tscn" type="PackedScene" id=3]
+[ext_resource path="res://addons/NixStory/se/soundslikewillem__a.wav" type="AudioStream" id=4]
 
 [node name="Narrative" type="CanvasLayer"]
 layer = 2
@@ -34,5 +35,9 @@ __meta__ = {
 }
 
 [node name="next" parent="TextPrinter" instance=ExtResource( 3 )]
+
+[node name="sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
 [connection signal="finish" from="TextPrinter" to="." method="_on_TextPrinter_finish"]
+[connection signal="putChar" from="TextPrinter" to="." method="_on_TextPrinter_putChar"]
 [connection signal="wait" from="TextPrinter" to="." method="_on_TextPrinter_wait"]

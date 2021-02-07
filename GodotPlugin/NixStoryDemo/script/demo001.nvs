@@ -1,2 +1,30 @@
-nrtl:[center]Oak Town[/center]
-nrtl:[wave][center]Center[/center][/wave]
+bg:image/A01-3_HomeBase_DormRoom/A01-3_HomeBase_DormRoom_Night.png
+se:audio/caderesounds__horror-cinema.ogg
+nrtl:[center]逃离[/center]
+#nrt:
+nrtl:[center]20XX 年 冬[/center]
+nrtl:[center]XX市 东部郊区[/center]
+nrtl:[wave][center]丧尸病毒爆发五天后[/center][/wave]
+#nrt:
+bgm:audio/looping-dark-ambience.ogg
+
+bg:image/inst _hope_ow/kabinet candle.png
+sayl:我是一个自由职业者
+#say：
+sayl:大概五天前整个世界爆发了未知病毒
+sayl:有专家说是M国的流感变异
+#say:
+sayl:但对我这个普通人来说，活着是最重要的
+sayl:还好我比较宅，喜欢囤积些食物在家里
+sayl:家里的东西够我吃个几天了
+sayl：我准备...
+select:出门寻找食物@a|宅在家里等待救援@b
+
+*a
+nrt:选择A
+goto:c
+
+*b
+nrt:选择B
+
+*c

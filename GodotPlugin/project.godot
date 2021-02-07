@@ -27,12 +27,12 @@ _global_script_classes=[ {
 "base": "Node",
 "class": "Counter",
 "language": "GDScript",
-"path": "res://common/Counter.gd"
+"path": "res://addons/NixLib/Counter.gd"
 }, {
 "base": "Node",
 "class": "FileRW",
 "language": "GDScript",
-"path": "res://common/FileRW.gd"
+"path": "res://addons/NixLib/FileRW.gd"
 }, {
 "base": "CanvasLayer",
 "class": "GlobalUI",
@@ -88,7 +88,7 @@ _global_script_class_icons={
 
 config/name="Godot Plugin"
 run/main_scene="res://main.tscn"
-config/icon="res://icon.png"
+config/icon="res://Plugin (1).png"
 
 [audio]
 
@@ -104,7 +104,11 @@ Scene="*res://addons/NixStory/Scene.tscn"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "NixAudio", "NixGUI", "NixStory" )
+enabled=PoolStringArray( "NixAudio", "NixGUI", "NixLib", "NixStory" )
+
+[gui]
+
+theme/custom_font="res://NixStoryDemo/font/default.tres"
 
 [rendering]
 

@@ -57,7 +57,10 @@ func MuteEAX():
 	eax.stop()
 
 func PlaySFX(path,rnd = false):
-	PlaySFXStream(load(path),rnd)
+	var stream = load(path)
+	if stream is AudioStreamOGGVorbis:
+		stream.loop = false
+	PlaySFXStream(stream,rnd)
 
 func PlaySFXStream(stream,rnd = false):
 	var sfx = add_audio_player("SFX")
