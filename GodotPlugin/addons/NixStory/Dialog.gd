@@ -21,7 +21,7 @@ func Say(text):
 
 func SetSpeaker(name = "???",face = null):
 	$Frame/portrait.texture = face
-	$Frame/speaker.text = name
+	$Frame/Label/speaker.text = name
 
 func Clear():
 	$Frame/Content/TextPrinter.Clear()
@@ -31,3 +31,7 @@ func _on_TextPrinter_finish():
 
 func _on_TextPrinter_wait():
 	nextMark.show()
+
+func _on_TextPrinter_putChar():
+	$voice.pitch_scale = rand_range(0.95,1.05)
+	$voice.play()

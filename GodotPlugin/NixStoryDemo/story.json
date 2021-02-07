@@ -1,0 +1,12 @@
+[
+    {"type":"clear"},
+    {"type":"print","val":"AD 43XX\n"},
+    {"type":"timer","val":1},
+    {"type":"print","val":"hello world 2\n"},
+    {"type":"wait"},
+    {"type":"clear"},
+    {"type":"print","val":"hello world 3\n"},
+    {"type":"timer","val":2},
+    {"type":"print","val":"hello world 4\n"},
+    {"type":"wait"}
+]

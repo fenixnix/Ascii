@@ -1,6 +1,11 @@
-GlbUI插件 转场，UI管理，对话框，消息框，选项
+在Godot Plugin 测试
+写互动剧本后有针对性的获取或者制作素材（背景，人物，音乐，音效）
+
+测试NixStory写一个小品级的交互小故事
+作为NixDemo，一个卡通故事，一个克苏鲁故事
+搜集Demo素材，编写剧本
+
 submit godot asset
-CheatCode
 - [ ] DFQ 游戏剧本怎么写
 xsd 文件解析成输入UI
 

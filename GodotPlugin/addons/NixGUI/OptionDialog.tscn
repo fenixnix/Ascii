@@ -1,0 +1,120 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://addons/NixGUI/OptionDialog.gd" type="Script" id=1]
+[ext_resource path="res://addons/NixGUI/shader/Filter_blur.shader" type="Shader" id=2]
+[ext_resource path="res://addons/NixGUI/OptionLabel.gd" type="Script" id=3]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 2 )
+shader_param/kernal_size = 0.0
+
+[sub_resource type="NoiseTexture" id=2]
+
+[sub_resource type="Animation" id=3]
+resource_name = "FadeIn"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Control/Background:material:shader_param/kernal_size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 3.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Control:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="OptionDialog" type="CanvasLayer"]
+layer = 3
+script = ExtResource( 1 )
+
+[node name="Control" type="Control" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="TextureRect" parent="Control"]
+material = SubResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = SubResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Message" type="Label" parent="Control"]
+anchor_left = 0.163086
+anchor_top = 0.132813
+anchor_right = 0.835938
+anchor_bottom = 0.259115
+margin_left = -6.10352e-05
+margin_top = -0.000389099
+margin_right = 9.99951
+margin_bottom = 7.99966
+text = "Message Info"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionLabel" type="RichTextLabel" parent="Control"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="List" type="VBoxContainer" parent="Control"]
+visible = false
+anchor_left = 0.498321
+anchor_top = 0.335651
+anchor_right = 0.498321
+anchor_bottom = 0.896692
+margin_left = -145.312
+margin_top = -0.119995
+margin_right = 144.688
+margin_bottom = 8.43835
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Button" type="Button" parent="Control/List"]
+margin_top = 198.0
+margin_right = 290.0
+margin_bottom = 235.0
+
+[node name="Test" type="Button" parent="."]
+visible = false
+margin_right = 12.0
+margin_bottom = 37.0
+text = "Test"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Anim" type="AnimationPlayer" parent="."]
+anims/FadeIn = SubResource( 3 )
+[connection signal="select" from="Control/OptionLabel" to="." method="_on_OptionLabel_select"]
+[connection signal="pressed" from="Test" to="." method="_on_Test_pressed"]

@@ -1,6 +1,5 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://addons/NixLib/button.gd" type="Script" id=1]
 [ext_resource path="res://addons/NixStory/NixStoryPlayer.gd" type="Script" id=2]
 [ext_resource path="res://main.gd" type="Script" id=3]
 
@@ -12,14 +11,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MyButton" type="Button" parent="."]
-margin_right = 12.0
-margin_bottom = 20.0
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="NixStoryPlayer" type="Node" parent="."]
 script = ExtResource( 2 )
-storyScript = "res://data/story001.nvs"
+storyScript = "res://NixStoryDemo/script/demo001.nvs"
+sceneDB = "res://data/scene.json"
+charaDB = "res://data/chara.json"

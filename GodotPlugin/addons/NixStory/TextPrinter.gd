@@ -4,6 +4,7 @@ extends RichTextLabel
 var delayTime = 0.1
 var timer
 
+signal putChar()
 signal finish()
 signal wait()
 
@@ -17,11 +18,12 @@ func _enter_tree():
 func Print(txt):
 	if visible_characters < len(text):
 		visible_characters = len(text)
-	text += txt
+	append_bbcode(txt)
 	timer.start(delayTime)
 
 func put():
 	#$TypeSFX.play()
+	emit_signal("putChar")
 	if visible_characters >= len(text):
 		timer.stop()
 		emit_signal("wait")
@@ -45,4 +47,3 @@ func on_gui_input(event):
 	if event is InputEventMouseButton:
 		if event.pressed and event.button_index == 1:
 			Click()
-

@@ -1,9 +1,13 @@
 extends Node
 
-export(String) var storyScript = ""
+export(String,FILE,"*.nvs") var storyScript
+export(String,FILE,"*.json") var sceneDB
+export(String,FILE,"*.json") var charaDB
 
-var scnDb = FileRW.LoadJsonFile("res://data/scene.json")
-var chaDb = FileRW.LoadJsonFile("res://data/chara.json")
+var scnDb
+var chaDb
+
+var gameDb = {}
 
 var cmd_queue = []
 var curIndex = 0
@@ -12,8 +16,11 @@ signal finish()
 
 func _ready():
 	Clear()
+	scnDb = FileRW.LoadJsonFile(sceneDB)
+	chaDb = FileRW.LoadJsonFile(charaDB)
 	Narrative.connect("finish",self,"on_finish")
 	Dialog.connect("finish",self,"on_finish")
+	pass
 
 func Clear():
 	Scene.Clear()
@@ -50,6 +57,9 @@ func Step():
 		"nrt":
 			Narrative.Print(dat)
 			return
+		"nrtl":
+			Narrative.Print(dat+"\n")
+			return
 		"#nrt": Narrative.Clear()
 		"!nrt": Narrative.Close()
 		"cha":
@@ -68,6 +78,18 @@ func Step():
 			GlbAudio.PlaySFX(dat)
 		"bgm":
 			GlbAudio.PlayBGM(dat)
+		"select":
+			var options = dat.split("|")
+			var selLst = []
+			var jumpLst = []
+			for o in options:
+				var pair = o.split("@")
+				selLst.append(pair[0])
+				jumpLst.append(pair[1])
+			GlbUI.ExOption(selLst)
+			var selection = yield(GlbUI,"select")
+			Goto(jumpLst[selection])
+		"goto":Goto(dat)
 		_:
 			print("unknow cmd")
 	Step()
@@ -75,6 +97,16 @@ func Step():
 func on_finish():
 	print(curIndex)
 	Step()
+
+func Goto(tag):
+	var index = 0
+	for c in cmd_queue:
+		if c.begins_with("*"):
+			if c.right(1) == tag:
+				break
+		index += 1;
+	print("goto %d"%index)
+	curIndex = index
 
 func Scene(dat):
 	var scnDat = scnDb[dat]
@@ -86,3 +118,9 @@ func Scene(dat):
 			"eax":GlbAudio.PlayEAX(scnDat[k])
 			"bgm":GlbAudio.PlayBGM(scnDat[k])
 			_:print("unknow cmd:%s"%scnDat[k])
+
+func GetDB(key):
+	return gameDb.get(key,null)
+
+func SetDB(key,val):
+	gameDb[key] = val

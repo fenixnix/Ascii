@@ -1,0 +1,18 @@
+scn:scn_town
+nrt:little town
+#nrt:
+!nrt:
+cha:cha_adv
+say:A...
+say@cha_adv[0]:"hello world"
+se:res://audio/sfx/Blow1.ogg
+sayl:B...
+sayl:打个招呼
+#say:
+cha:cha_def
+bgm:res://audio/bgm/LD40 Heavy Heist.ogg
+say:C...
+!say:
+nrt:exit hamlet
+#nrt:
+!scn:

@@ -1,0 +1,161 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://addons/NixGUI/SystemMenu.gd" type="Script" id=1]
+[ext_resource path="res://common/DateTime.gd" type="Script" id=2]
+[ext_resource path="res://addons/NixGUI/return_hk.tres" type="ShortCut" id=3]
+[ext_resource path="res://addons/NixGUI/TextInput.tscn" type="PackedScene" id=4]
+[ext_resource path="res://addons/NixGUI/SystemSaveList.tscn" type="PackedScene" id=5]
+[ext_resource path="res://image/icon/power.png" type="Texture" id=6]
+[ext_resource path="res://font/Great Beast.otf" type="DynamicFontData" id=7]
+[ext_resource path="res://image/icon/icon_rotate_left.svg" type="Texture" id=8]
+[ext_resource path="res://addons/NixGUI/BlurBG.tscn" type="PackedScene" id=9]
+[ext_resource path="res://image/icon/icon_new.svg" type="Texture" id=10]
+[ext_resource path="res://image/icon/icon_save.svg" type="Texture" id=11]
+[ext_resource path="res://image/icon/icon_load.svg" type="Texture" id=12]
+[ext_resource path="res://image/icon/icon_tools.svg" type="Texture" id=13]
+
+[sub_resource type="DynamicFont" id=1]
+size = 96
+use_filter = true
+font_data = ExtResource( 7 )
+
+[node name="SystemMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="filter" parent="." instance=ExtResource( 9 )]
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+margin_top = 4.0
+margin_bottom = 263.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 5
+custom_constants/shadow_offset_y = 5
+custom_constants/shadow_as_outline = 2
+text = "Dungeon Fantasy Quest"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBox" type="VBoxContainer" parent="."]
+anchor_left = 0.502
+anchor_top = 0.291
+anchor_right = 0.502
+anchor_bottom = 0.772
+margin_left = -141.54
+margin_top = -0.160004
+margin_right = 142.46
+margin_bottom = -3.72003
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="New" type="Button" parent="VBox"]
+margin_right = 284.0
+margin_bottom = 37.0
+text = "New"
+icon = ExtResource( 10 )
+
+[node name="Save" type="Button" parent="VBox"]
+margin_top = 45.0
+margin_right = 284.0
+margin_bottom = 82.0
+text = "Save"
+icon = ExtResource( 11 )
+
+[node name="Load" type="Button" parent="VBox"]
+margin_top = 90.0
+margin_right = 284.0
+margin_bottom = 127.0
+text = "Load"
+icon = ExtResource( 12 )
+
+[node name="HSeparator3" type="HSeparator" parent="VBox"]
+margin_top = 135.0
+margin_right = 284.0
+margin_bottom = 143.0
+
+[node name="Setting" type="Button" parent="VBox"]
+margin_top = 151.0
+margin_right = 284.0
+margin_bottom = 188.0
+text = "Setting"
+icon = ExtResource( 13 )
+
+[node name="Label" type="Label" parent="VBox"]
+margin_top = 213.0
+margin_right = 284.0
+margin_bottom = 238.0
+size_flags_vertical = 6
+
+[node name="Exit" type="Button" parent="VBox"]
+margin_top = 264.0
+margin_right = 284.0
+margin_bottom = 301.0
+text = "Exit"
+icon = ExtResource( 6 )
+expand_icon = true
+
+[node name="HSeparator" type="HSeparator" parent="VBox"]
+margin_top = 309.0
+margin_right = 284.0
+margin_bottom = 317.0
+
+[node name="Resume" type="Button" parent="VBox"]
+margin_top = 325.0
+margin_right = 284.0
+margin_bottom = 362.0
+shortcut_in_tooltip = false
+shortcut = ExtResource( 3 )
+text = "Resume"
+icon = ExtResource( 8 )
+expand_icon = true
+
+[node name="DateTime" type="Label" parent="."]
+anchor_right = 1.0
+margin_bottom = 89.0
+text = "2000
+18:30"
+align = 1
+valign = 1
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Version" type="Label" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -27.0
+margin_right = -8.0
+margin_bottom = -2.0
+text = "1.03 Beta"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SaveList" parent="." instance=ExtResource( 5 )]
+visible = false
+
+[node name="TextInput" parent="." instance=ExtResource( 4 )]
+visible = false
+[connection signal="pressed" from="VBox/New" to="." method="_on_New_pressed"]
+[connection signal="pressed" from="VBox/Save" to="." method="_on_Save_pressed"]
+[connection signal="pressed" from="VBox/Load" to="." method="_on_Load_pressed"]
+[connection signal="pressed" from="VBox/Setting" to="." method="_on_Setting_pressed"]
+[connection signal="pressed" from="VBox/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="VBox/Resume" to="." method="_on_Resume_pressed"]
+[connection signal="action" from="SaveList" to="." method="_on_SaveList_action"]
+[connection signal="send" from="TextInput" to="." method="on_SendSaveID"]

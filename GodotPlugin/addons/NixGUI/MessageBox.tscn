@@ -1,0 +1,84 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://addons/NixGUI/return_hk.tres" type="ShortCut" id=1]
+[ext_resource path="res://addons/NixGUI/GrayFrame.tres" type="StyleBox" id=2]
+[ext_resource path="res://image/icon/icon_import_fail.svg" type="Texture" id=3]
+[ext_resource path="res://image/icon/icon_control.svg" type="Texture" id=4]
+[ext_resource path="res://addons/NixGUI/MessageBox.gd" type="Script" id=5]
+
+[node name="MessageBox" type="Control"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Frame" type="PanelContainer" parent="."]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -101.0
+margin_bottom = 106.0
+custom_styles/panel = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBox" type="VBoxContainer" parent="Frame"]
+margin_right = 1270.0
+margin_bottom = 207.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Frame/VBox"]
+margin_top = 60.0
+margin_right = 1270.0
+margin_bottom = 85.0
+size_flags_vertical = 6
+text = "Message"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSeparator" type="HSeparator" parent="Frame/VBox"]
+margin_top = 154.0
+margin_right = 1270.0
+margin_bottom = 162.0
+
+[node name="HBox" type="HBoxContainer" parent="Frame/VBox"]
+margin_top = 170.0
+margin_right = 1270.0
+margin_bottom = 207.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cancel" type="Button" parent="Frame/VBox/HBox"]
+modulate = Color( 0.992157, 0.00784314, 0.00784314, 1 )
+margin_left = 274.0
+margin_right = 357.0
+margin_bottom = 37.0
+size_flags_horizontal = 6
+shortcut_in_tooltip = false
+shortcut = ExtResource( 1 )
+text = "Cancel"
+icon = ExtResource( 3 )
+expand_icon = true
+
+[node name="OK" type="Button" parent="Frame/VBox/HBox"]
+modulate = Color( 0.14902, 0.976471, 0.0196078, 1 )
+margin_left = 930.0
+margin_right = 978.0
+margin_bottom = 37.0
+size_flags_horizontal = 6
+text = "OK"
+icon = ExtResource( 4 )
+expand_icon = true
+[connection signal="pressed" from="Frame/VBox/HBox/Cancel" to="." method="_on_Cancel_pressed"]
+[connection signal="pressed" from="Frame/VBox/HBox/OK" to="." method="_on_OK_pressed"]

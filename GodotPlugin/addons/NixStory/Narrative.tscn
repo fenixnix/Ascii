@@ -27,6 +27,7 @@ anchor_right = 0.875781
 anchor_bottom = 0.861111
 bbcode_enabled = true
 visible_characters = 0
+scroll_following = true
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": true

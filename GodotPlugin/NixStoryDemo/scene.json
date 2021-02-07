@@ -1,0 +1,10 @@
+{
+    "scn_town":{
+        "time":"2021Feb02",
+        "bg":[
+            "res://image/site/ground/Castle1.png",
+            "res://image/site/bg/Brick.png"
+        ],
+        "bgm":"res://audio/bgm/cosmogonia.ogg"
+    }
+}

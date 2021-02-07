@@ -37,7 +37,7 @@ _global_script_classes=[ {
 "base": "CanvasLayer",
 "class": "GlobalUI",
 "language": "GDScript",
-"path": "res://common/GlbUi.gd"
+"path": "res://addons/NixGUI/GlbUI.gd"
 }, {
 "base": "Reference",
 "class": "HexGrid",
@@ -97,13 +97,14 @@ default_bus_layout="res://addons/NixAudio/AudioBus.tres"
 [autoload]
 
 GlbAudio="*res://addons/NixAudio/GlbAudio.gd"
+GlbUI="*res://addons/NixGUI/GlbUI.tscn"
 Narrative="*res://addons/NixStory/Narrative.tscn"
 Dialog="*res://addons/NixStory/Dialog.tscn"
 Scene="*res://addons/NixStory/Scene.tscn"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "NixAudio", "NixStory", "midi" )
+enabled=PoolStringArray( "NixAudio", "NixGUI", "NixStory" )
 
 [rendering]
 
