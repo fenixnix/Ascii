@@ -2,7 +2,9 @@ dat:hp = 3
 dat:san = 3
 dat:hunger = 3
 
-nrt:20XX年 冬 22：00
+nrtl:20XX年 冬
+nrtl:22：00
+
 scn:home_day
 eax:防空警报声
 手机消息：
