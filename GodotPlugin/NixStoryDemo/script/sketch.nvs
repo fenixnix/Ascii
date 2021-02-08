@@ -1,0 +1,33 @@
+dat:hp = 3
+dat:san = 3
+dat:hunger = 3
+
+nrt:20XX年 冬 22：00
+scn:home_day
+eax:防空警报声
+手机消息：
+select:看|不看
+
+*a
+    防空警报，不是演习
+    bgm:骚乱声
+    看到爆炸
+    scn：explore
+    se:爆炸声
+    躲避没有受伤
+    goto:ab
+
+*b
+    delay:5
+    bgm:骚乱声
+    被碎玻璃扎伤：hp:-2
+
+*ab
+哭喊声一片混乱
+
+select:出门|厨房
+
+*厨房：
+    goto:出门
+
+*出门
