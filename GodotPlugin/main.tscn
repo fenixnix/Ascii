@@ -14,10 +14,10 @@ sceneDB = "res://data/scene.json"
 charaDB = "res://data/chara.json"
 storyScript = "res://NixStoryDemo/script/demo001.nvs"
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="HUD" type="CanvasLayer" parent="."]
 layer = 6
 
-[node name="DateTimeLabel" type="Label" parent="CanvasLayer"]
+[node name="DateTimeLabel" type="Label" parent="HUD"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -1024.0
