@@ -2,12 +2,11 @@
 
 [ext_resource path="res://addons/NixGUI/GrayFrame.tres" type="StyleBox" id=1]
 [ext_resource path="res://addons/NixGUI/Setting.gd" type="Script" id=2]
-[ext_resource path="res://image/icon/icon_rotate_left.svg" type="Texture" id=3]
-[ext_resource path="res://image/icon/icon_translation.svg" type="Texture" id=4]
-[ext_resource path="res://image/icon/icon_gizmo_spatial_sample_player.svg" type="Texture" id=5]
-[ext_resource path="res://image/icon/icon_gizmo_spatial_stream_player.svg" type="Texture" id=6]
+[ext_resource path="res://addons/NixGUI/icon/icon_rotate_left.svg" type="Texture" id=3]
+[ext_resource path="res://icons/icon_translation.svg" type="Texture" id=4]
+[ext_resource path="res://icons/icon_gizmo_spatial_sample_player.svg" type="Texture" id=5]
+[ext_resource path="res://icons/icon_gizmo_spatial_stream_player.svg" type="Texture" id=6]
 [ext_resource path="res://addons/NixGUI/BlurBG.tscn" type="PackedScene" id=7]
-
 
 [node name="Setting" type="Control"]
 anchor_right = 1.0
@@ -50,43 +49,43 @@ align = 1
 valign = 1
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="Frame/VBox"]
-margin_top = 33.0
+margin_top = 29.0
 margin_right = 327.0
-margin_bottom = 70.0
+margin_bottom = 61.0
 
 [node name="TextureRect2" type="TextureRect" parent="Frame/VBox/HBoxContainer3"]
 margin_right = 32.0
-margin_bottom = 37.0
+margin_bottom = 32.0
 rect_min_size = Vector2( 32, 32 )
 texture = ExtResource( 4 )
 expand = true
 stretch_mode = 6
 
 [node name="OptionButton" type="OptionButton" parent="Frame/VBox/HBoxContainer3"]
-margin_left = 40.0
+margin_left = 36.0
 margin_right = 327.0
-margin_bottom = 37.0
+margin_bottom = 32.0
 size_flags_horizontal = 3
 text = "English"
 items = [ "English", null, false, 0, null, "Chinese", null, false, 1, null ]
 selected = 0
 
 [node name="HSeparator2" type="HSeparator" parent="Frame/VBox"]
-margin_top = 78.0
+margin_top = 65.0
 margin_right = 327.0
-margin_bottom = 86.0
+margin_bottom = 69.0
 
 [node name="Label2" type="Label" parent="Frame/VBox"]
-margin_top = 94.0
+margin_top = 73.0
 margin_right = 327.0
-margin_bottom = 119.0
+margin_bottom = 98.0
 text = "Audio"
 align = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Frame/VBox"]
-margin_top = 127.0
+margin_top = 102.0
 margin_right = 327.0
-margin_bottom = 159.0
+margin_bottom = 134.0
 
 [node name="TextureRect" type="TextureRect" parent="Frame/VBox/HBoxContainer"]
 margin_right = 32.0
@@ -97,18 +96,18 @@ expand = true
 stretch_mode = 6
 
 [node name="Label" type="Label" parent="Frame/VBox/HBoxContainer"]
-margin_left = 40.0
+margin_left = 36.0
 margin_top = 3.0
-margin_right = 136.0
+margin_right = 132.0
 margin_bottom = 28.0
 rect_min_size = Vector2( 96, 0 )
 size_flags_stretch_ratio = 0.2
 text = "BGM"
 
 [node name="BGM" type="HSlider" parent="Frame/VBox/HBoxContainer"]
-margin_left = 144.0
+margin_left = 136.0
 margin_right = 327.0
-margin_bottom = 32.0
+margin_bottom = 16.0
 size_flags_horizontal = 3
 min_value = -80.0
 max_value = 20.0
@@ -116,9 +115,9 @@ tick_count = 8
 ticks_on_borders = true
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="Frame/VBox"]
-margin_top = 167.0
+margin_top = 138.0
 margin_right = 327.0
-margin_bottom = 199.0
+margin_bottom = 170.0
 
 [node name="TextureRect2" type="TextureRect" parent="Frame/VBox/HBoxContainer2"]
 margin_right = 32.0
@@ -129,17 +128,17 @@ expand = true
 stretch_mode = 6
 
 [node name="Label" type="Label" parent="Frame/VBox/HBoxContainer2"]
-margin_left = 40.0
+margin_left = 36.0
 margin_top = 3.0
-margin_right = 136.0
+margin_right = 132.0
 margin_bottom = 28.0
 rect_min_size = Vector2( 96, 0 )
 text = "SFX"
 
 [node name="SFX" type="HSlider" parent="Frame/VBox/HBoxContainer2"]
-margin_left = 144.0
+margin_left = 136.0
 margin_right = 327.0
-margin_bottom = 32.0
+margin_bottom = 16.0
 size_flags_horizontal = 3
 min_value = -80.0
 max_value = 20.0
@@ -147,19 +146,19 @@ tick_count = 8
 ticks_on_borders = true
 
 [node name="Label" type="Label" parent="Frame/VBox"]
-margin_top = 210.0
+margin_top = 202.0
 margin_right = 327.0
-margin_bottom = 235.0
+margin_bottom = 227.0
 size_flags_vertical = 6
 
 [node name="HSeparator" type="HSeparator" parent="Frame/VBox"]
-margin_top = 246.0
+margin_top = 260.0
 margin_right = 327.0
-margin_bottom = 254.0
+margin_bottom = 264.0
 
 [node name="Back" type="Button" parent="Frame/VBox"]
 margin_left = 88.0
-margin_top = 262.0
+margin_top = 268.0
 margin_right = 238.0
 margin_bottom = 299.0
 rect_min_size = Vector2( 150, 0 )

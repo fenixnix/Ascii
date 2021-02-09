@@ -17,8 +17,9 @@ func Load():
 func refresh_list():
 	show()
 	$SaveList.clear()
-	for s in SL.SavLst():
-		$SaveList.add_item("[%s]:%s"%[str(s.dt),s.id])
+	#TODO show Save List
+#	for s in SL.SavLst():
+#		$SaveList.add_item("[%s]:%s"%[str(s.dt),s.id])
 
 func _on_SaveList_item_activated(index):
 	emit_signal("action",cmd,index)

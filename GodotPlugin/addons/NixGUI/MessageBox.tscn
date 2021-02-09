@@ -2,9 +2,10 @@
 
 [ext_resource path="res://addons/NixGUI/return_hk.tres" type="ShortCut" id=1]
 [ext_resource path="res://addons/NixGUI/GrayFrame.tres" type="StyleBox" id=2]
-[ext_resource path="res://image/icon/icon_import_fail.svg" type="Texture" id=3]
-[ext_resource path="res://image/icon/icon_control.svg" type="Texture" id=4]
+[ext_resource path="res://addons/NixGUI/icon/icon_import_fail.svg" type="Texture" id=3]
+[ext_resource path="res://icons/icon_control.svg" type="Texture" id=4]
 [ext_resource path="res://addons/NixGUI/MessageBox.gd" type="Script" id=5]
+
 
 [node name="MessageBox" type="Control"]
 anchor_top = 0.5

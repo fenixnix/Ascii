@@ -87,8 +87,9 @@ _global_script_class_icons={
 [application]
 
 config/name="Godot Plugin"
+config/description="ver 0.31a"
 run/main_scene="res://main.tscn"
-config/icon="res://Plugin (1).png"
+config/icon="res://plugin.png"
 
 [audio]
 

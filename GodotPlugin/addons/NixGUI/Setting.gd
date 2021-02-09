@@ -11,7 +11,7 @@ func _on_SFX_value_changed(value):
 	GlbAudio.ui_sfx.volume_db = value
 
 func _on_Back_pressed():
-	GlbUi.Pop()
+	GlbUI.Pop()
 
 func _on_OptionButton_item_selected(index):
 	var dict = ["en","zh"]

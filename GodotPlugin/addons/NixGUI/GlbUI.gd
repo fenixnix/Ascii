@@ -9,17 +9,19 @@ signal fade_finish()
 signal select(index)
 
 func _ready():
-	layer = 2
+	layer = 5
 
 func Push(path):
 	var ui = Load(path)
 	if !IsEmpty():
 		remove_child(queue.back())
-		queue.back()
+		#queue.pop_back()
 	queue.append(ui)
 	return ui
 	
 func Pop():
+	if IsEmpty():
+		return null
 	queue.pop_back().queue_free()
 	if !IsEmpty():
 		add_child(queue.back())
@@ -39,7 +41,7 @@ func Clear():
 	dict.clear()
 
 func IsEmpty():
-	return len(queue)==0
+	return queue.size()==0
 
 func Add(key,path):
 	dict[key] = Load(path)
@@ -70,6 +72,12 @@ func ExOption(list):
 	var ui = Push(path%"OptionDialog")
 	ui.Select(list)
 	ui.connect("select",self,"on_select")
+	return ui
+
+func ExMsg(msg):
+	var ui = Load(path%"MessageBox")
+	ui.Set(msg)
+	return ui
 
 func ExLog(msg):
 	var ui = Load(path%"MessageLog")
