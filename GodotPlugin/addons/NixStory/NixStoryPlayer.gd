@@ -7,16 +7,18 @@ export(String,FILE,"*.nvs") var storyScript
 
 var scnDb
 var chaDb
-
 var gameDb = {}
 
 var cmd_queue = []
 var curIndex = 0
 
+var stream
+
 signal finish()
 
 func _ready():
 	Clear()
+	stream = Narrative
 	scnDb = FileRW.LoadJsonFile(sceneDB)
 	chaDb = FileRW.LoadJsonFile(charaDB)
 	Narrative.connect("finish",self,"on_finish")
@@ -35,47 +37,89 @@ func Play(story = null):
 	print("Play Script:%s"%storyScript)
 	curIndex = 0
 	cmd_queue.clear()
-	cmd_queue = txt.split('\n')
+	cmd_queue = skipCommon(txt)
 	Step()
+
+func skipCommon(txt):
+	var que = []
+	for t in txt.split('\n'):
+		var line = t.dedent()
+		if not line.begins_with("//"):
+			que.append(line)
+	return que
 
 func Step():
 	if curIndex>=len(cmd_queue):
 		emit_signal("finish")
-		Clear()
+		#Clear()
 		return
-		
-	var line = cmd_queue[curIndex]
-	var cmdIndex = line.find(':')
-	var cmd = line.left(cmdIndex)
-	var dat = line.right(cmdIndex+1)
-	print("%s:%s"%[cmd,dat])
 
+	var line = cmd_queue[curIndex].dedent()
 	curIndex += 1
+	if Command(line):
+		return
+
+	stream.Print(line+"\n")
+	Step()
+
+func on_finish():
+	print(curIndex)
+	Step()
+
+func Command(line):
+	for k in [">>","<>"]:
+		if cmd(line,k):
+			return true
+	for k in ["VAR","#","===","=","->","*","+","!"]:
+		if cmd(line,k):
+			Step()
+			return true
+	return false
+
+func cmd(line,key):
+	if line.begins_with(key):
+		var cmd = line.lstrip(key).dedent()
+		print(cmd)
+		match key:
+			"VAR":GlbVar(cmd)
+			"#":Tags(cmd)
+			"*":PushOption(cmd)
+			"+":PushOption(cmd)
+			"!":
+				stream.Print(cmd+"\n")
+				cmd_queue.remove(curIndex-1)
+				curIndex -= 1
+			"<>":pass
+			"->":Goto(cmd)
+			_:pass
+		return true
+	return false
+
+func GlbVar(line):
+	var pair = line.split('=')
+	gameDb[pair[0].dedent()] = pair[1].dedent()
+
+func Tags(line):
+	var cmd = line
+	var dat = ""
+	if ':' in line:
+		var cmdIndex = line.find(':')
+		cmd = line.left(cmdIndex)
+		dat = line.right(cmdIndex+1)
+	print("Tags %s:%s"%[cmd,dat])
 	match cmd:
 		"bg":Scene.PushBG("%s/%s"%[rootPath,dat])
 		"scn":
 			Scene(dat)
 		"!scn":Scene.Clear()
-		"nrt":
-			Narrative.Print(dat)
-			return
-		"nrtl":
-			Narrative.Print(dat+"\n")
-			return
-		"#nrt": Narrative.Clear()
-		"!nrt": Narrative.Close()
+		"nrt":stream = Narrative
+		"dlg":stream = Dialog
+		"clear":stream.Clear()
+		"close":stream.Close()
 		"cha":
 			var chaDat = chaDb[dat]
 			Dialog.SetSpeaker(chaDat.get("name","???"),
 				load(chaDat.get("portrait",[])[0]))
-		"say":
-			Dialog.Say(dat)
-			return
-		"sayl":
-			Dialog.Say(dat+"\n")
-			return
-		"#say":Dialog.Clear()
-		"!say":Dialog.Close()
 		"se":
 			GlbAudio.PlaySFX(rootPath + "/" + dat)
 		"eax":
@@ -93,20 +137,19 @@ func Step():
 			GlbUI.ExOption(selLst)
 			var selection = yield(GlbUI,"select")
 			Goto(jumpLst[selection])
-		"goto":Goto(dat)
+		"->":Goto(dat)
 		_:
-			print("unknow cmd")
-	Step()
+			stream.Print(line)
 
-func on_finish():
-	print(curIndex)
-	Step()
+func PushOption(line):
+	pass
 
 func Goto(tag):
+	print_debug("goto %s"%tag)
 	var index = 0
 	for c in cmd_queue:
-		if c.begins_with("*"):
-			if c.right(1) == tag:
+		if c.begins_with("==="):
+			if c.lstrip("===").dedent() == tag:
 				break
 		index += 1;
 	print("goto %d"%index)

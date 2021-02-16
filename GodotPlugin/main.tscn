@@ -10,9 +10,9 @@ script = ExtResource( 3 )
 [node name="NixStoryPlayer" type="Node" parent="."]
 script = ExtResource( 2 )
 rootPath = "res://NixStoryDemo"
-sceneDB = "res://data/scene.json"
+sceneDB = "res://NixStoryDemo/scene.json"
 charaDB = "res://data/chara.json"
-storyScript = "res://NixStoryDemo/script/demo001.nvs"
+storyScript = "res://NixStoryDemo/script/CastleQuest.nvs"
 
 [node name="HUD" type="CanvasLayer" parent="."]
 layer = 6

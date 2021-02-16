@@ -16,7 +16,7 @@ func Close():
 	nextMark.visible = false
 	SetSpeaker()
 
-func Say(text):
+func Print(text):
 	$Frame.show()
 	$Frame/Content/TextPrinter.Print(text)
 	nextMark.hide()

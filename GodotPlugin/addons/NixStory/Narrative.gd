@@ -27,8 +27,8 @@ func SetColor(color):
 	$TextPrinter.modulate = color
 
 func Print(text):
-	$TextPrinter/next.hide()
 	Show()
+	$TextPrinter/next.hide()
 	$TextPrinter.Print(text)
 
 func _on_TextPrinter_finish():
