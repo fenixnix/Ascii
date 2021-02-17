@@ -1,4 +1,4 @@
-// nix 2021
+Castle Quest # title Castle Quest
 
 VAR visit_village = false
 VAR know_saga = false
@@ -7,37 +7,31 @@ VAR potion = false
 VAR sword = false
 
 ->start
-Castle Quest # title Castle Quest
+
 === start
-#nrt
 很久很久以前的某一天
->>
-#dlg
-!公主被魔龙抓走了
+公主被魔王抓走了
+国王悬赏营救公主
 你踏上营救公主的旅途
->>
-# nrt
+
 * 事不宜迟,直接前往魔王城
-->start
 ->castle_forest
 
 * 小心驶得万年船，先在村庄做点准备
 ->village
 
 === village
-{!村里民不聊生,一片萧条的景象,逛了一圈}
+{!由于魔王的入侵，村子里人心惶惶}
 你准备
 * 拜访村长家
 ->village_chief_house
 
 * 去铁匠铺
-# dlg
     听说你要去魔王城？
     真是勇气可嘉
     这边有一套我年轻时穿的装备
     不嫌弃就拿去用吧
     ** [收下装备]
-    >>
 
     获得冒险者套装#colour green
     ~ gear = true
@@ -51,7 +45,10 @@ Castle Quest # title Castle Quest
 ->village
 
 = village_chief_house
-你得知村子尽头晚上会有贤者回来
+    听说你要去魔王城救公主
+    去拜访一下村头的小屋吧
+    那里住着位贤者
+    位老人对魔王比较了解哦
 ~ know_saga = true
     ->village
 
@@ -75,12 +72,12 @@ Castle Quest # title Castle Quest
 
 === castle_forest
 在去往魔王城的森林
+你发现有一直商队正受到强盗的劫掠
 * 救下商队
     我三下五除二打跑了强盗。
     商队头领感谢涕零，拿出一大袋金币想以此作为回报
     ** [好人有好报，收下]
     我收下了金币
-    --
     ** [婉拒，这点小事]
     头领见我不收，打量了一下我，
     从怀中的贴身口袋里掏出一个闪亮的水晶瓶，交给我说：
@@ -121,7 +118,7 @@ Castle Quest # title Castle Quest
 
 战斗中途
 
-我认可你的能力，人类。如果你能加入我的麾下，我将和你平分这整个世界，如何？
+我认可你的能力，人类。不如放下武器我将和你平分这整个世界，如何？
 * 好吧，但你要保证绝不再入侵我们的家园
     你已经十分疲劳，没有十分的把握能打倒魔王。于是你决定接受谈判。
     但当你刚刚放松警惕的同时，魔王突然偷袭你。

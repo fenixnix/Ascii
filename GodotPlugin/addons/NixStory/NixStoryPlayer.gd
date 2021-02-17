@@ -3,7 +3,7 @@ extends Node
 export(String,DIR) var rootPath = "res://"
 export(String,FILE,"*.json") var sceneDB
 export(String,FILE,"*.json") var charaDB
-export(String,FILE,"*.nvs") var storyScript
+export(String,FILE,"*.ink") var storyScript
 
 var scnDb
 var chaDb
@@ -67,10 +67,10 @@ func on_finish():
 	Step()
 
 func Command(line):
-	for k in [">>","<>"]:
+	for k in ['>','<>','*','+']:
 		if cmd(line,k):
 			return true
-	for k in ["VAR","#","===","=","->","*","+","!"]:
+	for k in ["VAR","~","#","===","=","->","!"]:
 		if cmd(line,k):
 			Step()
 			return true
@@ -81,10 +81,9 @@ func cmd(line,key):
 		var cmd = line.lstrip(key).dedent()
 		print(cmd)
 		match key:
-			"VAR":GlbVar(cmd)
+			"VAR","~":GlbVar(cmd)
 			"#":Tags(cmd)
-			"*":PushOption(cmd)
-			"+":PushOption(cmd)
+			"*","+":PushOption(line)
 			"!":
 				stream.Print(cmd+"\n")
 				cmd_queue.remove(curIndex-1)
@@ -106,7 +105,7 @@ func Tags(line):
 		var cmdIndex = line.find(':')
 		cmd = line.left(cmdIndex)
 		dat = line.right(cmdIndex+1)
-	print("Tags %s:%s"%[cmd,dat])
+	#print("Tags %s:%s"%[cmd,dat])
 	match cmd:
 		"bg":Scene.PushBG("%s/%s"%[rootPath,dat])
 		"scn":
@@ -137,19 +136,49 @@ func Tags(line):
 			GlbUI.ExOption(selLst)
 			var selection = yield(GlbUI,"select")
 			Goto(jumpLst[selection])
-		"->":Goto(dat)
 		_:
 			stream.Print(line)
 
+var optionQueue = []
+var optionLineIndexs = []
 func PushOption(line):
-	pass
+	optionQueue.clear()
+	optionLineIndexs.clear()
+	var option_mark = leaderMark(line)
+	var curLineIndex = curIndex-1
+	while true:
+		var l = cmd_queue[curLineIndex].dedent()
+		print(l)
+		if leaderMark(l) == (option_mark):
+			optionQueue.append(l.replace(option_mark,''))
+			optionLineIndexs.append(curLineIndex)
+			#print("Push %d"%curLineIndex)
+		if (l.begins_with("-")||l.begins_with("=") )&&( not l.begins_with("->")):
+			break
+		curLineIndex+=1
+	GlbUI.ExOption(optionQueue)
+	var selection = yield(GlbUI,"select")
+	stream.Print(optionQueue[selection]+"\n")
+	curIndex = optionLineIndexs[selection]+1
+	#print("Select %d"%curIndex)
+	Step()
+
+func leaderMark(line):
+	var start_mark = line.left(1)
+	var leader_mark = ""
+	for c in line:
+		if c == start_mark:
+			leader_mark += c
+		else:
+			break
+	return leader_mark
 
 func Goto(tag):
 	print_debug("goto %s"%tag)
 	var index = 0
 	for c in cmd_queue:
-		if c.begins_with("==="):
-			if c.lstrip("===").dedent() == tag:
+		if c.begins_with("="):
+			if c.replace("=",'').dedent() == tag:
 				break
 		index += 1;
 	print("goto %d"%index)
