@@ -1,5 +1,7 @@
 extends RichTextLabel
 
+class_name OptionLabel,"res://addons/NixGUI/icon/icon_print_text.svg"
+
 signal select(index)
 
 func _ready():
@@ -8,8 +10,13 @@ func _ready():
 	scroll_active = false
 	connect("meta_clicked",self,"on_meta")
 
-func Select(list):
+func Select(list, desc = ''):
 	clear()
+	parse_bbcode(desc)
+	newline()
+	push_selection(list)
+
+func push_selection(list):
 	var index = 0
 	for l in list:
 		push_align(RichTextLabel.ALIGN_CENTER)

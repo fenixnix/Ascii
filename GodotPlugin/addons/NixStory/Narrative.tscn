@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://addons/NixStory/Narrative.gd" type="Script" id=1]
-[ext_resource path="res://addons/NixStory/TextPrinter.gd" type="Script" id=2]
+[ext_resource path="res://addons/NixGUI/TextPrinter.gd" type="Script" id=2]
 [ext_resource path="res://addons/NixStory/nextMark.tscn" type="PackedScene" id=3]
 [ext_resource path="res://addons/NixStory/se/soundslikewillem__a.wav" type="AudioStream" id=4]
 
@@ -29,12 +29,8 @@ anchor_bottom = 0.861111
 bbcode_enabled = true
 bbcode_text = "aaaaaaaaaaaaaaaadddddddddddasssssssssssssssssss"
 visible_characters = 0
-text = "aaaaaaaaaaaaaaaadddddddddddasssssssssssssssssss"
 scroll_following = true
 script = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": true
-}
 
 [node name="next" parent="TextPrinter" instance=ExtResource( 3 )]
 

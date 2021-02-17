@@ -3,7 +3,8 @@
 [ext_resource path="res://addons/NixStory/Dialog.gd" type="Script" id=1]
 [ext_resource path="res://addons/NixStory/nextMark.tscn" type="PackedScene" id=2]
 [ext_resource path="res://addons/NixStory/vocal_samples/quick_4.ogg" type="AudioStream" id=3]
-[ext_resource path="res://addons/NixStory/TextPrinter.gd" type="Script" id=4]
+[ext_resource path="res://addons/NixGUI/TextPrinter.gd" type="Script" id=4]
+
 
 [node name="Dialog" type="CanvasLayer"]
 layer = 3

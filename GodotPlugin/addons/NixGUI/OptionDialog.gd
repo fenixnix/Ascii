@@ -16,7 +16,7 @@ func Select(list,message = ""):
 	Clear()
 	yield(get_tree(),"idle_frame")
 	$Control/Message.text = message
-	$Control/OptionLabel.Select(list)
+	$Control/OptionLabel.Select(list,message)
 	$Control.show()
 	$Anim.play("FadeIn")
 	return self

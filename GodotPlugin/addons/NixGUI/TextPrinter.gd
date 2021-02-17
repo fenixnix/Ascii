@@ -1,5 +1,6 @@
-tool
 extends RichTextLabel
+
+class_name TextPrinter,"res://addons/NixGUI/icon/icon_print_text.svg"
 
 var delayTime = 0.1
 var timer

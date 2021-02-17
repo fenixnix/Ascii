@@ -54,10 +54,20 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://common/NixRnd.gd"
 }, {
+"base": "RichTextLabel",
+"class": "OptionLabel",
+"language": "GDScript",
+"path": "res://addons/NixGUI/OptionLabel.gd"
+}, {
 "base": "Reference",
 "class": "RandomJunk",
 "language": "GDScript",
 "path": "res://common/RandomJunk.gd"
+}, {
+"base": "RichTextLabel",
+"class": "RichTextLabelEx",
+"language": "GDScript",
+"path": "res://addons/NixGUI/RichTextLabelEx.gd"
 }, {
 "base": "Reference",
 "class": "SMF",
@@ -68,6 +78,11 @@ _global_script_classes=[ {
 "class": "SoundFont",
 "language": "GDScript",
 "path": "res://addons/midi/SoundFont.gd"
+}, {
+"base": "RichTextLabel",
+"class": "TextPrinter",
+"language": "GDScript",
+"path": "res://addons/NixGUI/TextPrinter.gd"
 } ]
 _global_script_class_icons={
 "AudioStreamPlayerADSR": "",
@@ -79,9 +94,12 @@ _global_script_class_icons={
 "HexGrid": "",
 "MidiPlayer": "",
 "NixRnd": "",
+"OptionLabel": "res://addons/NixGUI/icon/icon_print_text.svg",
 "RandomJunk": "",
+"RichTextLabelEx": "res://addons/NixGUI/icon/icon_print_text.svg",
 "SMF": "",
-"SoundFont": ""
+"SoundFont": "",
+"TextPrinter": "res://addons/NixGUI/icon/icon_print_text.svg"
 }
 
 [application]
