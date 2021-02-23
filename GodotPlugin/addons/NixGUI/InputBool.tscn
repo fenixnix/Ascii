@@ -1,0 +1,15 @@
+[gd_scene format=2]
+
+[node name="InputBool" type="PanelContainer"]
+margin_right = 275.0
+margin_bottom = 49.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CheckButton" type="CheckButton" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 268.0
+margin_bottom = 47.0
+text = "Label"

@@ -44,6 +44,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://common/hex.gd"
 }, {
+"base": "PanelContainer",
+"class": "InputNumber",
+"language": "GDScript",
+"path": "res://addons/NixGUI/InputNumber.gd"
+}, {
 "base": "Node",
 "class": "MidiPlayer",
 "language": "GDScript",
@@ -92,6 +97,7 @@ _global_script_class_icons={
 "FileRW": "",
 "GlobalUI": "",
 "HexGrid": "",
+"InputNumber": "res://addons/NixGUI/icon/icon_file_list.svg",
 "MidiPlayer": "",
 "NixRnd": "",
 "OptionLabel": "res://addons/NixGUI/icon/icon_print_text.svg",
@@ -116,10 +122,10 @@ default_bus_layout="res://addons/NixAudio/AudioBus.tres"
 [autoload]
 
 GlbAudio="*res://addons/NixAudio/GlbAudio.gd"
-GlbUI="*res://addons/NixGUI/GlbUI.tscn"
 Narrative="*res://addons/NixStory/Narrative.tscn"
 Dialog="*res://addons/NixStory/Dialog.tscn"
 Scene="*res://addons/NixStory/Scene.tscn"
+GlbUI="*res://addons/NixGUI/GlbUI.tscn"
 
 [editor_plugins]
 

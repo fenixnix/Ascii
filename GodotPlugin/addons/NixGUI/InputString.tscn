@@ -1,0 +1,27 @@
+[gd_scene format=2]
+
+[node name="InputString" type="PanelContainer"]
+margin_right = 275.0
+margin_bottom = 49.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 268.0
+margin_bottom = 42.0
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+margin_top = 5.0
+margin_right = 128.0
+margin_bottom = 30.0
+size_flags_horizontal = 3
+text = "label"
+
+[node name="LineEdit" type="LineEdit" parent="HBoxContainer"]
+margin_left = 132.0
+margin_right = 261.0
+margin_bottom = 35.0
+size_flags_horizontal = 3
