@@ -16,7 +16,7 @@
 *.stex
 *.md5
 *.sample
-
+*.import
 *.zip
 
 /Arkham horror/card/
