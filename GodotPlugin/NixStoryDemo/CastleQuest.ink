@@ -1,6 +1,7 @@
-Castle Quest # title Castle Quest
+#title:Castle Quest
+Castle Quest 
 
-VAR visit_village = false
+VAR visit_town = false
 VAR know_sage = false
 VAR gear = false
 VAR potion = false
@@ -12,29 +13,34 @@ VAR sword = false
 # scn:op
 很久很久以前
 有个魔王滥杀无辜、恶贯满盈，诸国深受其害
+>
 我背井离乡，一个人踏上了讨伐魔王的征程
 
 * 前往魔王城
 ->castle_forest
 
 * 先在村庄做点准备
-->village
+->town
 
-=== village
+=== town
 #scn:scn_town
 {!由于魔王连年的战争，人们神情冷漠，无助，没有一丝生气}
 你准备
 * 拜访村长家
-    #scn:scn_town_cheif
+#scn:scn_town_cheif
+#cha:npc00
+#dlg
     听说你要去讨伐魔王
     去拜访一下村头的小屋吧
     那里住着位贤者
     他对魔王比较了解
     ~ know_sage = true
-    ->village
+    ->town
 
 * 去铁匠铺
-    #scn:scn_blacksmith
+#scn:scn_blacksmith
+#cha:npc01
+#dlg
     听说你要去魔王城？
     真是勇气可嘉
     这边有一套我年轻时穿的装备
@@ -44,16 +50,18 @@ VAR sword = false
     获得冒险者套装#colour green
     ~ gear = true
     
-    ->village
+    ->town
 * {know_sage} 拜访贤者
     #scn:scn_sage
     ->sage_hut
 * 该去魔王城了
     ->castle_forest
 -
-->village
+->town
 
-=== sage_hut 
+=== sage_hut
+#cha:npc02
+#dlg
 你终于来了，年轻人
 想要打倒魔王,必须要掌握时空的力量才行
 去西边的山洞看看吧，那里有你需要的东西
@@ -70,10 +78,11 @@ VAR sword = false
 获得时钟剑 # colour green
 ~ sword = true
 * 返回村庄
-->village
+->town
 
 === castle_forest
 # scn:scn_forest
+#nrt
 在去往魔王城的森林
 你发现有一直商队正受到强盗的劫掠
 * 救下商队
@@ -141,7 +150,7 @@ VAR sword = false
     ->end_03
 
 === end_00
-#scn：scn_end_0
+#scn：end_0
     你手无寸铁，双拳难敌四手
     很快败下阵来
     你被五花大绑拖回了魔王城
@@ -149,13 +158,13 @@ VAR sword = false
     ->END
 
 === end_01
-#scn：scn_end_1
+#scn：end_1
     你手无寸铁，马上被打翻在地
     被卖到魔王城当奴隶...
     ->END
 
 === end_02
-#scn：scn_end_2
+#scn：end_2
     我摸到了商队给的药剂，一口喝下。
     力量充满了全身
     魔王已是强弩之末，绝望得看着我把剑刺入了他的胸膛。
@@ -165,7 +174,7 @@ VAR sword = false
     ->END
 
 === end_03
-#scn：scn_end_3
+#scn：end_3
     也不知道继续战斗了多久。
     我拼尽了最后一丝气力刺入了魔王的胸膛。魔王以不可置信的眼神看着我。
     随着魔王身体的消散，魔王城也跟着崩坏坍塌
@@ -173,7 +182,7 @@ VAR sword = false
     ->END
 
 === end_04
-#scn：scn_end_4
+#scn：end_4
     周边的黑暗迅速吞噬了我
     我渐渐失去了意识
     ->END

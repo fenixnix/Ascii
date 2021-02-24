@@ -118,7 +118,7 @@ func Tags(line):
 		"cha":
 			var chaDat = chaDb[dat]
 			Dialog.SetSpeaker(chaDat.get("name","???"),
-				load(chaDat.get("portrait",[])[0]))
+				load(rootPath + "/" + chaDat.get("portrait",[])[0]))
 		"se":
 			GlbAudio.PlaySFX(rootPath + "/" + dat)
 		"eax":
@@ -137,7 +137,7 @@ func Tags(line):
 			var selection = yield(GlbUI,"select")
 			Goto(jumpLst[selection])
 		_:
-			stream.Print(line)
+			print_debug("unknow tag:%s"%line)
 
 var optionQueue = []
 var optionLineIndexs = []
@@ -188,11 +188,11 @@ func Scene(dat):
 	var scnDat = scnDb[dat]
 	for k in scnDat.keys():
 		match k:
-			"tscn":Scene.PushScn(scnDat[k])
+			"tscn":Scene.PushScn(rootPath +'/'+ scnDat[k])
 			"bg":for b in scnDat[k]:
-				Scene.PushBG(b)
-			"eax":GlbAudio.PlayEAX(scnDat[k])
-			"bgm":GlbAudio.PlayBGM(scnDat[k])
+				Scene.PushBG(rootPath +'/'+ b)
+			"eax":GlbAudio.PlayEAX(rootPath +'/'+ scnDat[k])
+			"bgm":GlbAudio.PlayBGM(rootPath +'/'+ scnDat[k])
 			_:print("unknow cmd:%s"%scnDat[k])
 
 func GetDB(key):

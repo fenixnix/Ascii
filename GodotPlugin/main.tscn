@@ -11,8 +11,8 @@ script = ExtResource( 3 )
 script = ExtResource( 2 )
 rootPath = "res://NixStoryDemo"
 sceneDB = "res://NixStoryDemo/scene.json"
-charaDB = "res://data/chara.json"
-storyScript = "res://NixStoryDemo/script/CastleQuest.ink"
+charaDB = "res://NixStoryDemo/chara.json"
+storyScript = "res://NixStoryDemo/CastleQuest.ink"
 
 [node name="HUD" type="CanvasLayer" parent="."]
 layer = 6
