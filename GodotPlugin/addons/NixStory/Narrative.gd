@@ -2,6 +2,7 @@ tool
 extends Node
 
 signal finish
+var buff = []
 
 func _ready():
 	Clear()
@@ -26,15 +27,31 @@ func SetTypeRate(rate):
 func SetColor(color):
 	$TextPrinter.modulate = color
 
+func Push(text):
+	buff.append(text)
+	if len(buff)==1:
+		Print(text)
+
 func Print(text):
 	Show()
 	$TextPrinter/next.hide()
 	$TextPrinter.Print(text)
 
 func _on_TextPrinter_finish():
-	emit_signal("finish")
+	if len(buff)>0:
+		buff.pop_front()
+		if len(buff)>0:
+			Print(buff.front())
+	else:
+		emit_signal("finish")
 
 func _on_TextPrinter_wait():
+	if len(buff)>0:
+		buff.pop_front()
+		if len(buff)>0:
+			Print(buff.front())
+	else:
+		emit_signal("finish")
 	$TextPrinter/next.show()
 
 func _on_TextPrinter_putChar():

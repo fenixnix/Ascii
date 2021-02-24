@@ -49,6 +49,7 @@ func skipCommon(txt):
 	return que
 
 func Step():
+	#print("index:%d"%curIndex)
 	if curIndex>=len(cmd_queue):
 		emit_signal("finish")
 		#Clear()
@@ -59,11 +60,12 @@ func Step():
 	if Command(line):
 		return
 
-	stream.Print(line+"\n")
+	stream.Push(line+"\n")
+	yield(stream,"finish")
 	Step()
 
 func on_finish():
-	print(curIndex)
+	print("finish Step: %d"%curIndex)
 	Step()
 
 func Command(line):
@@ -156,11 +158,12 @@ func PushOption(line):
 		if (l.begins_with("-")||l.begins_with("=") )&&( not l.begins_with("->")):
 			break
 		curLineIndex+=1
+	curIndex = curLineIndex
 	GlbUI.ExOption(optionQueue)
 	var selection = yield(GlbUI,"select")
-	stream.Print(optionQueue[selection]+"\n")
+	#stream.Print(optionQueue[selection]+"\n")
 	curIndex = optionLineIndexs[selection]+1
-	#print("Select %d"%curIndex)
+	print("Select %d"%curIndex)
 	Step()
 
 func leaderMark(line):

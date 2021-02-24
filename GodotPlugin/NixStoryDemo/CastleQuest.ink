@@ -23,18 +23,23 @@ VAR sword = false
 ->town
 
 === town
+#nrt
+#clear
 #scn:scn_town
-{!由于魔王连年的战争，人们神情冷漠，无助，没有一丝生气}
-你准备
+你来到了村庄，你准备
 * 拜访村长家
-#scn:scn_town_cheif
-#cha:npc00
-#dlg
+    #close
+    #scn:scn_town_cheif
+    #cha:npc00
+    #dlg
     听说你要去讨伐魔王
     去拜访一下村头的小屋吧
     那里住着位贤者
     他对魔王比较了解
     ~ know_sage = true
+    >
+    #clear
+    #close
     ->town
 
 * 去铁匠铺
@@ -49,7 +54,9 @@ VAR sword = false
 
     获得冒险者套装#colour green
     ~ gear = true
-    
+    >
+    #clear
+    #close
     ->town
 * {know_sage} 拜访贤者
     #scn:scn_sage
@@ -91,6 +98,7 @@ VAR sword = false
     商队头领感谢涕零，拿出一大袋金币想以此作为回报
     ** [好人有好报，收下]
     我收下了金币
+    ->save
     ** [婉拒，这点小事]
     头领见我不收，打量了一下我，
     从怀中的贴身口袋里掏出一个闪亮的水晶瓶，交给我说：
@@ -99,11 +107,15 @@ VAR sword = false
     我想着去魔王城危险重重，这个也许派的上用场
     向头领表示感谢，收下了药剂。
     ~ potion = true
-    --
-    商队一再表示感谢，继续赶路去了
+    ->save
 * 直接去魔王城
--
+    -> to_castle
 
+= save
+    商队一再表示感谢，继续赶路去了
+    -> to_castle
+-
+= to_castle
 就快接近魔王城了
 # scn:scn_castle_gate
 路边的树丛突然蹿出几个魔王卫兵
@@ -126,6 +138,8 @@ VAR sword = false
 里面漆黑一片
 *[进去]
 -
+#nrt
+#clear
 {not sword:->end_04}
 进入魔王城
 你举起时钟剑，以防万一
@@ -178,7 +192,7 @@ VAR sword = false
     也不知道继续战斗了多久。
     我拼尽了最后一丝气力刺入了魔王的胸膛。魔王以不可置信的眼神看着我。
     随着魔王身体的消散，魔王城也跟着崩坏坍塌
-    我无奈得倒在了地上，心想着，这样就可以了.....
+    我无奈得倒在了地上，与城堡同归于尽.....
     ->END
 
 === end_04
@@ -186,3 +200,5 @@ VAR sword = false
     周边的黑暗迅速吞噬了我
     我渐渐失去了意识
     ->END
+
+=== END

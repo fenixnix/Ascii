@@ -4,6 +4,8 @@ extends CanvasLayer
 onready var dialog = $Frame/Content
 onready var nextMark = $Frame/next
 
+var buff = []
+
 signal finish()
 
 func _ready():
@@ -15,6 +17,11 @@ func Close():
 	$Frame.hide()
 	nextMark.visible = false
 	SetSpeaker()
+
+func Push(text):
+	buff.append(text)
+	if len(buff)==1:
+		Print(text)
 
 func Print(text):
 	$Frame.show()
@@ -29,9 +36,20 @@ func Clear():
 	$Frame/Content/TextPrinter.Clear()
 
 func _on_TextPrinter_finish():
-	emit_signal("finish")
+	if len(buff)>0:
+		buff.pop_front()
+		if len(buff)>0:
+			Print(buff.front())
+	else:
+		emit_signal("finish")
 
 func _on_TextPrinter_wait():
+	if len(buff)>0:
+		buff.pop_front()
+		if len(buff)>0:
+			Print(buff.front())
+	else:
+		emit_signal("finish")
 	nextMark.show()
 
 func _on_TextPrinter_putChar():
