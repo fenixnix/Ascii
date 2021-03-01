@@ -1,16 +1,28 @@
+tool
 extends PanelContainer
 
+class_name InputBool
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+export var label_text = "Label"
+export var check:bool = false
 
+var checkBtn:CheckButton
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+func _init():
+	checkBtn = CheckButton.new()
+	add_child(checkBtn)
+	refresh()
 
+func Setup(conf):
+	if conf!=null:
+		label_text = conf.get("text","Label")
+		checkBtn.pressed = conf.get("default",false)
+	refresh()
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	if Engine.editor_hint:
+		refresh()
+
+func refresh():
+	checkBtn.text = label_text
+	checkBtn.pressed = check

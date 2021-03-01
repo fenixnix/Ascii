@@ -23,13 +23,13 @@ __meta__ = {
 }
 
 [node name="VBox" type="VBoxContainer" parent="Frame"]
-margin_right = 1270.0
+margin_right = 1024.0
 margin_bottom = 188.0
 
 [node name="LineEdit" type="LineEdit" parent="Frame/VBox"]
-margin_top = 41.0
-margin_right = 1270.0
-margin_bottom = 86.0
+margin_top = 66.0
+margin_right = 1024.0
+margin_bottom = 90.0
 size_flags_vertical = 6
 align = 1
 caret_blink = true
@@ -39,13 +39,13 @@ __meta__ = {
 }
 
 [node name="HSeparator" type="HSeparator" parent="Frame/VBox"]
-margin_top = 135.0
-margin_right = 1270.0
-margin_bottom = 143.0
+margin_top = 160.0
+margin_right = 1024.0
+margin_bottom = 164.0
 
 [node name="HBox" type="HBoxContainer" parent="Frame/VBox"]
-margin_top = 151.0
-margin_right = 1270.0
+margin_top = 168.0
+margin_right = 1024.0
 margin_bottom = 188.0
 alignment = 1
 __meta__ = {
@@ -53,9 +53,9 @@ __meta__ = {
 }
 
 [node name="Cancel" type="Button" parent="Frame/VBox/HBox"]
-margin_left = 274.0
-margin_right = 357.0
-margin_bottom = 37.0
+margin_left = 228.0
+margin_right = 282.0
+margin_bottom = 20.0
 size_flags_horizontal = 6
 text = "Cancel"
 __meta__ = {
@@ -63,9 +63,9 @@ __meta__ = {
 }
 
 [node name="OK" type="Button" parent="Frame/VBox/HBox"]
-margin_left = 930.0
-margin_right = 978.0
-margin_bottom = 37.0
+margin_left = 753.0
+margin_right = 784.0
+margin_bottom = 20.0
 size_flags_horizontal = 6
 text = "OK"
 [connection signal="pressed" from="Frame/VBox/HBox/Cancel" to="." method="_on_Cancel_pressed"]
