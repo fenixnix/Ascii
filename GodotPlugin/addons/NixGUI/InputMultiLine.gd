@@ -1,7 +1,7 @@
 tool
 extends PanelContainer
 
-class_name InputText
+class_name InputMultiLine
 
 export var label_text = "Label"
 export var text = ""
@@ -14,7 +14,7 @@ func _init():
 	label = Label.new()
 	input = TextEdit.new()
 	input.size_flags_horizontal = SIZE_EXPAND_FILL
-	input.rect_min_size.y = 180
+	input.rect_min_size.y = 80
 	add_child(box)
 	box.add_child(label)
 	box.add_child(input)
@@ -24,6 +24,9 @@ func Setup(conf):
 	if conf!=null:
 		label_text = conf.get("text","Label")
 	refresh()
+
+func Get():
+	return input.text
 
 func _process(delta):
 	if Engine.editor_hint:

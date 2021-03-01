@@ -26,6 +26,9 @@ func Setup(conf):
 			input.add_item(option)
 	refresh()
 
+func Get():
+	return input.text
+
 func _process(delta):
 	if Engine.editor_hint:
 		refresh()

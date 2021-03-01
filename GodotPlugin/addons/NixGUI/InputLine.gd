@@ -25,6 +25,9 @@ func Setup(conf):
 		label_text = conf.get("text","Label")
 	refresh()
 
+func Get():
+	return input.text
+
 func _process(delta):
 	if Engine.editor_hint:
 		refresh()

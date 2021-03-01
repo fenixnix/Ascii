@@ -19,6 +19,9 @@ func Setup(conf):
 		checkBtn.pressed = conf.get("default",false)
 	refresh()
 
+func Get():
+	return checkBtn.pressed
+
 func _process(delta):
 	if Engine.editor_hint:
 		refresh()

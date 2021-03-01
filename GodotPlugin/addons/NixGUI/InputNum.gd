@@ -30,6 +30,9 @@ func Setup(conf):
 		step = conf.get("step",1)
 	refresh()
 
+func Get():
+	return spin.value
+
 func _process(delta):
 	if Engine.editor_hint:
 		refresh()
