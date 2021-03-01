@@ -6,6 +6,7 @@ VAR know_sage = false
 VAR gear = false
 VAR potion = false
 VAR sword = false
+VAR life = 0
 
 ->start
 

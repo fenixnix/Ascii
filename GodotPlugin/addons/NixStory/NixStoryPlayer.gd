@@ -17,6 +17,7 @@ var stream
 signal finish()
 
 func _ready():
+	express("{!sword:A|B}")
 	Clear()
 	stream = Narrative
 	scnDb = FileRW.LoadJsonFile(sceneDB)
@@ -57,7 +58,7 @@ func Step():
 
 	var line = cmd_queue[curIndex].dedent()
 	curIndex += 1
-	if Command(line):
+	if run_line(line):
 		return
 
 	stream.Push(line+"\n")
@@ -68,11 +69,11 @@ func on_finish():
 	print("finish Step: %d"%curIndex)
 	Step()
 
-func Command(line):
+func run_line(line):
 	for k in ['>','<>','*','+']:
 		if cmd(line,k):
 			return true
-	for k in ["VAR","~","#","===","=","->","!"]:
+	for k in ["VAR","~","#","===","=","->","!",'{']:
 		if cmd(line,k):
 			Step()
 			return true
@@ -90,6 +91,7 @@ func cmd(line,key):
 				stream.Print(cmd+"\n")
 				cmd_queue.remove(curIndex-1)
 				curIndex -= 1
+			'{':express(line)
 			"<>":pass
 			"->":Goto(cmd)
 			_:pass
@@ -98,7 +100,22 @@ func cmd(line,key):
 
 func GlbVar(line):
 	var pair = line.split('=')
-	gameDb[pair[0].dedent()] = pair[1].dedent()
+	gameDb[pair[0].dedent()] = TextExt.parseValue(pair[1].dedent())
+
+func express(txt):
+	var exprTxt = TextExt.removal(txt)
+	if ':' in exprTxt:
+		var exprTxtPair = exprTxt.split(':')
+		exprTxt = exprTxtPair[0]
+		if '|' in exprTxtPair[1]:
+			var execPair = exprTxtPair[1].split('|')
+	
+	print("ExprTxt:%s"%exprTxt)
+	var expr = Expression.new()
+	expr.parse(exprTxt,gameDb.keys())
+	var res = expr.execute(gameDb.values())
+	print("result:%s"%str(res))
+	return res
 
 func Tags(line):
 	var cmd = line

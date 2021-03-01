@@ -84,6 +84,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/midi/SoundFont.gd"
 }, {
+"base": "Reference",
+"class": "TextExt",
+"language": "GDScript",
+"path": "res://addons/TextExt.gd"
+}, {
 "base": "RichTextLabel",
 "class": "TextPrinter",
 "language": "GDScript",
@@ -105,6 +110,7 @@ _global_script_class_icons={
 "RichTextLabelEx": "res://addons/NixGUI/icon/icon_print_text.svg",
 "SMF": "",
 "SoundFont": "",
+"TextExt": "",
 "TextPrinter": "res://addons/NixGUI/icon/icon_print_text.svg"
 }
 
