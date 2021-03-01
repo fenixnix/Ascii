@@ -1,10 +1,10 @@
-import func
+import NixKit.Crawler as Crawler
 import json
 
 siteUrl = "http://www.bachcentral.com/"
 url = siteUrl + "midiindexcomplete.html"
 
-soup = func.GetSoup(url)
+soup = Crawler.GetSoup(url)
 
 skip_mark = "http://www.bachcentral.com/Organchorales/BSGJG_J.MID"
 skip = False
@@ -21,4 +21,4 @@ for l in soup.find_all("a"):
             else:
                 continue
         midiList.append(link)
-        func.DownLoad(link,"./midi/"+href.replace('/',"_"))
+        Crawler.DownLoad(link,"./midi/"+href.replace('/',"_"))
