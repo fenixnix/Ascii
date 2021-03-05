@@ -18,6 +18,7 @@
 *.sample
 *.import
 *.zip
+*.pyc
 
 /Arkham horror/card/
 /SlaySprite/slay_sprite/image/card/

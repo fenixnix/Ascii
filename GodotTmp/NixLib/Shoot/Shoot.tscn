@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=2]
-
-[ext_resource path="res://Platform/projectile.tscn" type="PackedScene" id=1]
-[ext_resource path="res://NixLib/Shoot/Shoot.gd" type="Script" id=2]
-
-
-[node name="Shoot" type="Node2D"]
-script = ExtResource( 2 )
-projectile = ExtResource( 1 )

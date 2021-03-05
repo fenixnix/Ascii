@@ -1,2 +1,0 @@
-[node name="%s" type="CollisionPolygon2D" parent="."]
-polygon = PoolVector2Array(%s)
